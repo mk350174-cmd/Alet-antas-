@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TestVault Pro — AI & Prompt Mühendisliği</title>
+<meta name="description" content="LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.">
+<meta name="keywords" content="Test, TestVault Pro, AI & Prompt Mühendisliği, AI, yapay zeka, şablon">
+<meta name="robots" content="index, follow">
+<meta name="author" content="TestVault Pro — AI & Prompt Mühendisliği">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TestVault Pro — AI & Prompt Mühendisliği">
+<meta property="og:description" content="LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TestVault Pro — AI & Prompt Mühendisliği">
+<meta name="twitter:description" content="LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TestVault Pro — AI & Prompt Mühendisliği",
+  "description": "LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "tr",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "TestVault Pro — AI & Prompt Mühendisliği",
+  "description": "LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.",
+  "numberOfItems": 34
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08060e;--bg2:#0c0a12;--bg3:#100e16;--bg4:#14121a;
+  --border:#18161e;--border2:#201e26;--border3:#2c2a32;
+  --text:#ede9e0;--text2:#9896a0;--text3:#585668;--text4:#343244;
+  --primary:#a375ff;--primary2:#a375ff;
+  --primary-dim:#a375ff15;--primary-glow:#a375ff30;
+  --accent:#ff6b9d;--accent2:#ff6b9d;
+  --accent-dim:#ff6b9d18;--accent-glow:#ff6b9d30;
+  --radius:6px;--radius-lg:12px;--radius-xl:20px;
+  --tr:0.28s cubic-bezier(0.4,0,0.2,1);--tr-fast:0.15s cubic-bezier(0.4,0,0.2,1);
+  --shadow-sm:0 2px 8px #00000060;--shadow-md:0 8px 32px #00000080;--shadow-lg:0 20px 60px #000000a0;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:14px;line-height:1.6;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,#a375ff08 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 100%,#ff6b9d06 0%,transparent 50%);pointer-events:none;z-index:0}
+
+.hero{position:relative;padding:56px 56px 44px;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(180deg,#0c0a12 0%,var(--bg) 100%)}
+.hero::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,#a375ff0a 0%,#a375ff03 40%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,var(--primary) 30%,var(--accent) 70%,transparent 100%);opacity:.15}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--primary);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:14px;opacity:.9}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:inline-block;width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--primary));opacity:.7}
+.hero-eyebrow::after{background:linear-gradient(90deg,var(--primary),transparent)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,80px);font-weight:300;line-height:.9;letter-spacing:-.025em;margin-bottom:16px}
+.hero-title em{font-style:italic;color:var(--primary);text-shadow:0 0 60px #a375ff30}
+.hero-title span{color:var(--accent)}
+.hero-sub{font-size:14px;color:var(--text2);max-width:540px;line-height:1.75;margin-bottom:28px}
+.hero-stats{display:flex;gap:0;flex-wrap:wrap;align-items:stretch}
+.stat{display:flex;flex-direction:column;gap:4px;padding:14px 26px;border-right:1px solid var(--border)}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--text);line-height:1;letter-spacing:-.02em}
+.stat-num em{color:var(--primary);font-style:normal}
+.stat-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:.14em;text-transform:uppercase}
+.hero-corner{position:absolute;top:12px;right:48px;font-family:'Cormorant Garamond',serif;font-size:140px;font-weight:700;color:#a375ff03;line-height:1;user-select:none;pointer-events:none;letter-spacing:-.04em}
+
+.api-bar{background:linear-gradient(90deg,#a375ff06,var(--bg2),transparent);border-bottom:1px solid var(--border);padding:10px 56px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;position:relative;overflow:hidden}
+.api-bar::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--primary),transparent);opacity:.5}
+.api-lbl{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:.08em;white-space:nowrap}
+.api-input{flex:1;min-width:220px;max-width:360px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:7px 13px;color:var(--text);font-family:'DM Mono',monospace;font-size:12px;transition:all var(--tr);letter-spacing:.04em}
+.api-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-dim);background:var(--bg4)}
+.api-input::placeholder{color:var(--text4)}
+.api-save{background:linear-gradient(135deg,var(--primary),#8557e1);color:#08060e;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);text-transform:uppercase;box-shadow:0 2px 12px #a375ff20}
+.api-save:hover{transform:translateY(-1px);box-shadow:0 4px 20px #a375ff35}
+.api-status{font-family:'DM Mono',monospace;font-size:10px;display:flex;align-items:center;gap:7px;letter-spacing:.06em}
+.api-dot{width:6px;height:6px;border-radius:50%;background:var(--text4)}
+.api-dot.ok{background:#5ac87d;box-shadow:0 0 8px #5ac87d60}
+.api-status-lbl{color:var(--text4)}
+.api-status-lbl.ok{color:#5ac87d}
+
+.app{display:grid;grid-template-columns:280px 1fr;min-height:calc(100vh - 280px)}
+.sidebar{border-right:1px solid var(--border);background:var(--bg2);position:sticky;top:0;height:calc(100vh - 280px);overflow-y:auto;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:2px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border3);border-radius:2px}
+.main{overflow-y:auto;height:calc(100vh - 280px)}
+
+.srch-wrap{padding:10px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg2);z-index:2;backdrop-filter:blur(10px)}
+.srch-inner{position:relative}
+.srch-input{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:9px 13px 9px 30px;color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:12px;transition:all var(--tr)}
+.srch-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 2px var(--primary-dim);background:var(--bg4)}
+.srch-input::placeholder{color:var(--text4)}
+.srch-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:12px;pointer-events:none}
+.srch-inner:focus-within .srch-icon{color:var(--primary)}
+
+.cat-sec{border-bottom:1px solid var(--border)}
+.cat-hdr{padding:7px 12px 3px;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--text4)}
+.cat-btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:7px 12px;background:none;border:none;cursor:pointer;color:var(--text2);font-family:'Instrument Sans',sans-serif;font-size:11px;transition:all var(--tr-fast);text-align:left;border-left:2px solid transparent}
+.cat-btn:hover{color:var(--text);background:var(--bg3)}
+.cat-btn.active{color:var(--text);background:var(--bg4);border-left-color:var(--cc,var(--primary))}
+.cat-btn .cdot{width:7px;height:7px;border-radius:50%;background:var(--cc,var(--primary));flex-shrink:0;margin-right:8px}
+.cat-btn .cname{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-btn .ccount{font-family:'DM Mono',monospace;font-size:9px;color:var(--text3)}
+
+.item-list{flex:1;overflow-y:auto;padding-bottom:20px}
+.item-row{display:flex;align-items:center;gap:10px;padding:9px 12px;cursor:pointer;border-bottom:1px solid var(--border);transition:all var(--tr-fast);border-left:2px solid transparent}
+.item-row:hover{background:var(--bg3)}
+.item-row.active{background:var(--bg4);border-left-color:var(--sc,var(--primary))}
+.item-no{font-family:'DM Mono',monospace;font-size:9px;color:var(--text4);width:28px;flex-shrink:0}
+.item-dot{width:6px;height:6px;border-radius:50%;background:var(--sc,var(--primary));flex-shrink:0}
+.item-info{flex:1;min-width:0}
+.item-name{font-size:11px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.3}
+.item-desc{font-size:10px;color:var(--text3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:1px}
+.item-badge{font-family:'DM Mono',monospace;font-size:8px;padding:2px 5px;border-radius:3px;background:var(--bg);border:1px solid var(--border2);color:var(--text4);flex-shrink:0}
+
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:14px;opacity:.35;padding:40px}
+.empty .glyph{font-family:'Cormorant Garamond',serif;font-size:80px;color:var(--primary);line-height:1}
+.empty p{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+
+.item-hdr{padding:28px 40px 20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0c0a12,var(--bg))}
+.item-hdr-top{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.item-badge-lg{font-family:'DM Mono',monospace;font-size:8px;padding:3px 9px;border-radius:var(--radius-xl);letter-spacing:.1em;text-transform:uppercase}
+.item-badge-lg.cat{background:color-mix(in srgb,var(--cc) 12%,transparent);border:1px solid color-mix(in srgb,var(--cc) 25%,transparent);color:var(--cc,var(--primary))}
+.item-badge-lg.b1{background:var(--bg3);border:1px solid var(--border2);color:var(--text3)}
+.item-badge-lg.b2{background:var(--bg3);border:1px solid var(--border2);color:var(--primary);font-size:9px}
+.copy-btn{margin-left:auto;background:linear-gradient(135deg,var(--primary),#8557e1);color:#08060e;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);display:flex;align-items:center;gap:7px;box-shadow:0 2px 12px #a375ff20}
+.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px #a375ff35}
+.copy-btn.copied{background:linear-gradient(135deg,#5ac87d,#3aaa5d)}
+.item-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;line-height:1;letter-spacing:-.02em;margin-bottom:8px}
+.item-title em{font-style:italic;color:var(--cc,var(--primary))}
+.item-subdesc{font-size:13px;color:var(--text2);line-height:1.7;max-width:600px}
+
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));border-bottom:1px solid var(--border)}
+.meta-cell{padding:14px 20px;border-right:1px solid var(--border)}
+.meta-cell:last-child{border-right:none}
+.meta-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:6px}
+.meta-value{font-size:13px;color:var(--text);line-height:1.3}
+.meta-value.count{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--primary)}
+
+.content-sec{padding:28px 40px;border-bottom:1px solid var(--border)}
+.content-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.content-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border2),transparent)}
+.content-body{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:20px 24px;font-family:'DM Mono',monospace;font-size:12px;line-height:1.75;color:var(--text2);white-space:pre-wrap;word-break:break-word;position:relative;overflow:hidden}
+.content-body::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cc,var(--primary)),transparent);opacity:.6}
+
+.tags-sec{padding:20px 40px;border-bottom:1px solid var(--border)}
+.tag-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tag-chip{font-family:'DM Mono',monospace;font-size:8px;padding:3px 9px;border-radius:var(--radius-xl);background:color-mix(in srgb,var(--cc,var(--primary)) 8%,transparent);border:1px solid color-mix(in srgb,var(--cc,var(--primary)) 18%,transparent);color:var(--cc,var(--primary));letter-spacing:.06em}
+
+.source-sec{padding:14px 40px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.source-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4)}
+.source-link{font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.85;word-break:break-all}
+.source-link:hover{opacity:1;text-decoration:underline}
+.source-license{font-family:'DM Mono',monospace;font-size:8px;color:var(--text3);padding:2px 8px;border:1px solid var(--border2);border-radius:var(--radius-xl)}
+.source-author{font-family:'DM Mono',monospace;font-size:8px;color:var(--text3)}
+
+.all-grid{padding:24px 32px;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grid-header{margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.grid-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;letter-spacing:-.01em}
+.grid-title em{font-style:italic;color:var(--primary)}
+.grid-count{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:.1em}
+.item-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.item-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;cursor:pointer;transition:all var(--tr);position:relative;overflow:hidden}
+.item-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cc,var(--primary));opacity:.6;transition:opacity var(--tr)}
+.item-card:hover{background:var(--bg3);border-color:var(--border2);transform:translateY(-2px);box-shadow:0 8px 24px #00000050}
+.item-card:hover::before{opacity:1}
+.card-no{font-family:'DM Mono',monospace;font-size:8px;color:var(--text4);margin-bottom:8px;letter-spacing:.08em}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:6px}
+.card-desc{font-size:11px;color:var(--text3);line-height:1.5;margin-bottom:10px}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card-cat{font-family:'DM Mono',monospace;font-size:8px;color:var(--cc,var(--primary));background:color-mix(in srgb,var(--cc,var(--primary)) 10%,transparent);border:1px solid color-mix(in srgb,var(--cc,var(--primary)) 20%,transparent);padding:2px 7px;border-radius:10px;letter-spacing:.06em;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-b1{font-family:'DM Mono',monospace;font-size:8px;color:var(--text4);letter-spacing:.06em}
+
+.sim-sec{padding:20px 40px}
+.sim-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sim-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3)}
+.sim-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.sim-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:12px;cursor:pointer;transition:all var(--tr);position:relative;overflow:hidden;border-left:3px solid var(--sc,var(--primary))}
+.sim-card:hover{background:var(--bg3);transform:translateY(-1px)}
+.sim-card-name{font-size:11px;color:var(--text);line-height:1.3;margin-bottom:4px;font-weight:500}
+.sim-card-desc{font-size:10px;color:var(--text3);line-height:1.4}
+
+.footer{border-top:1px solid var(--border);padding:16px 56px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:var(--text)}
+.footer-brand em{font-style:italic;color:var(--primary)}
+.footer-note{font-family:'DM Mono',monospace;font-size:9px;color:var(--text4);letter-spacing:.08em}
+
+.scroll-top{position:fixed;bottom:18px;right:18px;width:36px;height:36px;background:var(--bg3);border:1px solid var(--border2);border-radius:50%;color:var(--text3);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:14px;transition:all var(--tr);z-index:100}
+.scroll-top:hover{background:var(--bg4);color:var(--text);border-color:var(--primary)}
+.scroll-top.visible{display:flex}
+
+@media(max-width:768px){
+  .hero{padding:36px 20px 28px}
+  .hero-corner{display:none}
+  .api-bar{padding:8px 20px}
+  .app{grid-template-columns:1fr}
+  .sidebar{position:relative;height:auto;max-height:300px;border-right:none;border-bottom:1px solid var(--border)}
+  .main{height:auto}
+  .item-hdr,.content-sec,.tags-sec,.sim-sec,.source-sec{padding:14px 20px}
+  .meta-grid{grid-template-columns:repeat(2,1fr)}
+  .all-grid{padding:16px 20px}
+  .footer{padding:16px 20px;flex-direction:column;align-items:flex-start}
+  .stat{padding:10px 14px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-corner">T</div>
+  <div class="hero-eyebrow">AI & Prompt Mühendisliği · Alet Çantası</div>
+  <h1 class="hero-title">Test<em>Vault</em> <span>Pro</span></h1>
+  <p class="hero-sub">LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için "Hata Dedektifi" senaryoları.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num"><em>34</em></div><div class="stat-label">Öğeler</div></div>
+  </div>
+</header>
+
+<div class="api-bar">
+  <span class="api-lbl">API KEY →</span>
+  <input class="api-input" id="apiInput" type="password" placeholder="sk-ant-api..." autocomplete="off">
+  <button class="api-save" onclick="saveApiKey()">KAYDET</button>
+  <div class="api-status">
+    <div class="api-dot" id="apiDot"></div>
+    <span class="api-status-lbl" id="apiLbl">Bağlı değil</span>
+  </div>
+  <a id="apiLink" href="https://console.anthropic.com" target="_blank" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.7;margin-left:auto">Anthropic key al →</a>
+</div>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="srch-wrap">
+      <div class="srch-inner">
+        <span class="srch-icon">⌕</span>
+        <input class="srch-input" id="searchInput" type="text" placeholder="Test ara..." autocomplete="off">
+      </div>
+    </div>
+    <div class="cat-sec">
+      <div class="cat-hdr">Kategoriler</div>
+      <button class="cat-btn active" data-cat="all" style="--cc:var(--primary)" onclick="filterCat('all',this)">
+        <span class="cdot"></span><span class="cname">Tümü</span><span class="ccount">34</span>
+      </button>
+    </div>
+    <div id="catBtns"></div>
+    <div class="item-list" id="itemList"></div>
+  </aside>
+
+  <main class="main" id="mainContent">
+    <div class="empty" id="emptyState">
+      <div class="glyph">◈</div>
+      <p>Sol taraftan bir öğe seç</p>
+    </div>
+    <div id="itemDetail" style="display:none"></div>
+    <div id="allGrid" style="display:none"></div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-brand">Test<em>Vault</em> <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)">Pro</span></div>
+  <div class="footer-note">TestVault Pro · AI & Prompt Mühendisliği</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ── DATA ──
+const CATS = [{"id":"Halusinasyon Tespiti","name":"Halusinasyon Tespiti","color":"#FF6347"},{"id":"Çapraz Sorgulama","name":"Çapraz Sorgulama","color":"#4682B4"},{"id":"Bilgi Doğrulama","name":"Bilgi Doğrulama","color":"#32CD32"},{"id":"Bağlam Analizi","name":"Bağlam Analizi","color":"#FFD700"},{"id":"Gerçeklik Kontrolü","name":"Gerçeklik Kontrolü","color":"#DA70D6"},{"id":"Mantık Hataları","name":"Mantık Hataları","color":"#8A2BE2"}];
+const ITEMS = [{"id":1,"no":"001","cat":"Halusinasyon Tespiti","name":"Tarihi Hata Bulma","desc":"Tarihi olaylarda yapay zeka hatalarını tespit edin.","tags":["tarih","halusinasyon","doğruluk"],"badge1":"Başlangıç","content":"## Tarihi Hata Dedektifi\n\nBu senaryo, LLM'lerin tarihi bilgilerdeki potansiyel halüsinasyonlarını tespit etmek için tasarlanmıştır. LLM'ye belirli bir tarihi olay hakkında bilgi vermesini isteyin ve ardından bu bilgiyi bilinen gerçeklerle karşılaştırın.\n\n### Adımlar:\n1. LLM'ye belirli bir tarihi olay hakkında ayrıntılı bilgi vermesini söyleyin. Örneğin: \"1789 Fransız Devrimi'nin ana nedenlerini ve sonuçlarını anlat.\"\n2. LLM'nin verdiği cevabı dikkatlice inceleyin. Özellikle tarihler, isimler, yerler ve olay sıralaması gibi kritik detaylara odaklanın.\n3. LLM'nin verdiği bilgileri güvenilir tarihi kaynaklarla (ansiklopediler, akademik makaleler, güvenilir tarih siteleri) karşılaştırın.\n4. LLM'nin hangi noktalarda gerçek dışı veya yanlış bilgi ürettiğini (halüsinasyon) belirleyin.\n5. Tespit ettiğiniz hataları ve LLM'nin neden bu hataları yapmış olabileceğine dair çıkarımlarınızı not alın.\n\n**Örnek Prompt:** \"1923'te Türkiye'nin başkentinin Ankara olmasının ardındaki süreci detaylandır.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":2,"no":"002","cat":"Halusinasyon Tespiti","name":"Bilimsel Yanlışlık Avı","desc":"Bilimsel kavramlardaki yapay zeka hatalarını belirleyin.","tags":["bilim","halusinasyon","yanlışlık"],"badge1":"Orta","content":"## Bilimsel Yanlışlık Dedektifi\n\nBu prompt, LLM'lerin bilimsel kavramları açıklarken üretebileceği yanlış bilgileri ve halüsinasyonları ortaya çıkarmayı hedefler. LLM'den karmaşık bir bilimsel konuyu açıklamasını isteyin ve ardından bu açıklamayı bilimsel doğrularla kıyaslayın.\n\n### Adımlar:\n1. LLM'ye belirli bir bilimsel prensip, teori veya olgu hakkında detaylı bir açıklama yapmasını söyleyin. Örneğin: \"Kuantum dolanıklık prensibini basit terimlerle açıkla.\"\n2. Cevapta kullanılan terimleri, formülleri (varsa) ve kavramsal açıklamaları dikkatle analiz edin.\n3. LLM'nin açıklamasının, güncel bilimsel literatür ve kabul görmüş teorilerle tutarlı olup olmadığını kontrol edin.\n4. LLM'nin bilimi yanlış yorumladığı, eksik bilgi verdiği veya tamamen uydurma bilgiler sunduğu noktaları tespit edin.\n5. Tespit edilen bilimsel halüsinasyonları ve olası nedenlerini listeleyin.\n\n**Örnek Prompt:** \"Genel görelilik teorisinin temel postülatlarını ve kanıtlarını açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":3,"no":"003","cat":"Halusinasyon Tespiti","name":"Edebi Tutarsızlık Bulma","desc":"Edebi eserlerdeki LLM hatalarını inceleyin.","tags":["edebiyat","halusinasyon","tutarsızlık"],"badge1":"Başlangıç","content":"## Edebi Tutarsızlık Dedektifi\n\nBu prompt, LLM'lerin edebi eserler hakkında bilgi verirken veya eserleri analiz ederken yapabileceği hataları ve halüsinasyonları tespit etmek için kullanılır. LLM'den bir edebi eseri özetlemesini veya karakter analizi yapmasını isteyin.\n\n### Adımlar:\n1. LLM'den bilinen bir edebi eser hakkında özet, karakter analizi veya tema yorumu yapmasını isteyin. Örneğin: \"'Sefiller' romanının ana karakteri Jean Valjean'ı analiz et.\"\n2. LLM'nin verdiği bilgilerin, eserin orijinal metniyle ve yaygın edebi eleştirilerle uyumlu olup olmadığını kontrol edin.\n3. Karakterlerin motivasyonları, olay örgüsü detayları, sembolizm veya yazarın niyeti hakkındaki iddialarda tutarsızlıkları arayın.\n4. LLM'nin eserin bağlamından kopuk veya yanlış yorumlanmış bilgiler üretip üretmediğini değerlendirin.\n5. Tespit edilen edebi halüsinasyonları ve olası açıklamalarını belgeleyin.\n\n**Örnek Prompt:** \"'Dönüşüm' novellasındaki Gregor Samsa'nın dönüşümünün sembolik anlamını açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":4,"no":"004","cat":"Halusinasyon Tespiti","name":"Coğrafi Hata Taraması","desc":"Coğrafi bilgilerdeki yapay zeka yanlışlarını bulun.","tags":["coğrafya","halusinasyon","yer"],"badge1":"Başlangıç","content":"## Coğrafi Hata Dedektifi\n\nBu prompt, LLM'lerin coğrafi yerler, özellikler veya olaylar hakkında bilgi verirken yapabileceği halüsinasyonları tespit etmek için kullanılır. LLM'den belirli bir coğrafi bölge hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir ülke, şehir, coğrafi oluşum veya bölge hakkında detaylı bilgi vermesini isteyin. Örneğin: \"Amazon yağmur ormanlarının ekosistemini ve biyoçeşitliliğini anlat.\"\n2. LLM'nin verdiği bilgileri haritalar, coğrafya atlasları ve güvenilir coğrafi kaynaklarla karşılaştırın.\n3. Yer adları, konumlar, mesafeler, iklim verileri veya coğrafi özellikler hakkındaki yanlışlıkları arayın.\n4. LLM'nin coğrafi gerçeklerle uyuşmayan, mantıksız veya hayali bilgiler üretip üretmediğini kontrol edin.\n5. Tespit edilen coğrafi halüsinasyonları ve olası nedenlerini kaydedin.\n\n**Örnek Prompt:** \"Afrika kıtasındaki en uzun nehir sistemini ve geçtiği ülkeleri listele.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":5,"no":"005","cat":"Halusinasyon Tespiti","name":"Teknik Detay Yanılgısı","desc":"Teknik konularda LLM'nin ürettiği hataları saptayın.","tags":["teknoloji","halusinasyon","mühendislik"],"badge1":"Orta","content":"## Teknik Detay Dedektifi\n\nBu prompt, LLM'lerin teknik konuları (yazılım, donanım, mühendislik vb.) açıklarken yapabileceği yanlış veya eksik bilgileri tespit etmek için tasarlanmıştır. LLM'den belirli bir teknoloji hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir teknoloji, algoritma, protokol veya cihaz hakkında açıklama yapmasını isteyin. Örneğin: \"Blockchain teknolojisinin çalışma prensibini ve kriptografik temellerini açıkla.\"\n2. LLM'nin verdiği teknik terimleri, açıklamaları ve süreçleri uzmanlık bilgisi veya teknik dokümantasyon ile doğrulayın.\n3. LLM'nin yanlış teknik terimler kullanıp kullanmadığını, süreçleri hatalı tarif edip etmediğini veya uydurma teknik detaylar ekleyip eklemediğini kontrol edin.\n4. Teknik doğruluğu olmayan veya yanıltıcı bilgileri belirleyin.\n5. Tespit edilen teknik halüsinasyonları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"RESTful API tasarım prensiplerini ve yaygın kullanım senaryolarını açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":6,"no":"006","cat":"Halusinasyon Tespiti","name":"Biyografik Hata Avı","desc":"Ünlü kişiler hakkında LLM'nin verdiği yanlış bilgileri bulun.","tags":["biyografi","halusinasyon","kişi"],"badge1":"Başlangıç","content":"## Biyografik Hata Dedektifi\n\nBu prompt, LLM'lerin tanınmış kişilerin hayatları, kariyerleri veya başarıları hakkındaki bilgileri verirken yapabileceği halüsinasyonları tespit etmeyi amaçlar. LLM'den belirli bir kişinin biyografisini istemek için kullanılır.\n\n### Adımlar:\n1. LLM'den belirli bir tarihi veya güncel ünlü kişi hakkında detaylı bir biyografi sunmasını isteyin. Örneğin: \"Marie Curie'nin hayatını, bilimsel çalışmalarını ve Nobel ödüllerini anlat.\"\n2. LLM'nin verdiği tarihleri, yerleri, isimleri, başarıları ve olayları güvenilir biyografik kaynaklarla karşılaştırın.\n3. LLM'nin hayali olaylar eklediğini, kariyerinde olmayan başarılar atfettiğini veya önemli bilgileri çarpıttığını kontrol edin.\n4. Kişinin hayatındaki gerçek dışı iddiaları veya tutarsızlıkları belirleyin.\n5. Tespit edilen biyografik halüsinasyonları ve olası nedenlerini listeleyin.\n\n**Örnek Prompt:** \"Leonardo da Vinci'nin sanat ve bilim alanındaki en önemli katkılarını özetle.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":7,"no":"007","cat":"Halusinasyon Tespiti","name":"Hukuki Kavram Yanılgısı","desc":"Hukuki terimlerdeki LLM hatalarını saptayın.","tags":["hukuk","halusinasyon","yasal"],"badge1":"İleri","content":"## Hukuki Kavram Dedektifi\n\nBu prompt, LLM'lerin hukuki terimleri, kavramları veya yasal süreçleri açıklarken üretebileceği yanlış veya yanıltıcı bilgileri tespit etmek için kullanılır. LLM'den belirli bir hukuki konu hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir hukuki kavram, yasa veya mahkeme kararı hakkında bilgi vermesini isteyin. Örneğin: \"Türk Borçlar Kanunu'ndaki zamanaşımı sürelerini genel hatlarıyla açıkla.\"\n2. LLM'nin verdiği hukuki tanımları, yasal hükümleri ve süreçleri güncel ve doğru yasal kaynaklarla karşılaştırın.\n3. LLM'nin yanlış hukuki terimler kullandığını, maddeleri hatalı yorumladığını veya geçersiz yasal bilgiler sunduğunu kontrol edin.\n4. Hukuki açıdan yanıltıcı veya uydurma içerikleri belirleyin.\n5. Tespit edilen hukuki halüsinasyonları ve olası nedenlerini analiz edin (Önemli Not: Bu sadece bilgi amaçlıdır, hukuki tavsiye yerine geçmez).\n\n**Örnek Prompt:** \"Ceza Muhakemesi Kanunu'ndaki tutuklama ve gözaltı arasındaki farkları açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":8,"no":"008","cat":"Halusinasyon Tespiti","name":"Ekonomik Veri Sahteciliği","desc":"Ekonomik verilerdeki LLM hatalarını bulun.","tags":["ekonomi","halusinasyon","vergi"],"badge1":"Orta","content":"## Ekonomik Veri Dedektifi\n\nBu prompt, LLM'lerin ekonomik veriler, istatistikler veya finansal kavramlar hakkında bilgi verirken yapabileceği halüsinasyonları tespit etmek için kullanılır. LLM'den belirli bir ekonomik gösterge hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir ekonomik gösterge (GSYH, enflasyon, işsizlik oranı vb.), finansal araç veya ekonomik politika hakkında bilgi sunmasını isteyin. Örneğin: \"Türkiye'nin son 5 yıldaki enflasyon oranlarını ve nedenlerini analiz et.\"\n2. LLM'nin verdiği sayısal verileri, tarihleri ve analizleri resmi ekonomik raporlar (TÜİK, TCMB, IMF, Dünya Bankası vb.) ile karşılaştırın.\n3. LLM'nin yanlış istatistikler sunduğunu, ekonomik ilişkileri hatalı açıkladığını veya uydurma ekonomik trendler belirttiğini kontrol edin.\n4. Ekonomik gerçeklerle tutarsız bilgileri belirleyin.\n5. Tespit edilen ekonomik halüsinasyonları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"Bitcoin'in temel arz ve talep dinamiklerini açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":9,"no":"009","cat":"Çapraz Sorgulama","name":"Zıt Görüş Sorgusu","desc":"Bir konunun farklı yönlerini sorgulayın.","tags":["çapraz","sorgu","tartışma"],"badge1":"Orta","content":"## Zıt Görüş Sorgulayıcısı\n\nBu prompt, LLM'nin belirli bir konu hakkındaki görüşlerinin ne kadar dengeli ve çeşitli olduğunu test etmek için kullanılır. LLM'den bir konuda hem olumlu hem de olumsuz argümanlar sunmasını isteyin.\n\n### Adımlar:\n1. LLM'ye tartışmalı veya çift yönlü bir konu hakkında bir tarafın argümanlarını sunmasını söyleyin. Örneğin: \"Yenilenebilir enerji kaynaklarının yaygınlaşmasının ekonomik etkileri hakkında olumlu argümanlar sun.\"\n2. Ardından, aynı konu hakkında zıt argümanları sunmasını isteyin. Örneğin: \"Şimdi de yenilenebilir enerji kaynaklarının yaygınlaşmasının ekonomik zorlukları ve olumsuz etkileri hakkında argümanlar sun.\"\n3. LLM'nin her iki tarafın argümanlarını ne kadar dengeli ve tutarlı bir şekilde sunduğunu değerlendirin.\n4. LLM'nin bir tarafı kayırdığını, argümanları zayıf sunduğunu veya bilgi boşlukları bıraktığını kontrol edin.\n5. LLM'nin farklı bakış açılarını anlama ve ifade etme yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Otonom araç teknolojisinin toplumsal faydaları ve riskleri nelerdir? Her iki tarafı da detaylandır.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":10,"no":"010","cat":"Çapraz Sorgulama","name":"Kaynak Doğrulama Sorgusu","desc":"LLM'den verdiği bilgilerin kaynağını isteyin.","tags":["çapraz","kaynak","doğrulama"],"badge1":"Başlangıç","content":"## Kaynak Doğrulama Sorgulayıcısı\n\nBu prompt, LLM'nin sunduğu bilgilerin güvenilirliğini artırmak ve olası halüsinasyonları azaltmak için, verdiği bilgilerin kaynaklarını belirtmesini istemek amacıyla kullanılır.\n\n### Adımlar:\n1. LLM'ye belirli bir konuda bilgi vermesini söyleyin ve ardından bu bilginin kaynağını belirtmesini isteyin. Örneğin: \"İklim değişikliğinin deniz seviyeleri üzerindeki etkileri hakkında bilgi ver ve bu bilgiyi hangi kaynaklardan aldığını belirt.\"\n2. LLM'nin sunduğu kaynakları (URL, kitap adı, makale başlığı vb.) kontrol edin.\n3. Kaynakların gerçek, erişilebilir ve verilen bilgiyle ilgili olup olmadığını doğrulayın.\n4. LLM'nin uydurma kaynaklar gösterdiğini veya kaynakları yanlış ilişkilendirdiğini tespit edin.\n5. LLM'nin bilgi üretirken kullandığı referans mekanizmalarının güvenilirliğini değerlendirin.\n\n**Örnek Prompt:** \"Güneş enerjisinin gelecekteki potansiyeli hakkında bir özet yaz ve kullandığın verileri destekleyen bilimsel yayınları listele.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":11,"no":"011","cat":"Çapraz Sorgulama","name":"Detay Seviyesi Sorgusu","desc":"LLM'nin detay seviyesini ayarlamasını sağlayın.","tags":["çapraz","detay","anlaşılırlık"],"badge1":"Başlangıç","content":"## Detay Seviyesi Sorgulayıcısı\n\nBu prompt, LLM'nin bir konuyu farklı detay seviyelerinde açıklama yeteneğini test eder. LLM'den aynı konuyu hem basitçe hem de teknik olarak açıklamasını isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir konuyu genel bir kitleye hitap edecek şekilde basitçe açıklamasını isteyin. Örneğin: \"Makine öğrenmesi nedir, basitçe anlat.\"\n2. Ardından, aynı konuyu daha teknik ve detaylı bir şekilde açıklamasını isteyin. Örneğin: \"Şimdi de makine öğrenmesi algoritmalarının matematiksel temellerini ve çalışma prensiplerini teknik detaylarıyla açıkla.\"\n3. LLM'nin farklı seviyelerdeki talepleri anlayıp anadığını ve uygun detay düzeyinde cevap üretebildiğini değerlendirin.\n4. Basitleştirme veya detaylandırma sırasında bilgi kaybı veya yanlışlık olup olmadığını kontrol edin.\n5. LLM'nin esnekliğini ve hedef kitleye uyum sağlama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Kuantum bilgisayarların çalışma prensibini önce 10 yaşındaki bir çocuğa anlatır gibi, sonra da bir fizik öğrencisine anlatır gibi açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":12,"no":"012","cat":"Çapraz Sorgulama","name":"Mantıksal Tutarlılık Sorgusu","desc":"LLM'nin argümanlardaki mantık hatalarını bulun.","tags":["çapraz","mantık","tutarlılık"],"badge1":"Orta","content":"## Mantıksal Tutarlılık Sorgulayıcısı\n\nBu prompt, LLM'nin sunduğu bilgilerin veya argümanların kendi içinde ne kadar mantıksal olarak tutarlı olduğunu test eder. LLM'den belirli bir önermenin mantıksal sonuçlarını çıkarmasını isteyin.\n\n### Adımlar:\n1. LLM'ye belirli bir varsayım veya önerme sunun ve bu önermeden yola çıkarak mantıksal çıkarımlar yapmasını isteyin. Örneğin: \"Eğer tüm insanlar ölümlüyse ve Sokrates bir insansa, Sokrates hakkında ne söylenebilir?\"\n2. LLM'nin yaptığı çıkarımların, sunulan önermelerle ne kadar tutarlı olduğunu değerlendirin.\n3. LLM'nin mantık hataları (çelişki, safsata, geçersiz çıkarım) yapıp yapmadığını kontrol edin.\n4. LLM'nin karmaşık mantıksal akıl yürütme yeteneğini test edin.\n5. Tespit edilen mantıksal tutarsızlıkları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"Bir toplumda suç oranları artarsa, bunun ekonomik refah üzerindeki potansiyel etkileri nelerdir? Mantıksal bir zincir oluştur.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":13,"no":"013","cat":"Çapraz Sorgulama","name":"Tarafsızlık Sorgusu","desc":"LLM'nin tarafsızlığını test edin.","tags":["çapraz","tarafsızlık","önyargı"],"badge1":"Orta","content":"## Tarafsızlık Sorgulayıcısı\n\nBu prompt, LLM'nin belirli konularda tarafsız kalma ve önyargısız bilgi sunma yeteneğini değerlendirmek için kullanılır. LLM'den hassas bir konuda dengeli bir açıklama yapmasını isteyin.\n\n### Adımlar:\n1. LLM'ye toplumsal, siyasi veya kültürel açıdan hassas bir konu hakkında bilgi vermesini söyleyin. Örneğin: \"Göçmen politikalarının ülkelere etkileri hakkında tarafsız bir analiz sun.\"\n2. LLM'nin cevabında herhangi bir tarafı kayıran, önyargılı veya genelleme yapan ifadeler olup olmadığını dikkatle inceleyin.\n3. LLM'nin farklı bakış açılarını adil bir şekilde sunduğunu, stereotiplerden kaçındığını ve duyarlı bir dil kullandığını kontrol edin.\n4. Cevaptaki olası gizli önyargıları veya tek taraflı yaklaşımları tespit edin.\n5. LLM'nin tarafsızlık ve etik ilkelerine ne kadar uyduğunu değerlendirin.\n\n**Örnek Prompt:** \"Geleneksel tıp ve modern tıbbın birbirine karşı konumlarını tarafsız bir şekilde açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":14,"no":"014","cat":"Çapraz Sorgulama","name":"Bilgi Güncelliği Sorgusu","desc":"LLM'nin bilgisinin güncelliğini kontrol edin.","tags":["çapraz","güncel","bilgi"],"badge1":"Başlangıç","content":"## Bilgi Güncelliği Sorgulayıcısı\n\nBu prompt, LLM'nin sahip olduğu bilginin ne kadar güncel olduğunu test etmek için kullanılır. LLM'den yakın zamanda meydana gelmiş bir olay veya gelişme hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'ye son birkaç ay veya yıl içinde gerçekleşmiş önemli bir olay veya teknolojik gelişme hakkında bilgi vermesini söyleyin. Örneğin: \"Son dönemdeki yapay zeka gelişmeleri hakkında güncel bir özet sun.\"\n2. LLM'nin verdiği bilgilerin tarihini ve doğruluğunu güncel haber kaynakları ve güvenilir veri tabanları ile karşılaştırın.\n3. LLM'nin eski veya eksik bilgi verip vermediğini, güncel gelişmeleri kaçırıp kaçırmadığını kontrol edin.\n4. Bilginin kesme tarihini (cut-off date) aşan güncel olaylar hakkındaki performansını değerlendirin.\n5. LLM'nin bilgi güncelleme mekanizmalarının etkinliğini analiz edin.\n\n**Örnek Prompt:** \"Son bir yılda uzay keşifleri alanında meydana gelen önemli gelişmeleri listele.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":15,"no":"015","cat":"Bilgi Doğrulama","name":"Fakt Çek Sorgusu","desc":"LLM'den belirli bir olgunun doğruluğunu teyit etmesini isteyin.","tags":["doğrulama","fakt","teyit"],"badge1":"Başlangıç","content":"## Fakt Kontrol Dedektifi\n\nBu prompt, LLM'nin belirli bir iddia veya bilginin doğruluğunu teyit etme yeteneğini test etmek için kullanılır. LLM'den bir ifadenin doğru olup olmadığını belirtmesini isteyin.\n\n### Adımlar:\n1. LLM'ye doğruluğu şüpheli veya tartışmalı bir ifade sunun. Örneğin: \"İnsanların Ay'a ilk ayak bastığı tarih 20 Temmuz 1969'dur. Bu bilgi doğru mu?\"\n2. LLM'nin verdiği cevabı (evet/hayır ve açıklama) güvenilir kaynaklarla karşılaştırın.\n3. LLM'nin sadece doğru olup olmadığını değil, aynı zamanda neden doğru veya yanlış olduğunu açıklama yeteneğini de değerlendirin.\n4. LLM'nin yanlış bilgileri doğru gibi sunup sunmadığını veya doğru bilgileri yanlış olarak etiketleyip etiketlemediğini kontrol edin.\n5. LLM'nin güvenilir bilgi kaynaklarına erişimini ve bu bilgileri doğru yorumlama becerisini analiz edin.\n\n**Örnek Prompt:** \"Su, 100 santigrat derecede kaynar. Bu ifade doğru mu? Açıklama yap.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":16,"no":"016","cat":"Bilgi Doğrulama","name":"Çıkarım Doğrulama","desc":"LLM'nin yaptığı çıkarımların geçerliliğini sorgulayın.","tags":["doğrulama","çıkarım","mantık"],"badge1":"Orta","content":"## Çıkarım Doğrulama Dedektifi\n\nBu prompt, LLM'nin verilen bilgilerden yola çıkarak yaptığı çıkarımların mantıksal olarak geçerli olup olmadığını test eder. LLM'den bir senaryo vererek sonuç çıkarmasını isteyin.\n\n### Adımlar:\n1. LLM'ye bir dizi öncül veya gözlem sunun ve bunlardan bir çıkarım yapmasını isteyin. Örneğin: \"Bir bölgede son 3 aydır düzenli ve yoğun yağış oluyor. Bu durumun o bölgedeki tarım ürünleri üzerindeki olası etkileri nelerdir?\"\n2. LLM'nin yaptığı çıkarımın, sunulan öncüllerle ne kadar tutarlı ve mantıklı olduğunu değerlendirin.\n3. LLM'nin aşırı genelleme yapıp yapmadığını, ilgisiz sonuçlara ulaşıp ulaşmadığını veya mantık dışı bağlantılar kurup kurmadığını kontrol edin.\n4. Çıkarımın, kanıtlara dayalı ve makul olup olmadığını analiz edin.\n5. LLM'nin akıl yürütme sürecindeki potansiyel zayıflıkları belirleyin.\n\n**Örnek Prompt:** \"Bir şirketin çeyrek dönem karı geçen yıla göre %50 azaldı ve aynı dönemde Ar-Ge harcamaları %20 arttı. Bu durumdan şirketin gelecekteki büyüme potansiyeli hakkında ne çıkarılabilir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":17,"no":"017","cat":"Bilgi Doğrulama","name":"Karşılaştırmalı Doğrulama","desc":"LLM'nin farklı kaynaklardaki bilgileri karşılaştırmasını isteyin.","tags":["doğrulama","karşılaştırma","kaynak"],"badge1":"Orta","content":"## Karşılaştırmalı Doğrulama Dedektifi\n\nBu prompt, LLM'nin farklı kaynaklardan gelen bilgileri sentezleme ve karşılaştırma yeteneğini test eder. LLM'den aynı konu hakkında farklı görüşleri özetlemesini isteyin.\n\n### Adımlar:\n1. LLM'ye tartışmalı veya birden fazla görüşü olan bir konu hakkında iki farklı bakış açısı veya kaynak sunun. Örneğin: \"Aşağıdaki iki makaleden (varsayımsal olarak sunulur) iklim değişikliğinin nedenleri hakkındaki temel argümanları karşılaştır.\"\n2. LLM'den her iki kaynağın ana argümanlarını, kanıtlarını ve sonuçlarını özetlemesini isteyin.\n3. LLM'nin bilgileri doğru bir şekilde ayrıştırdığını, karşılaştırdığını ve tutarlı bir özet sunduğunu değerlendirin.\n4. LLM'nin kaynaklardaki çelişkileri veya farklılıkları doğru bir şekilde tespit edip etmediğini kontrol edin.\n5. LLM'nin bilgiyi sentezleme ve sunma becerisini analiz edin.\n\n**Örnek Prompt:** \"Eğitimde teknoloji kullanımının faydaları ve zararları hakkındaki farklı görüşleri içeren iki metni (varsayımsal) karşılaştırarak bir sentez yap.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":18,"no":"018","cat":"Bilgi Doğrulama","name":"İstatistiksel Veri Doğrulama","desc":"LLM'nin sunduğu istatistiklerin doğruluğunu kontrol edin.","tags":["doğrulama","istatistik","veri"],"badge1":"Orta","content":"## İstatistiksel Veri Doğrulama Dedektifi\n\nBu prompt, LLM'nin istatistiksel verilerle ilgili verdiği bilgilerin doğruluğunu ve bağlamını test eder. LLM'den belirli bir istatistik hakkında bilgi vermesini ve kaynağını belirtmesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir istatistiksel veri (örneğin, bir ülkenin işsizlik oranı, bir hastalığın yaygınlığı) hakkında bilgi sunmasını isteyin. Örneğin: \"Türkiye'de genç işsizlik oranı nedir ve bu oran hangi dönem için geçerlidir?\"\n2. LLM'nin verdiği sayısal veriyi, yüzdelik dilimi veya oranı, güvenilir ve güncel istatistik kurumlarının (TÜİK, Eurostat, OECD vb.) verileriyle karşılaştırın.\n3. LLM'nin veriyi doğru bağlamda kullanıp kullanmadığını, yanıltıcı sunumlar yapıp yapmadığını kontrol edin.\n4. Verinin kaynağını ve toplama yöntemini sorgulayarak olası yanlılıkları tespit edin.\n5. LLM'nin istatistiksel bilgileri doğru ve güvenilir bir şekilde sunma yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Küresel ısınma nedeniyle ortalama deniz seviyesindeki artış miktarı nedir ve bu veri hangi raporlardan alınmıştır?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":19,"no":"019","cat":"Bilgi Doğrulama","name":"Tarihsel Olay Doğrulama","desc":"LLM'nin tarihsel olaylar hakkındaki bilgilerini teyit edin.","tags":["doğrulama","tarih","olay"],"badge1":"Başlangıç","content":"## Tarihsel Olay Doğrulama Dedektifi\n\nBu prompt, LLM'nin tarihsel olaylar hakkındaki bilgilerinin doğruluğunu ve detaylarını test etmek için kullanılır. LLM'den belirli bir tarihi olay hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'ye belirli bir tarihi olay (savaş, antlaşma, keşif, devrim vb.) hakkında detaylı bilgi vermesini söyleyin. Örneğin: \"Yavuz Sultan Selim'in Çaldıran Seferi'nin nedenlerini ve sonuçlarını anlat.\"\n2. LLM'nin verdiği tarihleri, yerleri, katılımcıları, nedenleri ve sonuçları güvenilir tarih kitapları ve akademik kaynaklarla karşılaştırın.\n3. LLM'nin olayları yanlış sıralamadığını, önemli detayları atlamadığını veya uydurma bilgiler eklemediğini kontrol edin.\n4. Tarihsel olayların yorumlanmasındaki olası yanlılıkları veya eksiklikleri tespit edin.\n5. LLM'nin tarihsel bilgileri doğru ve güvenilir bir şekilde aktarma yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Sanayi Devrimi'nin başlangıç yeri ve temel teknolojik yenilikleri nelerdir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":20,"no":"020","cat":"Bilgi Doğrulama","name":"Kavramsal Doğrulama","desc":"LLM'nin soyut kavramları doğru açıklayıp açıklamadığını kontrol edin.","tags":["doğrulama","kavram","felsefe"],"badge1":"Orta","content":"## Kavramsal Doğrulama Dedektifi\n\nBu prompt, LLM'nin felsefi, teorik veya soyut kavramları doğru ve tutarlı bir şekilde açıklama yeteneğini test eder. LLM'den belirli bir soyut kavramı tanımlamasını isteyin.\n\n### Adımlar:\n1. LLM'den karmaşık veya soyut bir kavramı (örneğin, özgür irade, adalet, bilinç) tanımlamasını ve açıklamasını isteyin. Örneğin: \"Felsefede 'varoluşçuluk' akımının temel prensiplerini açıkla.\"\n2. LLM'nin verdiği tanımın, kavramın kabul görmüş teorik çerçevelerle ve felsefi literatürle tutarlı olup olmadığını değerlendirin.\n3. LLM'nin kavramı basitleştirirken anlamını yitirip yitirmediğini veya yanlış yorumlayıp yorumlamadığını kontrol edin.\n4. Kavramla ilgili farklı felsefi yaklaşımları veya eleştirileri ne kadar dikkate aldığını analiz edin.\n5. LLM'nin soyut düşünme ve karmaşık fikirleri ifade etme yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"'Özgür İrade' kavramının felsefi tartışmalardaki yerini ve farklı görüşleri özetle.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":21,"no":"021","cat":"Bağlam Analizi","name":"Soru Bağlamı Sapması","desc":"LLM'nin sorunun bağlamından kopmasını test edin.","tags":["bağlam","anlama","sapma"],"badge1":"Başlangıç","content":"## Bağlam Sapması Dedektifi\n\nBu prompt, LLM'nin verilen bir konuşma veya metin bağlamında kalma yeteneğini test eder. LLM'ye bağlamdan kopmasına neden olabilecek yanıltıcı sorular sorun.\n\n### Adımlar:\n1. LLM ile belirli bir konu hakkında konuşmaya başlayın ve tutarlı bir bağlam oluşturun. Örneğin: \"Bugün hava durumu hakkında konuşalım. İstanbul'da yarın hava nasıl olacak?\"\n2. Ardından, konudan tamamen farklı veya alakasız bir soru sorun. Örneğin: \"Peki ya Ay'daki kraterler hakkında ne biliyorsun?\"\n3. LLM'nin önceki bağlamı ne kadar süreyle hatırladığını ve yeni soruya nasıl tepki verdiğini gözlemleyin.\n4. LLM'nin konudan sapıp sapmadığını, önceki konuşmayı unutup unutmadığını veya mantıksız bir geçiş yapıp yapmadığını kontrol edin.\n5. LLM'nin uzun konuşmalarda bağlamı koruma yeteneğini değerlendirin.\n\n**Örnek Prompt:** (Konuşma başlar) \"Yapay zekanın geleceği hakkında ne düşünüyorsun?\" (Bağlamı bozma denemesi) \"Bu arada, en sevdiğin yemek ne?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":22,"no":"022","cat":"Bağlam Analizi","name":"İma ve Nüans Anlama","desc":"LLM'nin ima edilen anlamları kavrayıp kavramadığını test edin.","tags":["bağlam","ima","nüans"],"badge1":"Orta","content":"## İma ve Nüans Analisti\n\nBu prompt, LLM'nin metinlerdeki açıkça belirtilmeyen ancak ima edilen anlamları, nüansları ve alt metni anlama yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye ince bir ironi, kinaye veya ima içeren bir metin veya diyalog sunun. Örneğin: \"Ali, Ayşe'ye \"Harika bir fikir! Bunu kesinlikle yapmalısın.\" dedi, ama gözlerini deviriyordu.\"\n2. LLM'den bu ifadenin gerçek anlamını veya Ali'nin niyetini yorumlamasını isteyin.\n3. LLM'nin imayı doğru anlayıp anlamadığını, sadece kelime anlamlarına takılıp kalmadığını değerlendirin.\n4. Cevapta nüansları ve duygusal tonu ne kadar iyi yakaladığını kontrol edin.\n5. LLM'nin insan iletişimindeki incelikleri anlama seviyesini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Sunum harikaydı, özellikle slaytların ne kadar az yazı içerdiği beni çok etkiledi.' Bu yorumun samimi olup olmadığını değerlendir.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":23,"no":"023","cat":"Bağlam Analizi","name":"Rol Oyunu Bağlamı","desc":"LLM'nin farklı rollerdeki bağlamı korumasını test edin.","tags":["bağlam","rol","oyun"],"badge1":"Orta","content":"## Rol Oyunu Bağlam Koruyucusu\n\nBu prompt, LLM'nin belirli bir rolü (örneğin, bir tarihçi, bir doktor, bir avukat) üstlendiğinde, o role uygun dil, bilgi ve perspektifi kullanma ve koruma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'den belirli bir rolü üstlenmesini isteyin. Örneğin: \"Sen bir tarihçisin ve 1. Dünya Savaşı'nın nedenlerini açıklayacaksın.\"\n2. Ardından, aynı senaryoda farklı bir rol üstlenmesini isteyin. Örneğin: \"Şimdi de bir asker olarak Çanakkale Cephesi'ndeki deneyimlerini anlat.\"\n3. LLM'nin her iki roldeki dil kullanımını, bilgi derinliğini ve bakış açısını değerlendirin.\n4. LLM'nin rolün gerektirdiği bağlamdan sapıp sapmadığını veya rolleri karıştırdığını kontrol edin.\n5. LLM'nin rol yapma ve bağlamı koruma esnekliğini analiz edin.\n\n**Örnek Prompt:** \"Bir müşteri hizmetleri temsilcisi olarak, şikayetçi bir müşteriye nasıl yanıt verirsin?\" (Ardından) \"Şimdi de o müşterinin avukatı rolünü üstlen ve durumu değerlendir.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":24,"no":"024","cat":"Bağlam Analizi","name":"Çoklu Konu Yönetimi","desc":"LLM'nin birden fazla konuyu aynı anda yönetmesini test edin.","tags":["bağlam","çoklu","yönetim"],"badge1":"İleri","content":"## Çoklu Konu Yönetimi Dedektifi\n\nBu prompt, LLM'nin aynı anda birden fazla konu veya talep içeren karmaşık bir girdiyi anlama ve yönetme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye tek bir istekte birden fazla görev veya soru içeren bir prompt verin. Örneğin: \"Bana Türkiye'nin coğrafyasını özetle, ardından Osmanlı İmparatorluğu'nun en parlak dönemini anlat ve son olarak güncel ekonomik gelişmeler hakkında kısa bir bilgi ver.\"\n2. LLM'nin her bir görevi ne kadar doğru anladığını ve yerine getirdiğini değerlendirin.\n3. LLM'nin görevler arasında mantıksal bir geçiş yapıp yapmadığını veya bir görevi diğerine karıştırıp karıştırmadığını kontrol edin.\n4. Her bir göreve ayrılan cevapların kalitesini ve doğruluğunu ayrı ayrı inceleyin.\n5. LLM'nin karmaşık ve çok yönlü talimatları işleme kapasitesini analiz edin.\n\n**Örnek Prompt:** \"Paris'in tarihi hakkında bilgi ver, ardından Eyfel Kulesi'nin inşaat sürecini açıkla ve son olarak Louvre Müzesi'ndeki en önemli eserlerden bahset.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":25,"no":"025","cat":"Bağlam Analizi","name":"Duygusal Ton Analizi","desc":"LLM'nin metnin duygusal tonunu anlamasını test edin.","tags":["bağlam","duygu","ton"],"badge1":"Orta","content":"## Duygusal Ton Analisti\n\nBu prompt, LLM'nin bir metnin veya ifadenin içerdiği duygusal tonu (mutlu, üzgün, kızgın, şaşkın vb.) doğru bir şekilde tanımlama ve analiz etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye farklı duygusal tonlarda yazılmış kısa metinler veya ifadeler sunun. Örneğin: \"Metin: 'Bugün işe giderken en sevdiğim kahve dükkanının önünden geçtim ve içeriden gelen mis gibi kokuyu içime çektim. Güne harika başladım!'\"\n2. LLM'den bu metnin duygusal tonunu belirlemesini isteyin.\n3. LLM'nin metindeki kelime seçimini, ifadeleri ve genel atmosferi dikkate alarak doğru duyguyu tespit edip etmediğini değerlendirin.\n4. Farklı duygusal tonları (ironi, alay, coşku, hayal kırıklığı) ayırt etme becerisini kontrol edin.\n5. LLM'nin metinlerdeki duygusal bağlamı anlama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Sınavdan yine beklediğimden düşük bir not aldım. Bütün gece çalışmıştım, bu gerçekten hayal kırıklığı.' Bu metnin duygusal tonu nedir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":26,"no":"026","cat":"Gerçeklik Kontrolü","name":"Fiziksel Olasılık Testi","desc":"LLM'nin fizik kurallarına aykırı senaryoları tespit etmesini sağlayın.","tags":["gerçeklik","fizik","olasılık"],"badge1":"Orta","content":"## Fiziksel Olasılık Test Dedektifi\n\nBu prompt, LLM'nin fiziksel dünyanın temel kurallarına aykırı olan senaryoları veya iddiaları fark etme ve reddetme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye fiziksel olarak imkansız veya son derece düşük olasılıklı bir senaryo sunun. Örneğin: \"Bir kişi yerçekimine karşı koyarak havada süzülmeye başladı ve Ay'a doğru yola çıktı.\"\n2. LLM'den bu senaryonun gerçekçi olup olmadığını değerlendirmesini isteyin ve nedenini açıklamasını talep edin.\n3. LLM'nin fizik yasalarını (yerçekimi, hız, kütle vb.) referans alarak senaryoyu mantıksal olarak çürütüp çürütmediğini kontrol edin.\n4. LLM'nin bariz fiziksel tutarsızlıkları tespit etme becerisini değerlendirin.\n5. LLM'nin gerçek dünya kısıtlamalarını anlama düzeyini analiz edin.\n\n**Örnek Prompt:** \"Araba anahtarımı bir bardağın içine attım, ancak anahtar bardağın içinde değil, masanın üzerinde duruyor. Bu nasıl mümkün olabilir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":27,"no":"027","cat":"Gerçeklik Kontrolü","name":"Yaygın Bilgi Yanlışları","desc":"LLM'nin popüler yanlış bilgileri düzeltmesini sağlayın.","tags":["gerçeklik","yanlış bilgi","mit"],"badge1":"Başlangıç","content":"## Yaygın Yanlış Bilgi Dedektifi\n\nBu prompt, LLM'nin toplumda yaygın olarak kabul gören ancak yanlış olan bilgileri (şehir efsaneleri, mitler) tespit etme ve düzeltme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye yaygın bir şehir efsanesi veya mit hakkında bir iddia sunun. Örneğin: \"Büyük Çin Seddi uzaydan çıplak gözle görülebilen tek insan yapımı yapıdır.\"\n2. LLM'den bu iddianın doğruluğunu araştırmasını ve doğru bilgiyi sunmasını isteyin.\n3. LLM'nin iddianın neden yanlış olduğunu açıklarken güvenilir kaynaklara atıfta bulunup bulunmadığını kontrol edin.\n4. LLM'nin popüler ama yanlış bilgilere karşı ne kadar dirençli olduğunu değerlendirin.\n5. LLM'nin mitleri gerçeklerden ayırma becerisini analiz edin.\n\n**Örnek Prompt:** \"İnsan beyninin sadece %10'unu kullanırız. Bu doğru mu? Açıkla.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":28,"no":"028","cat":"Gerçeklik Kontrolü","name":"Mantıksal Tutarsızlık Kontrolü","desc":"LLM'nin kendi içinde çelişkili ifadeleri bulmasını sağlayın.","tags":["gerçeklik","mantık","tutarsızlık"],"badge1":"Orta","content":"## Mantıksal Tutarsızlık Dedektifi\n\nBu prompt, LLM'nin bir metin veya argüman içindeki mantıksal çelişkileri ve tutarsızlıkları tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye kendi içinde çelişkili ifadeler içeren bir metin sunun. Örneğin: \"Tüm kurallar esnektir. Bu kural bir istisnadır ve esnek değildir.\"\n2. LLM'den metindeki çelişkiyi bulmasını ve açıklamasını isteyin.\n3. LLM'nin çelişkiyi doğru bir şekilde tanımlayıp tanımlamadığını ve neden bir tutarsızlık olduğunu mantıksal olarak açıklayıp açıklamadığını değerlendirin.\n4. LLM'nin soyut mantık yürütme ve çelişkileri fark etme becerisini test edin.\n5. LLM'nin dilin inceliklerindeki mantıksal hataları yakalama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Hiçbir zaman genelleme yapmam. Her zaman her şey durumdan duruma değişir.' Bu metinde bir çelişki var mı? Varsa nedir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":29,"no":"029","cat":"Gerçeklik Kontrolü","name":"Nedensellik Yanılgısı Tespiti","desc":"LLM'nin sebep-sonuç ilişkilerindeki hataları bulmasını sağlayın.","tags":["gerçeklik","nedensellik","sebep"],"badge1":"Orta","content":"## Nedensellik Yanılgısı Dedektifi\n\nBu prompt, LLM'nin olaylar arasındaki sebep-sonuç ilişkilerini doğru kurup kurmadığını veya sahte nedensellikler (correlation vs. causation) tespit edip etmediğini test eder.\n\n### Adımlar:\n1. LLM'ye iki olay arasında gerçekte sebep-sonuç ilişkisi olmayan ancak birlikte görülen bir durum sunun. Örneğin: \"Dondurma satışları arttığında, boğulma vakaları da artar. Bu durum, dondurma yemenin boğulmaya neden olduğunu mu gösterir?\"\n2. LLM'den bu iki olay arasındaki ilişkiyi analiz etmesini ve gerçek bir nedensellik olup olmadığını değerlendirmesini isteyin.\n3. LLM'nin sadece korelasyonu tespit etmekle kalmayıp, aynı zamanda farklı olası nedenleri (örneğin, hava sıcaklığı) göz önünde bulundurup bulundurmadığını kontrol edin.\n4. LLM'nin sahte nedensellik yanılgılarını (post hoc ergo propter hoc, cum hoc ergo propter hoc) fark etme yeteneğini test edin.\n5. LLM'nin akıl yürütme sürecindeki mantıksal sağlamlığını analiz edin.\n\n**Örnek Prompt:** \"Şehirlerde bisiklet kullanımının artmasıyla birlikte, belirli suç türlerinde de artış gözlemlenmiştir. Bu iki durum arasında doğrudan bir neden-sonuç ilişkisi var mıdır?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":30,"no":"030","cat":"Gerçeklik Kontrolü","name":"Görsel Algı Yanılgısı","desc":"LLM'nin görsel yanılsamaları veya yanlış yorumlamaları test edin (metin tabanlı).","tags":["gerçeklik","görsel","yanılsama"],"badge1":"İleri","content":"## Görsel Algı Yanılgısı Dedektifi (Metin Tabanlı)\n\nBu prompt, LLM'nin görsel yanılsamaları veya metinle tarif edilen bir sahnenin yanlış yorumlanmasını tespit etme yeteneğini test eder. LLM'ye yanıltıcı bir görsel tarif verilir.\n\n### Adımlar:\n1. LLM'ye yaygın bir görsel yanılsamayı tarif eden bir metin sunun. Örneğin: \"İki paralel çizgiyi ele alalım. Birinin üzerine içe dönük oklar, diğerinin üzerine dışa dönük oklar çizildiğinde, dışa dönük okları olan çizgi daha kısa görünür. Bu durum görsel algıdaki hangi yanılgıyı örneklendirir?\"\n2. LLM'den bu tarifin hangi görsel yanılgıyı temsil ettiğini tanımlamasını isteyin.\n3. LLM'nin tarif edilen görseldeki ipuçlarını doğru yorumlayıp yorumlamadığını ve yanılgının adını doğru bilip bilmediğini değerlendirin.\n4. LLM'nin, metinle sınırlı olmasına rağmen, görsel ipuçlarından yola çıkarak mantıksal çıkarımlar yapma yeteneğini test edin.\n5. LLM'nin soyut görsel fenomenleri anlama kapasitesini analiz edin.\n\n**Örnek Prompt:** \"Bir odada iki kişi var. Biri diğerinden daha uzun görünüyor. Ancak odanın zemini eğimli ve ışıklandırma yanıltıcı. Bu durum, algısal olarak ne tür bir etki yaratabilir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":31,"no":"031","cat":"Mantık Hataları","name":"Safsata Tespiti","desc":"LLM'nin argümanlardaki mantık hatalarını bulmasını sağlayın.","tags":["mantık","safsata","argüman"],"badge1":"Orta","content":"## Safsata Avcısı\n\nBu prompt, LLM'nin sunulan argümanlardaki yaygın mantık hatalarını (safsataları) tespit etme ve adlandırma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye içinde bir veya daha fazla mantık hatası bulunan bir argüman sunun. Örneğin: \"Bu filmi beğenmeyen herkesin sanattan anlamadığı açıktır.\"\n2. LLM'den argümandaki mantık hatasını belirlemesini ve adlandırmasını isteyin (örneğin, Ad Hominem, Aceleci Genelleme, Saptırma vb.).\n3. LLM'nin safsatayı doğru bir şekilde tespit edip etmediğini ve uygun terimi kullanıp kullanmadığını değerlendirin.\n4. LLM'nin argümanın yapısını analiz ederek mantık hatasını bulma becerisini test edin.\n5. LLM'nin eleştirel düşünme ve argümantasyon analizi yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Argüman: 'X yasası kabul edilirse, yakında toplum tamamen kaosa sürüklenecektir. Bu nedenle X yasası kabul edilmemelidir.' Buradaki mantık hatası nedir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":32,"no":"032","cat":"Mantık Hataları","name":"Çelişki Çözme","desc":"LLM'nin çelişkili ifadeler arasındaki uyumu bulmasını sağlayın.","tags":["mantık","çelişki","çözüm"],"badge1":"İleri","content":"## Çelişki Çözücü\n\nBu prompt, LLM'nin görünüşte çelişkili iki ifade veya durum arasındaki potansiyel uyumu veya durumu açıklığa kavuşturma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye birbiriyle çelişiyor gibi görünen iki ifade veya durum sunun. Örneğin: \"Bir yandan, şirket verimliliği artırmak için işten çıkarmalar yapıyor. Diğer yandan, aynı zamanda yeni pozisyonlar için işe alım ilanları yayınlıyor.\"\n2. LLM'den bu iki durumun nasıl aynı anda mümkün olabileceğini veya bu çelişkinin nasıl açıklanabileceğini araştırmasını isteyin.\n3. LLM'nin olası açıklamaları (örneğin, farklı departmanlar, yeniden yapılanma, stratejik hamleler) mantıksal olarak sunup sunmadığını değerlendirin.\n4. LLM'nin karmaşık durumları analiz etme ve görünürdeki çelişkileri çözme yeteneğini test edin.\n5. LLM'nin bağlamı anlama ve farklı olasılıkları değerlendirme becerisini analiz edin.\n\n**Örnek Prompt:** \"Bir kişi hem sağlıklı beslendiğini hem de her gün paket servis fast-food sipariş ettiğini söylüyor. Bu iki ifadeyi nasıl uzlaştırabiliriz?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":33,"no":"033","cat":"Mantık Hataları","name":"Gereksiz Karmaşıklık Tespiti","desc":"LLM'nin aşırı karmaşık veya gereksiz yere teknik açıklamaları bulmasını sağlayın.","tags":["mantık","karmaşıklık","açıklama"],"badge1":"Orta","content":"## Gereksiz Karmaşıklık Dedektifi\n\nBu prompt, LLM'nin bir konuyu açıklarken gereksiz yere karmaşık terimler veya dolaylı yollar kullanıp kullanmadığını tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'den belirli bir basit konuyu açıklamasını isteyin, ancak cevabında kasıtlı olarak aşırı teknik veya karmaşık bir dil kullanın. Örneğin: \"Basit bir çay demleme işlemini, kuantum alan teorisi terimleriyle açıkla.\"\n2. LLM'den bu karmaşık açıklamanın gerçekten gerekli olup olmadığını veya daha basit bir şekilde ifade edilip edilemeyeceğini değerlendirmesini isteyin.\n3. LLM'nin, açıklamanın aşırı karmaşık olduğunu fark edip etmediğini ve daha anlaşılır bir alternatif sunup sunmadığını kontrol edin.\n4. LLM'nin Occam'ın Usturası prensibi gibi sadelik ilkelerine ne kadar bağlı olduğunu analiz edin.\n5. LLM'nin dilin etkin kullanımı ve anlaşılırlık konusundaki farkındalığını değerlendirin.\n\n**Örnek Prompt:** \"Birine saatin kaç olduğunu söylemek için, \"Yerel referans sisteminizdeki standart zaman diliminde, güneşin belirli bir meridyeni geçişine göre ayarlanmış, atomik saatlerin senkronizasyonu ile belirlenen anlık zamanı ifade eden sayısal değeri nedir?\" gibi bir cümle kur.\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":34,"no":"034","cat":"Mantık Hataları","name":"Yanlış İkilem Tuzağı","desc":"LLM'nin sadece iki seçenek sunan hatalı argümanları bulmasını sağlayın.","tags":["mantık","ikilem","tuzak"],"badge1":"Orta","content":"## Yanlış İkilem Avcısı\n\nBu prompt, LLM'nin yalnızca iki seçenek sunarak durumu basitleştiren veya çarpıtan yanlış ikilem (false dilemma) argümanlarını tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye içinde yanlış bir ikilem bulunan bir argüman sunun. Örneğin: \"Ya ülkemizin politikalarını tamamen desteklemelisin ya da vatan hainisin.\"\n2. LLM'den bu argümandaki mantık hatasını belirlemesini ve neden yanlış bir ikilem olduğunu açıklamasını isteyin.\n3. LLM'nin, sunulan iki seçeneğin dışında başka olasılıkların veya orta yolların olabileceğini fark edip etmediğini değerlendirin.\n4. LLM'nin argümanın geçerliliğini sorgulama ve alternatifleri düşünme yeteneğini test edin.\n5. LLM'nin baskıcı veya manipülatif argümantasyon biçimlerini tanıma becerisini analiz edin.\n\n**Örnek Prompt:** \"Argüman: 'Ya bu projeye yatırım yaparsınız ve zengin olursunuz, ya da yapmazsınız ve fakir kalırsınız.' Bu argümandaki mantık hatası nedir?\"","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}}];
+
+// ── STATE ──
+let activeItem = null;
+let activeCat = 'all';
+let API_KEY = '';
+const STORAGE_KEY = 'testvault_pro_api_key';
+
+// ── API ──
+function saveApiKey(){
+  const val = document.getElementById('apiInput').value.trim();
+  if(!val) return;
+  API_KEY = val;
+  localStorage.setItem(STORAGE_KEY, val);
+  updateApiStatus();
+}
+function updateApiStatus(){
+  const dot = document.getElementById('apiDot');
+  const lbl = document.getElementById('apiLbl');
+  const inp = document.getElementById('apiInput');
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if(saved){
+    API_KEY = saved; inp.value = saved;
+    dot.classList.add('ok'); lbl.classList.add('ok');
+    lbl.textContent = 'API key aktif';
+  } else {
+    inp.value = '';
+    dot.classList.remove('ok'); lbl.classList.remove('ok');
+    lbl.textContent = 'Bağlı değil';
+  }
+}
+
+// ── INIT ──
+function init(){
+  updateApiStatus();
+  buildCatButtons();
+  buildItemList(ITEMS);
+  document.getElementById('searchInput').addEventListener('input', e=>onSearch(e.target.value));
+  document.getElementById('mainContent').addEventListener('scroll', e=>{
+    document.getElementById('scrollTop').classList.toggle('visible', e.target.scrollTop > 300);
+  });
+}
+
+// ── CATEGORIES ──
+function buildCatButtons(){
+  const el = document.getElementById('catBtns');
+  const cats = Array.isArray(CATS) ? CATS : Object.keys(CATS).sort().map(k=>({id:k,name:k,color:(CATS[k].c||CATS[k].color||'var(--primary)'),count:(CATS[k].n||CATS[k].count||0)}));
+  el.innerHTML = cats.map(cat=>`
+    <button class="cat-btn" data-cat="${esc(cat.id||cat.name)}" style="--cc:${cat.color||cat.c||'var(--primary)'}" onclick="filterCat('${esc(cat.id||cat.name)}',this)">
+      <span class="cdot"></span><span class="cname">${esc(cat.name)}</span><span class="ccount">${cat.count||cat.n||''}</span>
+    </button>`).join('');
+}
+
+function catColor(cat){
+  if(Array.isArray(CATS)){
+    const found = CATS.find(c=>c.id===cat||c.name===cat);
+    return found ? (found.color||found.c||'var(--primary)') : 'var(--primary)';
+  }
+  return (CATS[cat]||{}).c || (CATS[cat]||{}).color || 'var(--primary)';
+}
+
+// ── ITEM LIST ──
+function buildItemList(items){
+  const el = document.getElementById('itemList');
+  if(!items.length){ el.innerHTML='<div style="padding:20px;text-align:center;font-family:DM Mono,monospace;font-size:10px;color:var(--text4)">Sonuç bulunamadı</div>'; return; }
+  el.innerHTML = items.map((s,i)=>{
+    const cc = s.cc || catColor(s.cat);
+    const no = s.no || String(i+1).padStart(3,'0');
+    return `<div class="item-row" id="item-${s.id}" data-id="${s.id}" style="--sc:${cc}" onclick="selectItem(${s.id})">
+      <span class="item-no">${no}</span>
+      <span class="item-dot"></span>
+      <div class="item-info">
+        <div class="item-name">${esc(s.name)}</div>
+        <div class="item-desc">${esc(s.desc||'')}</div>
+      </div>
+      ${s.badge1?`<span class="item-badge">${esc(s.badge1)}</span>`:''}
+    </div>`;
+  }).join('');
+}
+
+// ── FILTER ──
+function filterCat(cat, btn){
+  activeCat = cat;
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  let filtered = cat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===cat);
+  if(q) filtered = filtered.filter(s=>searchMatch(s, q));
+  buildItemList(filtered);
+  showGrid(filtered, cat==='all' ? 'Tüm Öğeler' : cat);
+}
+
+function onSearch(q){
+  const lower = q.toLowerCase();
+  let filtered = activeCat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===activeCat);
+  if(lower) filtered = filtered.filter(s=>searchMatch(s, lower));
+  buildItemList(filtered);
+  showGrid(filtered, q ? `"${q}" — ${filtered.length} sonuç` : 'Tüm Öğeler');
+}
+
+function searchMatch(s, q){
+  return (s.name||'').toLowerCase().includes(q) ||
+         (s.desc||'').toLowerCase().includes(q) ||
+         (s.cat||'').toLowerCase().includes(q) ||
+         (Array.isArray(s.tags) && s.tags.some(t=>t.toLowerCase().includes(q)));
+}
+
+// ── SELECT ──
+function selectItem(id){
+  activeItem = ITEMS.find(s=>s.id===id);
+  if(!activeItem) return;
+  document.querySelectorAll('.item-row').forEach(el=>el.classList.remove('active'));
+  const itm = document.getElementById('item-'+id);
+  if(itm){ itm.classList.add('active'); itm.scrollIntoView({block:'nearest'}); }
+  hideAll();
+  document.getElementById('itemDetail').style.display='block';
+  renderDetail(activeItem);
+  document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'});
+}
+
+// ── RENDER DETAIL ──
+function renderDetail(s){
+  const cc = s.cc || catColor(s.cat);
+  const metaFields = Object.entries(s.meta||{});
+  const tags = Array.isArray(s.tags) ? s.tags : [];
+
+  document.getElementById('itemDetail').innerHTML = `
+    <div class="item-hdr">
+      <div class="item-hdr-top">
+        <span class="item-badge-lg cat" style="--cc:${cc}">${esc(s.cat)}</span>
+        ${s.badge1?`<span class="item-badge-lg b1">${esc(s.badge1)}</span>`:''}
+        ${s.badge2?`<span class="item-badge-lg b2">${esc(s.badge2)}</span>`:''}
+        <button class="copy-btn" id="copyBtn" onclick="copyContent(${s.id})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Kopyala
+        </button>
+      </div>
+      <h2 class="item-title"><em>${esc(s.name)}</em></h2>
+      <p class="item-subdesc">${esc(s.desc||'')}</p>
+    </div>
+    ${metaFields.length ? `<div class="meta-grid">${metaFields.map(([k,v])=>`
+      <div class="meta-cell">
+        <div class="meta-label">${esc(k)}</div>
+        <div class="meta-value">${esc(String(v))}</div>
+      </div>`).join('')}</div>` : ''}
+    ${s.content ? `<div class="content-sec">
+      <div class="content-title" style="--cc:${cc}">
+        <span style="width:5px;height:5px;border-radius:50%;background:var(--primary);display:inline-block"></span>
+        İçerik
+      </div>
+      <div class="content-body" style="--cc:${cc}">${esc(s.content)}</div>
+    </div>` : ''}
+    ${tags.length ? `<div class="tags-sec">
+      <div class="content-title">
+        <span style="width:5px;height:5px;border-radius:50%;background:${cc};display:inline-block"></span>
+        Etiketler
+      </div>
+      <div class="tag-chips">${tags.map(t=>`<span class="tag-chip" style="--cc:${cc}">${esc(t)}</span>`).join('')}</div>
+    </div>` : ''}
+    ${s.source && s.source.url ? `<div class="source-sec">
+      <span class="source-label">Kaynak</span>
+      <a class="source-link" href="${esc(s.source.url)}" target="_blank" rel="noopener nofollow">${esc(s.source.url)}</a>
+      ${s.source.license ? `<span class="source-license">${esc(s.source.license)}</span>` : ''}
+      ${s.source.author ? `<span class="source-author">@${esc(s.source.author)}</span>` : ''}
+    </div>` : ''}
+    <div class="sim-sec">
+      <div class="sim-hdr"><span class="sim-title">Benzer Öğeler</span></div>
+      <div class="sim-grid">${buildSimilar(s).map(g=>`
+        <div class="sim-card" style="--sc:${g.cc||catColor(g.cat)}" onclick="selectItem(${g.id})">
+          <div class="sim-card-name">${esc(g.name)}</div>
+          <div class="sim-card-desc">${esc(g.desc||'')}</div>
+        </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function buildSimilar(s){
+  const sameCat = ITEMS.filter(g=>g.cat===s.cat && g.id!==s.id);
+  return sameCat.slice(0,4);
+}
+
+// ── COPY ──
+function copyContent(id){
+  const item = ITEMS.find(x=>x.id===id);
+  if(!item) return;
+  const txt = item.content || item.name + '\n' + (item.desc||'');
+  navigator.clipboard.writeText(txt).then(()=>{
+    const btn = document.getElementById('copyBtn');
+    if(btn){ btn.classList.add('copied'); btn.textContent='✓ Kopyalandı'; setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Kopyala'; }, 2000); }
+  }).catch(()=>{});
+}
+
+// ── GRID ──
+function showGrid(items, title){
+  hideAll();
+  document.getElementById('allGrid').style.display='block';
+  document.getElementById('allGrid').innerHTML=`<div class="all-grid">
+    <div class="grid-header">
+      <h2 class="grid-title"><em>${esc(title)}</em></h2>
+      <span class="grid-count">${items.length} öğeler</span>
+    </div>
+    <div class="item-cards">
+      ${items.map((s,i)=>{
+        const cc = s.cc || catColor(s.cat);
+        const no = s.no || String(i+1).padStart(3,'0');
+        return `<div class="item-card" style="--cc:${cc}" onclick="selectItem(${s.id})">
+          <div class="card-no">${no}</div>
+          <div class="card-name">${esc(s.name)}</div>
+          <div class="card-desc">${esc(s.desc||'')}</div>
+          <div class="card-foot">
+            <span class="card-cat">${esc(s.cat)}</span>
+            ${s.badge1?`<span class="card-b1">${esc(s.badge1)}</span>`:''}
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+}
+
+// ── UTILS ──
+function hideAll(){
+  document.getElementById('emptyState').style.display='none';
+  document.getElementById('itemDetail').style.display='none';
+  document.getElementById('allGrid').style.display='none';
+}
+
+function esc(s){
+  if(!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  init();
+  showGrid(ITEMS, 'Tüm Öğeler');
+});
+</script>
+</body>
+</html>

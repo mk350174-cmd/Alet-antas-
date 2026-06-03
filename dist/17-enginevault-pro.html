@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EngineVault Pro — Oyun Motoru & 3D</title>
+<meta name="description" content="Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.">
+<meta name="keywords" content="Engine, EngineVault Pro, Oyun Motoru & 3D, AI, yapay zeka, şablon">
+<meta name="robots" content="index, follow">
+<meta name="author" content="EngineVault Pro — Oyun Motoru & 3D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EngineVault Pro — Oyun Motoru & 3D">
+<meta property="og:description" content="Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EngineVault Pro — Oyun Motoru & 3D">
+<meta name="twitter:description" content="Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "EngineVault Pro — Oyun Motoru & 3D",
+  "description": "Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "tr",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "EngineVault Pro — Oyun Motoru & 3D",
+  "description": "Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.",
+  "numberOfItems": 20
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#06100a;--bg2:#0a140e;--bg3:#0e1812;--bg4:#121c16;
+  --border:#16201a;--border2:#1e2822;--border3:#2a342e;
+  --text:#ede9e0;--text2:#9896a0;--text3:#585668;--text4:#343244;
+  --primary:#5ed47e;--primary2:#5ed47e;
+  --primary-dim:#5ed47e15;--primary-glow:#5ed47e30;
+  --accent:#4fc3f7;--accent2:#4fc3f7;
+  --accent-dim:#4fc3f718;--accent-glow:#4fc3f730;
+  --radius:6px;--radius-lg:12px;--radius-xl:20px;
+  --tr:0.28s cubic-bezier(0.4,0,0.2,1);--tr-fast:0.15s cubic-bezier(0.4,0,0.2,1);
+  --shadow-sm:0 2px 8px #00000060;--shadow-md:0 8px 32px #00000080;--shadow-lg:0 20px 60px #000000a0;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:14px;line-height:1.6;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,#5ed47e08 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 100%,#4fc3f706 0%,transparent 50%);pointer-events:none;z-index:0}
+
+.hero{position:relative;padding:56px 56px 44px;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(180deg,#0a140e 0%,var(--bg) 100%)}
+.hero::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,#5ed47e0a 0%,#5ed47e03 40%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,var(--primary) 30%,var(--accent) 70%,transparent 100%);opacity:.15}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--primary);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:14px;opacity:.9}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:inline-block;width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--primary));opacity:.7}
+.hero-eyebrow::after{background:linear-gradient(90deg,var(--primary),transparent)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,80px);font-weight:300;line-height:.9;letter-spacing:-.025em;margin-bottom:16px}
+.hero-title em{font-style:italic;color:var(--primary);text-shadow:0 0 60px #5ed47e30}
+.hero-title span{color:var(--accent)}
+.hero-sub{font-size:14px;color:var(--text2);max-width:540px;line-height:1.75;margin-bottom:28px}
+.hero-stats{display:flex;gap:0;flex-wrap:wrap;align-items:stretch}
+.stat{display:flex;flex-direction:column;gap:4px;padding:14px 26px;border-right:1px solid var(--border)}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--text);line-height:1;letter-spacing:-.02em}
+.stat-num em{color:var(--primary);font-style:normal}
+.stat-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:.14em;text-transform:uppercase}
+.hero-corner{position:absolute;top:12px;right:48px;font-family:'Cormorant Garamond',serif;font-size:140px;font-weight:700;color:#5ed47e03;line-height:1;user-select:none;pointer-events:none;letter-spacing:-.04em}
+
+.api-bar{background:linear-gradient(90deg,#5ed47e06,var(--bg2),transparent);border-bottom:1px solid var(--border);padding:10px 56px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;position:relative;overflow:hidden}
+.api-bar::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--primary),transparent);opacity:.5}
+.api-lbl{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:.08em;white-space:nowrap}
+.api-input{flex:1;min-width:220px;max-width:360px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:7px 13px;color:var(--text);font-family:'DM Mono',monospace;font-size:12px;transition:all var(--tr);letter-spacing:.04em}
+.api-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-dim);background:var(--bg4)}
+.api-input::placeholder{color:var(--text4)}
+.api-save{background:linear-gradient(135deg,var(--primary),#40b660);color:#06100a;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);text-transform:uppercase;box-shadow:0 2px 12px #5ed47e20}
+.api-save:hover{transform:translateY(-1px);box-shadow:0 4px 20px #5ed47e35}
+.api-status{font-family:'DM Mono',monospace;font-size:10px;display:flex;align-items:center;gap:7px;letter-spacing:.06em}
+.api-dot{width:6px;height:6px;border-radius:50%;background:var(--text4)}
+.api-dot.ok{background:#5ac87d;box-shadow:0 0 8px #5ac87d60}
+.api-status-lbl{color:var(--text4)}
+.api-status-lbl.ok{color:#5ac87d}
+
+.app{display:grid;grid-template-columns:280px 1fr;min-height:calc(100vh - 280px)}
+.sidebar{border-right:1px solid var(--border);background:var(--bg2);position:sticky;top:0;height:calc(100vh - 280px);overflow-y:auto;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:2px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border3);border-radius:2px}
+.main{overflow-y:auto;height:calc(100vh - 280px)}
+
+.srch-wrap{padding:10px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg2);z-index:2;backdrop-filter:blur(10px)}
+.srch-inner{position:relative}
+.srch-input{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:9px 13px 9px 30px;color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:12px;transition:all var(--tr)}
+.srch-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 2px var(--primary-dim);background:var(--bg4)}
+.srch-input::placeholder{color:var(--text4)}
+.srch-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:12px;pointer-events:none}
+.srch-inner:focus-within .srch-icon{color:var(--primary)}
+
+.cat-sec{border-bottom:1px solid var(--border)}
+.cat-hdr{padding:7px 12px 3px;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--text4)}
+.cat-btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:7px 12px;background:none;border:none;cursor:pointer;color:var(--text2);font-family:'Instrument Sans',sans-serif;font-size:11px;transition:all var(--tr-fast);text-align:left;border-left:2px solid transparent}
+.cat-btn:hover{color:var(--text);background:var(--bg3)}
+.cat-btn.active{color:var(--text);background:var(--bg4);border-left-color:var(--cc,var(--primary))}
+.cat-btn .cdot{width:7px;height:7px;border-radius:50%;background:var(--cc,var(--primary));flex-shrink:0;margin-right:8px}
+.cat-btn .cname{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-btn .ccount{font-family:'DM Mono',monospace;font-size:9px;color:var(--text3)}
+
+.item-list{flex:1;overflow-y:auto;padding-bottom:20px}
+.item-row{display:flex;align-items:center;gap:10px;padding:9px 12px;cursor:pointer;border-bottom:1px solid var(--border);transition:all var(--tr-fast);border-left:2px solid transparent}
+.item-row:hover{background:var(--bg3)}
+.item-row.active{background:var(--bg4);border-left-color:var(--sc,var(--primary))}
+.item-no{font-family:'DM Mono',monospace;font-size:9px;color:var(--text4);width:28px;flex-shrink:0}
+.item-dot{width:6px;height:6px;border-radius:50%;background:var(--sc,var(--primary));flex-shrink:0}
+.item-info{flex:1;min-width:0}
+.item-name{font-size:11px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.3}
+.item-desc{font-size:10px;color:var(--text3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:1px}
+.item-badge{font-family:'DM Mono',monospace;font-size:8px;padding:2px 5px;border-radius:3px;background:var(--bg);border:1px solid var(--border2);color:var(--text4);flex-shrink:0}
+
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:14px;opacity:.35;padding:40px}
+.empty .glyph{font-family:'Cormorant Garamond',serif;font-size:80px;color:var(--primary);line-height:1}
+.empty p{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+
+.item-hdr{padding:28px 40px 20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0a140e,var(--bg))}
+.item-hdr-top{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.item-badge-lg{font-family:'DM Mono',monospace;font-size:8px;padding:3px 9px;border-radius:var(--radius-xl);letter-spacing:.1em;text-transform:uppercase}
+.item-badge-lg.cat{background:color-mix(in srgb,var(--cc) 12%,transparent);border:1px solid color-mix(in srgb,var(--cc) 25%,transparent);color:var(--cc,var(--primary))}
+.item-badge-lg.b1{background:var(--bg3);border:1px solid var(--border2);color:var(--text3)}
+.item-badge-lg.b2{background:var(--bg3);border:1px solid var(--border2);color:var(--primary);font-size:9px}
+.copy-btn{margin-left:auto;background:linear-gradient(135deg,var(--primary),#40b660);color:#06100a;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);display:flex;align-items:center;gap:7px;box-shadow:0 2px 12px #5ed47e20}
+.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px #5ed47e35}
+.copy-btn.copied{background:linear-gradient(135deg,#5ac87d,#3aaa5d)}
+.item-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;line-height:1;letter-spacing:-.02em;margin-bottom:8px}
+.item-title em{font-style:italic;color:var(--cc,var(--primary))}
+.item-subdesc{font-size:13px;color:var(--text2);line-height:1.7;max-width:600px}
+
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));border-bottom:1px solid var(--border)}
+.meta-cell{padding:14px 20px;border-right:1px solid var(--border)}
+.meta-cell:last-child{border-right:none}
+.meta-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:6px}
+.meta-value{font-size:13px;color:var(--text);line-height:1.3}
+.meta-value.count{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--primary)}
+
+.content-sec{padding:28px 40px;border-bottom:1px solid var(--border)}
+.content-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.content-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border2),transparent)}
+.content-body{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:20px 24px;font-family:'DM Mono',monospace;font-size:12px;line-height:1.75;color:var(--text2);white-space:pre-wrap;word-break:break-word;position:relative;overflow:hidden}
+.content-body::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cc,var(--primary)),transparent);opacity:.6}
+
+.tags-sec{padding:20px 40px;border-bottom:1px solid var(--border)}
+.tag-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tag-chip{font-family:'DM Mono',monospace;font-size:8px;padding:3px 9px;border-radius:var(--radius-xl);background:color-mix(in srgb,var(--cc,var(--primary)) 8%,transparent);border:1px solid color-mix(in srgb,var(--cc,var(--primary)) 18%,transparent);color:var(--cc,var(--primary));letter-spacing:.06em}
+
+.source-sec{padding:14px 40px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.source-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4)}
+.source-link{font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.85;word-break:break-all}
+.source-link:hover{opacity:1;text-decoration:underline}
+.source-license{font-family:'DM Mono',monospace;font-size:8px;color:var(--text3);padding:2px 8px;border:1px solid var(--border2);border-radius:var(--radius-xl)}
+.source-author{font-family:'DM Mono',monospace;font-size:8px;color:var(--text3)}
+
+.all-grid{padding:24px 32px;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grid-header{margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.grid-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;letter-spacing:-.01em}
+.grid-title em{font-style:italic;color:var(--primary)}
+.grid-count{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:.1em}
+.item-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.item-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;cursor:pointer;transition:all var(--tr);position:relative;overflow:hidden}
+.item-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cc,var(--primary));opacity:.6;transition:opacity var(--tr)}
+.item-card:hover{background:var(--bg3);border-color:var(--border2);transform:translateY(-2px);box-shadow:0 8px 24px #00000050}
+.item-card:hover::before{opacity:1}
+.card-no{font-family:'DM Mono',monospace;font-size:8px;color:var(--text4);margin-bottom:8px;letter-spacing:.08em}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:6px}
+.card-desc{font-size:11px;color:var(--text3);line-height:1.5;margin-bottom:10px}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card-cat{font-family:'DM Mono',monospace;font-size:8px;color:var(--cc,var(--primary));background:color-mix(in srgb,var(--cc,var(--primary)) 10%,transparent);border:1px solid color-mix(in srgb,var(--cc,var(--primary)) 20%,transparent);padding:2px 7px;border-radius:10px;letter-spacing:.06em;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-b1{font-family:'DM Mono',monospace;font-size:8px;color:var(--text4);letter-spacing:.06em}
+
+.sim-sec{padding:20px 40px}
+.sim-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sim-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3)}
+.sim-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.sim-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:12px;cursor:pointer;transition:all var(--tr);position:relative;overflow:hidden;border-left:3px solid var(--sc,var(--primary))}
+.sim-card:hover{background:var(--bg3);transform:translateY(-1px)}
+.sim-card-name{font-size:11px;color:var(--text);line-height:1.3;margin-bottom:4px;font-weight:500}
+.sim-card-desc{font-size:10px;color:var(--text3);line-height:1.4}
+
+.footer{border-top:1px solid var(--border);padding:16px 56px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:300;color:var(--text)}
+.footer-brand em{font-style:italic;color:var(--primary)}
+.footer-note{font-family:'DM Mono',monospace;font-size:9px;color:var(--text4);letter-spacing:.08em}
+
+.scroll-top{position:fixed;bottom:18px;right:18px;width:36px;height:36px;background:var(--bg3);border:1px solid var(--border2);border-radius:50%;color:var(--text3);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:14px;transition:all var(--tr);z-index:100}
+.scroll-top:hover{background:var(--bg4);color:var(--text);border-color:var(--primary)}
+.scroll-top.visible{display:flex}
+
+@media(max-width:768px){
+  .hero{padding:36px 20px 28px}
+  .hero-corner{display:none}
+  .api-bar{padding:8px 20px}
+  .app{grid-template-columns:1fr}
+  .sidebar{position:relative;height:auto;max-height:300px;border-right:none;border-bottom:1px solid var(--border)}
+  .main{height:auto}
+  .item-hdr,.content-sec,.tags-sec,.sim-sec,.source-sec{padding:14px 20px}
+  .meta-grid{grid-template-columns:repeat(2,1fr)}
+  .all-grid{padding:16px 20px}
+  .footer{padding:16px 20px;flex-direction:column;align-items:flex-start}
+  .stat{padding:10px 14px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-corner">E</div>
+  <div class="hero-eyebrow">Oyun Motoru & 3D · Alet Çantası</div>
+  <h1 class="hero-title">Engine<em>Vault</em> <span>Pro</span></h1>
+  <p class="hero-sub">Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num"><em>20</em></div><div class="stat-label">Öğeler</div></div>
+  </div>
+</header>
+
+<div class="api-bar">
+  <span class="api-lbl">API KEY →</span>
+  <input class="api-input" id="apiInput" type="password" placeholder="sk-ant-api..." autocomplete="off">
+  <button class="api-save" onclick="saveApiKey()">KAYDET</button>
+  <div class="api-status">
+    <div class="api-dot" id="apiDot"></div>
+    <span class="api-status-lbl" id="apiLbl">Bağlı değil</span>
+  </div>
+  <a id="apiLink" href="https://console.anthropic.com" target="_blank" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.7;margin-left:auto">Anthropic key al →</a>
+</div>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="srch-wrap">
+      <div class="srch-inner">
+        <span class="srch-icon">⌕</span>
+        <input class="srch-input" id="searchInput" type="text" placeholder="Engine ara..." autocomplete="off">
+      </div>
+    </div>
+    <div class="cat-sec">
+      <div class="cat-hdr">Kategoriler</div>
+      <button class="cat-btn active" data-cat="all" style="--cc:var(--primary)" onclick="filterCat('all',this)">
+        <span class="cdot"></span><span class="cname">Tümü</span><span class="ccount">20</span>
+      </button>
+    </div>
+    <div id="catBtns"></div>
+    <div class="item-list" id="itemList"></div>
+  </aside>
+
+  <main class="main" id="mainContent">
+    <div class="empty" id="emptyState">
+      <div class="glyph">◈</div>
+      <p>Sol taraftan bir öğe seç</p>
+    </div>
+    <div id="itemDetail" style="display:none"></div>
+    <div id="allGrid" style="display:none"></div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-brand">Engine<em>Vault</em> <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)">Pro</span></div>
+  <div class="footer-note">EngineVault Pro · Oyun Motoru & 3D</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ── DATA ──
+const CATS = [{"id":"Bellek Yönetimi","name":"Bellek Yönetimi","color":"#FF6347"},{"id":"Render Pipeline","name":"Render Pipeline","color":"#4682B4"},{"id":"Component Sistemi","name":"Component Sistemi","color":"#32CD32"},{"id":"Asset Yönetimi","name":"Asset Yönetimi","color":"#FFD700"},{"id":"Fizik Motoru","name":"Fizik Motoru","color":"#DA70D6"},{"id":"Giriş Sistemi","name":"Giriş Sistemi","color":"#8A2BE2"}];
+const ITEMS = [{"id":1,"no":"001","cat":"Bellek Yönetimi","name":"Havuzlama (Pooling)","desc":"Tekrar kullanılan nesneler için bellek ön-tahsis.","tags":["bellek","optimizasyon","performans"],"badge1":"Başlangıç","content":"## Nesne Havuzlama Şablonu\n\n### Amaç:\nSık oluşturulup silinen nesneler için GC yükünü azaltmak.\n\n### Adımlar:\n1. Nesne havuzunu (pool) tanımlayın.\n2. Nesne istendiğinde havuzdan alın.\n3. Havuz boşsa yeni nesne oluşturun.\n4. Nesne kullanılmadığında havuza geri verin.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":2,"no":"002","cat":"Bellek Yönetimi","name":"Akıllı İşaretçiler","desc":"Otomatik bellek yönetimi için C++ işaretçileri.","tags":["bellek","c++","ptr"],"badge1":"Orta","content":"## Akıllı İşaretçi Kullanım Rehberi\n\n### `std::unique_ptr`:\nTekil sahipliği garanti eder, kapsam dışı kaldığında otomatik siler.\n\n### `std::shared_ptr`:\nPaylaşılan sahiplik, referans sayacı ile yönetilir.\n\n### `std::weak_ptr`:\nSızıntıları önlemek için `shared_ptr` döngülerini kırar.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":3,"no":"003","cat":"Bellek Yönetimi","name":"Bellek Ayırıcı","desc":"Özel bellek ayırma ve toplama stratejileri.","tags":["bellek","performans","strateji"],"badge1":"İleri","content":"## Özel Bellek Ayırıcı Tasarımı\n\n### Amaç:\nGenel `new`/`delete` yerine özelleştirilmiş ayırma.\n\n### Yaklaşımlar:\n1. **Yığın Ayırıcı:** Hızlı, kısa ömürlü nesneler.\n2. **Serbest Liste Ayırıcı:** Belirli boyutlardaki bloklar.\n3. **Huş (Pool) Ayırıcı:** Tekrarlayan nesneler.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":4,"no":"004","cat":"Render Pipeline","name":"Temel Render Döngüsü","desc":"Sahne çizimi için temel adımlar.","tags":["render","pipeline","grafik"],"badge1":"Başlangıç","content":"## Temel Render Döngüsü\n\n1. **Girdi Toplama:** Sahnedeki nesneleri belirle.\n2. **Kamera Dönüşümü:** Nesneleri kamera uzayına taşı.\n3. **Projeksiyon:** Nesneleri 2D ekrana izdüşür.\n4. **Görünürlük Testi:** Kamera arkasındaki nesneleri ele.\n5. **Rasterizasyon:** Piksel renklerini hesapla.\n6. **Görüntüleme:** Sonucu ekrana bas.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":5,"no":"005","cat":"Render Pipeline","name":"Deferred Shading","desc":"Işık hesaplamasını sonradan yapan render tekniği.","tags":["render","lighting","teknik"],"badge1":"Orta","content":"## Deferred Shading Temelleri\n\n### Aşama 1: G-Buffer Oluşturma\nNesne yüzey bilgilerini (renk, normal, derinlik vb.) ayrı dokulara yazar.\n\n### Aşama 2: Işıklandırma\nG-Buffer'daki bilgilere dayanarak her piksel için ışık hesaplaması yapılır.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":6,"no":"006","cat":"Render Pipeline","name":"MSAA (Çoklu Örnekleme)","desc":"Kenar yumuşatma için gelişmiş örnekleme tekniği.","tags":["render","aa","kalite"],"badge1":"Orta","content":"## MSAA Uygulama Kılavuzu\n\n### Prensip:\nKenar piksellerinde birden fazla alt örnekleme yapılır.\n\n### Kullanım:\nRender hedefi (render target) üzerinde MSAA etkinleştirilir.\nDonanım, örnekleri otomatik olarak birleştirir.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":7,"no":"007","cat":"Render Pipeline","name":"Shader Optimizasyonu","desc":"Shader performansını artırma yöntemleri.","tags":["render","shader","optimizasyon"],"badge1":"İleri","content":"## Shader Performans İpuçları\n\n1. **Döngüleri Azaltın:** Mümkünse 'if' yerine 'mix/lerp' kullanın.\n2. **Tekstür Okumaları:** Tekstür cache'ini verimli kullanın.\n3. **Hesaplamaları Birleştirin:** Tek bir karmaşık işlem, çoklu basit işlemden hızlı olabilir.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":8,"no":"008","cat":"Component Sistemi","name":"Temel Entity-Component","desc":"Oyun nesneleri için modüler yapı.","tags":["ecs","component","mimari"],"badge1":"Başlangıç","content":"## Entity-Component Sistemi (ECS) Taslağı\n\n### Entity:\nBenzersiz ID'ye sahip boş bir kapsayıcı.\n\n### Component:\nVeri taşıyan yapılar (örn. Pozisyon, Renk).\n\n### Sistem:\nBelirli Component türlerini işleyen mantık (örn. Hareket Sistemi).","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":9,"no":"009","cat":"Component Sistemi","name":"Veri Odaklı Tasarım","desc":"ECS'de veri yerleşimi ve önbellek dostu erişim.","tags":["ecs","veri","performans"],"badge1":"Orta","content":"## Veri Odaklı ECS Tasarımı\n\n### Amaç:\nVeriyi bellekte bitişik gruplamak (Array of Structs -> Struct of Arrays).\n\n### Faydalar:\n- CPU önbellek isabet oranını artırır.\n- Paralel işleme için uygundur.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":10,"no":"010","cat":"Component Sistemi","name":"Sistem Bağımlılıkları","desc":"Sistemlerin birbirleriyle etkileşimini yönetme.","tags":["ecs","sistem","mimari"],"badge1":"Orta","content":"## Sistem Bağımlılık Yönetimi\n\n### Yaklaşım:\n1. **Sıralama:** Sistemlerin çalışma sırasını belirleyin.\n2. **Bağımlılık Grafiği:** Sistemler arası veri akışını modelleyin.\n3. **Paralel Yürütme:** Bağımlı olmayan sistemleri eş zamanlı çalıştırın.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":11,"no":"011","cat":"Component Sistemi","name":"Event Sistemi Entegrasyonu","desc":"ECS içinde olay tabanlı iletişim.","tags":["ecs","event","iletişim"],"badge1":"İleri","content":"## ECS'de Olay Sistemi\n\n### Tasarım:\n1. **Olay Verisi:** Gönderilecek veriyi tanımlayın.\n2. **Olay Yayıncı:** Olayı oluşturan sistem/entity.\n3. **Olay Dinleyici:** Olayı işleyen sistem/entity.\n4. **Aracı (Bus):** Olayların yönlendirildiği merkez.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":12,"no":"012","cat":"Asset Yönetimi","name":"Asset Yükleyici","desc":"Farklı formatlardaki varlıkları yükleme arayüzü.","tags":["asset","yükleme","arayüz"],"badge1":"Başlangıç","content":"## Genel Asset Yükleyici Arayüzü\n\n`IAssetLoader` arayüzü:\n- `Load(path)`: Belirtilen yoldan asset yükler.\n- `Unload(asset)`: Asset'i bellekten kaldırır.\n- `GetAssetType()`: Desteklenen asset türünü döndürür.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":13,"no":"013","cat":"Asset Yönetimi","name":"Asenkron Yükleme","desc":"Arka planda varlık yükleyerek takılmaları önleme.","tags":["asset","asenkron","performans"],"badge1":"Orta","content":"## Asenkron Asset Yükleme\n\n### Prensip:\nKullanıcı arayüzünü bloke etmeden varlıkları yüklemek.\n\n### Uygulama:\n- İş parçacığı (thread) havuzu kullanın.\n- Yükleme tamamlandığında geri bildirim mekanizması (callback/event) sağlayın.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":14,"no":"014","cat":"Asset Yönetimi","name":"Asset Veritabanı","desc":"Projedeki tüm varlıkları yöneten indeks.","tags":["asset","veritabanı","yönetim"],"badge1":"Orta","content":"## Varlık Veritabanı Tasarımı\n\n### İçerik:\n- Varlık adı/ID.\n- Dosya yolu.\n- Yüklenme durumu.\n- Kullanım sayısı (referans sayacı).\n- Varlık türü.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":15,"no":"015","cat":"Asset Yönetimi","name":"Paketleme (Packaging)","desc":"Varlıkları dağıtım için tek dosyalarda birleştirme.","tags":["asset","paket","dağıtım"],"badge1":"İleri","content":"## Varlık Paketleme Stratejisi\n\n### Amaç:\nDosya sayısı ve disk erişimini azaltmak.\n\n### Yöntemler:\n1. **Sıkıştırma:** Dosya boyutunu küçültür.\n2. **İndeksleme:** Paket içindeki verilere hızlı erişim sağlar.\n3. **Sanal Dosya Sistemi:** Paketi disk gibi gösterme.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":16,"no":"016","cat":"Fizik Motoru","name":"Katı Cisim Dinamiği","desc":"Nesnelerin kütle, hız ve çarpışma simülasyonu.","tags":["fizik","katı cisim","simülasyon"],"badge1":"Orta","content":"## Katı Cisim Dinamiği Temelleri\n\n### Bileşenler:\n- **Kütle Merkezi (Center of Mass):** Cisim geometrisinin merkezi.\n- **Dönme Eylemsizliği (Inertia Tensor):** Dönme hareketine karşı direnç.\n- **Kuvvet/Tork Uygulama:** Hareket denklemlerini çözme.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":17,"no":"017","cat":"Fizik Motoru","name":"Çarpışma Tespiti (Broadphase)","desc":"Potansiyel çarpışan nesne çiftlerini hızlıca bulma.","tags":["fizik","çarpışma","optimizasyon"],"badge1":"Orta","content":"## Broadphase Çarpışma Tespiti\n\n### Algoritmalar:\n1. **AABB Ağacı (Axis-Aligned Bounding Box):** Nesnelerin sınırlayıcı kutularını kullanır.\n2. **Bölgesel Bölme (Spatial Partitioning):** Sabit veya dinamik hücreler.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":18,"no":"018","cat":"Fizik Motoru","name":"Çarpışma Çözümü (Narrowphase)","desc":"Tespit edilen çiftlerin kesin kesişimini hesaplama.","tags":["fizik","çarpışma","narrowphase"],"badge1":"İleri","content":"## Narrowphase Çarpışma Çözümü\n\n### Algoritmalar:\n1. **GJK (Gilbert-Johnson-Keerthi):** Konveks cisimler için uzaklık bulma.\n2. **EPA (Expanding Polytope Algorithm):** GJK sonrası kesişim derinliği bulma.\n3. **Satıh-Satıh (Edge-Edge):** Çokgenler için detaylı kontrol.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":19,"no":"019","cat":"Giriş Sistemi","name":"Giriş Eşleme","desc":"Farklı donanımları soyutlayarak komut atama.","tags":["giriş","kontrol","eşleme"],"badge1":"Başlangıç","content":"## Giriş Eşleme Sistemi\n\n### Amaç:\nKullanıcı komutlarını (örn. 'Ateş Et') donanım girdilerine bağlamak.\n\n### Yapı:\n1. **Girdi Cihazları:** Klavye, fare, gamepad vb.\n2. **Eylemler (Actions):** Oyun içi komutlar.\n3. **Eşleme Tablosu:** Cihaz girdilerini eylemlere bağlar.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}},{"id":20,"no":"020","cat":"Giriş Sistemi","name":"Girdi Yönetimi","desc":"Girdi olaylarını işleme ve yönlendirme.","tags":["giriş","yönetim","olay"],"badge1":"Orta","content":"## Giriş Olay Yönetimi\n\n### Süreç:\n1. **Olay Yakalama:** İşletim sisteminden girdi olaylarını al.\n2. **Filtreleme/Normalleştirme:** Gereksiz veya yinelenen olayları ayıkla.\n3. **Eşleme Uygulama:** Eşleme tablosuna göre eylemlere dönüştür.\n4. **Sistemlere Bildirme:** Eylemleri ilgili sistemlere ilet.","source":{"generated":true,"provider":"gemini","model":"gemini-2.5-flash-lite"}}];
+
+// ── STATE ──
+let activeItem = null;
+let activeCat = 'all';
+let API_KEY = '';
+const STORAGE_KEY = 'enginevault_pro_api_key';
+
+// ── API ──
+function saveApiKey(){
+  const val = document.getElementById('apiInput').value.trim();
+  if(!val) return;
+  API_KEY = val;
+  localStorage.setItem(STORAGE_KEY, val);
+  updateApiStatus();
+}
+function updateApiStatus(){
+  const dot = document.getElementById('apiDot');
+  const lbl = document.getElementById('apiLbl');
+  const inp = document.getElementById('apiInput');
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if(saved){
+    API_KEY = saved; inp.value = saved;
+    dot.classList.add('ok'); lbl.classList.add('ok');
+    lbl.textContent = 'API key aktif';
+  } else {
+    inp.value = '';
+    dot.classList.remove('ok'); lbl.classList.remove('ok');
+    lbl.textContent = 'Bağlı değil';
+  }
+}
+
+// ── INIT ──
+function init(){
+  updateApiStatus();
+  buildCatButtons();
+  buildItemList(ITEMS);
+  document.getElementById('searchInput').addEventListener('input', e=>onSearch(e.target.value));
+  document.getElementById('mainContent').addEventListener('scroll', e=>{
+    document.getElementById('scrollTop').classList.toggle('visible', e.target.scrollTop > 300);
+  });
+}
+
+// ── CATEGORIES ──
+function buildCatButtons(){
+  const el = document.getElementById('catBtns');
+  const cats = Array.isArray(CATS) ? CATS : Object.keys(CATS).sort().map(k=>({id:k,name:k,color:(CATS[k].c||CATS[k].color||'var(--primary)'),count:(CATS[k].n||CATS[k].count||0)}));
+  el.innerHTML = cats.map(cat=>`
+    <button class="cat-btn" data-cat="${esc(cat.id||cat.name)}" style="--cc:${cat.color||cat.c||'var(--primary)'}" onclick="filterCat('${esc(cat.id||cat.name)}',this)">
+      <span class="cdot"></span><span class="cname">${esc(cat.name)}</span><span class="ccount">${cat.count||cat.n||''}</span>
+    </button>`).join('');
+}
+
+function catColor(cat){
+  if(Array.isArray(CATS)){
+    const found = CATS.find(c=>c.id===cat||c.name===cat);
+    return found ? (found.color||found.c||'var(--primary)') : 'var(--primary)';
+  }
+  return (CATS[cat]||{}).c || (CATS[cat]||{}).color || 'var(--primary)';
+}
+
+// ── ITEM LIST ──
+function buildItemList(items){
+  const el = document.getElementById('itemList');
+  if(!items.length){ el.innerHTML='<div style="padding:20px;text-align:center;font-family:DM Mono,monospace;font-size:10px;color:var(--text4)">Sonuç bulunamadı</div>'; return; }
+  el.innerHTML = items.map((s,i)=>{
+    const cc = s.cc || catColor(s.cat);
+    const no = s.no || String(i+1).padStart(3,'0');
+    return `<div class="item-row" id="item-${s.id}" data-id="${s.id}" style="--sc:${cc}" onclick="selectItem(${s.id})">
+      <span class="item-no">${no}</span>
+      <span class="item-dot"></span>
+      <div class="item-info">
+        <div class="item-name">${esc(s.name)}</div>
+        <div class="item-desc">${esc(s.desc||'')}</div>
+      </div>
+      ${s.badge1?`<span class="item-badge">${esc(s.badge1)}</span>`:''}
+    </div>`;
+  }).join('');
+}
+
+// ── FILTER ──
+function filterCat(cat, btn){
+  activeCat = cat;
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  let filtered = cat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===cat);
+  if(q) filtered = filtered.filter(s=>searchMatch(s, q));
+  buildItemList(filtered);
+  showGrid(filtered, cat==='all' ? 'Tüm Öğeler' : cat);
+}
+
+function onSearch(q){
+  const lower = q.toLowerCase();
+  let filtered = activeCat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===activeCat);
+  if(lower) filtered = filtered.filter(s=>searchMatch(s, lower));
+  buildItemList(filtered);
+  showGrid(filtered, q ? `"${q}" — ${filtered.length} sonuç` : 'Tüm Öğeler');
+}
+
+function searchMatch(s, q){
+  return (s.name||'').toLowerCase().includes(q) ||
+         (s.desc||'').toLowerCase().includes(q) ||
+         (s.cat||'').toLowerCase().includes(q) ||
+         (Array.isArray(s.tags) && s.tags.some(t=>t.toLowerCase().includes(q)));
+}
+
+// ── SELECT ──
+function selectItem(id){
+  activeItem = ITEMS.find(s=>s.id===id);
+  if(!activeItem) return;
+  document.querySelectorAll('.item-row').forEach(el=>el.classList.remove('active'));
+  const itm = document.getElementById('item-'+id);
+  if(itm){ itm.classList.add('active'); itm.scrollIntoView({block:'nearest'}); }
+  hideAll();
+  document.getElementById('itemDetail').style.display='block';
+  renderDetail(activeItem);
+  document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'});
+}
+
+// ── RENDER DETAIL ──
+function renderDetail(s){
+  const cc = s.cc || catColor(s.cat);
+  const metaFields = Object.entries(s.meta||{});
+  const tags = Array.isArray(s.tags) ? s.tags : [];
+
+  document.getElementById('itemDetail').innerHTML = `
+    <div class="item-hdr">
+      <div class="item-hdr-top">
+        <span class="item-badge-lg cat" style="--cc:${cc}">${esc(s.cat)}</span>
+        ${s.badge1?`<span class="item-badge-lg b1">${esc(s.badge1)}</span>`:''}
+        ${s.badge2?`<span class="item-badge-lg b2">${esc(s.badge2)}</span>`:''}
+        <button class="copy-btn" id="copyBtn" onclick="copyContent(${s.id})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Kopyala
+        </button>
+      </div>
+      <h2 class="item-title"><em>${esc(s.name)}</em></h2>
+      <p class="item-subdesc">${esc(s.desc||'')}</p>
+    </div>
+    ${metaFields.length ? `<div class="meta-grid">${metaFields.map(([k,v])=>`
+      <div class="meta-cell">
+        <div class="meta-label">${esc(k)}</div>
+        <div class="meta-value">${esc(String(v))}</div>
+      </div>`).join('')}</div>` : ''}
+    ${s.content ? `<div class="content-sec">
+      <div class="content-title" style="--cc:${cc}">
+        <span style="width:5px;height:5px;border-radius:50%;background:var(--primary);display:inline-block"></span>
+        İçerik
+      </div>
+      <div class="content-body" style="--cc:${cc}">${esc(s.content)}</div>
+    </div>` : ''}
+    ${tags.length ? `<div class="tags-sec">
+      <div class="content-title">
+        <span style="width:5px;height:5px;border-radius:50%;background:${cc};display:inline-block"></span>
+        Etiketler
+      </div>
+      <div class="tag-chips">${tags.map(t=>`<span class="tag-chip" style="--cc:${cc}">${esc(t)}</span>`).join('')}</div>
+    </div>` : ''}
+    ${s.source && s.source.url ? `<div class="source-sec">
+      <span class="source-label">Kaynak</span>
+      <a class="source-link" href="${esc(s.source.url)}" target="_blank" rel="noopener nofollow">${esc(s.source.url)}</a>
+      ${s.source.license ? `<span class="source-license">${esc(s.source.license)}</span>` : ''}
+      ${s.source.author ? `<span class="source-author">@${esc(s.source.author)}</span>` : ''}
+    </div>` : ''}
+    <div class="sim-sec">
+      <div class="sim-hdr"><span class="sim-title">Benzer Öğeler</span></div>
+      <div class="sim-grid">${buildSimilar(s).map(g=>`
+        <div class="sim-card" style="--sc:${g.cc||catColor(g.cat)}" onclick="selectItem(${g.id})">
+          <div class="sim-card-name">${esc(g.name)}</div>
+          <div class="sim-card-desc">${esc(g.desc||'')}</div>
+        </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function buildSimilar(s){
+  const sameCat = ITEMS.filter(g=>g.cat===s.cat && g.id!==s.id);
+  return sameCat.slice(0,4);
+}
+
+// ── COPY ──
+function copyContent(id){
+  const item = ITEMS.find(x=>x.id===id);
+  if(!item) return;
+  const txt = item.content || item.name + '\n' + (item.desc||'');
+  navigator.clipboard.writeText(txt).then(()=>{
+    const btn = document.getElementById('copyBtn');
+    if(btn){ btn.classList.add('copied'); btn.textContent='✓ Kopyalandı'; setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Kopyala'; }, 2000); }
+  }).catch(()=>{});
+}
+
+// ── GRID ──
+function showGrid(items, title){
+  hideAll();
+  document.getElementById('allGrid').style.display='block';
+  document.getElementById('allGrid').innerHTML=`<div class="all-grid">
+    <div class="grid-header">
+      <h2 class="grid-title"><em>${esc(title)}</em></h2>
+      <span class="grid-count">${items.length} öğeler</span>
+    </div>
+    <div class="item-cards">
+      ${items.map((s,i)=>{
+        const cc = s.cc || catColor(s.cat);
+        const no = s.no || String(i+1).padStart(3,'0');
+        return `<div class="item-card" style="--cc:${cc}" onclick="selectItem(${s.id})">
+          <div class="card-no">${no}</div>
+          <div class="card-name">${esc(s.name)}</div>
+          <div class="card-desc">${esc(s.desc||'')}</div>
+          <div class="card-foot">
+            <span class="card-cat">${esc(s.cat)}</span>
+            ${s.badge1?`<span class="card-b1">${esc(s.badge1)}</span>`:''}
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+}
+
+// ── UTILS ──
+function hideAll(){
+  document.getElementById('emptyState').style.display='none';
+  document.getElementById('itemDetail').style.display='none';
+  document.getElementById('allGrid').style.display='none';
+}
+
+function esc(s){
+  if(!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  init();
+  showGrid(ITEMS, 'Tüm Öğeler');
+});
+</script>
+</body>
+</html>
