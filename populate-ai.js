@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 /**
- * populate-ai.js — dataSource:"ai" olan config'leri Claude API ile doldurur.
+ * populate-ai.js — dataSource:"ai" olan config'leri AI ile doldurur.
  *
- * Her vault için Anthropic API'ye (claude-sonnet-4-6) vault adı + açıklaması
- * gönderir, 5-6 alt kategori ve 30+ item (name, desc, tags, content) içeren
- * JSON ister, parse edip config'in categories/items alanlarını yazar.
+ * Claude (Anthropic) veya Gemini (Google) destekler. Key formatından sağlayıcı
+ * otomatik algılanır: "AIza..." → Gemini, "sk-ant..." → Claude.
+ * Her vault için vault adı + açıklaması gönderir, 5-6 alt kategori ve 30+ item
+ * (name, desc, tags, content) içeren JSON ister, config'e yazar.
  *
  * Kullanım:
- *   ANTHROPIC_API_KEY=sk-ant-... node populate-ai.js
- *   node populate-ai.js --key sk-ant-...
- *   node populate-ai.js --only 31-mythvault-pro --key sk-ant-...
- *   node populate-ai.js --limit 5            # ilk 5 ai-vault (test/maliyet kontrolü)
+ *   node populate-ai.js --key AIza...                 # Gemini (ucuz/hızlı)
+ *   GEMINI_API_KEY=AIza... node populate-ai.js
+ *   node populate-ai.js --key sk-ant-...              # Claude
+ *   node populate-ai.js --only 31-mythvault-pro --key AIza...
+ *   node populate-ai.js --limit 5 --key AIza...       # ilk 5 (test/maliyet)
  */
 
 const fs = require('fs');
@@ -20,16 +22,19 @@ const CONFIG_DIR = path.join(__dirname, 'configs');
 const args = process.argv.slice(2);
 function getArg(f) { const i = args.indexOf(f); return i !== -1 ? args[i + 1] : null; }
 
-const API_KEY = getArg('--key') || process.env.ANTHROPIC_API_KEY;
+const API_KEY = getArg('--key') || process.env.GEMINI_API_KEY || process.env.ANTHROPIC_API_KEY;
 const onlyArg = getArg('--only');
 const limitArg = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
-const MODEL = getArg('--model') || 'claude-sonnet-4-6';
 const TARGET_ITEMS = 32;
 
 if (!API_KEY) {
-  console.error('HATA: API key gerekli. --key sk-ant-... veya ANTHROPIC_API_KEY env değişkeni kullanın.');
+  console.error('HATA: API key gerekli. --key AIza... (Gemini) veya --key sk-ant-... (Claude).');
   process.exit(1);
 }
+
+// Sağlayıcıyı key formatından algıla
+const PROVIDER = getArg('--provider') || (API_KEY.startsWith('sk-ant') ? 'claude' : 'gemini');
+const MODEL = getArg('--model') || (PROVIDER === 'claude' ? 'claude-sonnet-4-6' : 'gemini-2.0-flash');
 
 const SYSTEM_PROMPT = `Sen bir AI araç kütüphanesi (vault) için içerik üreten uzman bir editörsün.
 Sana bir vault'un adı ve amacı verilir. Türkçe olarak, bu vault'a ait gerçekçi ve
@@ -66,35 +71,55 @@ Genel Kategori: ${cfg.categoryLabel}
 Bu vault için ${TARGET_ITEMS}+ item ve 5-6 kategori içeren JSON üret.`;
 }
 
-async function callClaude(cfg, retries = 3) {
-  const body = {
-    model: MODEL,
-    max_tokens: 8000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: 'user', content: buildUserMessage(cfg) }],
-  };
+async function callClaude(cfg) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': API_KEY,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 8000,
+      system: SYSTEM_PROMPT,
+      messages: [{ role: 'user', content: buildUserMessage(cfg) }],
+    }),
+  });
+  if (res.status === 429 || res.status === 529) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return (data.content || []).map(b => b.type === 'text' ? b.text : '').join('');
+}
+
+async function callGemini(cfg) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+      contents: [{ role: 'user', parts: [{ text: buildUserMessage(cfg) }] }],
+      generationConfig: { maxOutputTokens: 8192, temperature: 0.8, responseMimeType: 'application/json' },
+    }),
+  });
+  if (res.status === 429 || res.status === 503) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+}
+
+async function callAI(cfg, retries = 3) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': API_KEY,
-          'anthropic-version': '2023-06-01',
-        },
-        body: JSON.stringify(body),
-      });
-      if (res.status === 429 || res.status === 529) {
-        const wait = (attempt + 1) * 8000;
-        console.log(`    ⏳ Yoğunluk (${res.status}), ${wait/1000}s bekleniyor...`);
+      return PROVIDER === 'claude' ? await callClaude(cfg) : await callGemini(cfg);
+    } catch (e) {
+      if ((e.retryable || attempt < retries) && attempt < retries) {
+        const wait = (attempt + 1) * 6000;
+        console.log(`    ⏳ ${e.message}, ${wait/1000}s bekleniyor...`);
         await new Promise(r => setTimeout(r, wait));
         continue;
       }
-      const data = await res.json();
-      if (data.error) throw new Error(data.error.message);
-      return (data.content || []).map(b => b.type === 'text' ? b.text : '').join('');
-    } catch (e) {
-      if (attempt < retries) { await new Promise(r => setTimeout(r, (attempt + 1) * 5000)); continue; }
       throw e;
     }
   }
@@ -116,7 +141,7 @@ async function processConfig(file) {
   if (cfg.items && cfg.items.length >= TARGET_ITEMS) { console.log(`  • ${cfg.slug}: zaten dolu, atlandı`); return false; }
 
   try {
-    const raw = await callClaude(cfg);
+    const raw = await callAI(cfg);
     const parsed = extractJSON(raw);
     if (!parsed.items || !parsed.items.length) throw new Error('item üretilmedi');
 
@@ -125,7 +150,7 @@ async function processConfig(file) {
       id: i + 1,
       no: String(i + 1).padStart(3, '0'),
       ...it,
-      source: { generated: true, model: MODEL },
+      source: { generated: true, provider: PROVIDER, model: MODEL },
     }));
     fs.writeFileSync(fullPath, JSON.stringify(cfg, null, 2), 'utf8');
     console.log(`  ✓ ${cfg.slug}: ${cfg.items.length} item, ${cfg.categories.length} kategori`);
@@ -147,7 +172,7 @@ async function main() {
   });
   if (limitArg) files = files.slice(0, limitArg);
 
-  console.log(`AI ile veri üretiliyor (${files.length} vault, model: ${MODEL})...`);
+  console.log(`AI ile veri üretiliyor (${files.length} vault, sağlayıcı: ${PROVIDER}, model: ${MODEL})...`);
   let ok = 0;
   for (const f of files) {
     const r = await processConfig(f);
