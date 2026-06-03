@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{VAULT_TITLE}}</title>
-<meta name="description" content="{{META_DESCRIPTION}}">
-<meta name="keywords" content="{{META_KEYWORDS}}">
+<title>ShaderVault Pro — Oyun Motoru & 3D</title>
+<meta name="description" content="GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.">
+<meta name="keywords" content="Shader, ShaderVault Pro, Oyun Motoru & 3D, AI, yapay zeka, şablon">
 <meta name="robots" content="index, follow">
-<meta name="author" content="{{VAULT_TITLE}}">
+<meta name="author" content="ShaderVault Pro — Oyun Motoru & 3D">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{VAULT_TITLE}}">
-<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:title" content="ShaderVault Pro — Oyun Motoru & 3D">
+<meta property="og:description" content="GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.">
 <meta property="og:locale" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{VAULT_TITLE}}">
-<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:title" content="ShaderVault Pro — Oyun Motoru & 3D">
+<meta name="twitter:description" content="GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "{{VAULT_TITLE}}",
-  "description": "{{META_DESCRIPTION}}",
+  "name": "ShaderVault Pro — Oyun Motoru & 3D",
+  "description": "GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web",
   "inLanguage": "tr",
@@ -31,22 +31,22 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "{{VAULT_TITLE}}",
-  "description": "{{META_DESCRIPTION}}",
-  "numberOfItems": {{ITEM_COUNT}}
+  "name": "ShaderVault Pro — Oyun Motoru & 3D",
+  "description": "GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.",
+  "numberOfItems": 31
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:{{COLOR_BG}};--bg2:{{COLOR_BG2}};--bg3:{{COLOR_BG3}};--bg4:{{COLOR_BG4}};
-  --border:{{COLOR_BORDER}};--border2:{{COLOR_BORDER2}};--border3:{{COLOR_BORDER3}};
+  --bg:#06100a;--bg2:#0a140e;--bg3:#0e1812;--bg4:#121c16;
+  --border:#16201a;--border2:#1e2822;--border3:#2a342e;
   --text:#ede9e0;--text2:#9896a0;--text3:#585668;--text4:#343244;
-  --primary:{{COLOR_PRIMARY}};--primary2:{{COLOR_PRIMARY2}};
-  --primary-dim:{{COLOR_PRIMARY_DIM}};--primary-glow:{{COLOR_PRIMARY_GLOW}};
-  --accent:{{COLOR_ACCENT}};--accent2:{{COLOR_ACCENT2}};
-  --accent-dim:{{COLOR_ACCENT_DIM}};--accent-glow:{{COLOR_ACCENT_GLOW}};
+  --primary:#5ed47e;--primary2:#5ed47e;
+  --primary-dim:#5ed47e15;--primary-glow:#5ed47e30;
+  --accent:#4fc3f7;--accent2:#4fc3f7;
+  --accent-dim:#4fc3f718;--accent-glow:#4fc3f730;
   --radius:6px;--radius-lg:12px;--radius-xl:20px;
   --tr:0.28s cubic-bezier(0.4,0,0.2,1);--tr-fast:0.15s cubic-bezier(0.4,0,0.2,1);
   --shadow-sm:0 2px 8px #00000060;--shadow-md:0 8px 32px #00000080;--shadow-lg:0 20px 60px #000000a0;
@@ -54,16 +54,16 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:14px;line-height:1.6;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
-body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,{{COLOR_PRIMARY}}08 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 100%,{{COLOR_ACCENT}}06 0%,transparent 50%);pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,#5ed47e08 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 100%,#4fc3f706 0%,transparent 50%);pointer-events:none;z-index:0}
 
-.hero{position:relative;padding:56px 56px 44px;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(180deg,{{COLOR_HERO_BG}} 0%,var(--bg) 100%)}
-.hero::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,{{COLOR_PRIMARY}}0a 0%,{{COLOR_PRIMARY}}03 40%,transparent 70%);pointer-events:none}
+.hero{position:relative;padding:56px 56px 44px;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(180deg,#0a140e 0%,var(--bg) 100%)}
+.hero::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,#5ed47e0a 0%,#5ed47e03 40%,transparent 70%);pointer-events:none}
 .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,var(--primary) 30%,var(--accent) 70%,transparent 100%);opacity:.15}
 .hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--primary);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:14px;opacity:.9}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:inline-block;width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--primary));opacity:.7}
 .hero-eyebrow::after{background:linear-gradient(90deg,var(--primary),transparent)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,80px);font-weight:300;line-height:.9;letter-spacing:-.025em;margin-bottom:16px}
-.hero-title em{font-style:italic;color:var(--primary);text-shadow:0 0 60px {{COLOR_PRIMARY}}30}
+.hero-title em{font-style:italic;color:var(--primary);text-shadow:0 0 60px #5ed47e30}
 .hero-title span{color:var(--accent)}
 .hero-sub{font-size:14px;color:var(--text2);max-width:540px;line-height:1.75;margin-bottom:28px}
 .hero-stats{display:flex;gap:0;flex-wrap:wrap;align-items:stretch}
@@ -73,16 +73,16 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--text);line-height:1;letter-spacing:-.02em}
 .stat-num em{color:var(--primary);font-style:normal}
 .stat-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:.14em;text-transform:uppercase}
-.hero-corner{position:absolute;top:12px;right:48px;font-family:'Cormorant Garamond',serif;font-size:140px;font-weight:700;color:{{COLOR_PRIMARY}}03;line-height:1;user-select:none;pointer-events:none;letter-spacing:-.04em}
+.hero-corner{position:absolute;top:12px;right:48px;font-family:'Cormorant Garamond',serif;font-size:140px;font-weight:700;color:#5ed47e03;line-height:1;user-select:none;pointer-events:none;letter-spacing:-.04em}
 
-.api-bar{background:linear-gradient(90deg,{{COLOR_PRIMARY}}06,var(--bg2),transparent);border-bottom:1px solid var(--border);padding:10px 56px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;position:relative;overflow:hidden}
+.api-bar{background:linear-gradient(90deg,#5ed47e06,var(--bg2),transparent);border-bottom:1px solid var(--border);padding:10px 56px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;position:relative;overflow:hidden}
 .api-bar::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--primary),transparent);opacity:.5}
 .api-lbl{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:.08em;white-space:nowrap}
 .api-input{flex:1;min-width:220px;max-width:360px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:7px 13px;color:var(--text);font-family:'DM Mono',monospace;font-size:12px;transition:all var(--tr);letter-spacing:.04em}
 .api-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-dim);background:var(--bg4)}
 .api-input::placeholder{color:var(--text4)}
-.api-save{background:linear-gradient(135deg,var(--primary),{{COLOR_PRIMARY_DARK}});color:{{COLOR_BG}};border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);text-transform:uppercase;box-shadow:0 2px 12px {{COLOR_PRIMARY}}20}
-.api-save:hover{transform:translateY(-1px);box-shadow:0 4px 20px {{COLOR_PRIMARY}}35}
+.api-save{background:linear-gradient(135deg,var(--primary),#40b660);color:#06100a;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:10px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);text-transform:uppercase;box-shadow:0 2px 12px #5ed47e20}
+.api-save:hover{transform:translateY(-1px);box-shadow:0 4px 20px #5ed47e35}
 .api-status{font-family:'DM Mono',monospace;font-size:10px;display:flex;align-items:center;gap:7px;letter-spacing:.06em}
 .api-dot{width:6px;height:6px;border-radius:50%;background:var(--text4)}
 .api-dot.ok{background:#5ac87d;box-shadow:0 0 8px #5ac87d60}
@@ -127,14 +127,14 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 .empty .glyph{font-family:'Cormorant Garamond',serif;font-size:80px;color:var(--primary);line-height:1}
 .empty p{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
 
-.item-hdr{padding:28px 40px 20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,{{COLOR_HERO_BG}},var(--bg))}
+.item-hdr{padding:28px 40px 20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0a140e,var(--bg))}
 .item-hdr-top{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
 .item-badge-lg{font-family:'DM Mono',monospace;font-size:8px;padding:3px 9px;border-radius:var(--radius-xl);letter-spacing:.1em;text-transform:uppercase}
 .item-badge-lg.cat{background:color-mix(in srgb,var(--cc) 12%,transparent);border:1px solid color-mix(in srgb,var(--cc) 25%,transparent);color:var(--cc,var(--primary))}
 .item-badge-lg.b1{background:var(--bg3);border:1px solid var(--border2);color:var(--text3)}
 .item-badge-lg.b2{background:var(--bg3);border:1px solid var(--border2);color:var(--primary);font-size:9px}
-.copy-btn{margin-left:auto;background:linear-gradient(135deg,var(--primary),{{COLOR_PRIMARY_DARK}});color:{{COLOR_BG}};border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);display:flex;align-items:center;gap:7px;box-shadow:0 2px 12px {{COLOR_PRIMARY}}20}
-.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px {{COLOR_PRIMARY}}35}
+.copy-btn{margin-left:auto;background:linear-gradient(135deg,var(--primary),#40b660);color:#06100a;border:none;border-radius:var(--radius);padding:7px 16px;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;cursor:pointer;letter-spacing:.1em;transition:all var(--tr);display:flex;align-items:center;gap:7px;box-shadow:0 2px 12px #5ed47e20}
+.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px #5ed47e35}
 .copy-btn.copied{background:linear-gradient(135deg,#5ac87d,#3aaa5d)}
 .item-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;line-height:1;letter-spacing:-.02em;margin-bottom:8px}
 .item-title em{font-style:italic;color:var(--cc,var(--primary))}
@@ -218,24 +218,24 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 <body>
 
 <header class="hero">
-  <div class="hero-corner">{{HERO_CORNER}}</div>
-  <div class="hero-eyebrow">{{HERO_EYEBROW}}</div>
-  <h1 class="hero-title">{{HERO_TITLE_HTML}}</h1>
-  <p class="hero-sub">{{HERO_SUBTITLE}}</p>
+  <div class="hero-corner">S</div>
+  <div class="hero-eyebrow">Oyun Motoru & 3D · Alet Çantası</div>
+  <h1 class="hero-title">Shader<em>Vault</em> <span>Pro</span></h1>
+  <p class="hero-sub">GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.</p>
   <div class="hero-stats">
-    {{HERO_STATS_HTML}}
+    <div class="stat"><div class="stat-num"><em>31</em></div><div class="stat-label">Öğeler</div></div>
   </div>
 </header>
 
 <div class="api-bar">
   <span class="api-lbl">API KEY →</span>
-  <input class="api-input" id="apiInput" type="password" placeholder="{{API_PLACEHOLDER}}" autocomplete="off">
+  <input class="api-input" id="apiInput" type="password" placeholder="sk-ant-api..." autocomplete="off">
   <button class="api-save" onclick="saveApiKey()">KAYDET</button>
   <div class="api-status">
     <div class="api-dot" id="apiDot"></div>
     <span class="api-status-lbl" id="apiLbl">Bağlı değil</span>
   </div>
-  <a id="apiLink" href="{{API_LINK}}" target="_blank" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.7;margin-left:auto">{{API_LINK_TEXT}}</a>
+  <a id="apiLink" href="https://console.anthropic.com" target="_blank" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--primary);text-decoration:none;opacity:.7;margin-left:auto">Anthropic key al →</a>
 </div>
 
 <div class="app">
@@ -243,13 +243,13 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
     <div class="srch-wrap">
       <div class="srch-inner">
         <span class="srch-icon">⌕</span>
-        <input class="srch-input" id="searchInput" type="text" placeholder="{{SEARCH_PLACEHOLDER}}" autocomplete="off">
+        <input class="srch-input" id="searchInput" type="text" placeholder="Shader ara..." autocomplete="off">
       </div>
     </div>
     <div class="cat-sec">
       <div class="cat-hdr">Kategoriler</div>
       <button class="cat-btn active" data-cat="all" style="--cc:var(--primary)" onclick="filterCat('all',this)">
-        <span class="cdot"></span><span class="cname">Tümü</span><span class="ccount">{{ITEM_COUNT}}</span>
+        <span class="cdot"></span><span class="cname">Tümü</span><span class="ccount">31</span>
       </button>
     </div>
     <div id="catBtns"></div>
@@ -258,8 +258,8 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 
   <main class="main" id="mainContent">
     <div class="empty" id="emptyState">
-      <div class="glyph">{{EMPTY_GLYPH}}</div>
-      <p>{{EMPTY_TEXT}}</p>
+      <div class="glyph">◈</div>
+      <p>Sol taraftan bir öğe seç</p>
     </div>
     <div id="itemDetail" style="display:none"></div>
     <div id="allGrid" style="display:none"></div>
@@ -267,22 +267,22 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 </div>
 
 <footer class="footer">
-  <div class="footer-brand">{{FOOTER_BRAND_HTML}}</div>
-  <div class="footer-note">{{FOOTER_NOTE}}</div>
+  <div class="footer-brand">Shader<em>Vault</em> <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)">Pro</span></div>
+  <div class="footer-note">ShaderVault Pro · Oyun Motoru & 3D</div>
 </footer>
 
 <button class="scroll-top" id="scrollTop" onclick="document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
 // ── DATA ──
-const CATS = {{CATS_JSON}};
-const ITEMS = {{ITEMS_JSON}};
+const CATS = [{"id":"C++","name":"C++","color":"#4a9eff","count":16},{"id":"Rust","name":"Rust","color":"#5ed47e","count":3},{"id":"GLSL","name":"GLSL","color":"#a375ff","count":3},{"id":"C","name":"C","color":"#ff6b6b","count":3},{"id":"HLSL","name":"HLSL","color":"#d4a04c","count":2},{"id":"C#","name":"C#","color":"#4cc9c9","count":1},{"id":"Python","name":"Python","color":"#ff6b9d","count":1},{"id":"ShaderLab","name":"ShaderLab","color":"#fb923c","count":1},{"id":"TypeScript","name":"TypeScript","color":"#4a9eff","count":1}];
+const ITEMS = [{"id":1,"cat":"C++","name":"3d-game-shaders-for-beginners","desc":"🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.","tags":["3d","3d-graphics","game-development","gamedev","★19661"],"badge1":"C++","badge2":"★ 19.661","content":"lettier/3d-game-shaders-for-beginners\n\n🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.\n\n⭐ Yıldız: 19661\n🍴 Fork: 1474\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/lettier/3d-game-shaders-for-beginners","meta":{"Yıldız":19661,"Dil":"C++","Fork":1474},"source":{"url":"https://github.com/lettier/3d-game-shaders-for-beginners","license":"GitHub Search API · her repo kendi lisansına tabidir","author":"lettier"},"no":"001"},{"id":2,"cat":"C++","name":"slang","desc":"Making it easier to work with shaders","tags":["cuda","d3d12","glsl","hlsl","★5345"],"badge1":"C++","badge2":"★ 5.345","content":"shader-slang/slang\n\nMaking it easier to work with shaders\n\n⭐ Yıldız: 5345\n🍴 Fork: 450\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/shader-slang/slang","meta":{"Yıldız":5345,"Dil":"C++","Fork":450},"source":{"url":"https://github.com/shader-slang/slang","license":"NOASSERTION","author":"shader-slang"},"no":"002"},{"id":3,"cat":"C++","name":"SHADERed","desc":"Lightweight, cross-platform & full-featured shader IDE","tags":["debugger","game-development","glsl","glsl-editors","★4754"],"badge1":"C++","badge2":"★ 4.754","content":"dfranx/SHADERed\n\nLightweight, cross-platform & full-featured shader IDE\n\n⭐ Yıldız: 4754\n🍴 Fork: 312\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/dfranx/SHADERed","meta":{"Yıldız":4754,"Dil":"C++","Fork":312},"source":{"url":"https://github.com/dfranx/SHADERed","license":"MIT","author":"dfranx"},"no":"003"},{"id":4,"cat":"C++","name":"glslang","desc":"Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.","tags":["compiler","essl","glsl","glslang","★3519"],"badge1":"C++","badge2":"★ 3.519","content":"KhronosGroup/glslang\n\nKhronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.\n\n⭐ Yıldız: 3519\n🍴 Fork: 971\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/KhronosGroup/glslang","meta":{"Yıldız":3519,"Dil":"C++","Fork":971},"source":{"url":"https://github.com/KhronosGroup/glslang","license":"NOASSERTION","author":"KhronosGroup"},"no":"004"},{"id":5,"cat":"Rust","name":"FastNoiseLite","desc":"Fast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go ","tags":["cellular-noise","cubic-noise","fractal-algorithms","hacktoberfest","★3420"],"badge1":"Rust","badge2":"★ 3.420","content":"Auburn/FastNoiseLite\n\nFast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go \n\n⭐ Yıldız: 3420\n🍴 Fork: 367\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/Auburn/FastNoiseLite","meta":{"Yıldız":3420,"Dil":"Rust","Fork":367},"source":{"url":"https://github.com/Auburn/FastNoiseLite","license":"MIT","author":"Auburn"},"no":"005"},{"id":6,"cat":"GLSL","name":"lygia","desc":"LYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for perform","tags":["cuda","directx","glsl","hlsl","★3352"],"badge1":"GLSL","badge2":"★ 3.352","content":"patriciogonzalezvivo/lygia\n\nLYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for performance and flexibility\n\n⭐ Yıldız: 3352\n🍴 Fork: 216\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/patriciogonzalezvivo/lygia","meta":{"Yıldız":3352,"Dil":"GLSL","Fork":216},"source":{"url":"https://github.com/patriciogonzalezvivo/lygia","license":"NOASSERTION","author":"patriciogonzalezvivo"},"no":"006"},{"id":7,"cat":"C++","name":"shaderc","desc":"A collection of tools, libraries, and tests for Vulkan shader compilation.","tags":["compiler","glsl","glslang","graphics","★2151"],"badge1":"C++","badge2":"★ 2.151","content":"google/shaderc\n\nA collection of tools, libraries, and tests for Vulkan shader compilation.\n\n⭐ Yıldız: 2151\n🍴 Fork: 423\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/google/shaderc","meta":{"Yıldız":2151,"Dil":"C++","Fork":423},"source":{"url":"https://github.com/google/shaderc","license":"NOASSERTION","author":"google"},"no":"007"},{"id":8,"cat":"C++","name":"ShaderConductor","desc":"ShaderConductor is a tool designed for cross-compiling HLSL to other shading languages","tags":["compiler","d3d10","d3d11","d3d12","★1837"],"badge1":"C++","badge2":"★ 1.837","content":"microsoft/ShaderConductor\n\nShaderConductor is a tool designed for cross-compiling HLSL to other shading languages\n\n⭐ Yıldız: 1837\n🍴 Fork: 264\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/microsoft/ShaderConductor","meta":{"Yıldız":1837,"Dil":"C++","Fork":264},"source":{"url":"https://github.com/microsoft/ShaderConductor","license":"MIT","author":"microsoft"},"no":"008"},{"id":9,"cat":"GLSL","name":"ShaderMan","desc":"Convert ShaderToy to Unity  HLSL/CG","tags":["glsl","shaders","shadertoy","unity","★1501"],"badge1":"GLSL","badge2":"★ 1.501","content":"smkplus/ShaderMan\n\nConvert ShaderToy to Unity  HLSL/CG\n\n⭐ Yıldız: 1501\n🍴 Fork: 202\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/smkplus/ShaderMan","meta":{"Yıldız":1501,"Dil":"GLSL","Fork":202},"source":{"url":"https://github.com/smkplus/ShaderMan","license":"MIT","author":"smkplus"},"no":"009"},{"id":10,"cat":"C++","name":"Bonzomatic","desc":"Live shader coding tool and Shader Showdown workhorse","tags":["c-plus-plus","demoscene","directx","glsl","★1494"],"badge1":"C++","badge2":"★ 1.494","content":"Gargaj/Bonzomatic\n\nLive shader coding tool and Shader Showdown workhorse\n\n⭐ Yıldız: 1494\n🍴 Fork: 120\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/Gargaj/Bonzomatic","meta":{"Yıldız":1494,"Dil":"C++","Fork":120},"source":{"url":"https://github.com/Gargaj/Bonzomatic","license":"NOASSERTION","author":"Gargaj"},"no":"010"},{"id":11,"cat":"C","name":"common-shaders","desc":"Collection of commonly used Cg shaders. These shaders are usable by either HLSL and/or Cg runtime compilers. The cg2glsl","tags":["★1150"],"badge1":"C","badge2":"★ 1.150","content":"libretro/common-shaders\n\nCollection of commonly used Cg shaders. These shaders are usable by either HLSL and/or Cg runtime compilers. The cg2glsl script will translate most of these into GLSL shaders.\n\n⭐ Yıldız: 1150\n🍴 Fork: 258\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/libretro/common-shaders","meta":{"Yıldız":1150,"Dil":"C","Fork":258},"source":{"url":"https://github.com/libretro/common-shaders","license":"GitHub Search API · her repo kendi lisansına tabidir","author":"libretro"},"no":"011"},{"id":12,"cat":"C++","name":"GPU-Gems-Book-Source-Code","desc":":cd: CD Content ( Source Code )  Collection  of Book <GPU Gems > 1~ 3 | 《GPU精粹》 1~ 3 随书CD（源代码）珍藏","tags":["book-source-code","glsl","gpu","gpu-gems","★1122"],"badge1":"C++","badge2":"★ 1.122","content":"QianMo/GPU-Gems-Book-Source-Code\n\n:cd: CD Content ( Source Code )  Collection  of Book <GPU Gems > 1~ 3 | 《GPU精粹》 1~ 3 随书CD（源代码）珍藏\n\n⭐ Yıldız: 1122\n🍴 Fork: 452\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/QianMo/GPU-Gems-Book-Source-Code","meta":{"Yıldız":1122,"Dil":"C++","Fork":452},"source":{"url":"https://github.com/QianMo/GPU-Gems-Book-Source-Code","license":"GitHub Search API · her repo kendi lisansına tabidir","author":"QianMo"},"no":"012"},{"id":13,"cat":"C","name":"shader-playground","desc":"Shader playground website for exploring HLSL, GLSL, SPIR-V compilers","tags":["★644"],"badge1":"C","badge2":"★ 644","content":"tgjones/shader-playground\n\nShader playground website for exploring HLSL, GLSL, SPIR-V compilers\n\n⭐ Yıldız: 644\n🍴 Fork: 50\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/tgjones/shader-playground","meta":{"Yıldız":644,"Dil":"C","Fork":50},"source":{"url":"https://github.com/tgjones/shader-playground","license":"BSD-2-Clause","author":"tgjones"},"no":"013"},{"id":14,"cat":"HLSL","name":"ShaderToHuman","desc":"HLSL/GLSL library for debugging shaders","tags":["★586"],"badge1":"HLSL","badge2":"★ 586","content":"electronicarts/ShaderToHuman\n\nHLSL/GLSL library for debugging shaders\n\n⭐ Yıldız: 586\n🍴 Fork: 19\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/electronicarts/ShaderToHuman","meta":{"Yıldız":586,"Dil":"HLSL","Fork":19},"source":{"url":"https://github.com/electronicarts/ShaderToHuman","license":"NOASSERTION","author":"electronicarts"},"no":"014"},{"id":15,"cat":"GLSL","name":"shader-minifier","desc":"Minify and obfuscate GLSL or HLSL code","tags":["compiler","demoscene","demotool","fsharp","★564"],"badge1":"GLSL","badge2":"★ 564","content":"laurentlb/shader-minifier\n\nMinify and obfuscate GLSL or HLSL code\n\n⭐ Yıldız: 564\n🍴 Fork: 49\n📅 Güncelleme: 2026-05-26\n🔗 https://github.com/laurentlb/shader-minifier","meta":{"Yıldız":564,"Dil":"GLSL","Fork":49},"source":{"url":"https://github.com/laurentlb/shader-minifier","license":"Apache-2.0","author":"laurentlb"},"no":"015"},{"id":16,"cat":"C#","name":"ShaderGen","desc":"Proof-of-concept library for generating HLSL, GLSL, and Metal shader code from C#,","tags":["direct3d","games","glsl","graphics","★516"],"badge1":"C#","badge2":"★ 516","content":"mellinoe/ShaderGen\n\nProof-of-concept library for generating HLSL, GLSL, and Metal shader code from C#,\n\n⭐ Yıldız: 516\n🍴 Fork: 54\n📅 Güncelleme: 2026-04-26\n🔗 https://github.com/mellinoe/ShaderGen","meta":{"Yıldız":516,"Dil":"C#","Fork":54},"source":{"url":"https://github.com/mellinoe/ShaderGen","license":"MIT","author":"mellinoe"},"no":"016"},{"id":17,"cat":"C++","name":"ArcGameEngine","desc":"AGE: Arc Game Engine is an open-source engine for building 2D & 3D real-time rendering and interactive contents, especia","tags":["cpp","ecs","engine","entity-component-system","★386"],"badge1":"C++","badge2":"★ 386","content":"GloriousPtr/ArcGameEngine\n\nAGE: Arc Game Engine is an open-source engine for building 2D & 3D real-time rendering and interactive contents, especially video games with C# scripting support.\n\n⭐ Yıldız: 386\n🍴 Fork: 30\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/GloriousPtr/ArcGameEngine","meta":{"Yıldız":386,"Dil":"C++","Fork":30},"source":{"url":"https://github.com/GloriousPtr/ArcGameEngine","license":"Apache-2.0","author":"GloriousPtr"},"no":"017"},{"id":18,"cat":"C++","name":"XShaderCompiler","desc":"Shader cross compiler to translate HLSL (Shader Model 4 and 5) to GLSL","tags":["c","cpp","cpp11","csharp","★363"],"badge1":"C++","badge2":"★ 363","content":"LukasBanana/XShaderCompiler\n\nShader cross compiler to translate HLSL (Shader Model 4 and 5) to GLSL\n\n⭐ Yıldız: 363\n🍴 Fork: 47\n📅 Güncelleme: 2026-03-28\n🔗 https://github.com/LukasBanana/XShaderCompiler","meta":{"Yıldız":363,"Dil":"C++","Fork":47},"source":{"url":"https://github.com/LukasBanana/XShaderCompiler","license":"BSD-3-Clause","author":"LukasBanana"},"no":"018"},{"id":19,"cat":"Python","name":"pmfx-shader","desc":"Cross platform shader system for HLSL, GLSL, Metal and SPIR-V.","tags":["gles","glsl","hlsl","metal","★350"],"badge1":"Python","badge2":"★ 350","content":"polymonster/pmfx-shader\n\nCross platform shader system for HLSL, GLSL, Metal and SPIR-V.\n\n⭐ Yıldız: 350\n🍴 Fork: 11\n📅 Güncelleme: 2026-05-16\n🔗 https://github.com/polymonster/pmfx-shader","meta":{"Yıldız":350,"Dil":"Python","Fork":11},"source":{"url":"https://github.com/polymonster/pmfx-shader","license":"MIT","author":"polymonster"},"no":"019"},{"id":20,"cat":"C++","name":"ShaderDebugger","desc":"[DEPRECATED] C++ library for debugging HLSL & GLSL shaders","tags":["compiler","debugger","glsl","hlsl","★329"],"badge1":"C++","badge2":"★ 329","content":"dfranx/ShaderDebugger\n\n[DEPRECATED] C++ library for debugging HLSL & GLSL shaders\n\n⭐ Yıldız: 329\n🍴 Fork: 21\n📅 Güncelleme: 2026-03-19\n🔗 https://github.com/dfranx/ShaderDebugger","meta":{"Yıldız":329,"Dil":"C++","Fork":21},"source":{"url":"https://github.com/dfranx/ShaderDebugger","license":"MIT","author":"dfranx"},"no":"020"},{"id":21,"cat":"C","name":"SPIRV-VM","desc":"Virtual machine for executing SPIR-V","tags":["debugging","glsl","hlsl","shader","★316"],"badge1":"C","badge2":"★ 316","content":"dfranx/SPIRV-VM\n\nVirtual machine for executing SPIR-V\n\n⭐ Yıldız: 316\n🍴 Fork: 31\n📅 Güncelleme: 2026-05-25\n🔗 https://github.com/dfranx/SPIRV-VM","meta":{"Yıldız":316,"Dil":"C","Fork":31},"source":{"url":"https://github.com/dfranx/SPIRV-VM","license":"MIT","author":"dfranx"},"no":"021"},{"id":22,"cat":"C++","name":"CrossShader","desc":"⚔️ A tool for cross compiling shaders. Convert between GLSL, HLSL, Metal Shader Language, or older versions of GLSL.","tags":["apple-metal","compiler","directx","glsl","★308"],"badge1":"C++","badge2":"★ 308","content":"alaingalvan/CrossShader\n\n⚔️ A tool for cross compiling shaders. Convert between GLSL, HLSL, Metal Shader Language, or older versions of GLSL.\n\n⭐ Yıldız: 308\n🍴 Fork: 13\n📅 Güncelleme: 2026-05-06\n🔗 https://github.com/alaingalvan/CrossShader","meta":{"Yıldız":308,"Dil":"C++","Fork":13},"source":{"url":"https://github.com/alaingalvan/CrossShader","license":"MIT","author":"alaingalvan"},"no":"022"},{"id":23,"cat":"Rust","name":"shaderc-rs","desc":"Rust bindings for the shaderc library.","tags":["compiler","glsl","graphics","hlsl","★287"],"badge1":"Rust","badge2":"★ 287","content":"google/shaderc-rs\n\nRust bindings for the shaderc library.\n\n⭐ Yıldız: 287\n🍴 Fork: 70\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/google/shaderc-rs","meta":{"Yıldız":287,"Dil":"Rust","Fork":70},"source":{"url":"https://github.com/google/shaderc-rs","license":"Apache-2.0","author":"google"},"no":"023"},{"id":24,"cat":"C++","name":"ShaderWriter","desc":"Library used to write shaders from C++, and export them in either GLSL, HLSL or SPIR-V.","tags":["cpp17","glsl","hlsl","spirv","★263"],"badge1":"C++","badge2":"★ 263","content":"DragonJoker/ShaderWriter\n\nLibrary used to write shaders from C++, and export them in either GLSL, HLSL or SPIR-V.\n\n⭐ Yıldız: 263\n🍴 Fork: 12\n📅 Güncelleme: 2026-05-26\n🔗 https://github.com/DragonJoker/ShaderWriter","meta":{"Yıldız":263,"Dil":"C++","Fork":12},"source":{"url":"https://github.com/DragonJoker/ShaderWriter","license":"MIT","author":"DragonJoker"},"no":"024"},{"id":25,"cat":"C++","name":"gpupad","desc":"A flexible GLSL and HLSL shader editor and IDE.","tags":["compute","cross-platform","editor","glsl","★197"],"badge1":"C++","badge2":"★ 197","content":"houmain/gpupad\n\nA flexible GLSL and HLSL shader editor and IDE.\n\n⭐ Yıldız: 197\n🍴 Fork: 11\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/houmain/gpupad","meta":{"Yıldız":197,"Dil":"C++","Fork":11},"source":{"url":"https://github.com/houmain/gpupad","license":"GPL-3.0","author":"houmain"},"no":"025"},{"id":26,"cat":"HLSL","name":"Open-Shaders","desc":"Collection of many open source shaders(GLSL, HLSL, CG) in popular open source game development and rendering engines and","tags":["awesome-list","computer-graphics","game-development","glsl","★156"],"badge1":"HLSL","badge2":"★ 156","content":"repalash/Open-Shaders\n\nCollection of many open source shaders(GLSL, HLSL, CG) in popular open source game development and rendering engines and public repositories.\n\n⭐ Yıldız: 156\n🍴 Fork: 17\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/repalash/Open-Shaders","meta":{"Yıldız":156,"Dil":"HLSL","Fork":17},"source":{"url":"https://github.com/repalash/Open-Shaders","license":"GitHub Search API · her repo kendi lisansına tabidir","author":"repalash"},"no":"026"},{"id":27,"cat":"ShaderLab","name":"Unity-Shaders-from-Shader-Toy","desc":"Converted Unity shaders from SahderToy to Unity shading language","tags":["circle","glsl","hlsl","math","★149"],"badge1":"ShaderLab","badge2":"★ 149","content":"marcozakaria/Unity-Shaders-from-Shader-Toy\n\nConverted Unity shaders from SahderToy to Unity shading language\n\n⭐ Yıldız: 149\n🍴 Fork: 26\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/marcozakaria/Unity-Shaders-from-Shader-Toy","meta":{"Yıldız":149,"Dil":"ShaderLab","Fork":26},"source":{"url":"https://github.com/marcozakaria/Unity-Shaders-from-Shader-Toy","license":"MIT","author":"marcozakaria"},"no":"027"},{"id":28,"cat":"C++","name":"ada","desc":"A general porpose OpenGL app library","tags":["glsl","glsl-shader","graphics","hlsl","★128"],"badge1":"C++","badge2":"★ 128","content":"patriciogonzalezvivo/ada\n\nA general porpose OpenGL app library\n\n⭐ Yıldız: 128\n🍴 Fork: 13\n📅 Güncelleme: 2026-01-30\n🔗 https://github.com/patriciogonzalezvivo/ada","meta":{"Yıldız":128,"Dil":"C++","Fork":13},"source":{"url":"https://github.com/patriciogonzalezvivo/ada","license":"MIT","author":"patriciogonzalezvivo"},"no":"028"},{"id":29,"cat":"Rust","name":"glsl2hlsl","desc":"Shadertoy to Unity shader converter","tags":["★114"],"badge1":"Rust","badge2":"★ 114","content":"pema99/glsl2hlsl\n\nShadertoy to Unity shader converter\n\n⭐ Yıldız: 114\n🍴 Fork: 16\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/pema99/glsl2hlsl","meta":{"Yıldız":114,"Dil":"Rust","Fork":16},"source":{"url":"https://github.com/pema99/glsl2hlsl","license":"MIT","author":"pema99"},"no":"029"},{"id":30,"cat":"TypeScript","name":"vscode-shadered","desc":"VS Code extension that adds the ability to debug and preview shaders","tags":["debugger","glsl","hlsl","shaders","★101"],"badge1":"TypeScript","badge2":"★ 101","content":"dfranx/vscode-shadered\n\nVS Code extension that adds the ability to debug and preview shaders\n\n⭐ Yıldız: 101\n🍴 Fork: 10\n📅 Güncelleme: 2026-02-16\n🔗 https://github.com/dfranx/vscode-shadered","meta":{"Yıldız":101,"Dil":"TypeScript","Fork":10},"source":{"url":"https://github.com/dfranx/vscode-shadered","license":"MIT","author":"dfranx"},"no":"030"},{"id":31,"cat":"C++","name":"ShaderLab","desc":"Shaderlab is a tool designed for cross compiling unity shader to other shading languages.","tags":["cross-compiler","glsl","hlsl","metal","★101"],"badge1":"C++","badge2":"★ 101","content":"BobLChen/ShaderLab\n\nShaderlab is a tool designed for cross compiling unity shader to other shading languages.\n\n⭐ Yıldız: 101\n🍴 Fork: 12\n📅 Güncelleme: 2025-12-08\n🔗 https://github.com/BobLChen/ShaderLab","meta":{"Yıldız":101,"Dil":"C++","Fork":12},"source":{"url":"https://github.com/BobLChen/ShaderLab","license":"MIT","author":"BobLChen"},"no":"031"}];
 
 // ── STATE ──
 let activeItem = null;
 let activeCat = 'all';
 let API_KEY = '';
-const STORAGE_KEY = '{{STORAGE_KEY}}_api_key';
+const STORAGE_KEY = 'shadervault_pro_api_key';
 
 // ── API ──
 function saveApiKey(){
@@ -365,7 +365,7 @@ function filterCat(cat, btn){
   let filtered = cat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===cat);
   if(q) filtered = filtered.filter(s=>searchMatch(s, q));
   buildItemList(filtered);
-  showGrid(filtered, cat==='all' ? 'Tüm {{ITEM_NOUN_PLURAL}}' : cat);
+  showGrid(filtered, cat==='all' ? 'Tüm Öğeler' : cat);
 }
 
 function onSearch(q){
@@ -373,7 +373,7 @@ function onSearch(q){
   let filtered = activeCat==='all' ? ITEMS : ITEMS.filter(s=>s.cat===activeCat);
   if(lower) filtered = filtered.filter(s=>searchMatch(s, lower));
   buildItemList(filtered);
-  showGrid(filtered, q ? `"${q}" — ${filtered.length} sonuç` : 'Tüm {{ITEM_NOUN_PLURAL}}');
+  showGrid(filtered, q ? `"${q}" — ${filtered.length} sonuç` : 'Tüm Öğeler');
 }
 
 function searchMatch(s, q){
@@ -442,7 +442,7 @@ function renderDetail(s){
       ${s.source.author ? `<span class="source-author">@${esc(s.source.author)}</span>` : ''}
     </div>` : ''}
     <div class="sim-sec">
-      <div class="sim-hdr"><span class="sim-title">Benzer {{ITEM_NOUN_PLURAL}}</span></div>
+      <div class="sim-hdr"><span class="sim-title">Benzer Öğeler</span></div>
       <div class="sim-grid">${buildSimilar(s).map(g=>`
         <div class="sim-card" style="--sc:${g.cc||catColor(g.cat)}" onclick="selectItem(${g.id})">
           <div class="sim-card-name">${esc(g.name)}</div>
@@ -475,7 +475,7 @@ function showGrid(items, title){
   document.getElementById('allGrid').innerHTML=`<div class="all-grid">
     <div class="grid-header">
       <h2 class="grid-title"><em>${esc(title)}</em></h2>
-      <span class="grid-count">${items.length} {{ITEM_NOUN_LOWER}}</span>
+      <span class="grid-count">${items.length} öğeler</span>
     </div>
     <div class="item-cards">
       ${items.map((s,i)=>{
@@ -509,7 +509,7 @@ function esc(s){
 
 window.addEventListener('DOMContentLoaded', ()=>{
   init();
-  showGrid(ITEMS, 'Tüm {{ITEM_NOUN_PLURAL}}');
+  showGrid(ITEMS, 'Tüm Öğeler');
 });
 </script>
 </body>

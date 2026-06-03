@@ -1,0 +1,899 @@
+{
+  "slug": "25-shadervault-pro",
+  "title": "ShaderVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.",
+  "metaKeywords": [
+    "Shader",
+    "ShaderVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı.",
+  "heroCorner": "S",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Shader<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Shader<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ShaderVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Shader ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "shadervault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "web",
+  "sourceUrl": "github-search:GLSL HLSL shader",
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "C++",
+      "name": "C++",
+      "color": "#4a9eff",
+      "count": 16
+    },
+    {
+      "id": "Rust",
+      "name": "Rust",
+      "color": "#5ed47e",
+      "count": 3
+    },
+    {
+      "id": "GLSL",
+      "name": "GLSL",
+      "color": "#a375ff",
+      "count": 3
+    },
+    {
+      "id": "C",
+      "name": "C",
+      "color": "#ff6b6b",
+      "count": 3
+    },
+    {
+      "id": "HLSL",
+      "name": "HLSL",
+      "color": "#d4a04c",
+      "count": 2
+    },
+    {
+      "id": "C#",
+      "name": "C#",
+      "color": "#4cc9c9",
+      "count": 1
+    },
+    {
+      "id": "Python",
+      "name": "Python",
+      "color": "#ff6b9d",
+      "count": 1
+    },
+    {
+      "id": "ShaderLab",
+      "name": "ShaderLab",
+      "color": "#fb923c",
+      "count": 1
+    },
+    {
+      "id": "TypeScript",
+      "name": "TypeScript",
+      "color": "#4a9eff",
+      "count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "cat": "C++",
+      "name": "3d-game-shaders-for-beginners",
+      "desc": "🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.",
+      "tags": [
+        "3d",
+        "3d-graphics",
+        "game-development",
+        "gamedev",
+        "★19661"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 19.661",
+      "content": "lettier/3d-game-shaders-for-beginners\n\n🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.\n\n⭐ Yıldız: 19661\n🍴 Fork: 1474\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/lettier/3d-game-shaders-for-beginners",
+      "meta": {
+        "Yıldız": 19661,
+        "Dil": "C++",
+        "Fork": 1474
+      },
+      "source": {
+        "url": "https://github.com/lettier/3d-game-shaders-for-beginners",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "lettier"
+      }
+    },
+    {
+      "id": 2,
+      "cat": "C++",
+      "name": "slang",
+      "desc": "Making it easier to work with shaders",
+      "tags": [
+        "cuda",
+        "d3d12",
+        "glsl",
+        "hlsl",
+        "★5345"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 5.345",
+      "content": "shader-slang/slang\n\nMaking it easier to work with shaders\n\n⭐ Yıldız: 5345\n🍴 Fork: 450\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/shader-slang/slang",
+      "meta": {
+        "Yıldız": 5345,
+        "Dil": "C++",
+        "Fork": 450
+      },
+      "source": {
+        "url": "https://github.com/shader-slang/slang",
+        "license": "NOASSERTION",
+        "author": "shader-slang"
+      }
+    },
+    {
+      "id": 3,
+      "cat": "C++",
+      "name": "SHADERed",
+      "desc": "Lightweight, cross-platform & full-featured shader IDE",
+      "tags": [
+        "debugger",
+        "game-development",
+        "glsl",
+        "glsl-editors",
+        "★4754"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 4.754",
+      "content": "dfranx/SHADERed\n\nLightweight, cross-platform & full-featured shader IDE\n\n⭐ Yıldız: 4754\n🍴 Fork: 312\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/dfranx/SHADERed",
+      "meta": {
+        "Yıldız": 4754,
+        "Dil": "C++",
+        "Fork": 312
+      },
+      "source": {
+        "url": "https://github.com/dfranx/SHADERed",
+        "license": "MIT",
+        "author": "dfranx"
+      }
+    },
+    {
+      "id": 4,
+      "cat": "C++",
+      "name": "glslang",
+      "desc": "Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.",
+      "tags": [
+        "compiler",
+        "essl",
+        "glsl",
+        "glslang",
+        "★3519"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 3.519",
+      "content": "KhronosGroup/glslang\n\nKhronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.\n\n⭐ Yıldız: 3519\n🍴 Fork: 971\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/KhronosGroup/glslang",
+      "meta": {
+        "Yıldız": 3519,
+        "Dil": "C++",
+        "Fork": 971
+      },
+      "source": {
+        "url": "https://github.com/KhronosGroup/glslang",
+        "license": "NOASSERTION",
+        "author": "KhronosGroup"
+      }
+    },
+    {
+      "id": 5,
+      "cat": "Rust",
+      "name": "FastNoiseLite",
+      "desc": "Fast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go ",
+      "tags": [
+        "cellular-noise",
+        "cubic-noise",
+        "fractal-algorithms",
+        "hacktoberfest",
+        "★3420"
+      ],
+      "badge1": "Rust",
+      "badge2": "★ 3.420",
+      "content": "Auburn/FastNoiseLite\n\nFast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go \n\n⭐ Yıldız: 3420\n🍴 Fork: 367\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/Auburn/FastNoiseLite",
+      "meta": {
+        "Yıldız": 3420,
+        "Dil": "Rust",
+        "Fork": 367
+      },
+      "source": {
+        "url": "https://github.com/Auburn/FastNoiseLite",
+        "license": "MIT",
+        "author": "Auburn"
+      }
+    },
+    {
+      "id": 6,
+      "cat": "GLSL",
+      "name": "lygia",
+      "desc": "LYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for perform",
+      "tags": [
+        "cuda",
+        "directx",
+        "glsl",
+        "hlsl",
+        "★3352"
+      ],
+      "badge1": "GLSL",
+      "badge2": "★ 3.352",
+      "content": "patriciogonzalezvivo/lygia\n\nLYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for performance and flexibility\n\n⭐ Yıldız: 3352\n🍴 Fork: 216\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/patriciogonzalezvivo/lygia",
+      "meta": {
+        "Yıldız": 3352,
+        "Dil": "GLSL",
+        "Fork": 216
+      },
+      "source": {
+        "url": "https://github.com/patriciogonzalezvivo/lygia",
+        "license": "NOASSERTION",
+        "author": "patriciogonzalezvivo"
+      }
+    },
+    {
+      "id": 7,
+      "cat": "C++",
+      "name": "shaderc",
+      "desc": "A collection of tools, libraries, and tests for Vulkan shader compilation.",
+      "tags": [
+        "compiler",
+        "glsl",
+        "glslang",
+        "graphics",
+        "★2151"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 2.151",
+      "content": "google/shaderc\n\nA collection of tools, libraries, and tests for Vulkan shader compilation.\n\n⭐ Yıldız: 2151\n🍴 Fork: 423\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/google/shaderc",
+      "meta": {
+        "Yıldız": 2151,
+        "Dil": "C++",
+        "Fork": 423
+      },
+      "source": {
+        "url": "https://github.com/google/shaderc",
+        "license": "NOASSERTION",
+        "author": "google"
+      }
+    },
+    {
+      "id": 8,
+      "cat": "C++",
+      "name": "ShaderConductor",
+      "desc": "ShaderConductor is a tool designed for cross-compiling HLSL to other shading languages",
+      "tags": [
+        "compiler",
+        "d3d10",
+        "d3d11",
+        "d3d12",
+        "★1837"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 1.837",
+      "content": "microsoft/ShaderConductor\n\nShaderConductor is a tool designed for cross-compiling HLSL to other shading languages\n\n⭐ Yıldız: 1837\n🍴 Fork: 264\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/microsoft/ShaderConductor",
+      "meta": {
+        "Yıldız": 1837,
+        "Dil": "C++",
+        "Fork": 264
+      },
+      "source": {
+        "url": "https://github.com/microsoft/ShaderConductor",
+        "license": "MIT",
+        "author": "microsoft"
+      }
+    },
+    {
+      "id": 9,
+      "cat": "GLSL",
+      "name": "ShaderMan",
+      "desc": "Convert ShaderToy to Unity  HLSL/CG",
+      "tags": [
+        "glsl",
+        "shaders",
+        "shadertoy",
+        "unity",
+        "★1501"
+      ],
+      "badge1": "GLSL",
+      "badge2": "★ 1.501",
+      "content": "smkplus/ShaderMan\n\nConvert ShaderToy to Unity  HLSL/CG\n\n⭐ Yıldız: 1501\n🍴 Fork: 202\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/smkplus/ShaderMan",
+      "meta": {
+        "Yıldız": 1501,
+        "Dil": "GLSL",
+        "Fork": 202
+      },
+      "source": {
+        "url": "https://github.com/smkplus/ShaderMan",
+        "license": "MIT",
+        "author": "smkplus"
+      }
+    },
+    {
+      "id": 10,
+      "cat": "C++",
+      "name": "Bonzomatic",
+      "desc": "Live shader coding tool and Shader Showdown workhorse",
+      "tags": [
+        "c-plus-plus",
+        "demoscene",
+        "directx",
+        "glsl",
+        "★1494"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 1.494",
+      "content": "Gargaj/Bonzomatic\n\nLive shader coding tool and Shader Showdown workhorse\n\n⭐ Yıldız: 1494\n🍴 Fork: 120\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/Gargaj/Bonzomatic",
+      "meta": {
+        "Yıldız": 1494,
+        "Dil": "C++",
+        "Fork": 120
+      },
+      "source": {
+        "url": "https://github.com/Gargaj/Bonzomatic",
+        "license": "NOASSERTION",
+        "author": "Gargaj"
+      }
+    },
+    {
+      "id": 11,
+      "cat": "C",
+      "name": "common-shaders",
+      "desc": "Collection of commonly used Cg shaders. These shaders are usable by either HLSL and/or Cg runtime compilers. The cg2glsl",
+      "tags": [
+        "★1150"
+      ],
+      "badge1": "C",
+      "badge2": "★ 1.150",
+      "content": "libretro/common-shaders\n\nCollection of commonly used Cg shaders. These shaders are usable by either HLSL and/or Cg runtime compilers. The cg2glsl script will translate most of these into GLSL shaders.\n\n⭐ Yıldız: 1150\n🍴 Fork: 258\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/libretro/common-shaders",
+      "meta": {
+        "Yıldız": 1150,
+        "Dil": "C",
+        "Fork": 258
+      },
+      "source": {
+        "url": "https://github.com/libretro/common-shaders",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "libretro"
+      }
+    },
+    {
+      "id": 12,
+      "cat": "C++",
+      "name": "GPU-Gems-Book-Source-Code",
+      "desc": ":cd: CD Content ( Source Code )  Collection  of Book <GPU Gems > 1~ 3 | 《GPU精粹》 1~ 3 随书CD（源代码）珍藏",
+      "tags": [
+        "book-source-code",
+        "glsl",
+        "gpu",
+        "gpu-gems",
+        "★1122"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 1.122",
+      "content": "QianMo/GPU-Gems-Book-Source-Code\n\n:cd: CD Content ( Source Code )  Collection  of Book <GPU Gems > 1~ 3 | 《GPU精粹》 1~ 3 随书CD（源代码）珍藏\n\n⭐ Yıldız: 1122\n🍴 Fork: 452\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/QianMo/GPU-Gems-Book-Source-Code",
+      "meta": {
+        "Yıldız": 1122,
+        "Dil": "C++",
+        "Fork": 452
+      },
+      "source": {
+        "url": "https://github.com/QianMo/GPU-Gems-Book-Source-Code",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "QianMo"
+      }
+    },
+    {
+      "id": 13,
+      "cat": "C",
+      "name": "shader-playground",
+      "desc": "Shader playground website for exploring HLSL, GLSL, SPIR-V compilers",
+      "tags": [
+        "★644"
+      ],
+      "badge1": "C",
+      "badge2": "★ 644",
+      "content": "tgjones/shader-playground\n\nShader playground website for exploring HLSL, GLSL, SPIR-V compilers\n\n⭐ Yıldız: 644\n🍴 Fork: 50\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/tgjones/shader-playground",
+      "meta": {
+        "Yıldız": 644,
+        "Dil": "C",
+        "Fork": 50
+      },
+      "source": {
+        "url": "https://github.com/tgjones/shader-playground",
+        "license": "BSD-2-Clause",
+        "author": "tgjones"
+      }
+    },
+    {
+      "id": 14,
+      "cat": "HLSL",
+      "name": "ShaderToHuman",
+      "desc": "HLSL/GLSL library for debugging shaders",
+      "tags": [
+        "★586"
+      ],
+      "badge1": "HLSL",
+      "badge2": "★ 586",
+      "content": "electronicarts/ShaderToHuman\n\nHLSL/GLSL library for debugging shaders\n\n⭐ Yıldız: 586\n🍴 Fork: 19\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/electronicarts/ShaderToHuman",
+      "meta": {
+        "Yıldız": 586,
+        "Dil": "HLSL",
+        "Fork": 19
+      },
+      "source": {
+        "url": "https://github.com/electronicarts/ShaderToHuman",
+        "license": "NOASSERTION",
+        "author": "electronicarts"
+      }
+    },
+    {
+      "id": 15,
+      "cat": "GLSL",
+      "name": "shader-minifier",
+      "desc": "Minify and obfuscate GLSL or HLSL code",
+      "tags": [
+        "compiler",
+        "demoscene",
+        "demotool",
+        "fsharp",
+        "★564"
+      ],
+      "badge1": "GLSL",
+      "badge2": "★ 564",
+      "content": "laurentlb/shader-minifier\n\nMinify and obfuscate GLSL or HLSL code\n\n⭐ Yıldız: 564\n🍴 Fork: 49\n📅 Güncelleme: 2026-05-26\n🔗 https://github.com/laurentlb/shader-minifier",
+      "meta": {
+        "Yıldız": 564,
+        "Dil": "GLSL",
+        "Fork": 49
+      },
+      "source": {
+        "url": "https://github.com/laurentlb/shader-minifier",
+        "license": "Apache-2.0",
+        "author": "laurentlb"
+      }
+    },
+    {
+      "id": 16,
+      "cat": "C#",
+      "name": "ShaderGen",
+      "desc": "Proof-of-concept library for generating HLSL, GLSL, and Metal shader code from C#,",
+      "tags": [
+        "direct3d",
+        "games",
+        "glsl",
+        "graphics",
+        "★516"
+      ],
+      "badge1": "C#",
+      "badge2": "★ 516",
+      "content": "mellinoe/ShaderGen\n\nProof-of-concept library for generating HLSL, GLSL, and Metal shader code from C#,\n\n⭐ Yıldız: 516\n🍴 Fork: 54\n📅 Güncelleme: 2026-04-26\n🔗 https://github.com/mellinoe/ShaderGen",
+      "meta": {
+        "Yıldız": 516,
+        "Dil": "C#",
+        "Fork": 54
+      },
+      "source": {
+        "url": "https://github.com/mellinoe/ShaderGen",
+        "license": "MIT",
+        "author": "mellinoe"
+      }
+    },
+    {
+      "id": 17,
+      "cat": "C++",
+      "name": "ArcGameEngine",
+      "desc": "AGE: Arc Game Engine is an open-source engine for building 2D & 3D real-time rendering and interactive contents, especia",
+      "tags": [
+        "cpp",
+        "ecs",
+        "engine",
+        "entity-component-system",
+        "★386"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 386",
+      "content": "GloriousPtr/ArcGameEngine\n\nAGE: Arc Game Engine is an open-source engine for building 2D & 3D real-time rendering and interactive contents, especially video games with C# scripting support.\n\n⭐ Yıldız: 386\n🍴 Fork: 30\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/GloriousPtr/ArcGameEngine",
+      "meta": {
+        "Yıldız": 386,
+        "Dil": "C++",
+        "Fork": 30
+      },
+      "source": {
+        "url": "https://github.com/GloriousPtr/ArcGameEngine",
+        "license": "Apache-2.0",
+        "author": "GloriousPtr"
+      }
+    },
+    {
+      "id": 18,
+      "cat": "C++",
+      "name": "XShaderCompiler",
+      "desc": "Shader cross compiler to translate HLSL (Shader Model 4 and 5) to GLSL",
+      "tags": [
+        "c",
+        "cpp",
+        "cpp11",
+        "csharp",
+        "★363"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 363",
+      "content": "LukasBanana/XShaderCompiler\n\nShader cross compiler to translate HLSL (Shader Model 4 and 5) to GLSL\n\n⭐ Yıldız: 363\n🍴 Fork: 47\n📅 Güncelleme: 2026-03-28\n🔗 https://github.com/LukasBanana/XShaderCompiler",
+      "meta": {
+        "Yıldız": 363,
+        "Dil": "C++",
+        "Fork": 47
+      },
+      "source": {
+        "url": "https://github.com/LukasBanana/XShaderCompiler",
+        "license": "BSD-3-Clause",
+        "author": "LukasBanana"
+      }
+    },
+    {
+      "id": 19,
+      "cat": "Python",
+      "name": "pmfx-shader",
+      "desc": "Cross platform shader system for HLSL, GLSL, Metal and SPIR-V.",
+      "tags": [
+        "gles",
+        "glsl",
+        "hlsl",
+        "metal",
+        "★350"
+      ],
+      "badge1": "Python",
+      "badge2": "★ 350",
+      "content": "polymonster/pmfx-shader\n\nCross platform shader system for HLSL, GLSL, Metal and SPIR-V.\n\n⭐ Yıldız: 350\n🍴 Fork: 11\n📅 Güncelleme: 2026-05-16\n🔗 https://github.com/polymonster/pmfx-shader",
+      "meta": {
+        "Yıldız": 350,
+        "Dil": "Python",
+        "Fork": 11
+      },
+      "source": {
+        "url": "https://github.com/polymonster/pmfx-shader",
+        "license": "MIT",
+        "author": "polymonster"
+      }
+    },
+    {
+      "id": 20,
+      "cat": "C++",
+      "name": "ShaderDebugger",
+      "desc": "[DEPRECATED] C++ library for debugging HLSL & GLSL shaders",
+      "tags": [
+        "compiler",
+        "debugger",
+        "glsl",
+        "hlsl",
+        "★329"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 329",
+      "content": "dfranx/ShaderDebugger\n\n[DEPRECATED] C++ library for debugging HLSL & GLSL shaders\n\n⭐ Yıldız: 329\n🍴 Fork: 21\n📅 Güncelleme: 2026-03-19\n🔗 https://github.com/dfranx/ShaderDebugger",
+      "meta": {
+        "Yıldız": 329,
+        "Dil": "C++",
+        "Fork": 21
+      },
+      "source": {
+        "url": "https://github.com/dfranx/ShaderDebugger",
+        "license": "MIT",
+        "author": "dfranx"
+      }
+    },
+    {
+      "id": 21,
+      "cat": "C",
+      "name": "SPIRV-VM",
+      "desc": "Virtual machine for executing SPIR-V",
+      "tags": [
+        "debugging",
+        "glsl",
+        "hlsl",
+        "shader",
+        "★316"
+      ],
+      "badge1": "C",
+      "badge2": "★ 316",
+      "content": "dfranx/SPIRV-VM\n\nVirtual machine for executing SPIR-V\n\n⭐ Yıldız: 316\n🍴 Fork: 31\n📅 Güncelleme: 2026-05-25\n🔗 https://github.com/dfranx/SPIRV-VM",
+      "meta": {
+        "Yıldız": 316,
+        "Dil": "C",
+        "Fork": 31
+      },
+      "source": {
+        "url": "https://github.com/dfranx/SPIRV-VM",
+        "license": "MIT",
+        "author": "dfranx"
+      }
+    },
+    {
+      "id": 22,
+      "cat": "C++",
+      "name": "CrossShader",
+      "desc": "⚔️ A tool for cross compiling shaders. Convert between GLSL, HLSL, Metal Shader Language, or older versions of GLSL.",
+      "tags": [
+        "apple-metal",
+        "compiler",
+        "directx",
+        "glsl",
+        "★308"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 308",
+      "content": "alaingalvan/CrossShader\n\n⚔️ A tool for cross compiling shaders. Convert between GLSL, HLSL, Metal Shader Language, or older versions of GLSL.\n\n⭐ Yıldız: 308\n🍴 Fork: 13\n📅 Güncelleme: 2026-05-06\n🔗 https://github.com/alaingalvan/CrossShader",
+      "meta": {
+        "Yıldız": 308,
+        "Dil": "C++",
+        "Fork": 13
+      },
+      "source": {
+        "url": "https://github.com/alaingalvan/CrossShader",
+        "license": "MIT",
+        "author": "alaingalvan"
+      }
+    },
+    {
+      "id": 23,
+      "cat": "Rust",
+      "name": "shaderc-rs",
+      "desc": "Rust bindings for the shaderc library.",
+      "tags": [
+        "compiler",
+        "glsl",
+        "graphics",
+        "hlsl",
+        "★287"
+      ],
+      "badge1": "Rust",
+      "badge2": "★ 287",
+      "content": "google/shaderc-rs\n\nRust bindings for the shaderc library.\n\n⭐ Yıldız: 287\n🍴 Fork: 70\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/google/shaderc-rs",
+      "meta": {
+        "Yıldız": 287,
+        "Dil": "Rust",
+        "Fork": 70
+      },
+      "source": {
+        "url": "https://github.com/google/shaderc-rs",
+        "license": "Apache-2.0",
+        "author": "google"
+      }
+    },
+    {
+      "id": 24,
+      "cat": "C++",
+      "name": "ShaderWriter",
+      "desc": "Library used to write shaders from C++, and export them in either GLSL, HLSL or SPIR-V.",
+      "tags": [
+        "cpp17",
+        "glsl",
+        "hlsl",
+        "spirv",
+        "★263"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 263",
+      "content": "DragonJoker/ShaderWriter\n\nLibrary used to write shaders from C++, and export them in either GLSL, HLSL or SPIR-V.\n\n⭐ Yıldız: 263\n🍴 Fork: 12\n📅 Güncelleme: 2026-05-26\n🔗 https://github.com/DragonJoker/ShaderWriter",
+      "meta": {
+        "Yıldız": 263,
+        "Dil": "C++",
+        "Fork": 12
+      },
+      "source": {
+        "url": "https://github.com/DragonJoker/ShaderWriter",
+        "license": "MIT",
+        "author": "DragonJoker"
+      }
+    },
+    {
+      "id": 25,
+      "cat": "C++",
+      "name": "gpupad",
+      "desc": "A flexible GLSL and HLSL shader editor and IDE.",
+      "tags": [
+        "compute",
+        "cross-platform",
+        "editor",
+        "glsl",
+        "★197"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 197",
+      "content": "houmain/gpupad\n\nA flexible GLSL and HLSL shader editor and IDE.\n\n⭐ Yıldız: 197\n🍴 Fork: 11\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/houmain/gpupad",
+      "meta": {
+        "Yıldız": 197,
+        "Dil": "C++",
+        "Fork": 11
+      },
+      "source": {
+        "url": "https://github.com/houmain/gpupad",
+        "license": "GPL-3.0",
+        "author": "houmain"
+      }
+    },
+    {
+      "id": 26,
+      "cat": "HLSL",
+      "name": "Open-Shaders",
+      "desc": "Collection of many open source shaders(GLSL, HLSL, CG) in popular open source game development and rendering engines and",
+      "tags": [
+        "awesome-list",
+        "computer-graphics",
+        "game-development",
+        "glsl",
+        "★156"
+      ],
+      "badge1": "HLSL",
+      "badge2": "★ 156",
+      "content": "repalash/Open-Shaders\n\nCollection of many open source shaders(GLSL, HLSL, CG) in popular open source game development and rendering engines and public repositories.\n\n⭐ Yıldız: 156\n🍴 Fork: 17\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/repalash/Open-Shaders",
+      "meta": {
+        "Yıldız": 156,
+        "Dil": "HLSL",
+        "Fork": 17
+      },
+      "source": {
+        "url": "https://github.com/repalash/Open-Shaders",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "repalash"
+      }
+    },
+    {
+      "id": 27,
+      "cat": "ShaderLab",
+      "name": "Unity-Shaders-from-Shader-Toy",
+      "desc": "Converted Unity shaders from SahderToy to Unity shading language",
+      "tags": [
+        "circle",
+        "glsl",
+        "hlsl",
+        "math",
+        "★149"
+      ],
+      "badge1": "ShaderLab",
+      "badge2": "★ 149",
+      "content": "marcozakaria/Unity-Shaders-from-Shader-Toy\n\nConverted Unity shaders from SahderToy to Unity shading language\n\n⭐ Yıldız: 149\n🍴 Fork: 26\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/marcozakaria/Unity-Shaders-from-Shader-Toy",
+      "meta": {
+        "Yıldız": 149,
+        "Dil": "ShaderLab",
+        "Fork": 26
+      },
+      "source": {
+        "url": "https://github.com/marcozakaria/Unity-Shaders-from-Shader-Toy",
+        "license": "MIT",
+        "author": "marcozakaria"
+      }
+    },
+    {
+      "id": 28,
+      "cat": "C++",
+      "name": "ada",
+      "desc": "A general porpose OpenGL app library",
+      "tags": [
+        "glsl",
+        "glsl-shader",
+        "graphics",
+        "hlsl",
+        "★128"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 128",
+      "content": "patriciogonzalezvivo/ada\n\nA general porpose OpenGL app library\n\n⭐ Yıldız: 128\n🍴 Fork: 13\n📅 Güncelleme: 2026-01-30\n🔗 https://github.com/patriciogonzalezvivo/ada",
+      "meta": {
+        "Yıldız": 128,
+        "Dil": "C++",
+        "Fork": 13
+      },
+      "source": {
+        "url": "https://github.com/patriciogonzalezvivo/ada",
+        "license": "MIT",
+        "author": "patriciogonzalezvivo"
+      }
+    },
+    {
+      "id": 29,
+      "cat": "Rust",
+      "name": "glsl2hlsl",
+      "desc": "Shadertoy to Unity shader converter",
+      "tags": [
+        "★114"
+      ],
+      "badge1": "Rust",
+      "badge2": "★ 114",
+      "content": "pema99/glsl2hlsl\n\nShadertoy to Unity shader converter\n\n⭐ Yıldız: 114\n🍴 Fork: 16\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/pema99/glsl2hlsl",
+      "meta": {
+        "Yıldız": 114,
+        "Dil": "Rust",
+        "Fork": 16
+      },
+      "source": {
+        "url": "https://github.com/pema99/glsl2hlsl",
+        "license": "MIT",
+        "author": "pema99"
+      }
+    },
+    {
+      "id": 30,
+      "cat": "TypeScript",
+      "name": "vscode-shadered",
+      "desc": "VS Code extension that adds the ability to debug and preview shaders",
+      "tags": [
+        "debugger",
+        "glsl",
+        "hlsl",
+        "shaders",
+        "★101"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 101",
+      "content": "dfranx/vscode-shadered\n\nVS Code extension that adds the ability to debug and preview shaders\n\n⭐ Yıldız: 101\n🍴 Fork: 10\n📅 Güncelleme: 2026-02-16\n🔗 https://github.com/dfranx/vscode-shadered",
+      "meta": {
+        "Yıldız": 101,
+        "Dil": "TypeScript",
+        "Fork": 10
+      },
+      "source": {
+        "url": "https://github.com/dfranx/vscode-shadered",
+        "license": "MIT",
+        "author": "dfranx"
+      }
+    },
+    {
+      "id": 31,
+      "cat": "C++",
+      "name": "ShaderLab",
+      "desc": "Shaderlab is a tool designed for cross compiling unity shader to other shading languages.",
+      "tags": [
+        "cross-compiler",
+        "glsl",
+        "hlsl",
+        "metal",
+        "★101"
+      ],
+      "badge1": "C++",
+      "badge2": "★ 101",
+      "content": "BobLChen/ShaderLab\n\nShaderlab is a tool designed for cross compiling unity shader to other shading languages.\n\n⭐ Yıldız: 101\n🍴 Fork: 12\n📅 Güncelleme: 2025-12-08\n🔗 https://github.com/BobLChen/ShaderLab",
+      "meta": {
+        "Yıldız": 101,
+        "Dil": "C++",
+        "Fork": 12
+      },
+      "source": {
+        "url": "https://github.com/BobLChen/ShaderLab",
+        "license": "MIT",
+        "author": "BobLChen"
+      }
+    }
+  ]
+}
