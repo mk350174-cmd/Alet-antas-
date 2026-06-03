@@ -201,8 +201,8 @@ function extractJSON(text) {
 async function processConfig(file) {
   const fullPath = path.join(CONFIG_DIR, file);
   const cfg = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-  if (cfg.dataSource !== 'ai') return false;
-  if (cfg.items && cfg.items.length >= TARGET_ITEMS) { console.log(`  • ${cfg.slug}: zaten dolu, atlandı`); return false; }
+  if (cfg.dataSource !== 'ai') return 'skip';
+  if (cfg.items && cfg.items.length >= TARGET_ITEMS) { return 'skip'; }
 
   try {
     const raw = await callAI(cfg);
@@ -218,10 +218,10 @@ async function processConfig(file) {
     }));
     fs.writeFileSync(fullPath, JSON.stringify(cfg, null, 2), 'utf8');
     console.log(`  ✓ ${cfg.slug}: ${cfg.items.length} item, ${cfg.categories.length} kategori`);
-    return true;
+    return 'ok';
   } catch (e) {
     console.log(`  ✗ ${cfg.slug}: ${e.message}`);
-    return false;
+    return 'fail';
   }
 }
 
@@ -241,14 +241,17 @@ async function main() {
   });
   if (limitArg) files = files.slice(0, limitArg);
 
-  console.log(`AI ile veri üretiliyor (${files.length} vault, sağlayıcı: ${PROVIDER}, model: ${MODEL})...`);
-  let ok = 0;
+  const DELAY = getArg('--delay') ? parseInt(getArg('--delay'), 10) : 5000;
+  console.log(`AI ile veri üretiliyor (${files.length} vault, sağlayıcı: ${PROVIDER}, model: ${MODEL}, aralık: ${DELAY}ms)...`);
+  let ok = 0, skipped = 0;
   for (const f of files) {
     const r = await processConfig(f);
-    if (r) ok++;
-    await new Promise(res => setTimeout(res, 3500)); // RPM/TPM dostu akış
+    if (r === 'ok') ok++;
+    if (r === 'skip') { skipped++; continue; } // dolu vault: bekleme yok
+    // Sadece gerçek API çağrısından sonra bekle (RPM dostu akış)
+    await new Promise(res => setTimeout(res, DELAY));
   }
-  console.log(`\nTamamlandı: ${ok}/${files.length} vault dolduruldu.`);
+  console.log(`\nTamamlandı: ${ok} yeni vault dolduruldu (${skipped} zaten doluydu).`);
 }
 
 main();
