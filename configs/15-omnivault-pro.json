@@ -48,6 +48,418 @@
     "border3": "#2c2a32",
     "heroBg": "#0c0a12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Prompt Optimizasyonu",
+      "name": "Prompt Optimizasyonu",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Veri Analizi",
+      "name": "Veri Analizi",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Model Eğitimi",
+      "name": "Model Eğitimi",
+      "color": "#FF9800"
+    },
+    {
+      "id": "API Entegrasyonu",
+      "name": "API Entegrasyonu",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Güvenlik ve Gizlilik",
+      "name": "Güvenlik ve Gizlilik",
+      "color": "#F44336"
+    },
+    {
+      "id": "Etik Değerlendirme",
+      "name": "Etik Değerlendirme",
+      "color": "#607D8B"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Netlik Artırıcı Prompt",
+      "desc": "AI'dan daha net ve odaklı yanıtlar almak için promptları iyileştirin.",
+      "tags": [
+        "netlik",
+        "odak",
+        "iyileştirme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Netlik Artırıcı Prompt Oluşturma\n\n1. **Amaç Belirle:** AI'dan ne istediğini netleştir.\n2. **Kısıtlamalar Koy:** Yanıt formatını ve kapsamını tanımla.\n3. **Örnek Ver:** İstenen çıktıya benzer örnekler sun.\n4. **Geri Bildirim Döngüsü:** Yanıtı değerlendirip promptu tekrar ayarla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Karakter Sınırlı Prompt",
+      "desc": "Belirli karakter sınırları içinde etkili promptlar oluşturun.",
+      "tags": [
+        "kısa",
+        "öz",
+        "sınır"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Sınırlı Prompt Yazımı\n\n1. **Anahtar Kelimeler:** En önemli kelimeleri belirle.\n2. **Kısaltmalar Kullan:** Yaygın ve anlaşılır kısaltmaları tercih et.\n3. **Cümle Yapısı:** Basit ve doğrudan ifadeler kullan.\n4. **Gereksizleri At:** Bağlaçları ve dolgu kelimeleri çıkar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Rol Tanımlama Prompt",
+      "desc": "AI'ya belirli bir rol atayarak yanıtları şekillendirin.",
+      "tags": [
+        "rol",
+        "persona",
+        "bağlam"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Rol Tanımlama Prompt Şablonu\n\n\"Sen bir [AI'nın Rolü] olarak hareket et. Görevin [Görevin Tanımı]. Cevaplarını [İstenen Ton/Stil] kullanarak ver.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Negatif Promptlama",
+      "desc": "İstenmeyen çıktıları engellemek için negatif komutlar kullanın.",
+      "tags": [
+        "engelleme",
+        "istenmeyen",
+        "kısıtlama"
+      ],
+      "badge1": "Orta",
+      "content": "## Negatif Promptlama Tekniği\n\n1. **İstenmeyenleri Listele:** AI'nın üretmesini istemediğin konuları belirt.\n2. **Açıkça İfade Et:** \"... yapma\", \"... içermesin\" gibi ifadeler kullan.\n3. **Örneklerle Destekle:** Negatif istenenlere örnekler ver.\n4. **Test Et ve Ayarla:** Sonuçları gözlemleyip promptu iyileştir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Veri Analizi",
+      "name": "Trend Analizi Prompt",
+      "desc": "Veri setlerindeki eğilimleri belirlemek için AI kullanın.",
+      "tags": [
+        "trend",
+        "veri",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Veri Trend Analizi Promptu\n\n\"Aşağıdaki [Veri Türü] verilerinde gözlemlenen ana eğilimleri ve örüntüleri analiz et. Bulgularını özetle ve potansiyel nedenlerini belirt.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Veri Analizi",
+      "name": "Anomali Tespiti Prompt",
+      "desc": "Veri setlerindeki aykırı değerleri ve anormallikleri saptayın.",
+      "tags": [
+        "anomali",
+        "aykırı",
+        "tespit"
+      ],
+      "badge1": "İleri",
+      "content": "## Anomali Tespit Promptu\n\n\"Bu [Veri Türü] veri setinde istatistiksel olarak anlamlı anormallikler veya aykırı değerler var mı? Varsa, tanımla ve olası etkilerini açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Veri Analizi",
+      "name": "Korelasyon Analizi Prompt",
+      "desc": "Değişkenler arasındaki ilişkileri ve korelasyonları ortaya çıkarın.",
+      "tags": [
+        "korelasyon",
+        "ilişki",
+        "bağımlılık"
+      ],
+      "badge1": "Orta",
+      "content": "## Korelasyon Analizi Promptu\n\n\"Verilen [Değişken Seti] arasındaki istatistiksel korelasyonları analiz et. Güçlü pozitif, negatif veya zayıf ilişkileri belirle.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Model Eğitimi",
+      "name": "Sentetik Veri Üretimi",
+      "desc": "AI modelleri için sentetik veri setleri oluşturun.",
+      "tags": [
+        "sentetik",
+        "veri",
+        "eğitim"
+      ],
+      "badge1": "İleri",
+      "content": "## Sentetik Veri Üretim Promptu\n\n\"Mevcut [Veri Türü] özelliklerine sahip, gerçekçi ve çeşitli sentetik veri noktaları üret. [Özellikler] ve [Dağılımlar] dikkate alınsın.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Model Eğitimi",
+      "name": "Hiperparametre Ayarlama",
+      "desc": "Model performansını optimize etmek için hiperparametreleri ayarlayın.",
+      "tags": [
+        "hiperparametre",
+        "optimizasyon",
+        "model"
+      ],
+      "badge1": "İleri",
+      "content": "## Hiperparametre Ayarlama Promptu\n\n\"Modelin [Model Adı] için [Metrik Adı] metrikini maksimize etmek üzere en uygun hiperparametre setini [Arama Aralığı] içinde bul.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Model Eğitimi",
+      "name": "Model Değerlendirme Metrikleri",
+      "desc": "AI modelinin performansını değerlendirmek için metrikler tanımlayın.",
+      "tags": [
+        "metrik",
+        "değerlendirme",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Model Değerlendirme Metrikleri Promptu\n\n\"[Model Türü] modelinin başarısını ölçmek için uygun metrikleri (örn. doğruluk, F1 skoru) listele ve her birinin önemini açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "API Entegrasyonu",
+      "name": "Temel API Çağrısı",
+      "desc": "Basit bir API isteği yapmak için gerekli adımları öğrenin.",
+      "tags": [
+        "API",
+        "istek",
+        "entegrasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel API Çağrısı Yapma\n\n1. **URL Belirle:** Hedef API endpoint'ini seç.\n2. **Metot Seç:** GET, POST, PUT, DELETE gibi uygun metodu belirle.\n3. **Parametreleri Ekle:** Gerekli query veya body parametrelerini ayarla.\n4. **Başlıkları Ayarla:** Kimlik doğrulama veya içerik tipi başlıklarını ekle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "API Entegrasyonu",
+      "name": "Hata Yönetimi",
+      "desc": "API yanıtlarındaki hataları etkili bir şekilde yönetin.",
+      "tags": [
+        "API",
+        "hata",
+        "yönetim"
+      ],
+      "badge1": "Orta",
+      "content": "## API Hata Yönetimi\n\n1. **Durum Kodlarını İzle:** 4xx ve 5xx hatalarını yakala.\n2. **Hata Mesajlarını Oku:** API'den gelen detaylı hata bilgilerini incele.\n3. **Tekrar Dene Mekanizması:** Geçici hatalar için retry mantığı uygula.\n4. **Kullanıcıya Bildir:** Anlaşılır hata mesajları göster.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "API Entegrasyonu",
+      "name": "Rate Limiting Yönetimi",
+      "desc": "API kullanım limitlerine uyum sağlayın ve aşımı önleyin.",
+      "tags": [
+        "API",
+        "limit",
+        "rate limiting"
+      ],
+      "badge1": "Orta",
+      "content": "## Rate Limiting Yönetimi\n\n1. **Limitleri Anla:** API'nin hız sınırlarını öğren.\n2. **Gecikme Ekle:** İstekler arasına kısa beklemeler koy.\n3. **Uyarıları Takip Et:** `X-RateLimit-Remaining` gibi başlıkları kontrol et.\n4. **Hız Azaltma Stratejisi:** Aşım durumunda isteği yavaşlat.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "API Entegrasyonu",
+      "name": "Webhook Kurulumu",
+      "desc": "Sunucuya olay bildirimleri almak için webhook'ları yapılandırın.",
+      "tags": [
+        "API",
+        "webhook",
+        "bildirim"
+      ],
+      "badge1": "İleri",
+      "content": "## Webhook Kurulumu\n\n1. **Callback URL Belirle:** Bildirimleri alacak sunucu adresini ayarla.\n2. **Olayları Kaydet:** Hangi olayların tetikleneceğini seç.\n3. **Güvenlik Doğrula:** İmza doğrulama veya IP kısıtlaması ekle.\n4. **Yanıtı Onayla:** `200 OK` ile alındığını bildir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Güvenlik ve Gizlilik",
+      "name": "Veri Anonimleştirme",
+      "desc": "Hassas verileri analiz öncesinde anonimleştirin.",
+      "tags": [
+        "güvenlik",
+        "gizlilik",
+        "anonim"
+      ],
+      "badge1": "Orta",
+      "content": "## Veri Anonimleştirme Teknikleri\n\n1. **Maskeleme:** Hassas alanları karakterlerle gizle (örn. ****).\n2. **Genelleştirme:** Veriyi daha az spesifik hale getir (örn. yaş grupları).\n3. **Rastgeleleştirme:** Veriye rasgele gürültü ekle.\n4. **Tekrar Atama:** Kimlikleri rastgele yeni kimliklerle değiştir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Güvenlik ve Gizlilik",
+      "name": "Erişim Kontrolü",
+      "desc": "API ve verilere erişimi kısıtlamak için politikalar oluşturun.",
+      "tags": [
+        "güvenlik",
+        "erişim",
+        "yetkilendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## API Erişim Kontrolü\n\n1. **Rol Tabanlı Erişim:** Kullanıcı rollerine göre yetki ata.\n2. **API Anahtarları:** Güvenli ve periyodik yenilenen anahtarlar kullan.\n3. **IP Kısıtlamaları:** Belirli IP adreslerinden erişimi izin ver.\n4. **OAuth 2.0:** Yetkilendirme için standart protokolleri kullan.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Güvenlik ve Gizlilik",
+      "name": "Şifreleme Yöntemleri",
+      "desc": "Veri iletimi ve depolaması için şifreleme kullanın.",
+      "tags": [
+        "güvenlik",
+        "şifreleme",
+        "veri"
+      ],
+      "badge1": "Orta",
+      "content": "## Veri Şifreleme Uygulamaları\n\n1. **HTTPS/TLS:** Veri iletimini şifrele.\n2. **AES-256:** Hassas verileri depolarken güçlü şifreleme kullan.\n3. **Anahtar Yönetimi:** Şifreleme anahtarlarını güvenli bir şekilde sakla.\n4. **Veritabanı Şifreleme:** Veritabanı düzeyinde şifreleme uygula.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Etik Değerlendirme",
+      "name": "Önyargı Tespiti",
+      "desc": "AI modellerindeki potansiyel önyargıları belirleyin ve azaltın.",
+      "tags": [
+        "etik",
+        "önyargı",
+        "adalet"
+      ],
+      "badge1": "İleri",
+      "content": "## AI Önyargı Tespiti ve Azaltımı\n\n1. **Veri Denetimi:** Eğitim verisindeki demografik dengesizlikleri kontrol et.\n2. **Model Çıktı Analizi:** Farklı gruplar için tutarsız sonuçları incele.\n3. **Adillik Metrikleri:** Eşitlik, doğruluk gibi metriklerle modeli değerlendir.\n4. **Düzeltme Teknikleri:** Veri dengeleme veya model ayarlamaları yap.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Etik Değerlendirme",
+      "name": "Şeffaflık ve Açıklanabilirlik",
+      "desc": "AI kararlarının nedenlerini anlaşılır kılın.",
+      "tags": [
+        "etik",
+        "şeffaflık",
+        "açıklama"
+      ],
+      "badge1": "İleri",
+      "content": "## Açıklanabilir AI (XAI) Promptları\n\n\"Bu [Karar/Tahmin] sonucuna nasıl ulaşıldığını adım adım açıkla. En etkili faktörleri ve bunların etkileşimini belirt.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Etik Değerlendirme",
+      "name": "AI Etik İncelemesi",
+      "desc": "AI projelerinin etik sonuçlarını proaktif olarak değerlendirin.",
+      "tags": [
+        "etik",
+        "değerlendirme",
+        "sorumluluk"
+      ],
+      "badge1": "Orta",
+      "content": "## AI Etik İnceleme Kontrol Listesi\n\n1. **Amaç Uygunluğu:** Proje etik ilkelere uygun mu?\n2. **Veri Gizliliği:** Kullanıcı verileri korunuyor mu?\n3. **Önyargı Riski:** Potansiyel ayrımcılık var mı?\n4. **Hesap Verebilirlik:** Hata durumunda sorumluluk net mi?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }
