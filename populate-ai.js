@@ -2,17 +2,19 @@
 /**
  * populate-ai.js — dataSource:"ai" olan config'leri AI ile doldurur.
  *
- * Claude (Anthropic) veya Gemini (Google) destekler. Key formatından sağlayıcı
- * otomatik algılanır: "AIza..." → Gemini, "sk-ant..." → Claude.
- * Her vault için vault adı + açıklaması gönderir, 5-6 alt kategori ve 30+ item
- * (name, desc, tags, content) içeren JSON ister, config'e yazar.
+ * Claude (Anthropic), Gemini (Google) veya xAI (Grok) destekler.
+ * Key formatından sağlayıcı otomatik algılanır:
+ *   "AIza..."   → Gemini
+ *   "sk-ant..." → Claude
+ *   "xai-..."   → xAI (Grok)
  *
  * Kullanım:
- *   node populate-ai.js --key AIza...                 # Gemini (ucuz/hızlı)
- *   GEMINI_API_KEY=AIza... node populate-ai.js
+ *   node populate-ai.js --key AIza...                 # Gemini
+ *   node populate-ai.js --key xai-...                 # xAI / Grok
  *   node populate-ai.js --key sk-ant-...              # Claude
  *   node populate-ai.js --only 31-mythvault-pro --key AIza...
- *   node populate-ai.js --limit 5 --key AIza...       # ilk 5 (test/maliyet)
+ *   node populate-ai.js --limit 5 --key AIza...       # ilk 5 (test)
+ *   node populate-ai.js --from 50 --key xai-...       # 50. vault'tan başla
  */
 
 const fs = require('fs');
@@ -22,19 +24,28 @@ const CONFIG_DIR = path.join(__dirname, 'configs');
 const args = process.argv.slice(2);
 function getArg(f) { const i = args.indexOf(f); return i !== -1 ? args[i + 1] : null; }
 
-const API_KEY = getArg('--key') || process.env.GEMINI_API_KEY || process.env.ANTHROPIC_API_KEY;
+const API_KEY = getArg('--key') || process.env.GEMINI_API_KEY || process.env.ANTHROPIC_API_KEY || process.env.XAI_API_KEY;
 const onlyArg = getArg('--only');
 const limitArg = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
+const fromArg = getArg('--from') ? parseInt(getArg('--from'), 10) : null;
 const TARGET_ITEMS = getArg('--items') ? parseInt(getArg('--items'), 10) : 20;
 
 if (!API_KEY) {
-  console.error('HATA: API key gerekli. --key AIza... (Gemini) veya --key sk-ant-... (Claude).');
+  console.error('HATA: API key gerekli. --key AIza... (Gemini), --key xai-... (xAI) veya --key sk-ant-... (Claude).');
   process.exit(1);
 }
 
 // Sağlayıcıyı key formatından algıla
-const PROVIDER = getArg('--provider') || (API_KEY.startsWith('sk-ant') ? 'claude' : 'gemini');
-const MODEL = getArg('--model') || (PROVIDER === 'claude' ? 'claude-sonnet-4-6' : 'gemini-2.0-flash');
+const PROVIDER = getArg('--provider') || (
+  API_KEY.startsWith('sk-ant') ? 'claude' :
+  API_KEY.startsWith('xai-') ? 'xai' :
+  'gemini'
+);
+const MODEL = getArg('--model') || (
+  PROVIDER === 'claude' ? 'claude-sonnet-4-6' :
+  PROVIDER === 'xai' ? 'grok-3-mini' :
+  'gemini-2.5-flash'
+);
 
 const SYSTEM_PROMPT = `Sen bir AI araç kütüphanesi (vault) için içerik üreten uzman bir editörsün.
 Sana bir vault'un adı ve amacı verilir. Türkçe olarak, bu vault'a ait gerçekçi ve
@@ -117,10 +128,42 @@ async function callGemini(cfg) {
   return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
 }
 
+async function callXai(cfg) {
+  const res = await fetch('https://api.x.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 8000,
+      temperature: 0.8,
+      response_format: { type: 'json_object' },
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'user', content: buildUserMessage(cfg) },
+      ],
+    }),
+  });
+  if (res.status === 429 || res.status === 503) {
+    const retryAfter = parseInt(res.headers.get('retry-after') || '0', 10);
+    const e = new Error(`yoğunluk ${res.status}`);
+    e.retryable = true;
+    e.retryAfter = retryAfter || null;
+    throw e;
+  }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return data.choices?.[0]?.message?.content || '';
+}
+
 async function callAI(cfg, retries = 5) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      return PROVIDER === 'claude' ? await callClaude(cfg) : await callGemini(cfg);
+      if (PROVIDER === 'claude') return await callClaude(cfg);
+      if (PROVIDER === 'xai') return await callXai(cfg);
+      return await callGemini(cfg);
     } catch (e) {
       if (attempt < retries) {
         // API "retry in Xs" önerdiyse tam o kadar bekle (kota israfını önler),
@@ -190,6 +233,11 @@ async function main() {
   files = files.filter(f => {
     const c = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, f), 'utf8'));
     return c.dataSource === 'ai';
+  });
+  // --from N: slug numarası N ve üzeri (paralel çalıştırma için bölme)
+  if (fromArg) files = files.filter(f => {
+    const num = parseInt(f.split('-')[0], 10);
+    return num >= fromArg;
   });
   if (limitArg) files = files.slice(0, limitArg);
 
