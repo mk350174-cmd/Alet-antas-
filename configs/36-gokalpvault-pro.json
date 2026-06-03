@@ -48,6 +48,418 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Türkçülük Felsefesi",
+      "name": "Türkçülük Felsefesi",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "Sosyal ve Kültürel Analiz",
+      "name": "Sosyal ve Kültürel Analiz",
+      "color": "#3498DB"
+    },
+    {
+      "id": "Mitoloji ve Destanlar",
+      "name": "Mitoloji ve Destanlar",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "Modern Yorumlar",
+      "name": "Modern Yorumlar",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "Dönemsel Akımlar",
+      "name": "Dönemsel Akımlar",
+      "color": "#F1C40F"
+    },
+    {
+      "id": "Gökalp'ten İlhamla",
+      "name": "Gökalp'ten İlhamla",
+      "color": "#E67E22"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Türkçülük Felsefesi",
+      "name": "Türkçülüğün Esasları Özeti",
+      "desc": "Ziya Gökalp'in Türkçülük tanımını ve temel prensiplerini modern bağlamda özetler.",
+      "tags": [
+        "Türkçülük",
+        "Gökalp",
+        "felsefe"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel İlkeler\n1. Kavram Tanımı: Türkçülük kavramını Gökalp'in perspektifinden tanımlayın.\n2. Üç Ana Hedef: Kültür, iktisat ve siyaset alanındaki hedefleri açıklayın.\n3. Modern Yorum: Günümüz koşullarında bu ilkelerin nasıl yorumlanabileceğini belirtin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Türkçülük Felsefesi",
+      "name": "Milli Kültür Analizi",
+      "desc": "Ziya Gökalp'in milli kültür anlayışını günümüz değerleri üzerinden inceleyin.",
+      "tags": [
+        "kültür",
+        "milli kimlik",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Kültür Unsurları\n1. Tanım: Milli kültürün Gökalp'e göre unsurlarını (dil, din, ahlak, hukuk, estetik) listeleyin.\n2. Karşılaştırma: Bu unsurların günümüzdeki karşılıklarını ve değişimlerini analiz edin.\n3. Koruma Önerileri: Milli kültürü modernize ederek koruma stratejileri geliştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Türkçülük Felsefesi",
+      "name": "Toplumda Birlik ve Beraberlik",
+      "desc": "Gökalp'in toplumsal dayanışma ve milli birlik üzerine görüşlerini analiz eder.",
+      "tags": [
+        "toplum",
+        "dayanışma",
+        "birlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Birlik Mekanizmaları\n1. Temel İlke: Gökalp'in 'hars' ve 'medeniyet' ayrımını açıklayın.\n2. Birlik Unsurları: Milli vicdan, ortak değerler ve tarih bilincinin rolünü belirtin.\n3. Güncel Uygulama: Modern toplumlarda birliği sağlamak için Gökalpçi yöntemleri önerin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Sosyal ve Kültürel Analiz",
+      "name": "Köy Sosyolojisi",
+      "desc": "Ziya Gökalp'in köy ve şehir yaşamı arasındaki farklara dair sosyolojik analizleri.",
+      "tags": [
+        "köy",
+        "şehir",
+        "sosyoloji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Köy-Şehir Farkları\n1. Karakteristikler: Gökalp'in köy ve şehir topluluklarını nasıl tanımladığını özetleyin.\n2. Etkileşim: Bu iki yapı arasındaki kültürel ve ekonomik etkileşimleri inceleyin.\n3. Modern Durum: Günümüz Türkiye'sinde bu ayrımın ne ölçüde geçerli olduğunu değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Sosyal ve Kültürel Analiz",
+      "name": "Aile Yapısı İncelemesi",
+      "desc": "Gökalp'in ideal aile yapısı ve değişimleri üzerine düşüncelerini modern bağlama taşır.",
+      "tags": [
+        "aile",
+        "toplumsal yapı",
+        "kadın"
+      ],
+      "badge1": "Orta",
+      "content": "## Aile Kurumu\n1. Gökalp'in İdeali: Geleneksel Türk ailesinin özelliklerini ve Gökalp'in idealize ettiği yapıyı tanımlayın.\n2. Kadının Yeri: Kadının toplumdaki ve ailedeki rolü üzerine görüşlerini analiz edin.\n3. Güncel Trendler: Modern aile yapısındaki değişimleri Gökalp'in perspektifiyle karşılaştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Sosyal ve Kültürel Analiz",
+      "name": "Din ve Toplum İlişkisi",
+      "desc": "Gökalp'in dinin toplumsal işlevi ve milli kimlikteki yeri hakkındaki analizleri.",
+      "tags": [
+        "din",
+        "toplum",
+        "kimlik"
+      ],
+      "badge1": "İleri",
+      "content": "## Dinin İşlevi\n1. Tanım: Dinin Gökalp'e göre toplumsal düzenleyici ve milli birleştirici rolünü açıklayın.\n2. Laiklik Yorumu: Laiklik ve dinin milli kültür içindeki yeri üzerine görüşlerini analiz edin.\n3. Çağdaş Yaklaşım: Dinin modern toplumlardaki rolünü Gökalp'in çerçevesinde yorumlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Mitoloji ve Destanlar",
+      "name": "Türk Mitolojisi Motifi",
+      "desc": "Türk mitolojisinden seçilen bir motifin Gökalp'in Türkçülük felsefesindeki yerini inceler.",
+      "tags": [
+        "mitoloji",
+        "Türk",
+        "motif"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Motif Analizi\n1. Motif Seçimi: Bir Türk mitolojisi motifini (örn. Bozkurt, Demirci Kawa) seçin.\n2. Sembolizm: Bu motifin taşıdığı anlamları ve kültürel sembolizmini açıklayın.\n3. Gökalp Bağlantısı: Gökalp'in Türkçülük anlayışıyla bu motif arasındaki bağlantıyı kurun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Mitoloji ve Destanlar",
+      "name": "Ergenekon Destanı Yorumu",
+      "desc": "Ergenekon Destanı'nı Ziya Gökalp'in milli ruh ve yeniden doğuş temaları üzerinden analiz eder.",
+      "tags": [
+        "destan",
+        "Ergenekon",
+        "yeniden doğuş"
+      ],
+      "badge1": "Orta",
+      "content": "## Destan ve Milli Ruh\n1. Hikaye Özeti: Ergenekon Destanı'nın ana hatlarını özetleyin.\n2. Gökalp Yorumu: Destanın milli uyanış, diriliş ve bağımsızlık temalarını Gökalp perspektifinden yorumlayın.\n3. Güncel Mesaj: Destanın modern topluma verdiği mesajları ve ilhamı belirtin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Mitoloji ve Destanlar",
+      "name": "Dede Korkut Hikayeleri",
+      "desc": "Dede Korkut Hikayeleri'ndeki töre, ahlak ve kahramanlık unsurlarını inceler.",
+      "tags": [
+        "Dede Korkut",
+        "töre",
+        "kahramanlık"
+      ],
+      "badge1": "Orta",
+      "content": "## Dede Korkut'un Değerleri\n1. Temel Değerler: Dede Korkut Hikayeleri'nde öne çıkan töre, aile, cesaret gibi değerleri sıralayın.\n2. Karakter Analizi: Hikayelerdeki kahramanların (örn. Bamsı Beyrek) bu değerleri nasıl temsil ettiğini açıklayın.\n3. Gökalp Etkisi: Bu hikayelerin Gökalp'in milli kültür ve ahlak anlayışına katkısını değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Mitoloji ve Destanlar",
+      "name": "Alp Er Tunga Efsanesi",
+      "desc": "Alp Er Tunga'nın Türk tarihindeki ve milli hafızadaki yerini Gökalp'in vurgularıyla açıklar.",
+      "tags": [
+        "efsane",
+        "tarih",
+        "Alp Er Tunga"
+      ],
+      "badge1": "İleri",
+      "content": "## Alp Er Tunga'nın Mirası\n1. Efsanevi Kişilik: Alp Er Tunga'nın tarihsel ve efsanevi kimliğini özetleyin.\n2. Gökalp Bağlantısı: Gökalp'in bu figürü milli kimlik inşasında nasıl kullandığını belirtin.\n3. Modern Yansımalar: Alp Er Tunga'nın günümüz Türk kültüründeki ve edebi eserlerdeki yansımalarını inceleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Modern Yorumlar",
+      "name": "Günümüz Türkçülüğü Tartışmaları",
+      "desc": "Ziya Gökalp'in Türkçülük ilkelerinin güncel tartışmalardaki yerini ve etkisini analiz eder.",
+      "tags": [
+        "güncel",
+        "Türkçülük",
+        "tartışma"
+      ],
+      "badge1": "İleri",
+      "content": "## Güncel Perspektif\n1. Temel Tartışmalar: Günümüz Türkçülüğünde öne çıkan ideolojik ayrımları ve yaklaşımları belirleyin.\n2. Gökalp'in Rolü: Gökalp'in fikirlerinin bu tartışmalara nasıl zemin oluşturduğunu açıklayın.\n3. Gelecek Öngörüsü: Türkçülüğün gelecekteki olası yönelimlerini ve Gökalp mirasının etkisini değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Modern Yorumlar",
+      "name": "Küreselleşme ve Milli Kimlik",
+      "desc": "Küreselleşme çağında milli kimliğin korunması üzerine Gökalpçi çözümler sunar.",
+      "tags": [
+        "küreselleşme",
+        "kimlik",
+        "çözüm"
+      ],
+      "badge1": "Orta",
+      "content": "## Kimlik Koruma\n1. Küreselleşme Etkisi: Küreselleşmenin milli kimlik üzerindeki olumlu ve olumsuz etkilerini belirleyin.\n2. Gökalp'in Yaklaşımı: Gökalp'in 'hars' ve 'medeniyet' ayrımını küreselleşme bağlamında yorumlayın.\n3. Strateji Önerileri: Milli kimliği modernize ederek koruma stratejileri geliştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Modern Yorumlar",
+      "name": "Dijital Çağda Kültür Aktarımı",
+      "desc": "Gökalp'in kültür aktarımı modelini dijitalleşme sürecine uyarlar.",
+      "tags": [
+        "dijital",
+        "kültür",
+        "aktarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Dijital Kültür\n1. Gökalp Modeli: Gökalp'in kültürün nesilden nesile aktarımı konusundaki görüşlerini özetleyin.\n2. Dijital Araçlar: Sosyal medya, online platformlar gibi dijital araçların rolünü analiz edin.\n3. Yenilikçi Yaklaşımlar: Dijital çağda milli kültürü yaymak ve korumak için yenilikçi yöntemler önerin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Modern Yorumlar",
+      "name": "Çevre Sorunlarına Gökalpçi Bakış",
+      "desc": "Ziya Gökalp'in toplum-doğa ilişkisi üzerine düşüncelerini çevre sorunlarına uyarlar.",
+      "tags": [
+        "çevre",
+        "sürdürülebilirlik",
+        "doğa"
+      ],
+      "badge1": "İleri",
+      "content": "## Ekolojik Perspektif\n1. Gökalp'in Toplum-Doğa: Gökalp'in eserlerinde doğaya ve çevreye dair dolaylı yaklaşımları belirleyin.\n2. Milli Kaynaklar: Milli kaynakların korunması ve sürdürülebilirliği üzerine Gökalpçi bir çerçeve oluşturun.\n3. Modern Çözümler: Çevre sorunlarına milli bilinç ve toplumsal dayanışma ile yaklaşımlar geliştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Dönemsel Akımlar",
+      "name": "Osmanlıcılık ve İslamcılık Karşılaştırması",
+      "desc": "Ziya Gökalp'in Türkçülük akımını diğer dönemsel ideolojilerle karşılaştırır.",
+      "tags": [
+        "Osmanlıcılık",
+        "İslamcılık",
+        "ideoloji"
+      ],
+      "badge1": "İleri",
+      "content": "## Akımlar ve Farklar\n1. Tanımlar: Osmanlıcılık ve İslamcılık akımlarının temel prensiplerini açıklayın.\n2. Gökalp'in Eleştirisi: Gökalp'in bu akımlara yönelik eleştirilerini ve Türkçülükle farklarını belirtin.\n3. Dönemsel Etki: Her üç akımın dönemin toplumsal ve siyasi yaşamına etkilerini karşılaştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Dönemsel Akımlar",
+      "name": "Tanzimat'tan Cumhuriyet'e Düşünce",
+      "desc": "Tanzimat sonrası düşünce akımlarını Ziya Gökalp'in etkisiyle inceler.",
+      "tags": [
+        "Tanzimat",
+        "Cumhuriyet",
+        "düşünce"
+      ],
+      "badge1": "Orta",
+      "content": "## Düşünce Evrimi\n1. Tanzimat Etkisi: Tanzimat döneminin aydınlanma ve batılılaşma hareketlerini özetleyin.\n2. Gökalp'in Yeri: Gökalp'in bu süreçteki rolünü ve Türkçülüğün doğuşunu açıklayın.\n3. Cumhuriyet'e Geçiş: Gökalp'in fikirlerinin Cumhuriyet dönemine etkilerini ve sürekliliği analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Dönemsel Akımlar",
+      "name": "Genç Kalemler Hareketi",
+      "desc": "Genç Kalemler Hareketi'nin milli dil ve edebiyat üzerindeki etkilerini Gökalp bağlamında inceler.",
+      "tags": [
+        "edebiyat",
+        "dil",
+        "Genç Kalemler"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Edebiyat ve Dil Devrimi\n1. Hareket Tanımı: Genç Kalemler Hareketi'nin amaçlarını ve üyelerini tanıtın.\n2. Gökalp'in Katkısı: Gökalp'in 'Yeni Lisan' makalesi ve milli dil anlayışının hareket içindeki yerini belirtin.\n3. Etkileri: Hareketin Türk dili ve edebiyatına getirdiği yenilikleri ve uzun vadeli etkilerini açıklayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Gökalp'ten İlhamla",
+      "name": "Gökalp'in Eserlerinden Alıntılar",
+      "desc": "Ziya Gökalp'in temel fikirlerini yansıtan, dikkat çekici alıntılar derlemesi.",
+      "tags": [
+        "alıntı",
+        "Gökalp",
+        "ilham"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bilge Sözler\n1. Seçki Oluştur: Gökalp'in 'Türkçülüğün Esasları' veya 'Kızıl Elma' gibi eserlerinden 3-5 ana fikir taşıyan alıntı seçin.\n2. Yorum Ekle: Her alıntının Gökalp'in hangi felsefesini yansıttığını kısaca açıklayın.\n3. Kullanım Alanı: Bu alıntıların modern bağlamda nasıl kullanılabileceğini belirtin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Gökalp'ten İlhamla",
+      "name": "Modern Topluma Gökalp Çözümleri",
+      "desc": "Günümüz toplumsal sorunlarına Ziya Gökalp'in düşünce yapısından esinlenerek çözümler üretir.",
+      "tags": [
+        "çözüm",
+        "modern",
+        "toplum"
+      ],
+      "badge1": "İleri",
+      "content": "## Sorunlara Yaklaşım\n1. Sorun Belirle: Güncel bir toplumsal sorun (örn. kutuplaşma, kültürel erozyon) seçin.\n2. Gökalp Çerçevesi: Gökalp'in milli vicdan, toplumsal dayanışma gibi kavramlarını soruna uygulayın.\n3. Çözüm Önerisi: Gökalp'in yaklaşımından ilham alarak somut, uygulanabilir çözüm önerileri sunun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Gökalp'ten İlhamla",
+      "name": "Gökalp ve Sanat Anlayışı",
+      "desc": "Ziya Gökalp'in sanata, estetiğe ve milli sanata dair görüşlerini inceler.",
+      "tags": [
+        "sanat",
+        "estetik",
+        "milli sanat"
+      ],
+      "badge1": "Orta",
+      "content": "## Sanat ve Toplum\n1. Estetik Tanımı: Gökalp'in estetik ve sanatın toplumsal işlevi hakkındaki görüşlerini özetleyin.\n2. Milli Sanat: Milli sanatın özellikleri ve önemini Gökalp'in bakış açısıyla açıklayın.\n3. Çağdaş Yorum: Günümüz Türk sanatını Gökalp'in milli sanat anlayışı çerçevesinde değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

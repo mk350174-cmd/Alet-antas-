@@ -48,6 +48,413 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Birincil Kaynak Analizi",
+      "name": "Birincil Kaynak Analizi",
+      "color": "#6B7A8F"
+    },
+    {
+      "id": "Tarihsel Veri Doğrulama",
+      "name": "Tarihsel Veri Doğrulama",
+      "color": "#A3B18A"
+    },
+    {
+      "id": "Mitoloji & Anlatı Çözümlemesi",
+      "name": "Mitoloji & Anlatı Çözümlemesi",
+      "color": "#DDA0DD"
+    },
+    {
+      "id": "Çapraz Referans & Bağlam",
+      "name": "Çapraz Referans & Bağlam",
+      "color": "#F7CAC9"
+    },
+    {
+      "id": "Arkeoloji & Epigrafi",
+      "name": "Arkeoloji & Epigrafi",
+      "color": "#CD853F"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Birincil Kaynak Analizi",
+      "name": "Kaynak Kimlik Tespiti",
+      "desc": "Birincil kaynağın yazarını, tarihini ve yazıldığı ortamı hızlıca belirleyin.",
+      "tags": [
+        "belge",
+        "yazar",
+        "tarih"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yazar ve Tarih Tespiti\n1.  Belgenin içinden yazar adı, unvanı ve yazılış tarihi bilgilerini çıkarın.\n2.  Belgenin türünü (mektup, günlük, resmi belge vb.) tespit edin.\n3.  Yazarın belgedeki olaya doğrudan katılım derecesini değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Birincil Kaynak Analizi",
+      "name": "İçerik Olasılığı Değerlendirmesi",
+      "desc": "Kaynağın anlatısal tutarlılığını ve iddialarının mantıksal olasılığını analiz edin.",
+      "tags": [
+        "anlatı",
+        "tutarlılık",
+        "değerlendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Anlatı Tutarlılığı Kontrolü\n1.  Belgedeki ana iddiaları ve destekleyici kanıtları listeleyin.\n2.  Olayların kronolojik ve nedensel akışında çelişki olup olmadığını inceleyin.\n3.  Anlatının mevcut tarihsel bilgilerle uyumunu karşılaştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Birincil Kaynak Analizi",
+      "name": "Önyargı ve Amaç Analizi",
+      "desc": "Kaynağın yazarının potansiyel önyargılarını ve belgenin yazılma amacını ortaya çıkarın.",
+      "tags": [
+        "önyargı",
+        "amaç",
+        "eleştirel"
+      ],
+      "badge1": "Orta",
+      "content": "## Yazarın Amacı ve Önyargıları\n1.  Yazarın sosyal, politik ve kültürel arka planını araştırın.\n2.  Belgenin hedef kitlesini ve yazarın onlara ne mesaj vermek istediğini belirleyin.\n3.  Belgedeki güçlü duygusal dil veya retorik unsurları tespit edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Birincil Kaynak Analizi",
+      "name": "Orijinallik ve Doğruluk Kontrolü",
+      "desc": "Belgenin fiziksel ve metinsel orijinal olup olmadığını belirleyerek güvenilirliğini teyit edin.",
+      "tags": [
+        "orijinallik",
+        "sahtecilik",
+        "teyit"
+      ],
+      "badge1": "İleri",
+      "content": "## Kaynak Orijinallik Teyidi\n1.  Belgenin fiziksel özelliklerini (kağıt, mürekkep, yazı tipi) inceleyin.\n2.  Metinde dilbilgisi, imla veya üslup açısından tutarsızlık arayın.\n3.  Kaynakta belirtilen diğer kişilerin veya olayların varlığını doğrulamak için ikincil kaynaklara başvurun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Tarihsel Veri Doğrulama",
+      "name": "Kronolojik Tutarlılık",
+      "desc": "Tarihi olayların zaman çizelgesini ve ardışıklığını doğrulayarak tutarlılığı sağlayın.",
+      "tags": [
+        "kronoloji",
+        "zaman",
+        "tutarlılık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Olayların Zaman Akışı Kontrolü\n1.  Belirtilen tarihler arasında çelişki olup olmadığını kontrol edin.\n2.  Olayların mantıksal bir sıra içinde gelişip gelişmediğini değerlendirin.\n3.  Farklı kaynaklardan gelen tarihleri karşılaştırarak uyumsuzlukları belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Tarihsel Veri Doğrulama",
+      "name": "Coğrafi Doğrulama",
+      "desc": "Olayların geçtiği yerlerin tarihsel coğrafyaya uygunluğunu doğrulayın.",
+      "tags": [
+        "coğrafya",
+        "mekan",
+        "harita"
+      ],
+      "badge1": "Orta",
+      "content": "## Mekanların Tarihi Kontrolü\n1.  Belgede geçen coğrafi adların o döneme ait haritalarla uyumunu denetleyin.\n2.  Belirtilen yerlerin fiziksel özelliklerinin (nehir, dağ vb.) tarihsel kayıtlarla eşleştiğini doğrulayın.\n3.  Mekanların stratejik veya kültürel önemini dönemin koşullarına göre değerlendirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Tarihsel Veri Doğrulama",
+      "name": "Anahtar Figür Doğrulama",
+      "desc": "Tarihi figürlerin kimliklerini, unvanlarını ve rollerini teyit ederek doğru bilgiyi edinin.",
+      "tags": [
+        "şahsiyet",
+        "kimlik",
+        "rol"
+      ],
+      "badge1": "Orta",
+      "content": "## Şahsiyetlerin Kimlik Tespiti\n1.  Belgedeki ana figürlerin isimlerini ve unvanlarını listeleyin.\n2.  Bu figürlerin yaşam sürelerini ve kariyerlerini güvenilir ansiklopedik kaynaklarla karşılaştırın.\n3.  Rollerinin ve eylemlerinin mevcut tarihsel konsensüsle uyumlu olup olmadığını inceleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Tarihsel Veri Doğrulama",
+      "name": "Anachronism Tespiti",
+      "desc": "Tarihsel bir metindeki zamanına uygun olmayan unsurları belirleyerek hata avcılığı yapın.",
+      "tags": [
+        "anakronizm",
+        "hata",
+        "dönem"
+      ],
+      "badge1": "İleri",
+      "content": "## Anachronism Avcısı\n1.  Metindeki teknoloji, giyim, dil veya sosyal normlara dair ifadeleri tarayın.\n2.  Bu unsurların belirtilen döneme ait olup olmadığını kontrol edin.\n3.  Tespit edilen anachronism'lerin metnin güvenilirliğini nasıl etkilediğini analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Mitoloji & Anlatı Çözümlemesi",
+      "name": "Mitolojik Archetip Analizi",
+      "desc": "Bir mit veya hikayedeki evrensel karakter tiplerini ve sembolleri tanımlayın.",
+      "tags": [
+        "archetip",
+        "sembol",
+        "mitoloji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Archetip Belirleme Rehberi\n1.  Hikayedeki ana karakterleri (kahraman, akıl hocası, gölge) ve rollerini listele.\n2.  Tekrarlayan sembolleri (su, ağaç, mağara) ve bunların kültürel anlamlarını araştır.\n3.  Bu archetiplerin hikayenin genel mesajına nasıl katkıda bulunduğunu yorumla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Mitoloji & Anlatı Çözümlemesi",
+      "name": "Anlatı Yapısı Çözümlemesi",
+      "desc": "Hikayenin olay örgüsünü, temasını ve anlatım tekniklerini analiz ederek derinlemesine anlayın.",
+      "tags": [
+        "anlatı",
+        "olay örgüsü",
+        "tema"
+      ],
+      "badge1": "Orta",
+      "content": "## Hikaye Yapısı Değerlendirmesi\n1.  Hikayenin başlangıç, gelişme ve sonuç aşamalarını belirleyin.\n2.  Ana temaları (aşk, kader, intikam) ve bunların nasıl işlendiğini açıklayın.\n3.  Kullanılan anlatım tekniklerini (metafor, alegori, kehanet) ve etkilerini saptayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Mitoloji & Anlatı Çözümlemesi",
+      "name": "Kültürel Bağlam Değerlendirmesi",
+      "desc": "Bir mitin veya hikayenin ortaya çıktığı kültürün değerlerini ve inançlarını inceleyin.",
+      "tags": [
+        "kültür",
+        "bağlam",
+        "inanç"
+      ],
+      "badge1": "Orta",
+      "content": "## Kültürel Etki Analizi\n1.  Hikayenin üretildiği toplumun sosyal yapısını ve inanç sistemini araştırın.\n2.  Mitin o kültürdeki işlevini (açıklayıcı, eğitici, moral verici) belirleyin.\n3.  Hikayenin kültürel kimliğin oluşumuna nasıl katkı sağladığını yorumlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Mitoloji & Anlatı Çözümlemesi",
+      "name": "Karşılaştırmalı Mitoloji",
+      "desc": "Farklı kültürlerin mitleri arasındaki benzerlikleri ve farklılıkları keşfedin.",
+      "tags": [
+        "karşılaştırma",
+        "mit",
+        "kültür"
+      ],
+      "badge1": "İleri",
+      "content": "## Mitolojik Paralellikler\n1.  İki veya daha fazla mitolojik anlatıyı seçin ve ana motiflerini listeleyin.\n2.  Karakterlerin, olay örgülerinin ve sembollerin ortak yönlerini karşılaştırın.\n3.  Farklılıkların kültürel veya coğrafi nedenlerini açıklayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Çapraz Referans & Bağlam",
+      "name": "Çoklu Kaynak Karşılaştırması",
+      "desc": "Aynı olay hakkında farklı kaynaklardan gelen bilgileri karşılaştırarak tutarsızlıkları bulun.",
+      "tags": [
+        "kaynak",
+        "karşılaştırma",
+        "veri"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kaynaklararası Tutarlılık\n1.  Aynı olayı anlatan en az üç farklı birincil veya ikincil kaynak belirleyin.\n2.  Her bir kaynağın temel iddialarını ve detaylarını listeleyin.\n3.  Kaynaklar arasındaki çelişkileri, eksiklikleri veya ek bilgileri tespit edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Çapraz Referans & Bağlam",
+      "name": "Tarihsel Bağlam Oluşturma",
+      "desc": "Bir olayın veya belgenin meydana geldiği dönemin sosyal, politik ve ekonomik koşullarını tanımlayın.",
+      "tags": [
+        "bağlam",
+        "dönem",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Dönem Bağlamı Oluşturma\n1.  İlgili dönemin ana politik güçlerini ve sosyal sınıflarını belirleyin.\n2.  Ekonomik durumu (ticaret, tarım, teknoloji) ve kültürel ortamı özetleyin.\n3.  Belgenin veya olayın bu genel bağlam içinde nasıl bir anlam ifade ettiğini açıklayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Çapraz Referans & Bağlam",
+      "name": "Kanıt Zinciri Takibi",
+      "desc": "Bir iddianın veya olayın kaynaklar aracılığıyla nasıl desteklendiğini takip edin.",
+      "tags": [
+        "kanıt",
+        "zincir",
+        "destek"
+      ],
+      "badge1": "Orta",
+      "content": "## Kanıt Yolu İzleme\n1.  Başlangıçtaki iddiayı veya hipotezi tanımlayın.\n2.  Bu iddiayı destekleyen veya çürüten her birincil veya ikincil kaynağı sıralayın.\n3.  Her kaynağın bir önceki veya sonrakini nasıl etkilediğini analiz ederek bir kanıt zinciri oluşturun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Çapraz Referans & Bağlam",
+      "name": "Boşluk ve Eksik Bilgi Tespiti",
+      "desc": "Mevcut kaynaklardaki bilgi boşluklarını ve çelişen verileri belirleyin.",
+      "tags": [
+        "boşluk",
+        "eksik",
+        "veri"
+      ],
+      "badge1": "İleri",
+      "content": "## Bilgi Eksikliği Analizi\n1.  Konuyla ilgili bilinen tüm kaynakları ve onların kapsamlarını listele.\n2.  Hangi soruların cevapsız kaldığını veya hangi dönemlerin yetersiz belgelendiğini saptayın.\n3.  Çelişen kaynaklar arasındaki farklılıkların nedenlerini araştırarak olası bilgi boşluklarını işaretle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Arkeoloji & Epigrafi",
+      "name": "Seramik Tarihlendirme",
+      "desc": "Bir arkeolojik alanda bulunan seramik parçalarını stil ve teknolojiye göre tarihlendirin.",
+      "tags": [
+        "seramik",
+        "tarihlendirme",
+        "arkeoloji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Seramik Kronoloji Rehberi\n1.  Seramiğin tipini (kap, çanak vb.), üretim tekniğini ve yüzey işlemelerini inceleyin.\n2.  Dekorasyon motiflerini ve form özelliklerini bilinen seramik kronolojileriyle karşılaştırın.\n3.  Bulunan diğer eserler ve stratigrafik verilerle tutarlılığını değerlendirerek tahmini bir tarih aralığı belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Arkeoloji & Epigrafi",
+      "name": "Epigrafik Metin Çözümlemesi",
+      "desc": "Antik yazıtları (kitabeler, tabletler) okuyup çevirerek tarihsel bilgi çıkarın.",
+      "tags": [
+        "yazıt",
+        "epigrafi",
+        "çeviri"
+      ],
+      "badge1": "Orta",
+      "content": "## Yazıt Çözümleme Adımları\n1.  Yazıtın dilini ve kullanılan alfabeyi (Latin, Grek, çivi yazısı) belirleyin.\n2.  Harflerin veya sembollerin stilini inceleyerek dönemsel özelliklerini saptayın.\n3.  Metni kelime kelime çevirerek anahtar isimleri, olayları ve unvanları çıkarın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Arkeoloji & Epigrafi",
+      "name": "Stratigrafik Yorumlama",
+      "desc": "Bir kazı alanındaki toprak katmanlarını ve içindeki buluntuları yorumlayarak kronoloji oluşturun.",
+      "tags": [
+        "stratigrafi",
+        "katman",
+        "kazı"
+      ],
+      "badge1": "Orta",
+      "content": "## Katman Analizi ve Kronoloji\n1.  Kazıdaki her stratigrafik katmanı ayrı ayrı belgeleyin (toprak rengi, doku, içerik).\n2.  Her katmandan çıkan eserleri (seramik, alet, kalıntı) ve bunların tarihlerini kaydedin.\n3.  Katmanların üst üste binme prensibini kullanarak en alttan en üste doğru kronolojik bir sıra oluşturun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Arkeoloji & Epigrafi",
+      "name": "Mimari Kalıntı Değerlendirmesi",
+      "desc": "Antik yapı kalıntılarını inceleyerek işlevlerini, inşa tekniklerini ve dönemlerini belirleyin.",
+      "tags": [
+        "mimari",
+        "kalıntı",
+        "yapı"
+      ],
+      "badge1": "İleri",
+      "content": "## Yapı Kalıntıları Analizi\n1.  Yapının planını, kullanılan malzemeleri ve inşa tekniklerini detaylıca inceleyin.\n2.  Mimarinin stilistik özelliklerini (sütun tipleri, süslemeler) dönemsel mimari akımlarla karşılaştırın.\n3.  Yapının bulunduğu yerleşimdeki diğer yapılarla ilişkisini ve olası işlevini (tapınak, ev, sur) belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

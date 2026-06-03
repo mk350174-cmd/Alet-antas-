@@ -48,6 +48,399 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Manihéizm Öğretileri",
+      "name": "Manihéizm Öğretileri",
+      "color": "#8B0000"
+    },
+    {
+      "id": "Apokrif ve Gizemli Metinler",
+      "name": "Apokrif ve Gizemli Metinler",
+      "color": "#483D8B"
+    },
+    {
+      "id": "Antik Mezopotamya Mitleri",
+      "name": "Antik Mezopotamya Mitleri",
+      "color": "#DAA520"
+    },
+    {
+      "id": "Antik Mısır Teolojisi",
+      "name": "Antik Mısır Teolojisi",
+      "color": "#006400"
+    },
+    {
+      "id": "Greko-Romen Mitolojisi",
+      "name": "Greko-Romen Mitolojisi",
+      "color": "#8B4513"
+    },
+    {
+      "id": "Gnostisizm ve Erken Hristiyanlık",
+      "name": "Gnostisizm ve Erken Hristiyanlık",
+      "color": "#4682B4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Manihéizm Öğretileri",
+      "name": "Manihéizm'in Kökenleri",
+      "desc": "Mani'nin 3. yüzyıl İran'ında kurduğu bu dinin tarihsel ve coğrafi yayılımını inceleyin.",
+      "tags": [
+        "Mani",
+        "İran",
+        "Dualizm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Manihéizm Kökenleri\n1. Mani'nin 216 yılında Babil'de doğumu ve öğretilerinin temellerini atması.\n2. Zerdüştlük, Hristiyanlık ve Budizm'den etkileşimleri belirleyin.\n3. Sasaniler döneminde yükselişi ve sonraki baskıları araştırın.\n4. Doğu'ya (Çin) ve Batı'ya (Roma İmparatorluğu) yayılım yollarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Manihéizm Öğretileri",
+      "name": "Işık ve Karanlık Prensibi",
+      "desc": "Manihéizm'in temel dualistik yapısını, iyi ve kötü arasındaki ebedi mücadeleyi keşfedin.",
+      "tags": [
+        "Dualizm",
+        "İyiKötü",
+        "Kozmoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## Işık ve Karanlık Dualizmi\n1. Manihéist kozmolojide var olan iki ayrı krallığı tanımlayın: Işık Krallığı (İyi) ve Karanlık Krallığı (Kötü).\n2. Evrenin yaratılışını, bu iki gücün çatışması ve karışımı olarak açıklayın.\n3. İnsan ruhunun Işık parçacıkları taşıdığını ve kurtuluşun bu parçacıkların serbest bırakılması olduğunu vurgulayın.\n4. Bu prensibin Manihéist etiğe yansımalarını inceleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Manihéizm Öğretileri",
+      "name": "Mani'nin Yaşamı ve Misyonu",
+      "desc": "Manihéizm'in peygamberi Mani'nin hayatını, vizyonlarını ve dini yayma çabalarını inceleyin.",
+      "tags": [
+        "Mani",
+        "Peygamber",
+        "Misyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Mani'nin Hayatı ve Öğretisi\n1. Mani'nin çocukluğunu ve ilk vizyonlarını özetleyin.\n2. Kendini \"Işık Elçisi\" ve \"Mühürlü Peygamber\" olarak ilan etmesini açıklayın.\n3. Dört ana kitabını ve diğer yazılarını listeleyin.\n4. Sasani İmparatorluğu içindeki misyonerlik faaliyetlerini ve karşılaştığı zorlukları ele alın.\n5. Mani'nin şehit edilişinin Manihéizm üzerindeki etkilerini belirtin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Manihéizm Öğretileri",
+      "name": "Manihéist Kozmoloji",
+      "desc": "Manihéizm'in evrenin yapısı, yaratılışı ve kaderi hakkındaki karmaşık görüşlerini analiz edin.",
+      "tags": [
+        "Kozmoloji",
+        "Yaratılış",
+        "Manihéizm"
+      ],
+      "badge1": "İleri",
+      "content": "## Manihéist Kozmik Yapı\n1. Başlangıçtaki iki krallığın, Işık ve Karanlık'ın ebedi ayrımını detaylandırın.\n2. Karanlık Güçlerin Işık Krallığı'na saldırısı ve evrenin yaratılış sürecini açıklayın.\n3. İnsanın yaratılışını, ruhun Işık parçacıkları ve bedenin Karanlık madde karışımı olarak ele alın.\n4. Kurtuluşun ve kozmik döngünün tamamlanmasının adımlarını özetleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Apokrif ve Gizemli Metinler",
+      "name": "Thomas İncili Analizi",
+      "desc": "Kanonik incillerden farklı olarak İsa'nın sözlerine odaklanan bu Gnostik metni inceleyin.",
+      "tags": [
+        "Apokrif",
+        "Gnostik",
+        "İsa"
+      ],
+      "badge1": "Orta",
+      "content": "## Thomas İncili'nin İncelenmesi\n1. Metnin 114 özdeyişten oluştuğunu ve anlatısal bir yapıya sahip olmadığını belirtin.\n2. \"Gizli sözler\" kavramını ve içsel bilginin önemini açıklayın.\n3. Kanonik incillerle benzerliklerini ve temel farklılıklarını karşılaştırın.\n4. Gnostik etkileri, özellikle \"ışık\" ve \"bilgi\" temalarını vurgulayın.\n5. Metnin erken Hristiyanlık düşüncesindeki yerini tartışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Apokrif ve Gizemli Metinler",
+      "name": "Yahuda İncili'nin Yorumu",
+      "desc": "Yahuda İskariyot'u hainden ziyade İsa'nın özel öğrencisi olarak betimleyen bu metni değerlendirin.",
+      "tags": [
+        "Yahuda",
+        "Apokrif",
+        "Gnostik"
+      ],
+      "badge1": "İleri",
+      "content": "## Yahuda İncili'nin Yeniden Değerlendirilmesi\n1. Metnin keşfini ve 2006'daki çevirisinin etkilerini özetleyin.\n2. Yahuda'nın, İsa'nın emriyle onu ihbar ettiğini ve bunun kurtuluş planının bir parçası olduğunu açıklayın.\n3. Ortodoks Hristiyanlık'taki Yahuda imajıyla karşılaştırın.\n4. Gnostik düalist kozmoloji ile bağlantılarını ve demiurgus kavramını inceleyin.\n5. Metnin erken Hristiyanlıkta neden dışlandığını tartışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Apokrif ve Gizemli Metinler",
+      "name": "Hermetika'ya Giriş",
+      "desc": "Antik Mısır ve Helenistik felsefenin harmanlandığı Hermetik külliyatın temel öğretilerini keşfedin.",
+      "tags": [
+        "Hermetika",
+        "Ezoterizm",
+        "Helenistik"
+      ],
+      "badge1": "Orta",
+      "content": "## Hermetika'nın Temel Öğretileri\n1. Hermetik metinlerin kökenlerini ve Hermes Trismegistus figürünü açıklayın.\n2. \"Yukarıdaki gibi aşağıda da\" prensibini ve mikrokozmos-makrokozmos ilişkisini inceleyin.\n3. Kozmik akıl, ruh ve madde kavramlarını tanımlayın.\n4. İnsanın tanrısal doğasını ve bilgelik yoluyla kurtuluş hedefini vurgulayın.\n5. Simya ve astroloji gibi ezoterik disiplinler üzerindeki etkilerini belirtin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Apokrif ve Gizemli Metinler",
+      "name": "Barnabas İncili Analizi",
+      "desc": "İslam dünyasında önemli kabul edilen ancak kanonik olmayan bu incilin içeriğini ve tarihini inceleyin.",
+      "tags": [
+        "Barnabas",
+        "İslam",
+        "Apokrif"
+      ],
+      "badge1": "İleri",
+      "content": "## Barnabas İncili'nin Özellikleri\n1. Metnin tarihsel kökenleri ve 16. yüzyılda ortaya çıkışı hakkında bilgi verin.\n2. İsa'nın Tanrı'nın oğlu olmadığını ve çarmıha gerilmediğini iddia eden ana tezlerini vurgulayın.\n3. Muhammed'in peygamberliğini önceden bildirdiğini iddia eden bölümleri inceleyin.\n4. Kanonik İncillerle arasındaki teolojik farklılıkları karşılaştırın.\n5. Metnin Hristiyan ve İslam teolojisindeki kabul veya reddedilme nedenlerini tartışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Antik Mezopotamya Mitleri",
+      "name": "Gılgamış Destanı Özeti",
+      "desc": "Sümer ve Akad edebiyatının bu başyapıtında ölümsüzlük arayışı ve insan doğasını keşfedin.",
+      "tags": [
+        "Gılgamış",
+        "Sümer",
+        "Destan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Gılgamış Destanı Kılavuzu\n1. Gılgamış'ın Uruk kralı olarak tanıtımını ve tiranlığını açıklayın.\n2. Enkidu ile tanışmasını, dostluklarını ve Humbaba ile Gök Boğası'nı öldürmelerini özetleyin.\n3. Enkidu'nun ölümü sonrası Gılgamış'ın ölümsüzlük arayışına başlamasını vurgulayın.\n4. Utnapiştim ile görüşmesini ve büyük tufan hikayesini anlatın.\n5. Destanın ölüm ve yaşam, dostluk ve bilgelik temalarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Antik Mezopotamya Mitleri",
+      "name": "Enuma Eliş Yaratılış Destanı",
+      "desc": "Babil kozmolojisinin anahtar metni olan Enuma Eliş'te evrenin ve tanrıların yaratılışını inceleyin.",
+      "tags": [
+        "Babil",
+        "Yaratılış",
+        "Kozmoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## Enuma Eliş: Babil Yaratılışı\n1. Destanın başlangıcını, Apsu ve Tiamat'ın kaotik sularından tanrıların doğuşunu açıklayın.\n2. Marduk'un yükselişini, Tiamat'ı yenmesini ve evreni onun bedeninden yaratmasını anlatın.\n3. İnsanlığın yaratılışını, tanrılara hizmet etmek amacıyla kan ve kemikten oluşmasını belirtin.\n4. Marduk'un Babil'in baş tanrısı olarak tahta çıkışını ve 50 ismini listeleyin.\n5. Destanın siyasi ve teolojik amaçlarını yorumlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Antik Mezopotamya Mitleri",
+      "name": "İştar'ın Yeraltı Dünyasına İnişi",
+      "desc": "Aşk ve savaş tanrıçası İştar'ın yeraltı dünyasına yolculuğunu ve sembolik anlamlarını araştırın.",
+      "tags": [
+        "İştar",
+        "Yeraltı",
+        "Doğurganlık"
+      ],
+      "badge1": "Orta",
+      "content": "## İştar'ın Yeraltı Dünyası Yolculuğu\n1. İştar'ın yeraltı dünyasına iniş nedenlerini (kardeşi Ereshkigal'i ziyaret, Dumuzi'yi kurtarma) açıklayın.\n2. Yedi kapıdan geçişini ve her kapıda bir giysisini kaybetmesini özetleyin.\n3. Yeryüzündeki etkilerini (doğurganlığın durması) ve tanrıların müdahalesini belirtin.\n4. İştar'ın dönüşünü ve yerine Dumuzi'nin gönderilmesini anlatın.\n5. Mevsimsel döngü, ölüm ve yeniden doğuş sembolizmini analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Antik Mısır Teolojisi",
+      "name": "Osiris Mitolojisi",
+      "desc": "Ölüm, yeniden doğuş ve yeraltı dünyasının tanrısı Osiris'in trajik hikayesini ve kültünü inceleyin.",
+      "tags": [
+        "Osiris",
+        "YenidenDoğuş",
+        "Ölüm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Osiris Miti ve Önemi\n1. Osiris'in Mısır'ın ilk kralı olarak tanıtımını ve medeniyet getiriciliğini açıklayın.\n2. Kardeşi Seth tarafından öldürülmesini ve parçalara ayrılmasını özetleyin.\n3. Karısı İsis'in Osiris'i yeniden bir araya getirme ve Horus'u doğurma çabalarını anlatın.\n4. Osiris'in yeraltı dünyasının hakimi oluşunu ve ölülerin yargıcı rolünü vurgulayın.\n5. Mitin Mısır'daki tarım döngüsü ve ölü kültüyle bağlantılarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Antik Mısır Teolojisi",
+      "name": "Atonizm ve Tek Tanrıcılık",
+      "desc": "Firavun Akhenaton'un Aton kültünü tek tanrı olarak kabul etme girişimini ve etkilerini değerlendirin.",
+      "tags": [
+        "Akhenaton",
+        "Aton",
+        "Monoteizm"
+      ],
+      "badge1": "Orta",
+      "content": "## Akhenaton ve Aton Devrimi\n1. 18. Hanedan firavunu Akhenaton'un (Amenhotep IV) dini reformlarını açıklayın.\n2. Geleneksel çoktanrıcılığı terk edip Güneş diskini (Aton) tek tanrı ilan etmesini vurgulayın.\n3. Yeni başkent Akhetaton'un (Amarna) kuruluşunu ve geleneksel din adamlarının gücünün kırılmasını belirtin.\n4. Aton'a yazılan ilahilerin temel teolojik mesajlarını inceleyin.\n5. Reformun neden başarısız olduğunu ve Akhenaton sonrası geleneksel dine dönüşü tartışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Antik Mısır Teolojisi",
+      "name": "Ölüler Kitabı Rehberi",
+      "desc": "Antik Mısırlıların öbür dünyaya güvenli geçiş için kullandığı bu metin koleksiyonunu inceleyin.",
+      "tags": [
+        "ÖlülerKitabı",
+        "Ahiret",
+        "Ritüel"
+      ],
+      "badge1": "Orta",
+      "content": "## Mısır Ölüler Kitabı\n1. \"Gündüze Çıkış Kitabı\" olarak da bilindiğini ve mezar metinlerinin bir derlemesi olduğunu açıklayın.\n2. Amacını, ölen kişinin yeraltı dünyasındaki tehlikeleri aşmasına ve yargıdan geçmesine yardımcı olmak olarak belirtin.\n3. İçerdiği büyüleri, duaları ve bilgileri listeleyin.\n4. \"Kalbin Tartılması\" sahnesini ve Ma'at'ın rolünü vurgulayın.\n5. Kitabın farklı dönemlerdeki evrimini ve cenaze ritüellerindeki yerini analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Antik Mısır Teolojisi",
+      "name": "Mısır Yaratılış Mitleri",
+      "desc": "Antik Mısır'ın farklı bölgelerinden kaynaklanan çeşitli yaratılış hikayelerini karşılaştırın.",
+      "tags": [
+        "Yaratılış",
+        "Kozmogoni",
+        "Mısır"
+      ],
+      "badge1": "İleri",
+      "content": "## Mısır Yaratılış Efsaneleri\n1. Heliopolis (Atum/Ra), Memphis (Ptah) ve Hermopolis (Ogdod) kozmogonilerini karşılaştırın.\n2. Nun (ilkel su) kavramını ve ilk tanrının kendiliğinden ortaya çıkışını açıklayın.\n3. Yaratılışın sözle (Ptah) veya kendi kendine üreme (Atum) yoluyla nasıl gerçekleştiğini inceleyin.\n4. İlk tanrıların (Şu, Tefnut, Geb, Nut) ortaya çıkışını ve evrenin şekillenmesini anlatın.\n5. Bu mitlerin Mısır düşüncesindeki ortak temalarını ve bölgesel farklılıklarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Greko-Romen Mitolojisi",
+      "name": "Prometheus Efsanesi",
+      "desc": "Titan Prometheus'un insanlığa ateşi getirme cesaretini ve Zeus'a karşı direnişini inceleyin.",
+      "tags": [
+        "Prometheus",
+        "Titan",
+        "Ateş"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Prometheus'un Mirası\n1. Prometheus'un Titan soyunu ve insanlığın yaratılışındaki rolünü açıklayın.\n2. Zeus'tan ateşi çalıp insanlığa vermesini ve bunun sonuçlarını özetleyin.\n3. Zeus'un Prometheus'u Kafkas Dağları'na zincirleyerek cezalandırmasını ve her gün karaciğerinin yenmesini anlatın.\n4. Herakles tarafından kurtarılmasını ve efsanenin sembolik anlamlarını (bilgi, isyan) vurgulayın.\n5. Modern düşüncedeki Prometheusçu ruh kavramını tartışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Greko-Romen Mitolojisi",
+      "name": "Orpheus ve Eurydice",
+      "desc": "Şair Orpheus'un sevgili eşi Eurydice'yi yeraltı dünyasından geri getirme çabasının dokunaklı hikayesini keşfedin.",
+      "tags": [
+        "Orpheus",
+        "Aşk",
+        "Yeraltı"
+      ],
+      "badge1": "Orta",
+      "content": "## Orpheus'un Yeraltı Yolculuğu\n1. Orpheus'un müzik yeteneğini ve Eurydice ile olan aşkını tanıtın.\n2. Eurydice'nin yılan ısırığıyla ölmesini ve Orpheus'un derin üzüntüsünü anlatın.\n3. Yeraltı dünyasına inişini, müziğiyle Hades ve Persephone'yi etkilemesini açıklayın.\n4. Eurydice'yi geri getirme şartını (geriye bakmama) ve bu şartın ihlalini özetleyin.\n5. Efsanenin aşk, kayıp ve sanatsal ifade temalarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Greko-Romen Mitolojisi",
+      "name": "Zeus ve Olimpos Tanrıları",
+      "desc": "Yunan mitolojisinin baş tanrısı Zeus'un ailesini, gücünü ve Olimpos'taki yerini inceleyin.",
+      "tags": [
+        "Zeus",
+        "Olimpos",
+        "Yunan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Olimpos'un Yüce Tanrısı Zeus\n1. Zeus'un Kronos ve Rhea'nın çocuğu olarak doğuşunu ve Titanlara karşı savaşını (Titanomachy) anlatın.\n2. Olimpos'un kralı olarak tahta geçişini ve göklerin, şimşeklerin kontrolünü ele alışını açıklayın.\n3. Hera ile evliliğini ve sayısız aşk ilişkisini özetleyin.\n4. Diğer Olimpos tanrılarını (Poseidon, Hades, Athena, Apollo vb.) ve onların rollerini listeleyin.\n5. Zeus'un adalet, düzen ve misafirperverlik gibi kavramlarla ilişkisini vurgulayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Gnostisizm ve Erken Hristiyanlık",
+      "name": "Gnostik Kozmolojiye Giriş",
+      "desc": "Gnostiklerin evrenin yapısı, tanrısal varlıklar ve kötü demiurgus hakkındaki görüşlerini keşfedin.",
+      "tags": [
+        "Gnostisizm",
+        "Kozmoloji",
+        "Demiurgus"
+      ],
+      "badge1": "İleri",
+      "content": "## Gnostik Evren Anlayışı\n1. Yüksek, aşkın ve bilinmeyen Tanrı'yı (Monad/Pleroma) tanıtın.\n2. Eonların (ilahî varlıklar) Monad'dan yayılımını ve Pleroma'nın oluşumunu açıklayın.\n3. Sophia'nın düşüşünü ve bundan kaynaklanan Demiurgus (Yaldabaoth) figürünü anlatın.\n4. Demiurgus'un maddi evreni cahilce yarattığını ve insan ruhunun bu dünyada hapsolduğunu belirtin.\n5. Kurtuluşun, Gnosis (bilgi) yoluyla bu maddi hapishaneden kaçış olduğunu vurgulayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }
