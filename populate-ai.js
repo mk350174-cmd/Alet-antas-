@@ -100,7 +100,7 @@ async function callGemini(cfg) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
       contents: [{ role: 'user', parts: [{ text: buildUserMessage(cfg) }] }],
-      generationConfig: { maxOutputTokens: 32768, temperature: 0.8, responseMimeType: 'application/json' },
+      generationConfig: { maxOutputTokens: 12288, temperature: 0.8, responseMimeType: 'application/json' },
     }),
   });
   if (res.status === 429 || res.status === 503) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
@@ -109,13 +109,14 @@ async function callGemini(cfg) {
   return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
 }
 
-async function callAI(cfg, retries = 3) {
+async function callAI(cfg, retries = 5) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       return PROVIDER === 'claude' ? await callClaude(cfg) : await callGemini(cfg);
     } catch (e) {
-      if ((e.retryable || attempt < retries) && attempt < retries) {
-        const wait = (attempt + 1) * 6000;
+      if (attempt < retries) {
+        // 429 dakikalık pencere için uzun bekleme (15,30,45,60,60s)
+        const wait = Math.min((attempt + 1) * 15000, 60000);
         console.log(`    ⏳ ${e.message}, ${wait/1000}s bekleniyor...`);
         await new Promise(r => setTimeout(r, wait));
         continue;
@@ -188,7 +189,7 @@ async function main() {
   for (const f of files) {
     const r = await processConfig(f);
     if (r) ok++;
-    await new Promise(res => setTimeout(res, 1200)); // nazik akış
+    await new Promise(res => setTimeout(res, 3500)); // RPM/TPM dostu akış
   }
   console.log(`\nTamamlandı: ${ok}/${files.length} vault dolduruldu.`);
 }
