@@ -103,7 +103,15 @@ async function callGemini(cfg) {
       generationConfig: { maxOutputTokens: 12288, temperature: 0.8, responseMimeType: 'application/json' },
     }),
   });
-  if (res.status === 429 || res.status === 503) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
+  if (res.status === 429 || res.status === 503) {
+    const data = await res.json().catch(() => ({}));
+    const msg = data.error?.message || '';
+    const m = msg.match(/retry in ([\d.]+)s/i);
+    const e = new Error(`yoğunluk ${res.status}`);
+    e.retryable = true;
+    e.retryAfter = m ? Math.ceil(parseFloat(m[1])) + 2 : null; // API'nin önerdiği bekleme
+    throw e;
+  }
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
   return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
@@ -115,9 +123,10 @@ async function callAI(cfg, retries = 5) {
       return PROVIDER === 'claude' ? await callClaude(cfg) : await callGemini(cfg);
     } catch (e) {
       if (attempt < retries) {
-        // 429 dakikalık pencere için uzun bekleme (15,30,45,60,60s)
-        const wait = Math.min((attempt + 1) * 15000, 60000);
-        console.log(`    ⏳ ${e.message}, ${wait/1000}s bekleniyor...`);
+        // API "retry in Xs" önerdiyse tam o kadar bekle (kota israfını önler),
+        // yoksa kademeli backoff
+        const wait = e.retryAfter ? e.retryAfter * 1000 : Math.min((attempt + 1) * 15000, 60000);
+        console.log(`    ⏳ ${e.message}, ${Math.round(wait/1000)}s bekleniyor...`);
         await new Promise(r => setTimeout(r, wait));
         continue;
       }
