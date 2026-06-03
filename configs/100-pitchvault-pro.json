@@ -48,6 +48,438 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Pazar Analizi",
+      "name": "Pazar Analizi",
+      "color": "#87CEEB"
+    },
+    {
+      "id": "Finansal Projeksiyonlar",
+      "name": "Finansal Projeksiyonlar",
+      "color": "#90EE90"
+    },
+    {
+      "id": "Rakip Analizi",
+      "name": "Rakip Analizi",
+      "color": "#FFD700"
+    },
+    {
+      "id": "İş Modeli",
+      "name": "İş Modeli",
+      "color": "#FFA07A"
+    },
+    {
+      "id": "Müşteri Segmentasyonu",
+      "name": "Müşteri Segmentasyonu",
+      "color": "#DA70D6"
+    },
+    {
+      "id": "Pazar Büyüklüğü",
+      "name": "Pazar Büyüklüğü",
+      "color": "#ADD8E6"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Pazar Analizi",
+      "name": "Pazar Büyüklüğü ve Eğilimler",
+      "desc": "Hedef pazarınızın boyutunu ve büyüme potansiyelini gösterin.",
+      "tags": [
+        "pazar",
+        "büyüme",
+        "trendler",
+        "yatırım"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Pazar Büyüklüğü ve Eğilimler\n\n### 1. Toplam Adreslenebilir Pazar (TAM)\n   * Mevcut pazarınızın toplam geliri.\n### 2. Hizmet Verilebilir Adreslenebilir Pazar (SAM)\n   * Hedeflediğiniz pazar segmentinin geliri.\n### 3. Hizmet Verilebilir Elde Edilebilir Pazar (SOM)\n   * Kısa vadede ulaşabileceğiniz gerçekçi pazar payı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Pazar Analizi",
+      "name": "SWOT Analizi Şablonu",
+      "desc": "Güçlü, zayıf yönler, fırsatlar ve tehditleri belirleyin.",
+      "tags": [
+        "swot",
+        "analiz",
+        "strateji",
+        "risk"
+      ],
+      "badge1": "Orta",
+      "content": "## SWOT Analizi\n\n### Güçlü Yönler (Strengths)\n   * İçsel avantajlarınız nelerdir?\n### Zayıf Yönler (Weaknesses)\n   * Geliştirilmesi gereken alanlar?\n### Fırsatlar (Opportunities)\n   * Dışsal büyüme potansiyelleri?\n### Tehditler (Threats)\n   * Pazarı etkileyebilecek riskler?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Finansal Projeksiyonlar",
+      "name": "Gelir Tablosu Projeksiyonu",
+      "desc": "Gelecek 3-5 yıl için gelir ve gider tahminleri.",
+      "tags": [
+        "finans",
+        "gelir",
+        "gider",
+        "projeksiyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Gelir Tablosu Projeksiyonu\n\n### 1. Gelir Akışları\n   * Ana gelir kaynaklarınızı listeleyin.\n### 2. Maliyet Yapısı\n   * Sabit ve değişken maliyetleri belirleyin.\n### 3. Kârlılık Analizi\n   * Brüt kâr, net kâr marjlarını hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Finansal Projeksiyonlar",
+      "name": "Nakit Akış Tablosu Şablonu",
+      "desc": "İşletmenizin nakit giriş ve çıkışlarını planlayın.",
+      "tags": [
+        "nakit",
+        "akış",
+        "finans",
+        "likidite"
+      ],
+      "badge1": "İleri",
+      "content": "## Nakit Akış Tablosu\n\n### 1. Faaliyetlerden Nakit Akışı\n   * Ana iş faaliyetlerinizden gelen nakit.\n### 2. Yatırım Faaliyetlerinden Nakit Akışı\n   * Varlık alım/satımından kaynaklanan nakit.\n### 3. Finansman Faaliyetlerinden Nakit Akışı\n   * Borç ve sermaye işlemlerinden nakit.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Finansal Projeksiyonlar",
+      "name": "Başabaş Noktası Hesaplama",
+      "desc": "Kâr etmeye başlayacağınız satış seviyesini belirleyin.",
+      "tags": [
+        "başabaş",
+        "kârlılık",
+        "finans",
+        "analiz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Başabaş Noktası\n\n### 1. Sabit Maliyetler\n   * İşletmenin operasyonel giderleri.\n### 2. Değişken Maliyetler\n   * Üretim miktarına göre değişen giderler.\n### 3. Satış Fiyatı\n   * Birim ürün/hizmet satış fiyatı.\n### Formül: Sabit Maliyetler / (Satış Fiyatı - Değişken Maliyetler)",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Rakip Analizi",
+      "name": "Doğrudan Rakip Analizi",
+      "desc": "Benzer ürün/hizmet sunan rakipleri detaylı inceleyin.",
+      "tags": [
+        "rakip",
+        "analiz",
+        "pazar",
+        "rekabet"
+      ],
+      "badge1": "Orta",
+      "content": "## Doğrudan Rakip Analizi\n\n### 1. Rakip Adı\n   * Rakibin kimliği.\n### 2. Ürün/Hizmetleri\n   * Sundukları.\n### 3. Fiyatlandırma\n   * Maliyet stratejileri.\n### 4. Pazarlama\n   * İletişim kanalları.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Rakip Analizi",
+      "name": "Dolaylı Rakip Analizi",
+      "desc": "Alternatif çözümler sunan rakipleri değerlendirin.",
+      "tags": [
+        "rakip",
+        "analiz",
+        "alternatif",
+        "çözüm"
+      ],
+      "badge1": "Orta",
+      "content": "## Dolaylı Rakip Analizi\n\n### 1. Rakip Kategorisi\n   * Hangi ihtiyaca çözüm sunuyorlar?\n### 2. Müşteri Kazanım Yöntemleri\n   * Nasıl müşteri çekiyorlar?\n### 3. Temel Farklılıklar\n   * Sizinle arasındaki temel ayrım noktaları.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Rakip Analizi",
+      "name": "Rekabet Avantajı Matrisi",
+      "desc": "Rakiplere karşı güçlü olduğunuz alanları görselleştirin.",
+      "tags": [
+        "rekabet",
+        "avantaj",
+        "strateji",
+        "matris"
+      ],
+      "badge1": "İleri",
+      "content": "## Rekabet Avantajı Matrisi\n\n### 1. Anahtar Özellikler\n   * Müşteri için önemli özellikler.\n### 2. Rakiplerin Durumu\n   * Her rakibin bu özelliklerdeki performansı.\n### 3. Sizin Durumunuz\n   * Sizin bu özelliklerdeki üstünlüğünüz.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "İş Modeli",
+      "name": "Değer Önerisi Kanvası",
+      "desc": "Müşterinin sorunlarına sunduğunuz benzersiz çözümü tanımlayın.",
+      "tags": [
+        "değer",
+        "öneri",
+        "kanvas",
+        "müşteri"
+      ],
+      "badge1": "Orta",
+      "content": "## Değer Önerisi Kanvası\n\n### 1. Müşteri Profili\n   * Müşterinin işleri, sorunları, kazanımları.\n### 2. Değer Haritası\n   * Ürün/hizmetler, sorun gidericiler, kazanım yaratıcılar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "İş Modeli",
+      "name": "Gelir Akışı Modelleri",
+      "desc": "Para kazanma yöntemlerinizi ve stratejilerinizi listeleyin.",
+      "tags": [
+        "gelir",
+        "model",
+        "strateji",
+        "finans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Gelir Akışı Modelleri\n\n### 1. Abonelik Modeli\n   * Düzenli gelir.\n### 2. Tek Seferlik Satış\n   * Ürün/hizmet satışı.\n### 3. Lisanslama\n   * Fikri mülkiyet kullanımı.\n### 4. Komisyon Modeli\n   * İşlem başına pay.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "İş Modeli",
+      "name": "Kanban Yönetimi Şablonu",
+      "desc": "İş akışınızı görsel ve verimli yönetin.",
+      "tags": [
+        "kanban",
+        "yönetim",
+        "iş akışı",
+        "verimlilik"
+      ],
+      "badge1": "Orta",
+      "content": "## Kanban Yönetimi\n\n### Yapılacaklar (To Do)\n   * Yeni görevler.\n### Yapılıyor (In Progress)\n   * Devam eden işler.\n### Tamamlandı (Done)\n   * Bitmiş projeler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Müşteri Segmentasyonu",
+      "name": "Hedef Müşteri Profili",
+      "desc": "İdeal müşterinizi demografik ve psikografik özellikleriyle tanımlayın.",
+      "tags": [
+        "müşteri",
+        "profil",
+        "hedef",
+        "segmentasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Hedef Müşteri Profili\n\n### 1. Demografi\n   * Yaş, cinsiyet, gelir, konum.\n### 2. Psikografi\n   * İlgi alanları, değerler, yaşam tarzı.\n### 3. İhtiyaçlar ve Sorunlar\n   * Çözüm aradıkları problemler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Müşteri Segmentasyonu",
+      "name": "Müşteri Yolculuğu Haritası",
+      "desc": "Müşterinin markanızla etkileşimini aşama aşama görselleştirin.",
+      "tags": [
+        "müşteri",
+        "yolculuk",
+        "harita",
+        "deneyim"
+      ],
+      "badge1": "Orta",
+      "content": "## Müşteri Yolculuğu Haritası\n\n### 1. Farkındalık\n   * Sizi nasıl keşfeder?\n### 2. Değerlendirme\n   * Ürünlerinizi nasıl inceler?\n### 3. Satın Alma\n   * Nasıl karar verir?\n### 4. Sonrası\n   * Deneyimi nasıl yaşar?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Müşteri Segmentasyonu",
+      "name": "Müşteri Geri Bildirim Toplama",
+      "desc": "Müşteri memnuniyetini ve geliştirme alanlarını öğrenin.",
+      "tags": [
+        "geri bildirim",
+        "müşteri",
+        "anket",
+        "memnuniyet"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Geri Bildirim Toplama Yöntemleri\n\n### 1. Anketler\n   * Online veya yüz yüze.\n### 2. Mülakatlar\n   * Derinlemesine bilgi alma.\n### 3. Sosyal Medya Takibi\n   * Genel görüşleri izleme.\n### 4. Destek Talepleri\n   * Sorunları analiz etme.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Pazar Büyüklüğü",
+      "name": "Pazar Trend Analizi",
+      "desc": "Sektörünüzdeki güncel ve gelecek eğilimleri belirleyin.",
+      "tags": [
+        "pazar",
+        "trend",
+        "analiz",
+        "gelecek"
+      ],
+      "badge1": "Orta",
+      "content": "## Pazar Trend Analizi\n\n### 1. Teknolojik Trendler\n   * Yeni teknolojilerin etkisi.\n### 2. Sosyo-Kültürel Trendler\n   * Tüketici davranışlarındaki değişimler.\n### 3. Ekonomik Trendler\n   * Makroekonomik göstergeler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Pazar Büyüklüğü",
+      "name": "Pazar Payı Hesaplama",
+      "desc": "Sektördeki mevcut konumunuzu ve potansiyelinizi ölçün.",
+      "tags": [
+        "pazar",
+        "pay",
+        "hesaplama",
+        "rekabet"
+      ],
+      "badge1": "Orta",
+      "content": "## Pazar Payı Hesaplama\n\n### 1. Toplam Pazar Satışı\n   * Sektördeki toplam gelir.\n### 2. Kendi Satışlarınız\n   * Sizin elde ettiğiniz gelir.\n### Formül: (Kendi Satışlarınız / Toplam Pazar Satışı) * 100",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Pazar Büyüklüğü",
+      "name": "Giriş Engelleri Analizi",
+      "desc": "Yeni pazarlara girerken karşılaşılacak zorlukları belirleyin.",
+      "tags": [
+        "pazar",
+        "giriş",
+        "engeller",
+        "risk"
+      ],
+      "badge1": "İleri",
+      "content": "## Giriş Engelleri Analizi\n\n### 1. Sermaye Gereksinimi\n   * Başlangıç için gereken finansal miktar.\n### 2. Yasal Düzenlemeler\n   * İzinler, lisanslar.\n### 3. Teknoloji Bariyerleri\n   * Gerekli teknik bilgi ve altyapı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Pazar Analizi",
+      "name": "Müşteri Edinme Maliyeti (CAC)",
+      "desc": "Yeni bir müşteri kazanmanın ortalama maliyetini hesaplayın.",
+      "tags": [
+        "cac",
+        "maliyet",
+        "müşteri",
+        "pazarlama"
+      ],
+      "badge1": "Orta",
+      "content": "## Müşteri Edinme Maliyeti (CAC)\n\n### 1. Pazarlama ve Satış Giderleri\n   * Tüm ilgili harcamalar.\n### 2. Yeni Müşteri Sayısı\n   * Belirli dönemde kazanılan müşteri.\n### Formül: Toplam Giderler / Yeni Müşteri Sayısı",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Pazar Analizi",
+      "name": "Müşteri Yaşam Boyu Değeri (CLTV)",
+      "desc": "Bir müşterinin şirketle ilişkisi boyunca getireceği toplam geliri tahmin edin.",
+      "tags": [
+        "cltv",
+        "değer",
+        "müşteri",
+        "gelir"
+      ],
+      "badge1": "Orta",
+      "content": "## Müşteri Yaşam Boyu Değeri (CLTV)\n\n### 1. Ortalama Satın Alma Değeri\n   * Müşterinin tek seferde harcadığı miktar.\n### 2. Ortalama Satın Alma Sıklığı\n   * Müşterinin yılda kaç kez alışveriş yaptığı.\n### 3. Müşteri Ömrü\n   * Müşterinin sizinle ilişkide kaldığı süre.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Finansal Projeksiyonlar",
+      "name": "Yatırım Geri Dönüş Oranı (ROI)",
+      "desc": "Yatırımınızın ne kadar kârlı olduğunu ölçün.",
+      "tags": [
+        "roi",
+        "yatırım",
+        "kârlılık",
+        "finans"
+      ],
+      "badge1": "Orta",
+      "content": "## Yatırım Geri Dönüş Oranı (ROI)\n\n### 1. Yatırımdan Elde Edilen Kazanç\n   * Net kâr veya gelir artışı.\n### 2. Yatırım Maliyeti\n   * Yapılan toplam harcama.\n### Formül: (Kazanç - Maliyet) / Maliyet * 100",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }

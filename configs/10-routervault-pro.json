@@ -48,6 +48,413 @@
     "border3": "#2c2a32",
     "heroBg": "#0c0a12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Model Seçimi",
+      "name": "Model Seçimi",
+      "color": "#3498db"
+    },
+    {
+      "id": "Prompt Optimizasyonu",
+      "name": "Prompt Optimizasyonu",
+      "color": "#2ecc71"
+    },
+    {
+      "id": "Maliyet Analizi",
+      "name": "Maliyet Analizi",
+      "color": "#e74c3c"
+    },
+    {
+      "id": "Performans Değerlendirme",
+      "name": "Performans Değerlendirme",
+      "color": "#f1c40f"
+    },
+    {
+      "id": "API Entegrasyonu",
+      "name": "API Entegrasyonu",
+      "color": "#9b59b6"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Model Seçimi",
+      "name": "Uygun Model Belirleme",
+      "desc": "Gelen isteğe en uygun AI modelini seçme.",
+      "tags": [
+        "model seçimi",
+        "yönlendirme",
+        "API"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## En Uygun Modeli Seçme\n1. İstek tipini analiz et.\n2. Modelin yeteneklerini karşılaştır.\n3. Maliyet/performans dengesini gözet.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Model Seçimi",
+      "name": "Model Karşılaştırma Matrisi",
+      "desc": "Farklı modellerin özelliklerini karşılaştırın.",
+      "tags": [
+        "model",
+        "karşılaştırma",
+        "özellikler"
+      ],
+      "badge1": "Orta",
+      "content": "## Model Karşılaştırma\n| Model | Hız | Maliyet | Yetenek | Güncel Mi? |\n|---|---|---|---|---|\n| GPT-4 | Orta | Yüksek | Genel | Evet |\n| Claude 3 | Hızlı | Orta | Metin | Evet |",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Model Seçimi",
+      "name": "Maliyet Odaklı Yönlendirme",
+      "desc": "En düşük maliyetli modeli önceliklendirme.",
+      "tags": [
+        "maliyet",
+        "optimizasyon",
+        "yönlendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Maliyet Odaklı Yönlendirme\n1. İstek için tahmini maliyeti hesapla.\n2. En ucuz modeli seç, yeterliyse.\n3. Yüksek maliyetli modelleri sadece gerekirse kullan.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Prompt Kısa ve Öz Şablonu",
+      "desc": "Etkili ve kısa prompt'lar oluşturma.",
+      "tags": [
+        "prompt",
+        "optimizasyon",
+        "şablon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kısa Prompt Şablonu\n**Rol:** [Rol Tanımı]\n**Görev:** [Net Görev Tanımı]\n**Kısıtlamalar:** [Varsa Belirt]\n**Format:** [İstenen Çıktı Formatı]",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Negatif Prompt Kullanımı",
+      "desc": "İstenmeyen çıktılardan kaçınmak için prompt'lar.",
+      "tags": [
+        "prompt",
+        "negatif",
+        "çıktı"
+      ],
+      "badge1": "Orta",
+      "content": "## Negatif Prompt Uygulaması\nİstenmeyen kelimeleri veya konuları 'Çıktıda şunlar olmasın:' diyerek belirtin. Örneğin: 'Teknik jargon kullanma.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Prompt Uzunluk Optimizasyonu",
+      "desc": "Prompt'ları modelin kabul edebileceği uzunluğa ayarlama.",
+      "tags": [
+        "prompt",
+        "uzunluk",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Prompt Uzunluk Ayarı\n1. Modelin token limitini kontrol et.\n2. Gereksiz kelimeleri çıkar.\n3. Özetleme teknikleri kullan.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Sıfır-Çekim Öğrenme (Zero-Shot)",
+      "desc": "Örnek vermeden modelden yanıt alma.",
+      "tags": [
+        "prompt",
+        "sıfır-çekim",
+        "zero-shot"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sıfır-Çekim Prompt\nModelin doğrudan istenen görevi yerine getirmesini isteyin. Örnek: 'Bu metni özetle: [Metin]'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Az-Çekim Öğrenme (Few-Shot)",
+      "desc": "Modeli yönlendirmek için birkaç örnek verme.",
+      "tags": [
+        "prompt",
+        "az-çekim",
+        "few-shot"
+      ],
+      "badge1": "Orta",
+      "content": "## Az-Çekim Prompt Şablonu\nÖrnek 1: [Giriş] -> [Çıkış]\nÖrnek 2: [Giriş] -> [Çıkış]\n\nGerçek İstek: [Giriş]",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Maliyet Analizi",
+      "name": "Token Başına Maliyet Hesaplama",
+      "desc": "Modelin token başına maliyetini belirleme.",
+      "tags": [
+        "maliyet",
+        "token",
+        "hesaplama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Token Maliyet Hesaplama\n1. Modelin fiyatlandırma sayfasını ziyaret et.\n2. Girdi ve çıktı token maliyetlerini not al.\n3. İstek için toplam token sayısını tahmin et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Maliyet Analizi",
+      "name": "Tahmini İstek Maliyeti",
+      "desc": "Gelen isteğin tahmini maliyetini hesaplama.",
+      "tags": [
+        "maliyet",
+        "tahmin",
+        "istek"
+      ],
+      "badge1": "Orta",
+      "content": "## Tahmini İstek Maliyeti\n`Maliyet = (Girdi Token Sayısı * Girdi Token Fiyatı) + (Çıktı Token Sayısı * Çıktı Token Fiyatı)`",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Maliyet Analizi",
+      "name": "Maliyet Azaltma Teknikleri",
+      "desc": "AI isteklerinin maliyetini düşürme yöntemleri.",
+      "tags": [
+        "maliyet",
+        "optimizasyon",
+        "düşürme"
+      ],
+      "badge1": "Orta",
+      "content": "## Maliyet Azaltma\n1. Daha ucuz modelleri dene.\n2. Prompt'ları kısalt.\n3. Gereksiz token'ları temizle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Maliyet Analizi",
+      "name": "Maliyet Eşik Değeri Belirleme",
+      "desc": "Belirli bir maliyetin üzerindeki istekleri işaretleme.",
+      "tags": [
+        "maliyet",
+        "eşik",
+        "uyarı"
+      ],
+      "badge1": "Orta",
+      "content": "## Maliyet Eşiği\nBelirlenen bir TL/USD değerinin üzerindeki her istek için uyarı üret. Bu, bütçe kontrolü sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Performans Değerlendirme",
+      "name": "Yanıt Süresi Ölçümü",
+      "desc": "Modelin yanıt verme süresini ölçme.",
+      "tags": [
+        "performans",
+        "hız",
+        "yanıt süresi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yanıt Süresi Ölçümü\nAPI isteği gönderildiği an ile yanıtın alındığı an arasındaki farkı saniye cinsinden hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Performans Değerlendirme",
+      "name": "Doğruluk Skoru Hesaplama",
+      "desc": "Modelin verdiği yanıtların doğruluğunu puanlama.",
+      "tags": [
+        "performans",
+        "doğruluk",
+        "skor"
+      ],
+      "badge1": "Orta",
+      "content": "## Doğruluk Skoru\nBeklenen doğru yanıt ile modelin verdiği yanıtı karşılaştırarak bir benzerlik skoru (örn. %85) belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Performans Değerlendirme",
+      "name": "Performans Metrikleri Takibi",
+      "desc": "Hız, doğruluk gibi metrikleri izleme.",
+      "tags": [
+        "performans",
+        "metrik",
+        "takip"
+      ],
+      "badge1": "Orta",
+      "content": "## Performans Metrikleri\nYanıt Süresi, Doğruluk Skoru, Maliyet/Performans Oranı gibi metrikleri periyodik olarak kaydedin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Performans Değerlendirme",
+      "name": "Hata Analizi (Error Analysis)",
+      "desc": "Modelin neden hata yaptığını anlama.",
+      "tags": [
+        "performans",
+        "hata",
+        "analiz"
+      ],
+      "badge1": "İleri",
+      "content": "## Hata Analizi\nModelin yanlış veya eksik yanıt verdiği durumları inceleyin. Prompt'u, veriyi veya modeli gözden geçirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "API Entegrasyonu",
+      "name": "Temel API İstek Yapısı",
+      "desc": "Bir API'ye istek gönderme temel yapısı.",
+      "tags": [
+        "API",
+        "istek",
+        "yapı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## API İstek Yapısı\n`POST /api/v1/route`\nBody: `{\"prompt\": \"...\", \"model\": \"...\"}`\nHeaders: `{\"Authorization\": \"Bearer YOUR_API_KEY\"}`",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "API Entegrasyonu",
+      "name": "API Anahtar Yönetimi",
+      "desc": "API anahtarlarını güvenli bir şekilde saklama.",
+      "tags": [
+        "API",
+        "güvenlik",
+        "anahtar"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## API Anahtar Yönetimi\nAnahtarları ortam değişkenlerinde saklayın. Asla kod içine gömmeyin. Erişim izinlerini kısıtlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "API Entegrasyonu",
+      "name": "Hata Yönetimi (Error Handling)",
+      "desc": "API'den gelen hataları yönetme.",
+      "tags": [
+        "API",
+        "hata",
+        "yönetim"
+      ],
+      "badge1": "Orta",
+      "content": "## API Hata Yönetimi\n`try-catch` blokları kullanın. HTTP durum kodlarını (4xx, 5xx) kontrol edin ve uygun mesajlar verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "API Entegrasyonu",
+      "name": "Rate Limiting Uygulaması",
+      "desc": "API çağrı limitlerini uygulama.",
+      "tags": [
+        "API",
+        "rate limiting",
+        "limit"
+      ],
+      "badge1": "Orta",
+      "content": "## Rate Limiting\nBelirlenen istek limitini aşmamak için çağrılar arasına gecikme ekleyin veya bir kuyruk sistemi kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }

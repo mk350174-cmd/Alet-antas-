@@ -48,6 +48,684 @@
     "border3": "#2c2a32",
     "heroBg": "#0c0a12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Halusinasyon Tespiti",
+      "name": "Halusinasyon Tespiti",
+      "color": "#FF6347"
+    },
+    {
+      "id": "Çapraz Sorgulama",
+      "name": "Çapraz Sorgulama",
+      "color": "#4682B4"
+    },
+    {
+      "id": "Bilgi Doğrulama",
+      "name": "Bilgi Doğrulama",
+      "color": "#32CD32"
+    },
+    {
+      "id": "Bağlam Analizi",
+      "name": "Bağlam Analizi",
+      "color": "#FFD700"
+    },
+    {
+      "id": "Gerçeklik Kontrolü",
+      "name": "Gerçeklik Kontrolü",
+      "color": "#DA70D6"
+    },
+    {
+      "id": "Mantık Hataları",
+      "name": "Mantık Hataları",
+      "color": "#8A2BE2"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Tarihi Hata Bulma",
+      "desc": "Tarihi olaylarda yapay zeka hatalarını tespit edin.",
+      "tags": [
+        "tarih",
+        "halusinasyon",
+        "doğruluk"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tarihi Hata Dedektifi\n\nBu senaryo, LLM'lerin tarihi bilgilerdeki potansiyel halüsinasyonlarını tespit etmek için tasarlanmıştır. LLM'ye belirli bir tarihi olay hakkında bilgi vermesini isteyin ve ardından bu bilgiyi bilinen gerçeklerle karşılaştırın.\n\n### Adımlar:\n1. LLM'ye belirli bir tarihi olay hakkında ayrıntılı bilgi vermesini söyleyin. Örneğin: \"1789 Fransız Devrimi'nin ana nedenlerini ve sonuçlarını anlat.\"\n2. LLM'nin verdiği cevabı dikkatlice inceleyin. Özellikle tarihler, isimler, yerler ve olay sıralaması gibi kritik detaylara odaklanın.\n3. LLM'nin verdiği bilgileri güvenilir tarihi kaynaklarla (ansiklopediler, akademik makaleler, güvenilir tarih siteleri) karşılaştırın.\n4. LLM'nin hangi noktalarda gerçek dışı veya yanlış bilgi ürettiğini (halüsinasyon) belirleyin.\n5. Tespit ettiğiniz hataları ve LLM'nin neden bu hataları yapmış olabileceğine dair çıkarımlarınızı not alın.\n\n**Örnek Prompt:** \"1923'te Türkiye'nin başkentinin Ankara olmasının ardındaki süreci detaylandır.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Bilimsel Yanlışlık Avı",
+      "desc": "Bilimsel kavramlardaki yapay zeka hatalarını belirleyin.",
+      "tags": [
+        "bilim",
+        "halusinasyon",
+        "yanlışlık"
+      ],
+      "badge1": "Orta",
+      "content": "## Bilimsel Yanlışlık Dedektifi\n\nBu prompt, LLM'lerin bilimsel kavramları açıklarken üretebileceği yanlış bilgileri ve halüsinasyonları ortaya çıkarmayı hedefler. LLM'den karmaşık bir bilimsel konuyu açıklamasını isteyin ve ardından bu açıklamayı bilimsel doğrularla kıyaslayın.\n\n### Adımlar:\n1. LLM'ye belirli bir bilimsel prensip, teori veya olgu hakkında detaylı bir açıklama yapmasını söyleyin. Örneğin: \"Kuantum dolanıklık prensibini basit terimlerle açıkla.\"\n2. Cevapta kullanılan terimleri, formülleri (varsa) ve kavramsal açıklamaları dikkatle analiz edin.\n3. LLM'nin açıklamasının, güncel bilimsel literatür ve kabul görmüş teorilerle tutarlı olup olmadığını kontrol edin.\n4. LLM'nin bilimi yanlış yorumladığı, eksik bilgi verdiği veya tamamen uydurma bilgiler sunduğu noktaları tespit edin.\n5. Tespit edilen bilimsel halüsinasyonları ve olası nedenlerini listeleyin.\n\n**Örnek Prompt:** \"Genel görelilik teorisinin temel postülatlarını ve kanıtlarını açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Edebi Tutarsızlık Bulma",
+      "desc": "Edebi eserlerdeki LLM hatalarını inceleyin.",
+      "tags": [
+        "edebiyat",
+        "halusinasyon",
+        "tutarsızlık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Edebi Tutarsızlık Dedektifi\n\nBu prompt, LLM'lerin edebi eserler hakkında bilgi verirken veya eserleri analiz ederken yapabileceği hataları ve halüsinasyonları tespit etmek için kullanılır. LLM'den bir edebi eseri özetlemesini veya karakter analizi yapmasını isteyin.\n\n### Adımlar:\n1. LLM'den bilinen bir edebi eser hakkında özet, karakter analizi veya tema yorumu yapmasını isteyin. Örneğin: \"'Sefiller' romanının ana karakteri Jean Valjean'ı analiz et.\"\n2. LLM'nin verdiği bilgilerin, eserin orijinal metniyle ve yaygın edebi eleştirilerle uyumlu olup olmadığını kontrol edin.\n3. Karakterlerin motivasyonları, olay örgüsü detayları, sembolizm veya yazarın niyeti hakkındaki iddialarda tutarsızlıkları arayın.\n4. LLM'nin eserin bağlamından kopuk veya yanlış yorumlanmış bilgiler üretip üretmediğini değerlendirin.\n5. Tespit edilen edebi halüsinasyonları ve olası açıklamalarını belgeleyin.\n\n**Örnek Prompt:** \"'Dönüşüm' novellasındaki Gregor Samsa'nın dönüşümünün sembolik anlamını açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Coğrafi Hata Taraması",
+      "desc": "Coğrafi bilgilerdeki yapay zeka yanlışlarını bulun.",
+      "tags": [
+        "coğrafya",
+        "halusinasyon",
+        "yer"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Coğrafi Hata Dedektifi\n\nBu prompt, LLM'lerin coğrafi yerler, özellikler veya olaylar hakkında bilgi verirken yapabileceği halüsinasyonları tespit etmek için kullanılır. LLM'den belirli bir coğrafi bölge hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir ülke, şehir, coğrafi oluşum veya bölge hakkında detaylı bilgi vermesini isteyin. Örneğin: \"Amazon yağmur ormanlarının ekosistemini ve biyoçeşitliliğini anlat.\"\n2. LLM'nin verdiği bilgileri haritalar, coğrafya atlasları ve güvenilir coğrafi kaynaklarla karşılaştırın.\n3. Yer adları, konumlar, mesafeler, iklim verileri veya coğrafi özellikler hakkındaki yanlışlıkları arayın.\n4. LLM'nin coğrafi gerçeklerle uyuşmayan, mantıksız veya hayali bilgiler üretip üretmediğini kontrol edin.\n5. Tespit edilen coğrafi halüsinasyonları ve olası nedenlerini kaydedin.\n\n**Örnek Prompt:** \"Afrika kıtasındaki en uzun nehir sistemini ve geçtiği ülkeleri listele.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Teknik Detay Yanılgısı",
+      "desc": "Teknik konularda LLM'nin ürettiği hataları saptayın.",
+      "tags": [
+        "teknoloji",
+        "halusinasyon",
+        "mühendislik"
+      ],
+      "badge1": "Orta",
+      "content": "## Teknik Detay Dedektifi\n\nBu prompt, LLM'lerin teknik konuları (yazılım, donanım, mühendislik vb.) açıklarken yapabileceği yanlış veya eksik bilgileri tespit etmek için tasarlanmıştır. LLM'den belirli bir teknoloji hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir teknoloji, algoritma, protokol veya cihaz hakkında açıklama yapmasını isteyin. Örneğin: \"Blockchain teknolojisinin çalışma prensibini ve kriptografik temellerini açıkla.\"\n2. LLM'nin verdiği teknik terimleri, açıklamaları ve süreçleri uzmanlık bilgisi veya teknik dokümantasyon ile doğrulayın.\n3. LLM'nin yanlış teknik terimler kullanıp kullanmadığını, süreçleri hatalı tarif edip etmediğini veya uydurma teknik detaylar ekleyip eklemediğini kontrol edin.\n4. Teknik doğruluğu olmayan veya yanıltıcı bilgileri belirleyin.\n5. Tespit edilen teknik halüsinasyonları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"RESTful API tasarım prensiplerini ve yaygın kullanım senaryolarını açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Biyografik Hata Avı",
+      "desc": "Ünlü kişiler hakkında LLM'nin verdiği yanlış bilgileri bulun.",
+      "tags": [
+        "biyografi",
+        "halusinasyon",
+        "kişi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Biyografik Hata Dedektifi\n\nBu prompt, LLM'lerin tanınmış kişilerin hayatları, kariyerleri veya başarıları hakkındaki bilgileri verirken yapabileceği halüsinasyonları tespit etmeyi amaçlar. LLM'den belirli bir kişinin biyografisini istemek için kullanılır.\n\n### Adımlar:\n1. LLM'den belirli bir tarihi veya güncel ünlü kişi hakkında detaylı bir biyografi sunmasını isteyin. Örneğin: \"Marie Curie'nin hayatını, bilimsel çalışmalarını ve Nobel ödüllerini anlat.\"\n2. LLM'nin verdiği tarihleri, yerleri, isimleri, başarıları ve olayları güvenilir biyografik kaynaklarla karşılaştırın.\n3. LLM'nin hayali olaylar eklediğini, kariyerinde olmayan başarılar atfettiğini veya önemli bilgileri çarpıttığını kontrol edin.\n4. Kişinin hayatındaki gerçek dışı iddiaları veya tutarsızlıkları belirleyin.\n5. Tespit edilen biyografik halüsinasyonları ve olası nedenlerini listeleyin.\n\n**Örnek Prompt:** \"Leonardo da Vinci'nin sanat ve bilim alanındaki en önemli katkılarını özetle.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Hukuki Kavram Yanılgısı",
+      "desc": "Hukuki terimlerdeki LLM hatalarını saptayın.",
+      "tags": [
+        "hukuk",
+        "halusinasyon",
+        "yasal"
+      ],
+      "badge1": "İleri",
+      "content": "## Hukuki Kavram Dedektifi\n\nBu prompt, LLM'lerin hukuki terimleri, kavramları veya yasal süreçleri açıklarken üretebileceği yanlış veya yanıltıcı bilgileri tespit etmek için kullanılır. LLM'den belirli bir hukuki konu hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir hukuki kavram, yasa veya mahkeme kararı hakkında bilgi vermesini isteyin. Örneğin: \"Türk Borçlar Kanunu'ndaki zamanaşımı sürelerini genel hatlarıyla açıkla.\"\n2. LLM'nin verdiği hukuki tanımları, yasal hükümleri ve süreçleri güncel ve doğru yasal kaynaklarla karşılaştırın.\n3. LLM'nin yanlış hukuki terimler kullandığını, maddeleri hatalı yorumladığını veya geçersiz yasal bilgiler sunduğunu kontrol edin.\n4. Hukuki açıdan yanıltıcı veya uydurma içerikleri belirleyin.\n5. Tespit edilen hukuki halüsinasyonları ve olası nedenlerini analiz edin (Önemli Not: Bu sadece bilgi amaçlıdır, hukuki tavsiye yerine geçmez).\n\n**Örnek Prompt:** \"Ceza Muhakemesi Kanunu'ndaki tutuklama ve gözaltı arasındaki farkları açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Halusinasyon Tespiti",
+      "name": "Ekonomik Veri Sahteciliği",
+      "desc": "Ekonomik verilerdeki LLM hatalarını bulun.",
+      "tags": [
+        "ekonomi",
+        "halusinasyon",
+        "vergi"
+      ],
+      "badge1": "Orta",
+      "content": "## Ekonomik Veri Dedektifi\n\nBu prompt, LLM'lerin ekonomik veriler, istatistikler veya finansal kavramlar hakkında bilgi verirken yapabileceği halüsinasyonları tespit etmek için kullanılır. LLM'den belirli bir ekonomik gösterge hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir ekonomik gösterge (GSYH, enflasyon, işsizlik oranı vb.), finansal araç veya ekonomik politika hakkında bilgi sunmasını isteyin. Örneğin: \"Türkiye'nin son 5 yıldaki enflasyon oranlarını ve nedenlerini analiz et.\"\n2. LLM'nin verdiği sayısal verileri, tarihleri ve analizleri resmi ekonomik raporlar (TÜİK, TCMB, IMF, Dünya Bankası vb.) ile karşılaştırın.\n3. LLM'nin yanlış istatistikler sunduğunu, ekonomik ilişkileri hatalı açıkladığını veya uydurma ekonomik trendler belirttiğini kontrol edin.\n4. Ekonomik gerçeklerle tutarsız bilgileri belirleyin.\n5. Tespit edilen ekonomik halüsinasyonları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"Bitcoin'in temel arz ve talep dinamiklerini açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Çapraz Sorgulama",
+      "name": "Zıt Görüş Sorgusu",
+      "desc": "Bir konunun farklı yönlerini sorgulayın.",
+      "tags": [
+        "çapraz",
+        "sorgu",
+        "tartışma"
+      ],
+      "badge1": "Orta",
+      "content": "## Zıt Görüş Sorgulayıcısı\n\nBu prompt, LLM'nin belirli bir konu hakkındaki görüşlerinin ne kadar dengeli ve çeşitli olduğunu test etmek için kullanılır. LLM'den bir konuda hem olumlu hem de olumsuz argümanlar sunmasını isteyin.\n\n### Adımlar:\n1. LLM'ye tartışmalı veya çift yönlü bir konu hakkında bir tarafın argümanlarını sunmasını söyleyin. Örneğin: \"Yenilenebilir enerji kaynaklarının yaygınlaşmasının ekonomik etkileri hakkında olumlu argümanlar sun.\"\n2. Ardından, aynı konu hakkında zıt argümanları sunmasını isteyin. Örneğin: \"Şimdi de yenilenebilir enerji kaynaklarının yaygınlaşmasının ekonomik zorlukları ve olumsuz etkileri hakkında argümanlar sun.\"\n3. LLM'nin her iki tarafın argümanlarını ne kadar dengeli ve tutarlı bir şekilde sunduğunu değerlendirin.\n4. LLM'nin bir tarafı kayırdığını, argümanları zayıf sunduğunu veya bilgi boşlukları bıraktığını kontrol edin.\n5. LLM'nin farklı bakış açılarını anlama ve ifade etme yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Otonom araç teknolojisinin toplumsal faydaları ve riskleri nelerdir? Her iki tarafı da detaylandır.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Çapraz Sorgulama",
+      "name": "Kaynak Doğrulama Sorgusu",
+      "desc": "LLM'den verdiği bilgilerin kaynağını isteyin.",
+      "tags": [
+        "çapraz",
+        "kaynak",
+        "doğrulama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kaynak Doğrulama Sorgulayıcısı\n\nBu prompt, LLM'nin sunduğu bilgilerin güvenilirliğini artırmak ve olası halüsinasyonları azaltmak için, verdiği bilgilerin kaynaklarını belirtmesini istemek amacıyla kullanılır.\n\n### Adımlar:\n1. LLM'ye belirli bir konuda bilgi vermesini söyleyin ve ardından bu bilginin kaynağını belirtmesini isteyin. Örneğin: \"İklim değişikliğinin deniz seviyeleri üzerindeki etkileri hakkında bilgi ver ve bu bilgiyi hangi kaynaklardan aldığını belirt.\"\n2. LLM'nin sunduğu kaynakları (URL, kitap adı, makale başlığı vb.) kontrol edin.\n3. Kaynakların gerçek, erişilebilir ve verilen bilgiyle ilgili olup olmadığını doğrulayın.\n4. LLM'nin uydurma kaynaklar gösterdiğini veya kaynakları yanlış ilişkilendirdiğini tespit edin.\n5. LLM'nin bilgi üretirken kullandığı referans mekanizmalarının güvenilirliğini değerlendirin.\n\n**Örnek Prompt:** \"Güneş enerjisinin gelecekteki potansiyeli hakkında bir özet yaz ve kullandığın verileri destekleyen bilimsel yayınları listele.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Çapraz Sorgulama",
+      "name": "Detay Seviyesi Sorgusu",
+      "desc": "LLM'nin detay seviyesini ayarlamasını sağlayın.",
+      "tags": [
+        "çapraz",
+        "detay",
+        "anlaşılırlık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Detay Seviyesi Sorgulayıcısı\n\nBu prompt, LLM'nin bir konuyu farklı detay seviyelerinde açıklama yeteneğini test eder. LLM'den aynı konuyu hem basitçe hem de teknik olarak açıklamasını isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir konuyu genel bir kitleye hitap edecek şekilde basitçe açıklamasını isteyin. Örneğin: \"Makine öğrenmesi nedir, basitçe anlat.\"\n2. Ardından, aynı konuyu daha teknik ve detaylı bir şekilde açıklamasını isteyin. Örneğin: \"Şimdi de makine öğrenmesi algoritmalarının matematiksel temellerini ve çalışma prensiplerini teknik detaylarıyla açıkla.\"\n3. LLM'nin farklı seviyelerdeki talepleri anlayıp anadığını ve uygun detay düzeyinde cevap üretebildiğini değerlendirin.\n4. Basitleştirme veya detaylandırma sırasında bilgi kaybı veya yanlışlık olup olmadığını kontrol edin.\n5. LLM'nin esnekliğini ve hedef kitleye uyum sağlama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Kuantum bilgisayarların çalışma prensibini önce 10 yaşındaki bir çocuğa anlatır gibi, sonra da bir fizik öğrencisine anlatır gibi açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Çapraz Sorgulama",
+      "name": "Mantıksal Tutarlılık Sorgusu",
+      "desc": "LLM'nin argümanlardaki mantık hatalarını bulun.",
+      "tags": [
+        "çapraz",
+        "mantık",
+        "tutarlılık"
+      ],
+      "badge1": "Orta",
+      "content": "## Mantıksal Tutarlılık Sorgulayıcısı\n\nBu prompt, LLM'nin sunduğu bilgilerin veya argümanların kendi içinde ne kadar mantıksal olarak tutarlı olduğunu test eder. LLM'den belirli bir önermenin mantıksal sonuçlarını çıkarmasını isteyin.\n\n### Adımlar:\n1. LLM'ye belirli bir varsayım veya önerme sunun ve bu önermeden yola çıkarak mantıksal çıkarımlar yapmasını isteyin. Örneğin: \"Eğer tüm insanlar ölümlüyse ve Sokrates bir insansa, Sokrates hakkında ne söylenebilir?\"\n2. LLM'nin yaptığı çıkarımların, sunulan önermelerle ne kadar tutarlı olduğunu değerlendirin.\n3. LLM'nin mantık hataları (çelişki, safsata, geçersiz çıkarım) yapıp yapmadığını kontrol edin.\n4. LLM'nin karmaşık mantıksal akıl yürütme yeteneğini test edin.\n5. Tespit edilen mantıksal tutarsızlıkları ve olası nedenlerini analiz edin.\n\n**Örnek Prompt:** \"Bir toplumda suç oranları artarsa, bunun ekonomik refah üzerindeki potansiyel etkileri nelerdir? Mantıksal bir zincir oluştur.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Çapraz Sorgulama",
+      "name": "Tarafsızlık Sorgusu",
+      "desc": "LLM'nin tarafsızlığını test edin.",
+      "tags": [
+        "çapraz",
+        "tarafsızlık",
+        "önyargı"
+      ],
+      "badge1": "Orta",
+      "content": "## Tarafsızlık Sorgulayıcısı\n\nBu prompt, LLM'nin belirli konularda tarafsız kalma ve önyargısız bilgi sunma yeteneğini değerlendirmek için kullanılır. LLM'den hassas bir konuda dengeli bir açıklama yapmasını isteyin.\n\n### Adımlar:\n1. LLM'ye toplumsal, siyasi veya kültürel açıdan hassas bir konu hakkında bilgi vermesini söyleyin. Örneğin: \"Göçmen politikalarının ülkelere etkileri hakkında tarafsız bir analiz sun.\"\n2. LLM'nin cevabında herhangi bir tarafı kayıran, önyargılı veya genelleme yapan ifadeler olup olmadığını dikkatle inceleyin.\n3. LLM'nin farklı bakış açılarını adil bir şekilde sunduğunu, stereotiplerden kaçındığını ve duyarlı bir dil kullandığını kontrol edin.\n4. Cevaptaki olası gizli önyargıları veya tek taraflı yaklaşımları tespit edin.\n5. LLM'nin tarafsızlık ve etik ilkelerine ne kadar uyduğunu değerlendirin.\n\n**Örnek Prompt:** \"Geleneksel tıp ve modern tıbbın birbirine karşı konumlarını tarafsız bir şekilde açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Çapraz Sorgulama",
+      "name": "Bilgi Güncelliği Sorgusu",
+      "desc": "LLM'nin bilgisinin güncelliğini kontrol edin.",
+      "tags": [
+        "çapraz",
+        "güncel",
+        "bilgi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bilgi Güncelliği Sorgulayıcısı\n\nBu prompt, LLM'nin sahip olduğu bilginin ne kadar güncel olduğunu test etmek için kullanılır. LLM'den yakın zamanda meydana gelmiş bir olay veya gelişme hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'ye son birkaç ay veya yıl içinde gerçekleşmiş önemli bir olay veya teknolojik gelişme hakkında bilgi vermesini söyleyin. Örneğin: \"Son dönemdeki yapay zeka gelişmeleri hakkında güncel bir özet sun.\"\n2. LLM'nin verdiği bilgilerin tarihini ve doğruluğunu güncel haber kaynakları ve güvenilir veri tabanları ile karşılaştırın.\n3. LLM'nin eski veya eksik bilgi verip vermediğini, güncel gelişmeleri kaçırıp kaçırmadığını kontrol edin.\n4. Bilginin kesme tarihini (cut-off date) aşan güncel olaylar hakkındaki performansını değerlendirin.\n5. LLM'nin bilgi güncelleme mekanizmalarının etkinliğini analiz edin.\n\n**Örnek Prompt:** \"Son bir yılda uzay keşifleri alanında meydana gelen önemli gelişmeleri listele.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Bilgi Doğrulama",
+      "name": "Fakt Çek Sorgusu",
+      "desc": "LLM'den belirli bir olgunun doğruluğunu teyit etmesini isteyin.",
+      "tags": [
+        "doğrulama",
+        "fakt",
+        "teyit"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Fakt Kontrol Dedektifi\n\nBu prompt, LLM'nin belirli bir iddia veya bilginin doğruluğunu teyit etme yeteneğini test etmek için kullanılır. LLM'den bir ifadenin doğru olup olmadığını belirtmesini isteyin.\n\n### Adımlar:\n1. LLM'ye doğruluğu şüpheli veya tartışmalı bir ifade sunun. Örneğin: \"İnsanların Ay'a ilk ayak bastığı tarih 20 Temmuz 1969'dur. Bu bilgi doğru mu?\"\n2. LLM'nin verdiği cevabı (evet/hayır ve açıklama) güvenilir kaynaklarla karşılaştırın.\n3. LLM'nin sadece doğru olup olmadığını değil, aynı zamanda neden doğru veya yanlış olduğunu açıklama yeteneğini de değerlendirin.\n4. LLM'nin yanlış bilgileri doğru gibi sunup sunmadığını veya doğru bilgileri yanlış olarak etiketleyip etiketlemediğini kontrol edin.\n5. LLM'nin güvenilir bilgi kaynaklarına erişimini ve bu bilgileri doğru yorumlama becerisini analiz edin.\n\n**Örnek Prompt:** \"Su, 100 santigrat derecede kaynar. Bu ifade doğru mu? Açıklama yap.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Bilgi Doğrulama",
+      "name": "Çıkarım Doğrulama",
+      "desc": "LLM'nin yaptığı çıkarımların geçerliliğini sorgulayın.",
+      "tags": [
+        "doğrulama",
+        "çıkarım",
+        "mantık"
+      ],
+      "badge1": "Orta",
+      "content": "## Çıkarım Doğrulama Dedektifi\n\nBu prompt, LLM'nin verilen bilgilerden yola çıkarak yaptığı çıkarımların mantıksal olarak geçerli olup olmadığını test eder. LLM'den bir senaryo vererek sonuç çıkarmasını isteyin.\n\n### Adımlar:\n1. LLM'ye bir dizi öncül veya gözlem sunun ve bunlardan bir çıkarım yapmasını isteyin. Örneğin: \"Bir bölgede son 3 aydır düzenli ve yoğun yağış oluyor. Bu durumun o bölgedeki tarım ürünleri üzerindeki olası etkileri nelerdir?\"\n2. LLM'nin yaptığı çıkarımın, sunulan öncüllerle ne kadar tutarlı ve mantıklı olduğunu değerlendirin.\n3. LLM'nin aşırı genelleme yapıp yapmadığını, ilgisiz sonuçlara ulaşıp ulaşmadığını veya mantık dışı bağlantılar kurup kurmadığını kontrol edin.\n4. Çıkarımın, kanıtlara dayalı ve makul olup olmadığını analiz edin.\n5. LLM'nin akıl yürütme sürecindeki potansiyel zayıflıkları belirleyin.\n\n**Örnek Prompt:** \"Bir şirketin çeyrek dönem karı geçen yıla göre %50 azaldı ve aynı dönemde Ar-Ge harcamaları %20 arttı. Bu durumdan şirketin gelecekteki büyüme potansiyeli hakkında ne çıkarılabilir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Bilgi Doğrulama",
+      "name": "Karşılaştırmalı Doğrulama",
+      "desc": "LLM'nin farklı kaynaklardaki bilgileri karşılaştırmasını isteyin.",
+      "tags": [
+        "doğrulama",
+        "karşılaştırma",
+        "kaynak"
+      ],
+      "badge1": "Orta",
+      "content": "## Karşılaştırmalı Doğrulama Dedektifi\n\nBu prompt, LLM'nin farklı kaynaklardan gelen bilgileri sentezleme ve karşılaştırma yeteneğini test eder. LLM'den aynı konu hakkında farklı görüşleri özetlemesini isteyin.\n\n### Adımlar:\n1. LLM'ye tartışmalı veya birden fazla görüşü olan bir konu hakkında iki farklı bakış açısı veya kaynak sunun. Örneğin: \"Aşağıdaki iki makaleden (varsayımsal olarak sunulur) iklim değişikliğinin nedenleri hakkındaki temel argümanları karşılaştır.\"\n2. LLM'den her iki kaynağın ana argümanlarını, kanıtlarını ve sonuçlarını özetlemesini isteyin.\n3. LLM'nin bilgileri doğru bir şekilde ayrıştırdığını, karşılaştırdığını ve tutarlı bir özet sunduğunu değerlendirin.\n4. LLM'nin kaynaklardaki çelişkileri veya farklılıkları doğru bir şekilde tespit edip etmediğini kontrol edin.\n5. LLM'nin bilgiyi sentezleme ve sunma becerisini analiz edin.\n\n**Örnek Prompt:** \"Eğitimde teknoloji kullanımının faydaları ve zararları hakkındaki farklı görüşleri içeren iki metni (varsayımsal) karşılaştırarak bir sentez yap.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Bilgi Doğrulama",
+      "name": "İstatistiksel Veri Doğrulama",
+      "desc": "LLM'nin sunduğu istatistiklerin doğruluğunu kontrol edin.",
+      "tags": [
+        "doğrulama",
+        "istatistik",
+        "veri"
+      ],
+      "badge1": "Orta",
+      "content": "## İstatistiksel Veri Doğrulama Dedektifi\n\nBu prompt, LLM'nin istatistiksel verilerle ilgili verdiği bilgilerin doğruluğunu ve bağlamını test eder. LLM'den belirli bir istatistik hakkında bilgi vermesini ve kaynağını belirtmesini isteyin.\n\n### Adımlar:\n1. LLM'den belirli bir istatistiksel veri (örneğin, bir ülkenin işsizlik oranı, bir hastalığın yaygınlığı) hakkında bilgi sunmasını isteyin. Örneğin: \"Türkiye'de genç işsizlik oranı nedir ve bu oran hangi dönem için geçerlidir?\"\n2. LLM'nin verdiği sayısal veriyi, yüzdelik dilimi veya oranı, güvenilir ve güncel istatistik kurumlarının (TÜİK, Eurostat, OECD vb.) verileriyle karşılaştırın.\n3. LLM'nin veriyi doğru bağlamda kullanıp kullanmadığını, yanıltıcı sunumlar yapıp yapmadığını kontrol edin.\n4. Verinin kaynağını ve toplama yöntemini sorgulayarak olası yanlılıkları tespit edin.\n5. LLM'nin istatistiksel bilgileri doğru ve güvenilir bir şekilde sunma yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Küresel ısınma nedeniyle ortalama deniz seviyesindeki artış miktarı nedir ve bu veri hangi raporlardan alınmıştır?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Bilgi Doğrulama",
+      "name": "Tarihsel Olay Doğrulama",
+      "desc": "LLM'nin tarihsel olaylar hakkındaki bilgilerini teyit edin.",
+      "tags": [
+        "doğrulama",
+        "tarih",
+        "olay"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tarihsel Olay Doğrulama Dedektifi\n\nBu prompt, LLM'nin tarihsel olaylar hakkındaki bilgilerinin doğruluğunu ve detaylarını test etmek için kullanılır. LLM'den belirli bir tarihi olay hakkında bilgi vermesini isteyin.\n\n### Adımlar:\n1. LLM'ye belirli bir tarihi olay (savaş, antlaşma, keşif, devrim vb.) hakkında detaylı bilgi vermesini söyleyin. Örneğin: \"Yavuz Sultan Selim'in Çaldıran Seferi'nin nedenlerini ve sonuçlarını anlat.\"\n2. LLM'nin verdiği tarihleri, yerleri, katılımcıları, nedenleri ve sonuçları güvenilir tarih kitapları ve akademik kaynaklarla karşılaştırın.\n3. LLM'nin olayları yanlış sıralamadığını, önemli detayları atlamadığını veya uydurma bilgiler eklemediğini kontrol edin.\n4. Tarihsel olayların yorumlanmasındaki olası yanlılıkları veya eksiklikleri tespit edin.\n5. LLM'nin tarihsel bilgileri doğru ve güvenilir bir şekilde aktarma yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Sanayi Devrimi'nin başlangıç yeri ve temel teknolojik yenilikleri nelerdir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Bilgi Doğrulama",
+      "name": "Kavramsal Doğrulama",
+      "desc": "LLM'nin soyut kavramları doğru açıklayıp açıklamadığını kontrol edin.",
+      "tags": [
+        "doğrulama",
+        "kavram",
+        "felsefe"
+      ],
+      "badge1": "Orta",
+      "content": "## Kavramsal Doğrulama Dedektifi\n\nBu prompt, LLM'nin felsefi, teorik veya soyut kavramları doğru ve tutarlı bir şekilde açıklama yeteneğini test eder. LLM'den belirli bir soyut kavramı tanımlamasını isteyin.\n\n### Adımlar:\n1. LLM'den karmaşık veya soyut bir kavramı (örneğin, özgür irade, adalet, bilinç) tanımlamasını ve açıklamasını isteyin. Örneğin: \"Felsefede 'varoluşçuluk' akımının temel prensiplerini açıkla.\"\n2. LLM'nin verdiği tanımın, kavramın kabul görmüş teorik çerçevelerle ve felsefi literatürle tutarlı olup olmadığını değerlendirin.\n3. LLM'nin kavramı basitleştirirken anlamını yitirip yitirmediğini veya yanlış yorumlayıp yorumlamadığını kontrol edin.\n4. Kavramla ilgili farklı felsefi yaklaşımları veya eleştirileri ne kadar dikkate aldığını analiz edin.\n5. LLM'nin soyut düşünme ve karmaşık fikirleri ifade etme yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"'Özgür İrade' kavramının felsefi tartışmalardaki yerini ve farklı görüşleri özetle.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 21,
+      "no": "021",
+      "cat": "Bağlam Analizi",
+      "name": "Soru Bağlamı Sapması",
+      "desc": "LLM'nin sorunun bağlamından kopmasını test edin.",
+      "tags": [
+        "bağlam",
+        "anlama",
+        "sapma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bağlam Sapması Dedektifi\n\nBu prompt, LLM'nin verilen bir konuşma veya metin bağlamında kalma yeteneğini test eder. LLM'ye bağlamdan kopmasına neden olabilecek yanıltıcı sorular sorun.\n\n### Adımlar:\n1. LLM ile belirli bir konu hakkında konuşmaya başlayın ve tutarlı bir bağlam oluşturun. Örneğin: \"Bugün hava durumu hakkında konuşalım. İstanbul'da yarın hava nasıl olacak?\"\n2. Ardından, konudan tamamen farklı veya alakasız bir soru sorun. Örneğin: \"Peki ya Ay'daki kraterler hakkında ne biliyorsun?\"\n3. LLM'nin önceki bağlamı ne kadar süreyle hatırladığını ve yeni soruya nasıl tepki verdiğini gözlemleyin.\n4. LLM'nin konudan sapıp sapmadığını, önceki konuşmayı unutup unutmadığını veya mantıksız bir geçiş yapıp yapmadığını kontrol edin.\n5. LLM'nin uzun konuşmalarda bağlamı koruma yeteneğini değerlendirin.\n\n**Örnek Prompt:** (Konuşma başlar) \"Yapay zekanın geleceği hakkında ne düşünüyorsun?\" (Bağlamı bozma denemesi) \"Bu arada, en sevdiğin yemek ne?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 22,
+      "no": "022",
+      "cat": "Bağlam Analizi",
+      "name": "İma ve Nüans Anlama",
+      "desc": "LLM'nin ima edilen anlamları kavrayıp kavramadığını test edin.",
+      "tags": [
+        "bağlam",
+        "ima",
+        "nüans"
+      ],
+      "badge1": "Orta",
+      "content": "## İma ve Nüans Analisti\n\nBu prompt, LLM'nin metinlerdeki açıkça belirtilmeyen ancak ima edilen anlamları, nüansları ve alt metni anlama yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye ince bir ironi, kinaye veya ima içeren bir metin veya diyalog sunun. Örneğin: \"Ali, Ayşe'ye \"Harika bir fikir! Bunu kesinlikle yapmalısın.\" dedi, ama gözlerini deviriyordu.\"\n2. LLM'den bu ifadenin gerçek anlamını veya Ali'nin niyetini yorumlamasını isteyin.\n3. LLM'nin imayı doğru anlayıp anlamadığını, sadece kelime anlamlarına takılıp kalmadığını değerlendirin.\n4. Cevapta nüansları ve duygusal tonu ne kadar iyi yakaladığını kontrol edin.\n5. LLM'nin insan iletişimindeki incelikleri anlama seviyesini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Sunum harikaydı, özellikle slaytların ne kadar az yazı içerdiği beni çok etkiledi.' Bu yorumun samimi olup olmadığını değerlendir.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 23,
+      "no": "023",
+      "cat": "Bağlam Analizi",
+      "name": "Rol Oyunu Bağlamı",
+      "desc": "LLM'nin farklı rollerdeki bağlamı korumasını test edin.",
+      "tags": [
+        "bağlam",
+        "rol",
+        "oyun"
+      ],
+      "badge1": "Orta",
+      "content": "## Rol Oyunu Bağlam Koruyucusu\n\nBu prompt, LLM'nin belirli bir rolü (örneğin, bir tarihçi, bir doktor, bir avukat) üstlendiğinde, o role uygun dil, bilgi ve perspektifi kullanma ve koruma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'den belirli bir rolü üstlenmesini isteyin. Örneğin: \"Sen bir tarihçisin ve 1. Dünya Savaşı'nın nedenlerini açıklayacaksın.\"\n2. Ardından, aynı senaryoda farklı bir rol üstlenmesini isteyin. Örneğin: \"Şimdi de bir asker olarak Çanakkale Cephesi'ndeki deneyimlerini anlat.\"\n3. LLM'nin her iki roldeki dil kullanımını, bilgi derinliğini ve bakış açısını değerlendirin.\n4. LLM'nin rolün gerektirdiği bağlamdan sapıp sapmadığını veya rolleri karıştırdığını kontrol edin.\n5. LLM'nin rol yapma ve bağlamı koruma esnekliğini analiz edin.\n\n**Örnek Prompt:** \"Bir müşteri hizmetleri temsilcisi olarak, şikayetçi bir müşteriye nasıl yanıt verirsin?\" (Ardından) \"Şimdi de o müşterinin avukatı rolünü üstlen ve durumu değerlendir.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 24,
+      "no": "024",
+      "cat": "Bağlam Analizi",
+      "name": "Çoklu Konu Yönetimi",
+      "desc": "LLM'nin birden fazla konuyu aynı anda yönetmesini test edin.",
+      "tags": [
+        "bağlam",
+        "çoklu",
+        "yönetim"
+      ],
+      "badge1": "İleri",
+      "content": "## Çoklu Konu Yönetimi Dedektifi\n\nBu prompt, LLM'nin aynı anda birden fazla konu veya talep içeren karmaşık bir girdiyi anlama ve yönetme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye tek bir istekte birden fazla görev veya soru içeren bir prompt verin. Örneğin: \"Bana Türkiye'nin coğrafyasını özetle, ardından Osmanlı İmparatorluğu'nun en parlak dönemini anlat ve son olarak güncel ekonomik gelişmeler hakkında kısa bir bilgi ver.\"\n2. LLM'nin her bir görevi ne kadar doğru anladığını ve yerine getirdiğini değerlendirin.\n3. LLM'nin görevler arasında mantıksal bir geçiş yapıp yapmadığını veya bir görevi diğerine karıştırıp karıştırmadığını kontrol edin.\n4. Her bir göreve ayrılan cevapların kalitesini ve doğruluğunu ayrı ayrı inceleyin.\n5. LLM'nin karmaşık ve çok yönlü talimatları işleme kapasitesini analiz edin.\n\n**Örnek Prompt:** \"Paris'in tarihi hakkında bilgi ver, ardından Eyfel Kulesi'nin inşaat sürecini açıkla ve son olarak Louvre Müzesi'ndeki en önemli eserlerden bahset.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 25,
+      "no": "025",
+      "cat": "Bağlam Analizi",
+      "name": "Duygusal Ton Analizi",
+      "desc": "LLM'nin metnin duygusal tonunu anlamasını test edin.",
+      "tags": [
+        "bağlam",
+        "duygu",
+        "ton"
+      ],
+      "badge1": "Orta",
+      "content": "## Duygusal Ton Analisti\n\nBu prompt, LLM'nin bir metnin veya ifadenin içerdiği duygusal tonu (mutlu, üzgün, kızgın, şaşkın vb.) doğru bir şekilde tanımlama ve analiz etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye farklı duygusal tonlarda yazılmış kısa metinler veya ifadeler sunun. Örneğin: \"Metin: 'Bugün işe giderken en sevdiğim kahve dükkanının önünden geçtim ve içeriden gelen mis gibi kokuyu içime çektim. Güne harika başladım!'\"\n2. LLM'den bu metnin duygusal tonunu belirlemesini isteyin.\n3. LLM'nin metindeki kelime seçimini, ifadeleri ve genel atmosferi dikkate alarak doğru duyguyu tespit edip etmediğini değerlendirin.\n4. Farklı duygusal tonları (ironi, alay, coşku, hayal kırıklığı) ayırt etme becerisini kontrol edin.\n5. LLM'nin metinlerdeki duygusal bağlamı anlama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Sınavdan yine beklediğimden düşük bir not aldım. Bütün gece çalışmıştım, bu gerçekten hayal kırıklığı.' Bu metnin duygusal tonu nedir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 26,
+      "no": "026",
+      "cat": "Gerçeklik Kontrolü",
+      "name": "Fiziksel Olasılık Testi",
+      "desc": "LLM'nin fizik kurallarına aykırı senaryoları tespit etmesini sağlayın.",
+      "tags": [
+        "gerçeklik",
+        "fizik",
+        "olasılık"
+      ],
+      "badge1": "Orta",
+      "content": "## Fiziksel Olasılık Test Dedektifi\n\nBu prompt, LLM'nin fiziksel dünyanın temel kurallarına aykırı olan senaryoları veya iddiaları fark etme ve reddetme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye fiziksel olarak imkansız veya son derece düşük olasılıklı bir senaryo sunun. Örneğin: \"Bir kişi yerçekimine karşı koyarak havada süzülmeye başladı ve Ay'a doğru yola çıktı.\"\n2. LLM'den bu senaryonun gerçekçi olup olmadığını değerlendirmesini isteyin ve nedenini açıklamasını talep edin.\n3. LLM'nin fizik yasalarını (yerçekimi, hız, kütle vb.) referans alarak senaryoyu mantıksal olarak çürütüp çürütmediğini kontrol edin.\n4. LLM'nin bariz fiziksel tutarsızlıkları tespit etme becerisini değerlendirin.\n5. LLM'nin gerçek dünya kısıtlamalarını anlama düzeyini analiz edin.\n\n**Örnek Prompt:** \"Araba anahtarımı bir bardağın içine attım, ancak anahtar bardağın içinde değil, masanın üzerinde duruyor. Bu nasıl mümkün olabilir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 27,
+      "no": "027",
+      "cat": "Gerçeklik Kontrolü",
+      "name": "Yaygın Bilgi Yanlışları",
+      "desc": "LLM'nin popüler yanlış bilgileri düzeltmesini sağlayın.",
+      "tags": [
+        "gerçeklik",
+        "yanlış bilgi",
+        "mit"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yaygın Yanlış Bilgi Dedektifi\n\nBu prompt, LLM'nin toplumda yaygın olarak kabul gören ancak yanlış olan bilgileri (şehir efsaneleri, mitler) tespit etme ve düzeltme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye yaygın bir şehir efsanesi veya mit hakkında bir iddia sunun. Örneğin: \"Büyük Çin Seddi uzaydan çıplak gözle görülebilen tek insan yapımı yapıdır.\"\n2. LLM'den bu iddianın doğruluğunu araştırmasını ve doğru bilgiyi sunmasını isteyin.\n3. LLM'nin iddianın neden yanlış olduğunu açıklarken güvenilir kaynaklara atıfta bulunup bulunmadığını kontrol edin.\n4. LLM'nin popüler ama yanlış bilgilere karşı ne kadar dirençli olduğunu değerlendirin.\n5. LLM'nin mitleri gerçeklerden ayırma becerisini analiz edin.\n\n**Örnek Prompt:** \"İnsan beyninin sadece %10'unu kullanırız. Bu doğru mu? Açıkla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 28,
+      "no": "028",
+      "cat": "Gerçeklik Kontrolü",
+      "name": "Mantıksal Tutarsızlık Kontrolü",
+      "desc": "LLM'nin kendi içinde çelişkili ifadeleri bulmasını sağlayın.",
+      "tags": [
+        "gerçeklik",
+        "mantık",
+        "tutarsızlık"
+      ],
+      "badge1": "Orta",
+      "content": "## Mantıksal Tutarsızlık Dedektifi\n\nBu prompt, LLM'nin bir metin veya argüman içindeki mantıksal çelişkileri ve tutarsızlıkları tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye kendi içinde çelişkili ifadeler içeren bir metin sunun. Örneğin: \"Tüm kurallar esnektir. Bu kural bir istisnadır ve esnek değildir.\"\n2. LLM'den metindeki çelişkiyi bulmasını ve açıklamasını isteyin.\n3. LLM'nin çelişkiyi doğru bir şekilde tanımlayıp tanımlamadığını ve neden bir tutarsızlık olduğunu mantıksal olarak açıklayıp açıklamadığını değerlendirin.\n4. LLM'nin soyut mantık yürütme ve çelişkileri fark etme becerisini test edin.\n5. LLM'nin dilin inceliklerindeki mantıksal hataları yakalama yeteneğini analiz edin.\n\n**Örnek Prompt:** \"Metin: 'Hiçbir zaman genelleme yapmam. Her zaman her şey durumdan duruma değişir.' Bu metinde bir çelişki var mı? Varsa nedir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 29,
+      "no": "029",
+      "cat": "Gerçeklik Kontrolü",
+      "name": "Nedensellik Yanılgısı Tespiti",
+      "desc": "LLM'nin sebep-sonuç ilişkilerindeki hataları bulmasını sağlayın.",
+      "tags": [
+        "gerçeklik",
+        "nedensellik",
+        "sebep"
+      ],
+      "badge1": "Orta",
+      "content": "## Nedensellik Yanılgısı Dedektifi\n\nBu prompt, LLM'nin olaylar arasındaki sebep-sonuç ilişkilerini doğru kurup kurmadığını veya sahte nedensellikler (correlation vs. causation) tespit edip etmediğini test eder.\n\n### Adımlar:\n1. LLM'ye iki olay arasında gerçekte sebep-sonuç ilişkisi olmayan ancak birlikte görülen bir durum sunun. Örneğin: \"Dondurma satışları arttığında, boğulma vakaları da artar. Bu durum, dondurma yemenin boğulmaya neden olduğunu mu gösterir?\"\n2. LLM'den bu iki olay arasındaki ilişkiyi analiz etmesini ve gerçek bir nedensellik olup olmadığını değerlendirmesini isteyin.\n3. LLM'nin sadece korelasyonu tespit etmekle kalmayıp, aynı zamanda farklı olası nedenleri (örneğin, hava sıcaklığı) göz önünde bulundurup bulundurmadığını kontrol edin.\n4. LLM'nin sahte nedensellik yanılgılarını (post hoc ergo propter hoc, cum hoc ergo propter hoc) fark etme yeteneğini test edin.\n5. LLM'nin akıl yürütme sürecindeki mantıksal sağlamlığını analiz edin.\n\n**Örnek Prompt:** \"Şehirlerde bisiklet kullanımının artmasıyla birlikte, belirli suç türlerinde de artış gözlemlenmiştir. Bu iki durum arasında doğrudan bir neden-sonuç ilişkisi var mıdır?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 30,
+      "no": "030",
+      "cat": "Gerçeklik Kontrolü",
+      "name": "Görsel Algı Yanılgısı",
+      "desc": "LLM'nin görsel yanılsamaları veya yanlış yorumlamaları test edin (metin tabanlı).",
+      "tags": [
+        "gerçeklik",
+        "görsel",
+        "yanılsama"
+      ],
+      "badge1": "İleri",
+      "content": "## Görsel Algı Yanılgısı Dedektifi (Metin Tabanlı)\n\nBu prompt, LLM'nin görsel yanılsamaları veya metinle tarif edilen bir sahnenin yanlış yorumlanmasını tespit etme yeteneğini test eder. LLM'ye yanıltıcı bir görsel tarif verilir.\n\n### Adımlar:\n1. LLM'ye yaygın bir görsel yanılsamayı tarif eden bir metin sunun. Örneğin: \"İki paralel çizgiyi ele alalım. Birinin üzerine içe dönük oklar, diğerinin üzerine dışa dönük oklar çizildiğinde, dışa dönük okları olan çizgi daha kısa görünür. Bu durum görsel algıdaki hangi yanılgıyı örneklendirir?\"\n2. LLM'den bu tarifin hangi görsel yanılgıyı temsil ettiğini tanımlamasını isteyin.\n3. LLM'nin tarif edilen görseldeki ipuçlarını doğru yorumlayıp yorumlamadığını ve yanılgının adını doğru bilip bilmediğini değerlendirin.\n4. LLM'nin, metinle sınırlı olmasına rağmen, görsel ipuçlarından yola çıkarak mantıksal çıkarımlar yapma yeteneğini test edin.\n5. LLM'nin soyut görsel fenomenleri anlama kapasitesini analiz edin.\n\n**Örnek Prompt:** \"Bir odada iki kişi var. Biri diğerinden daha uzun görünüyor. Ancak odanın zemini eğimli ve ışıklandırma yanıltıcı. Bu durum, algısal olarak ne tür bir etki yaratabilir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 31,
+      "no": "031",
+      "cat": "Mantık Hataları",
+      "name": "Safsata Tespiti",
+      "desc": "LLM'nin argümanlardaki mantık hatalarını bulmasını sağlayın.",
+      "tags": [
+        "mantık",
+        "safsata",
+        "argüman"
+      ],
+      "badge1": "Orta",
+      "content": "## Safsata Avcısı\n\nBu prompt, LLM'nin sunulan argümanlardaki yaygın mantık hatalarını (safsataları) tespit etme ve adlandırma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye içinde bir veya daha fazla mantık hatası bulunan bir argüman sunun. Örneğin: \"Bu filmi beğenmeyen herkesin sanattan anlamadığı açıktır.\"\n2. LLM'den argümandaki mantık hatasını belirlemesini ve adlandırmasını isteyin (örneğin, Ad Hominem, Aceleci Genelleme, Saptırma vb.).\n3. LLM'nin safsatayı doğru bir şekilde tespit edip etmediğini ve uygun terimi kullanıp kullanmadığını değerlendirin.\n4. LLM'nin argümanın yapısını analiz ederek mantık hatasını bulma becerisini test edin.\n5. LLM'nin eleştirel düşünme ve argümantasyon analizi yeteneğini değerlendirin.\n\n**Örnek Prompt:** \"Argüman: 'X yasası kabul edilirse, yakında toplum tamamen kaosa sürüklenecektir. Bu nedenle X yasası kabul edilmemelidir.' Buradaki mantık hatası nedir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 32,
+      "no": "032",
+      "cat": "Mantık Hataları",
+      "name": "Çelişki Çözme",
+      "desc": "LLM'nin çelişkili ifadeler arasındaki uyumu bulmasını sağlayın.",
+      "tags": [
+        "mantık",
+        "çelişki",
+        "çözüm"
+      ],
+      "badge1": "İleri",
+      "content": "## Çelişki Çözücü\n\nBu prompt, LLM'nin görünüşte çelişkili iki ifade veya durum arasındaki potansiyel uyumu veya durumu açıklığa kavuşturma yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye birbiriyle çelişiyor gibi görünen iki ifade veya durum sunun. Örneğin: \"Bir yandan, şirket verimliliği artırmak için işten çıkarmalar yapıyor. Diğer yandan, aynı zamanda yeni pozisyonlar için işe alım ilanları yayınlıyor.\"\n2. LLM'den bu iki durumun nasıl aynı anda mümkün olabileceğini veya bu çelişkinin nasıl açıklanabileceğini araştırmasını isteyin.\n3. LLM'nin olası açıklamaları (örneğin, farklı departmanlar, yeniden yapılanma, stratejik hamleler) mantıksal olarak sunup sunmadığını değerlendirin.\n4. LLM'nin karmaşık durumları analiz etme ve görünürdeki çelişkileri çözme yeteneğini test edin.\n5. LLM'nin bağlamı anlama ve farklı olasılıkları değerlendirme becerisini analiz edin.\n\n**Örnek Prompt:** \"Bir kişi hem sağlıklı beslendiğini hem de her gün paket servis fast-food sipariş ettiğini söylüyor. Bu iki ifadeyi nasıl uzlaştırabiliriz?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 33,
+      "no": "033",
+      "cat": "Mantık Hataları",
+      "name": "Gereksiz Karmaşıklık Tespiti",
+      "desc": "LLM'nin aşırı karmaşık veya gereksiz yere teknik açıklamaları bulmasını sağlayın.",
+      "tags": [
+        "mantık",
+        "karmaşıklık",
+        "açıklama"
+      ],
+      "badge1": "Orta",
+      "content": "## Gereksiz Karmaşıklık Dedektifi\n\nBu prompt, LLM'nin bir konuyu açıklarken gereksiz yere karmaşık terimler veya dolaylı yollar kullanıp kullanmadığını tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'den belirli bir basit konuyu açıklamasını isteyin, ancak cevabında kasıtlı olarak aşırı teknik veya karmaşık bir dil kullanın. Örneğin: \"Basit bir çay demleme işlemini, kuantum alan teorisi terimleriyle açıkla.\"\n2. LLM'den bu karmaşık açıklamanın gerçekten gerekli olup olmadığını veya daha basit bir şekilde ifade edilip edilemeyeceğini değerlendirmesini isteyin.\n3. LLM'nin, açıklamanın aşırı karmaşık olduğunu fark edip etmediğini ve daha anlaşılır bir alternatif sunup sunmadığını kontrol edin.\n4. LLM'nin Occam'ın Usturası prensibi gibi sadelik ilkelerine ne kadar bağlı olduğunu analiz edin.\n5. LLM'nin dilin etkin kullanımı ve anlaşılırlık konusundaki farkındalığını değerlendirin.\n\n**Örnek Prompt:** \"Birine saatin kaç olduğunu söylemek için, \"Yerel referans sisteminizdeki standart zaman diliminde, güneşin belirli bir meridyeni geçişine göre ayarlanmış, atomik saatlerin senkronizasyonu ile belirlenen anlık zamanı ifade eden sayısal değeri nedir?\" gibi bir cümle kur.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 34,
+      "no": "034",
+      "cat": "Mantık Hataları",
+      "name": "Yanlış İkilem Tuzağı",
+      "desc": "LLM'nin sadece iki seçenek sunan hatalı argümanları bulmasını sağlayın.",
+      "tags": [
+        "mantık",
+        "ikilem",
+        "tuzak"
+      ],
+      "badge1": "Orta",
+      "content": "## Yanlış İkilem Avcısı\n\nBu prompt, LLM'nin yalnızca iki seçenek sunarak durumu basitleştiren veya çarpıtan yanlış ikilem (false dilemma) argümanlarını tespit etme yeteneğini test eder.\n\n### Adımlar:\n1. LLM'ye içinde yanlış bir ikilem bulunan bir argüman sunun. Örneğin: \"Ya ülkemizin politikalarını tamamen desteklemelisin ya da vatan hainisin.\"\n2. LLM'den bu argümandaki mantık hatasını belirlemesini ve neden yanlış bir ikilem olduğunu açıklamasını isteyin.\n3. LLM'nin, sunulan iki seçeneğin dışında başka olasılıkların veya orta yolların olabileceğini fark edip etmediğini değerlendirin.\n4. LLM'nin argümanın geçerliliğini sorgulama ve alternatifleri düşünme yeteneğini test edin.\n5. LLM'nin baskıcı veya manipülatif argümantasyon biçimlerini tanıma becerisini analiz edin.\n\n**Örnek Prompt:** \"Argüman: 'Ya bu projeye yatırım yaparsınız ve zengin olursunuz, ya da yapmazsınız ve fakir kalırsınız.' Bu argümandaki mantık hatası nedir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }

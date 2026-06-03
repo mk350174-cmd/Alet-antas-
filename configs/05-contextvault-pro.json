@@ -48,6 +48,418 @@
     "border3": "#2c2a32",
     "heroBg": "#0c0a12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Hafıza İndeksleme Teknikleri",
+      "name": "Hafıza İndeksleme Teknikleri",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Bağlam Yönetimi Stratejileri",
+      "name": "Bağlam Yönetimi Stratejileri",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Gelişmiş Prompt Mühendisliği",
+      "name": "Gelişmiş Prompt Mühendisliği",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Veri Yapılandırma Araçları",
+      "name": "Veri Yapılandırma Araçları",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "LLM Etkinleştirme Yöntemleri",
+      "name": "LLM Etkinleştirme Yöntemleri",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Performans Optimizasyonu",
+      "name": "Performans Optimizasyonu",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Hafıza İndeksleme Teknikleri",
+      "name": "Vektör Veritabanı Kurulumu",
+      "desc": "LLM için vektör veritabanı kurulumu ve entegrasyonu.",
+      "tags": [
+        "vektör veritabanı",
+        "kurulum",
+        "LLM"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Vektör Veritabanı Kurulumu\n1. **Seçim:** Milvus, Pinecone veya ChromaDB gibi bir vektör veritabanı seçin.\n2. **Kurulum:** Seçtiğiniz veritabanının belgelerine göre kurulumu tamamlayın.\n3. **Entegrasyon:** LLM'nizin API'sini kullanarak veritabanına veri ekleme/sorgulama fonksiyonları geliştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Hafıza İndeksleme Teknikleri",
+      "name": "Metin Bölümleme (Chunking)",
+      "desc": "Uzun metinleri LLM için anlamlı parçalara ayırma.",
+      "tags": [
+        "chunking",
+        "metin işleme",
+        "LLM"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Metin Bölümleme (Chunking)\n1. **Strateji Belirle:** Sabit boyut, cümle bazlı veya paragraf bazlı bölme yöntemlerinden birini seçin.\n2. **Uygulama:** Python'da NLTK veya spaCy gibi kütüphanelerle bölme işlemini gerçekleştirin.\n3. **Optimizasyon:** Bölünen parçaların anlam bütünlüğünü koruduğundan emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Hafıza İndeksleme Teknikleri",
+      "name": "Gömme (Embedding) Oluşturma",
+      "desc": "Metinleri vektör temsillerine dönüştürme.",
+      "tags": [
+        "embedding",
+        "vektör",
+        "doğal dil"
+      ],
+      "badge1": "Orta",
+      "content": "## Gömme (Embedding) Oluşturma\n1. **Model Seçimi:** Sentence-Transformers, OpenAI Embeddings gibi bir model seçin.\n2. **Kodlama:** Seçilen model ile metinlerin vektör temsillerini (embedding) oluşturun.\n3. **Depolama:** Elde edilen vektörleri vektör veritabanında saklayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Hafıza İndeksleme Teknikleri",
+      "name": "Vektör Arama Algoritmaları",
+      "desc": "Benzer vektörleri verimli bir şekilde bulma.",
+      "tags": [
+        "arama",
+        "algoritma",
+        "vektör"
+      ],
+      "badge1": "Orta",
+      "content": "## Vektör Arama Algoritmaları\n1. **Algoritma Seçimi:** HNSW, IVF gibi Approximate Nearest Neighbor (ANN) algoritmalarını inceleyin.\n2. **Parametre Ayarı:** Veritabanı ayarlarında arama hassasiyeti ve hızı için parametreleri optimize edin.\n3. **Test:** Farklı sorgularla arama performansını ve doğruluğunu test edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Bağlam Yönetimi Stratejileri",
+      "name": "Kaydırmalı Pencere (Sliding Window)",
+      "desc": "En son etkileşimleri bağlama dahil etme.",
+      "tags": [
+        "sliding window",
+        "bağlam",
+        "yönetim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kaydırmalı Pencere (Sliding Window)\n1. **Boyut Belirle:** LLM'nin bağlam penceresine sığacak bir pencere boyutu seçin.\n2. **Güncelleme Mantığı:** Yeni mesaj geldikçe eski mesajları pencereden çıkarın.\n3. **Uygulama:** Sohbet geçmişini yönetmek için bu mantığı uygulayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Bağlam Yönetimi Stratejileri",
+      "name": "Özetleme Tabanlı Hafıza",
+      "desc": "Geçmiş konuşmaları özetleyerek bağlama ekleme.",
+      "tags": [
+        "özetleme",
+        "hafıza",
+        "LLM"
+      ],
+      "badge1": "Orta",
+      "content": "## Özetleme Tabanlı Hafıza\n1. **Özetleme Prompt'u:** LLM'ye geçmiş konuşmaları özetlemesi için bir prompt hazırlayın.\n2. **Özetleri Birleştir:** Belirli aralıklarla özetleri oluşturup ana konuşmaya ekleyin.\n3. **Bağlam Boyutu Kontrolü:** Özetlerin bağlam penceresini aşmadığından emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Bağlam Yönetimi Stratejileri",
+      "name": "Hiyerarşik Hafıza Yapısı",
+      "desc": "Bilgiyi özetler ve anahtar noktalar halinde saklama.",
+      "tags": [
+        "hiyerarşi",
+        "hafıza",
+        "yapı"
+      ],
+      "badge1": "İleri",
+      "content": "## Hiyerarşik Hafıza Yapısı\n1. **Katmanlar Oluştur:** Kısa vadeli (son konuşmalar), orta vadeli (son oturumlar) ve uzun vadeli (genel bilgi) katmanlar tanımlayın.\n2. **Bilgi Akışı:** Bilgiyi alt katmanlardan üst katmanlara doğru özetleyerek taşıyın.\n3. **Sorgulama Stratejisi:** Sorguya göre ilgili katmandan bilgi çekin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Gelişmiş Prompt Mühendisliği",
+      "name": "ReAct (Reasoning + Acting) Prompting",
+      "desc": "Düşünme ve eylemi birleştiren prompt yapısı.",
+      "tags": [
+        "ReAct",
+        "prompt",
+        "düşünme"
+      ],
+      "badge1": "Orta",
+      "content": "## ReAct Prompting\n1. **Düşünce (Thought):** LLM'den adım adım düşünmesini isteyin.\n2. **Eylem (Action):** Düşünce sonucunda ne yapması gerektiğini belirtin (ör: arama yap, hesapla).\n3. **Gözlem (Observation):** Eylemin sonucunu LLM'ye bildirin.\n4. **Tekrarlama:** İstenen sonuca ulaşılana kadar bu döngüyü sürdürün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Gelişmiş Prompt Mühendisliği",
+      "name": "Retrieval Augmented Generation (RAG)",
+      "desc": "Harici bilgiyi kullanarak daha doğru yanıtlar üretme.",
+      "tags": [
+        "RAG",
+        "harici bilgi",
+        "doğruluk"
+      ],
+      "badge1": "İleri",
+      "content": "## Retrieval Augmented Generation (RAG)\n1. **Bilgi Kaynağı Hazırla:** Dokümanlar, veritabanları gibi bilgi kaynaklarını vektörleştirin.\n2. **Sorgu Zamanı:** Kullanıcı sorgusu geldiğinde, ilgili bilgiyi vektör veritabanından çekin.\n3. **Prompt Oluştur:** Çekilen bilgiyi ve orijinal sorguyu birleştirerek LLM'ye gönderin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Gelişmiş Prompt Mühendisliği",
+      "name": "Zincirleme Düşünce (Chain-of-Thought)",
+      "desc": "Karmaşık problemleri adım adım çözme yeteneği.",
+      "tags": [
+        "CoT",
+        "adım adım",
+        "problem çözme"
+      ],
+      "badge1": "Orta",
+      "content": "## Zincirleme Düşünce (Chain-of-Thought)\n1. **Prompt'a Ekleyin:** Prompt'un sonuna \"Adım adım düşünelim.\" gibi bir ifade ekleyin.\n2. **Örnekler Verin:** Mümkünse, adım adım çözüm örnekleri sunun.\n3. **Detaylı Analiz:** LLM'nin problem çözme sürecini detaylı açıklamasını sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Gelişmiş Prompt Mühendisliği",
+      "name": "Fine-Tuning için Veri Hazırlama",
+      "desc": "Özel görevler için LLM'yi eğitme verisi hazırlama.",
+      "tags": [
+        "fine-tuning",
+        "veri hazırlama",
+        "eğitim"
+      ],
+      "badge1": "İleri",
+      "content": "## Fine-Tuning Veri Hazırlama\n1. **Format Belirle:** Prompt ve completion çiftleri veya JSONL formatı gibi uygun bir format seçin.\n2. **Veri Topla/Oluştur:** Göreve özel, yüksek kaliteli veri setleri oluşturun veya toplayın.\n3. **Temizleme ve Doğrulama:** Veri setindeki hataları giderin ve tutarlılığı kontrol edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Veri Yapılandırma Araçları",
+      "name": "JSON/YAML Ayrıştırıcılar",
+      "desc": "Yapılandırılmış verileri LLM girdisine uygun hale getirme.",
+      "tags": [
+        "JSON",
+        "YAML",
+        "veri işleme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## JSON/YAML Ayrıştırıcılar\n1. **Kütüphane Seçimi:** Python'da `json` veya `PyYAML` kütüphanelerini kullanın.\n2. **Veri Yükleme:** Dosyadan veya string'den veriyi belleğe yükleyin.\n3. **Formatlama:** LLM'nin anlayacağı şekilde anahtar-değer çiftlerini veya listeleri yapılandırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Veri Yapılandırma Araçları",
+      "name": "CSV Veri Dönüştürücü",
+      "desc": "Tablosal verileri okunabilir metin formatına çevirme.",
+      "tags": [
+        "CSV",
+        "veri dönüştürme",
+        "tablo"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## CSV Veri Dönüştürücü\n1. **Kütüphane Kullanımı:** Pandas ile CSV dosyasını okuyun.\n2. **Metin Formatı:** Her satırı \"[Sütun Adı]: [Değer]\" formatında birleştirin.\n3. **Bağlama Ekleme:** Oluşturulan metinleri LLM'ye girdi olarak verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Veri Yapılandırma Araçları",
+      "name": "Metin Veri Temizleme",
+      "desc": "LLM'ye gönderilmeden önce metindeki gürültüyü giderme.",
+      "tags": [
+        "veri temizleme",
+        "metin",
+        "gürültü"
+      ],
+      "badge1": "Orta",
+      "content": "## Metin Veri Temizleme\n1. **Gereksiz Karakterleri Kaldır:** HTML etiketleri, özel karakterler, fazla boşlukları temizleyin.\n2. **Normalizasyon:** Metni küçük harfe çevirin, aksanları kaldırın.\n3. **Doğruluk Kontrolü:** Temizlenen metnin anlamını yitirmediğinden emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "LLM Etkinleştirme Yöntemleri",
+      "name": "Sıfır Vuruş (Zero-Shot) Prompting",
+      "desc": "Örnek vermeden doğrudan görev tanımlama.",
+      "tags": [
+        "zero-shot",
+        "prompt",
+        "görev"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sıfır Vuruş (Zero-Shot) Prompting\n1. **Net Talimat:** LLM'ye ne yapması gerektiğini açık ve net bir şekilde belirtin.\n2. **Girdi Sağlama:** Gerekli tüm bilgileri prompt içinde verin.\n3. **Beklenti Belirtme:** Yanıtın formatı veya içeriği hakkındaki beklentinizi ifade edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "LLM Etkinleştirme Yöntemleri",
+      "name": "Az Vuruş (Few-Shot) Prompting",
+      "desc": "Birkaç örnekle LLM'nin davranışını yönlendirme.",
+      "tags": [
+        "few-shot",
+        "örnek",
+        "yönlendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Az Vuruş (Few-Shot) Prompting\n1. **Örnekleri Tanımla:** İstediğiniz çıktıyı gösteren 2-5 adet girdi-çıktı örneği hazırlayın.\n2. **Prompt'a Ekle:** Örnekleri, ana sorgunuzdan önce prompt'a ekleyin.\n3. **Tutarlılık:** Örneklerin ana görevinizle tutarlı olduğundan emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "LLM Etkinleştirme Yöntemleri",
+      "name": "Kişi Bilgisi Enjeksiyonu",
+      "desc": "Kullanıcıya özel bilgileri bağlama entegre etme.",
+      "tags": [
+        "kişiselleştirme",
+        "enjeksiyon",
+        "bağlam"
+      ],
+      "badge1": "Orta",
+      "content": "## Kişi Bilgisi Enjeksiyonu\n1. **Veri Toplama:** Kullanıcının adı, tercihleri gibi bilgileri güvenli bir şekilde toplayın.\n2. **Prompt'a Yerleştirme:** Bu bilgileri, LLM'ye gönderilen prompt'un başına veya uygun bir yerine ekleyin.\n3. **Gizlilik:** Kullanıcı verilerinin gizliliğine ve güvenliğine dikkat edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Performans Optimizasyonu",
+      "name": "Prompt Zincirleme (Prompt Chaining)",
+      "desc": "Birden fazla LLM çağrısını ardışık olarak bağlama.",
+      "tags": [
+        "prompt chain",
+        "ardışık",
+        "LLM"
+      ],
+      "badge1": "Orta",
+      "content": "## Prompt Zincirleme (Prompt Chaining)\n1. **Adımları Belirle:** Karmaşık bir görevi alt görevlere ayırın.\n2. **Ara Çıktıları Yönet:** Bir LLM çağrısının çıktısını, sonraki çağrının girdisi olarak kullanın.\n3. **LangChain/LlamaIndex:** Bu süreci kolaylaştıran framework'leri (LangChain, LlamaIndex) araştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Performans Optimizasyonu",
+      "name": "Bağlam Penceresi Optimizasyonu",
+      "desc": "Gereksiz bilgileri çıkararak token kullanımını azaltma.",
+      "tags": [
+        "token",
+        "optimizasyon",
+        "bağlam"
+      ],
+      "badge1": "Orta",
+      "content": "## Bağlam Penceresi Optimizasyonu\n1. **Gereksiz Bilgiyi Filtrele:** Özetleme, özet tabanlı hafıza gibi tekniklerle bağlamı daraltın.\n2. **Önceliklendirme:** En önemli bilgilerin bağlamda kalmasını sağlayın.\n3. **Token Sayacı:** Token kullanımını sürekli izleyerek limitleri aşmamaya çalışın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Performans Optimizasyonu",
+      "name": "Caching Mekanizmaları",
+      "desc": "Tekrarlayan sorgular için önbelleğe alınmış yanıtları kullanma.",
+      "tags": [
+        "caching",
+        "önbellek",
+        "verimlilik"
+      ],
+      "badge1": "İleri",
+      "content": "## Caching Mekanizmaları\n1. **Sorgu Hash'leme:** Gelen sorguların benzersiz bir hash'ini oluşturun.\n2. **Önbellek Kontrolü:** Hash'i kullanarak önbellekte yanıt olup olmadığını kontrol edin.\n3. **Yanıt Kaydetme:** Yeni üretilen yanıtları hash ile birlikte önbelleğe kaydedin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }

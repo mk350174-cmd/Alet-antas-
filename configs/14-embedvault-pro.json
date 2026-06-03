@@ -48,6 +48,456 @@
     "border3": "#2c2a32",
     "heroBg": "#0c0a12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Embedding Stratejileri",
+      "name": "Embedding Stratejileri",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Parçalama Yöntemleri",
+      "name": "Parçalama Yöntemleri",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Optimizasyon Teknikleri",
+      "name": "Optimizasyon Teknikleri",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Gelişmiş Kavramlar",
+      "name": "Gelişmiş Kavramlar",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Değerlendirme Metrikleri",
+      "name": "Değerlendirme Metrikleri",
+      "color": "#F44336"
+    },
+    {
+      "id": "Araçlar ve Kütüphaneler",
+      "name": "Araçlar ve Kütüphaneler",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Embedding Stratejileri",
+      "name": "Temel Embedding Modelleri",
+      "desc": "Metinleri vektörlere dönüştüren popüler modelleri keşfedin.",
+      "tags": [
+        "embedding",
+        "model",
+        "vektör"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel Embedding Modelleri\nMetin verilerini sayısal vektörlere dönüştürmek için yaygın kullanılan embedding modelleri şunlardır:\n1. **Word2Vec:** Kelime anlamlarını yakalar.\n2. **GloVe:** Küresel istatistiklere dayanır.\n3. **FastText:** Alt kelime bilgisini kullanır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Embedding Stratejileri",
+      "name": "Sentence-BERT Kullanımı",
+      "desc": "Cümle ve paragraf embedding'leri için SBERT'i entegre edin.",
+      "tags": [
+        "SBERT",
+        "cümle embedding",
+        "paragraf"
+      ],
+      "badge1": "Orta",
+      "content": "## Sentence-BERT (SBERT)\nCümle ve paragraf düzeyinde anlamsal benzerlik için SBERT kullanın:\n1. Uygun bir SBERT modelini yükleyin.\n2. Metinlerinizi modele vererek embedding'lerini alın.\n3. Vektör benzerliğini hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Embedding Stratejileri",
+      "name": "Özel Domain Embedding'leri",
+      "desc": "Alanınıza özel verilerle embedding modelini eğitin.",
+      "tags": [
+        "domain specific",
+        "fine-tuning",
+        "eğitim"
+      ],
+      "badge1": "İleri",
+      "content": "## Özel Domain Embedding'leri\nAlanınıza özgü verilerle embedding modelini fine-tune edin:\n1. Alanınıza ait büyük bir metin korpusu toplayın.\n2. Önceden eğitilmiş bir modeli bu korpus üzerinde eğitin.\n3. Daha yüksek doğruluk elde edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Embedding Stratejileri",
+      "name": "MTEB Benchmark'ı",
+      "desc": "Farklı embedding modellerini MTEB ile karşılaştırın.",
+      "tags": [
+        "benchmark",
+        "MTEB",
+        "karşılaştırma"
+      ],
+      "badge1": "Orta",
+      "content": "## MTEB Benchmark\nEmbedding modellerinin performansını değerlendirmek için MTEB'i kullanın:\n1. MTEB kütüphanesini kurun.\n2. Farklı modelleri seçerek test edin.\n3. Sonuçları analiz edip en uygun modeli seçin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Parçalama Yöntemleri",
+      "name": "Sabit Boyutlu Parçalama",
+      "desc": "Metni belirli boyutta parçalara ayırın.",
+      "tags": [
+        "chunking",
+        "sabit boyut",
+        "metin"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sabit Boyutlu Parçalama\nMetni önceden belirlenmiş sabit bir boyutta parçalara ayırma yöntemi:\n1. Metnin toplam uzunluğunu belirleyin.\n2. İstediğiniz parça boyutunu (örn. 500 token) ayarlayın.\n3. Metni bu boyutta ardışık olarak bölün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Parçalama Yöntemleri",
+      "name": "Ayrıştırıcı Tabanlı Parçalama",
+      "desc": "Cümle veya paragraf sonlarına göre parçalama yapın.",
+      "tags": [
+        "chunking",
+        "ayrıştırıcı",
+        "anlam"
+      ],
+      "badge1": "Orta",
+      "content": "## Ayrıştırıcı Tabanlı Parçalama\nMetni anlamsal bütünlüğü koruyarak parçalayın:\n1. Cümle veya paragraf sonlarını tespit edin.\n2. Bu sınırlara göre metni parçalara ayırın.\n3. Anlam bütünlüğünü koruyun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Parçalama Yöntemleri",
+      "name": "Örtüşen Parçalama",
+      "desc": "Parçalar arasında bağlam kaybını önlemek için örtüşme kullanın.",
+      "tags": [
+        "chunking",
+        "örtüşme",
+        "bağlam"
+      ],
+      "badge1": "Orta",
+      "content": "## Örtüşen Parçalama\nParçalar arası anlamsal sürekliliği sağlamak için örtüşme (overlap) ekleyin:\n1. Her parçanın sonundan belirli bir miktar metni alın.\n2. Bir sonraki parçanın başına bu metni ekleyin.\n3. Bağlam kaybını minimize edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Parçalama Yöntemleri",
+      "name": "Recursive Character Text Splitter",
+      "desc": "Farklı ayırıcılara göre metni özyinelemeli olarak parçalayın.",
+      "tags": [
+        "chunking",
+        "recursive",
+        "splitter"
+      ],
+      "badge1": "Orta",
+      "content": "## Recursive Character Text Splitter\nLangChain'deki bu araç, farklı ayırıcılara göre özyinelemeli parçalama yapar:\n1. Önce büyük ayırıcıları deneyin (örn. '\\n\\n').\n2. Yetmezse daha küçük ayırıcılara geçin (örn. '.').\n3. Belirtilen parça boyutuna ulaşana kadar devam edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Parçalama Yöntemleri",
+      "name": "Özel Parçalama Mantığı",
+      "desc": "Belirli kurallara göre kendi parçalama fonksiyonunuzu yazın.",
+      "tags": [
+        "chunking",
+        "custom",
+        "logic"
+      ],
+      "badge1": "İleri",
+      "content": "## Özel Parçalama Mantığı\nİhtiyaçlarınıza özel parçalama mantığı geliştirin:\n1. Belirli anahtar kelimeleri veya yapıları hedefleyin.\n2. Parça başına düşen bilgi yoğunluğunu optimize edin.\n3. Özel gereksinimler için kodlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Embedding Boyutunu Ayarlama",
+      "desc": "Doğru embedding boyutunu seçerek performansı artırın.",
+      "tags": [
+        "embedding",
+        "boyut",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Embedding Boyutunu Ayarlama\nEmbedding vektörünün boyutunu optimize edin:\n1. Çok küçük boyutlar anlamı kaybedebilir.\n2. Çok büyük boyutlar hesaplama maliyetini artırır.\n3. Deneyler yaparak en uygun boyutu bulun (örn. 384, 768).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Parçalama Boyutu Optimizasyonu",
+      "desc": "En iyi sonuçlar için parça boyutunu ayarlayın.",
+      "tags": [
+        "chunking",
+        "boyut",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Parçalama Boyutu Optimizasyonu\nParça boyutunu RAG performansına göre ayarlayın:\n1. Küçük parçalar bağlamı sınırlayabilir.\n2. Büyük parçalar gürültü içerebilir.\n3. Deneylerle en iyi boyutu belirleyin (örn. 200-500 token).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Metadata ile Zenginleştirme",
+      "desc": "Embedding'lere kaynak, tarih gibi metadata ekleyin.",
+      "tags": [
+        "metadata",
+        "embedding",
+        "zenginleştirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Metadata ile Zenginleştirme\nEmbedding'lere ilgili metadata ekleyerek arama kalitesini artırın:\n1. Kaynak belge adı, tarih, yazar gibi bilgileri kullanın.\n2. Metadata'yı embedding'e dahil edin veya ayrı indeksleyin.\n3. Daha hassas filtreleme sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Gelişmiş Kavramlar",
+      "name": "Hiyerarşik Vektör Veritabanları",
+      "desc": "Farklı detay seviyeleri için birden çok embedding kullanın.",
+      "tags": [
+        "hiyerarşi",
+        "vektör db",
+        "advanced"
+      ],
+      "badge1": "İleri",
+      "content": "## Hiyerarşik Vektör Veritabanları\nBilgiyi farklı soyutlama seviyelerinde saklayın:\n1. Özet embedding'leri oluşturun.\n2. Detaylı embedding'ler oluşturun.\n3. Sorguya göre uygun seviyeden arama yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Gelişmiş Kavramlar",
+      "name": "Knowledge Graph Entegrasyonu",
+      "desc": "Vektör veritabanlarını bilgi grafikleriyle birleştirin.",
+      "tags": [
+        "knowledge graph",
+        "entegrasyon",
+        "RAG"
+      ],
+      "badge1": "İleri",
+      "content": "## Knowledge Graph Entegrasyonu\nVektör aramalarını bilgi grafikleriyle zenginleştirin:\n1. KG'den ilişkisel bilgileri çıkarın.\n2. Vektör araması sonuçlarını KG ile doğrulayın.\n3. Daha kesin ve bağlamlı yanıtlar üretin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Gelişmiş Kavramlar",
+      "name": "Hybrid Search (Vektör + Anahtar Kelime)",
+      "desc": "Anlamsal ve anahtar kelime aramalarını birleştirin.",
+      "tags": [
+        "hybrid search",
+        "RAG",
+        "optimizasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Hybrid Search\nVektör ve anahtar kelime tabanlı aramaları birleştirin:\n1. Hem anlamsal yakınlığı hem de anahtar kelime eşleşmesini kullanın.\n2. Farklı sorgu türleri için daha iyi sonuçlar alın.\n3. BM25 gibi algoritmalarla vektör aramalarını harmanlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Değerlendirme Metrikleri",
+      "name": "Retrieval Metrikleri",
+      "desc": "RAG sisteminin geri getirme performansını ölçün.",
+      "tags": [
+        "metrik",
+        "retrieval",
+        "RAG"
+      ],
+      "badge1": "Orta",
+      "content": "## Retrieval Metrikleri\nGeri getirme (retrieval) kalitesini değerlendirin:\n1. **Precision@k:** İlk k sonuçta doğru olanların oranı.\n2. **Recall@k:** Toplam doğru sonuçtan ilk k'da bulunanların oranı.\n3. **MRR:** İlk doğru sonucun sıralaması.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Değerlendirme Metrikleri",
+      "name": "Generation Metrikleri",
+      "desc": "Üretilen yanıtın kalitesini değerlendirin.",
+      "tags": [
+        "metrik",
+        "generation",
+        "RAG"
+      ],
+      "badge1": "Orta",
+      "content": "## Generation Metrikleri\nÜretilen yanıtın doğruluğunu ve akıcılığını ölçün:\n1. **BLEU/ROUGE:** Referans metinle karşılaştırma.\n2. **BERTScore:** Anlamsal benzerlik ölçümü.\n3. **Human Evaluation:** İnsan değerlendirmesi.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Değerlendirme Metrikleri",
+      "name": "RAGAS Framework",
+      "desc": "RAG uygulamalarını değerlendirmek için RAGAS kullanın.",
+      "tags": [
+        "RAGAS",
+        "framework",
+        "değerlendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## RAGAS Framework\nRAG sistemleri için kapsamlı bir değerlendirme aracı:\n1. **Faithfulness:** Yanıtın kaynaklara uygunluğu.\n2. **Answer Relevance:** Yanıtın soruyla ilgisi.\n3. **Context Relevance:** Kullanılan bağlamın uygunluğu.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Araçlar ve Kütüphaneler",
+      "name": "LangChain RAG Araçları",
+      "desc": "LangChain ile RAG pipeline'ları oluşturun.",
+      "tags": [
+        "LangChain",
+        "RAG",
+        "framework"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## LangChain RAG Araçları\nRAG sistemleri kurmak için LangChain modüllerini kullanın:\n1. **Document Loaders:** Veri yükleme.\n2. **Text Splitters:** Metin parçalama.\n3. **Embeddings:** Embedding modelleri entegrasyonu.\n4. **Vector Stores:** Vektör veritabanı entegrasyonu.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Araçlar ve Kütüphaneler",
+      "name": "LlamaIndex RAG",
+      "desc": "LlamaIndex ile veri odaklı LLM uygulamaları geliştirin.",
+      "tags": [
+        "LlamaIndex",
+        "RAG",
+        "framework"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## LlamaIndex RAG\nLLM'ler için veri indeksleme ve sorgulama framework'ü:\n1. **Data Connectors:** Çeşitli veri kaynaklarını bağlama.\n2. **Indexes:** Veriyi vektörleştiren ve sorgulayan indeksler.\n3. **Query Engines:** LLM ile etkileşim.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 21,
+      "no": "021",
+      "cat": "Araçlar ve Kütüphaneler",
+      "name": "FAISS Vektör Veritabanı",
+      "desc": "Facebook AI Similarity Search ile hızlı vektör araması yapın.",
+      "tags": [
+        "FAISS",
+        "vektör db",
+        "arama"
+      ],
+      "badge1": "Orta",
+      "content": "## FAISS Vektör Veritabanı\nHızlı ve verimli benzerlik araması için FAISS kütüphanesini kullanın:\n1. FAISS indeksleri oluşturun.\n2. Embedding'lerinizi indeksleyin.\n3. Yüksek boyutlu vektörlerde hızlı arama yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 22,
+      "no": "022",
+      "cat": "Araçlar ve Kütüphaneler",
+      "name": "ChromaDB",
+      "desc": "Açık kaynaklı, Python-native vektör veritabanı.",
+      "tags": [
+        "ChromaDB",
+        "vektör db",
+        "Python"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## ChromaDB\nPython ile kolayca entegre edilebilen açık kaynaklı vektör veritabanı:\n1. ChromaDB'yi kurun veya başlatın.\n2. Verilerinizi ve embedding'lerinizi ekleyin.\n3. Etkili anlamsal arama yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
 }
