@@ -100,7 +100,7 @@ async function callGemini(cfg) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
       contents: [{ role: 'user', parts: [{ text: buildUserMessage(cfg) }] }],
-      generationConfig: { maxOutputTokens: 8192, temperature: 0.8, responseMimeType: 'application/json' },
+      generationConfig: { maxOutputTokens: 32768, temperature: 0.8, responseMimeType: 'application/json' },
     }),
   });
   if (res.status === 429 || res.status === 503) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
