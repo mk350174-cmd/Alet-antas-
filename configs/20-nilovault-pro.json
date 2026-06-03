@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Karakter Modelleme Prompts",
+      "name": "Karakter Modelleme Prompts",
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "Ortam & Sahne Prompts",
+      "name": "Ortam & Sahne Prompts",
+      "color": "#4ECDC4"
+    },
+    {
+      "id": "Nesne & Prop Prompts",
+      "name": "Nesne & Prop Prompts",
+      "color": "#FDCB5E"
+    },
+    {
+      "id": "Doku & Materyal Prompts",
+      "name": "Doku & Materyal Prompts",
+      "color": "#A29BFE"
+    },
+    {
+      "id": "Animasyon & Rig Prompts",
+      "name": "Animasyon & Rig Prompts",
+      "color": "#00B894"
+    },
+    {
+      "id": "FX & Partikül Prompts",
+      "name": "FX & Partikül Prompts",
+      "color": "#5DADE2"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Karakter Modelleme Prompts",
+      "name": "Fantezi Şövalye",
+      "desc": "Ortaçağ temalı, ağır zırhlı ve kılıçlı bir şövalye karakteri oluşturun.",
+      "tags": [
+        "karakter",
+        "zırh",
+        "fantezi"
+      ],
+      "badge1": "Orta",
+      "content": "## Şövalye Modeli Oluşturma\n1.  **Temel Form:** Güçlü, atletik bir erkek figürü ile başlayın.\n2.  **Zırh Detayları:** Omuzluklar, göğüs zırhı, miğfer, dizlikler ve eldiven ekleyin. Antik ve yıpranmış dokular kullanın.\n3.  **Silah:** Büyük, iki elli bir kılıç tasarlayın. Detaylı kabza ve keskin bir bıçak görünümü verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Karakter Modelleme Prompts",
+      "name": "Bilim Kurgu Robotu",
+      "desc": "Fütüristik, mekanik ve insansı bir hizmet robotu modellemesi için ipuçları.",
+      "tags": [
+        "robot",
+        "bilim-kurgu",
+        "mekanik"
+      ],
+      "badge1": "İleri",
+      "content": "## Hizmet Robotu Tasarımı\n1.  **Gövde Yapısı:** Pürüzsüz, aerodinamik bir gövde formu oluşturun. Hareketli eklemler ve sensörler ekleyin.\n2.  **Materyal:** Parlak metal ve mat plastik yüzeyleri birleştirin. Kırmızı veya mavi ışıklandırma detayları ekleyin.\n3.  **İşlevsellik:** Küçük bir kargo bölmesi veya tutucu kolları gibi özellikler düşünün. Ekranlı bir yüz paneli tasarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Karakter Modelleme Prompts",
+      "name": "Çizgi Film Canavarı",
+      "desc": "Dost canlısı, renkli ve abartılı özelliklere sahip bir çizgi film canavarı modelleyin.",
+      "tags": [
+        "çizgi-film",
+        "canavar",
+        "stilize"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sevimli Canavar Modeli\n1.  **Ana Şekil:** Yuvarlak veya oval bir gövde ile başlayın. Büyük gözler ve gülümseyen bir ağız ekleyin.\n2.  **Uzuvlar:** Kısa, tıknaz kollar ve bacaklar kullanın. Pençeler yerine yuvarlak parmaklar ekleyin.\n3.  **Renk Paleti:** Parlak ve canlı renkler tercih edin. Benekler, çizgiler veya tek boynuz gibi eğlenceli detaylar ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Ortam & Sahne Prompts",
+      "name": "Antik Harabeler",
+      "desc": "Yosunlarla kaplı, kısmen yıkılmış sütunlar ve taş yapılarla dolu antik bir harabe sahnesi.",
+      "tags": [
+        "antik",
+        "harabe",
+        "çevre"
+      ],
+      "badge1": "Orta",
+      "content": "## Harabe Ortamı Oluşturma\n1.  **Temel Yapılar:** Büyük, yıkık taş sütunlar, kemerler ve duvar parçaları yerleştirin.\n2.  **Bitki Örtüsü:** Taşların üzerine tırmanan sarmaşıklar, yosunlar ve küçük çalılıklar ekleyin. Zemine dökülen yapraklar kullanın.\n3.  **Aydınlatma:** Gün batımı veya sisli bir atmosfer için yumuşak, dağınık ışıklandırma tercih edin. Uzaklarda görünen dağlar veya ağaçlar ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Ortam & Sahne Prompts",
+      "name": "Siberpunk Sokak",
+      "desc": "Neon ışıklarla aydınlanmış, kalabalık ve teknolojik bir şehir sokağı sahnesi tasarlayın.",
+      "tags": [
+        "siberpunk",
+        "şehir",
+        "fütüristik"
+      ],
+      "badge1": "İleri",
+      "content": "## Siberpunk Sokak Sahnesi\n1.  **Binalar:** Yüksek, dikey yapılar ve asılı kablolar ekleyin. Çeşitli katmanlarda reklam panoları ve tabelalar kullanın.\n2.  **Aydınlatma:** Çok sayıda neon tabela, holografik reklam ve kirli sokak lambaları ile renkli bir ambiyans yaratın.\n3.  **Detaylar:** Buhar çıkan menholler, ıslak kaldırımlar, uçan araçlar ve kalabalık insan siluetleri ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Ortam & Sahne Prompts",
+      "name": "Gür Orman Yolu",
+      "desc": "Sık ağaçlar, bitki örtüsü ve hafif bir sisle kaplı, doğal bir orman yolu sahnesi.",
+      "tags": [
+        "orman",
+        "doğa",
+        "yol"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Orman Yolu Sahnesi\n1.  **Ağaçlar:** Farklı boyut ve türlerde sık ağaçlar yerleştirin. Uzaktaki ağaçlar için sis efekti kullanın.\n2.  **Zemin:** Toprak bir yol, düşmüş yapraklar, yosunlu taşlar ve küçük bitkiler ekleyin.\n3.  **Işıklandırma:** Ağaçların arasından süzülen güneş ışığı huzmeleri ile mistik bir atmosfer yaratın. Kuş sesleri veya hafif rüzgar sesi düşünün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Ortam & Sahne Prompts",
+      "name": "Su Altı Mercan Resifi",
+      "desc": "Renkli mercanlar, deniz yosunları ve egzotik balıklarla dolu canlı bir su altı resifi.",
+      "tags": [
+        "su-altı",
+        "mercan",
+        "deniz"
+      ],
+      "badge1": "Orta",
+      "content": "## Mercan Resifi Ortamı\n1.  **Mercan Çeşitliliği:** Farklı şekil ve renklerde, dallı, mantar, beyin mercanları ekleyin.\n2.  **Deniz Yaşamı:** Küçük, renkli balık sürüleri, denizanası ve yavaş hareket eden deniz kaplumbağaları ekleyin.\n3.  **Aydınlatma:** Yüzeyden süzülen güneş ışığı huzmeleri ile derinlik ve berraklık hissi verin. Su partiküllerini modelleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Nesne & Prop Prompts",
+      "name": "Ortaçağ Kılıcı",
+      "desc": "Paslı, eski ve detaylı bir kabzaya sahip tek elli bir ortaçağ kılıcı modeli oluşturun.",
+      "tags": [
+        "kılıç",
+        "silah",
+        "ortaçağ"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kılıç Modellemesi\n1.  **Bıçak:** Uzun, hafif kavisli bir bıçak tasarlayın. Pas ve çizik dokuları ekleyin.\n2.  **Kabza:** Deri sargılı veya metal işlemeli bir kabza oluşturun. Uç kısmına bir topuz ekleyin.\n3.  **Koruyucu:** Basit, çapraz bir koruyucu ekleyin. Metalin yıpranmış ve mat görünmesini sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Nesne & Prop Prompts",
+      "name": "Fütüristik Tabanca",
+      "desc": "Keskin hatlara, enerji hücrelerine ve ışık detaylarına sahip bir bilim kurgu tabancası.",
+      "tags": [
+        "tabanca",
+        "bilim-kurgu",
+        "silah"
+      ],
+      "badge1": "Orta",
+      "content": "## Fütüristik Tabanca Modeli\n1.  **Ana Gövde:** Keskin ve açılı hatlara sahip bir gövde oluşturun. Ergonomik bir tutuş düşünün.\n2.  **Enerji Kaynağı:** Şeffaf bir enerji hücresi veya parlak ışık detayı ekleyin.\n3.  **Materyal:** Mat siyah metal ve parlak krom detayları birleştirin. Küçük LED ışıklar ekleyerek modern bir görünüm verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Nesne & Prop Prompts",
+      "name": "Rustik Ahşap Sandık",
+      "desc": "Yıpranmış, eski ahşap ve metal detaylara sahip bir oyun içi sandık modeli.",
+      "tags": [
+        "sandık",
+        "ahşap",
+        "prop"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ahşap Sandık Modeli\n1.  **Temel Şekil:** Basit bir küp veya dikdörtgen prizma ile başlayın. Köşeleri hafifçe yuvarlayın.\n2.  **Ahşap Dokusu:** Eski, yıpranmış, budaklı ahşap dokusu uygulayın. Çizikler ve çatlaklar ekleyin.\n3.  **Metal Detaylar:** Köşelere ve kapağa demir bantlar ve menteşeler ekleyin. Paslı veya kararmış metal görünümü verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Nesne & Prop Prompts",
+      "name": "Sihirli İksir Şişesi",
+      "desc": "Parlayan sıvı içeren, oyma cam detaylara sahip fantezi temalı bir iksir şişesi.",
+      "tags": [
+        "iksir",
+        "fantezi",
+        "şişe"
+      ],
+      "badge1": "Orta",
+      "content": "## İksir Şişesi Modeli\n1.  **Şişe Şekli:** Eğri, yuvarlak veya köşeli, benzersiz bir cam şişe şekli tasarlayın.\n2.  **İçerik:** Şeffaf şişenin içinde parlayan, renkli bir sıvı modelleyin. Hafif bir dalgalanma efekti ekleyin.\n3.  **Detaylar:** Tıpa veya mantar kapak ekleyin. Şişe üzerinde küçük oymalar, tılsımlar veya etiketler kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Doku & Materyal Prompts",
+      "name": "Yıpranmış Taş Dokusu",
+      "desc": "Eski, yosunlu ve çatlaklara sahip bir duvar veya zemin için gerçekçi taş dokusu.",
+      "tags": [
+        "doku",
+        "taş",
+        "gerçekçi"
+      ],
+      "badge1": "Orta",
+      "content": "## Yıpranmış Taş Materyali\n1.  **Temel Renk:** Gri ve kahverengi tonlarında, doğal taş rengiyle başlayın.\n2.  **Yüzey Detayları:** Yüksek çözünürlüklü normal harita ile çatlaklar, oyuklar ve pürüzlü yüzeyler ekleyin.\n3.  **Detaylandırma:** Yosun veya nem lekeleri için renk katmanları kullanın. Hafif parlaklık ve nemli görünüm için pürüzlülük haritası ayarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Doku & Materyal Prompts",
+      "name": "Bilim Kurgu Metal Plaka",
+      "desc": "Kirli, çizik ve hafif yansıtıcı fütüristik bir metal plaka materyali oluşturun.",
+      "tags": [
+        "doku",
+        "metal",
+        "bilim-kurgu"
+      ],
+      "badge1": "Orta",
+      "content": "## Sci-Fi Metal Materyali\n1.  **Ana Renk:** Koyu gri veya hafif mavimsi metal tonu seçin.\n2.  **Yüzey Detayları:** Normal harita ile küçük çizikler, vida delikleri ve hafif ezikler ekleyin. Perdeleme detayları kullanın.\n3.  **Yansıtıcılık:** Hafif parlak ve metalik bir görünüm için pürüzlülük ve metalik haritaları ayarlayın. Yağ lekeleri veya kir katmanları ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Doku & Materyal Prompts",
+      "name": "İşlemeli Kumaş Deseni",
+      "desc": "Zengin, altın işlemeli ve kadife benzeri bir fantezi kumaş dokusu tasarlayın.",
+      "tags": [
+        "doku",
+        "kumaş",
+        "işleme"
+      ],
+      "badge1": "İleri",
+      "content": "## İşlemeli Kumaş Materyali\n1.  **Kumaş Temeli:** Koyu renkli, kadife veya ipek benzeri bir kumaş dokusuyla başlayın.\n2.  **İşleme Deseni:** Altın rengi ipliklerle karmaşık, fantezi motifleri (ejderha, çiçek vb.) oluşturun.\n3.  **Detaylar:** İşlemelerin hafifçe kabartmalı görünmesi için normal harita kullanın. Kumaşa yumuşak bir parlaklık ve derinlik katın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Doku & Materyal Prompts",
+      "name": "Volkanik Kaya Materyali",
+      "desc": "Siyah, gözenekli ve yer yer parlayan lav çatlaklarına sahip bir volkanik kaya dokusu.",
+      "tags": [
+        "doku",
+        "kaya",
+        "volkanik"
+      ],
+      "badge1": "Orta",
+      "content": "## Volkanik Kaya Materyali\n1.  **Temel Renk:** Koyu gri veya siyah, düzensiz bir baz renk kullanın.\n2.  **Yüzey Detayları:** Yüksek çözünürlüklü bump/normal harita ile gözenekli ve keskin kenarlı kaya yapısı oluşturun.\n3.  **Lav Etkisi:** Kayaların arasındaki çatlaklarda parlayan, hafifçe erimiş lav benzeri bir emisyon katmanı ekleyin. Duman efekti düşünün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Animasyon & Rig Prompts",
+      "name": "Temel İnsansı Rig",
+      "desc": "Karakter modelini canlandırmak için temel kemik yapısına sahip bir insansı rig oluşturun.",
+      "tags": [
+        "rig",
+        "animasyon",
+        "insansı"
+      ],
+      "badge1": "Orta",
+      "content": "## İnsansı Rig Oluşturma\n1.  **Ana Eklemler:** Omurga, kalça, diz, dirsek ve boyun için temel kemikleri yerleştirin.\n2.  **İleri Kontroller:** IK (Ters Kinematik) kolları ve bacakları için kontroller ekleyin. El ve ayak kontrolörlerini detaylandırın.\n3.  **Ağırlık Boyama:** Cildin deformasyonunu doğru sağlamak için ağırlık boyama işlemini dikkatlice yapın. Göz ve çene için basit kemikler ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Animasyon & Rig Prompts",
+      "name": "Dört Ayaklı Yürüme Döngüsü",
+      "desc": "Bir hayvan (köpek, kedi vb.) için doğal ve akıcı bir yürüme döngüsü animasyonu tasarlayın.",
+      "tags": [
+        "animasyon",
+        "hayvan",
+        "yürüme"
+      ],
+      "badge1": "İleri",
+      "content": "## Dört Ayaklı Yürüme Animasyonu\n1.  **Temel Pozlar:** Başlangıç, temas, geçiş ve itme pozlarını belirleyin. Toplam 24 karelik bir döngü hedefleyin.\n2.  **Ağırlık Aktarımı:** Vücut ağırlığının ayaklar arasında nasıl dağıldığını gözlemleyin ve bunu animasyona yansıtın.\n3.  **Detaylar:** Kuyruk, kulaklar ve baş hareketleri ile animasyona doğal bir akıcılık katın. Nefes alıp verme ritmini ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Animasyon & Rig Prompts",
+      "name": "Pasif Bekleme Animasyonu",
+      "desc": "Karakterin dururken yaptığı hafif ve doğal bir bekleme (idle) animasyonu tasarlayın.",
+      "tags": [
+        "animasyon",
+        "bekleme",
+        "karakter"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bekleme Animasyonu\n1.  **Hafif Sallanma:** Karakterin vücudunda, özellikle omuzlarda ve kalçada hafif bir yükselme ve alçalma hareketi ekleyin.\n2.  **Nefes Alma:** Göğüs kafesinin doğal bir nefes alma ritmiyle hafifçe hareket etmesini sağlayın.\n3.  **Küçük Detaylar:** Başın hafif yana eğilmesi, göz kırpma veya parmakların hafifçe kıpırdaması gibi küçük detaylar ekleyerek canlılık katın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "FX & Partikül Prompts",
+      "name": "Sihir Büyüsü Efekti",
+      "desc": "Parlayan, renkli ve girdap benzeri bir enerjiye sahip sihirli büyü efekti oluşturun.",
+      "tags": [
+        "efekt",
+        "sihir",
+        "partikül"
+      ],
+      "badge1": "Orta",
+      "content": "## Sihir Efekti Oluşturma\n1.  **Ana Partikül Sistemi:** Parlayan, renkli noktacıklar veya küçük küreler yayan bir sistem oluşturun.\n2.  **Girdap Hareketi:** Partiküllerin bir merkez etrafında dönerek yükselmesini veya yayılmasını sağlayın. Hafif bir duman veya buhar efekti ekleyin.\n3.  **Renk ve Yoğunluk:** Büyünün türüne göre (ateş, buz vb.) renk paleti seçin ve efekti güçlendirmek için yoğunluğu ayarlayın. Hafif bir ışık yansıması ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "FX & Partikül Prompts",
+      "name": "Patlama Efekti",
+      "desc": "Duman, kıvılcım ve enkaz parçacıkları içeren dinamik bir patlama efekti tasarlayın.",
+      "tags": [
+        "efekt",
+        "patlama",
+        "dinamik"
+      ],
+      "badge1": "İleri",
+      "content": "## Patlama Efekti Oluşturma\n1.  **Duman ve Ateş:** Hızla genişleyen, turuncu-kırmızı tonlarda ateş ve koyu gri duman partikülleri oluşturun.\n2.  **Enkaz Parçacıkları:** Patlama noktasından dışarı doğru fırlayan küçük, keskin kenarlı enkaz parçacıkları ekleyin. Yerçekimi ve çarpışma fiziklerini uygulayın.\n3.  **Şok Dalgası:** Görünmez bir şok dalgası efekti veya hafif bir bulanıklık ile patlamanın etkisini artırın. Kısaltılmış yaşam döngüsü kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

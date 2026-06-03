@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Temel Eşleştirme Algoritmaları",
+      "name": "Temel Eşleştirme Algoritmaları",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Performans ve Ölçeklendirme",
+      "name": "Performans ve Ölçeklendirme",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Dereceli Sistemler",
+      "name": "Dereceli Sistemler",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Lobi ve Grup Yönetimi",
+      "name": "Lobi ve Grup Yönetimi",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Özel Maç Kuralları",
+      "name": "Özel Maç Kuralları",
+      "color": "#FF5722"
+    },
+    {
+      "id": "Hile ve İstismar Önleme",
+      "name": "Hile ve İstismar Önleme",
+      "color": "#F44336"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Temel Eşleştirme Algoritmaları",
+      "name": "Beceri Tabanlı Eşleştirme",
+      "desc": "Oyuncuları benzer beceri seviyelerine göre eşleştirmek için basit bir algoritma şablonu.",
+      "tags": [
+        "beceri",
+        "elo",
+        "algoritma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Beceri Puanına Göre Eşleştirme\nBu şablon, oyuncuları belirli bir beceri puanı aralığında eşleştirir.\n1. Oyuncu havuzundan eşleşme arayan oyuncuları topla.\n2. Her oyuncu için mevcut beceri puanını (örn. Elo) belirle.\n3. Belirlenen bir eşik (örn. +/- 150 puan) dahilindeki oyuncuları gruplandır.\n4. Eşleşme bulunamazsa, eşiği kademeli olarak genişlet.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Temel Eşleştirme Algoritmaları",
+      "name": "Gecikme Duyarlı Eşleştirme",
+      "desc": "Oyuncuları en düşük ağ gecikmesine sahip sunuculara ve diğer oyunculara göre eşleştirir.",
+      "tags": [
+        "gecikme",
+        "ağ",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Gecikme Optimizasyonlu Eşleştirme\nOyuncular için ideal sunucuyu ve rakipleri gecikme (ping) bazında belirleyin.\n1. Oyuncunun bölgeye özel sunuculara olan ping değerlerini topla.\n2. Oyuncunun en düşük gecikmeye sahip olduğu sunucu bölgesini önceliklendir.\n3. Aynı bölgedeki veya kabul edilebilir gecikme aralığındaki diğer oyuncularla eşleştir.\n4. Gecikme eşiğini aşan eşleşmelerden kaçın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Temel Eşleştirme Algoritmaları",
+      "name": "Havuz Genişletme Stratejisi",
+      "desc": "Eşleşme süresini optimize etmek için oyuncu arama kriterlerini kademeli olarak genişletir.",
+      "tags": [
+        "havuz",
+        "genişleme",
+        "bekleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Dinamik Havuz Genişletme\nUzun bekleme sürelerini önlemek için eşleşme kriterlerini zamanla esnetin.\n1. Başlangıçta dar bir beceri/gecikme aralığıyla eşleşme ara.\n2. Her 30 saniyede bir, arama kriterlerini (örn. beceri farkı, ping toleransı) %10 genişlet.\n3. Maksimum genişletme limitine ulaşıldığında, oyuncuya eşleşme bulunamadığını bildir veya daha geniş havuzda eşleştir.\n4. Gerekirse farklı bölgelerdeki oyuncuları dahil et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Temel Eşleştirme Algoritmaları",
+      "name": "Rol Tabanlı Eşleştirme",
+      "desc": "Takım tabanlı oyunlarda belirli rol dağılımına (örn. tank, hasar, destek) göre eşleştirme yapar.",
+      "tags": [
+        "rol",
+        "takım",
+        "denge"
+      ],
+      "badge1": "İleri",
+      "content": "## Rol Odaklı Takım Oluşturma\nMOBA veya RPG benzeri oyunlar için dengeli takım kompozisyonları oluşturun.\n1. Oyuncunun tercih ettiği veya atanan rolü (örn. Tank, DPS, Destek) al.\n2. Takım başına hedeflenen rol dağılımını (örn. 1 Tank, 2 DPS, 1 Destek) tanımla.\n3. Oyuncu havuzundan bu dağılıma uyan grupları önceliklendirerek eşleştir.\n4. Eksik rol varsa, oyuncuları alternatif rollere yönlendirmeyi düşün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Performans ve Ölçeklendirme",
+      "name": "Dağıtık Eşleştirme Servisi",
+      "desc": "Yüksek yük altında bile tutarlı performans sağlamak için eşleştirme servisini dağıtın.",
+      "tags": [
+        "dağıtık",
+        "servis",
+        "ölçek"
+      ],
+      "badge1": "İleri",
+      "content": "## Dağıtık Eşleştirme Mimarisi\nBüyük oyuncu tabanları için eşleştirme yükünü birden fazla sunucuya dağıtın.\n1. Eşleştirme mantığını, oyuncu havuzu yönetimini ve maç başlatmayı ayrı mikroservisler olarak tasarla.\n2. Oyuncu isteklerini yük dengeleyiciler aracılığıyla uygun servislere yönlendir.\n3. Her servis örneğini bağımsız olarak ölçeklendirebilmeyi sağla.\n4. Veri tutarlılığı için dağıtık kilit mekanizmaları kullan.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Performans ve Ölçeklendirme",
+      "name": "Oyuncu Verisi Önbellekleme",
+      "desc": "Sık erişilen oyuncu verilerini önbelleğe alarak eşleştirme sürecini hızlandırın.",
+      "tags": [
+        "önbellek",
+        "veri",
+        "hız"
+      ],
+      "badge1": "Orta",
+      "content": "## Hızlı Oyuncu Verisi Erişimi\nEşleştirme sürecindeki gecikmeyi azaltmak için oyuncu verilerini etkin şekilde önbelleğe alın.\n1. Oyuncunun beceri puanı, bölgesi ve tercihleri gibi kritik verileri Redis gibi bir önbellek sistemine yükle.\n2. Eşleştirme algoritmaları bu verileri doğrudan önbellekten okusun.\n3. Oyuncu verileri güncellendiğinde önbelleği de eş zamanlı olarak güncelle.\n4. Önbellek geçerlilik süresini (TTL) dikkatlice ayarla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Performans ve Ölçeklendirme",
+      "name": "Sunucu Kapasite Yönetimi",
+      "desc": "Eşleşme motorunu uygun sunucu kapasitesiyle senkronize ederek kaynak kullanımını optimize edin.",
+      "tags": [
+        "kapasite",
+        "sunucu",
+        "optimizasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Dinamik Sunucu Tahsisi\nMaçların başlatılması için yeterli sunucu kaynağını sağlamak amacıyla eşleştirme motorunu sunucu yöneticisiyle entegre edin.\n1. Eşleştirme motoru, maç başlatmadan önce sunucu yöneticisinden boş kapasite sorgulasın.\n2. Yeterli kapasite varsa, maç oluşturma isteğini gönder ve sunucuyu rezerve et.\n3. Kapasite yetersizse, eşleşmeyi beklemeye al veya farklı bir bölgeyi dene.\n4. Otomatik ölçeklendirme kurallarını entegre et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Dereceli Sistemler",
+      "name": "Elo Puanı Güncelleme",
+      "desc": "Oyuncu beceri puanlarını maç sonuçlarına göre güncellemeyi sağlayan temel Elo formülü.",
+      "tags": [
+        "elo",
+        "derece",
+        "puan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Elo Puanı Hesaplama\nMaç sonucuna göre oyuncuların Elo puanlarını güncelleyin.\n1. Kazanma olasılığını hesapla: `Ea = 1 / (1 + 10^((Rb - Ra) / 400))`.\n2. Puan farkını hesapla: `Puan_Farkı = K * (Sa - Ea)` (Sa: gerçek sonuç, 1 kazanma, 0 kaybetme, 0.5 beraberlik).\n3. Yeni Elo puanını belirle: `Yeni_Ra = Ra + Puan_Farkı`.\n4. K faktörünü oyuncu seviyesine göre ayarla (örn. yeni oyuncular için daha yüksek K).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Dereceli Sistemler",
+      "name": "Glicko-2 Sistemi",
+      "desc": "Daha doğru ve dinamik derecelendirme için Glicko-2 algoritmasını uygulayın.",
+      "tags": [
+        "glicko",
+        "derece",
+        "doğruluk"
+      ],
+      "badge1": "İleri",
+      "content": "## Glicko-2 Derecelendirme\nGlicko-2, Elo'ya göre daha gelişmiş ve belirsizliği (RD) hesaba katan bir sistemdir.\n1. Oyuncunun derecesi (R), derece sapması (RD) ve oynaklık (Sigma) değerlerini sakla.\n2. Her maçtan sonra, oyuncunun performansını ve rakiplerinin RD'sini kullanarak yeni R, RD ve Sigma değerlerini hesapla.\n3. Oyuncu uzun süre maç yapmazsa RD'sini artırarak belirsizliğini yansıt.\n4. Glicko-2 algoritmasının standart formüllerini kullan.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Dereceli Sistemler",
+      "name": "Sezon Sıfırlama Mantığı",
+      "desc": "Dereceli sezon geçişlerinde oyuncu puanlarını adil bir şekilde sıfırlama stratejisi.",
+      "tags": [
+        "sezon",
+        "sıfırlama",
+        "derece"
+      ],
+      "badge1": "Orta",
+      "content": "## Sezon Geçişi Sıfırlaması\nYeni sezon başlangıcında oyuncu derecelerini kısmen sıfırlayarak rekabeti tazeleyin.\n1. Yeni sezon başlarken her oyuncunun mevcut derecesini al.\n2. `Yeni_Derece = (Mevcut_Derece + Temel_Derece) / 2` gibi bir formülle yumuşak sıfırlama yap.\n3. Sıfırlama sonrası oyunculara 5-10 yerleştirme maçı oynatarak yeni derecelerini belirle.\n4. Oyuncuların önceki sezon başarılarını yeni sezonda rozet veya unvan olarak göster.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Dereceli Sistemler",
+      "name": "Yerleştirme Maçı Mantığı",
+      "desc": "Yeni veya sıfırlanmış hesaplar için başlangıç derecesini belirleyen yerleştirme maçları.",
+      "tags": [
+        "yerleştirme",
+        "derece",
+        "yeni"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yerleştirme Maçları Akışı\nOyuncuların başlangıç derecesini belirlemek için bir dizi yerleştirme maçı kullanın.\n1. Yeni bir oyuncu veya sezon sıfırlaması sonrası, oyuncuyu yerleştirme modu havuzuna al.\n2. Oyuncuya belirli sayıda (örn. 10) 'yerleştirme maçı' oynat.\n3. Bu maçlardaki performansı (galibiyet/mağlubiyet) ve rakiplerin derecesini kullanarak geçici bir Elo/Glicko puanı hesapla.\n4. Tüm yerleştirme maçları bittiğinde, oyuncuya nihai başlangıç derecesini ata.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Lobi ve Grup Yönetimi",
+      "name": "Parti Oluşturma Akışı",
+      "desc": "Oyuncuların arkadaşlarıyla grup oluşturup birlikte eşleşmeye girmeleri için temel adımlar.",
+      "tags": [
+        "parti",
+        "grup",
+        "lobi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Parti Kurulumu ve Katılım\nOyuncuların arkadaşlarıyla kolayca grup oluşturup maç arayabilmesini sağlayın.\n1. Bir oyuncu parti lideri olarak bir parti oluşturur.\n2. Lider, arkadaş listesinden oyuncuları partiye davet eder.\n3. Davet edilen oyuncular daveti kabul ederek partiye katılır.\n4. Parti lideri, tüm parti üyeleri hazır olduğunda eşleşme sürecini başlatır.\n5. Parti üyelerinin ortalama beceri puanına göre eşleştirme yapılır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Lobi ve Grup Yönetimi",
+      "name": "Lobi Hazırlık Kontrolü",
+      "desc": "Maç başlamadan önce tüm oyuncuların hazır olduğunu teyit eden bir sistem.",
+      "tags": [
+        "hazır",
+        "lobi",
+        "doğrulama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Maç Öncesi Hazırlık Kontrolü\nMaçın sorunsuz başlaması için tüm oyuncuların hazır olduğunu doğrulayın.\n1. Eşleşme bulunduğunda, tüm oyunculara bir 'Hazır?' bildirimi gönder.\n2. Belirli bir süre (örn. 15 saniye) içinde tüm oyunculardan 'Hazırım' onayı al.\n3. Tüm oyuncular onaylarsa maç başlasın; aksi takdirde, eşleşmeyi iptal et ve oyuncuları tekrar sıraya koy.\n4. Onaylamayan oyuncuları geçici olarak eşleşmeden men etmeyi düşün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Lobi ve Grup Yönetimi",
+      "name": "Çapraz Platform Parti",
+      "desc": "Farklı platformlardaki (PC, Konsol) oyuncuların birlikte grup kurmasını sağlar.",
+      "tags": [
+        "çapraz",
+        "platform",
+        "parti"
+      ],
+      "badge1": "İleri",
+      "content": "## Çapraz Platform Parti Entegrasyonu\nFarklı platformlardaki oyuncuların birlikte oynamasına olanak tanıyın.\n1. Her oyuncuya benzersiz, platformdan bağımsız bir kimlik (örn. Epic Games hesabı) ata.\n2. Parti davet sistemini bu kimlikler üzerinden çalışacak şekilde tasarla.\n3. Parti kurulduğunda, tüm platformların ortak sunucu bölgesine yönlendirildiğinden emin ol.\n4. Çapraz platform eşleştirmeyi etkinleştirirken performans ve gecikme konularını göz önünde bulundur.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Özel Maç Kuralları",
+      "name": "Battle Royale Alan Küçültme",
+      "desc": "Battle Royale oyunlarında güvenli alanı zamanla küçülten temel bir sistem.",
+      "tags": [
+        "battle royale",
+        "alan",
+        "mekanik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Güvenli Alan Küçültme Mantığı\nBattle Royale oyunlarında oyuncuları belirli bir alana yönlendiren mekaniği uygulayın.\n1. Haritada başlangıçta geniş bir güvenli alan tanımla.\n2. Belirli zaman aralıklarında (örn. her 3 dakikada bir) bir sonraki güvenli alanın merkezini ve yarıçapını belirle.\n3. Mevcut güvenli alandan yeni alana doğru bir 'fırtına' veya 'çember' animasyonu başlat.\n4. Çember dışında kalan oyunculara hasar vererek onları içeriye yönlendir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Özel Maç Kuralları",
+      "name": "Özel Oyun Takım Dengeleme",
+      "desc": "Özel maçlarda oyuncuların beceri puanlarına göre takımları otomatik olarak dengeleme.",
+      "tags": [
+        "dengeleme",
+        "takım",
+        "özel maç"
+      ],
+      "badge1": "Orta",
+      "content": "## Otomatik Özel Maç Takım Dengeleme\nÖzel oyunlarda eşit rekabet ortamı sağlamak için takımları beceriye göre dengeleyin.\n1. Özel maça katılan tüm oyuncuların beceri puanlarını topla.\n2. Oyuncuları en yüksek puanlıdan en düşüğe doğru sırala.\n3. Takım A'ya en yüksek puanlı oyuncuyu, Takım B'ye ikinci en yüksek puanlı oyuncuyu ata ve bu şekilde devam et (yılan algoritması).\n4. Takımların toplam beceri puanları arasındaki farkı minimize etmeye çalış.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Özel Maç Kuralları",
+      "name": "Asimetrik Mod Kurulumu",
+      "desc": "Farklı oyuncu gruplarının farklı hedeflere sahip olduğu asimetrik oyun modları için şablon.",
+      "tags": [
+        "asimetrik",
+        "mod",
+        "oyun"
+      ],
+      "badge1": "İleri",
+      "content": "## Asimetrik Oyun Modu Eşleştirmesi\nBir tarafın (örn. avcı) diğer taraftan (örn. av) sayıca farklı olduğu modları dengeleyin.\n1. Oyuncu havuzunu avcı ve avcı olmayan roller için ayrı kuyruklara ayır.\n2. Her rol için uygun beceri eşleştirmesi yap.\n3. Maç oluştururken, her iki taraftan da gerekli sayıda oyuncunun hazır olduğundan emin ol (örn. 1 avcı, 4 av).\n4. Rol tercihleri ve bekleme sürelerini dengeleyerek oyuncu deneyimini optimize et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Hile ve İstismar Önleme",
+      "name": "Raporlama Sistemi Entegrasyonu",
+      "desc": "Oyuncuların şüpheli davranışları bildirebileceği bir sistemin eşleştirme motoruyla entegrasyonu.",
+      "tags": [
+        "rapor",
+        "hile",
+        "güvenlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Oyuncu Rapor Sistemi\nOyuncuların hile veya kötü davranışları bildirmesini sağlayarak maç kalitesini artırın.\n1. Maç içi veya maç sonrası arayüze bir 'Rapor Et' düğmesi ekle.\n2. Oyuncuların rapor türünü (hile, küfür vb.) seçmesini ve kısa açıklama yapmasını sağla.\n3. Raporları merkezi bir moderasyon sistemine gönder ve ilgili maç verilerini (replay, skor) ilişkilendir.\n4. Tekrarlanan raporlar alan oyuncuları geçici olarak eşleştirme havuzundan çıkar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Hile ve İstismar Önleme",
+      "name": "Maç Bütünlüğü Kontrolleri",
+      "desc": "Maç sonuçlarının ve oyuncu performansının hileden etkilenmediğini doğrulayan mekanizmalar.",
+      "tags": [
+        "bütünlük",
+        "hile",
+        "doğrulama"
+      ],
+      "badge1": "İleri",
+      "content": "## Maç Bütünlüğü Doğrulaması\nHile veya istismarı tespit etmek için maç verilerini analiz edin.\n1. Maç sırasında ve sonunda oyuncu istatistiklerini (vuruş oranı, hareket hızı, skor) topla.\n2. Bu istatistikleri oyuncunun geçmiş performansı ve diğer oyuncuların ortalamalarıyla karşılaştır.\n3. Anormal sapmalar (örn. %90+ kafa vuruş oranı) tespit edildiğinde, oyuncuyu incelemeye al veya otomatik olarak işaretle.\n4. Hile tespit edildiğinde, oyuncuyu eşleştirme havuzundan kalıcı olarak men et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Hile ve İstismar Önleme",
+      "name": "Smurf Hesap Tespiti",
+      "desc": "Deneyimli oyuncuların düşük dereceli hesaplarla oynamasını (smurf) engelleme yöntemleri.",
+      "tags": [
+        "smurf",
+        "hile",
+        "denge"
+      ],
+      "badge1": "İleri",
+      "content": "## Smurf Tespit Mekanizmaları\nDeneyimli oyuncuların yeni hesaplarla düşük dereceli maçlara girip dengeyi bozmasını engelleyin.\n1. Yeni hesapların erken maçlardaki performansını (skor, KDA, oyun süresi) yakından izle.\n2. Çok hızlı beceri puanı artışı gösteren veya sürekli olarak maçları domine eden hesapları işaretle.\n3. IP adresi, donanım kimliği gibi verileri kullanarak birden fazla hesap arasında ilişki ara.\n4. Tespit edilen smurf hesapları daha yüksek dereceli havuzlara yönlendir veya ceza uygula.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Temel Tasarım",
+      "name": "Temel State Machine Tasarımı",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Oyun Mekanikleri",
+      "name": "Oyun Mekaniği Uygulamaları",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Animasyon",
+      "name": "Karakter Animasyon Durumları",
+      "color": "#2196F3"
+    },
+    {
+      "id": "AI Yönetimi",
+      "name": "AI Durum Yönetimi",
+      "color": "#E91E63"
+    },
+    {
+      "id": "3D Etkileşim",
+      "name": "3D Sahne Etkileşimleri",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "C++ Entegrasyon",
+      "name": "C++ Kod Üretimi",
+      "color": "#FF5722"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Temel Tasarım",
+      "name": "Basit Durum Makinesi",
+      "desc": "Bir oyun objesi için temel durum makinesini ve ilk geçişleri tanımlayın.",
+      "tags": [
+        "temel",
+        "mimari",
+        "yapı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yeni State Machine Oluşturma\nBir oyun objesi için temel durum makinesini tanımlayın.\n1.  **Başlangıç Durumu:** `Idle` olarak adlandırın.\n2.  **Geçişler:** `Idle` -> `Moving`, `Idle` -> `Attacking` tanımlayın.\n3.  **Çıkış Koşulları:** Her durumdan `Exit` koşullarını belirleyin.\nBu yapı, karakterin temel davranış akışını netleştirir ve genişletilebilir bir temel sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Temel Tasarım",
+      "name": "Durum Geçiş Kuralları",
+      "desc": "Durumlar arası geçişleri tetikleyen olayları ve koşulları yapılandırın.",
+      "tags": [
+        "geçiş",
+        "olay",
+        "koşul"
+      ],
+      "badge1": "Orta",
+      "content": "## Geçiş Kurallarını Belirleme\nGeçişleri tetikleyen olay ve koşulları tanımlayın.\n1.  **Olay Tetikleyiciler:** `OnInput_Move`, `OnEnemyDetected` gibi olaylar oluşturun.\n2.  **Koşullar:** `HasStamina > 0`, `IsGrounded == true` gibi Boolean koşulları ekleyin.\n3.  **Öncelik:** Aynı anda birden fazla geçiş mümkünse öncelik sıralaması belirleyin.\nBu, durum değişimlerinin öngörülebilir ve mantıklı olmasını sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Temel Tasarım",
+      "name": "Hiyerarşik Durumlar",
+      "desc": "İç içe geçmiş durum makineleri oluşturarak karmaşıklığı yönetin.",
+      "tags": [
+        "hiyerarşi",
+        "alt durum",
+        "modüler"
+      ],
+      "badge1": "İleri",
+      "content": "## Alt Durum Yapılandırma\nDaha büyük bir durum içinde alt durumlar tanımlayarak hiyerarşi oluşturun.\n1.  **Ana Durum:** `Combat` durumunu oluşturun.\n2.  **Alt Durumlar:** `Combat` içinde `Attacking`, `Dodging`, `Blocking` gibi alt durumlar ekleyin.\n3.  **Geçiş Kapsamı:** Alt durumların kendi içinde geçişlerini ve ana duruma geri dönüşleri belirleyin.\nBu, karmaşık sistemleri daha okunabilir ve yönetilebilir hale getirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Oyun Mekanikleri",
+      "name": "Karakter Hareket Durumları",
+      "desc": "Oyun karakterinin yürüme, koşma ve zıplama durumlarını modelleyin.",
+      "tags": [
+        "oyuncu",
+        "hareket",
+        "mekanik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Hareket Durumlarını Tasarlama\nBir karakterin temel hareket durumlarını tanımlayın.\n1.  **Durumlar:** `Idle`, `Walking`, `Running`, `Jumping`, `Falling` durumlarını oluşturun.\n2.  **Geçişler:** `Walking` -> `Running` (Shift basılı), `Idle` -> `Jumping` (Space basılı ve yerde).\n3.  **Fizik Etkileşimi:** Her durumda uygun fiziksel kuvvetleri ve hızları uygulayın.\nBu yapı, karakter hareketlerinin akıcı ve tutarlı olmasını sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Oyun Mekanikleri",
+      "name": "Zıplama Durumu Yönetimi",
+      "desc": "Karakterin zıplama mekaniğini state machine ile uygulayın.",
+      "tags": [
+        "zıplama",
+        "fizik",
+        "oyuncu"
+      ],
+      "badge1": "Orta",
+      "content": "## Zıplama Durumu Yönetimi\nKarakterin zıplama mekaniğini state machine ile uygulayın.\n1.  **`Jumping` Durumu:** Zıplama animasyonunu tetikleyin.\n2.  **Giriş Koşulu:** `IsGrounded` false iken `Jump` tuşu basıldığında.\n3.  **Çıkış Koşulu:** Animasyon bitince ve `IsGrounded` true olunca `Idle` veya `Falling` durumuna geçiş.\n4.  **Hava Kontrolü:** Zıplama sırasında hareket kabiliyetini kısıtlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Oyun Mekanikleri",
+      "name": "Envanter Durumları",
+      "desc": "Envanter açma, kapama ve eşya kullanma durumlarını yönetin.",
+      "tags": [
+        "UI",
+        "envanter",
+        "oyuncu"
+      ],
+      "badge1": "Orta",
+      "content": "## Envanter Arayüzü Durumları\nOyun içi envanter sisteminin durumlarını modelleyin.\n1.  **`InventoryClosed`:** Oyunun normal akışı.\n2.  **`InventoryOpen`:** Envanter arayüzünün aktif olduğu durum.\n3.  **`ItemSelected` (Alt Durum):** Envanter açıkken bir eşyanın seçilmesi.\n4.  **Geçişler:** ESC ile `Open`->`Closed`, `UseItem` ile `Selected`->`Closed`.\nBu, kullanıcı arayüzü etkileşimlerini düzenler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Animasyon",
+      "name": "Animasyon Durum Grafiği",
+      "desc": "State makine durumlarını animasyon klipleriyle eşleştirerek dinamik animasyonlar oluşturun.",
+      "tags": [
+        "animasyon",
+        "karakter",
+        "görsel"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Animasyon State'lerini Eşleştirme\nDurum makinesi state'lerini ilgili animasyon klipleriyle bağlayın.\n1.  **Durum-Klip Haritalama:** Her `Idle`, `Walk`, `Run` durumu için uygun animasyon klip adlarını tanımlayın.\n2.  **Geçiş Eşleşmeleri:** State geçişleriyle animasyon geçişlerini (blend süreleri dahil) senkronize edin.\n3.  **Hız Parametreleri:** `WalkSpeed` gibi değişkenleri animasyon hızına bağlayın.\nBu, karakterin görsel olarak canlı görünmesini sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Animasyon",
+      "name": "Animasyon Geçiş Blend'leri",
+      "desc": "Akıcı animasyon geçişleri için blend sürelerini ve koşullarını ayarlayın.",
+      "tags": [
+        "animasyon",
+        "geçiş",
+        "akıcılık"
+      ],
+      "badge1": "Orta",
+      "content": "## Akıcı Animasyon Geçişleri\nDurumlar arası geçişlerde animasyonların yumuşak bir şekilde harmanlanmasını sağlayın.\n1.  **Blend Süreleri:** Her geçiş için (örneğin `Walk`'tan `Run`'a) uygun blend süreleri tanımlayın (0.2-0.5 saniye).\n2.  **Blend Koşulları:** Hız veya giriş yönü gibi parametrelere göre dinamik blend kararları alın.\n3.  **Kesintili Geçişler:** Darbe veya düşme gibi acil durumlar için anında geçişler belirleyin.\nBu, animasyonların doğal görünmesini sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Animasyon",
+      "name": "Durum Tabanlı Çift Katman Animasyon",
+      "desc": "Farklı vücut bölgeleri için bağımsız animasyon durumlarını yönetin.",
+      "tags": [
+        "katman",
+        "çift animasyon",
+        "karmaşık"
+      ],
+      "badge1": "İleri",
+      "content": "## Çift Katmanlı Animasyon Yönetimi\nÜst vücut ve alt vücut için ayrı animasyon state'leri yönetin.\n1.  **Katman Tanımı:** `UpperBody` ve `LowerBody` gibi iki animasyon katmanı oluşturun.\n2.  **Bağımsız State'ler:** `LowerBody` için `Walk`, `Run` ve `UpperBody` için `Aim`, `Reload` durumları tanımlayın.\n3.  **Senkronizasyon:** Gerekirse katmanlar arası senkronizasyon noktalarını veya olayları belirleyin.\nBu, zengin ve dinamik karakter animasyonları oluşturur.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "AI Yönetimi",
+      "name": "Düşman AI Temel Davranışı",
+      "desc": "Düşman AI için temel devriye, kovalamaca ve saldırı durumlarını modelleyin.",
+      "tags": [
+        "AI",
+        "düşman",
+        "davranış"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel Düşman AI Durumları\nBasit bir düşman AI için ana davranış durumlarını tanımlayın.\n1.  **`Patrol` (Devriye):** Belirli yollar üzerinde hareket eder.\n2.  **`Chase` (Kovalamaca):** Oyuncuyu görüş alanına girince takip eder.\n3.  **`Attack` (Saldırı):** Oyuncu menzile girince saldırır.\n4.  **Geçiş Koşulları:** `PlayerDetected`, `PlayerLost`, `AttackRangeReached` gibi koşulları belirleyin.\nBu, düşmanların öngörülebilir ve mantıklı davranmasını sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "AI Yönetimi",
+      "name": "Algı ve Tepki Durumları",
+      "desc": "AI'nın çevresel algılara göre durum değiştirmesini sağlayın.",
+      "tags": [
+        "algı",
+        "tepki",
+        "sensör"
+      ],
+      "badge1": "Orta",
+      "content": "## Algı Tabanlı AI Durumları\nAI'nın çevresel algılara göre davranışını değiştiren durumlar yaratın.\n1.  **`Idle`:** Hiçbir tehdit yokken bekler.\n2.  **`Alert`:** Ses veya görsel bir ipucu aldığında şüphelenir ve araştırır.\n3.  **`Engaged`:** Doğrudan tehdit algıladığında çatışmaya girer.\n4.  **Algı Mekanizmaları:** `SightCone`, `HearRadius` gibi algı sensörlerini durum geçişlerine bağlayın.\nBu, AI'ya dinamik ve gerçekçi tepkiler kazandırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "AI Yönetimi",
+      "name": "Hedef Tabanlı AI Durumları",
+      "desc": "AI'nın belirli hedeflere ulaşmak için durumlarını yönetin.",
+      "tags": [
+        "hedef",
+        "görev",
+        "NPC"
+      ],
+      "badge1": "İleri",
+      "content": "## Hedef Odaklı AI Durumları\nAI'nın belirli bir hedefe ulaşmak için durumlar arasında geçiş yapmasını sağlayın.\n1.  **`SeekingObjective`:** Belirlenen bir hedefe doğru hareket eder.\n2.  **`InteractingWithTarget`:** Hedefe ulaştığında belirli bir eylemi gerçekleştirir (örneğin, kapı açma).\n3.  **`ReturningToPost`:** Hedefe ulaşıldıktan sonra başlangıç noktasına döner.\n4.  **Hedef Koşulları:** `TargetReached`, `InteractionComplete` gibi koşulları tanımlayın.\nBu, görev tabanlı AI davranışlarını kolaylaştırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "3D Etkileşim",
+      "name": "Etkileşimli Obje Durumları",
+      "desc": "Kapı, düğme gibi 3D objelerin etkileşim durumlarını modelleyin.",
+      "tags": [
+        "objeler",
+        "etkileşim",
+        "çevre"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Etkileşimli Objelerin Durumları\nBir kapı veya düğme gibi objelerin etkileşim durumlarını tanımlayın.\n1.  **`Closed` / `Locked`:** Objenin varsayılan kapalı veya kilitli durumu.\n2.  **`Open` / `Unlocked`:** Objenin etkileşim sonucu açılmış veya kilitsiz durumu.\n3.  **`Interacting`:** Oyuncunun objeyle etkileşimde olduğu kısa süreli durum (animasyon oynatma).\n4.  **Geçişler:** `UseKey`, `PlayerProximity`, `ButtonPressed` gibi olayları kullanın.\nBu, çevre etkileşimlerini düzenler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "3D Etkileşim",
+      "name": "Kamera Durumları",
+      "desc": "Oyun içi kamera açısı ve mod değişimlerini durum makinesi ile yönetin.",
+      "tags": [
+        "kamera",
+        "görünüm",
+        "cinematik"
+      ],
+      "badge1": "Orta",
+      "content": "## Kamera Modları Durum Makinesi\nFarklı kamera görünümleri için durumlar oluşturun.\n1.  **`ThirdPerson`:** Varsayılan oyuncu takibi.\n2.  **`FirstPerson`:** Yakın çekim veya nişan alma modu.\n3.  **`Cinematic`:** Önceden tanımlanmış bir kamera yolu.\n4.  **Geçişler:** `AimButtonPressed`, `CutsceneTriggered`, `ViewModeChange` gibi olayları kullanın.\nBu, kamera geçişlerini akıcı ve kontrol edilebilir hale getirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "3D Etkileşim",
+      "name": "Araç Sürüş Durumları",
+      "desc": "Araçların hızlanma, frenleme ve dönme gibi sürüş durumlarını kontrol edin.",
+      "tags": [
+        "araç",
+        "sürüş",
+        "fizik"
+      ],
+      "badge1": "İleri",
+      "content": "## Araç Sürüş Durumları\nBir aracın sürüş mekaniklerini state machine ile modelleyin.\n1.  **`Idle`:** Araç duruyor.\n2.  **`Accelerating`:** Gaz pedalı basılı, araç hızlanıyor.\n3.  **`Braking`:** Fren basılı, araç yavaşlıyor.\n4.  **`Turning`:** Direksiyon çevriliyor.\n5.  **Geçişler:** `GasInput`, `BrakeInput`, `SteerInput` gibi girişleri kullanarak durumları değiştirin.\nBu, araç fiziği ve kontrolünü daha modüler yapar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "C++ Entegrasyon",
+      "name": "Temel C++ Sınıf Yapısı",
+      "desc": "Durum makinesini C++ sınıflarına dönüştürmek için temel bir yapı oluşturun.",
+      "tags": [
+        "C++",
+        "kod",
+        "şablon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## C++ Durum Sınıfı Şablonu\nStateVault'tan C++ kod çıktısı için temel bir sınıf yapısı oluşturun.\n```cpp\nclass IState {\npublic:\n    virtual void Enter() = 0;\n    virtual void Execute() = 0;\n    virtual void Exit() = 0;\n};\n```\nBu arayüz, her durumun belirli bir yaşam döngüsü metoduna sahip olmasını garanti eder ve kodun genişletilebilirliğini artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "C++ Entegrasyon",
+      "name": "Durum Yöneticisi Uygulaması",
+      "desc": "Durumlar arası geçişleri ve güncellemeleri yöneten bir C++ sınıfı tasarlayın.",
+      "tags": [
+        "C++",
+        "yönetici",
+        "tasarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Durum Yöneticisi C++ Kodu\nDurumlar arası geçişleri ve güncellemeleri yönetecek bir sınıf oluşturun.\n```cpp\nclass StateMachine {\n    IState* currentState;\npublic:\n    void ChangeState(IState* newState);\n    void Update();\n};\n```\n`ChangeState` metodu mevcut durumu sonlandırır ve yeni durumu başlatır. `Update` ise mevcut durumu her karede çalıştırır. Bu, merkezi bir kontrol noktası sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "C++ Entegrasyon",
+      "name": "Olay Bazlı Geçişler",
+      "desc": "C++'ta olay dinleyicileri kullanarak durum geçişlerini tetikleyin.",
+      "tags": [
+        "C++",
+        "olay",
+        "geçiş"
+      ],
+      "badge1": "Orta",
+      "content": "## Olay Tabanlı C++ Geçişleri\nDurum geçişlerini C++ olay sistemine bağlayın.\n1.  **Olay Sistemi Entegrasyonu:** Oyun motorunuzun olay dinleme mekanizmalarını (delegates, signals) kullanın.\n2.  **Dinleyici Kaydı:** `CurrentState`'in `Enter()` metodunda ilgili olaylara dinleyici kaydedin.\n3.  **Geçiş Tetikleyicileri:** Olay tetiklendiğinde `StateMachine::ChangeState` metodunu çağırın.\nBu, durum değişimlerini dış olaylara duyarlı hale getirir ve kodu modülerleştirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "C++ Entegrasyon",
+      "name": "Durum Verisi ve Paylaşım",
+      "desc": "Durumlar arasında veri paylaşımını ve bağlam yönetimini C++'ta uygulayın.",
+      "tags": [
+        "C++",
+        "veri",
+        "bağlam"
+      ],
+      "badge1": "İleri",
+      "content": "## Durumlar Arası Veri Paylaşımı\nDurumlar arasında veri paylaşımını yönetmek için bir bağlam (context) sınıfı kullanın.\n```cpp\nclass PlayerContext {\npublic:\n    float Health;\n    bool IsGrounded;\n};\nclass PlayerState : public IState {\nprotected:\n    PlayerContext* context;\n};\n```\n`PlayerContext` sınıfı, tüm durumların erişebileceği ortak verileri tutar. Her durum bu bağlamı referans alır. Bu, veri tutarlılığını ve erişilebilirliğini artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "C++ Entegrasyon",
+      "name": "StateVault C++ Entegrasyon Kılavuzu",
+      "desc": "StateVault Pro tarafından üretilen C++ kodunu projenize entegre etme adımları.",
+      "tags": [
+        "entegrasyon",
+        "kılavuz",
+        "kurulum"
+      ],
+      "badge1": "İleri",
+      "content": "## StateVault C++ Entegrasyon Adımları\nStateVault tarafından üretilen C++ kodunu oyun projenize entegre edin.\n1.  **Dosya Ekleme:** Üretilen `.h` ve `.cpp` dosyalarını projenizin kaynak dizinine ekleyin.\n2.  **Derleme Ayarları:** Gerekirse derleyici ayarlarınızı (include yolları) güncelleyin.\n3.  **StateMachine Nesnesi:** Oyun motorunuzun ana döngüsünde (örneğin `Tick()` metodu) bir `StateMachine` nesnesi örneklendirin.\n4.  **Güncelleme Çağrısı:** Her karede `stateMachine->Update()` metodunu çağırın.\nBu, StateVault çıktısını hızla kullanıma almanızı sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

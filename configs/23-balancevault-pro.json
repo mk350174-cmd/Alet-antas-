@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Ekonomi Simülasyonu",
+      "name": "Ekonomi Simülasyonu",
+      "color": "#3498db"
+    },
+    {
+      "id": "Savaş Dengesi",
+      "name": "Savaş Dengesi",
+      "color": "#e74c3c"
+    },
+    {
+      "id": "Yetenek Mekanikleri",
+      "name": "Yetenek Mekanikleri",
+      "color": "#9b59b6"
+    },
+    {
+      "id": "Karakter Gelişimi",
+      "name": "Karakter Gelişimi",
+      "color": "#2ecc71"
+    },
+    {
+      "id": "Denge Ayarları ve Testleri",
+      "name": "Denge Ayarları ve Testleri",
+      "color": "#f39c12"
+    },
+    {
+      "id": "Envanter & Ticaret",
+      "name": "Envanter & Ticaret",
+      "color": "#1abc9c"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Ekonomi Simülasyonu",
+      "name": "Kaynak Üretim Oranı",
+      "desc": "Oyuncuların zamanla nasıl kaynak kazanacağını belirleyen matematiksel model.",
+      "tags": [
+        "ekonomi",
+        "kaynak",
+        "üretim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kaynak Üretim Formülü\n1.  **Temel Üretim:** `Üretim = Temel Oran * (1 + Bonus Yüzdesi)`\n2.  **Zaman Faktörü:** `Toplam Kaynak = Üretim * Geçen Süre (dakika)`\n3.  **Sınırlandırma:** Maksimum envanter kapasitesini kontrol et.\nBu formül, oyuncunun sahip olduğu bonusları ve geçen süreyi dikkate alarak kaynak üretimini hesaplar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Ekonomi Simülasyonu",
+      "name": "Oyun İçi Para Enflasyonu",
+      "desc": "Oyun içi para biriminin değerini ve dolaşımını simüle eden model.",
+      "tags": [
+        "ekonomi",
+        "enflasyon",
+        "para"
+      ],
+      "badge1": "Orta",
+      "content": "## Enflasyon Takip Modeli\n1.  **Para Arzı:** `Toplam Para = Oyuncuların Sahip Olduğu + Sistemdeki`\n2.  **Harcama Oranı:** `Harcama = Satın Alımlar / Toplam Para`\n3.  **İdeal Oran:** Hedeflenen harcama/kazanç oranını belirle.\nDolaşımdaki para miktarını ve harcama alışkanlıklarını izleyerek enflasyonu kontrol altında tutun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Ekonomi Simülasyonu",
+      "name": "Harcama Simülasyonu",
+      "desc": "Oyuncuların belirli eşyalara veya hizmetlere ne kadar harcayacağını tahmin eder.",
+      "tags": [
+        "ekonomi",
+        "harcama",
+        "tüketim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Harcama Tahmin Modeli\n1.  **Fiyat Etkisi:** `Harcama İhtimali = Temel Oran / Eşya Fiyatı`\n2.  **İhtiyaç Faktörü:** `Harcama İhtimali * (1 + İhtiyaç Bonusu)`\n3.  **Geri Bildirim:** Oyuncu davranışlarını gözlemle.\nBu model, eşyanın fiyatı ve oyuncunun o eşyaya olan ihtiyacına göre harcama olasılığını simüle eder.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Ekonomi Simülasyonu",
+      "name": "Fiyatlandırma Modeli",
+      "desc": "Oyun içi eşyaların veya hizmetlerin adil ve dengeli fiyatlarını belirler.",
+      "tags": [
+        "ekonomi",
+        "fiyat",
+        "denge"
+      ],
+      "badge1": "Orta",
+      "content": "## Eşya Fiyatlandırma Stratejisi\n1.  **Üretim Maliyeti:** `Temel Fiyat = Kaynak Maliyeti + İşçilik`\n2.  **Nadirik Çarpanı:** `Nihai Fiyat = Temel Fiyat * Nadirlik Çarpanı`\n3.  **Pazar Dinamiği:** Talebe göre fiyatları ayarla.\nEşyanın üretim maliyetini, nadirliğini ve pazar talebini göz önünde bulundurarak dengeli bir fiyat belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Savaş Dengesi",
+      "name": "Temel Hasar Formülü",
+      "desc": "Bir saldırının hedef üzerindeki hasarını hesaplamak için kullanılan temel denklem.",
+      "tags": [
+        "savaş",
+        "hasar",
+        "matematik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel Hasar Hesaplama\n1.  **Ham Hasar:** `Ham Hasar = Saldırganın Gücü * Yetenek Çarpanı`\n2.  **Savunma Etkisi:** `Nihai Hasar = Ham Hasar - (Hedefin Savunması * Azaltma)`\n3.  **Minimum Hasar:** Hasarın asla 1'den az olmamasını sağla.\nBu formül, saldırganın gücü ve hedefin savunmasını dikkate alarak nihai hasarı belirler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Savaş Dengesi",
+      "name": "Zırh Azaltma Hesaplama",
+      "desc": "Zırhın gelen hasarı yüzde olarak ne kadar azalttığını belirleyen formül.",
+      "tags": [
+        "savaş",
+        "zırh",
+        "azaltma"
+      ],
+      "badge1": "Orta",
+      "content": "## Zırh Hasar Azaltma\n1.  **Azaltma Yüzdesi:** `Azaltma % = Zırh / (Zırh + Sabit Değer)`\n2.  **Uygulama:** `Alınan Hasar = Gelen Hasar * (1 - Azaltma %)`\n3.  **Doygunluk:** Zırhın çok güçlü hale gelmesini engelle.\nZırh değerini kullanarak gelen hasarın ne kadarının azaltılacağını hesaplayın. Sabit değer denge için kritiktir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Savaş Dengesi",
+      "name": "Kritik Vuruş Oranı",
+      "desc": "Bir saldırının kritik vuruş yapma olasılığını ve verdiği ekstra hasarı belirler.",
+      "tags": [
+        "savaş",
+        "kritik",
+        "şans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kritik Vuruş Mekaniği\n1.  **Kritik Şans:** `Kritik Şans % = Temel Şans + Bonus Şans`\n2.  **Kritik Hasar:** `Kritik Hasar = Normal Hasar * Kritik Çarpan`\n3.  **Rastgelelik:** `Random(0-100) < Kritik Şans %` ise kritik vuruş.\nOyuncunun kritik vuruş yapma olasılığını ve kritik vuruşun vereceği ekstra hasarı bu formülle yönetin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Savaş Dengesi",
+      "name": "Can Yenileme Hızı",
+      "desc": "Bir karakterin zamanla ne kadar can puanı yenileyeceğini hesaplar.",
+      "tags": [
+        "savaş",
+        "can",
+        "yenileme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Can Yenileme Hızı Formülü\n1.  **Temel Yenileme:** `Yenileme = Temel Yenileme Değeri + Bonus`\n2.  **Periyot:** `Saniye Başına Yenileme = Yenileme / Yenileme Sıklığı`\n3.  **Maksimum Can:** Yenilemenin maksimum canı aşmamasını sağla.\nKarakterin temel ve bonus yenileme değerlerini kullanarak saniye başına ne kadar can yenileyeceğini hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Yetenek Mekanikleri",
+      "name": "Beceri Bekleme Süresi",
+      "desc": "Bir yeteneğin tekrar kullanılabilmesi için geçmesi gereken süreyi belirler.",
+      "tags": [
+        "yetenek",
+        "bekleme",
+        "süre"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yetenek Bekleme Süresi\n1.  **Temel Süre:** `Bekleme Süresi = Yeteneğin Temel Süresi`\n2.  **Azaltma:** `Nihai Süre = Bekleme Süresi * (1 - Bekleme Azaltma %)`\n3.  **Minimum Süre:** Asla 1 saniyenin altına düşmemesini sağla.\nYeteneklerin temel bekleme sürelerini ve oyuncu yeteneklerinin sağladığı azaltmaları dikkate alarak nihai süreyi belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Yetenek Mekanikleri",
+      "name": "Enerji/Mana Maliyeti",
+      "desc": "Bir yeteneği kullanmak için harcanması gereken enerji veya mana miktarını belirler.",
+      "tags": [
+        "yetenek",
+        "mana",
+        "enerji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yetenek Maliyet Formülü\n1.  **Temel Maliyet:** `Maliyet = Yeteneğin Temel Maliyeti`\n2.  **İndirim:** `Nihai Maliyet = Maliyet * (1 - Maliyet İndirimi %)`\n3.  **Maksimum:** Yeteneğin, oyuncunun mevcut kaynağını aşmamasını sağla.\nYeteneklerin temel maliyetlerini ve oyuncunun sahip olduğu maliyet indirimlerini kullanarak nihai harcama miktarını hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Yetenek Mekanikleri",
+      "name": "Alan Etki Hasarı",
+      "desc": "Belirli bir alandaki tüm düşmanlara verilen hasarı hesaplayan formül.",
+      "tags": [
+        "yetenek",
+        "alan",
+        "hasar"
+      ],
+      "badge1": "Orta",
+      "content": "## Alan Etki (AOE) Hasar Formülü\n1.  **Merkez Hasarı:** `Merkez Hasar = Saldırganın Gücü * Yetenek Çarpanı`\n2.  **Uzaklık Azaltma:** `Nihai Hasar = Merkez Hasar * (1 - Uzaklık / Menzil)`\n3.  **Minimum Hasar:** Hedefin en az %10 hasar almasını sağla.\nYeteneklerin temel hasarını ve hedefin etki alanının merkezine olan uzaklığını dikkate alarak hasar miktarını belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Yetenek Mekanikleri",
+      "name": "Yetenek Güçlendirme",
+      "desc": "Bir yeteneğin seviye veya bonuslarla nasıl güçlendirileceğini tanımlar.",
+      "tags": [
+        "yetenek",
+        "güçlendirme",
+        "seviye"
+      ],
+      "badge1": "Orta",
+      "content": "## Yetenek Güçlendirme Sistemi\n1.  **Temel Değer:** `Yetenek Gücü = Temel Etki`\n2.  **Seviye Artışı:** `Güçlendirme = Yetenek Gücü + (Seviye * Seviye Başına Artış)`\n3.  **Bonuslar:** Ekipman bonuslarını dahil et.\nYeteneklerin temel etkisini, seviye başına artışı ve varsa diğer güçlendirme bonuslarını hesaba katarak yeteneğin toplam gücünü belirle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Karakter Gelişimi",
+      "name": "Seviye Atlama XP Formülü",
+      "desc": "Bir sonraki seviyeye ulaşmak için gereken deneyim puanı miktarını hesaplar.",
+      "tags": [
+        "karakter",
+        "seviye",
+        "xp"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Seviye Atlama XP Formülü\n1.  **Başlangıç XP:** `Gerekli XP = Başlangıç Değeri`\n2.  **Üstel Büyüme:** `Gerekli XP = Başlangıç * (Seviye ^ Üs)`\n3.  **Doğrusal Artış:** Veya `Gerekli XP = Önceki XP + Sabit Artış * Seviye`.\nOyuncunun her seviye için ihtiyacı olan deneyim puanını, doğrusal veya üstel bir artışla hesaplayarak ilerlemeyi dengele.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Karakter Gelişimi",
+      "name": "Temel İstatistik Büyümesi",
+      "desc": "Karakterlerin seviye atladıkça temel istatistiklerinin nasıl artacağını belirler.",
+      "tags": [
+        "karakter",
+        "istatistik",
+        "büyüme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## İstatistik Büyüme Modeli\n1.  **Temel İstatistik:** `İstatistik = Başlangıç Değeri`\n2.  **Seviye Başına:** `Yeni İstatistik = İstatistik + (Seviye * Seviye Başına Artış)`\n3.  **Sınıf Bonusu:** Karakter sınıfına göre ek bonuslar ekle.\nHer seviyede karakterin temel istatistiklerinin (güç, çeviklik vb.) ne kadar artacağını belirleyerek karakter gelişimini dengele.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Karakter Gelişimi",
+      "name": "Yetenek Puanı Dağılımı",
+      "desc": "Oyuncuların seviye atladıkça kazandığı yetenek puanlarını nasıl kullanabileceğini yönetir.",
+      "tags": [
+        "karakter",
+        "yetenek",
+        "puan"
+      ],
+      "badge1": "Orta",
+      "content": "## Yetenek Puanı Dağılım Sistemi\n1.  **Kazanılan Puan:** `Puan = Seviye * Puan Başına Seviye`\n2.  **Maliyet:** Yetenek ağacındaki her yeteneğin puan maliyetini belirle.\n3.  **Sınırlandırma:** Maksimum harcanabilir puanı veya yetenek seviyesini kısıtla.\nOyuncunun her seviyede ne kadar yetenek puanı kazanacağını ve bu puanları nasıl harcayabileceğini dengeleyerek stratejik seçimler yarat.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Karakter Gelişimi",
+      "name": "Donanım Gücü Hesaplama",
+      "desc": "Bir ekipman parçasının genel güç seviyesini veya katkısını belirler.",
+      "tags": [
+        "karakter",
+        "donanım",
+        "güç"
+      ],
+      "badge1": "Orta",
+      "content": "## Donanım Gücü Değerleme\n1.  **Nadirik Çarpanı:** `Temel Güç = Temel İstatistik Bonusu * Nadirlik Çarpanı`\n2.  **Özellik Bonusu:** `Nihai Güç = Temel Güç + (Ek Özellikler * Değer)`\n3.  **Seviye Ölçeklemesi:** Eşya seviyesine göre güç artışı.\nBir ekipman parçasının nadirliğini, verdiği temel istatistikleri ve ek özelliklerini dikkate alarak toplam gücünü hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Denge Ayarları ve Testleri",
+      "name": "Denge İterasyon Protokolü",
+      "desc": "Oyun dengelemesi için sistematik bir test ve ayarlama süreci oluşturur.",
+      "tags": [
+        "denge",
+        "test",
+        "protokol"
+      ],
+      "badge1": "İleri",
+      "content": "## Denge İterasyon Protokolü\n1.  **Hedef Belirle:** Dengeleme hedefini netleştir (örn. PvP %50 kazanma oranı).\n2.  **Veri Topla:** Mevcut durumu analiz etmek için oyun verilerini topla.\n3.  **Değişiklik Uygula:** Küçük, izole denge değişiklikleri yap.\n4.  **Test Et & İzle:** Değişikliklerin etkisini test et ve metrikleri izle.\n5.  **Değerlendir:** Hedeflere ulaşıldıysa tamamla, değilse 1. adıma dön.\nSistematik bir test ve ayarlama döngüsüyle oyun dengesini optimize edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Denge Ayarları ve Testleri",
+      "name": "Oyuncu Geri Bildirimi Analizi",
+      "desc": "Dengeleme kararları için oyuncu geri bildirimlerini etkin bir şekilde toplar ve değerlendirir.",
+      "tags": [
+        "denge",
+        "geri bildirim",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Oyuncu Geri Bildirimi Analizi\n1.  **Toplama Kanalları:** Forumlar, anketler, oyun içi raporlama.\n2.  **Kategorize Et:** Geri bildirimleri konularına göre gruplandır (örn. yetenek gücü, ekonomi).\n3.  **Önceliklendir:** Etki ve sıklığa göre sorunları sırala.\n4.  **Doğrula:** Geri bildirimleri oyun içi verilerle karşılaştır.\n5.  **Raporla:** Dengeleme ekibine somut öneriler sun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Envanter & Ticaret",
+      "name": "Eşya Düşürme Oranları",
+      "desc": "Düşmanlardan veya sandıklardan eşya düşürme olasılığını belirleyen sistem.",
+      "tags": [
+        "envanter",
+        "düşürme",
+        "olasılık"
+      ],
+      "badge1": "Orta",
+      "content": "## Eşya Düşürme Oranları\n1.  **Havuz Oluştur:** Düşebilecek eşyaların bir listesini ve nadirliklerini tanımla.\n2.  **Genel Oran:** `Düşme Şansı = Canavar Zorluğu * Temel Oran`\n3.  **Ağırlıklı Seçim:** `Nadir Eşya Şansı = Eşya Ağırlığı / Toplam Ağırlık`.\nDüşmanların zorluğuna ve eşyaların nadirliğine göre düşürme oranlarını ayarlayarak oyuncu ödüllerini dengele.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Envanter & Ticaret",
+      "name": "Pazar Fiyat Dinamikleri",
+      "desc": "Oyun içi pazar yerindeki eşya fiyatlarının arz ve talebe göre nasıl değiştiğini simüle eder.",
+      "tags": [
+        "envanter",
+        "pazar",
+        "fiyat"
+      ],
+      "badge1": "İleri",
+      "content": "## Pazar Fiyat Dinamikleri\n1.  **Arz-Talep:** `Fiyat = Temel Fiyat * (Talep / Arz)`\n2.  **Limitler:** Fiyatların belirli bir aralıkta kalmasını sağla (min/max).\n3.  **Enflasyon/Deflasyon:** Sistemden çıkan/giren para miktarını izle.\nOyuncuların alım-satım davranışlarını ve eşya arzını/talebi takip ederek pazar fiyatlarını dinamik olarak ayarla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

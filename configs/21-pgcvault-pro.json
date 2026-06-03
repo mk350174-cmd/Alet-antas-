@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Gürültü Algoritmaları",
+      "name": "Gürültü Algoritmaları",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Arazi & Yükseklik Haritaları",
+      "name": "Arazi & Yükseklik Haritaları",
+      "color": "#8BC34A"
+    },
+    {
+      "id": "Zindan & Mekan Düzenleri",
+      "name": "Zindan & Mekan Düzenleri",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Bitki Örtüsü & Detay Dağılımı",
+      "name": "Bitki Örtüsü & Detay Dağılımı",
+      "color": "#009688"
+    },
+    {
+      "id": "Fraktal & Organik Modeller",
+      "name": "Fraktal & Organik Modeller",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Doku & Malzeme Üretimi",
+      "name": "Doku & Malzeme Üretimi",
+      "color": "#9C27B0"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Gürültü Algoritmaları",
+      "name": "Perlin Gürültüsü Temelleri",
+      "desc": "Temel Perlin gürültüsü fonksiyonunu uygulayarak pürüzsüz rastgele değerler üretin.",
+      "tags": [
+        "gürültü",
+        "perlin",
+        "rastgele"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Perlin Gürültüsü Fonksiyonu\n1.  Rastgele gradyan vektörleri oluşturun.\n2.  Giriş koordinatlarını köşelere ayırın.\n3.  Her köşeden nokta-gradyan çarpımlarını hesaplayın.\n4.  Kübik interpolasyon kullanarak nihai gürültü değerini elde edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Gürültü Algoritmaları",
+      "name": "Simplex Gürültüsü Uygulaması",
+      "desc": "Simplex gürültüsü ile Perlin'den daha hızlı ve artifactsız gürültü haritaları oluşturun.",
+      "tags": [
+        "gürültü",
+        "simplex",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Simplex Gürültüsü Adımları\n1.  Giriş koordinatlarını çarpıtarak skew faktörünü uygulayın.\n2.  Bölgeyi bir simpleks (üçgen/tetrahedron) içine yerleştirin.\n3.  Köşe noktalarına göre gradyan hesaplayın.\n4.  Gürültü değerlerini toplamak için ağırlıklı toplam kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Gürültü Algoritmaları",
+      "name": "Worley Gürültüsü (Voronoi)",
+      "desc": "Hücresel desenler ve kenarlar için Worley (Voronoi) gürültüsü kullanarak doğal görünümler elde edin.",
+      "tags": [
+        "worley",
+        "voronoi",
+        "hücresel"
+      ],
+      "badge1": "Orta",
+      "content": "## Worley Gürültüsü Oluşturma\n1.  Rastgele dağılmış \"özellik noktaları\" tanımlayın.\n2.  Her bir piksel için en yakın özellik noktasını bulun.\n3.  Pikselin bu noktaya olan uzaklığını gürültü değeri olarak atayın.\n4.  Çeşitli desenler için ikinci en yakın noktayı da kullanabilirsiniz.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Gürültü Algoritmaları",
+      "name": "Çok Katmanlı Gürültü (Octave)",
+      "desc": "Birden fazla gürültü katmanını birleştirerek karmaşık ve doğal görünümlü desenler yaratın.",
+      "tags": [
+        "gürültü",
+        "fraktal",
+        "karmaşık"
+      ],
+      "badge1": "İleri",
+      "content": "## Fraktal Gürültü Katmanlama\n1.  Temel gürültü fonksiyonunu (örn. Perlin/Simplex) seçin.\n2.  Farklı frekans (octave) ve genlik (amplitude) değerleri tanımlayın.\n3.  Her octave için gürültü değerini hesaplayın.\n4.  Tüm octave değerlerini toplayarak nihai gürültüyü elde edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Arazi & Yükseklik Haritaları",
+      "name": "Yükseklik Haritası Oluşturma",
+      "desc": "Perlin/Simplex gürültüsü kullanarak gerçekçi yükseklik haritaları ve araziler üretin.",
+      "tags": [
+        "arazi",
+        "yükseklik",
+        "harita"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yükseklik Haritası Oluşturma\n1.  Gürültü fonksiyonunu (örn. Perlin) seçin.\n2.  Harita koordinatlarını bu fonksiyona girdi olarak verin.\n3.  Gürültü çıkışını 0-1 aralığında normalize edin.\n4.  Normalize edilmiş değeri yükseklik olarak kullanın.\n5.  Birden fazla gürültü katmanı ekleyerek detayları artırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Arazi & Yükseklik Haritaları",
+      "name": "Hidrolik Erozyon Simülasyonu",
+      "desc": "Su akışını simüle ederek arazide gerçekçi erozyon izleri ve birikintiler oluşturun.",
+      "tags": [
+        "erozyon",
+        "hidrolik",
+        "arazi"
+      ],
+      "badge1": "İleri",
+      "content": "## Hidrolik Erozyon Adımları\n1.  Arazide rastgele su damlaları bırakın.\n2.  Her damlanın eğim boyunca akış yolunu simüle edin.\n3.  Akarken toprağı aşındırın ve tortuyu taşıyın.\n4.  Damla durduğunda tortuyu biriktirin veya buharlaştırın.\n5.  Bu işlemi binlerce damla için tekrarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Arazi & Yükseklik Haritaları",
+      "name": "Termal Erozyon Simülasyonu",
+      "desc": "Eğimli yamaçlarda toprak kaymasını simüle ederek araziyi yumuşatın ve gerçekçiliği artırın.",
+      "tags": [
+        "erozyon",
+        "termal",
+        "arazi"
+      ],
+      "badge1": "Orta",
+      "content": "## Termal Erozyon Uygulaması\n1.  Her piksel için komşularıyla olan yükseklik farkını hesaplayın.\n2.  Belirli bir eşik değerinden (sürekli yamaç açısı) fazla olan farkları tespit edin.\n3.  Bu farkı aşan bölgelerde toprağı aşağıya doğru taşıyarak dağıtın.\n4.  İşlemi yeterli gerçekçilik elde edene kadar yineleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Zindan & Mekan Düzenleri",
+      "name": "Oda-Koridor Zindan Üretimi",
+      "desc": "Rastgele odalar ve bunları birbirine bağlayan koridorlar ile klasik zindan düzenleri oluşturun.",
+      "tags": [
+        "zindan",
+        "oda-koridor",
+        "harita"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Zindan Oluşturma Algoritması\n1.  Rastgele boyutlarda ve konumlarda odalar yerleştirin (çakışmasın).\n2.  Odaları minimum Spanning Tree (MST) ile bağlayın.\n3.  MST'deki her kenar için iki odayı birleştiren koridorlar çizin.\n4.  Zindan duvarlarını ve zemini oluşturun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Zindan & Mekan Düzenleri",
+      "name": "Hücresel Otomat Haritası",
+      "desc": "Hücresel otomat kurallarıyla doğal mağara sistemleri veya organik duvar desenleri üretin.",
+      "tags": [
+        "hücresel",
+        "mağara",
+        "otomat"
+      ],
+      "badge1": "Orta",
+      "content": "## Hücresel Otomat Adımları\n1.  Haritayı rastgele doldurun (örn. %45 duvar, %55 boş).\n2.  Her hücre için komşularının sayısını kontrol edin.\n3.  Belirli kurallara göre hücrenin durumunu değiştirin (örn. 4+ komşu duvar ise duvar ol).\n4.  Bu adımları birkaç kez yineleyerek pürüzsüzleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Zindan & Mekan Düzenleri",
+      "name": "İkili Ağaç Bölme (BSP) ile Oda Üretimi",
+      "desc": "Bir alanı ikili ağaç bölme kullanarak hiyerarşik odalara ayırın, sonra bunları bağlayın.",
+      "tags": [
+        "bsp",
+        "oda",
+        "bölme"
+      ],
+      "badge1": "İleri",
+      "content": "## BSP Oda Üretimi\n1.  Ana alanı rastgele bir yönde (yatay/dikey) ikiye bölün.\n2.  Her alt alanı tekrar bölme eşiğine ulaşana kadar yineleyin.\n3.  Her yaprak düğüme (en küçük alan) bir oda yerleştirin.\n4.  Komşu odaları koridorlarla birleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Zindan & Mekan Düzenleri",
+      "name": "Dinamik Labirent Üretimi (DFS)",
+      "desc": "Derinlik Öncelikli Arama (DFS) kullanarak karmaşık ve çözülebilir labirentler oluşturun.",
+      "tags": [
+        "labirent",
+        "dfs",
+        "algoritma"
+      ],
+      "badge1": "Orta",
+      "content": "## DFS Labirent Algoritması\n1.  Bir başlangıç hücresi seçin ve ziyaret edildi olarak işaretleyin.\n2.  Geçerli hücreden rastgele bir komşu hücre seçin.\n3.  Eğer komşu hücre ziyaret edilmemişse, aradaki duvarı yıkın.\n4.  Komşu hücreyi mevcut hücre yapıp adıma devam edin.\n5.  Çıkmaza ulaşıldığında geri dönün ve farklı bir yol deneyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Bitki Örtüsü & Detay Dağılımı",
+      "name": "Poisson Diski Dağılımı",
+      "desc": "Detayları (ağaç, kaya) düzenli ama rastgele bir şekilde dağıtarak görsel uyumu sağlayın.",
+      "tags": [
+        "dağılım",
+        "poisson",
+        "detay"
+      ],
+      "badge1": "Orta",
+      "content": "## Poisson Diski Dağılımı\n1.  İlk noktayı rastgele yerleştirin.\n2.  Her yeni nokta için, mevcut noktaların minimum yarıçapından daha uzak olmasını sağlayın.\n3.  Mevcut noktaların etrafına \"aday halkaları\" çizin.\n4.  Bu halkalardan rastgele noktalar seçerek yeni geçerli noktalar ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Bitki Örtüsü & Detay Dağılımı",
+      "name": "Düşey Ağaç Yerleşimi",
+      "desc": "Yükseklik haritası ve eğim verilerini kullanarak ağaçları gerçekçi konumlara yerleştirin.",
+      "tags": [
+        "ağaç",
+        "bitki",
+        "yerleşim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ağaç Yerleşimi Kuralları\n1.  Yükseklik haritası üzerinde belirli bir yükseklik aralığı tanımlayın (örn. deniz seviyesi üstü).\n2.  Eğim haritası üzerinde çok dik yamaçlardan kaçının.\n3.  Perlin gürültüsü kullanarak ağaç yoğunluğunu belirleyin.\n4.  Belirlenen uygun alanlara ağaç modellerini rastgele yerleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Bitki Örtüsü & Detay Dağılımı",
+      "name": "Rastgele Kaya Dağılımı",
+      "desc": "Arazide rastgele boyutlarda ve yönlerde kaya modellerini estetik olarak dağıtın.",
+      "tags": [
+        "kaya",
+        "dağılım",
+        "detay"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kaya Dağılımı Yöntemi\n1.  Arazi üzerinde rastgele noktalar seçin.\n2.  Bu noktaların arazi eğimini kontrol edin; çok dik yerlerden kaçının.\n3.  Her kaya için rastgele bir ölçek ve dönüş değeri atayın.\n4.  Kaya modellerini seçilen noktalara yerleştirin.\n5.  Gürültü kullanarak kaya yoğunluğunu kontrol edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Fraktal & Organik Modeller",
+      "name": "L-Sistem Ağaç Oluşturma",
+      "desc": "L-Sistem kuralları kullanarak organik ve dallı ağaç yapılarını prosedürel olarak üretin.",
+      "tags": [
+        "l-sistem",
+        "fraktal",
+        "ağaç"
+      ],
+      "badge1": "İleri",
+      "content": "## L-Sistem Ağaç Algoritması\n1.  Başlangıç aksiyomu (örn. \"F\") ve üretim kuralları (örn. F -> FF-[-F+F+F]+[+F-F-F]) tanımlayın.\n2.  Kuralları belirli sayıda iterasyon boyunca uygulayarak bir dize oluşturun.\n3.  Bu dizeyi bir \"kaplumbağa grafiği\" yorumlayıcısı ile çizerek ağaç geometrisini oluşturun.\n4.  Açıları ve segment uzunluklarını dinamik olarak değiştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Fraktal & Organik Modeller",
+      "name": "Mandelbrot Fraktalı Görselleştirme",
+      "desc": "Mandelbrot kümesini görselleştirerek karmaşık ve sonsuz detaylara sahip fraktal desenler oluşturun.",
+      "tags": [
+        "fraktal",
+        "mandelbrot",
+        "görsel"
+      ],
+      "badge1": "Orta",
+      "content": "## Mandelbrot Kümesi Çizimi\n1.  Ekrandaki her pikseli bir kompleks sayıya (c) dönüştürün.\n2.  z = z^2 + c formülünü z=0'dan başlayarak tekrarla.\n3.  Eğer |z| belirli bir eşiği (örn. 2) aşarsa, iterasyon sayısına göre pikseli renklendir.\n4.  Aşmazsa, siyah renkle çizerek kümenin içini gösterin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Fraktal & Organik Modeller",
+      "name": "Fraktal Bulut Modelleme",
+      "desc": "Çok katmanlı gürültü fonksiyonlarını kullanarak gerçekçi ve dinamik bulut şekilleri üretin.",
+      "tags": [
+        "bulut",
+        "fraktal",
+        "atmosfer"
+      ],
+      "badge1": "İleri",
+      "content": "## Fraktal Bulut Modelleme\n1.  3D Perlin veya Simplex gürültüsü kullanın.\n2.  Farklı frekans ve genliklerde birden fazla katmanı birleştirin (fbm).\n3.  Gürültü hacmini bir eşik değeri ile filtreleyerek bulutların yoğunluğunu belirleyin.\n4.  Bulutların hareketini simüle etmek için zamanla gürültü ofsetini değiştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Doku & Malzeme Üretimi",
+      "name": "Prosedürel Taş Dokusu",
+      "desc": "Gürültü fonksiyonlarını birleştirerek benzersiz ve tekrar etmeyen taş dokuları oluşturun.",
+      "tags": [
+        "doku",
+        "taş",
+        "malzeme"
+      ],
+      "badge1": "Orta",
+      "content": "## Prosedürel Taş Dokusu\n1.  Temel olarak Perlin gürültüsü kullanın.\n2.  Worley gürültüsünü (Voronoi) ekleyerek çatlak ve hücre efektleri yaratın.\n3.  Farklı ölçeklerde gürültüleri karıştırarak yüzey detaylarını artırın.\n4.  Normal harita için gürültü değerlerinin türevlerini kullanın.\n5.  Renk paletini taş tonlarına göre ayarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Doku & Malzeme Üretimi",
+      "name": "Normal Harita Üretimi (Gürültüden)",
+      "desc": "Yükseklik veya gürültü haritalarından otomatik olarak normal haritalar oluşturarak detayları artırın.",
+      "tags": [
+        "normal",
+        "harita",
+        "doku"
+      ],
+      "badge1": "Orta",
+      "content": "## Normal Harita Oluşturma\n1.  Gri tonlamalı yükseklik/gürültü haritasını alın.\n2.  Her piksel için komşu piksellerle yükseklik farklarını hesaplayın (dx, dy).\n3.  Normal vektörünü (-dx, -dy, 1) formülüyle oluşturun.\n4.  Vektörü normalize edin ve RGB renklerine dönüştürün (x->R, y->G, z->B).\n5.  Görselleştirmek için 0.5 ile toplayıp 0.5 ile çarpın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Doku & Malzeme Üretimi",
+      "name": "Renk Paleti Oluşturma (Gradient)",
+      "desc": "Yükseklik veya gürültü değerlerine göre dinamik ve uyumlu renk paletleri oluşturun.",
+      "tags": [
+        "renk",
+        "palet",
+        "gradient"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Dinamik Renk Paleti\n1.  Arazi veya gürültü değerlerini 0-1 aralığına normalize edin.\n2.  Belirli eşik değerleri ve bu eşiklere karşılık gelen renkler tanımlayın (örn. 0.2:mavi, 0.4:yeşil, 0.7:kahverengi).\n3.  Normalize edilmiş değere göre bu renkler arasında enterpolasyon yapın.\n4.  Gürültü varyasyonlarına göre ince renk geçişleri ekleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }

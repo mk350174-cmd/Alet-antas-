@@ -48,6 +48,418 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Vektör ve Matris İşlemleri",
+      "name": "Vektör ve Matris İşlemleri",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Çarpışma Tespiti",
+      "name": "Çarpışma Tespiti",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Fizik Motoru Optimizasyonu",
+      "name": "Fizik Motoru Optimizasyonu",
+      "color": "#FF9800"
+    },
+    {
+      "id": "Katı Cisim Fiziği",
+      "name": "Katı Cisim Fiziği",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Gelişmiş Çarpışma Algoritmaları",
+      "name": "Gelişmiş Çarpışma Algoritmaları",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Performans Analizi ve Profilleme",
+      "name": "Performans Analizi ve Profilleme",
+      "color": "#F44336"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Vektör ve Matris İşlemleri",
+      "name": "Vektör Nokta Çarpımı",
+      "desc": "İki vektör arasındaki açıyı veya yansımayı bulmak için nokta çarpımını kullanın.",
+      "tags": [
+        "vektör",
+        "matematik",
+        "geometri"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Nokta Çarpımı Hesaplama\n1. İki vektör V1(x1, y1, z1) ve V2(x2, y2, z2) tanımlayın.\n2. Nokta çarpımını (V1 ⋅ V2) = (x1*x2) + (y1*y2) + (z1*z2) formülüyle hesaplayın.\n3. Sonuç, vektörlerin göreceli yönü hakkında bilgi verir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Vektör ve Matris İşlemleri",
+      "name": "Vektör Çapraz Çarpımı",
+      "desc": "İki vektöre dik bir vektör oluşturmak için çapraz çarpımını kullanın.",
+      "tags": [
+        "vektör",
+        "normal",
+        "yön"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Çapraz Çarpım Uygulama\n1. V1(x1, y1, z1) ve V2(x2, y2, z2) vektörlerini belirleyin.\n2. Çapraz çarpımı V1 x V2 = (y1z2 - z1y2, z1x2 - x1z2, x1y2 - y1x2) formülüyle hesaplayın.\n3. Sonuç vektörü, her iki orijinal vektöre de diktir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Vektör ve Matris İşlemleri",
+      "name": "Vektör Normalizasyonu",
+      "desc": "Bir vektörün yönünü koruyarak uzunluğunu 1'e ayarlamak için normalleştirin.",
+      "tags": [
+        "birim vektör",
+        "yön",
+        "uzunluk"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Vektörü Normalleştirme\n1. Normalleştirilecek V(x, y, z) vektörünü alın.\n2. Vektörün uzunluğunu (magnitude) ||V|| = sqrt(x^2 + y^2 + z^2) ile bulun.\n3. Her bileşeni uzunluğa bölerek V_normalized = (x/||V||, y/||V||, z/||V||) elde edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Vektör ve Matris İşlemleri",
+      "name": "Dönüşüm Matrisi Oluşturma",
+      "desc": "Bir objenin konumu, dönüşü ve ölçeği için tek bir matris oluşturun.",
+      "tags": [
+        "matris",
+        "transformasyon",
+        "model"
+      ],
+      "badge1": "Orta",
+      "content": "## Model Matrisi Oluşturma\n1. Birim matrisle başlayın.\n2. Ölçeklendirme (scale) matrisini uygulayın.\n3. Döndürme (rotation) matrisini (genellikle quaternion'dan) uygulayın.\n4. Öteleme (translation) matrisini uygulayın.\n5. Sonuç, dünya uzayında objenin tam dönüşümüdür.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Çarpışma Tespiti",
+      "name": "AABB Çarpışma Testi",
+      "desc": "Axis-Aligned Bounding Box (AABB) kullanarak hızlı ve basit çarpışma testi yapın.",
+      "tags": [
+        "çarpışma",
+        "AABB",
+        "kutu"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## AABB Çarpışma Algoritması\n1. İki AABB'nin minimum ve maksimum x, y, z koordinatlarını belirleyin.\n2. Çarpışma var mı kontrol edin: (A.minX < B.maxX && A.maxX > B.minX) ve aynı şekilde y ve z eksenleri için.\n3. Tüm eksenlerde örtüşme varsa çarpışma vardır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Çarpışma Tespiti",
+      "name": "Küre-Küre Çarpışma",
+      "desc": "İki kürenin merkezleri arası mesafeyi karşılaştırarak çarpışma tespiti yapın.",
+      "tags": [
+        "küre",
+        "çarpışma",
+        "geometri"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Küre Çarpışma Kontrolü\n1. Küre1'in merkezi C1 ve yarıçapı R1'i, Küre2'nin merkezi C2 ve yarıçapı R2'yi alın.\n2. İki merkez arasındaki mesafeyi (d) hesaplayın: d = ||C1 - C2||.\n3. Eğer d <= (R1 + R2) ise küreler çarpışmaktadır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Çarpışma Tespiti",
+      "name": "Ray-AABB Kesişimi",
+      "desc": "Bir ışının AABB ile kesişip kesişmediğini ve kesişme noktasını bulun.",
+      "tags": [
+        "ışın",
+        "kesişim",
+        "geometri"
+      ],
+      "badge1": "Orta",
+      "content": "## Ray-AABB Kesişim Algoritması\n1. Işın başlangıç noktası P ve yönü D'yi, AABB'nin min/max köşelerini alın.\n2. Her eksen için kesişim parametrelerini (t_min, t_max) hesaplayın.\n3. Tüm eksenlerin [t_min, t_max] aralıklarının kesişimini bulun.\n4. Kesişim boş değilse ve t_min < t_max ise kesişim vardır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Çarpışma Tespiti",
+      "name": "OBB Çarpışma Testi",
+      "desc": "Döndürülmüş Sınır Kutuları (OBB) kullanarak daha doğru çarpışma tespiti yapın.",
+      "tags": [
+        "OBB",
+        "çarpışma",
+        "SAT"
+      ],
+      "badge1": "İleri",
+      "content": "## OBB-OBB Çarpışma (SAT)\n1. Ayrılabilir Eksen Teoremi (SAT) prensiplerini uygulayın.\n2. İki OBB'nin tüm yüzey normalleri ve kenar çiftleri için potansiyel ayrılma eksenlerini belirleyin.\n3. Her eksende iki OBB'nin projeksiyonlarının çakışıp çakışmadığını kontrol edin.\n4. Tüm eksenlerde çakışma varsa çarpışma vardır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Fizik Motoru Optimizasyonu",
+      "name": "Geniş Faz Optimizasyonu",
+      "desc": "Gereksiz dar faz çarpışma kontrollerini azaltmak için geniş faz algoritmaları kullanın.",
+      "tags": [
+        "optimizasyon",
+        "geniş faz",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Geniş Faz Stratejileri\n1. Bölgesel Yapılar: Bounding Volume Hiyerarşileri (BVH) veya Uzaysal Bölümleme (Octrees, Grids) kullanın.\n2. Hareketli Objeler: Potansiyel çarpışan çiftleri belirlemek için sweep-and-prune algoritmasını uygulayın.\n3. Yalnızca yakın objeler için dar faz kontrolü yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Fizik Motoru Optimizasyonu",
+      "name": "Dar Faz Optimizasyonu",
+      "desc": "Doğru çarpışma noktalarını ve normallerini verimli bir şekilde hesaplayın.",
+      "tags": [
+        "optimizasyon",
+        "dar faz",
+        "hassasiyet"
+      ],
+      "badge1": "Orta",
+      "content": "## Dar Faz Algoritma Seçimi\n1. Basit şekiller için (küre, AABB) analitik çözümler kullanın.\n2. Karmaşık şekiller için GJK/EPA gibi yinelemeli algoritmaları tercih edin.\n3. Çarpışma bilgilerini (nokta, normal, derinlik) doğru bir şekilde elde edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Fizik Motoru Optimizasyonu",
+      "name": "Çarpışma Katmanları",
+      "desc": "Hangi nesnelerin birbiriyle etkileşime gireceğini kontrol ederek performansı artırın.",
+      "tags": [
+        "katmanlar",
+        "filtreleme",
+        "performans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Çarpışma Katmanları Kurulumu\n1. Her fizik objesine bir katman ID'si veya bitmask atayın.\n2. Hangi katmanların birbiriyle çarpışacağını belirleyen bir matris veya kural seti oluşturun.\n3. Çarpışma testi sırasında yalnızca eşleşen katmanlara sahip objeleri kontrol edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Fizik Motoru Optimizasyonu",
+      "name": "Veri Yapıları Optimizasyonu",
+      "desc": "Fizik verilerini bellekte verimli bir şekilde depolayarak erişim hızını artırın.",
+      "tags": [
+        "veri",
+        "bellek",
+        "CACHE"
+      ],
+      "badge1": "İleri",
+      "content": "## Bellek Dostu Yapılar\n1. Dizi tabanlı (Array of Structs) yerine Yapı tabanlı Diziler (Struct of Arrays) kullanmayı düşünün.\n2. Bağlantılı listelerden kaçının, bitişik bellek bölgelerini tercih edin.\n3. Çarpışma çiftlerini depolamak için hash tabloları veya ikili ağaçlar kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Katı Cisim Fiziği",
+      "name": "Euler Entegrasyonu",
+      "desc": "Katı cisimlerin hareketini zaman içinde basit bir şekilde güncellemek için Euler entegrasyonu kullanın.",
+      "tags": [
+        "entegrasyon",
+        "hareket",
+        "fizik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Euler Entegrasyonu Adımları\n1. Cisimlerin hız ve açısal hızlarını güncelleyin: v += a * dt, ω += α * dt.\n2. Konum ve dönüşü güncelleyin: p += v * dt, q += 0.5 * q_omega * dt.\n3. Küçük zaman adımları (dt) kullanarak kararlılığı artırın, ancak hassasiyet sınırlıdır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Katı Cisim Fiziği",
+      "name": "İmpuls Çözümleyicisi",
+      "desc": "Çarpışma sonrası anlık kuvvetleri (impulslar) uygulayarak katı cisimlerin tepkilerini hesaplayın.",
+      "tags": [
+        "impuls",
+        "çarpışma",
+        "kuvvet"
+      ],
+      "badge1": "Orta",
+      "content": "## İmpuls Uygulama\n1. Çarpışma noktasını, normalini ve cisimlerin göreceli hızını bulun.\n2. Geri sekme (restitution) ve kütle bilgilerini kullanarak impuls büyüklüğünü hesaplayın.\n3. Bu impulsu çarpışan cisimlere uygulayarak hızlarını ve açısal hızlarını güncelleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Katı Cisim Fiziği",
+      "name": "Sürtünme Hesaplaması",
+      "desc": "Çarpışma yüzeyleri arasındaki sürtünme kuvvetini doğru bir şekilde modelleyin.",
+      "tags": [
+        "sürtünme",
+        "kuvvet",
+        "fizik"
+      ],
+      "badge1": "Orta",
+      "content": "## Sürtünme Uygulama\n1. Normal impulsun büyüklüğünü hesaplayın.\n2. Statik ve kinetik sürtünme katsayılarını (μs, μk) belirleyin.\n3. Yüzeydeki göreceli teğetsel hızı kullanarak sürtünme impulsunu hesaplayın.\n4. Uygulanacak sürtünme impulsunu sınırlamak için normal impulsu kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Katı Cisim Fiziği",
+      "name": "Yerçekimi ve Kuvvet Uygulama",
+      "desc": "Cisimlere yerçekimi ve diğer dış kuvvetleri doğru bir şekilde uygulayın.",
+      "tags": [
+        "yerçekimi",
+        "kuvvet",
+        "ivme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kuvvetlerin Uygulanması\n1. Her cismin kütlesini (m) ve yerçekimi ivmesini (g) tanımlayın.\n2. Cisimlere etki eden yerçekimi kuvvetini Fg = m * g olarak hesaplayın.\n3. Diğer dış kuvvetleri (rüzgar, itme vb.) F_ext olarak ekleyin.\n4. Toplam kuvveti kullanarak ivmeyi (a = F_total / m) güncelleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Gelişmiş Çarpışma Algoritmaları",
+      "name": "GJK Algoritması",
+      "desc": "Karmaşık dışbükey şekiller arasında çarpışma tespiti için GJK algoritmasını kullanın.",
+      "tags": [
+        "GJK",
+        "dar faz",
+        "dışbükey"
+      ],
+      "badge1": "İleri",
+      "content": "## GJK Çarpışma Kontrolü\n1. Minkowski Farkı'nı kullanarak iki cismin fark uzayındaki destek noktalarını bulun.\n2. Simplex adı verilen bir şekil oluşturarak orijini içerip içermediğini kontrol edin.\n3. Orijin simplex içinde ise çarpışma vardır; aksi takdirde yoktur.\n4. Algoritma, yinelemeli olarak simplex'i büyütür veya küçültür.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Gelişmiş Çarpışma Algoritmaları",
+      "name": "EPA Algoritması",
+      "desc": "GJK ile tespit edilen çarpışmanın derinliğini ve temas noktasını EPA ile bulun.",
+      "tags": [
+        "EPA",
+        "derinlik",
+        "temas"
+      ],
+      "badge1": "İleri",
+      "content": "## EPA ile Çarpışma Bilgisi\n1. GJK'dan elde edilen son simplex'i (çarpışma olduğunu varsayarak) kullanın.\n2. Simplex'in orijinaline en yakın yüzeyini bulun.\n3. Bu yüzeyin normali çarpışma normali, orijine olan mesafesi ise çarpışma derinliğidir.\n4. Temas noktasını barycentric koordinatlarla hesaplayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Performans Analizi ve Profilleme",
+      "name": "Fizik Motoru Profilleme",
+      "desc": "Fizik motorunuzun performans darboğazlarını belirlemek için profilleme araçlarını kullanın.",
+      "tags": [
+        "profilleme",
+        "performans",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Fizik Motoru Profilleme\n1. Özel profilleyici araçları (örn. Tracy, RenderDoc) veya motorun kendi profilleme API'sini entegre edin.\n2. Çarpışma tespiti, impuls çözme, entegrasyon gibi ana fizik adımlarını ayrı ayrı ölçün.\n3. En çok zaman alan fonksiyonları ve kod bölgelerini belirleyin.\n4. Optimizasyonları bu darboğazlara odaklayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Performans Analizi ve Profilleme",
+      "name": "Çarpışma Tespiti Performans Metrikleri",
+      "desc": "Çarpışma tespiti algoritmalarınızın verimliliğini değerlendirmek için metrikler kullanın.",
+      "tags": [
+        "metrik",
+        "çarpışma",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Performans Metrikleri\n1. **FPS:** Saniyedeki kare sayısı, genel akıcılığı gösterir.\n2. **Çarpışma Süresi:** Bir karedeki toplam çarpışma tespiti süresi.\n3. **Çift Sayısı:** İşlenen potansiyel çarpışma çiftlerinin sayısı (geniş faz).\n4. **Gerçek Çarpışma Sayısı:** Dar fazda tespit edilen çarpışma sayısı.\n5. CPU kullanımını takip edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
 }
