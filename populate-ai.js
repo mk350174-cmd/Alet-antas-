@@ -25,7 +25,7 @@ function getArg(f) { const i = args.indexOf(f); return i !== -1 ? args[i + 1] : 
 const API_KEY = getArg('--key') || process.env.GEMINI_API_KEY || process.env.ANTHROPIC_API_KEY;
 const onlyArg = getArg('--only');
 const limitArg = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
-const TARGET_ITEMS = 32;
+const TARGET_ITEMS = getArg('--items') ? parseInt(getArg('--items'), 10) : 20;
 
 if (!API_KEY) {
   console.error('HATA: API key gerekli. --key AIza... (Gemini) veya --key sk-ant-... (Claude).');
@@ -52,15 +52,15 @@ yüksek kaliteli içerik üret.
       "desc": "Tek cümlelik açıklama (max 90 karakter)",
       "tags": ["etiket1", "etiket2", "etiket3"],
       "badge1": "Zorluk (Başlangıç/Orta/İleri)",
-      "content": "Kullanıcının doğrudan kullanabileceği eksiksiz, profesyonel talimat/şablon metni. Markdown başlıklar (## ile) ve adımlar içersin. En az 400 karakter."
+      "content": "Kullanıcının doğrudan kullanabileceği profesyonel talimat/şablon metni. Markdown başlıklar (## ile) ve adımlar içersin. 200-350 karakter, öz ve somut."
     }
   ]
 }
 
 KURALLAR:
 - 5-6 alt kategori üret, her birine farklı uyumlu hex renk ver.
-- En az ${TARGET_ITEMS} item üret, kategorilere dengeli dağıt.
-- content alanı gerçekten kullanılabilir, somut ve değerli olsun — yer tutucu değil.
+- Tam ${TARGET_ITEMS} item üret, kategorilere dengeli dağıt.
+- content alanı gerçekten kullanılabilir, somut ve değerli olsun — yer tutucu değil ama gereksiz uzun da değil.
 - Tüm metin Türkçe olsun. JSON dışında hiçbir şey yazma.`;
 
 function buildUserMessage(cfg) {
@@ -126,12 +126,23 @@ async function callAI(cfg, retries = 3) {
 }
 
 function extractJSON(text) {
-  // Yanıttan ilk { ... son } bloğunu al (markdown fence olasılığına karşı)
+  // Markdown fence ve baştaki çöpü temizle, ilk { 'ten başla
   let t = text.trim().replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
   const start = t.indexOf('{');
-  const end = t.lastIndexOf('}');
-  if (start === -1 || end === -1) throw new Error('JSON bulunamadı');
-  return JSON.parse(t.slice(start, end + 1));
+  if (start === -1) throw new Error('JSON bulunamadı');
+  t = t.slice(start);
+
+  // 1) Doğrudan dene
+  try { return JSON.parse(t); } catch (_) {}
+  // 2) Son } 'a kadar dene
+  try { return JSON.parse(t.slice(0, t.lastIndexOf('}') + 1)); } catch (_) {}
+  // 3) Kurtarma: yanıt truncate olduysa son tam item objesine kadar kes,
+  //    items array'ini ve root objeyi kapat. (şema: {categories:[...], items:[...]})
+  const cut = t.lastIndexOf('},');
+  if (cut !== -1) {
+    try { return JSON.parse(t.slice(0, cut + 1) + ']}'); } catch (_) {}
+  }
+  throw new Error('JSON kurtarılamadı (truncate)');
 }
 
 async function processConfig(file) {
