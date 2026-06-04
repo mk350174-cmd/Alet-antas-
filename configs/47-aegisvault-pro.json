@@ -93,7 +93,7 @@
         "mimari"
       ],
       "badge1": "İleri",
-      "content": "## Derinlemesine Savunma\n1. Ağ perimetresi (firewall, IDS) katmanını kur.\n2. Uygulama katmanı güvenliğini (WAF, auth) ekle.\n3. Veri katmanı şifrelemesini tanımla.\n4. İzleme ve tespit katmanını ekle.",
+      "content": "## Derinlemesine Savunma (Defense in Depth)\n\nTek bir koruma katmanına güvenme; saldırgan birini aşsa bile sonrakine takılsın. Katmanlar:\n\n```\n[Çevre: WAF/Firewall] → [Ağ: segmentasyon] →\n[Host: sertleştirme] → [Uygulama: input validation] →\n[Veri: şifreleme] → [İzleme: SIEM/alarm]\n```\n\n**İlke:** Her katman bağımsız ve farklı bir saldırı yüzeyini kapatır. Bir katmanın açığı tüm sistemi düşürmemeli.\n\n**Uygulama:** Her katman için 'bu aşılırsa bir sonraki ne yakalar?' sorusunu yanıtla. En zayıf katman gerçek güvenlik seviyendir. Katmanları düzenli test et (kırmızı takım), tek nokta arızasını (single point of failure) ortadan kaldır.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "erişim"
       ],
       "badge1": "İleri",
-      "content": "## Zero Trust\n1. Her erişim isteğini kimlik doğrulat.\n2. En az ayrıcalık (least privilege) ilkesini uygula.\n3. Micro-segmentation ile ağı böl.\n4. Tüm trafiği logla ve anomali izle.",
+      "content": "## Zero Trust Mimari\n\n'Ağ içi = güvenilir' varsayımını terk et. Her istek, nereden gelirse gelsin, doğrulanır: **'asla güvenme, her zaman doğrula.'**\n\n**Temel ilkeler:**\n1. **Açık doğrulama:** Her erişimde kimlik + cihaz + bağlam kontrolü.\n2. **En az ayrıcalık:** Kullanıcı/servis sadece ihtiyacı olan erişime sahip.\n3. **İhlal varsay:** Saldırgan zaten içerideymiş gibi tasarla (micro-segmentation, şifreleme).\n\n**Uygulama:** Kimlik merkezli erişim (IAM), cihaz güven skoru, her servis-servis çağrısında mTLS, sürekli oturum değerlendirme. Geleneksel 'kale-hendek' modelinin aksine iç ağ otomatik güvenilir değildir. Kademeli geçiş yap: en kritik varlıklardan başla.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "tehdit"
       ],
       "badge1": "Orta",
-      "content": "## Kontrol Matrisi\n1. Korunacak varlıkları (veri, sistem) listele.\n2. Her varlığa yönelik tehditleri belirle.\n3. Mevcut kontrolleri karşı hizala.\n4. Açıkları ve önceliklendirmeyi göster.",
+      "content": "## Güvenlik Kontrol Matrisi\n\nVarlıkları, tehditleri ve uygulanan kontrolleri tek tabloda eşle — kapsama boşluklarını görünür yap.\n\n| Varlık | Tehdit | Kontrol | Durum |\n|---|---|---|---|\n| Müşteri DB | Veri sızıntısı | Şifreleme + erişim kontrolü | ✅ |\n| Admin panel | Yetkisiz erişim | MFA + IP allow-list | ⚠ |\n| API | DoS | Rate limit + WAF | ✅ |\n\n**Kullanım:** Her kritik varlık için en az bir kontrol olmalı. Boş hücre = risk. Kontrolleri NIST/ISO 27001 çerçevesine dayandır. Matrisi çeyrekte bir gözden geçir, yeni varlık/tehdit ekle. 'Durum' sütunu denetim için kanıt sağlar.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "kural"
       ],
       "badge1": "İleri",
-      "content": "## WAF Kural Seti\n1. OWASP Top 10'u temel al.\n2. SQL injection, XSS, CSRF kurallarını etkinleştir.\n3. Rate limiting kuralını ekle.\n4. Whitelist ve blacklist dengesi kur.",
+      "content": "## WAF Kural Seti Tasarımı\n\nWeb Application Firewall, uygulamaya gelen trafiği OWASP tehditlerine karşı filtreler.\n\n**Katmanlı kural seti:**\n1. **Hazır kurallar:** OWASP Core Rule Set (CRS) ile başla — SQLi, XSS, RCE kapsar.\n2. **Özel kurallar:** Uygulamaya özel pattern'ler (örn. belirli endpoint'e şüpheli istek).\n3. **Rate limiting:** IP/oturum başına istek sınırı.\n4. **Geo/IP filtreleme:** Beklenmeyen bölgeleri kısıtla.\n\n**Önemli:** Önce 'detection-only' (sadece logla) modda çalıştır, yanlış pozitifleri ayıkla, sonra 'blocking'e geç. Meşru trafiği engellemek, saldırıyı kaçırmak kadar zararlıdır. Kuralları düzenli güncelle; WAF tek savunma değil, katmanlardan biridir.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "throttling"
       ],
       "badge1": "Orta",
-      "content": "## API Güvenlik Katmanı\n1. JWT veya OAuth2 kimlik doğrulama ekle.\n2. Rate limiting: IP ve kullanıcı bazlı.\n3. Request payload boyutu ve şema doğrulama.\n4. Yanıt sızıntısını (stack trace) önle.",
+      "content": "## API Gateway Güvenlik Katmanı\n\nTüm API trafiğini tek kapıdan geçirip merkezi güvenlik uygula:\n\n**Gateway'de uygulanan kontroller:**\n- **Kimlik doğrulama:** Token/JWT/API-key doğrulama (her servis ayrı yapmasın).\n- **Yetkilendirme:** Scope/rol kontrolü.\n- **Throttling:** İstemci başına rate limit.\n- **Input validation:** Şema doğrulama, boyut sınırı.\n- **TLS sonlandırma:** Şifreli trafik yönetimi.\n\n```\n[İstemci] → [API Gateway: auth+limit+validate] → [İç servisler]\n```\n\n**Fayda:** Güvenlik mantığı tek yerde toplanır, servisler iş mantığına odaklanır. **Dikkat:** Gateway tek arıza noktası olabilir — yüksek erişilebilir (HA) kur. İç servisler de gateway'i atlayan isteklere karşı kendini korumalı (defense in depth).",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "modelleme"
       ],
       "badge1": "İleri",
-      "content": "## STRIDE Analizi\n1. Sistemi bileşenlere böl.\n2. Her bileşen için 6 STRIDE kategorisini kontrol et.\n3. Her tehdit için etki ve olasılık puanla.\n4. Azaltma kontrollerini önceliklendir.",
+      "content": "## STRIDE Tehdit Modelleme\n\nSistem tasarımında tehditleri sistematik bul. STRIDE altı kategoriyi kapsar:\n\n| Harf | Tehdit | Karşı kontrol |\n|---|---|---|\n| **S**poofing | Kimlik taklidi | Güçlü kimlik doğrulama |\n| **T**ampering | Veri değiştirme | İmza/hash, bütünlük |\n| **R**epudiation | İnkar | Denetim logu |\n| **I**nfo disclosure | Bilgi sızıntısı | Şifreleme |\n| **D**oS | Hizmet engelleme | Rate limit, ölçek |\n| **E**levation | Yetki yükseltme | En az ayrıcalık |\n\n**Akış:** Veri akış diyagramı çiz → her bileşen/akış için STRIDE'ı sırayla sor → bulunan tehditlere kontrol ata → riski önceliklendir. Tasarım aşamasında yap; sonradan eklenen güvenlik pahalıdır.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "skor"
       ],
       "badge1": "Orta",
-      "content": "## CVSSv3 Skoru\n1. Temel (Base) ölçüt vektörünü belirle.\n2. Geçici (Temporal) faktörleri ekle.\n3. Çevre (Environmental) modifikasyonlarını uygula.\n4. Sonuç skoru ile önceliklendirme yap.",
+      "content": "## CVSSv3 Skor Hesaplama\n\nGüvenlik açıklarını 0-10 ölçeğinde standardize değerlendir; önceliklendirmeyi objektifleştir.\n\n**Temel metrikler (Base Score):**\n- **Attack Vector:** Network / Adjacent / Local / Physical\n- **Attack Complexity:** Low / High\n- **Privileges Required:** None / Low / High\n- **User Interaction:** None / Required\n- **Impact:** Confidentiality / Integrity / Availability (her biri N/L/H)\n\n**Şiddet bantları:** 0.1-3.9 Düşük · 4.0-6.9 Orta · 7.0-8.9 Yüksek · 9.0-10 Kritik.\n\n**Pratik:** CVSS hesaplayıcısını (FIRST.org) kullan, vektör string'ini kaydet. CVSS 'teknik şiddeti' verir; gerçek önceliklendirme için iş etkisi + istismar edilebilirlik (EPSS) ile birleştir.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "erişim"
       ],
       "badge1": "Orta",
-      "content": "## Fiziksel Güvenlik\n1. Bölge bazlı erişim kontrolü (mantrap, kart).\n2. CCTV kapsamı ve saklama süresini belirle.\n3. Rack kilitleri ve kablo yönetimini planla.\n4. Ziyaretçi kayıt ve refakat protokolünü yaz.",
+      "content": "## Veri Merkezi Fiziksel Güvenlik\n\nSiber güvenlik fiziksel erişimle çöker — sunucuya elini koyabilen, çoğu yazılım kontrolünü aşar.\n\n**Katmanlı fiziksel kontrol:**\n1. **Çevre:** Çit, aydınlatma, güvenlik personeli.\n2. **Bina girişi:** Kartlı/biyometrik erişim, ziyaretçi kaydı, mantrap.\n3. **Sunucu odası:** Ayrı erişim yetkisi, rack kilidi.\n4. **İzleme:** CCTV (kayıt + saklama), erişim logları.\n\n**Çevresel:** Yangın söndürme, sıcaklık/nem izleme, kesintisiz güç (UPS + jeneratör), su baskını sensörü.\n\n**İlke:** En az ayrıcalık fiziksel dünyada da geçerli — herkes her odaya girememeli. Erişim loglarını siber loglarla birlikte denetle. Düzenli tatbikat yap.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "veri merkezi"
       ],
       "badge1": "Orta",
-      "content": "## Isı-Yangın Yönetimi\n1. Sıcaklık sensörlerini rack üst/alt noktalarına yerleştir.\n2. Soğuk/sıcak koridor ayrımı uygula.\n3. FM-200 veya inert gaz söndürme seç.\n4. Uyarı eşiklerini ve otomatik tepkileri ayarla.",
+      "content": "## Isı ve Yangın Yönetimi (Veri Merkezi)\n\nDonanım ısı üretir; kontrolsüz ısı = arıza + yangın riski. Erişilebilirlik güvenliğin parçasıdır.\n\n**Isı yönetimi:**\n- Hedef: 18-27°C, nem %40-60.\n- Sıcak/soğuk koridor ayrımı (hot/cold aisle).\n- Yedekli (N+1) klima; sıcaklık sensörü + alarm.\n\n**Yangın yönetimi:**\n- Erken tespit: VESDA (aspirasyonlu duman dedektörü).\n- Söndürme: temiz gazlı sistem (FM-200/Novec) — su donanıma zarar verir.\n- Bölgeleme: yangın bir rack'i diğerlerinden izole etsin.\n\n**Plan:** Sıcaklık eşiği aşılınca otomatik alarm + kademeli kapatma prosedürü. Düzenli test et; tek klima arızası tüm odayı düşürmemeli.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "segmentasyon"
       ],
       "badge1": "İleri",
-      "content": "## ICS/SCADA Güvenlik\n1. IT/OT ağlarını DMZ ile ayır.\n2. Data diode ile tek yönlü veri akışı kur.\n3. SCADA protokollerini (Modbus, DNP3) izole et.\n4. Patch yönetimi için izole test ortamı ekle.",
+      "content": "## ICS/SCADA Ağ Segmentasyonu\n\nEndüstriyel kontrol sistemleri (fabrika, enerji, su) IT ağından izole edilmeli — bir IT ihlali fiziksel süreçleri tehdit etmemeli.\n\n**Purdue Modeli katmanları:**\n```\nSeviye 0-1: Saha cihazları (PLC, sensör)\nSeviye 2: Kontrol (SCADA, HMI)\nSeviye 3: Operasyon (MES)\n--- DMZ (kritik sınır) ---\nSeviye 4-5: Kurumsal IT\n```\n\n**Kontroller:** IT ve OT arasına endüstriyel DMZ + tek yönlü veri diyotu; OT ağında allow-list firewall; uzaktan erişim için sıkı jump-host + MFA. **İlke:** OT sistemleri eski ve yamasız olabilir — onları yamalamak yerine etrafını izole et (compensating control). Asla OT'yi doğrudan internete bağlama.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "kurtarma"
       ],
       "badge1": "İleri",
-      "content": "## Dayanıklılık Planı\n1. Kritik bileşenleri ve bağımlılıkları haritala.\n2. Tek başarısızlık noktalarını (SPOF) belirle.\n3. Yedeklilik ve failover sürelerini tanımla.\n4. Tatbikat ve test periyodunu planla.",
+      "content": "## Kritik Altyapı Dayanıklılık Planı\n\nEnerji, su, ulaşım, finans gibi sistemler kesintiye dayanıklı tasarlanmalı — başarısızlık toplumsal etkili.\n\n**Dayanıklılık katmanları:**\n1. **Yedeklilik:** Kritik bileşende N+1/2N; coğrafi dağıtım.\n2. **Felaket kurtarma (DR):** RTO (ne kadar sürede ayağa kalkmalı) ve RPO (ne kadar veri kaybı kabul) tanımla.\n3. **Failover:** Otomatik yedek sisteme geçiş, düzenli test.\n4. **Manuel fallback:** Tüm dijital sistemler düşerse elle işletme prosedürü.\n\n**Plan:** Senaryo bazlı tatbikat (siber saldırı, doğal afet, tedarik kesintisi). Tek nokta bağımlılıklarını haritala ve yok et. 'Kağıt üstünde plan' yetmez — düzenli canlı tatbikatla doğrula.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "playbook"
       ],
       "badge1": "Orta",
-      "content": "## Olay Müdahale\n1. Tespit ve sınıflandırma adımını tanımla.\n2. Kontrol altına alma (containment) prosedürünü yaz.\n3. Kök neden analizi adımlarını sırala.\n4. Kurtarma ve öğrenilen dersler aşamasını ekle.",
+      "content": "## Olay Müdahale Oyun Kitabı (Incident Response)\n\nKriz anında doğaçlama değil, prosedür çalışır. NIST 6 aşaması:\n\n1. **Hazırlık:** Ekip, iletişim kanalı, araçlar hazır.\n2. **Tespit & Analiz:** Olayı doğrula, kapsamı belirle, şiddet ata.\n3. **Sınırlama (Containment):** Yayılmayı durdur (sistemi izole et).\n4. **Yok etme (Eradication):** Kök nedeni temizle (malware, açık).\n5. **Kurtarma:** Sistemleri güvenli şekilde geri al, izle.\n6. **Ders çıkarma:** Post-mortem, prosedürü güncelle.\n\n**Oyun kitabı içeriği:** Roller (kim neyi yapar), iletişim ağacı, karar yetkileri, kanıt toplama adımları, yasal/PR bildirimleri. Saldırı tipine özel playbook'lar (ransomware, veri sızıntısı) hazırla. Düzenli masaüstü tatbikatı (tabletop) yap.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "protokol"
       ],
       "badge1": "Orta",
-      "content": "## Güvenli Haberleşme\n1. End-to-end şifreleme aracını belirle.\n2. Kimlik doğrulama yöntemini kur (PGP, Signal).\n3. Anahtar değişim prosedürünü yaz.\n4. Güvenliği ihlal edilmiş kanal için adım ekle.",
+      "content": "## Güvenli Haberleşme Protokolü\n\nHassas operasyonlarda iletişim şifreli, doğrulanmış ve inkar edilemez olmalı.\n\n**Üç güvence:**\n1. **Gizlilik:** Uçtan uca şifreleme (E2EE) — aradakiler okuyamaz.\n2. **Bütünlük:** Mesaj değiştirilmediğinin garantisi (HMAC/imza).\n3. **Kimlik doğrulama:** Karşı tarafın gerçekten iddia ettiği kişi olması (sertifika/anahtar doğrulama).\n\n**Pratik kurallar:** TLS 1.3+ kullan, eski protokolleri (SSLv3, TLS 1.0) kapat; perfect forward secrecy aç (geçmiş trafik gelecekte çözülmesin); anahtarları düzenli rotasyonla; out-of-band kanaldan anahtar parmak izi doğrula. Kritik komutlar için çift onay (two-person rule) ekle.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "risk"
       ],
       "badge1": "Orta",
-      "content": "## Tedarikçi Riski\n1. Kritik tedarikçileri ve erişim düzeylerini listele.\n2. Güvenlik soruları anketi gönder.\n3. Sertifika (SOC2, ISO27001) doğrulamasını yap.\n4. Sözleşmeye güvenlik maddesi ekle.",
+      "content": "## Üçüncü Taraf (Tedarikçi) Risk Değerlendirme\n\nGüvenliğin en zayıf tedarikçin kadar güçlüdür — saldırılar sıkça tedarik zinciri üzerinden gelir.\n\n**Değerlendirme süreci:**\n1. **Envanter:** Hangi tedarikçi hangi veriye/sisteme erişiyor?\n2. **Risk sınıflandırma:** Erişim seviyesine göre kritiklik (kritik veri = yüksek risk).\n3. **Denetim:** Güvenlik anketi (SIG), sertifikalar (ISO 27001, SOC 2), penetrasyon testi raporu iste.\n4. **Sözleşme:** Güvenlik gereksinimleri, ihlal bildirim süresi, denetim hakkı.\n5. **Sürekli izleme:** Yıllık yeniden değerlendirme, güvenlik puanı takibi.\n\n**İlke:** En az ayrıcalık tedarikçilere de uygulanır — sadece gereken erişimi ver, süreli ver. Tedarikçi ilişkisi bitince erişimi hemen iptal et.",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "tespit"
       ],
       "badge1": "İleri",
-      "content": "## Honeypot Tasarımı\n1. Gerçekçi görünen sahte varlıklar oluştur.\n2. Erişim girişimlerini kayıt altına al.\n3. Uyarı mekanizmasını kur.\n4. İzolasyon sağlayarak yayılmayı önle.",
+      "content": "## Honeypot ve Aldatma (Deception) Teknolojisi\n\nSahte varlıklarla saldırganı erken tespit et ve oyala. Meşru kullanıcı bunlara hiç dokunmaz — her etkileşim şüphelidir.\n\n**Türler:**\n- **Honeypot:** Sahte sunucu/servis; saldırgan onunla uğraşırken sen izlersin.\n- **Honeytoken:** Sahte kayıt/kimlik/dosya; kullanılırsa alarm (örn. sahte DB satırı, kanary API-key).\n- **Honeynet:** Tüm sahte ağ segmenti.\n\n**Değer:** Düşük yanlış pozitif (kimse sahte varlığa meşru sebeple erişmez) → yüksek güvenilirlikli alarm. İç tehdit ve yanal hareketi (lateral movement) erken yakalar.\n\n**Dikkat:** Honeypot izole olmalı — saldırgan onu gerçek sisteme sıçrama tahtası yapmamalı. Üretim verisi asla koyma. Yasal/etik sınırları gözet.",
       "source": {
         "generated": true
       }
