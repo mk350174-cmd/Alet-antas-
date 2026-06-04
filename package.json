@@ -1,0 +1,18 @@
+{
+  "name": "alet-cantasi-mcp",
+  "version": "0.1.0",
+  "description": "MCP server exposing 100 Turkish 'vault' knowledge bases as a routable system-architecture toolbox.",
+  "bin": {
+    "alet-cantasi-mcp": "mcp-server.mjs"
+  },
+  "scripts": {
+    "start": "node mcp-server.mjs",
+    "test:tools": "node test-mcp.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
