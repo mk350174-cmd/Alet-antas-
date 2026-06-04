@@ -93,7 +93,7 @@
         "maliyet"
       ],
       "badge1": "Orta",
-      "content": "## Cost Explorer\n1. Önceki aya göre %20 artış gösteren servisleri filtrele.\n2. Etiket (proje/ekip) bazlı maliyet dökümünü çek.\n3. Kullanılmayan kaynak maliyetini (EBS snapshot, EIP) bul.\n4. Savings Plan önerisini değerlendir.",
+      "content": "## AWS Cost Explorer Sorgu Şablonları\n\nMaliyet anomalilerini servis ve etiket bazında yakala:\n\n**Temel analizler:**\n```\n1. Servise göre: en pahalı 5 servis (EC2, S3, RDS...)\n2. Etikete göre: hangi takım/proje/ortam ne harcıyor\n   (Tag: Environment, Team, Project)\n3. Günlük trend: ani sıçrama = anomali (unutulan kaynak?)\n4. Kullanım tipi: hangi kullanım (veri transfer, depolama)\n```\n\n**Anomali tespiti:** AWS Cost Anomaly Detection'ı aç — ML ile beklenmedik harcamayı otomatik yakalar + bildirir.\n\n**Etiketleme stratejisi (kritik):** Her kaynağa zorunlu etiket (Team, Env, Project) — etiketsiz maliyet 'kör nokta'dır. Cost allocation tag'lerini aktive et. **İçgörü:** Bulut faturası kontrolden çıkabilir; düzenli (haftalık) Cost Explorer incelemesi + bütçe alarmı (AWS Budgets) şart. 'Hangi takım ne harcıyor?' sorusunu etiketler yanıtlar — sorumluluk dağıtır.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "tasarruf"
       ],
       "badge1": "İleri",
-      "content": "## Spot Stratejisi\n1. Stateless, yeniden başlatılabilir iş yüklerini belirle.\n2. Birden fazla instance tipi ve AZ'yi birleştir.\n3. Spot interruption handler ile graceful shutdown yaz.\n4. On-demand karışımı ile minimum SLA garantile.",
+      "content": "## Spot/Preemptible Instance Stratejisi\n\nKesintiye dayanıklı iş yükleri için spot instance ile **%70-90 tasarruf**:\n\n```\nUygun (durumsuz, kesintiye dayanıklı):\n  ✓ Batch işleme, CI/CD runner, render farm\n  ✓ Stateless web (auto-scaling grubunda)\n  ✓ Big data (Spark, EMR)\n\nUygun DEĞİL:\n  ✗ Veritabanı (durumlu)\n  ✗ Tek-instance kritik servis\n```\n\n**Risk yönetimi:**\n```\n1. Spot kesilebilir (2dk uyarı) → graceful shutdown handle et\n2. Çeşitlilik: birden çok instance tipi/AZ (hepsi aynı anda kesilmesin)\n3. Spot + On-Demand karışımı (taban kapasite garanti)\n4. Checkpoint: uzun işlerde ara kayıt (kesilirse kaldığın yerden)\n```\n\n**İçgörü:** Spot, AWS'in atıl kapasitesidir — ucuz ama geri alınabilir. Mimariyi 'kesintiye dayanıklı' tasarlarsan devasa tasarruf. Kubernetes'te spot node pool + on-demand karışımı yaygın. Kesinti sinyalini (rebalance) dinle, pod'ları taşı.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "kapasite"
       ],
       "badge1": "Orta",
-      "content": "## Reserved Instance ROI\n1. Baseline kullanım (sürekli çalışan) boyutunu belirle.\n2. 1/3 yıllık ön ödeme seçeneklerini karşılaştır.\n3. Break-even süresini hesapla.\n4. Kullanılmayan RI'ları marketplace'e sat.",
+      "content": "## Reserved/Savings Plan ROI Hesabı\n\nÖngörülebilir, sürekli iş yükü için rezervasyon ile **%30-72 indirim**:\n\n```\nKarar çerçevesi:\n- On-Demand: $0.10/saat × 730 saat = $73/ay\n- 1-yıl Reserved (no upfront): ~$0.065/saat = $47/ay (%35 tasarruf)\n- 3-yıl Reserved (all upfront): ~$0.040/saat = %60 tasarruf\n\nBaşabaş: rezervasyon ücreti / aylık tasarruf = kaç ayda amorti\n```\n\n**Strateji:**\n```\n1. Taban yük (her zaman çalışan) → Reserved/Savings Plan\n2. Değişken yük → On-Demand veya Spot\n3. Savings Plans (esnek) > Reserved (instance-bağlı) çoğu durumda\n```\n\n**İçgörü:** Rezervasyon, kullanım taahhüdü karşılığı indirimdir. **Risk:** Kullanmadığın kapasiteyi de ödersin — sadece **kararlı, öngörülebilir** taban yükü rezerve et. Cost Explorer 'Reservation Recommendations' geçmişe bakıp önerir. 1-yıl no-upfront düşük riskli başlangıç; 3-yıl max tasarruf ama uzun taahhüt.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "ağ"
       ],
       "badge1": "Orta",
-      "content": "## Three-Tier VPC\n1. Public subnet: ALB, NAT Gateway.\n2. Private subnet: EC2/ECS uygulamaları.\n3. Isolated subnet: RDS, ElastiCache.\n4. Security Group'ları katmanlar arası sıkı tanımla.",
+      "content": "## VPC Three-Tier Mimarisi\n\nPublic, private ve veri katmanlarını izole eden güvenli ağ tasarımı:\n\n```\nVPC (10.0.0.0/16)\n├─ Public Subnet (10.0.1.0/24)\n│   → Load Balancer, NAT Gateway, Bastion\n├─ Private Subnet (10.0.2.0/24)\n│   → Uygulama sunucuları (internet'e NAT üzerinden çıkar)\n└─ Data Subnet (10.0.3.0/24)\n    → Veritabanı (internet erişimi YOK)\n```\n\n**Güvenlik katmanları:**\n```\n- Public: internet'ten erişilebilir (sadece LB/Bastion)\n- Private: sadece public katmandan erişilir\n- Data: sadece private katmandan, internet izole\n- Her AZ'de tekrar (yüksek erişilebilirlik)\n```\n\n**İlke (derinlemesine savunma):** DB'ye internetten doğrudan erişim imkansız — saldırgan önce LB, sonra app katmanını aşmalı. Security Group'lar katmanlar arası trafiği kısıtlar (least privilege). NAT Gateway, private katmanın güncelleme/dış-API için çıkışını sağlar (gelen bağlantı kabul etmeden). Çok-AZ ile dayanıklılık.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "api gateway"
       ],
       "badge1": "Orta",
-      "content": "## Serverless API\n1. API Gateway → Lambda entegrasyonu kur.\n2. Lambda handler'da cold start için bağlantı önbellekle.\n3. DynamoDB için single-table design değerlendir.\n4. Lambda Powertools ile yapılandırılmış log ve trace ekle.",
+      "content": "## Lambda Serverless API Şablonu\n\nAPI Gateway + Lambda + DynamoDB ile sunucusuz, ölçeklenen API:\n\n```\nİstemci → API Gateway → Lambda → DynamoDB\n          (routing)    (mantık)  (veri)\n```\n\n```yaml\n# SAM template\nResources:\n  ApiFunction:\n    Type: AWS::Serverless::Function\n    Properties:\n      Handler: index.handler\n      Runtime: nodejs20.x\n      MemorySize: 256\n      Timeout: 10\n      Events:\n        Api:\n          Type: Api\n          Properties: { Path: /items, Method: get }\n      Policies:\n        - DynamoDBReadPolicy: { TableName: !Ref Tablo }\n```\n\n**Avantajlar:** Sunucu yönetimi yok, otomatik ölçek (0→binlerce), kullandığın kadar öde (boştayken ücretsiz). **Dikkat noktaları:** Cold start (ilk çağrı gecikmesi — provisioned concurrency ile azalt), 15dk max süre, durumsuz olmalı. **Ne zaman:** Değişken/düşük trafik, olay-tetikli işler, hızlı prototip. **Ne zaman değil:** Sürekli yüksek trafik (o zaman konteyner daha ucuz olabilir), uzun süren işler. En az ayrıcalık IAM politikası kritik.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "serverless"
       ],
       "badge1": "Orta",
-      "content": "## Cloud Run\n```yaml\napiVersion: serving.knative.dev/v1\nkind: Service\nspec:\n  template:\n    metadata:\n      annotations:\n        autoscaling.knative.dev/maxScale: '10'\n    spec:\n      containers:\n      - image: gcr.io/proj/app\n        resources:\n          limits: {cpu: '1', memory: 512Mi}\n```",
+      "content": "## GCP Cloud Run Deployment\n\nKonteyneri sunucusuz çalıştır — otomatik ölçek, kullandığın kadar öde:\n\n```bash\n# Container'ı deploy et\ngcloud run deploy api \\\n  --image gcr.io/proje/api:1.0 \\\n  --region europe-west1 \\\n  --min-instances 0 \\\n  --max-instances 10 \\\n  --memory 512Mi \\\n  --concurrency 80 \\\n  --allow-unauthenticated\n```\n\n**Özellikler:** Herhangi bir container'ı (HTTP dinleyen) çalıştırır; `min-instances 0` = boştayken sıfıra iner (ücretsiz, ama cold start); `concurrency 80` = bir instance 80 eşzamanlı istek alır (Lambda'dan farkı — Lambda 1:1). **Lambda vs Cloud Run:** Cloud Run container tabanlı (taşınabilir, dil-bağımsız), daha yüksek concurrency, 60dk'ya kadar. Lambda olay-zengini AWS ekosistemi. **İpucu:** `min-instances 1` cold start'ı önler (sürekli ücret karşılığı). Stateless tasarla; durum DB/cache'te.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "sorgu"
       ],
       "badge1": "Orta",
-      "content": "## BigQuery Maliyet\n1. `--dry-run` ile sorgu maliyetini önce tahmin et.\n2. Tablo partisyonlaması ve kümeleme (clustering) uygula.\n3. Kullanıcı başına günlük tarama limiti ayarla.\n4. BI Engine ile tekrar sorgularda tasarruf yap.",
+      "content": "## BigQuery Maliyet Kontrolü\n\nBigQuery **taranan veri** üzerinden faturalar — kontrolsüz sorgu pahalıya patlar:\n\n```sql\n-- ❌ Pahalı: tüm tabloyu tarar\nSELECT * FROM dev.olaylar;\n\n-- ✅ Ucuz: sadece gerekli kolon + partition filtresi\nSELECT user_id, event FROM dev.olaylar\nWHERE _PARTITIONDATE = '2024-06-04';\n```\n\n**Maliyet kontrol araçları:**\n```\n1. Partition + cluster: tarama alanını daralt (tarih partition şart)\n2. Maximum bytes billed: sorgu limiti (kaza önleme)\n3. Dry-run: sorgu öncesi maliyet tahmini\n   bq query --dry_run\n4. Sadece gerekli kolonlar (SELECT * yasak)\n```\n\n**İçgörü:** BigQuery'de `SELECT *` ve partition'sız sorgu en yaygın maliyet hatasıdır — bir sorgu terabyte tarayıp yüzlerce dolar tutabilir. **Önlem:** Tablolarda tarih partition + sık-filtre kolonlarında cluster; sorgu başına `maximum_bytes_billed` limiti; ekibe dry-run alışkanlığı. Flat-rate (sabit ücret) yüksek hacimde on-demand'den ucuz olabilir.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "http"
       ],
       "badge1": "Orta",
-      "content": "## Azure Functions\n```json\n{\"bindings\":[{\n  \"authLevel\":\"function\",\n  \"type\":\"httpTrigger\",\n  \"direction\":\"in\",\n  \"methods\":[\"get\",\"post\"]\n},{\n  \"type\":\"http\",\n  \"direction\":\"out\"\n}]}\n```\nManaged Identity ile Azure servislerine şifresiz erişim.",
+      "content": "## Azure Functions Şablonu\n\nHTTP trigger ile sunucusuz fonksiyon:\n\n```js\n// function: HTTP trigger\nmodule.exports = async function (context, req) {\n  const ad = req.query.ad || req.body?.ad;\n  context.res = {\n    status: 200,\n    body: { mesaj: `Merhaba ${ad}` }\n  };\n};\n```\n\n```json\n// function.json — binding\n{\n  \"bindings\": [\n    { \"type\": \"httpTrigger\", \"direction\": \"in\",\n      \"methods\": [\"get\",\"post\"], \"authLevel\": \"function\" },\n    { \"type\": \"http\", \"direction\": \"out\" }\n  ]\n}\n```\n\n**Trigger çeşitleri:** HTTP, Timer (cron), Queue, Blob, Event Grid — olay-tetikli mimari. **Plan seçenekleri:** Consumption (kullandığın kadar, cold start), Premium (sıcak instance, VNet), Dedicated (App Service planında). **Lambda/Cloud Run benzeri** ama Azure ekosistemine entegre (Event Grid, Service Bus, Cosmos DB binding'leri). **İpucu:** `authLevel: function` ile key koruması; production'da Managed Identity + Key Vault. Binding'ler boilerplate'i azaltır (DB/queue'ya kod yazmadan bağlan).",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "azure"
       ],
       "badge1": "İleri",
-      "content": "## AKS Kurulum\n```bash\naz aks create \\\n  --resource-group prod-rg \\\n  --name prod-cluster \\\n  --node-count 3 --min-count 2 --max-count 10 \\\n  --enable-cluster-autoscaler \\\n  --enable-managed-identity \\\n  --enable-addons monitoring\n```",
+      "content": "## AKS (Azure Kubernetes Service) Cluster\n\nProduction için node pool, autoscaler ve izleme:\n\n```bash\naz aks create \\\n  --resource-group rg-prod \\\n  --name aks-prod \\\n  --node-count 3 \\\n  --enable-cluster-autoscaler \\\n  --min-count 3 --max-count 10 \\\n  --node-vm-size Standard_D4s_v3 \\\n  --enable-managed-identity \\\n  --network-plugin azure \\\n  --enable-addons monitoring\n```\n\n**Production öğeleri:**\n```\n- Cluster autoscaler: yüke göre node ekle/çıkar (3-10)\n- Managed Identity: secret'sız Azure kaynak erişimi\n- Azure Monitor: container insights (metrik+log)\n- Sistem + kullanıcı node pool ayrımı\n- Availability Zones: AZ'lere dağıt (dayanıklılık)\n```\n\n**İpuçları:** Sistem podları (kube-system) ayrı node pool'da, uygulama ayrı — izolasyon. Spot node pool ekleyerek batch yükü ucuzlat. Network policy ile pod-pod trafiği kısıtla. RBAC + Azure AD entegrasyonu. Düzenli K8s sürüm güncellemesi (AKS yönetir ama planla).",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "checklist"
       ],
       "badge1": "Orta",
-      "content": "## 12 Factor Kontrol\n1. Config: ortam değişkenlerinde mi?\n2. Backing services: URL ile mi bağlanıyor?\n3. Stateless: dosya sistemi durumu var mı?\n4. Disposability: hızlı başlayıp duruyorlar mı?\n5. Dev/prod eşliği: ortamlar ne kadar benzer?",
+      "content": "## 12 Factor App Kontrol Listesi\n\nBuluta hazır, ölçeklenebilir uygulama için 12 ilke:\n\n```\n1. Codebase: tek repo, çok deploy\n2. Dependencies: açıkça bildir (package.json), izole et\n3. Config: ortam değişkeninde (kodda değil)\n4. Backing services: DB/cache takılıp çıkarılabilir kaynak\n5. Build/release/run: aşamaları ayır\n6. Processes: durumsuz (stateless) — durum DB'de\n7. Port binding: kendi portunu export et\n8. Concurrency: process ölçeklemeyle büyü\n9. Disposability: hızlı başla/dur (graceful shutdown)\n10. Dev/prod parity: ortamları benzer tut\n11. Logs: stdout'a stream (dosyaya değil)\n12. Admin processes: tek-seferlik işleri aynı ortamda çalıştır\n```\n\n**Kritikler:** #3 (config env'de) → aynı image her ortamda. #6 (stateless) → yatay ölçek mümkün. #11 (log stdout) → konteyner/bulut log toplar. **İçgörü:** Bu ilkeler cloud-native'in temelidir; her birini ihlal ölçeklenmeyi/taşınmayı zorlaştırır. Yeni servis tasarlarken bu listeyi denetim olarak kullan.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "güvenlik"
       ],
       "badge1": "İleri",
-      "content": "## Sıfır Sır Erişim\n1. Uygulama için managed/service identity etkinleştir.\n2. Hedef kaynağa IAM rolü ata.\n3. Kod içinde sabit şifre kaldır.\n4. SDK'nın credential chain'ini kullan (DefaultAzureCredential vb).",
+      "content": "## Managed Identity ile Sıfır Sır (Secretless)\n\nBulut servislerine **şifre/key olmadan** eriş — sızdıracak sır olmaz:\n\n```\nGeleneksel (riskli):\n  Uygulama → DB şifresi (env/config) → DB\n  ⚠️ Şifre sızabilir, rotasyon gerekir\n\nManaged Identity:\n  Uygulama → cloud kimliği (otomatik) → DB\n  ✓ Sır yok; bulut kimlik doğrular\n```\n\n**AWS (IAM Role):** EC2/Lambda'ya rol ata → SDK otomatik geçici kimlik alır.\n**Azure (Managed Identity):** Kaynağa identity ata → Key Vault/DB'ye secretless erişim.\n**GCP (Workload Identity):** Servis hesabını pod'a bağla.\n\n```js\n// SDK otomatik kimliği kullanır, key gerekmez\nconst client = new S3Client({ region: 'eu-central-1' });\n// AWS, instance rolünden geçici credential alır\n```\n\n**İçgörü:** En iyi sır, **olmayan sırdır**. Managed identity ile uzun-ömürlü key ortadan kalkar; bulut kısa-ömürlü, otomatik-rotasyonlu kimlik verir. Sızıntı yüzeyi yok, rotasyon derdi yok. Modern bulut güvenliğinin temel ilkesi.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "peering"
       ],
       "badge1": "İleri",
-      "content": "## Çoklu Bulut Ağ\n1. Her bulutta VPC/VNet IP aralıklarını örtüşmeyecek seç.\n2. IPSec VPN veya Cloud Interconnect kur.\n3. Merkezi DNS çözümlemesini yapılandır.\n4. Gecikme ve bant genişliği kısıtlarını belgele.",
+      "content": "## Çoklu Bulut Ağ Tasarımı\n\nAWS ve GCP/Azure arasında güvenli bağlantı mimarisi:\n\n```\nBağlantı seçenekleri:\n1. VPN (IPSec): bulutlar arası şifreli tünel — basit, orta hız\n2. Dedicated interconnect: özel hat — pahalı, yüksek hız/düşük gecikme\n3. SD-WAN: çoklu bağlantı yönetimi\n```\n\n**Tasarım ilkeleri:**\n```\n- CIDR çakışmasını önle (her bulut farklı IP aralığı)\n- Trafiği şifrele (bulutlar arası = güvenilmez ağ)\n- DNS: çapraz-bulut servis keşfi (private DNS)\n- Veri yerçekimi: veriyi nerede tutarsan işlem orada olsun\n  (çapraz-bulut veri transferi pahalı + yavaş)\n```\n\n**İçgörü:** Çoklu bulut, sağlayıcı kilidini kırar ve dayanıklılık sağlar ama **karmaşıklık ve maliyet** ekler (özellikle veri transfer ücretleri — egress pahalıdır). **Uyarı:** 'Çoklu bulut' moda diye yapma; net gerekçe olmalı (yasal, dayanıklılık, mevcut yatırım). Çoğu durumda tek-bulut + iyi mimari daha basit ve ucuzdur. Gerçekten gerekirse CIDR planı ve egress maliyeti önceden hesapla.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "israf"
       ],
       "badge1": "Başlangıç",
-      "content": "## Atıl Kaynak Tespiti\n```bash\n# Bağlantısız EBS\naws ec2 describe-volumes --filters Name=status,Values=available\n# Kullanılmayan Elastic IP\naws ec2 describe-addresses --filters Name=domain,Values=vpc \\\n  --query 'Addresses[?AssociationId==null]'\n```\nAWS Trusted Advisor ücretsiz kontrolleri de çalıştır.",
+      "content": "## Kullanılmayan Kaynak Temizliği\n\nAtıl kaynaklar sessizce fatura şişirir — düzenli temizle:\n\n```\nYaygın 'zombi' kaynaklar:\n  ✗ Bağlantısız EBS volume / managed disk (silinmemiş)\n  ✗ Ayrılmış ama kullanılmayan Elastic IP (ücretli!)\n  ✗ Eski snapshot'lar (birikir)\n  ✗ Durmuş ama silinmemiş instance'lar\n  ✗ Boş load balancer (saatlik ücret)\n  ✗ Eski/kullanılmayan AMI/image\n  ✗ Idle RDS / yedek tutulan DB\n```\n\n**Tespit:**\n```bash\n# Bağlantısız EBS volume'ları bul\naws ec2 describe-volumes \\\n  --filters Name=status,Values=available \\\n  --query 'Volumes[*].[VolumeId,Size]'\n```\n\n**Otomasyon:** AWS Trusted Advisor / Azure Advisor atıl kaynakları önerir. Etiket-tabanlı temizlik (örn. `expiry` tag'i geçenleri sil). Düzenli (aylık) 'cloud temizlik' günü. **İçgörü:** Atıl kaynaklar bulut maliyetinin %20-30'u olabilir. Cleanup scriptini cron/Lambda ile otomatikleştir; silmeden önce raporla ve onaya düş (yanlış silme riski).",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "metrik"
       ],
       "badge1": "İleri",
-      "content": "## Observability Üçlüsü\n1. Metrikler: Prometheus + Grafana.\n2. Loglar: Loki veya ELK.\n3. Trace: Jaeger veya Tempo.\n4. OpenTelemetry SDK ile üçünü aynı anda emit et.",
+      "content": "## Observability Üçlüsü (Metrik + Log + Trace)\n\nGerçek gözlemlenebilirlik üç sinyali **birbirine bağlar**:\n\n```\n1. METRİK (ne oluyor?): sayısal, zaman serisi\n   → Prometheus/CloudWatch — 'hata oranı %5'\n2. LOG (neden oldu?): olay detayı\n   → Loki/ELK — 'CARD_DECLINED hatası'\n3. TRACE (nerede oldu?): isteğin servisler arası yolu\n   → Jaeger/Tempo — 'payment-api'de 230ms takıldı'\n```\n\n**Bağlantı (korelasyon):**\n```\nMetrik spike görürsün → ilgili log'lara atlarsın\n  → trace_id ile o isteğin tüm yolculuğunu izlersin\n  → tam olarak hangi serviste/sorguda yavaşladığını bulursun\n```\n\n**Anahtar: `trace_id`** — her log, metrik ve span'de aynı id olmalı ki üç sinyal birleşsin. OpenTelemetry standardı üçünü tek SDK'da toplar. **İçgörü:** Tek başına metrik 'sorun var' der ama 'neden/nerede'yi söylemez; üçlü birlikte incident süresini (MTTR) dramatik düşürür. Modern sistemde bu üçlü olmadan dağıtık hata ayıklama imkansızdır.",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "glacier"
       ],
       "badge1": "Başlangıç",
-      "content": "## S3 Lifecycle\n```json\n{\"Rules\":[{\"Status\":\"Enabled\",\n  \"Transitions\":[\n    {\"Days\":30,\"StorageClass\":\"STANDARD_IA\"},\n    {\"Days\":90,\"StorageClass\":\"GLACIER\"}\n  ],\n  \"Expiration\":{\"Days\":365}\n}]}\n```",
+      "content": "## S3 Lifecycle Politikası\n\nNesneleri otomatik olarak ucuz katmanlara taşı, sonunda sil — depolama maliyetini düşür:\n\n```json\n{\n  \"Rules\": [{\n    \"ID\": \"arsivle-ve-sil\",\n    \"Status\": \"Enabled\",\n    \"Transitions\": [\n      { \"Days\": 30, \"StorageClass\": \"STANDARD_IA\" },\n      { \"Days\": 90, \"StorageClass\": \"GLACIER\" },\n      { \"Days\": 365, \"StorageClass\": \"DEEP_ARCHIVE\" }\n    ],\n    \"Expiration\": { \"Days\": 2555 }\n  }]\n}\n```\n\n**Katmanlar (ucuzdan pahalıya erişim):**\n```\nStandard:      sık erişim, anlık\nStandard-IA:   seyrek erişim, anlık (daha ucuz depolama)\nGlacier:       arşiv, dakikalar-saatler erişim, çok ucuz\nDeep Archive:  uzun arşiv, saatler erişim, en ucuz\n```\n\n**İlke:** Yeni veri sık erişilir (Standard); yaşlandıkça erişim azalır → ucuz katmana taşı; çok yaşlıyı sil veya derin arşivle. **Dikkat:** Erişim maliyeti ters orantılı — Glacier depolama ucuz ama geri-getirme ücretli/yavaş. Erişim deseni belirsizse S3 Intelligent-Tiering otomatik optimize eder. Log/yedek/uyum verisi için lifecycle şart.",
       "source": {
         "generated": true
       }

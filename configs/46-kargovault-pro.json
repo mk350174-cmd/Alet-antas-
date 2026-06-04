@@ -93,7 +93,7 @@
         "linux"
       ],
       "badge1": "Başlangıç",
-      "content": "## Dosya Bölme\n```bash\nsplit -b 20M buyukdosya.tar.gz parca_\n# Yeniden birleştirme:\ncat parca_* > orijinal.tar.gz\n```\n1. `-b` ile byte bazlı, `-l` ile satır bazlı böl.\n2. Parça adı önek olarak son argüman.\n3. Birleştirirken sıralı cat kullan.",
+      "content": "## split ile Dosya Parçalama\n\nLinux `split` büyük dosyayı sabit boyutlu parçalara böler — GitHub'ın 100MB limitini aşmanın en hızlı yolu.\n\n```bash\n# 500MB dosyayı 20MB parçalara böl\nsplit -b 20m buyuk.zip parca_\n# çıktı: parca_aa, parca_ab, parca_ac ...\n\n# Sayısal sonek + özel uzantı\nsplit -b 20m -d --additional-suffix=.part buyuk.zip parca_\n\n# Geri birleştir\ncat parca_* > buyuk.zip\n```\n\n**İpuçları:** Birleştirme sırası alfabetik olduğu için `*` glob doğru sırayı korur. Birleştirdikten sonra checksum doğrula (aşağıdaki SHA256 akışı). Parça boyutunu platform limitinin biraz altında tut (20MB güvenli). Metin dosyaları için `-l` ile satır bazlı bölme de yapılabilir.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "metadata"
       ],
       "badge1": "Orta",
-      "content": "## Python Parçalayıcı\n```python\nimport math\ndef split_file(path, chunk_mb=20):\n    size = os.path.getsize(path)\n    chunks = math.ceil(size / (chunk_mb * 1024**2))\n    with open(path,'rb') as f:\n        for i in range(chunks):\n            data = f.read(chunk_mb*1024**2)\n            with open(f'{path}.{i:04d}','wb') as out:\n                out.write(data)\n```\nMetadata JSON'u ayrıca kaydet: toplam parça, orijinal boyut, hash.",
+      "content": "## Python ile Akıllı Parçalama\n\n`split`'in ötesinde — boyut, sıra ve checksum metadata'sı saklayan parçalayıcı:\n\n```python\nimport hashlib, json, os\n\ndef parcala(yol, boyut=20*1024*1024):\n    meta = {'ad': os.path.basename(yol), 'parcalar': []}\n    with open(yol,'rb') as f:\n        i = 0\n        while (chunk := f.read(boyut)):\n            ad = f'{yol}.{i:03d}'\n            open(ad,'wb').write(chunk)\n            meta['parcalar'].append({\n                'ad': ad, 'sha256': hashlib.sha256(chunk).hexdigest()})\n            i += 1\n    json.dump(meta, open(yol+'.meta.json','w'), indent=2)\n```\n\n**Fayda:** Metadata ile birleştirmede sıra ve bütünlük garanti; eksik/bozuk parça anında tespit edilir. Birleştirici metadata'yı okuyup checksum doğrular.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "depo"
       ],
       "badge1": "Başlangıç",
-      "content": "## Git LFS Kurulumu\n```bash\ngit lfs install\ngit lfs track '*.psd' '*.zip'\ngit add .gitattributes\ngit commit -m 'lfs track'\n```\nBüyük dosyaları normal push gibi gönder, LFS otomatik yönetir.",
+      "content": "## Git LFS ile Büyük Dosya İzleme\n\nGit LFS (Large File Storage), büyük dosyaları repo dışında tutar; git'te sadece pointer kalır.\n\n```bash\ngit lfs install\ngit lfs track \"*.psd\" \"*.zip\" \"*.mp4\"  # .gitattributes'a yazar\ngit add .gitattributes\ngit add buyuk.psd\ngit commit -m \"LFS ile büyük dosya\"\ngit push\n```\n\n**Nasıl çalışır:** İzlenen dosya LFS sunucusuna yüklenir; repo'ya 130 byte'lık pointer girer. Klonlayan kişi `git lfs pull` ile gerçek dosyayı çeker. **Limitler:** GitHub ücretsiz LFS kotası sınırlı (1GB depolama, 1GB/ay bant). **Ne zaman:** Düzenli değişen binary'ler (tasarım, medya). Tek seferlik arşivler için split daha ekonomik.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "şablon"
       ],
       "badge1": "Başlangıç",
-      "content": "## tar Şablonları\n```bash\n# Oluştur (gzip)\ntar -czf arsiv.tar.gz klasor/ --exclude='*.log'\n# Aç\ntar -xzf arsiv.tar.gz -C hedef/\n# Listele\ntar -tzf arsiv.tar.gz\n```",
+      "content": "## tar Arşiv Şablonları\n\n`tar` birden çok dosyayı tek arşivde toplar; sıkıştırma ve filtreleme ile güçlüdür.\n\n```bash\n# Sıkıştırılmış arşiv (gzip)\ntar -czf yedek.tar.gz proje/\n\n# Belirli desenleri hariç tut\ntar -czf yedek.tar.gz proje/ \\\n  --exclude='node_modules' --exclude='*.log' --exclude='.git'\n\n# İçeriği listele (açmadan)\ntar -tzf yedek.tar.gz\n\n# Belirli klasöre çıkar\ntar -xzf yedek.tar.gz -C /hedef/\n```\n\n**Sıkıştırma seçenekleri:** `-z` gzip (yaygın), `-j` bzip2 (küçük ama yavaş), `-J` xz (en küçük), `--zstd` (hızlı+iyi). **İpucu:** `--exclude` ile gereksiz dosyaları (bağımlılık, cache, log) dışla — arşiv boyutu çoğu zaman yarıya iner.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "transfer"
       ],
       "badge1": "Orta",
-      "content": "## rsync Artımlı\n```bash\nrsync -avz --progress \\\n  --exclude='node_modules/' \\\n  kaynak/ user@sunucu:/hedef/\n```\n`-a` arşiv modu, `-z` sıkıştırma, `--delete` hedefte fazlalıkları sil.",
+      "content": "## rsync ile Artımlı Transfer\n\n`rsync` yalnızca **değişen** kısımları aktarır — tekrar transferlerde devasa zaman tasarrufu.\n\n```bash\n# Yerel → uzak, ilerleme + sıkıştırma\nrsync -avz --progress proje/ user@sunucu:/yedek/proje/\n\n# Silinen dosyaları hedefte de sil (ayna)\nrsync -avz --delete proje/ hedef/\n\n# Kuru çalışma (ne olacağını gör, yapma)\nrsync -avzn proje/ hedef/\n\n# Belirli desenleri hariç tut\nrsync -avz --exclude='*.tmp' kaynak/ hedef/\n```\n\n**Bayraklar:** `-a` arşiv (izin/zaman koru), `-v` ayrıntılı, `-z` sıkıştır, `-n` dry-run. **İçgörü:** rsync delta algoritmasıyla sadece değişen blokları gönderir; 10GB'lık bir dizinde 50MB değiştiyse sadece onu aktarır. Yedekleme ve deploy için ideal.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "hız"
       ],
       "badge1": "Orta",
-      "content": "## zstd Kullanımı\n```bash\n# Sıkıştır (seviye 1-19, varsayılan 3)\nzstd -3 -o dosya.zst dosya\n# Paralel sıkıştırma\nzstd -T0 --long dosya\n# Aç\nunzstd dosya.zst\n```\nSeviye 19 maksimum sıkıştırma, seviye 1 maksimum hız.",
+      "content": "## zstd ile Hızlı Sıkıştırma\n\nZstandard (zstd), gzip'e yakın oran sunarken **çok daha hızlıdır** — modern varsayılan.\n\n```bash\n# Sıkıştır (seviye 1-19, varsayılan 3)\nzstd -19 buyuk.tar          # max sıkıştırma\nzstd -3 buyuk.tar           # hızlı, iyi oran\nzstd --ultra -22 buyuk.tar  # ekstrem (çok RAM)\n\n# Aç\nzstd -d buyuk.tar.zst\n\n# tar ile birlikte\ntar --zstd -cf yedek.tar.zst proje/\n```\n\n**Karşılaştırma:** zstd-3, gzip-6 ile benzer oran ama 3-5x daha hızlı; zstd-19 xz'ye yakın oran, çok daha hızlı açma. **Çok çekirdek:** `-T0` tüm çekirdekleri kullanır. **Öneri:** Genel kullanımda zstd-3, arşivlemede zstd-19. Hız/oran dengesinde gzip'in yerini almıştır.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "bütünlük"
       ],
       "badge1": "Başlangıç",
-      "content": "## Checksum Doğrulama\n```bash\n# Hash üret\nsha256sum dosya.tar.gz > dosya.tar.gz.sha256\n# Doğrula\nsha256sum -c dosya.tar.gz.sha256\n```\nTransfer sonrası doğrulama başarısız olursa re-transfer tetikle.",
+      "content": "## SHA256 Checksum ile Bütünlük\n\nTransfer öncesi ve sonrası checksum karşılaştırarak bozulmayı garanti yakala.\n\n```bash\n# Checksum üret\nsha256sum buyuk.zip > buyuk.zip.sha256\n# tüm parçalar için\nsha256sum parca_* > checksums.txt\n\n# Transfer sonrası doğrula\nsha256sum -c buyuk.zip.sha256\n# çıktı: buyuk.zip: OK  (veya FAILED)\n\n# Tüm parçaları topluca doğrula\nsha256sum -c checksums.txt\n```\n\n**İş akışı:** 1) Bölmeden önce orijinalin hash'ini al. 2) Parçaların hash'lerini kaydet. 3) Transfer sonrası `-c` ile doğrula. 4) Birleştirdikten sonra orijinal hash ile karşılaştır. **Neden SHA256:** MD5 çakışmaya açık; SHA256 hem bütünlük hem manipülasyon tespiti için güvenli. Otomatik pipeline'a entegre et.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "hata düzeltme"
       ],
       "badge1": "İleri",
-      "content": "## par2 Kurtarma\n```bash\n# %10 kurtarma verisi oluştur\npar2create -r10 arsiv.tar.gz\n# Onar\npar2repair arsiv.tar.gz\n```\nEksik/bozuk parçalar için par2 dosyaları ile yeniden yapılandır.",
+      "content": "## par2 ile Hata Düzeltme (Parity)\n\n`par2`, kayıp/bozuk parçaları **yeniden oluşturabilen** parity dosyaları üretir — yedeklilik sigortası.\n\n```bash\n# %10 kurtarma verisi oluştur\npar2 create -r10 yedek.par2 yedek.tar.zst\n\n# Bütünlüğü doğrula\npar2 verify yedek.par2\n\n# Bozuk/eksik kısmı onar\npar2 repair yedek.par2\n```\n\n**Nasıl çalışır:** par2, Reed-Solomon kodlamasıyla artıklık ekler; `-r10` ile dosyanın %10'u kaybolsa bile tamamı geri kurtarılabilir. **Kullanım:** Güvenilmez transfer (bozuk indirme), uzun süreli arşiv (bit çürümesi), çok-parçalı dağıtım (bir parça kaybolursa). Depolama maliyeti (parity boyutu) karşılığında dayanıklılık alırsın. Kritik arşivlerde checksum + par2 birlikte kullan.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "transfer"
       ],
       "badge1": "Orta",
-      "content": "## rclone Transfer\n```bash\n# S3'e kopyala\nrclone copy yerel/ s3:bucket/yol/ --progress\n# Bulutlar arası\nrclone sync s3:kaynak/ gcs:hedef/ -v\n```\n`--transfers 8` ile paralel bağlantı sayısını artır.",
+      "content": "## rclone ile Çok Bulut Transferi\n\n`rclone`, 70+ bulut depolama arasında (S3, GCS, Azure, Drive) köprü kurar — 'bulutların rsync'i'.\n\n```bash\n# Sağlayıcıları yapılandır (interaktif)\nrclone config\n\n# S3'ten GCS'e doğrudan kopyala\nrclone copy s3:kovam/veri gcs:kovam/veri --progress\n\n# Senkronize et (ayna)\nrclone sync yerel/ s3:kovam/yedek\n\n# Şifreli remote (client-side encryption)\nrclone copy gizli/ crypt:kovam/\n```\n\n**Özellikler:** Sunucudan-sunucuya transfer (yerelden geçmeden), client-side şifreleme, bant genişliği limiti (`--bwlimit`), parçalı yükleme. **Kullanım:** Bulut migrasyonu, çapraz-bulut yedekleme, büyük veri taşıma. Tek bir araçla tüm bulutları rsync mantığıyla yönet — sağlayıcı kilidini kırar.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "upload"
       ],
       "badge1": "İleri",
-      "content": "## Chunk Upload\n1. Dosyayı N parçaya böl.\n2. Her parçayı `Content-Range` başlığıyla POST et.\n3. Sunucu tarafında parçaları birleştir.\n4. Başarısız parçaları retry ile yeniden gönder.",
+      "content": "## HTTP Parçalı (Multipart) Upload\n\nBüyük dosyaları tek istekte değil parçalar halinde yükle — kesintide kaldığın yerden devam.\n\n```js\nasync function parcaliYukle(dosya, parcaBoyut = 5*1024*1024) {\n  const toplam = Math.ceil(dosya.size / parcaBoyut);\n  for (let i = 0; i < toplam; i++) {\n    const parca = dosya.slice(i*parcaBoyut, (i+1)*parcaBoyut);\n    const fd = new FormData();\n    fd.append('chunk', parca);\n    fd.append('index', i);\n    fd.append('total', toplam);\n    fd.append('fileId', dosyaId);\n    await fetch('/upload', { method:'POST', body: fd });\n  }\n  await fetch('/upload/complete', {method:'POST', body: JSON.stringify({fileId})});\n}\n```\n\n**Avantaj:** Devam edilebilir yükleme (resumable), paralel parça, ilerleme takibi, büyük dosya bellek dostu. Sunucu parçaları `index` sırasına göre birleştirir. S3 multipart upload aynı prensibi kullanır.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "disk"
       ],
       "badge1": "Orta",
-      "content": "## Duplikasyon Tespiti\n```bash\n# fdupes ile bul\nfdupes -r klasor/\n# rmlint ile daha hızlı\nrmlint klasor/ && bash rmlint.sh\n```\nSilmeden önce listeyi gözden geçir.",
+      "content": "## Tekrar Eden Dosya Tespiti\n\n`fdupes` veya `rmlint` ile içeriği aynı dosyaları bulup yer aç.\n\n```bash\n# fdupes: tekrarları bul (recursive)\nfdupes -r /veri\n\n# Boyut + özet göster\nfdupes -rS /veri\n\n# İnteraktif silme (hangisini tutacağını sor)\nfdupes -rd /veri\n\n# rmlint: daha güçlü, script üretir\nrmlint /veri\n./rmlint.sh   # önerilen silmeleri uygular\n```\n\n**Nasıl çalışır:** Önce boyuta göre eler, sonra hash ile içerik karşılaştırır (isim değil içerik — yeniden adlandırılmış kopyaları da bulur). **Dikkat:** Silmeden önce mutlaka `-d` interaktif veya dry-run ile incele; hangi kopyayı tutacağına dikkat. **Kullanım:** Yedek temizliği, medya kütüphanesi, indirme klasörü. rmlint ayrıca boş dizin ve bozuk sembolik linkleri de bulur.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "otomasyon"
       ],
       "badge1": "Orta",
-      "content": "## Otomatik Arşiv\n```bash\nfind /data -mtime +90 -name '*.log' \\\n  -exec tar -czf arsiv_$(date +%Y%m).tar.gz {} + \\\n  -delete\n```\nCron'a ekle: `0 2 1 * * /path/script.sh`",
+      "content": "## Eski Dosya Arşivleme Scripti\n\nN günden eski dosyaları otomatik sıkıştırıp arşive taşıyan bash scripti:\n\n```bash\n#!/bin/bash\nKAYNAK=\"/veri/aktif\"\nARSIV=\"/veri/arsiv\"\nGUN=90\n\nfind \"$KAYNAK\" -type f -mtime +$GUN | while read dosya; do\n  rel=\"${dosya#$KAYNAK/}\"\n  hedef=\"$ARSIV/$rel.gz\"\n  mkdir -p \"$(dirname \"$hedef\")\"\n  gzip -c \"$dosya\" > \"$hedef\" && rm \"$dosya\"\n  echo \"Arşivlendi: $rel\"\ndone\n```\n\n**Açıklama:** `find -mtime +90` 90 günden eski dosyaları bulur; her birini gzip'leyip arşive taşır, orijinali siler. **Güvenlik:** Önce `rm` olmadan test et (dry-run); kritik veride yedek doğrula. Cron ile aylık çalıştır (bkz. CronVault). Dizin yapısını koruyarak arşivler — geri bulma kolay olur.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "yeniden birleştirme"
       ],
       "badge1": "Başlangıç",
-      "content": "## Metadata Şeması\n```json\n{\"filename\":\"backup.tar.gz\",\"total_chunks\":25,\n\"chunk_size_mb\":20,\"sha256\":\"abc...\",\n\"chunks\":[{\"index\":0,\"sha256\":\"...\"}]}\n```\nHer transfer öncesi metadata doğrulamasını zorunlu yap.",
+      "content": "## Parçalama Metadata JSON Şeması\n\nParçaları güvenle birleştirmek için gereken tüm bilgiyi tutan standart şema:\n\n```json\n{\n  \"orijinal\": \"buyuk.zip\",\n  \"toplamBoyut\": 524288000,\n  \"sha256\": \"abc123...\",\n  \"parcaBoyut\": 20971520,\n  \"parcaSayisi\": 25,\n  \"parcalar\": [\n    {\"sira\": 0, \"ad\": \"buyuk.zip.000\", \"boyut\": 20971520,\n     \"sha256\": \"def456...\"},\n    {\"sira\": 1, \"ad\": \"buyuk.zip.001\", \"boyut\": 20971520,\n     \"sha256\": \"...\"}\n  ],\n  \"olusturma\": \"2024-06-04T10:00:00Z\"\n}\n```\n\n**Alanların işlevi:** `sira` birleştirme düzeni; her parçanın `sha256`'sı bütünlük; `orijinal.sha256` nihai doğrulama; `toplamBoyut` eksik parça tespiti. Birleştirici bu dosyayı okur, parçaları sırayla doğrular ve birleştirir. Şema, parçalama ile birleştirmeyi birbirinden bağımsız araçlarla yapılabilir kılar.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "verimlilik"
       ],
       "badge1": "Orta",
-      "content": "## Sıkıştırma Kararı\n1. Zaten sıkışık: jpg, mp4, zip → sıkıştırma.\n2. Metin ve veri: json, log, sql → agresif sıkıştır.\n3. Mix arşivde zstd store mode kullan sıkışık dosyalar için.\n4. Benchmark ile zaman/boyut dengesini ölç.",
+      "content": "## Seçici Sıkıştırma Stratejisi\n\nZaten sıkıştırılmış formatları (jpg, mp4, zip) tekrar sıkıştırmak zaman harcar, yer kazandırmaz — hatta büyütebilir.\n\n**Karar tablosu:**\n```\nSıkıştır:    .txt .log .csv .json .sql .html .svg\n             kaynak kodu, veritabanı dökümü\nSıkıştırma:  .jpg .png .mp4 .mp3 .zip .gz .pdf\n  GEREKSİZ   (zaten sıkışık — atla)\n```\n\n**Akıllı yaklaşım:**\n```bash\n# Uzantıya göre seçici tar\nfind . -type f \\( -name '*.jpg' -o -name '*.mp4' \\) > sikismis.txt\ntar -czf arsiv.tar.gz --exclude-from=sikismis.txt .\n# sıkışık dosyaları ayrı, sıkıştırmadan ekle\n```\n\n**İçgörü:** Sıkıştırma CPU maliyetlidir; zaten yüksek-entropili (sıkışık) veride boşa harcanır. Karışık içerikte uzantıya göre ayır — metni sıkıştır, medyayı olduğu gibi paketle. Net sonuç: daha hızlı, aynı boyut.",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "script"
       ],
       "badge1": "İleri",
-      "content": "## Birleştirme Scripti\n```bash\n#!/bin/bash\n# Tüm parçalar var mı?\nfor i in $(seq 0 $TOTAL); do\n  [ -f \"parca_$(printf '%04d' $i)\" ] || exit 1\ndone\ncat parca_* > orijinal\nsha256sum -c orijinal.sha256\n```",
+      "content": "## Bölünmüş Arşiv Birleştirme & Doğrulama\n\nParçaların varlığını, sırasını ve checksum'ını doğrulayıp birleştiren script:\n\n```bash\n#!/bin/bash\nMETA=\"buyuk.zip.meta.json\"\nHEDEF=\"buyuk_restored.zip\"\n\n# Her parçayı sırayla doğrula\njq -r '.parcalar[] | \"\\(.ad) \\(.sha256)\"' \"$META\" | \\\nwhile read ad hash; do\n  [ -f \"$ad\" ] || { echo \"EKSİK: $ad\"; exit 1; }\n  gercek=$(sha256sum \"$ad\" | cut -d' ' -f1)\n  [ \"$gercek\" = \"$hash\" ] || { echo \"BOZUK: $ad\"; exit 1; }\ndone\n\n# Sırayla birleştir\njq -r '.parcalar | sort_by(.sira)[].ad' \"$META\" | \\\n  xargs cat > \"$HEDEF\"\n\n# Nihai doğrulama\nbeklenen=$(jq -r '.sha256' \"$META\")\n[ \"$(sha256sum \"$HEDEF\"|cut -d' ' -f1)\" = \"$beklenen\" ] \\\n  && echo \"✓ Başarılı\" || echo \"✗ Nihai hash uyuşmadı\"",
       "source": {
         "generated": true
       }
