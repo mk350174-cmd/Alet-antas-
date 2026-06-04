@@ -93,7 +93,7 @@
         "karşılaştırma"
       ],
       "badge1": "Orta",
-      "content": "## Fonksiyon Karşılaştırması\n1. Karşılaştırılacak işlevi seç (örn: savaş).\n2. Her panteondan temsilciyi listele.\n3. Karakteristik özellikler ve silahları karşılaştır.\n4. Ortak arketip ve yerel farklılıkları belirle.",
+      "content": "## Fonksiyon Bazlı Tanrı Karşılaştırması\n\nFarklı panteonlardaki tanrıları **işlevlerine** göre karşılaştır — kültürler aynı insani ihtiyaçları farklı tanrılarla karşılar.\n\n```\nİşlev    | Yunan  | Roma    | Nors   | Mısır\nSavaş    | Ares   | Mars    | Tyr    | Sekhmet\nAşk      | Afrodit| Venus   | Freyja | Hathor\nÖlüm     | Hades  | Pluto   | Hel    | Osiris\nBilgelik | Athena | Minerva | Odin   | Thoth\n```\n\n**Yöntem:** 1) Evrensel işlevleri (savaş, aşk, ölüm, bereket, bilgelik) eksen al. 2) Her panteonda karşılığını bul. 3) **Farklılıklara** dikkat — Athena hem savaş hem bilgelik (stratejik), Ares ham şiddet. **İçgörü:** İşlevlerin nasıl bölündüğü kültürel değeri ele verir; bir kültürün bilgeliği savaşla birleştirmesi (Athena) o toplumun savaşa bakışını gösterir.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "süreklililik"
       ],
       "badge1": "İleri",
-      "content": "## Teolojik Yapılar\n1. Tanrı sistemini tanımla (mono/heno/poli).\n2. Baş tanrı hiyerarşisini göster.\n3. Diğer inançlarla etkileşim noktalarını belirle.\n4. Teolojik değişim dönemlerini haritalandır.",
+      "content": "## Tek-Çok Tanrılılık Sürekliliği\n\nTeolojik yapılar 'tek tanrı vs çok tanrı' ikilisi değil, bir süreklilik üzerindedir:\n\n```\nMonoteizm ─ Henoteizm ─ Monolatri ─ Politeizm ─ Animizm\n(tek)      (bir baş+    (bir tapı-   (çok eşit)  (her şeyde\n            altlar)      lan)                      ruh)\n```\n\n**Tanımlar:**\n- **Henoteizm:** Çok tanrı var ama biri baştadır (erken Vedik, Marduk).\n- **Monolatri:** Çok tanrı kabul edilir ama yalnız birine tapılır.\n\n**Yöntem:** Bir inanç sistemini bu eksende konumla; zamanla **kaydığını** izle (politeizm→henoteizm→monoteizm sık bir evrim). **İçgörü:** Geçişler siyasi merkezileşmeyle ilişkilidir — tek imparator, tek tanrı eğilimini güçlendirir. Kategoriler keskin değil, geçişlidir.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "köken"
       ],
       "badge1": "İleri",
-      "content": "## Tanrı Soybilimi\n1. İlk varlık/kaos anlatısını belirle.\n2. Nesil zincirini (köken→tanrılar) çiz.\n3. İlahlar arası güç mücadelelerini sırala.\n4. Farklı kültürlerle yapısal karşılaştır.",
+      "content": "## Tanrı Soybilimi (Theogony) Karşılaştırması\n\nTanrıların birbirinden türeyiş mitlerini kültürler arası karşılaştır — kozmik aile ağaçları.\n\n**Ortak kalıplar:**\n1. **İlksel kaos/boşluk** → ilk varlıklar (Khaos→Gaia; Ginnungagap→Ymir).\n2. **Nesil çatışması:** Genç tanrılar yaşlıları devirir (Kronos→Zeus; Titanlar savaşı).\n3. **Düzenin kuruluşu:** Kazanan nesil kozmosu düzenler.\n\n**Yöntem:** 1) Her panteonun yaratılış zincirini çıkar. 2) Nesil geçişlerini ve çatışmaları karşılaştır. 3) Tekrarlayan 'baba-oğul devrimi' motifini işaretle (Gök-baba'nın devrilmesi yaygın). **İçgörü:** Nesil çatışması miti, eski düzenin yıkılıp yeninin kuruluşunu — belki gerçek tarihsel din değişimlerini — yansıtır. Yapı, kültürün otorite anlayışını ele verir.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "tipoji"
       ],
       "badge1": "Orta",
-      "content": "## Yaratılış Tipolojisi\n1. Yoktan yaratma (creatio ex nihilo) örneklerini topla.\n2. Bedenden/kaotik maddenin şekillendirilmesi örneklerini ekle.\n3. Tanrılar arası savaştan doğan evren mitlerini incele.\n4. Doğa kuvvetleri personifikasyonlarını karşılaştır.",
+      "content": "## Yaratılış Mitleri Tipolojisi\n\nEvren nasıl var oldu? Mitler birkaç tipe ayrılır:\n\n```\n1. Yoktan yaratma (ex nihilo): tanrı sözle/iradeyle\n2. Kaostan düzen: var olan kaos şekillenir\n3. Kozmik yumurta: evren bir yumurtadan çıkar\n4. Dünya-ana: yaratılış doğum metaforu\n5. Kurban/parçalanma: bir varlığın bedeninden (Ymir, Purusha)\n6. Dalgıç miti: hayvan dipten toprak çıkarır\n```\n\n**Yöntem:** Bir yaratılış mitini bu tipolojiye yerleştir; birden çok tip içerebilir. **İçgörü:** Tip, kültürün dünya görüşünü ele verir — 'kurban' miti (evren bir bedelle kuruldu) ile 'söz' miti (düzenli, planlı) farklı kozmoloji hisleri taşır. Coğrafya da etkiler (dalgıç miti su-kıyısı kültürlerinde yaygın).",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "mit"
       ],
       "badge1": "Orta",
-      "content": "## İnsan Yaratılışı\n1. Malzeme kaynağını belirle (toprak, kan, ağaç).\n2. Tanrının amacını veya kazayı tanımla.\n3. İnsanın ilk kusur/sınavını ekle.\n4. Farklı kültür mitlerini karşılaştır.",
+      "content": "## İnsan Yaratılış Mitleri\n\nİnsan nereden geldi? Anlatılar insanın özüne dair kültürel inancı yansıtır:\n\n```\nTopraktan/çamurdan: insan = toprak (ölümlü, alçakgönüllü)\nTanrı kanından/nefesinden: insan = ilahi kıvılcım\nAğaçtan: insan = doğanın parçası (Nors: Ask ve Embla)\nKurban artığından: insan = ikincil/araçsal\nÇiftleşmeden: tanrı-insan soyu (yarı tanrılar)\n```\n\n**Yöntem:** Yaratılış malzemesini ve amacını analiz et — 'insan neden yaratıldı?' (tanrılara hizmet için mi, sevgiden mi, kazara mı?). **İçgörü:** Malzeme insanın değerini kodlar: çamurdan = ölümlü/mütevazı; ilahi nefesten = kutsal kıvılcım. 'Tanrılara hizmet için yaratıldı' miti, o toplumun emek/hiyerarşi anlayışını yansıtabilir.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "mitoloji"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kahraman Arketipi\n1. Doğa üstü köken özelliğini belirle.\n2. Sınavlar ve ölüme yakınlaşmayı incele.\n3. Toplumsal işlevini tanımla (kurucu, kurtarıcı).\n4. Yerel kültürün özgün katkısını belirle.",
+      "content": "## Kahraman Arketipi Karşılaştırması\n\nHerkül'den Manas'a kahramanlar ortak özellikler taşır ama kültüre özgü farklar gösterir.\n\n**Ortak özellikler:**\n```\n- Olağanüstü/karışık doğum (yarı-tanrı, kehanet)\n- Erken güç belirtileri\n- Çağrı + yolculuk + sınavlar\n- Tanrısal yardım + düşmanlık\n- Trajik kusur veya ölüm\n```\n\n**Kültürel farklar:** Yunan kahramanı (Herkül) bireysel güç; Türk destanı (Manas) toplulukla bağ; Mezopotamya (Gılgamış) ölümlülükle yüzleşme. **Yöntem:** Kahramanları ortak şablonda karşılaştır, sonra her kültürün **vurguladığı** değeri (güç/sadakat/bilgelik) işaretle. **İçgörü:** Bir kültürün kahramanında yücelttiği nitelik, o toplumun ideal insan tasavvurudur.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "düzenbaz"
       ],
       "badge1": "Orta",
-      "content": "## Trickster Analizi\n1. Kültürdeki trickster karakteri belirle.\n2. Düzeni bozma ve yaratma fonksiyonunu incele.\n3. Tanrı mı, hayvan mı, insan mı olduğuna bak.\n4. Coyote, Loki, Anansi karşılaştır.",
+      "content": "## Trickster (Düzenbaz) Figürü Analizi\n\nKurnaz, kuralları bozan, sınır-aşan trickster karakteri neredeyse her mitolojide var:\n\n```\nLoki (Nors), Hermes (Yunan), Anansi (Afrika),\nKöroğlu/Keloğlan (Türk-halk), Coyote (Yerli Amerika),\nReynard (Avrupa), Sun Wukong (Çin)\n```\n\n**Ortak işlevler:**\n1. **Sınır bozucu:** Kuralları, tabuları, kategorileri çiğner.\n2. **Kültür getiren:** Sıkça ateş/bilgi/sanatı (hile ile) insanlara taşır.\n3. **Hem yaratıcı hem yıkıcı:** Ahlaki olarak muğlak.\n\n**Yöntem:** Trickster'ı düzen-kaos ekseninde analiz et; neyi bozduğu, ne getirdiği. **İçgörü:** Trickster, katı kozmik düzene gerekli 'esneklik valfi'dir — toplumun bastırdığı kuralsızlığı temsil ve deşarj eder. Mizah ve değişimin mitolojik kaynağıdır.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "coğrafya"
       ],
       "badge1": "Orta",
-      "content": "## Ölüler Dünyası Haritası\n1. Yeraltı bölgelerini ve adlarını listele.\n2. Geçiş ritüeli ve figürünü belirle (Charon, Anubis).\n3. Ödül/ceza coğrafyasını karşılaştır.\n4. Geri dönüş mitlerini incele.",
+      "content": "## Ölüm Sonrası Coğrafyası\n\nÖlüler nereye gider? Her kültürün öteki-dünya haritası, hayata ve ahlaka bakışını yansıtır.\n\n```\nYunan Hades: gölgelerin loş diyarı (ahlaktan bağımsız)\nNors: Valhalla (savaşçı) vs Hel (diğerleri)\nMısır: Duat — tartılma, Aaru cenneti\nMezopotamya: Kur — karanlık, herkese aynı\n```\n\n**Karşılaştırma eksenleri:** 1) **Ahlaki ayrım var mı?** (iyi/kötü ayrı yere mi gider). 2) **Coğrafya:** yeraltı, gökyüzü, ada, dünya-içi? 3) **Geri dönüş/yeniden doğuş** mümkün mü? **İçgörü:** Ahlaki yargı içeren öteki-dünya (Mısır tartısı) ile içermeyen (erken Mezopotamya) farklı etik sistemleri yansıtır. Savaşçı cenneti (Valhalla), o toplumun savaşa verdiği değeri kodlar.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "sembol"
       ],
       "badge1": "İleri",
-      "content": "## Eksen Mundi\n1. Yggdrasil, Ashvattha, Hayat Ağacı örneklerini topla.\n2. Katmanları (gök-yer-yeraltı) karşılaştır.\n3. Ağacın kozmik işlevini belirle.\n4. Şamanizm bağlantısını incele.",
+      "content": "## Dünya Ağacı ve Eksen Mundi (Kozmik Merkez)\n\nKozmik merkez sembolü — gökyüzü, dünya ve yeraltını birleştiren eksen — kültürler arası yaygındır.\n\n```\nYggdrasil (Nors): dokuz dünyayı bağlayan dişbudak\nDünya Ağacı (Türk-Altay): göğü delen kayın\nAxis Mundi: kutsal dağ/sütun/merdiven (Babil zigguratı)\nKozmik direk: şamanın tırmandığı yol\n```\n\n**İşlevler:** 1) Katmanları (gök-yer-altı) birleştirir. 2) Şaman/kahramanın seyahat yoludur. 3) Dünyanın merkezini (kutsal nokta) işaretler. **Yöntem:** Merkez sembolünü ve bağladığı katmanları analiz et. **İçgörü:** Bu evrensel sembol, insanın 'kozmosu düzenleme' ve 'merkez arama' ihtiyacını yansıtır — kaosa karşı yönelim sağlayan kutsal eksen. Tapınaklar sıkça bu merkezi taklit eder.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "ibadet"
       ],
       "badge1": "İleri",
-      "content": "## Kurban Tipolojisi\n1. Hayvan, bitki, insan kurban örneklerini kategorile.\n2. İşlevi belirle (bereket, bağışlanma, güç).\n3. Ritüel uygulayıcısını ve mekanı incele.\n4. Sembolik/gerçek değişim dönemlerini takip et.",
+      "content": "## Kurban Ritüeli Tipolojisi\n\nKurban (sacrifice) pratiği neredeyse evrensel — ama işlev ve biçim kültüre göre değişir.\n\n**İşlevsel tipler:**\n```\n1. Sunu/armağan: tanrıyı memnun etme, lütuf isteme\n2. Birlik (communion): kurbanı paylaşıp tanrıyla bağ\n3. Bedel/fidye: günah/borç ödeme\n4. Bereket: yenilenme, döngü (tarım kurbanları)\n5. Temizlenme: kötülüğü kurbana yükleyip uzaklaştırma (günah keçisi)\n```\n\n**Yöntem:** Bir ritüeli işlevine göre sınıfla; ne sunuluyor (hayvan, ürün, sembolik), kim sunuyor, ne karşılığında? **İçgörü:** Kurban, 'değerli olanı vererek kutsalla alışveriş' mantığıdır. Zamanla sembolikleşir (gerçek→sembolik kurban). Yapısı, kültürün tanrıyla ilişki modelini (alışveriş mi, sevgi mi, korku mu) ele verir.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "mevsim"
       ],
       "badge1": "Orta",
-      "content": "## Takvim Festivalleri\n1. Mevsim dönümü ve gündönümü ritüellerini listele.\n2. Ekin/hasat kutlamalarını karşılaştır.\n3. Ölüler anma ve yeniden doğuş sembolizmini incele.\n4. Modern dini tatillerle sürekliliği belirle.",
+      "content": "## Takvim ve Mevsim Festivalleri\n\nKutsal zaman, tarım/avcılık döngüsüne bağlıdır. Festivaller doğal ritmi kutsallaştırır.\n\n**Evrensel döngü noktaları:**\n```\nGündönümleri: kış (yeniden doğuş - Yule, Nardugan),\n              yaz (bereket zirvesi)\nEkinokslar: bahar (yenilenme - Nevruz),\n            güz (hasat)\nTarım anları: ekim, hasat, ilk meyve\n```\n\n**Yöntem:** Bir kültürün festival takvimini doğal döngüye eşle; her festivalin işlevini (şükran, yakarış, geçiş) belirle. **İçgörü:** Festivaller, belirsiz doğayı (mevsim, hasat) ritüelle 'kontrol edilebilir' kılar ve topluluğu senkronize eder. Nevruz (bahar ekinoksu) gibi kutlamalar farklı kültürlerde bağımsız doğar — ortak insani-astronomik temele dayanır.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "mit"
       ],
       "badge1": "İleri",
-      "content": "## Euhemerism\n1. Gerçek tarihi kişiyi belirle.\n2. Mitolojik katmanlanma aşamalarını izle.\n3. Abartı ve mucize eklenmesini incele.\n4. Karşı örneklerle sınırları test et.",
+      "content": "## Euhemerism Analizi (Tarihten Mite)\n\nEuhemerism: bazı tanrı/kahramanların aslında abartılmış **gerçek tarihi figürler** olduğu tezi. Mit ile tarih arasındaki köprüyü incele.\n\n**Yöntem:**\n1. Mitolojik figürün arkasında olası tarihi çekirdek var mı? (gerçek bir kral, kahraman, kâşif).\n2. Abartı ve ilahileştirme katmanlarını ayır.\n3. Arkeolojik/tarihsel kanıtla karşılaştır.\n\n**Örnek:** Bazı kült kahramanları, sonradan tanrılaştırılmış gerçek atalardan/krallardan türemiş olabilir. **Uyarı:** Aşırı euhemerism her miti 'çarpıtılmış haber'e indirger — oysa mitlerin çoğu sembolik/psikolojik doğar, tarihsel değil. Dengeli kullan: bazı mitlerde tarihi çekirdek var, çoğunda yok. İki ucu da (her şey tarih / hiçbir şey tarih) reddet.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "dönüşüm"
       ],
       "badge1": "İleri",
-      "content": "## Mit Dönüşümü\n1. Orijinal mit ve kültürel bağlamı belirle.\n2. Fetih/yayılma sonrası değişimleri listele.\n3. Eski tanrıların yenilere entegrasyonunu incele.\n4. Hristiyanlaştırma/İslamlaştırma örneklerini ele al.",
+      "content": "## Kültürel Baskı ve Mit Değişimi\n\nYeni kültür/din gelince eski mitler silinmez — **dönüştürülür**. Bu sürecin izini sür.\n\n**Dönüşüm mekanizmaları:**\n```\n1. Şeytanlaştırma: eski tanrı yeni dinde kötü ruh olur\n2. Aziz'e dönüşme: eski tanrı kültü yerel azize aktarılır\n3. Senkretizm: iki sistem karışır (yeni tanrı eski işlevi alır)\n4. Folklorlaşma: tanrı, masal/peri figürüne iner\n5. Bayram devralma: pagan festival yeni dini takvime girer\n```\n\n**Yöntem:** Bir motif/figürün katmanlarını soy; eski hangi tanrının izini taşıyor? **İçgörü:** Kültürel süreklilik beklenenden güçlüdür — yeni din eskinin üstüne inşa edilir, onu tamamen silemez. Halk inançları en eski katmanı sıkça korur.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "ikili"
       ],
       "badge1": "İleri",
-      "content": "## Yapısalcı Analiz\n1. Miti episodlara böl.\n2. Her episodun temasını belirle.\n3. İkili karşıtlıkları (ham/pişmiş, doğa/kültür) çıkar.\n4. Karşıtlıkların çözümünü bul.",
+      "content": "## Yapısalcı Mit Analizi (Lévi-Strauss)\n\nClaude Lévi-Strauss'a göre mitler, kültürün çözemediği **ikili karşıtlıkları** (binary oppositions) işler ve arabuluculuk yapar.\n\n**Yöntem:**\n1. Mitteki temel karşıtlıkları çıkar: doğa/kültür, yaşam/ölüm, ham/pişmiş, erkek/dişi.\n2. Mitin bu karşıtlıkları nasıl **arabulduğunu** (mediation) analiz et — genelde bir 'aracı' figür (trickster, melez varlık).\n3. Farklı mitlerin aynı karşıtlığı farklı işleyişini karşılaştır.\n\n**Örnek:** Trickster (hem hayvan hem insan, hem zeki hem aptal) doğa/kültür karşıtlığında aracıdır. **İçgörü:** Lévi-Strauss'a göre mitin 'içeriği' değil **yapısı** anlamlıdır; mitler insan zihninin karşıtlık-yoluyla-düşünme biçimini yansıtır. Yöntemin eleştirisi: fazla soyut, esnek — dikkatle uygula.",
       "source": {
         "generated": true
       }
