@@ -48,6 +48,276 @@
     "border3": "#2a3232",
     "heroBg": "#0a1212"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "meal-plan",
+      "name": "Yemek Planlaması",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "tarif",
+      "name": "Hızlı Tarifler",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "alisveris",
+      "name": "Alışveriş Yönetimi",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "beslenme",
+      "name": "Beslenme Temelleri",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "hazirlik",
+      "name": "Meal Prep",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "butce",
+      "name": "Bütçeli Yeme",
+      "color": "#4cc9c9"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "meal-plan",
+      "name": "Haftalık Yemek Planı Şablonu",
+      "desc": "7 günlük öğün planını 30 dakikada hazırla.",
+      "tags": [
+        "haftalık",
+        "plan",
+        "şablon"
+      ],
+      "badge1": "Temel",
+      "content": "**Haftalık Plan:** Pazar akşamı 30 dk: haftanın 7 akşam yemeğini belirle. Malzeme örtüşmesine dikkat (domates hem salatada hem sosda). Köfte yapacaksan çift yap: bir kısmı dondur. Plan = alışveriş listesi. Plansız market = fazla harcama + israf. İlk hafta zor, sonrası otomatik.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "meal-plan",
+      "name": "Dönen Yemek Repertuarı",
+      "desc": "20 tarif belirle, döngüsel uygula — sıfır karar yorgunluğu.",
+      "tags": [
+        "repertuar",
+        "döngü",
+        "karar"
+      ],
+      "badge1": "Sistem",
+      "content": "**Dönen Repertuar:** Aile veya kişisel 15-20 favori tarifi listele. 2 haftalık rotasyon yap: Pazartesi = makarna, Salı = tavuk, Çarşamba = mercimek... Alışveriş listesi de sabitleşir. Karar yorgunluğu sıfırlanır. Ayda 1-2 yeni tarif ekle, beğenilmeyeni çıkar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "tarif",
+      "name": "15 Dakikalık Yemekler",
+      "desc": "Hızlı ve besleyici 5 temel tarif.",
+      "tags": [
+        "hızlı",
+        "15 dakika",
+        "pratik"
+      ],
+      "badge1": "Hız",
+      "content": "**15 Dk Tarifler:** 1) Yumurtalı sebze kavurma: 10 dk. 2) Konserve ton balıklı salata: 5 dk. 3) Tam tahıllı tost + avokado + yumurta: 10 dk. 4) Hazır mercimek çorbası + tam buğday ekmek. 5) Yoğurtlu makarna sos. Temel malzemeleri hep stokta tut: yumurta, konserve, dondurulmuş sebze.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "tarif",
+      "name": "Batch Cooking Temel 4 Tarif",
+      "desc": "Pazar günü toplu pişirerek haftalık stresi azalt.",
+      "tags": [
+        "batch",
+        "toplu",
+        "pazar"
+      ],
+      "badge1": "Verimli",
+      "content": "**4 Temel Batch Tarif:** 1) Haşlanmış tavuk (salata, sandviç, wrap için). 2) Pişmiş tahıl (bulgur/pirinç/kinoa). 3) Kızartılmış sebze (fırında karışık sebze). 4) Bakliyat (mercimek/nohut). Dört tanesini birleştirerek 20+ farklı öğün çıkar. Haftalık yemek pişirme süresi %60 azalır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "alisveris",
+      "name": "Akıllı Alışveriş Listesi",
+      "desc": "Markete kategorilere göre liste ile git, iki kat hızlan.",
+      "tags": [
+        "alışveriş",
+        "liste",
+        "kategori"
+      ],
+      "badge1": "Pratik",
+      "content": "**Kategorili Liste:** Marketi fiziksel düzene göre grupla: meyve/sebze → süt ürünleri → et → kuru gıda → temizlik. Listeyi bu sırayla yaz. Koşu sayısı azalır, gözden kaçan olmaz. Uygulama: AnyList, OurGroceries veya Not defteri. Yemek planı → otomatik liste → verimli market.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "alisveris",
+      "name": "Mevsimsel Alışveriş Stratejisi",
+      "desc": "Mevsim sebze ve meyvelerini tercih ederek tasarruf et.",
+      "tags": [
+        "mevsim",
+        "taze",
+        "ekonomik"
+      ],
+      "badge1": "Türkiye",
+      "content": "**Mevsimsel Alışveriş:** İlkbahar: enginar, bezelye, çilek. Yaz: domates, biber, patlıcan, karpuz. Sonbahar: kabak, ıspanak, armut. Kış: lahana, havuç, portakal. Mevsim dışı = 3-5 kat pahalı + az besleyici. Kış için domates/biber dondur veya konserve yap. Yerel pazar = %30 daha ucuz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "beslenme",
+      "name": "Tabak Yöntemi ile Porsiyon",
+      "desc": "Tabak görsel rehberiyle sağlıklı porsiyon dengesi kur.",
+      "tags": [
+        "porsiyon",
+        "tabak",
+        "denge"
+      ],
+      "badge1": "Temel",
+      "content": "**Tabak Yöntemi (Harvard):** Yarısı sebze/meyve. Çeyreği tam tahıl (bulgur, esmer pirinç). Çeyreği protein (et, baklagil, yumurta). Yan: az yağlı süt ürünü. Su: ana içecek. Kalori saymana gerek yok. Görsel yeterli — gözle uygula. Tabak büyüklüğünü küçült (22 cm ideal).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "beslenme",
+      "name": "Protein Kaynakları Listesi",
+      "desc": "Fiyat-etkin Türkiye'de ulaşılabilir protein kaynakları.",
+      "tags": [
+        "protein",
+        "kaynaklar",
+        "Türkiye"
+      ],
+      "badge1": "Türkiye",
+      "content": "**Protein Kaynakları (kg/₺):** En ucuz: yumurta, mercimek, nohut, fasulye. Orta: tavuk göğsü, ton balığı konserve, yoğurt. Pahalı: kırmızı et, deniz ürünleri. Vegan: tofu, tempeh (şehirlerde bulunur). Günlük hedef: vücut ağırlığı × 0.8-1.6 gram. Sabah yumurta ile başla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "hazirlik",
+      "name": "Pazar Meal Prep Rutini",
+      "desc": "2 saatlik pazar prep ile haftalık öğünleri hazırla.",
+      "tags": [
+        "pazar",
+        "prep",
+        "rutin"
+      ],
+      "badge1": "Sistem",
+      "content": "**2 Saatlik Pazar Prep:** Saat 1: tahıl pişir + sebzeleri fırına koy. Saat 2: proteini pişir + salata malzemelerini doğra. Saklama: hava geçirmez kap, 4 güne kadar buzdolabı, 3 aya kadar dondurulmuş. Sabah 2 dk: hazır malzemeleri birleştir, öğün hazır. Haftalık yemek yüksekten aşağı indir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "hazirlik",
+      "name": "Dondurucu Dostu Yemekler",
+      "desc": "Toplu pişirip dondurulabilecek 10 yemek.",
+      "tags": [
+        "dondurucu",
+        "toplu",
+        "hazır"
+      ],
+      "badge1": "Pratik",
+      "content": "**Dondurulabilir Yemekler:** Köfte (çiğ), mercimek çorbası, fasulye piyazı, bulgur pilavı, ıspanaklı tepsi böreği, tavuk sote, terbiyeli köfte, domates sosu, nohutlu yemek, sebze haşlaması. Porsiyonlara ayır, tarih yaz. Meşgul geceler için cankurtaran. Mikrodalga veya su banyosunda çözdür.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "butce",
+      "name": "Ayda 2000 TL ile Beslenme",
+      "desc": "Kişi başı ekonomik ve besleyici beslenme planı.",
+      "tags": [
+        "bütçe",
+        "ekonomik",
+        "2000TL"
+      ],
+      "badge1": "Tasarruf",
+      "content": "**Bütçeli Beslenme:** Temel strateji: Protein: yumurta + baklagil (et haftada 2×). Karbonhidrat: bulgur, ekmek, makarna (tam buğday). Sebze: mevsimsel + dondurulmuş. Sofra şekeri, hazır gıda, cips → kes. Evde yemek vs dışarıda: 10× fark. Pazar: semt pazarında al. Ekmek: evde pişir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "meal-plan",
+      "name": "Restoran Alternatifleri Hazırlığı",
+      "desc": "Dışarı çıkma isteğini karşılayan lezzetli ev yemekleri.",
+      "tags": [
+        "restoran",
+        "alternatif",
+        "lezzet"
+      ],
+      "badge1": "Denge",
+      "content": "**Restoran Alternatifleri:** Burger istiyorsan: ev hamburgeri (daha ucuz + sağlıklı). Pizza: fırın pizzası veya hazır hamur. Sushi: evde avokado-ton balığı wrap. Kebap: ev lahmacunu veya tavuk şiş. Bu alternatifleri ustalaşınca dışarı yeme isteği azalır. Haftada 1 'özel yemek' geleneği motivasyonu korur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "beslenme",
+      "name": "Hidrasyon Takibi",
+      "desc": "Günlük su içme alışkanlığı oluşturmanın pratik yolları.",
+      "tags": [
+        "su",
+        "hidrasyon",
+        "alışkanlık"
+      ],
+      "badge1": "Sağlık",
+      "content": "**Su İçme Alışkanlığı:** Hedef: vücut ağırlığı × 35 ml (70 kg = 2.45 L). Sabah: uyandığında 1 büyük bardak. Her öğün öncesi: 1 bardak. Tercihen yemekle değil aralarında. İşaret: dirsek rengi açık sarı olmalı. Uygulama: Plant Nanny, WaterMinder. Büyük matara (1L) masada görünür tut.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "alisveris",
+      "name": "Gıda İsrafını Önleme",
+      "desc": "Buzdolabı yönetimiyle israfı %70 azalt.",
+      "tags": [
+        "israf",
+        "buzdolabı",
+        "yönetim"
+      ],
+      "badge1": "Çevre",
+      "content": "**İsraf Önleme:** FIFO: ilk giren ilk çıkar — yeni alınanları arkaya koy. Buzdolabında 'Bu hafta bit' rafı kur. Her pazartesi: ne var envanteri al → o hafta menüyü ona göre planla. Yarım kalan malzeme için tarif ara. Sebze solmadan dondur. Türkiye'de kişi başı yıllık 205 kg gıda israfı — yarıya indirebilirsin.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

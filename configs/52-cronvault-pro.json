@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Cron Sözdizimi",
+      "name": "Cron Sözdizimi",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Sistem Görevleri",
+      "name": "Sistem Görevleri",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Veritabanı Görevleri",
+      "name": "Veritabanı Görevleri",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Bildirim ve Raporlama",
+      "name": "Bildirim ve Raporlama",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Hata Yönetimi",
+      "name": "Hata Yönetimi",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Dağıtık Zamanlayıcılar",
+      "name": "Dağıtık Zamanlayıcılar",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Cron Sözdizimi",
+      "name": "Cron İfadesi Hızlı Referans",
+      "desc": "Dakika, saat, gün, ay, haftanın günü alanlarını örneklerle açıklayın.",
+      "tags": [
+        "cron",
+        "sözdizimi",
+        "referans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Cron Sözdizimi\n```\n* * * * * komut\n│ │ │ │ │\n│ │ │ │ └─ Haftanın günü (0-7)\n│ │ │ └─── Ay (1-12)\n│ │ └───── Ayın günü (1-31)\n│ └─────── Saat (0-23)\n└───────── Dakika (0-59)\n```\nÖrnek: `0 2 * * 0` = her Pazar 02:00",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Cron Sözdizimi",
+      "name": "Özel Cron Kısaltmaları",
+      "desc": "@reboot, @daily, @weekly gibi özel zamanlama takma adları.",
+      "tags": [
+        "kısaltma",
+        "@daily",
+        "@weekly"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Cron Kısaltmalar\n```\n@reboot   → Sistem başlangıcında bir kez\n@hourly   → 0 * * * *\n@daily    → 0 0 * * *\n@weekly   → 0 0 * * 0\n@monthly  → 0 0 1 * *\n@yearly   → 0 0 1 1 *\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Sistem Görevleri",
+      "name": "Günlük Log Rotasyonu",
+      "desc": "Eski log dosyalarını sıkıştırıp arşivleyen otomatik cron görevi.",
+      "tags": [
+        "log",
+        "rotasyon",
+        "arşiv"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Log Rotasyonu\n```bash\n# crontab\n0 0 * * * find /var/log/app -mtime +7 -name '*.log' \\\n  -exec gzip {} \\; 2>&1 | mail -s 'Log Rotasyon' admin@site.com\n```\nlogrotate aracı da değerlendirin.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Sistem Görevleri",
+      "name": "Disk Kullanımı İzleme",
+      "desc": "Disk doluluk oranı eşiği aşılınca uyarı gönderen cron scripti.",
+      "tags": [
+        "disk",
+        "izleme",
+        "uyarı"
+      ],
+      "badge1": "Orta",
+      "content": "## Disk İzleme\n```bash\n#!/bin/bash\nUSAGE=$(df / | tail -1 | awk '{print $5}' | tr -d '%')\nif [ $USAGE -gt 85 ]; then\n  echo \"Disk %$USAGE dolu\" | mail -s 'Disk Uyarısı' admin@site.com\nfi\n# crontab: */15 * * * * /scripts/disk_check.sh\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Sistem Görevleri",
+      "name": "SSL Sertifika Süresi İzleme",
+      "desc": "Sertifika son kullanma yaklaşınca otomatik uyarı gönderen script.",
+      "tags": [
+        "ssl",
+        "sertifika",
+        "uyarı"
+      ],
+      "badge1": "Orta",
+      "content": "## SSL İzleme\n```bash\nDAYS=$(echo | openssl s_client -connect site.com:443 2>/dev/null \\\n  | openssl x509 -noout -dates \\\n  | grep notAfter | xargs -I{} date -d {} +%s\necho \"Kalan gün: $(( (DAYS - $(date +%s)) / 86400 ))\"\n# 30 günden az varsa uyar\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Veritabanı Görevleri",
+      "name": "MySQL Günlük Yedek Cron",
+      "desc": "mysqldump ile şifreli, timestamp'li yedek alan ve eski yedekleri silen görev.",
+      "tags": [
+        "mysql",
+        "yedek",
+        "cron"
+      ],
+      "badge1": "Orta",
+      "content": "## MySQL Yedek\n```bash\n#!/bin/bash\nDATE=$(date +%Y%m%d)\nmysqldump -u root -p'SIFRE' dbname | gzip > /backup/db_$DATE.sql.gz\nfind /backup -mtime +30 -delete\n# crontab: 0 3 * * * /scripts/db_backup.sh\n```\nŞifreyi .my.cnf dosyasında tut, scripte koyma.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Veritabanı Görevleri",
+      "name": "PostgreSQL VACUUM Zamanlama",
+      "desc": "Büyük tablolar için VACUUM ANALYZE görevini düşük trafikli saate planlayın.",
+      "tags": [
+        "postgresql",
+        "vacuum",
+        "bakım"
+      ],
+      "badge1": "Orta",
+      "content": "## PostgreSQL VACUUM\n```bash\n# crontab\n0 1 * * 0 psql -U postgres -c 'VACUUM ANALYZE;'\n# Büyük tablo için\n0 2 * * 0 psql -U postgres -c 'VACUUM FULL buyuk_tablo;'\n```\nAutovacuum ayarlarını gözden geçir, genellikle yeterli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Bildirim ve Raporlama",
+      "name": "Haftalık Özet Rapor Göndericisi",
+      "desc": "Günlük metrikleri biriktirip haftalık e-posta özeti hazırlayan script.",
+      "tags": [
+        "rapor",
+        "haftalık",
+        "e-posta"
+      ],
+      "badge1": "İleri",
+      "content": "## Haftalık Rapor\n```bash\n#!/bin/bash\n# Her gün verisi .csv'ye ekle\necho \"$(date),$(metric_komut)\" >> /data/haftalik.csv\n# Pazar raporla\nif [ $(date +%u) -eq 7 ]; then\n  mail -s 'Haftalık Özet' admin@site.com < /data/haftalik.csv\n  > /data/haftalik.csv\nfi\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Bildirim ve Raporlama",
+      "name": "Slack Webhook ile Cron Bildirimi",
+      "desc": "Cron görev sonuçlarını Slack kanalına gönderen webhook entegrasyonu.",
+      "tags": [
+        "slack",
+        "webhook",
+        "bildirim"
+      ],
+      "badge1": "Orta",
+      "content": "## Slack Webhook\n```bash\nSLACK_URL=\"https://hooks.slack.com/...\"\nsend_slack() {\n  curl -X POST $SLACK_URL \\\n    -H 'Content-type: application/json' \\\n    --data \"{\\\"text\\\":\\\"$1\\\"}\"\n}\n# Kullanım:\nsend_slack \"✓ Yedekleme tamamlandı: $DATE\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Hata Yönetimi",
+      "name": "Cron Görev Hata Loglama",
+      "desc": "Başarısız görevlerin çıktısını ve çıkış kodunu sistematik olarak kaydedin.",
+      "tags": [
+        "hata",
+        "log",
+        "çıkış kodu"
+      ],
+      "badge1": "Orta",
+      "content": "## Hata Loglama\n```bash\n#!/bin/bash\nLOG=/var/log/cron_gorev.log\necho \"[$(date)] Başladı\" >> $LOG\ngorev_komutu >> $LOG 2>&1\nEXIT=$?\necho \"[$(date)] Bitti: $EXIT\" >> $LOG\n[ $EXIT -ne 0 ] && send_alarm \"Görev başarısız: $EXIT\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Hata Yönetimi",
+      "name": "Çakışma Önleme Kilidi",
+      "desc": "Aynı anda birden fazla cron instance'ının çalışmasını engelleyin.",
+      "tags": [
+        "kilit",
+        "çakışma",
+        "flock"
+      ],
+      "badge1": "Orta",
+      "content": "## Flock Kilidi\n```bash\n#!/bin/bash\nexec 9>/var/lock/gorev.lock\nflock -n 9 || { echo 'Zaten çalışıyor'; exit 1; }\n# Görev kodu buraya\nflock -u 9\n```\nAlternatif: `run-one` paketi basit vakalar için.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Dağıtık Zamanlayıcılar",
+      "name": "Kubernetes CronJob Şablonu",
+      "desc": "K8s ortamında zamanlı görevler için CronJob manifest şablonu.",
+      "tags": [
+        "kubernetes",
+        "cronjob",
+        "manifest"
+      ],
+      "badge1": "Orta",
+      "content": "## K8s CronJob\n```yaml\napiVersion: batch/v1\nkind: CronJob\nspec:\n  schedule: \"0 2 * * *\"\n  concurrencyPolicy: Forbid\n  jobTemplate:\n    spec:\n      template:\n        spec:\n          containers:\n          - name: gorev\n            image: myapp:latest\n            command: [\"python\",\"gorev.py\"]\n          restartPolicy: Never\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Dağıtık Zamanlayıcılar",
+      "name": "Redis ile Dağıtık Görev Kilidi",
+      "desc": "Birden fazla sunucuda aynı cronu engelleyen Redis tabanlı kilit.",
+      "tags": [
+        "redis",
+        "dağıtık",
+        "kilit"
+      ],
+      "badge1": "İleri",
+      "content": "## Redis Kilidi\n```python\nimport redis\nr = redis.Redis()\nif r.set('gorev_lock', 1, nx=True, ex=300):\n    try:\n        gorev_calistir()\n    finally:\n        r.delete('gorev_lock')\nelse:\n    print('Başka instance çalışıyor')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Sistem Görevleri",
+      "name": "Geçici Dosya Temizleme",
+      "desc": "/tmp ve uygulama cache dizinlerini düzenli temizleyen cron görevi.",
+      "tags": [
+        "geçici",
+        "temizleme",
+        "disk"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Geçici Temizleme\n```bash\n# crontab\n0 4 * * * find /tmp -type f -mtime +1 -delete 2>/dev/null\n0 4 * * * find /app/cache -type f -mtime +7 -delete 2>/dev/null\n```\nsystemd-tmpfiles modern sistemlerde daha iyi alternatif.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Cron Sözdizimi",
+      "name": "Saniye Bazlı Görev Alternatifi",
+      "desc": "Cron'un 1 dakika minimumu için saniyeli alternatif yaklaşımlar.",
+      "tags": [
+        "saniye",
+        "sleep",
+        "loop"
+      ],
+      "badge1": "Orta",
+      "content": "## Saniyeli Görevler\n```bash\n# Seçenek 1: sleep döngüsü (systemd service)\nwhile true; do gorev; sleep 30; done\n# Seçenek 2: cron içi split\n* * * * * gorev\n* * * * * sleep 30; gorev\n```\nsystemd timer veya özel zamanlayıcı (APScheduler, node-cron) daha güvenilir.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

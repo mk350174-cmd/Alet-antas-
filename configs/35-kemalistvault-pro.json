@@ -48,6 +48,293 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Atatürk İlkeleri",
+      "name": "Atatürk İlkeleri",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "İnkılap Tarihi",
+      "name": "İnkılap Tarihi",
+      "color": "#b8863a"
+    },
+    {
+      "id": "İdeolojik Metinler",
+      "name": "İdeolojik Metinler",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Cumhuriyet Kurumları",
+      "name": "Cumhuriyet Kurumları",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Milli Şuur Hareketleri",
+      "name": "Milli Şuur Hareketleri",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Karşılaştırmalı İdeolojiler",
+      "name": "Karşılaştırmalı İdeolojiler",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Atatürk İlkeleri",
+      "name": "Altı Ok'un Analitik Çözümlemesi",
+      "desc": "Cumhuriyetçilik, milliyetçilik, halkçılık ve diğer ilkeleri kaynaklarıyla inceleyin.",
+      "tags": [
+        "altı ok",
+        "ilke",
+        "analiz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Altı Ok Analizi\n1. Her ilkeyi (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık) tanımla.\n2. 1937 anayasa değişikliğindeki yerini belirle.\n3. Dönemin koşullarıyla ilişkilendir.\n4. Günümüz yorumlarını karşılaştırmalı değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Atatürk İlkeleri",
+      "name": "Laiklik İlkesinin Aşamaları",
+      "desc": "Hilafetin kaldırılmasından laik hukuka geçişin kademeli sürecini haritalayın.",
+      "tags": [
+        "laiklik",
+        "hilafet",
+        "hukuk"
+      ],
+      "badge1": "Orta",
+      "content": "## Laikleşme Süreci\n1. 1924 Hilafetin kaldırılması adımını incele.\n2. Tevhid-i Tedrisat ve Şer'iyye Vekaleti'nin lağvını ele al.\n3. 1926 Medeni Kanun'a geçişi analiz et.\n4. 1928 ve 1937 anayasal değişiklikleri sıralı değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Atatürk İlkeleri",
+      "name": "Halkçılık ve Sosyal Politika",
+      "desc": "Halkçılık ilkesinin toplumsal eşitlik ve dayanışma boyutunu araştırın.",
+      "tags": [
+        "halkçılık",
+        "eşitlik",
+        "toplum"
+      ],
+      "badge1": "Orta",
+      "content": "## Halkçılık Boyutu\n1. İmtiyazsız, sınıfsız toplum söylemini incele.\n2. Halkevleri ve halk eğitimi projelerini ele al.\n3. Kadın haklarındaki reformlarla bağ kur.\n4. Dönemin ekonomik politikalarıyla ilişkilendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "İnkılap Tarihi",
+      "name": "Milli Mücadele Kronolojisi",
+      "desc": "1919-1923 arası kongreleri, cepheleri ve antlaşmaları sıralı haritalayın.",
+      "tags": [
+        "milli mücadele",
+        "kronoloji",
+        "cephe"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Milli Mücadele Kronolojisi\n1. 19 Mayıs 1919 Samsun çıkışını başlangıç al.\n2. Erzurum ve Sivas Kongrelerini sırala.\n3. Düzenli orduya geçiş ve cepheleri (Doğu, Güney, Batı) işle.\n4. Mudanya ve Lozan ile süreci tamamla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "İnkılap Tarihi",
+      "name": "Harf İnkılabı ve Etkileri",
+      "desc": "1928 Latin harflerine geçişin eğitim ve okuryazarlık etkilerini değerlendirin.",
+      "tags": [
+        "harf inkılabı",
+        "eğitim",
+        "1928"
+      ],
+      "badge1": "Orta",
+      "content": "## Harf İnkılabı\n1. Arap alfabesinden Latin'e geçiş gerekçelerini sırala.\n2. Millet Mektepleri girişimini incele.\n3. Okuryazarlık oranı değişimini verilerle takip et.\n4. Kültürel süreklilik tartışmalarını dengeli ele al.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "İnkılap Tarihi",
+      "name": "Hukuk Devrimi Karşılaştırması",
+      "desc": "Mecelle'den Medeni Kanun'a geçişte içerik farklarını madde madde inceleyin.",
+      "tags": [
+        "hukuk",
+        "medeni kanun",
+        "mecelle"
+      ],
+      "badge1": "İleri",
+      "content": "## Hukuk Devrimi\n1. Mecelle'nin kapsamını ve sınırlarını belirle.\n2. 1926 İsviçre Medeni Kanunu uyarlamasını incele.\n3. Aile, miras ve kadın hakları değişimlerini karşılaştır.\n4. Uygulamadaki geçiş zorluklarını değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "İdeolojik Metinler",
+      "name": "Nutuk Söylem Analizi",
+      "desc": "Nutuk'un retorik yapısını ve tarihsel anlatı stratejisini çözümleyin.",
+      "tags": [
+        "nutuk",
+        "söylem",
+        "retorik"
+      ],
+      "badge1": "İleri",
+      "content": "## Nutuk Analizi\n1. Metnin hitap ettiği kitleyi ve amacını belirle.\n2. Kronolojik anlatı ile argüman kurma tekniğini incele.\n3. Seçilen olaylar ve vurguları eleştirel oku.\n4. Tarihyazımı açısından kaynak değerini tartış.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "İdeolojik Metinler",
+      "name": "Söylev ve Demeçlerde Temalar",
+      "desc": "Atatürk'ün konuşmalarındaki tekrar eden kavramları tematik gruplayın.",
+      "tags": [
+        "söylev",
+        "tema",
+        "kavram"
+      ],
+      "badge1": "Orta",
+      "content": "## Tematik Tarama\n1. Bağımsızlık, çağdaşlaşma, egemenlik temalarını ayır.\n2. Her tema için anahtar alıntılar topla.\n3. Temaların dönemlere göre ağırlık değişimini izle.\n4. Bağlamı koruyarak yorumla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Cumhuriyet Kurumları",
+      "name": "TBMM'nin Kuruluş Mantığı",
+      "desc": "Meclis egemenliği ilkesinin 1920'deki kurumsal temellerini inceleyin.",
+      "tags": [
+        "tbmm",
+        "meclis",
+        "egemenlik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## TBMM Kuruluşu\n1. 23 Nisan 1920 açılışının koşullarını belirle.\n2. 'Egemenlik kayıtsız şartsız milletindir' ilkesini incele.\n3. Meclis hükümeti sistemini açıkla.\n4. Saltanatla ilişkisini ve 1922 kaldırılışını ele al.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Cumhuriyet Kurumları",
+      "name": "Eğitim Kurumlarının Dönüşümü",
+      "desc": "Tevhid-i Tedrisat'tan üniversite reformuna eğitim yapılanmasını izleyin.",
+      "tags": [
+        "eğitim",
+        "tevhid-i tedrisat",
+        "üniversite"
+      ],
+      "badge1": "Orta",
+      "content": "## Eğitim Dönüşümü\n1. 1924 Tevhid-i Tedrisat Kanunu'nu incele.\n2. Köy Enstitüleri öncesi öğretmen yetiştirmeyi ele al.\n3. 1933 Üniversite Reformu'nu ve göçmen akademisyenleri işle.\n4. Müfredat değişimlerini karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Cumhuriyet Kurumları",
+      "name": "Ekonomik Kurumların İnşası",
+      "desc": "İş Bankası, Sümerbank gibi kurumların devletçilik bağlamını araştırın.",
+      "tags": [
+        "ekonomi",
+        "devletçilik",
+        "sümerbank"
+      ],
+      "badge1": "İleri",
+      "content": "## Ekonomik Kurumlar\n1. 1923 İzmir İktisat Kongresi kararlarını incele.\n2. Devletçiliğe geçiş nedenlerini (1930 krizi) belirle.\n3. Sümerbank, Etibank, İş Bankası rollerini ayır.\n4. Beş Yıllık Sanayi Planlarını değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Milli Şuur Hareketleri",
+      "name": "Müdafaa-i Hukuk Cemiyetleri",
+      "desc": "Yerel direniş örgütlerinin milli birliğe evrilme sürecini haritalayın.",
+      "tags": [
+        "müdafaa-i hukuk",
+        "direniş",
+        "örgüt"
+      ],
+      "badge1": "Orta",
+      "content": "## Müdafaa-i Hukuk\n1. Bölgesel cemiyetlerin kuruluş amaçlarını belirle.\n2. Sivas Kongresi'nde birleşmelerini incele.\n3. Basın ve propaganda araçlarını ele al.\n4. Anadolu ve Rumeli geneline yayılımı haritalandır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Milli Şuur Hareketleri",
+      "name": "Türk Ocakları ve Kültür",
+      "desc": "Kültürel milliyetçilik kurumlarının fikri arka planını inceleyin.",
+      "tags": [
+        "türk ocakları",
+        "kültür",
+        "milliyetçilik"
+      ],
+      "badge1": "İleri",
+      "content": "## Türk Ocakları\n1. Kuruluş dönemi (1912) fikri iklimini belirle.\n2. Kültürel milliyetçilik söylemini incele.\n3. Cumhuriyet'le ilişkisini ve Halkevlerine dönüşümü ele al.\n4. Yayınları üzerinden etkisini değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Karşılaştırmalı İdeolojiler",
+      "name": "Modernleşme Modelleri Karşılaştırması",
+      "desc": "Türk modernleşmesini diğer geç-modernleşen ülkelerle kıyaslayın.",
+      "tags": [
+        "modernleşme",
+        "karşılaştırma",
+        "model"
+      ],
+      "badge1": "İleri",
+      "content": "## Modernleşme Kıyası\n1. Türkiye, Japonya ve İran örneklerini seç.\n2. Tepeden inme reform stratejilerini karşılaştır.\n3. Gelenek-modernite gerilimini her örnekte incele.\n4. Sonuçları kurumsal süreklilik açısından değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Karşılaştırmalı İdeolojiler",
+      "name": "Ulus-Devlet İnşası Yaklaşımları",
+      "desc": "Farklı ulus-devlet kuruluş modellerini teorik çerçevede ele alın.",
+      "tags": [
+        "ulus-devlet",
+        "teori",
+        "inşa"
+      ],
+      "badge1": "İleri",
+      "content": "## Ulus-Devlet İnşası\n1. Sivil ve etnik milliyetçilik ayrımını tanımla.\n2. Ortak dil, eğitim ve tarih anlatısının rolünü incele.\n3. Türk örneğini bu çerçeveye yerleştir.\n4. Kapsayıcılık tartışmalarını dengeli sun.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

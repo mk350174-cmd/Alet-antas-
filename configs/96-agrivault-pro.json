@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Hassas Tarım",
+      "name": "Hassas Tarım",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Toprak & Gübre",
+      "name": "Toprak & Gübre",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Sulama Yönetimi",
+      "name": "Sulama Yönetimi",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Tarım Teknolojisi",
+      "name": "Tarım Teknolojisi",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Hasat & Depolama",
+      "name": "Hasat & Depolama",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Sürdürülebilir Tarım",
+      "name": "Sürdürülebilir Tarım",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Hassas Tarım",
+      "name": "NDVI ile Bitki Sağlığı",
+      "desc": "Uydu görüntüsünden hesaplanan NDVI indeksi ile bitki stresini tespit edin.",
+      "tags": [
+        "NDVI",
+        "uydu",
+        "vejetasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## NDVI Analizi\nNDVI = (NIR - Red) / (NIR + Red)\n- NDVI > 0.6: Sağlıklı bitki\n- NDVI 0.2-0.6: Orta yoğunluk\n- NDVI < 0.2: Çıplak toprak/stres\n\nÜcretsiz araçlar:\n- Sentinel Hub (ESA) → 10m çözünürlük\n- Google Earth Engine → Python API\n\n```python\nimport ee\nndvi = image.normalizedDifference(['B8','B4'])\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Hassas Tarım",
+      "name": "Değişken Oran Gübre (VRA)",
+      "desc": "Tarla içindeki verimlilik haritasına göre değişken miktarda gübre uygulayın.",
+      "tags": [
+        "VRA",
+        "gübre",
+        "hassas"
+      ],
+      "badge1": "İleri",
+      "content": "## VRA Süreci\n1. Toprak örnekleme: 2.5 dönüm ızgara → lab analizi.\n2. Verim haritası: GPS + yield monitor verisi.\n3. Yönetim bölgeleri: kümeleme analizi ile 3-5 bölge.\n4. Reçete haritası: her bölge için N-P-K miktarı.\n5. Uygulama: VRA özellikli ekici/dağıtıcı + ISOBUS.\n6. Doğrulama: sonraki sezon verim karşılaştırması.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Toprak & Gübre",
+      "name": "Toprak pH ve Besin Dengesi",
+      "desc": "pH aralıklarının bitki beslenmesine etkisi ve kireçleme ile düzeltme.",
+      "tags": [
+        "pH",
+        "kireçleme",
+        "toprak"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Toprak pH Rehberi\n| pH | Durum | Aksiyon |\n|----|-------|---------|\n| <5.5 | Asit | Kireçleme: CaCO3 |\n| 5.5-7 | Optimal | Bitki besinleri en verimli |\n| 7-8 | Alkali | Kükürt veya asit gübre |\n| >8 | Aşırı alkali | Drene etme, alçı |\n\nEn yaygın sorun: asit topraklarda Al/Mn toksisitesi.\nKireç ihtiyacı: lab raporuna göre ton/da hesapla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Toprak & Gübre",
+      "name": "Organik Madde Yönetimi",
+      "desc": "Ahır gübresi, kompost ve yeşil gübre uygulamaları ile toprak organik maddesini artırın.",
+      "tags": [
+        "organik",
+        "kompost",
+        "humus"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Organik Madde Artırma\n1. **Ahır gübresi:** 3-5 ton/da → tarlaya sonbahar dağıt, işle.\n2. **Kompost:** C:N oranı 25-30:1 → 3 ay beklet.\n3. **Yeşil gübre:** Fiğ, yonca, bakla → çiçek öncesi işle.\n4. **Sap geri dönüşümü:** Hasattan sap bırak, parçala.\n5. **No-till:** Toprak işlememeyi azalt → organik madde korur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Sulama Yönetimi",
+      "name": "Damla Sulama Tasarımı",
+      "desc": "Damla sulama sisteminin debisi, boru çapı ve lateraller için hesap rehberi.",
+      "tags": [
+        "damla sulama",
+        "debi",
+        "tasarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Damla Sulama Hesabı\n1. Bitkinin günlük su ihtiyacı: ET₀ × Kc (mm/gün).\n2. Damlama aralığı: 30-50cm bitki aralığına göre.\n3. Damlatıcı debisi: 1-4 L/saat tipik.\n4. Lateral boru: 16mm PE, max 100m.\n5. Bölge debisi = Bitki sayısı × damlatıcı adedi × debi.\n6. Pompa basıncı: 0.5-2 bar lateral + yükseklik.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Sulama Yönetimi",
+      "name": "ET Bazlı Sulama Programı",
+      "desc": "Evapotranspirasyon verisini kullanarak sulama miktarı ve zamanlamasını optimize edin.",
+      "tags": [
+        "ET",
+        "sulama",
+        "verimlilik"
+      ],
+      "badge1": "Orta",
+      "content": "## ET Bazlı Sulama\nNet sulama = ET₀ × Kc × Alan - Yağış\n\nKc değerleri (buğday örneği):\n- Çıkış: 0.3\n- Kardeşlenme: 0.7\n- Başaklanma: 1.1\n- Olgunluk: 0.4\n\nAraç: FAO CLIMWAT, meteo verisi.\nSmartphone: ET uygulamaları (IrrigationApp, FarmHQ).\nHedef: %30 su tasarrufu vs. geleneksel.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Tarım Teknolojisi",
+      "name": "Tarımsal Drone Kullanımı",
+      "desc": "Dron ile tarla taraması, ilaçlama ve hasar tespiti iş akışı.",
+      "tags": [
+        "drone",
+        "tarama",
+        "ilaçlama"
+      ],
+      "badge1": "Orta",
+      "content": "## Tarım Drone Kullanımı\n1. Görev planlama: DJI Agras/Field Planner.\n2. Sürüş hızı: ilaçlama 5-7 m/s, haritalama 10-15 m/s.\n3. İrtifa: ilaçlama 2-3m, haritalama 50-120m.\n4. Örtüşme: fotoğraf %75-80 kenar örtüşmesi.\n5. Lisans: Türkiye'de SHY 6B/1 sertifikası gerekli.\n6. Çıktı: ortofoto, NDVI haritası, ilaçlama raporu.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Tarım Teknolojisi",
+      "name": "Toprak Nem Sensörü Ağı",
+      "desc": "IoT toprak nem sensörlerini sahaya yayarak sulama kararlarını otomatikleştirin.",
+      "tags": [
+        "sensör",
+        "nem",
+        "IoT"
+      ],
+      "badge1": "İleri",
+      "content": "## Sensör Ağı Kurulumu\n1. Sensör tipi: Capacitive (EC-5, 5TE) veya Tensiometer.\n2. Derinlik: 15cm ve 30cm → kök bölgesi.\n3. Bağlantı: LoRa gateway (1-2km menzil) → bulut.\n4. Alarm: FC% tarla kapasitesinin %50'si → sulama başlat.\n5. Otomasyon: MQTT → Node-RED → sulama vanası.\n6. Kalibrasyon: toprak tipine göre yıllık güncelle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Hasat & Depolama",
+      "name": "Tahıl Nem Kontrolü",
+      "desc": "Hasatta ve depolamada kritik olan nem içeriğini ölçme ve kuruma yönetimi.",
+      "tags": [
+        "nem",
+        "depolama",
+        "tahıl"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tahıl Nem Yönetimi\nGüvenli depolama nem sınırları:\n- Buğday: <%14\n- Mısır: <%14\n- Arpa: <%13\n- Ayçiçeği: <%8\n\nOlçüm: el tipi nem ölçer (Dickey-john, PM-300).\nKuruma maliyeti: 1 nem noktası düşürme ≈ 70 kWh/ton.\nİpucu: Tarlada <%15 olunca hasat → depo maliyetini azalt.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Hasat & Depolama",
+      "name": "Soğuk Zincir Yönetimi",
+      "desc": "Yaş meyve-sebze için soğuk zincir kırılmalarını önleyen lojistik protokol.",
+      "tags": [
+        "soğuk zincir",
+        "raf ömrü",
+        "lojistik"
+      ],
+      "badge1": "Orta",
+      "content": "## Soğuk Zincir\nTarla → Ön soğutma → Soğuk depo → Araç → Market\n\nKritik adımlar:\n1. Ön soğutma: hasattan 2 saat içinde ürünü soğut.\n2. Zincir kırılması: her 10°C artış raf ömrünü 2-3x kısaltır.\n3. Sıcaklık kaydı: datalogger ile tüm zincirde izle.\n4. Muz/domates: 12-15°C (soğuk hasarı riski).\n5. Elma: 0-2°C → 6 ay depolama.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sürdürülebilir Tarım",
+      "name": "Örtü Bitkisi Faydaları",
+      "desc": "Kış örtü bitkilerinin toprak erozyonu, azot ve biyolojik çeşitlilik üzerindeki etkileri.",
+      "tags": [
+        "örtü bitkisi",
+        "rotasyon",
+        "azot"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Örtü Bitkisi Seçimi\n| Bitki | Fayda |\n|-------|-------|\n| Fiğ | Biyolojik azot bağlama (80-100 kg N/ha) |\n| Çavdar | Erozyon koruması, yabancı ot baskısı |\n| Turp | Sıkışık toprağı deler, nematod azaltır |\n| Yonca | Uzun ömürlü azot, toprak organik maddesi |\n\nEkim zamanı: Ana hasattan sonra Ağustos-Eylül.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Hassas Tarım",
+      "name": "Verim Haritası Analizi",
+      "desc": "Biçerdöver GPS verisiyle oluşturulan verim haritasını yönetim kararına dönüştürün.",
+      "tags": [
+        "verim",
+        "harita",
+        "analiz"
+      ],
+      "badge1": "İleri",
+      "content": "## Verim Haritası Adımları\n1. Biçerdövere yield monitor + DGPS tak.\n2. Hasat verisi: SMS, John Deere Operations Center vb.\n3. Ham veriyi temizle: baş/son geçiş hataları, aykırı değerler.\n4. Yazılım: QGIS + VESPER, Ag Leader SMS Basic.\n5. Düşük verimli alanlar: toprak örneği al, neden araştır.\n6. Yönetim bölgesi: 3-5 yıl kümülatif harita → kararlı bölgeler.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Tarım Teknolojisi",
+      "name": "Tarım Muhasebe Yazılımları",
+      "desc": "Türkiye'de kullanılan tarım muhasebe ve kayıt yazılımlarının karşılaştırması.",
+      "tags": [
+        "muhasebe",
+        "kayıt",
+        "yazılım"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tarım Kayıt Sistemleri\n- **ÇKS (Çiftçi Kayıt Sistemi):** Devlet zorunluluğu — parsel, destekleme.\n- **Tarım ERP:** Logo, Mikro → çiftlik maliyet muhasebesi.\n- **Tarım Kredi Kooperatif:** Gider ve gelir kayıt defteri.\n- **Excel/Google Sheets:** Küçük çiftlik için yeterli.\n\nMinimum kayıt: Arazi, gübre, ilaç, yakıt, işçilik, verim.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Sürdürülebilir Tarım",
+      "name": "Entegre Zararlı Yönetimi (IPM)",
+      "desc": "Kimyasal ilaç kullanımını azaltan biyolojik ve kültürel mücadele yöntemleri.",
+      "tags": [
+        "IPM",
+        "biyolojik",
+        "zararlı"
+      ],
+      "badge1": "Orta",
+      "content": "## IPM Piramidi\n1. Kültürel: Rotasyon, dayanıklı çeşit, ekim zamanı.\n2. Mekanik: Tuzaklar, bariyer, ışık tuzağı.\n3. Biyolojik: Predatör (Trichogramma, Chrysoperla).\n4. Kimyasal: Son çare, seçici ilaç, eşik bazlı.\n\nEşik: Ekonomik zarar eşiğini geçmeden ilaçlama yapma.\nFaydası: Direnç gecikir, çevre korunur, maliyet düşer.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Sulama Yönetimi",
+      "name": "Yağmurlama Sistem Tasarımı",
+      "desc": "Yağmurlama başlığı seçimi, baskı ve aralık hesapları için tasarım rehberi.",
+      "tags": [
+        "yağmurlama",
+        "sprinkler",
+        "tasarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Yağmurlama Tasarımı\n1. Başlık türü: döner (Rainbird, Hunter) veya sabit.\n2. Menzil: yarıçap baskıya göre 6-18m.\n3. Başlık aralığı: menzil × 0.5-0.6 (kare veya üçgen düzen).\n4. Uygulama hızı: <toprak infiltrasyon hızı → sürükleme yok.\n5. Baskı: 2.5-4.5 bar lateral → basınç düzenleyici kullan.\n6. Verimliliği: yağmurlama %70-80, damla %90-95.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

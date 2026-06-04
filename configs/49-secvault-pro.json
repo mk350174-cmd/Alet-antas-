@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "SAST Araçları",
+      "name": "SAST Araçları",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "DAST Testleri",
+      "name": "DAST Testleri",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Güvenlik Kod İncelemesi",
+      "name": "Güvenlik Kod İncelemesi",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Bağımlılık Güvenliği",
+      "name": "Bağımlılık Güvenliği",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Güvenlik Test Senaryoları",
+      "name": "Güvenlik Test Senaryoları",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "DevSecOps Entegrasyonu",
+      "name": "DevSecOps Entegrasyonu",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "SAST Araçları",
+      "name": "Semgrep Kural Yazımı",
+      "desc": "Özel güvenlik açıklarını tespit eden Semgrep pattern kuralları yazın.",
+      "tags": [
+        "semgrep",
+        "sast",
+        "kural"
+      ],
+      "badge1": "İleri",
+      "content": "## Semgrep Kural\n```yaml\nrules:\n- id: sql-injection\n  pattern: |\n    $DB.query($USER_INPUT)\n  message: SQL injection riski\n  severity: ERROR\n```\nPatternlerde metavariable ve ellipsis kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "SAST Araçları",
+      "name": "Bandit ile Python Güvenlik Analizi",
+      "desc": "Python kodlarında yaygın güvenlik açıklarını Bandit ile tarın.",
+      "tags": [
+        "bandit",
+        "python",
+        "güvenlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Bandit Taraması\n```bash\nbandit -r src/ -f json -o rapor.json\n# Yalnızca yüksek şiddetli\nbandit -r src/ -l -i\n```\nCI'ya ekle: başarısız test pipeline'ı blokla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "SAST Araçları",
+      "name": "SonarQube Güvenlik Hotspot'ları",
+      "desc": "SonarQube'un güvenlik açığı tespitini ve hotspot inceleme sürecini konfigüre edin.",
+      "tags": [
+        "sonarqube",
+        "hotspot",
+        "sast"
+      ],
+      "badge1": "Orta",
+      "content": "## SonarQube Güvenlik\n1. Quality Gate'e güvenlik puanı ekle.\n2. OWASP kategorisine göre hotspot'ları filtrele.\n3. Her hotspot'ı gözden geçir: FP mi, gerçek mi?\n4. Gerçek açıkları issue'ya dönüştür.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "DAST Testleri",
+      "name": "OWASP ZAP API Taraması",
+      "desc": "REST API'leri ZAP ile otomatik güvenlik açığı taramasına alın.",
+      "tags": [
+        "zap",
+        "api",
+        "dast"
+      ],
+      "badge1": "İleri",
+      "content": "## ZAP API Taraması\n```bash\ndocker run owasp/zap2docker-stable \\\n  zap-api-scan.py -t api.yaml \\\n  -f openapi -r rapor.html\n```\nCI'da her PR'da hafif tarama, haftalık tam tarama yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "DAST Testleri",
+      "name": "Nikto Web Sunucu Taraması",
+      "desc": "Web sunucusundaki yapılandırma hatalarını Nikto ile tespit edin.",
+      "tags": [
+        "nikto",
+        "web",
+        "tarama"
+      ],
+      "badge1": "Orta",
+      "content": "## Nikto Taraması\n```bash\nnikto -h https://hedef.com \\\n  -Tuning 1234 -o rapor.txt\n```\nYanlış yapılandırma, eski yazılım, varsayılan dosyaları kontrol eder.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Güvenlik Kod İncelemesi",
+      "name": "SQL Injection İnceleme Listesi",
+      "desc": "Kod incelemesinde SQL injection açığını tespit etmek için kontrol listesi.",
+      "tags": [
+        "sql injection",
+        "inceleme",
+        "liste"
+      ],
+      "badge1": "Orta",
+      "content": "## SQL Injection Kontrol\n1. Ham string birleştirme var mı?\n2. Parameterized query veya ORM kullanılıyor mu?\n3. Input doğrulama nerede yapılıyor?\n4. Hata mesajları DB detayı sızdırıyor mu?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Güvenlik Kod İncelemesi",
+      "name": "Kimlik Doğrulama Kod İncelemesi",
+      "desc": "Auth mekanizmasında yaygın kusurları tespit eden inceleme protokolü.",
+      "tags": [
+        "auth",
+        "inceleme",
+        "kimlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Auth Kod İncelemesi\n1. Şifre hashleme: bcrypt/argon2 kullanılıyor mu?\n2. Token süresi ve yenileme doğru ayarlı mı?\n3. Brute force koruması var mı?\n4. Session fixation ve logout kontrolü yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Bağımlılık Güvenliği",
+      "name": "npm audit Pipeline Entegrasyonu",
+      "desc": "Node.js bağımlılıklarındaki CVE'leri CI'da otomatik tespit edin.",
+      "tags": [
+        "npm audit",
+        "cve",
+        "bağımlılık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## npm audit CI\n```yaml\n- name: Güvenlik kontrolü\n  run: npm audit --audit-level=high\n```\nCritical/high CVE varsa pipeline başarısız sayılır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Bağımlılık Güvenliği",
+      "name": "Dependabot Konfigürasyonu",
+      "desc": "GitHub Dependabot ile otomatik güvenlik güncellemelerini yapılandırın.",
+      "tags": [
+        "dependabot",
+        "güncelleme",
+        "otomatik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Dependabot Kurulumu\n```yaml\n# .github/dependabot.yml\nversion: 2\nupdates:\n- package-ecosystem: npm\n  directory: /\n  schedule: { interval: weekly }\n  open-pull-requests-limit: 5\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Güvenlik Test Senaryoları",
+      "name": "IDOR Test Senaryoları",
+      "desc": "Yetkilendirme atlatma açıklarını test eden Insecure Direct Object Reference senaryoları.",
+      "tags": [
+        "idor",
+        "yetkilendirme",
+        "test"
+      ],
+      "badge1": "İleri",
+      "content": "## IDOR Test Senaryoları\n1. Başka kullanıcının kaynağına ID değiştirerek eriş.\n2. Dikey ayrıcalık yükseltme: user → admin endpoint.\n3. API yanıtlarında gizli veri sızıntısını kontrol et.\n4. Referans manipülasyon loglarını incele.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Güvenlik Test Senaryoları",
+      "name": "Rate Limiting Test Paketi",
+      "desc": "API rate limiting mekanizmasını test eden senaryo koleksiyonu.",
+      "tags": [
+        "rate limit",
+        "test",
+        "dos"
+      ],
+      "badge1": "Orta",
+      "content": "## Rate Limit Testleri\n1. Limiti aş: X istek/dk üzeri gönder.\n2. 429 yanıt ve Retry-After başlığını doğrula.\n3. IP değiştirerek bypass test et.\n4. Distributed rate limit bypass test et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "DevSecOps Entegrasyonu",
+      "name": "Security Gate Konfigürasyonu",
+      "desc": "CI/CD pipeline'a güvenlik kalite kapısı ekleyerek açıklı kodu blokla.",
+      "tags": [
+        "security gate",
+        "pipeline",
+        "ci/cd"
+      ],
+      "badge1": "Orta",
+      "content": "## Security Gate\n```yaml\n- name: Security scan\n  run: |\n    semgrep --config=auto --error .\n    npm audit --audit-level=critical\n    docker scan image:tag\n```\nHerhangi biri başarısız olursa merge engelle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "DevSecOps Entegrasyonu",
+      "name": "Container Image Güvenlik Taraması",
+      "desc": "Docker image'lardaki güvenlik açıklarını Trivy ile tarayın.",
+      "tags": [
+        "trivy",
+        "container",
+        "image"
+      ],
+      "badge1": "Orta",
+      "content": "## Trivy Image Tarama\n```bash\ntrivy image --severity HIGH,CRITICAL \\\n  --exit-code 1 myapp:latest\n```\nCI'ya entegre et, base image'ları düzenli güncelle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "SAST Araçları",
+      "name": "Secret Scanning Konfigürasyonu",
+      "desc": "Kaynak koduna sızmış API key ve şifreleri otomatik tespit edin.",
+      "tags": [
+        "secret",
+        "key",
+        "tespit"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Secret Scanning\n```bash\n# gitleaks\ngitleaks detect --source . -v\n# Pre-commit hook\ngitleaks protect --staged\n```\nGitHub Advanced Security secret scanning aktif et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Güvenlik Test Senaryoları",
+      "name": "XSS Test Senaryoları",
+      "desc": "Reflected, stored ve DOM-based XSS açıklarını test eden payload koleksiyonu.",
+      "tags": [
+        "xss",
+        "payload",
+        "test"
+      ],
+      "badge1": "Orta",
+      "content": "## XSS Test Senaryoları\n1. Reflected: URL parametresine script etiketi gönder.\n2. Stored: forma kalıcı payload gir ve yüklenişini izle.\n3. DOM-based: JS kaynaklarından gelen kullanıcı girdisini izle.\n4. CSP başlığının bypass testlerini yap.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

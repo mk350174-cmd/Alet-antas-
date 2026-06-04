@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Bellek Modeli",
+      "name": "Bellek Modeli",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "C/C++ Bellek",
+      "name": "C/C++ Bellek",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Rust Ownership",
+      "name": "Rust Ownership",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Garbage Collection",
+      "name": "Garbage Collection",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Profiling & Leak",
+      "name": "Profiling & Leak",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Önbellekleme",
+      "name": "Önbellekleme",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Bellek Modeli",
+      "name": "Stack vs Heap Karşılaştırması",
+      "desc": "Stack ve heap belleğinin ömrü, hızı ve kullanım senaryolarının karşılaştırması.",
+      "tags": [
+        "stack",
+        "heap",
+        "bellek"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Stack vs Heap\n| | Stack | Heap |\n|--|-------|------|\n| Boyut | Sabit (8MB tipik) | Dinamik |\n| Hız | Çok hızlı | Daha yavaş |\n| Ömür | Fonksiyon kapsamı | Açık serbest bırakma |\n| Derleme | Boyut bilinmeli | Çalışma zamanında |\n\nStack: yerel değişkenler, fonksiyon argümanları.\nHeap: büyük veri, dinamik yapılar, nesneler.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Bellek Modeli",
+      "name": "Bellek Hizalama (Alignment)",
+      "desc": "Veri yapılarında hizalama gereksinimi ve padding'in performansa etkisi.",
+      "tags": [
+        "alignment",
+        "padding",
+        "struct"
+      ],
+      "badge1": "İleri",
+      "content": "## Struct Hizalama\n```c\n// Kötü: 12 byte (padding var)\nstruct Bad {\n    char a;   // 1 byte + 3 padding\n    int  b;   // 4 byte\n    char c;   // 1 byte + 3 padding\n};\n\n// İyi: 8 byte\nstruct Good {\n    int  b;   // 4 byte\n    char a;   // 1 byte\n    char c;   // 1 byte + 2 padding\n};\n\n// Boyut kontrol\nprintf(\"%zu\\n\", sizeof(struct Bad));   // 12\nprintf(\"%zu\\n\", sizeof(struct Good));  // 8\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "C/C++ Bellek",
+      "name": "RAII İdiyomu",
+      "desc": "Resource Acquisition Is Initialization ile C++'ta bellek ve kaynak yönetimi.",
+      "tags": [
+        "RAII",
+        "C++",
+        "kaynak"
+      ],
+      "badge1": "Orta",
+      "content": "## RAII\n```cpp\n// RAII wrapper\ntemplate<typename T>\nclass UniquePtr {\n    T* ptr;\npublic:\n    explicit UniquePtr(T* p) : ptr(p) {}\n    ~UniquePtr() { delete ptr; }  // Otomatik serbest bırak\n    T* get() { return ptr; }\n    T& operator*() { return *ptr; }\n    // Kopya yok, taşıma var\n    UniquePtr(const UniquePtr&) = delete;\n    UniquePtr(UniquePtr&& other) : ptr(other.ptr) { other.ptr = nullptr; }\n};\n\n// Kullanım: scope bitince otomatik delete\n{\n    UniquePtr<int> p(new int(42));\n}  // ~UniquePtr çağrılır\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "C/C++ Bellek",
+      "name": "valgrind ile Bellek Hata Tespiti",
+      "desc": "Bellek sızıntısı, buffer overflow ve use-after-free hatalarını valgrind ile bulun.",
+      "tags": [
+        "valgrind",
+        "sızıntı",
+        "hata"
+      ],
+      "badge1": "Orta",
+      "content": "## Valgrind Kullanımı\n```bash\n# Bellek sızıntısı tespiti\nvalgrind --leak-check=full \\\n  --show-leak-kinds=all \\\n  --track-origins=yes \\\n  --verbose \\\n  ./myprogram\n\n# Çıktı yorumu:\n# 'definitely lost': Sızıntı var → düzelt\n# 'indirectly lost': Bağlı sızıntı\n# 'still reachable': Program bitişinde hâlâ erişilebilir → genelde OK\n\n# AddressSanitizer (daha hızlı)\ngcc -fsanitize=address -g -o app app.c\n./app\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Rust Ownership",
+      "name": "Ownership Kuralları",
+      "desc": "Rust'ın üç ownership kuralı, move semantiği ve clone kullanım rehberi.",
+      "tags": [
+        "ownership",
+        "move",
+        "Rust"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Rust Ownership Kuralları\n1. Her değerin bir sahibi (owner) vardır.\n2. Bir anda yalnızca bir owner olabilir.\n3. Owner kapsam dışına çıkınca bellek serbest bırakılır.\n\n```rust\nlet s1 = String::from(\"merhaba\");\nlet s2 = s1;  // Move: s1 artık geçersiz\n// println!(\"{}\", s1);  // HATA!\n\n// Kopyalamak için\nlet s2 = s1.clone();  // Derin kopya\nlet s2 = &s1;         // Borç alma (ownership geçmiyor)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Rust Ownership",
+      "name": "Borrow Checker Kalıpları",
+      "desc": "Rust'ta paylaşılan ve değişken referansların kural ve örnek kalıpları.",
+      "tags": [
+        "borrow",
+        "lifetimes",
+        "referans"
+      ],
+      "badge1": "Orta",
+      "content": "## Borrow Kuralları\n```rust\nfn main() {\n    let mut data = vec![1, 2, 3];\n    \n    // Birden fazla değişmez referans OK\n    let r1 = &data;\n    let r2 = &data;\n    println!(\"{} {}\", r1[0], r2[0]);\n    \n    // Değişken referans: tek ve yalnız\n    let r3 = &mut data;\n    r3.push(4);\n    // r1, r2 burada kullanılamaz → dangling olur\n    \n    // Interior mutability: RefCell\n    use std::cell::RefCell;\n    let data = RefCell::new(vec![1]);\n    data.borrow_mut().push(2);  // Çalışma zamanı kontrol\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Garbage Collection",
+      "name": "GC Algoritmaları Karşılaştırması",
+      "desc": "Reference counting, mark-and-sweep ve generational GC algoritmalarının analizi.",
+      "tags": [
+        "GC",
+        "garbage collection",
+        "algoritma"
+      ],
+      "badge1": "İleri",
+      "content": "## GC Algoritmaları\n| Algoritma | Avantaj | Dezavantaj |\n|-----------|---------|------------|\n| Ref Counting | Anında serbest bırakma | Döngüsel referans sorunlu |\n| Mark & Sweep | Döngüsel sorun yok | Stop-the-world pause |\n| Generational | Genç nesne hızlı toplanır | Kompleks |\n| Concurrent | Pause az | Implementasyon zor |\n\nGo: concurrent mark-and-sweep.\nJVM: G1GC, ZGC (düşük pause).\nPython: Ref counting + cycle detector.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Garbage Collection",
+      "name": "Go GC Ayarlama",
+      "desc": "Go çalışma zamanının GC tetikleyicisini ve pause sürelerini optimize edin.",
+      "tags": [
+        "Go",
+        "GC",
+        "pause"
+      ],
+      "badge1": "İleri",
+      "content": "## Go GC Optimizasyonu\n```go\nimport \"runtime/debug\"\n\n// GC hedef yüzdesi: varsayılan %100 (heap 2x olunca GC)\nfunc init() {\n    debug.SetGCPercent(200)  // Daha az GC, daha fazla bellek\n    // debug.SetGCPercent(-1) // GC'yi kapat (dikkatli!)\n}\n\n// Manuel GC tetikle\nruntime.GC()\n\n// GC istatistikleri\nvar stats runtime.MemStats\nruntime.ReadMemStats(&stats)\nfmt.Printf(\"Heap: %d MB, GC sayısı: %d\\n\",\n    stats.HeapAlloc/1<<20, stats.NumGC)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Profiling & Leak",
+      "name": "Python Bellek Profil",
+      "desc": "memory_profiler ve tracemalloc ile Python bellek tüketimini satır satır analiz edin.",
+      "tags": [
+        "Python",
+        "memory_profiler",
+        "tracemalloc"
+      ],
+      "badge1": "Orta",
+      "content": "## Python Bellek Profiling\n```python\nimport tracemalloc\ntracemalloc.start()\n\n# ... kod ...\ndata = [i for i in range(1_000_000)]\n\nsnapshot = tracemalloc.take_snapshot()\ntop = snapshot.statistics('lineno')\nfor stat in top[:3]:\n    print(stat)\n# main.py:5: size=8.0 MB, count=1000000\n\n# @profile decorator ile\nfrom memory_profiler import profile\n@profile\ndef heavy_function():\n    return [i**2 for i in range(10000)]\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Profiling & Leak",
+      "name": "Node.js Bellek Sızıntısı Bulma",
+      "desc": "Chrome DevTools heap snapshot ile Node.js bellek sızıntısını tespit edin.",
+      "tags": [
+        "Node.js",
+        "heap snapshot",
+        "sızıntı"
+      ],
+      "badge1": "İleri",
+      "content": "## Node.js Bellek Analizi\n```javascript\n// --inspect ile başlat\nnode --inspect --expose-gc app.js\n\n// Chrome DevTools → Memory → Heap Snapshot\n\n// Uygulamada GC zorla\nif (global.gc) global.gc();\n\n// İki snapshot karşılaştır:\n// 1. Başlangıç snapshot\n// 2. Sızıntı şüphesi sonrası snapshot\n// Comparison modunda artan nesneleri bul\n\n// process.memoryUsage()\nconst { heapUsed, heapTotal } = process.memoryUsage();\nsetInterval(() => {\n    const { heapUsed } = process.memoryUsage();\n    console.log(`Heap: ${Math.round(heapUsed/1024/1024)}MB`);\n}, 5000);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Önbellekleme",
+      "name": "LRU Cache Implementasyonu",
+      "desc": "Least Recently Used cache algoritmasını sıfırdan implemente edin.",
+      "tags": [
+        "LRU",
+        "cache",
+        "algoritma"
+      ],
+      "badge1": "Orta",
+      "content": "## LRU Cache\n```python\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.cache = OrderedDict()\n        self.capacity = capacity\n    \n    def get(self, key):\n        if key not in self.cache:\n            return -1\n        self.cache.move_to_end(key)  # En son kullanılan\n        return self.cache[key]\n    \n    def put(self, key, value):\n        if key in self.cache:\n            self.cache.move_to_end(key)\n        self.cache[key] = value\n        if len(self.cache) > self.capacity:\n            self.cache.popitem(last=False)  # En eski\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Önbellekleme",
+      "name": "Memoization Kalıpları",
+      "desc": "Python ve JavaScript'te fonksiyon sonuçlarını önbellekleyen memoization.",
+      "tags": [
+        "memoization",
+        "cache",
+        "fonksiyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Memoization\n```python\nfrom functools import lru_cache\nimport time\n\n@lru_cache(maxsize=256)\ndef expensive(n):\n    time.sleep(0.1)  # Pahalı hesaplama simülasyonu\n    return n * n\n\nprint(expensive(5))  # 0.1s\nprint(expensive(5))  # Anında (cache'den)\nprint(expensive.cache_info())\n# CacheInfo(hits=1, misses=1, maxsize=256, currsize=1)\n```\n```javascript\n// JavaScript memoize\nconst memo = fn => {\n    const cache = new Map();\n    return (...args) => {\n        const key = JSON.stringify(args);\n        if (cache.has(key)) return cache.get(key);\n        const result = fn(...args);\n        cache.set(key, result);\n        return result;\n    };\n};\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "C/C++ Bellek",
+      "name": "Smart Pointer Kullanımı",
+      "desc": "unique_ptr, shared_ptr ve weak_ptr'ın doğru kullanım senaryoları.",
+      "tags": [
+        "unique_ptr",
+        "shared_ptr",
+        "C++"
+      ],
+      "badge1": "Orta",
+      "content": "## Smart Pointers\n```cpp\n#include <memory>\n\n// unique_ptr: tek sahip\nauto u = std::make_unique<int>(42);\n// Sahiplik aktarımı:\nauto u2 = std::move(u); // u artık boş\n\n// shared_ptr: paylaşılan sahip\nauto s1 = std::make_shared<int>(10);\nauto s2 = s1;  // Ref count: 2\n// Her ikisi düşünce delete\n\n// weak_ptr: döngüsel referans kırmak için\nstd::weak_ptr<int> w = s1;\nif (auto locked = w.lock()) {  // Hâlâ yaşıyor mu?\n    std::cout << *locked;\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Bellek Modeli",
+      "name": "Memory Mapped File",
+      "desc": "Büyük dosyaları belleğe eşleyerek disk I/O olmadan işleme.",
+      "tags": [
+        "mmap",
+        "dosya",
+        "I/O"
+      ],
+      "badge1": "İleri",
+      "content": "## mmap Kullanımı\n```python\nimport mmap\n\n# Dosyayı belleğe eşle\nwith open('large_file.bin', 'rb') as f:\n    with mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as m:\n        # Normal dosya gibi kullan\n        m.seek(1024)\n        data = m.read(512)\n        # Arama\n        pos = m.find(b'header')\n```\n```c\n// C'de mmap\nvoid *ptr = mmap(NULL, size, PROT_READ|PROT_WRITE,\n                 MAP_SHARED, fd, 0);\n// Kullan...\nmunmap(ptr, size);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Profiling & Leak",
+      "name": "Heaptrack ile C++ Profil",
+      "desc": "Heaptrack aracıyla C++ uygulamasının bellek kullanımını zaman serisi analiz.",
+      "tags": [
+        "heaptrack",
+        "C++",
+        "profil"
+      ],
+      "badge1": "İleri",
+      "content": "## Heaptrack\n```bash\n# Kurulum\nsudo apt install heaptrack\n\n# Uygulamayı takip et\nheaptrack ./myapp arg1 arg2\n# → heaptrack.myapp.PID.gz oluşur\n\n# GUI ile analiz\nheaptrack_gui heaptrack.myapp.*.gz\n\n# CLI özet\nheaptrack_print heaptrack.myapp.*.gz | head -50\n\n# Çıktı yorumu:\n# Peak heap: toplam en yüksek bellek kullanımı\n# Top allocations: en çok yer alan kod satırları\n# Leak: program bitiminde hâlâ serbest bırakılmayan\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

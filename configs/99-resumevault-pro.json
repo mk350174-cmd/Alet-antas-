@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "CV & Özgeçmiş",
+      "name": "CV & Özgeçmiş",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Kapak Mektubu",
+      "name": "Kapak Mektubu",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "LinkedIn Profili",
+      "name": "LinkedIn Profili",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Mülakat Hazırlık",
+      "name": "Mülakat Hazırlık",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Kariyer Geçişi",
+      "name": "Kariyer Geçişi",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Portfolyo & Marka",
+      "name": "Portfolyo & Marka",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "CV & Özgeçmiş",
+      "name": "Bir Sayfa CV Şablonu",
+      "desc": "İşe alım uzmanının 6 saniyede taradığı etkili tek sayfa CV yapısı.",
+      "tags": [
+        "CV",
+        "şablon",
+        "tek sayfa"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## CV Yapısı\n```\n[Ad Soyad] | [Unvan] | [Email] | [LinkedIn] | [GitHub]\n\nPROFİL (2-3 cümle, değer önerisi)\n\nDENEYİM\n[Şirket] | [Unvan] | [Tarih]\n• [Eylem fiili] + [Ölçüm] → [Sonuç] (PAR formatı)\n• Örnek: CI/CD pipeline kurarak deploy süresini %60 kısalttım.\n\nEĞİTİM | BECERILER | SERTIFIKALAR\n```\nKural: Her madde başı eylem fiiliyle başlar; rakamlar belirleyici.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "CV & Özgeçmiş",
+      "name": "ATS Uyumlu CV Optimizasyonu",
+      "desc": "Otomatik izleme sistemlerinden geçen ATS-dostu CV formatı ve anahtar kelimeler.",
+      "tags": [
+        "ATS",
+        "anahtar kelime",
+        "format"
+      ],
+      "badge1": "Orta",
+      "content": "## ATS Optimizasyon\n1. Format: .docx veya tek sütun PDF — tablo/grafik yok.\n2. Font: Arial, Calibri, Times New Roman.\n3. Anahtar kelimeler: İş ilanından doğrudan terimler → kopyala, yapıştır.\n4. Başlık: 'Deneyim' değil 'Work Experience' — sistemin tanıdığı başlıklar.\n5. Link: Tıklanabilir URL'leri metin olarak yaz.\n6. Test: Jobscan.co ile uyum oranını kontrol et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "CV & Özgeçmiş",
+      "name": "PAR Formatı ile Başarı Maddeleri",
+      "desc": "Problem-Eylem-Sonuç formatıyla ölçülebilir CV maddeleri yazma.",
+      "tags": [
+        "PAR",
+        "başarı",
+        "ölçüm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## PAR Formatı\nP (Problem): Karşılaşılan zorluk.\nA (Action): Senin spesifik eylemin.\nR (Result): Ölçülebilir sonuç.\n\nKötü: 'Proje yönetiminden sorumluydum.'\nİyi: 'Gecikmeli e-ticaret projesini (P) 4 haftada scrum kurarak (A) zamanında teslim edip %15 dönüşüm artışı sağladım. (R)'\n\nRakam yoksa: %X, X kullanıcı, X aylık, X takım üyesi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Kapak Mektubu",
+      "name": "Kapak Mektubu 4 Paragraf Yapısı",
+      "desc": "İşe alım uzmanının okumak isteyeceği kısa ve etkili kapak mektubu şablonu.",
+      "tags": [
+        "kapak mektubu",
+        "şablon",
+        "yapı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kapak Mektubu Yapısı\n**P1 — Kanca:** Neden bu şirketi seçiyorsunuz? (1-2 cümle, iltifat değil, özgün neden)\n**P2 — Değer kanıtı:** En güçlü 2 başarın + şirketle bağlantısı.\n**P3 — Kültür uyumu:** Şirketin değerleriyle nasıl örtüşüyorsunuz?\n**P4 — Çağrı:** Net bir 'görüşmek isterim' — özür modunda değil.\n\nUzunluk: Max 250 kelime. İş ilanını tekrar etme.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Kapak Mektubu",
+      "name": "E-posta Başvuru Metni",
+      "desc": "İş başvurusu e-postasının konu satırı, gövde ve dosya isimlendirmesi.",
+      "tags": [
+        "başvuru",
+        "e-posta",
+        "başlık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Başvuru E-postası\n**Konu:** [Pozisyon Adı] Başvurusu — [Ad Soyad]\n\n**Gövde:**\nSayın [İsim veya İK ekibi],\n\n[Firma]'nın [Pozisyon] ilanına başvuruyorum. [1 cümle neden bu şirket + 1 cümle en güçlü katkın].\n\nEkli dosyalarda CV ve kapak mektubumu bulabilirsiniz.\nGörüşme için uygun olduğumu bildirmekten memnuniyet duyarım.\n\nSaygılarımla, [Ad Soyad] | [Telefon]\n\n**Dosya adı:** AdiSoyadi_CV_2026.pdf",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "LinkedIn Profili",
+      "name": "LinkedIn Başlık Optimizasyonu",
+      "desc": "220 karakterlik LinkedIn başlığını arama ve ilk izlenim için optimize edin.",
+      "tags": [
+        "LinkedIn",
+        "başlık",
+        "profil"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## LinkedIn Başlık Formülleri\n**Formül 1:** [Unvan] | [Sektör] uzmanı | [Güçlü yan]\nÖrnek: Backend Developer | Fintech uzmanı | Açık kaynak katkıcısı\n\n**Formül 2:** [Değer önerisi] → [Kitle]\nÖrnek: Startup'ların ölçeklenmesine yardımcı olan SRE mühendisi\n\n**Formül 3:** [Anahtar beceri 1] · [Beceri 2] · [Beceri 3]\nÖrnek: Python · ML · Veri Mühendisliği\n\nUyarı: 'Mevcut işsiz' veya 'iş arıyor' — yerine 'Yeni fırsatlara açık'.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "LinkedIn Profili",
+      "name": "LinkedIn About Bölümü Şablonu",
+      "desc": "Ziyaretçiyi 3 saniyede durduran LinkedIn özet bölümü yazma formülü.",
+      "tags": [
+        "About",
+        "özet",
+        "LinkedIn"
+      ],
+      "badge1": "Orta",
+      "content": "## LinkedIn About Yapısı\n**Satır 1 (Kanca):** Cesur bir iddia veya fark yaratma ifadesi.\n**Paragraf:** Değer önerisi + kanıt + kime hizmet ettiğin.\n**Başarılar:** 2-3 madde rakamla.\n**Uzmanlık alanları:** Aranabilir anahtar kelimeler doğal akışla.\n**CTA:** 'DM veya email: ad@email.com'\n\nÜç satır sonrası 'Daha fazla gör' kırılması → kanca orada olmalı.\nUzunluk: 300-500 kelime.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Mülakat Hazırlık",
+      "name": "Sık Sorulan Mülakat Soruları",
+      "desc": "30 klasik mülakat sorusu ve STAR formatında yanıt çerçevesi.",
+      "tags": [
+        "mülakat",
+        "soru",
+        "STAR"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Top 10 Mülakat Sorusu\n1. Kendinizden bahsedin. (1-2 dk, PAR formatı)\n2. Neden bu şirketi seçiyorsunuz?\n3. En büyük güçlü/zayıf yönünüz?\n4. 5 yıl sonra kendinizi nerede görüyorsunuz?\n5. Bir çatışma örneği verin. (STAR)\n6. Başarısız olduğunuz bir proje?\n7. Takım içinde çalışmanızı anlatın.\n8. Maaş beklentiniz nedir?\n9. Sorularınız var mı?\n10. Neden ayrılmak istiyorsunuz?\n\nHer soru için 1-2 hazır STAR hikayesi belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Mülakat Hazırlık",
+      "name": "Teknik Mülakat Süreci",
+      "desc": "Coding challenge, sistem tasarımı ve davranışsal tur içeren teknik mülakat planı.",
+      "tags": [
+        "teknik",
+        "coding",
+        "sistem tasarımı"
+      ],
+      "badge1": "Orta",
+      "content": "## Teknik Mülakat Hazırlık\n**Algoritma:**\n- LeetCode: Easy×20, Medium×50, Hard×10\n- Konular: Array, String, Tree, DP, Graph\n\n**Sistem Tasarımı:**\n- Kaynak: System Design Primer (GitHub)\n- Pratik: URL kısaltıcı, Twitter feed, WhatsApp\n\n**Davranışsal:**\n- Leadership/Impact/Project her biri için 2 STAR hikayesi\n\n**Şirket araştırması:**\n- Son 3 blog post, product değişimleri, financials.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Kariyer Geçişi",
+      "name": "Sektör Geçişi Strateji Haritası",
+      "desc": "Farklı sektöre geçişte transfer edilebilir becerileri keşfedin ve boşlukları kapatın.",
+      "tags": [
+        "geçiş",
+        "kariyer",
+        "transfer beceri"
+      ],
+      "badge1": "Orta",
+      "content": "## Sektör Geçiş Planı\n1. **Transfer becerileri:** Hangi beceriler her sektörde geçerli? (liderlik, veri analizi, iletişim)\n2. **Boşluk analizi:** Hedef sektörün JD'lerini analiz et → eksiklerin.\n3. **Köprü rol:** Hybrid rol bul → her iki sektörü birleştirir.\n4. **Eğitim:** Kurs/sertifika → 3-6 ay.\n5. **Network:** Hedef sektörde 20 coffee chat.\n6. **Portföy:** Kişisel proje → kanıt.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Kariyer Geçişi",
+      "name": "Yazılıma Geçiş Planı",
+      "desc": "Kodlama geçmişi olmadan yazılım kariyerine geçiş için 6-12 aylık yol haritası.",
+      "tags": [
+        "geçiş",
+        "yazılım",
+        "bootcamp"
+      ],
+      "badge1": "Orta",
+      "content": "## Yazılım Geçiş Yol Haritası\n**Ay 1-3:** Temel\n- Python veya JavaScript: FreeCodeCamp, CS50\n- Günde 2 saat minimum\n\n**Ay 4-6:** Uygulama\n- 2-3 portföy projesi\n- GitHub profili aktif\n\n**Ay 7-9:** İş arama\n- Açık kaynak katkısı\n- Bootcamp veya online kurs tamamla\n\n**Ay 10-12:** İlk iş\n- Junior pozisyonlara başvur\n- Networking + LinkedIn aktif",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Portfolyo & Marka",
+      "name": "Geliştirici Portfolyo Sitesi",
+      "desc": "GitHub Pages veya Vercel ile ücretsiz kişisel portfolyo sitesi kurma rehberi.",
+      "tags": [
+        "portfolyo",
+        "GitHub Pages",
+        "site"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Portfolyo Site Yapısı\n```\nAnasayfa\n├── Hero: İsim + Unvan + CTA\n├── Hakkımda: 3-4 cümle kim olduğun\n├── Projeler: 3-5 seçilmiş proje\n│   ├── Ekran görüntüsü\n│   ├── Teknolojiler (badge)\n│   ├── Canlı demo + GitHub linki\n│   └── Ne öğrendim (hikaye)\n├── Beceriler: Logo grid\n└── İletişim: Form veya email\n```\nÜcretsiz host: GitHub Pages, Vercel, Netlify.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Portfolyo & Marka",
+      "name": "Kişisel Marka İnşası",
+      "desc": "LinkedIn, Twitter/X ve blog aracılığıyla uzman olarak görünürlük kazanma planı.",
+      "tags": [
+        "marka",
+        "görünürlük",
+        "içerik"
+      ],
+      "badge1": "Orta",
+      "content": "## Kişisel Marka Planı\n**Niş:** 1 konu → derin uzmanlık görünümü.\n**Platform:** LinkedIn (profesyonel), X/Twitter (teknik), blog (derin içerik).\n**İçerik tipleri:** Öğrendiğin şeyi paylaş, çözdüğün problemi yaz, case study.\n**Sıklık:** Haftada 3 LinkedIn post → 3 ayda 1000+ follower.\n**Ağ:** Yorumlara değer katan yanıtlar → organik büyüme.\n**Ölçüm:** Profil görüntüleme, bağlantı isteği, DM.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Mülakat Hazırlık",
+      "name": "Maaş Müzakeresi Stratejisi",
+      "desc": "Teklifi kabul etmeden önce maaş ve yan hakları nasıl müzakere edeceğinizin formülü.",
+      "tags": [
+        "maaş",
+        "müzakere",
+        "teklif"
+      ],
+      "badge1": "Orta",
+      "content": "## Müzakere Formülü\n1. Piyasa araştırması: LinkedIn Salary, Glassdoor, Kariyernet.\n2. Aralık değil tek rakam söyle: 'X bekliyorum.'\n3. Teklifi hemen kabul etme: '24 saat düşünebilir miyim?'\n4. Karşı teklif: %10-20 üstü ile başla.\n5. Paketin tamamını müzakere et: baz + prim + hisse + uzaktan çalışma.\n6. Yazılı al: sözlü teklif resmi değil.\n\nCümle: 'Bu pozisyon için çok heyecanlıyım. Piyasa araştırmama göre X-Y bandı makul olur, bu konuda esneklik var mı?'",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "CV & Özgeçmiş",
+      "name": "Kıdemli Profesyonel CV Stratejisi",
+      "desc": "10+ yıl deneyimli profesyoneller için özgeçmiş yazım stratejisi ve uzunluk rehberi.",
+      "tags": [
+        "kıdemli",
+        "deneyim",
+        "özgeçmiş"
+      ],
+      "badge1": "Orta",
+      "content": "## Kıdemli CV Stratejisi\n1. Uzunluk: 10+ yıl için 2 sayfa kabul edilebilir; 3+ sayfa değil.\n2. Eski deneyim: 10 yıldan öncesi kısalt → sadece şirket/unvan/tarih.\n3. Odak: Son 5 yılın detayı → relevancy.\n4. Üst kısım: Executive summary yerine 'değer önerisi' paragrafı.\n5. Metrikler: Liderlik ölçümleri → 'X kişilik ekip yönettim', 'Y$ bütçe'.\n6. Eski teknolojiler: Artık kullanılmayan araçları çıkar.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

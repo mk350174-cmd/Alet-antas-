@@ -48,6 +48,276 @@
     "border3": "#2a3232",
     "heroBg": "#0a1212"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "inbox",
+      "name": "Inbox Yönetimi",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "yazma",
+      "name": "E-posta Yazma",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "otomasyon",
+      "name": "Otomasyon & Filtreler",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "verimlilik",
+      "name": "E-posta Verimliliği",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "guvenlik",
+      "name": "Güvenlik & Gizlilik",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "newsletter",
+      "name": "Bülten Pazarlama",
+      "color": "#4cc9c9"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "inbox",
+      "name": "Inbox Zero Metodolojisi",
+      "desc": "E-postayı sıfıra indirip düşük stresle işle.",
+      "tags": [
+        "inbox zero",
+        "temizlik",
+        "sistem"
+      ],
+      "badge1": "Klasik",
+      "content": "**Inbox Zero:** Her e-postaya 4 eylem: Sil, Delege et, Yap (<2 dk), Ertele. Gelen kutusu karar bekleyen yer değil, geçici tampan. Referans → klasör/arşiv. Görev → görev yöneticisine. Günde 2 kez kontrol (9:00 ve 15:00). Sürekli açık tutulan e-posta dikkat katili.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "inbox",
+      "name": "E-posta Batch İşleme",
+      "desc": "Belirli saatlerde toplu okuyarak anlık kontrol kesme.",
+      "tags": [
+        "batch",
+        "toplu",
+        "zaman"
+      ],
+      "badge1": "Odak",
+      "content": "**Batch İşleme:** E-posta istemcisini kapalı tut (bildirim yok). Günde 2-3 pencere: sabah 9, öğle 13, akşam 17. Her pencere 20-30 dk. Acil iletişim için telefon / Slack. Kolaylaşır: sabah ilk iş e-posta açmayınca zihin taze kalır. Müşterilere bekleme süresi söyle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "yazma",
+      "name": "5 Cümle E-posta Kuralı",
+      "desc": "Her e-postayı 5 cümlenin altında yaz.",
+      "tags": [
+        "kısa",
+        "5 cümle",
+        "verimli"
+      ],
+      "badge1": "Kural",
+      "content": "**5 Cümle Kuralı:** Bağlam (1 cümle). İstek/bilgi (1-2 cümle). Neden önemli (1 cümle). Sonraki adım (1 cümle). Toplam max 5 cümle. Uzun e-posta = karar erteleme. İmzana ekle: 'five.sentenc.es — neden kısa?' Kısa e-posta daha hızlı yanıt alır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "yazma",
+      "name": "İş E-postası Konu Satırı",
+      "desc": "Açılma oranını artıran konu satırı formülleri.",
+      "tags": [
+        "konu satırı",
+        "açılma",
+        "iş"
+      ],
+      "badge1": "Pratik",
+      "content": "**Konu Satırı Formülleri:** Eylem gerekli: '[Karar Gerekli] Toplantı tarihi.' Bilgi: '[FYI] Proje güncellemesi.' Acil: '[Acil] Bugün yanıt lazım.' Spesifik: 'Cuma toplantısı — gündem değişikliği' değil 'Toplantı.' Emoji + konu: dikkat çeker ama profesyonelliğe göre ayarla. Uzun konu satırı → kesilir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "otomasyon",
+      "name": "Gmail Filtre ve Etiket Sistemi",
+      "desc": "Otomatik sınıflandırma ile gelen kutusunu temizle.",
+      "tags": [
+        "gmail",
+        "filtre",
+        "etiket"
+      ],
+      "badge1": "Teknik",
+      "content": "**Gmail Filtre Sistemi:** Bültenler → etiket: 'Okuma Listesi', inbox'ı atla. CC'li e-postalar → etiket: 'CC', inbox'ı atla. Belirli gönderenler → öncelikli. Konu içeren → otomatik arşiv. Ayarlar → Filtreler ve Engellenen Adresler → Yeni filtre oluştur. Haftada 1 saat kurulum = yıllık 50 saat tasarruf.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "otomasyon",
+      "name": "E-posta Şablonları Kütüphanesi",
+      "desc": "Sık kullanılan e-postalar için hazır yanıt şablonları.",
+      "tags": [
+        "şablon",
+        "hızlı",
+        "kütüphane"
+      ],
+      "badge1": "Verimli",
+      "content": "**Şablon Kütüphanesi:** Gmail: Ayarlar → Gelişmiş → Şablonlar. Kategoriler: toplantı talebi, teklif, teşekkür, takip, reddetme. Her şablon: kişiselleştirme için [AD], [TARİH] işaretçileri. TextExpander veya Espanso ile herhangi uygulamada tetikle. 50 şablon = günde 45 dk tasarruf.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "verimlilik",
+      "name": "E-posta Yönetimi Araçları",
+      "desc": "Superhuman, SaneBox, Unroll.me karşılaştırması.",
+      "tags": [
+        "araç",
+        "superhuman",
+        "sanebox"
+      ],
+      "badge1": "Araç",
+      "content": "**E-posta Araçları:** SaneBox: AI ile öncelik sıralaması, bülten filtresi. Superhuman: ultra hızlı klavye kısayolları ($30/ay). Unroll.me: bülten aboneliklerini toplu iptal. Boomerang: e-postayı ertele, takip hatırlatıcısı. Türkçe kullanıcı için Gmail + filtreler + SaneBox yeterli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "verimlilik",
+      "name": "Takip E-postası Zamanlaması",
+      "desc": "Ne zaman ve nasıl takip e-postası gönderilir.",
+      "tags": [
+        "takip",
+        "follow-up",
+        "zamanlama"
+      ],
+      "badge1": "İş",
+      "content": "**Takip Zamanlaması:** 1. takip: 3-5 iş günü sonra. 2. takip: 1 hafta sonra. Max 3 takip. Takip tonu: yardımcı, suçlayıcı değil. Konu: 'Re: [orijinal konu]' + 'Takip'. İçerik: tek satır, yeni değer ekle veya deadline hatırlat. Yanıtsız 3 takip sonra konu kapat, not al.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "guvenlik",
+      "name": "E-posta Güvenlik Temelleri",
+      "desc": "Phishing, kimlik avı ve hesap güvenliği önlemleri.",
+      "tags": [
+        "güvenlik",
+        "phishing",
+        "2FA"
+      ],
+      "badge1": "Kritik",
+      "content": "**E-posta Güvenliği:** 2FA aktif et (Google Authenticator değil SMS). Phishing işaretleri: acele, korku, link → hover et, URL'ye bak. Ekler: .exe, .zip → açma. Şifre: e-postaya özgü, güçlü. Güvenilir kaynak bile sahte olabilir (spoof). Şüpheli e-postayı iletme değil, alıcıyı farklı kanaldan doğrula.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "guvenlik",
+      "name": "Geçici E-posta Adresi Kullanımı",
+      "desc": "Spam önlemek için alternatif adres stratejileri.",
+      "tags": [
+        "spam",
+        "geçici",
+        "alias"
+      ],
+      "badge1": "Gizlilik",
+      "content": "**E-posta Alias Stratejisi:** Gmail'de '+' trick: isim+site@gmail.com → spam gelince filtrele. SimpleLogin veya AnonAddy: her site için farklı adres. Gerçek adres asla form doldurmada kullanma. ProtonMail: şifreli iletişim için. Spam artışını tespit edince hangi siteden geldiğini biliyorsun.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "newsletter",
+      "name": "E-posta Listesi Başlatma",
+      "desc": "0'dan bülten listesi oluşturma adımları.",
+      "tags": [
+        "bülten",
+        "liste",
+        "başlangıç"
+      ],
+      "badge1": "Pazarlama",
+      "content": "**Bülten Listesi:** Platform: Mailchimp (ücretsiz 500'e kadar), Brevo, Mailerlite. Kayıt formu: web sitene göm. Lead magnet: ücretsiz rehber/şablon karşılığı e-posta. İlk 100 aboneye kişisel ulaş. Yayın sıklığı: haftada 1 (tutarlılık en önemli). Açılma oranı hedefi: %30+. Konu satırı A/B testi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "newsletter",
+      "name": "Bülten İçerik Çerçevesi",
+      "desc": "Her haftanın içeriğini dolduran tekrar eden yapı.",
+      "tags": [
+        "içerik",
+        "çerçeve",
+        "bülten"
+      ],
+      "badge1": "Yapı",
+      "content": "**Bülten Çerçevesi:** 1) Kısa intro (2 satır): bu haftanın teması. 2) Ana içerik (200-400 kelime): öğretici veya eğlenceli. 3) Hızlı ipuçları: 3 madde. 4) Araç/kaynak önerisi. 5) CTA: tek eylem. Toplam okuma: 3-5 dk. Şablon sabit → içerik değişir → kolaylaşır. En iyi bültenler tutarlı ve kişisel.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "inbox",
+      "name": "Arşivleme Sistemi",
+      "desc": "Bir klasör sistemi veya arama odaklı arşiv stratejisi.",
+      "tags": [
+        "arşiv",
+        "klasör",
+        "arama"
+      ],
+      "badge1": "Organizasyon",
+      "content": "**Arşivleme Stratejisi:** İki yaklaşım: 1) Klasörsüz arşiv: her şeyi arşivle, arama yeterli (Gmail için ideal). 2) Minimal klasör: Projeler / Referans / Bekliyor / Arşiv. 10+ klasör = sistemin çöktüğünde. Etiket > klasör: bir e-posta birden fazla etikete sahip olabilir. Yıllık temizlik: 1 yaşından eski arşivlenmiş e-postaları sil.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "yazma",
+      "name": "Empati ile E-posta Tonu",
+      "desc": "Soğuk metni sıcaklaştıran ton düzeltme teknikleri.",
+      "tags": [
+        "ton",
+        "empati",
+        "iletişim"
+      ],
+      "badge1": "İletişim",
+      "content": "**Ton Kontrolü:** Göndermeden önce sor: 'Bu sert mi?' Test: sesli oku. Yumuşatıcılar: 'Acaba...', 'Anladığım kadarıyla...', 'Düşüncen nedir?' Sert: 'Bu yanlış.' Yumuşak: 'Burada bir karışıklık olabilir, birlikte bakabilir miyiz?' Asla tüm büyük harf kullanma. E-posta kalıcı — aceleciliği kontrol et.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Türkçe NLP",
+      "name": "Türkçe NLP",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Türkçe Yazarlık",
+      "name": "Türkçe Yazarlık",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Dil Modelleri",
+      "name": "Dil Modelleri",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Türkçe İçerik Üretimi",
+      "name": "Türkçe İçerik Üretimi",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Çeviri & Yerelleştirme",
+      "name": "Çeviri & Yerelleştirme",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Türkçe Corpus & Veri",
+      "name": "Türkçe Corpus & Veri",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Türkçe NLP",
+      "name": "Türkçe Dil Modeli Kaynakları",
+      "desc": "Türkçe için eğitilmiş BERT, GPT ve özel modellerin Hugging Face kütüğü.",
+      "tags": [
+        "BERT",
+        "Türkçe",
+        "model"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe Modeller\n```python\nfrom transformers import AutoTokenizer, AutoModel\n\n# Türkçe BERT\nmodel_name = 'dbmdz/bert-base-turkish-cased'\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModel.from_pretrained(model_name)\n\n# Alternatifler:\n# 'loodos/electra-base-turkish-cased-discriminator'\n# 'savasy/bert-base-turkish-ner-cased'\n# 'Helsinki-NLP/opus-mt-tr-en' → TR→EN çeviri\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Türkçe NLP",
+      "name": "Türkçe Tokenizasyon Zorlukları",
+      "desc": "Türkçenin eklemeli yapısının tokenizasyona etkisi ve çözüm yöntemleri.",
+      "tags": [
+        "tokenizasyon",
+        "morfoloji",
+        "eklemeli"
+      ],
+      "badge1": "İleri",
+      "content": "## Türkçe Tokenizasyon\nZorluk: 'evlerindekilerden' → tek kelime, 7 morfem\n\nYaklaşımlar:\n1. **BPE (Byte Pair Encoding):** Alt-kelime birimler → XLM-R, mBERT.\n2. **Morfem bazlı:** Zemberek ile morfeme ayır → ayrı token.\n3. **Karakter bazlı:** Harf harf → derin NLP.\n\nZemberek-NLP:\n```python\n# Java tabanlı, Python wrapper\nfrom zemberek import TurkishMorphology\nmorph = TurkishMorphology.create_with_defaults()\nresult = morph.analyze('kitaplarımda')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Türkçe NLP",
+      "name": "Türkçe NER (Varlık Tanıma)",
+      "desc": "Türkçe metinlerden kişi, yer ve organizasyon isimlerini tanıyan model kullanımı.",
+      "tags": [
+        "NER",
+        "varlık",
+        "tanıma"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe NER\n```python\nfrom transformers import pipeline\n\nner = pipeline('ner',\n    model='savasy/bert-base-turkish-ner-cased',\n    aggregation_strategy='simple')\n\ntext = 'Ahmet Çelik, Ankara Üniversitesi öğrencisidir.'\nresult = ner(text)\nfor entity in result:\n    print(f'{entity[\"entity_group\"]}: {entity[\"word\"]}')\n# PER: Ahmet Çelik\n# LOC: Ankara\n# ORG: Üniversitesi\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Türkçe Yazarlık",
+      "name": "Türkçe SEO Metin Yazımı",
+      "desc": "Google'ın Türkçe dilbilgisi kurallarına uygun SEO içerik yazma rehberi.",
+      "tags": [
+        "SEO",
+        "Türkçe",
+        "içerik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Türkçe SEO Yazım\n1. Başlık: Hedef kelimeyi H1'in başına koy.\n2. Doğal dil: 'yapay zeka kullanımı' değil 'yapay zekayı nasıl kullanırım?'\n3. Morfoloji: Google Türkçe eklerle geniş eşleşme yapar.\n4. Uzun kuyruklu: 'İstanbul'da ucuz konaklama' > 'konaklama'.\n5. Alma yüksel miktarları: 1500+ kelime uzun form tercih edilir.\n6. Meta: 155 karakter, hedef kelimeyi içer.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Türkçe Yazarlık",
+      "name": "Türkçe Noktalama Kuralları",
+      "desc": "TDK'nın güncel yazım kılavuzundaki noktalama işareti kuralları özeti.",
+      "tags": [
+        "noktalama",
+        "TDK",
+        "yazım"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Türkçe Noktalama Özeti\n- Virgül: 'Ahmet, gel.' (hitap), sıralı öge.\n- Noktalı virgül: Eş değer cümleler arası.\n- İki nokta: Açıklama, alıntı öncesi.\n- Tire (-): Konuşma çizgisi, ek önü.\n- Kısa çizgi (-): Kelime bölme, tarih aralığı.\n- Tırnak: Alıntı, özel ad dikkat.\n\nSık hata: '?!' → '?!' değil sadece '?' veya '!'. Üst üste soru/ünlem uygun değil.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dil Modelleri",
+      "name": "Türkçe Prompt Mühendisliği",
+      "desc": "Türkçe komutlarla LLM'den kaliteli Türkçe çıktı almak için prompt stratejileri.",
+      "tags": [
+        "prompt",
+        "Türkçe",
+        "LLM"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe Prompt Stratejileri\n1. Dili belirt: 'Türkçe yanıtla' her promptun başında.\n2. Resmiyet: 'Siz' → resmi; 'Sen' → gündelik.\n3. Ağız/üslup: 'Teknik dil kullan, jargonsuz' veya 'sade Türkçe'.\n4. Format: 'Madde madde yaz, başlıklar TDK yazım kurallarına uygun'.\n5. Uzunluk: '500 kelime, giriş/gelişme/sonuç yapısında'.\n6. Rol: 'Türk mühendisi olarak teknik açıklama yap.'",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Türkçe İçerik Üretimi",
+      "name": "Türkçe Blog İçerik Planı",
+      "desc": "Türk okuyuculara yönelik blog içerik takvimi ve konu araştırma metodolojisi.",
+      "tags": [
+        "blog",
+        "içerik",
+        "plan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Türkçe Blog Planı\n1. Kitle tanımla: yaş, ilgi, teknik seviye.\n2. Anahtar kelime: Google Türkçe Anahtar Kelime Planlayıcı.\n3. Arama niyeti: bilgilendirici/ticari/gezinme.\n4. Konu kümesi (topic cluster): ana konu + 5-10 alt konu.\n5. Yayın takvimi: haftada 2 kez düzenli.\n6. Güncelleme: 6 ayda bir eski içerikleri yenile.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Türkçe İçerik Üretimi",
+      "name": "Türkçe E-posta Şablonları",
+      "desc": "Kurumsal iletişim için resmi ve yarı-resmi Türkçe e-posta şablonları.",
+      "tags": [
+        "e-posta",
+        "kurumsal",
+        "şablon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## E-posta Şablonları\n**Resmi talep:**\n```\nSayın [İsim] Bey/Hanım,\n[Konu] hakkında bilgi/destek talep etmek amacıyla\nyazıyorum. [Talep detayı]\nİlginiz için teşekkür eder, saygılarımı sunarım.\n[Ad Soyad] | [Unvan] | [Telefon]\n```\n**Toplantı talebi:**\n```\nMerhaba [İsim],\n[Konu] hakkında 30 dakikalık görüşme ayarlayabilir miyiz?\n[Tarih/saat seçenekleri]\nBekliyorum, iyi çalışmalar.\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Çeviri & Yerelleştirme",
+      "name": "Türkçe UI Metin Kılavuzu",
+      "desc": "Buton, hata mesajı ve form etiketleri için Türkçe UX yazımı standartları.",
+      "tags": [
+        "UX yazımı",
+        "UI",
+        "Türkçe"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe UX Yazımı\n**Butonlar:** Eylem fiili, kısa → 'Kaydet', 'Gönder', 'Sil'\n**Hata mesajları:**\n- Kötü: 'Hata oluştu'\n- İyi: 'E-posta adresi geçersiz. Lütfen @ işareti içeren bir adres girin.'\n**Onay diyaloğu:**\n- İptal: 'Vazgeç' (kullanıcı dostu)\n- Silme: 'Evet, sil' + 'Hayır, iptal'\n**Boş durum:** 'Henüz içerik yok. İlk [şeyi] oluştur!'",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Türkçe Corpus & Veri",
+      "name": "Türkçe Açık Veri Setleri",
+      "desc": "NLP projeleri için Türkçe metin corpus ve veri setlerinin kaynakları.",
+      "tags": [
+        "corpus",
+        "veri seti",
+        "Türkçe"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe Veri Kaynakları\n1. **OSCAR:** Web crawl → Türkçe büyük metin corpus.\n2. **TWT (Turkish Wikipedia):** 500K+ makale.\n3. **Turkish Tweet Dataset:** Sentiment analizi.\n4. **Milliyet corpus:** Gazete haberleri, NER etiketli.\n5. **TQuAD:** Türkçe soru-cevap veri seti.\n\n```python\nfrom datasets import load_dataset\nds = load_dataset('oscar', 'unshuffled_deduplicated_tr')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Türkçe NLP",
+      "name": "Türkçe Yazım Denetimi",
+      "desc": "Zemberek ve LanguageTool ile otomatik Türkçe yazım hatası tespiti.",
+      "tags": [
+        "yazım denetimi",
+        "spell check",
+        "Zemberek"
+      ],
+      "badge1": "Orta",
+      "content": "## Yazım Denetimi\n```python\n# LanguageTool Python wrapper\nimport language_tool_python\ntool = language_tool_python.LanguageTool('tr')\nmatches = tool.check('Bu bir örnek cümle dir.')\nfor match in matches:\n    print(match.message, match.replacements)\n# 'cümle dir' → 'cümledir' öneri\n\n# Zemberek ile kelime doğrulama:\n# from zemberek import TurkishSpellChecker\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Dil Modelleri",
+      "name": "Türkçe Fine-tuning Kılavuzu",
+      "desc": "Türkçe domain verisini kullanarak BERT modelini fine-tune etme adımları.",
+      "tags": [
+        "fine-tuning",
+        "BERT",
+        "domain"
+      ],
+      "badge1": "İleri",
+      "content": "## Fine-tuning Adımları\n```python\nfrom transformers import AutoModelForSequenceClassification, Trainer\nfrom datasets import Dataset\n\n# Veri hazırla\ntrain_data = Dataset.from_dict({'text': texts, 'label': labels})\n\n# Model yükle\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    'dbmdz/bert-base-turkish-cased', num_labels=2)\n\n# Trainer\ntraining_args = TrainingArguments(output_dir='./results',\n    num_train_epochs=3, per_device_train_batch_size=16)\ntrainer = Trainer(model=model, args=training_args,\n    train_dataset=train_data)\ntrainer.train()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Türkçe Yazarlık",
+      "name": "TDK Yazım Kuralları Özeti",
+      "desc": "En çok yapılan yazım hatalarını önleyen TDK kılavuzu temel maddeleri.",
+      "tags": [
+        "TDK",
+        "yazım",
+        "kural"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sık Yapılan Yazım Hataları\n1. **ki bağlacı:** Ayrı yazılır: 'sanıyorum ki' (bağlaç), 'sanki' (özel).\n2. **de/da:** Ayrı: 'o da, bu da' (bağlaç). Birleşik: 'nerede, orada'.\n3. **mi/mı:** Her zaman ayrı: 'Geldi mi?'\n4. **Büyük harf:** Kişi ve yer adları büyük; kavramlar değil.\n5. **Sayılar:** Yazıyla: bin, milyon; rakamla: 1.234.567.\n6. **Yabancı kelimeler:** Türkçe eke Türkçe ses uyumuyla: 'internette'.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Çeviri & Yerelleştirme",
+      "name": "DeepL API Türkçe Kullanımı",
+      "desc": "DeepL Translate API ile profesyonel kalite Türkçe-İngilizce çeviri entegrasyonu.",
+      "tags": [
+        "DeepL",
+        "API",
+        "çeviri"
+      ],
+      "badge1": "Orta",
+      "content": "## DeepL API Entegrasyonu\n```python\nimport deepl\ntranslator = deepl.Translator('YOUR_AUTH_KEY')\n\n# TR → EN\nresult = translator.translate_text(\n    'Yapay zeka geleceğimizi şekillendiriyor.',\n    source_lang='TR',\n    target_lang='EN-US'\n)\nprint(result.text)\n# 'Artificial intelligence is shaping our future.'\n\n# Toplu çeviri\ntexts = ['Metin 1', 'Metin 2']\nresults = translator.translate_text(texts, target_lang='EN-US')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Türkçe Corpus & Veri",
+      "name": "Türkçe Duygu Analizi Veri Seti",
+      "desc": "Türkçe film ve ürün yorumlarını sentiment etiketiyle içeren veri setleri.",
+      "tags": [
+        "sentiment",
+        "duygu",
+        "yorum"
+      ],
+      "badge1": "Orta",
+      "content": "## Türkçe Sentiment Veri\n```python\nfrom datasets import load_dataset\n\n# TSAD: Türkçe Sentiment Analizi Veri Seti\nds = load_dataset('winvoker/turkish-sentiment-analysis-dataset')\nprint(ds['train'][0])\n# {'text': 'Çok beğendim', 'label': 1}\n\n# SVM baseline:\nfrom sklearn.svm import LinearSVC\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nvect = TfidfVectorizer(analyzer='char', ngram_range=(2,4))\n# Karakter n-gram Türkçe için iyi çalışır\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

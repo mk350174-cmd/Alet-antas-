@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Epistemoloji",
+      "name": "Epistemoloji",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Etik",
+      "name": "Etik",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Mantık & Argüman",
+      "name": "Mantık & Argüman",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Felsefe Tarihi",
+      "name": "Felsefe Tarihi",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Uygulamalı Felsefe",
+      "name": "Uygulamalı Felsefe",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Zihin Felsefesi",
+      "name": "Zihin Felsefesi",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Epistemoloji",
+      "name": "JTB Bilgi Teorisi",
+      "desc": "Gerekçelendirilmiş doğru inanç (Justified True Belief) teorisi ve Gettier itirazı.",
+      "tags": [
+        "JTB",
+        "Gettier",
+        "epistemoloji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## JTB Teorisi\nBilgi = Gerekçelendirilmiş + Doğru + İnanç\n\n**Gettier (1963):** JTB yeterli değil.\nÖrnek: Saatin 3'te durduğunu bilmiyorsun; tam 3'e baktın ve doğru → JTB var ama 'bilgi' değil.\n\nYanıt denemeleri: güvenilircilik (reliabilism), nedensel teori, no false lemmas.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Epistemoloji",
+      "name": "Değişmez Bilgi Şüpheciliği",
+      "desc": "Descartes'ın radikal şüpheciliği, cogito argümanı ve modern yanıtlar.",
+      "tags": [
+        "şüphecilik",
+        "Descartes",
+        "cogito"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Descartes Şüpheciliği\n1. Her şeyi şüphe ile sına.\n2. Duyu yanılmaz mı? → Hayır (illüzyonlar).\n3. Rüya değil misin? → Bilemezsin.\n4. Kötü bir cin seni kandırıyor olamaz mı?\n5. Cogito: 'Düşünüyorum, öyleyse varım' — şüpheye dayanıklı.\n\nModern yanıt: bağlamcılık; mutlak kesinlik yerine pratik kesinlik.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Etik",
+      "name": "Faydacılık İlkeleri",
+      "desc": "Bentham ve Mill'in faydacılığı: en fazla sayıda insana en fazla mutluluk.",
+      "tags": [
+        "faydacılık",
+        "Bentham",
+        "Mill"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Faydacılık\n**Bentham:** Hedonik hesaplama — zevk ve acı miktarını ölç.\n**Mill:** Nitelik farkı var — entelektüel zevkler üstün.\n**Eleştiriler:**\n1. Azınlık zararına çoğunluk mutluluğu meşru olabilir mi?\n2. Mutluluğu nasıl ölçersin?\n3. Uzak sonuçlar hesaplanabilir mi?\nYanıt: Kural faydacılığı — eylemleri değil kuralları değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Etik",
+      "name": "Kant'ın Kategorik Imperatifi",
+      "desc": "Ödev etiği: eylemini herkes yapsaydı ne olurdu testi ve insanlara araç muamelesi.",
+      "tags": [
+        "Kant",
+        "ödev",
+        "imperatif"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kategorik İmperatif\n**Formül 1:** Yalnızca, aynı zamanda evrensel yasa olmasını isteyebileceğin maxim ile hareket et.\nTest: 'Herkes yalan söylese ne olur?' → Güven çöker → yalan evrenselleşemez.\n\n**Formül 2:** İnsanlara asla yalnızca araç olarak değil, her zaman aynı zamanda amaç olarak muamele et.\n\nEleştiri: Çatışan ödevler? (Kişiyi korumak vs. yalan söylememek)",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Mantık & Argüman",
+      "name": "Geçerlilik vs. Sağlamlık",
+      "desc": "Deductive argümanda geçerlilik (validity) ve sağlamlık (soundness) farkı.",
+      "tags": [
+        "geçerlilik",
+        "sağlamlık",
+        "argüman"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Geçerlilik ve Sağlamlık\n**Geçerli (Valid):** Öncüller doğruysa, sonuç zorunlu doğrudur.\n**Sağlam (Sound):** Geçerli + öncüller gerçekte doğru.\n\nÖrnek geçerli ama sağlam değil:\n- P1: Tüm kediler ejderha.\n- P2: Whiskers kedidir.\n- C: Whiskers ejderhardır. (Geçerli, sağlam değil)\n\nHedef: Hem geçerli hem sağlam argüman kur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Mantık & Argüman",
+      "name": "Yaygın Mantık Safsataları",
+      "desc": "Ad hominem, slippery slope, false dichotomy gibi günlük argümanlardaki mantık hataları.",
+      "tags": [
+        "safsata",
+        "hata",
+        "tartışma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Mantık Safsataları\n1. **Ad hominem:** Kişiye saldır, argümana değil.\n2. **Strawman:** Argümanı çarpıt, kolayını çürüt.\n3. **Slippery slope:** A→B→C→...Kıyamet kanıtsız zincir.\n4. **False dichotomy:** Ya A ya B; C seçeneğini sakla.\n5. **Appeal to authority:** Ünlü X dedi, o halde doğru.\n6. **Post hoc:** A'dan sonra B oldu, A B'ye yol açtı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Felsefe Tarihi",
+      "name": "Platon'un Mağara Alegorisi",
+      "desc": "İdealar dünyası ile görünüşler dünyasını betimleyen Mağara Alegorisi analizi.",
+      "tags": [
+        "Platon",
+        "mağara",
+        "form"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Mağara Alegorisi\nMağaradaki mahkumlar: yalnızca gölge görürler → günlük algı.\nDışarı çıkan: gerçek nesneleri (formları) görür → felsefi bilgi.\nGüneş: İyinin Formu → hakikatin kaynağı.\n\nYorum:\n- Eğitim = mağaradan çıkış.\n- Siyasi: aydınlanan kişi dönüp toplumu yönetmeli.\nEleştiri: Formlar gerçekten var mı? (Aristoteles'in itirazı)",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Felsefe Tarihi",
+      "name": "Stoacılık Pratik Rehberi",
+      "desc": "Epiktetos ve Marcus Aurelius'tan günlük hayata uygulanabilir Stoacı pratikler.",
+      "tags": [
+        "Stoa",
+        "Epiktetos",
+        "kontrol"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Stoacı Pratikler\n**Kontrol dikotomisi:** Yalnızca düşünceler, arzular, eylemler kontrolündedir. Dış dünya değil.\n1. Her sabah: 'Bugün kontrol edemeyeceğim ne var?'\n2. Negatif görselleştirme: kötü olanı hayal et → şimdiyi değerlendir.\n3. Memento mori: ölümlülüğü hatırla → öncelikleri netleştir.\n4. Ertelenmiş tepki: duraksa, sonra yanıt ver.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Zihin Felsefesi",
+      "name": "Bilinç Zor Problemi",
+      "desc": "Chalmers'ın 'neden beyin aktivitesi öznel deneyim üretir?' sorusu.",
+      "tags": [
+        "bilinç",
+        "Chalmers",
+        "qualia"
+      ],
+      "badge1": "Orta",
+      "content": "## Bilinç Zor Problemi\n**Kolay problem:** Beyin nasıl bilgi işler, nasıl tepki verir? → Nörobiyoloji yanıtlar.\n**Zor problem:** Neden bilgi işleme *his* üretir? Kırmızıyı *görmek* neden bir şey *hissettiriyor*?\n\nQualia: öznel deneyimin niteliksel özelliği.\nYanıtlar:\n1. Fizikalizm: bilinç beyindir → qualia açıklanabilir.\n2. Dualizam: zihin ayrı.\n3. Panpsişizm: bilinç evrensel.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Zihin Felsefesi",
+      "name": "Turing Testi ve Yapay Zeka",
+      "desc": "Turing testi, Çin odası argümanı ve yapay zekanın 'anlayışı' üzerine tartışma.",
+      "tags": [
+        "Turing",
+        "Searle",
+        "ZY"
+      ],
+      "badge1": "Orta",
+      "content": "## Turing Testi\nTuring (1950): Makine insan gibi konuşabiliyorsa, düşünüyor sayılır.\n\n**Searle Çin Odası:** Semboller işleyen kişi Çince 'anlamıyor' olsa da doğru yanıt verir.\n→ Sentaktik işlem ≠ semantik anlayış.\n\nYanıtlar:\n1. Sistem yanıtı: oda değil sistem anlıyor.\n2. Robot yanıtı: bedenlenme gerekir.\n3. Güçlü/Zayıf AI ayrımı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Uygulamalı Felsefe",
+      "name": "AI Etiği: Trolley Problemi",
+      "desc": "Otonom araçlarda ve AI karar sistemlerinde etik seçim çerçeveleri.",
+      "tags": [
+        "AI",
+        "trolley",
+        "etik"
+      ],
+      "badge1": "Orta",
+      "content": "## Trolley Problemi → AI\nKlasik: Kolunu çek → 1 kişi ölür, 5 kurtulur. Çekmezsen 5 ölür.\n\nOtonom araç versiyonu: Fren tutmuyor → duvara çarp (sürücü) ya da yayalara çarp.\n\nEtik çerçeveler:\n1. Faydacılık: en az kayıp.\n2. Deontoloji: kasıtlı zarar vermeme.\n3. Erdem: iyi karakter hangi kararı alır?\n\nGerçek çözüm: Önce kaza olasılığını minimize et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Uygulamalı Felsefe",
+      "name": "Çevre Etiği Temel Pozisyonlar",
+      "desc": "Antroposentrizm, biyosentrizm ve ekosentrizm çevre felsefesi pozisyonları.",
+      "tags": [
+        "çevre",
+        "etik",
+        "ekoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## Çevre Etiği\n**Antroposentrizm:** Değer insan çıkarından türer → doğa araçsal değerlidir.\n**Biyosentrizm:** Tüm canlıların içsel değeri var (Taylor).\n**Ekosentrizm:** Ekosistemler ve türlerin kendisi değerli (Aldo Leopold: 'Land Ethic').\n\nUygulama: İklim politikası, hayvan hakları, tür koruma — hangi çerçeve hangi sonucu doğurur?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Etik",
+      "name": "Erdem Etiği",
+      "desc": "Aristoteles'in erdeme dayalı ahlak anlayışı ve eudaimonia kavramı.",
+      "tags": [
+        "Aristoteles",
+        "erdem",
+        "eudaimonia"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Erdem Etiği\n**Soru:** 'Ne yapmalıyım?' değil, 'Nasıl bir insan olmalıyım?'\n\nErdem: altın orta yol — cesaret = korkaklık ve pervasızlık arası.\n\nEudaimonia: insan potansiyelini gerçekleştirme; çevirisi 'mutluluk' dar kalır.\n\nModern: MacIntyre → erdem sosyal pratikler bağlamında anlam kazanır.\nKarakter geliştirme: tekrar → alışkanlık → karakter.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Felsefe Tarihi",
+      "name": "Nietzsche'nin Güç İstenci",
+      "desc": "Güç İstenci kavramı, Üstinsan ve nihilizme yanıt olarak değerlerin yeniden değerlendirilmesi.",
+      "tags": [
+        "Nietzsche",
+        "güç",
+        "Übermensch"
+      ],
+      "badge1": "Orta",
+      "content": "## Nietzsche Temel Kavramlar\n**Tanrı öldü:** Geleneksel değerler temelini yitirdi → nihilizm tehlikesi.\n**Güç İstenci:** Hayat = kendi üstüne geçme arzusu; güç = kontrol değil, yaratma.\n**Übermensch:** Kendi değerlerini yaratan insan → köle ahlakını aşan.\n**Ebedi Dönüş:** Bu hayatı sonsuz tekrar yaşasaydın ne yapardın?\n\nYanlış okuma: Faşizm/ırkçılık ile ilişkilendirme — Nietzsche reddeder.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Epistemoloji",
+      "name": "Paradigma Kayması (Kuhn)",
+      "desc": "Thomas Kuhn'un bilimsel devrimler modeli: normal bilim, anomali, paradigma değişimi.",
+      "tags": [
+        "Kuhn",
+        "paradigma",
+        "devrim"
+      ],
+      "badge1": "Orta",
+      "content": "## Kuhn'un Modeli\n1. **Normal bilim:** Mevcut paradigma içinde bulmaca çözme.\n2. **Anomaliler:** Paradigmanın açıklayamadığı veriler birikir.\n3. **Kriz:** Eski paradigma çöker.\n4. **Devrim:** Yeni paradigma benimsenin.\nÖrnek: Ptolomeus → Kopernik, Newton → Einstein.\n\nKuhn'a eleştiri (Popper): Yanlışlanabilirlik mi paradigma savaşı mı?",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

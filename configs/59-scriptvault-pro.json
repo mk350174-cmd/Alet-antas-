@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Bash Scripting",
+      "name": "Bash Scripting",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Otomasyon",
+      "name": "Otomasyon",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Dosya İşlemleri",
+      "name": "Dosya İşlemleri",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Sistem Yönetimi",
+      "name": "Sistem Yönetimi",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Ağ Araçları",
+      "name": "Ağ Araçları",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "PowerShell",
+      "name": "PowerShell",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Bash Scripting",
+      "name": "Bash Script Şablonu",
+      "desc": "Hata yönetimi, argüman parse ve logging içeren sağlam Bash script iskeleti.",
+      "tags": [
+        "bash",
+        "şablon",
+        "hata"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bash Şablonu\n```bash\n#!/usr/bin/env bash\nset -euo pipefail  # Hata, tanımsız değişken, pipe hata\ntrap 'echo \"Hata satır $LINENO\"' ERR\n\n# Değişkenler\nSCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\"; pwd)\"\nLOG_FILE=\"${SCRIPT_DIR}/script.log\"\n\nlog() { echo \"[$(date '+%Y-%m-%d %H:%M:%S')] $*\" | tee -a \"$LOG_FILE\"; }\n\n# Argüman kontrolü\nif [[ $# -lt 1 ]]; then\n    echo \"Kullanım: $0 <ortam>\"\n    exit 1\nfi\n\nENV=\"$1\"\nlog \"Script başladı: ortam=$ENV\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Bash Scripting",
+      "name": "Döngü ve Dizi Kalıpları",
+      "desc": "Bash'te for, while, until döngüleri ve dizi işleme şablonları.",
+      "tags": [
+        "döngü",
+        "dizi",
+        "for"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bash Döngüleri\n```bash\n# Dosya listesi\nfor f in *.log; do\n    echo \"İşleniyor: $f\"\ndone\n\n# Dizi\ndirs=('src' 'tests' 'docs')\nfor dir in \"${dirs[@]}\"; do\n    mkdir -p \"$dir\"\ndone\n\n# Sayaç döngüsü\nfor i in {1..10}; do echo \"$i\"; done\nfor ((i=0; i<10; i++)); do echo \"$i\"; done\n\n# While read\nwhile IFS= read -r line; do\n    echo \"Satır: $line\"\ndone < input.txt\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Bash Scripting",
+      "name": "Argüman Parse (getopts)",
+      "desc": "getopts ile kısa ve uzun bayrak argümanları işleyen script şablonu.",
+      "tags": [
+        "getopts",
+        "argüman",
+        "bayrak"
+      ],
+      "badge1": "Orta",
+      "content": "## getopts Şablonu\n```bash\nusage() { echo \"Kullanım: $0 [-e ortam] [-d] [-h]\"; exit 1; }\n\nDEBUG=false ENV=prod\nwhile getopts ':e:dh' opt; do\n    case $opt in\n        e) ENV=\"$OPTARG\" ;;\n        d) DEBUG=true ;;\n        h) usage ;;\n        :) echo \"$OPTARG argüman gerektirir\"; usage ;;\n        \\?) echo \"Bilinmeyen: -$OPTARG\"; usage ;;\n    esac\ndone\nshift $((OPTIND-1))\n\n$DEBUG && set -x  # Debug modu\necho \"Ortam: $ENV\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Otomasyon",
+      "name": "Cron Job Şablonları",
+      "desc": "Yaygın cron ifadeleri ve zamanlama rehberi ile örnek cron job konfigürasyonları.",
+      "tags": [
+        "cron",
+        "zamanlama",
+        "otomatik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Cron İfadeleri\n```\n# dakika saat gün ay haftanın-günü komut\n0 2 * * *    /backup.sh      # Her gece 02:00\n0 9 * * 1-5  /report.sh      # Hafta içi 09:00\n*/15 * * * * /health.sh      # Her 15 dakika\n0 0 1 * *    /monthly.sh     # Her ayın 1'i\n0 0 * * 0    /weekly.sh      # Her Pazar gece yarısı\n\n# crontab düzenle\ncrontab -e\n# Listele\ncrontab -l\n```\nLog: `2>&1 | tee -a /var/log/cron.log`",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Dosya İşlemleri",
+      "name": "find Komutu Şablonları",
+      "desc": "Dosya arama, filtreleme ve toplu işlem için find komutunun yaygın kalıpları.",
+      "tags": [
+        "find",
+        "arama",
+        "dosya"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## find Şablonları\n```bash\n# Son 7 günde değişen dosyalar\nfind . -mtime -7 -type f\n\n# Boyutu 100MB'dan büyük\nfind / -size +100M -type f\n\n# İzin araması\nfind . -perm /a+x -type f\n\n# Toplu işlem\nfind . -name '*.log' -exec gzip {} \\;\nfind . -name '*.tmp' -delete\n\n# Hariç tutma\nfind . -path ./node_modules -prune -o -name '*.js' -print\n\n# 30 günden eski silinmiş loglar\nfind /var/log -name '*.log' -mtime +30 -delete\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dosya İşlemleri",
+      "name": "sed ve awk Şablonları",
+      "desc": "Metin dönüşümü için sed ile satır düzenleme ve awk ile alanlarla çalışma.",
+      "tags": [
+        "sed",
+        "awk",
+        "metin"
+      ],
+      "badge1": "Orta",
+      "content": "## sed & awk\n```bash\n# sed: Metin değiştirme\nsed 's/eski/yeni/g' dosya.txt\nsed -i.bak 's/localhost/prod-server/g' config.env\nsed -n '10,20p' dosya.txt  # 10-20. satırlar\nsed '/^#/d' config.txt     # Yorum satırları sil\n\n# awk: Alan işleme\nawk '{print $1, $3}' log.txt  # 1. ve 3. alanlar\nawk -F: '{print $1}' /etc/passwd  # : ayraç\nawk 'NR>1 {sum+=$4} END {print \"Toplam:\", sum}' data.csv\nawk '/ERROR/ {count++} END {print count}' app.log\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Sistem Yönetimi",
+      "name": "Süreç ve Port Yönetimi",
+      "desc": "Çalışan süreçleri bulma, port kontrolü ve süreç yönetimi komutları.",
+      "tags": [
+        "süreç",
+        "port",
+        "ps"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Süreç & Port Komutları\n```bash\n# Süreç listesi\nps aux | grep python\npgrep -fl nginx\n\n# Port kullanımı\nss -tlnp | grep :8080\nlsof -i :8080\nnetstat -tuln\n\n# Süreç öldürme\nkill -15 PID    # Nazik (SIGTERM)\nkill -9 PID     # Zorla (SIGKILL)\npkill -f 'python app.py'\n\n# Kaynak kullanımı\nhtop  # interaktif\nps aux --sort=-%mem | head -10\ndf -h  # Disk\nfree -h  # RAM\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Sistem Yönetimi",
+      "name": "Disk ve Log Temizleme",
+      "desc": "Eski logları, geçici dosyaları ve büyük dosyaları temizleyen bakım scriptleri.",
+      "tags": [
+        "disk",
+        "log",
+        "temizleme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Disk Temizleme\n```bash\n#!/bin/bash\n# Eski logları sıkıştır\nfind /var/log -name '*.log' -mtime +7 -exec gzip {} \\;\n\n# 30 günden eski sıkıştırılmış loglar sil\nfind /var/log -name '*.gz' -mtime +30 -delete\n\n# /tmp temizle\nfind /tmp -mtime +1 -delete 2>/dev/null\n\n# Docker kullanılmayan kaynaklar\ndocker system prune -af --volumes\n\n# Büyük dosyalar bul\ndu -ah / | sort -rh | head -20\n\n# Boş disk uyarısı\ndf_out=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')\n[[ $df_out -gt 80 ]] && echo \"UYARI: Disk $df_out% dolu\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Ağ Araçları",
+      "name": "curl Şablonları",
+      "desc": "API test, dosya indirme ve HTTP başlık analizi için curl komutları.",
+      "tags": [
+        "curl",
+        "HTTP",
+        "API test"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## curl Şablonları\n```bash\n# GET\ncurl -s https://api.example.com/users | jq '.data[]'\n\n# POST JSON\ncurl -X POST https://api.example.com/users \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer TOKEN' \\\n  -d '{\"name\":\"Ali\",\"email\":\"ali@example.com\"}'\n\n# Başlıkları gör\ncurl -I https://example.com\n\n# Süre ölç\ncurl -w '%{time_total}' -o /dev/null -s https://example.com\n\n# Dosya indir (devam)\ncurl -C - -O https://example.com/largefile.zip\n\n# Proxy\ncurl -x http://proxy:8080 https://target.com\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Ağ Araçları",
+      "name": "SSH Konfigürasyonu",
+      "desc": "~/.ssh/config ile çoklu sunucu yönetimi ve güvenli SSH yapılandırması.",
+      "tags": [
+        "SSH",
+        "config",
+        "bağlantı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## SSH Config (~/.ssh/config)\n```ssh\nHost prod\n    HostName 203.0.113.10\n    User deploy\n    IdentityFile ~/.ssh/prod_key\n    Port 22022\n\nHost bastion\n    HostName bastion.example.com\n    User ec2-user\n    IdentityFile ~/.ssh/aws_key\n\nHost internal\n    HostName 10.0.1.100\n    ProxyJump bastion\n    User admin\n\n# Genel ayarlar\nHost *\n    ServerAliveInterval 60\n    Compression yes\n    ControlMaster auto\n    ControlPath ~/.ssh/control/%r@%h:%p\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "PowerShell",
+      "name": "PowerShell Temel Komutlar",
+      "desc": "Windows yönetimi için en sık kullanılan PowerShell cmdlet ve pipeline kalıpları.",
+      "tags": [
+        "PowerShell",
+        "Windows",
+        "cmdlet"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## PowerShell Temelleri\n```powershell\n# Dosya işlemi\nGet-ChildItem -Path C:\\logs -Filter *.log | Sort-Object LastWriteTime -Descending | Select-Object -First 5\n\n# Servis yönetimi\nGet-Service | Where-Object Status -eq 'Running'\nRestart-Service -Name nginx -Force\n\n# Süreç\nGet-Process | Sort-Object CPU -Descending | Select-Object -First 10\n\n# JSON\n$data = Get-Content config.json | ConvertFrom-Json\n$data.servers | ForEach-Object { Write-Host $_.name }\n\n# REST API\n$response = Invoke-RestMethod -Uri 'https://api.example.com/data' -Method GET\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Bash Scripting",
+      "name": "Fonksiyon ve Kütüphane Kalıpları",
+      "desc": "Yeniden kullanılabilir Bash fonksiyonları ve kaynak dahil etme yöntemi.",
+      "tags": [
+        "fonksiyon",
+        "kaynak",
+        "kütüphane"
+      ],
+      "badge1": "Orta",
+      "content": "## Bash Fonksiyonlar\n```bash\n# lib/common.sh\nretry() {\n    local max=$1; shift\n    local delay=2\n    local attempt=1\n    while (( attempt <= max )); do\n        \"$@\" && return 0\n        echo \"Deneme $attempt başarısız; ${delay}s bekleniyor...\"\n        sleep $delay\n        delay=$((delay * 2))\n        ((attempt++))\n    done\n    return 1\n}\n\n# Ana script\nsource lib/common.sh\nretry 3 curl -f https://api.example.com/health\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Sistem Yönetimi",
+      "name": "Systemd Servis Şablonu",
+      "desc": "Özel uygulamayı systemd servisi olarak kaydetme ve yönetme.",
+      "tags": [
+        "systemd",
+        "servis",
+        "daemon"
+      ],
+      "badge1": "Orta",
+      "content": "## Systemd Unit Dosyası\n```ini\n# /etc/systemd/system/myapp.service\n[Unit]\nDescription=My Application\nAfter=network.target postgresql.service\n\n[Service]\nType=simple\nUser=deploy\nWorkingDirectory=/opt/myapp\nExecStart=/opt/myapp/venv/bin/python app.py\nRestart=always\nRestartSec=5\nEnvironmentFile=/opt/myapp/.env\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n```\n```bash\nsystemctl enable myapp\nsystemctl start myapp\njournalctl -u myapp -f  # Log izle\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Otomasyon",
+      "name": "Yedekleme Script Şablonu",
+      "desc": "PostgreSQL veya dosya sistemini günlük yedekleyip S3'e yükleyen script.",
+      "tags": [
+        "yedekleme",
+        "S3",
+        "backup"
+      ],
+      "badge1": "Orta",
+      "content": "## Yedekleme Script\n```bash\n#!/bin/bash\nset -euo pipefail\nDATE=$(date +%Y%m%d_%H%M%S)\nBACKUP_DIR=/tmp/backups\nmkdir -p \"$BACKUP_DIR\"\n\n# PostgreSQL dump\nBACKUP_FILE=\"$BACKUP_DIR/db_$DATE.sql.gz\"\nPGPASSWORD=\"$DB_PASS\" pg_dump -h localhost -U \"$DB_USER\" \"$DB_NAME\" | gzip > \"$BACKUP_FILE\"\n\n# SHA256 checksum\nsha256sum \"$BACKUP_FILE\" > \"$BACKUP_FILE.sha256\"\n\n# S3'e yükle\naws s3 cp \"$BACKUP_FILE\" \"s3://$S3_BUCKET/db/\"\naws s3 cp \"$BACKUP_FILE.sha256\" \"s3://$S3_BUCKET/db/\"\n\n# Yerel temizlik\nfind \"$BACKUP_DIR\" -mtime +7 -delete\necho \"Yedek tamamlandı: $BACKUP_FILE\"\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Dosya İşlemleri",
+      "name": "Metin Şablonu Doldurma (envsubst)",
+      "desc": "envsubst veya sed ile ortam değişkenlerini template dosyalarına enjekte edin.",
+      "tags": [
+        "envsubst",
+        "template",
+        "env"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Template Doldurma\n```bash\n# nginx.conf.template\n# server_name ${DOMAIN};\n# listen ${PORT};\n\n# envsubst ile doldur\nexport DOMAIN=example.com PORT=443\nenvsubst < nginx.conf.template > nginx.conf\n\n# Sadece belirli değişkenleri değiştir\nenvsubst '${DOMAIN} ${PORT}' < template.conf > output.conf\n\n# Python ile daha güçlü template\nimport string, os\ntpl = string.Template(open('config.tpl').read())\nresult = tpl.substitute(os.environ)\nopen('config.conf','w').write(result)\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

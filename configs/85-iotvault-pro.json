@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Donanım & Protokoller",
+      "name": "Donanım & Protokoller",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "MQTT & Mesajlaşma",
+      "name": "MQTT & Mesajlaşma",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Sensör Verisi",
+      "name": "Sensör Verisi",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Edge Computing",
+      "name": "Edge Computing",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Güvenlik",
+      "name": "Güvenlik",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Platform & Cloud",
+      "name": "Platform & Cloud",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Donanım & Protokoller",
+      "name": "Raspberry Pi GPIO Kurulumu",
+      "desc": "Raspberry Pi'de GPIO pinleri Python ile kontrol etme temel şablonu.",
+      "tags": [
+        "raspberry",
+        "gpio",
+        "python"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## GPIO Temel\n```python\nimport RPi.GPIO as GPIO\nimport time\nGPIO.setmode(GPIO.BCM)\nGPIO.setup(18, GPIO.OUT)  # LED\nGPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Buton\ntry:\n    while True:\n        if not GPIO.input(17):\n            GPIO.output(18, GPIO.HIGH)\n        else:\n            GPIO.output(18, GPIO.LOW)\n        time.sleep(0.1)\nfinally:\n    GPIO.cleanup()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Donanım & Protokoller",
+      "name": "I2C Cihaz Tarama",
+      "desc": "I2C bus üzerindeki bağlı cihazları tarayın ve adreslerini bulun.",
+      "tags": [
+        "I2C",
+        "bus",
+        "adres"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## I2C Tarama\n```bash\n# Terminal\ni2cdetect -y 1\n# Python\nfrom smbus2 import SMBus\nwith SMBus(1) as bus:\n    for addr in range(0x03, 0x78):\n        try:\n            bus.read_byte(addr)\n            print(f'Cihaz bulundu: 0x{addr:02X}')\n        except: pass\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "MQTT & Mesajlaşma",
+      "name": "MQTT Publisher/Subscriber",
+      "desc": "Paho-MQTT ile basit IoT mesajlaşma pipeline'ı kurun.",
+      "tags": [
+        "MQTT",
+        "paho",
+        "pub/sub"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## MQTT Temel\n```python\nimport paho.mqtt.client as mqtt\n\ndef on_message(client, userdata, msg):\n    print(f'{msg.topic}: {msg.payload.decode()}')\n\nclient = mqtt.Client()\nclient.on_message = on_message\nclient.connect('broker.hivemq.com', 1883)\nclient.subscribe('sensor/temperature')\nclient.publish('sensor/temperature', '23.5')\nclient.loop_forever()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "MQTT & Mesajlaşma",
+      "name": "QoS Seviyeleri",
+      "desc": "MQTT'de QoS 0/1/2 farklarını ve hangi senaryoda hangisini kullanacağınızı öğrenin.",
+      "tags": [
+        "QoS",
+        "güvenilirlik",
+        "MQTT"
+      ],
+      "badge1": "Orta",
+      "content": "## MQTT QoS\n| Seviye | Garanti | Kullanım |\n|--------|---------|----------|\n| QoS 0 | En fazla 1 kez | Sıcaklık okuma (kayıp olabilir) |\n| QoS 1 | En az 1 kez | Alarm bildirimi |\n| QoS 2 | Tam olarak 1 kez | Finansal işlem |\n\nQoS artıkça gecikme ve overhead artar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Sensör Verisi",
+      "name": "DHT22 Sıcaklık Okuma",
+      "desc": "DHT22 sensöründen sıcaklık ve nem verisi okuma ve hata yönetimi.",
+      "tags": [
+        "DHT22",
+        "sıcaklık",
+        "nem"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## DHT22 Okuma\n```python\nimport adafruit_dht\nimport board\ndht = adafruit_dht.DHT22(board.D4)\ntry:\n    temp = dht.temperature\n    humidity = dht.humidity\n    print(f'Sıcaklık: {temp:.1f}°C, Nem: {humidity:.1f}%')\nexcept RuntimeError as e:\n    print(f'Okuma hatası: {e}')\nfinally:\n    dht.exit()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Sensör Verisi",
+      "name": "Sensör Veri Filtreleme",
+      "desc": "Kayan ortalama ve Kalman filtresi ile gürültülü sensör verisini temizleyin.",
+      "tags": [
+        "filtre",
+        "kalman",
+        "gürültü"
+      ],
+      "badge1": "Orta",
+      "content": "## Kayan Ortalama Filtre\n```python\nfrom collections import deque\nclass MovingAverage:\n    def __init__(self, window=10):\n        self.buffer = deque(maxlen=window)\n    def update(self, val):\n        self.buffer.append(val)\n        return sum(self.buffer) / len(self.buffer)\n\nf = MovingAverage(10)\nfor raw in sensor_readings:\n    filtered = f.update(raw)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Edge Computing",
+      "name": "TensorFlow Lite Dağıtımı",
+      "desc": "Eğitilmiş ML modelini TFLite ile Raspberry Pi'ya deploy edin.",
+      "tags": [
+        "TFLite",
+        "edge",
+        "ML"
+      ],
+      "badge1": "İleri",
+      "content": "## TFLite Inference\n```python\nimport numpy as np\nimport tflite_runtime.interpreter as tflite\n\ninterpreter = tflite.Interpreter('model.tflite')\ninterpreter.allocate_tensors()\ninput_idx = interpreter.get_input_details()[0]['index']\noutput_idx = interpreter.get_output_details()[0]['index']\n\ninterpreter.set_tensor(input_idx, np.array([[...]], dtype=np.float32))\ninterpreter.invoke()\nresult = interpreter.get_tensor(output_idx)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Güvenlik",
+      "name": "TLS ile MQTT Güvenliği",
+      "desc": "MQTT bağlantısını TLS sertifikası ile şifreleyin ve kimlik doğrulayın.",
+      "tags": [
+        "TLS",
+        "güvenlik",
+        "sertifika"
+      ],
+      "badge1": "Orta",
+      "content": "## MQTT + TLS\n```python\nimport paho.mqtt.client as mqtt\nimport ssl\n\nclient = mqtt.Client()\nclient.tls_set(\n    ca_certs='ca.crt',\n    certfile='client.crt',\n    keyfile='client.key',\n    tls_version=ssl.PROTOCOL_TLSv1_2\n)\nclient.connect('broker.example.com', 8883)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Platform & Cloud",
+      "name": "AWS IoT Core Bağlantısı",
+      "desc": "MQTT üzerinden AWS IoT Core'a cihaz bağlama ve mesaj yayınlama.",
+      "tags": [
+        "AWS",
+        "IoT Core",
+        "cloud"
+      ],
+      "badge1": "Orta",
+      "content": "## AWS IoT Bağlantı\n1. AWS Console'dan Thing oluştur, sertifika indir.\n2. Policy yaz: iot:Connect, iot:Publish, iot:Subscribe.\n3. SDK kur: `pip install awsiotsdk`.\n4. Endpoint: `xxxxx-ats.iot.eu-west-1.amazonaws.com`\n5. Bağlan, topic'e mesaj yayınla, Shadow güncelle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Platform & Cloud",
+      "name": "Time-Series Veri Depolama",
+      "desc": "IoT verilerini InfluxDB ile etkin zaman serisi veritabanında saklayın.",
+      "tags": [
+        "InfluxDB",
+        "time-series",
+        "depolama"
+      ],
+      "badge1": "Orta",
+      "content": "## InfluxDB Yazma\n```python\nfrom influxdb_client import InfluxDBClient, Point\nclient = InfluxDBClient(url='http://localhost:8086',\n    token='my-token', org='my-org')\nwrite_api = client.write_api()\npoint = Point('temperature').tag('sensor','dht22').field('value', 23.5)\nwrite_api.write(bucket='iot-data', record=point)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sensör Verisi",
+      "name": "Anomali Tespiti",
+      "desc": "IoT sensör verilerinde Z-score ve IQR ile anormal değerleri tespit edin.",
+      "tags": [
+        "anomali",
+        "z-score",
+        "IQR"
+      ],
+      "badge1": "Orta",
+      "content": "## Z-Score Anomali\n```python\nimport numpy as np\ndef detect_anomalies(data, threshold=3):\n    mean = np.mean(data)\n    std = np.std(data)\n    z_scores = [(x - mean) / std for x in data]\n    return [i for i, z in enumerate(z_scores) if abs(z) > threshold]\n\nanomalies = detect_anomalies(sensor_data)\nprint(f'Anomali indeksleri: {anomalies}')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Donanım & Protokoller",
+      "name": "LoRaWAN Temel Kavramlar",
+      "desc": "Uzun menzilli düşük güçlü IoT iletişimi için LoRaWAN mimarisini anlayın.",
+      "tags": [
+        "LoRa",
+        "LoRaWAN",
+        "LPWAN"
+      ],
+      "badge1": "Orta",
+      "content": "## LoRaWAN Mimarisi\nNode → Gateway → Network Server → App Server\n- SF7-SF12: Veri hızı vs. menzil dengesi\n- ADR: Adaptive Data Rate — otomatik optimizasyon\n- EU868: Avrupa frekans bandı\nKullanım: Akıllı sayaç, tarım sensörü, asset tracking",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Edge Computing",
+      "name": "OTA Firmware Güncelleme",
+      "desc": "IoT cihazlarını kesintisiz Over-The-Air güncellemeler ile yönetin.",
+      "tags": [
+        "OTA",
+        "firmware",
+        "güncelleme"
+      ],
+      "badge1": "İleri",
+      "content": "## OTA Güncelleme Stratejisi\n1. Firmware versiyonunu cihazda kayıt altına al.\n2. Güncelleme sunucusunu periyodik sorgula.\n3. İndirme: delta veya tam firmware, checksum doğrula.\n4. A/B partition: yeni firmware ikinci partition'a yaz.\n5. Güvenli boot sonrası yeni sürüme geç; hata varsa rollback.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Güvenlik",
+      "name": "Cihaz Kimlik Doğrulama",
+      "desc": "IoT cihazlarına X.509 sertifikası veya JWT tabanlı kimlik doğrulama ekleyin.",
+      "tags": [
+        "kimlik",
+        "X.509",
+        "JWT"
+      ],
+      "badge1": "İleri",
+      "content": "## Cihaz Kimlik Doğrulama\nYöntem 1 — X.509 Sertifika:\n- Her cihaz için benzersiz sertifika üret.\n- Sertifika imzalama: kurumsal CA veya AWS IoT CA.\n- mTLS ile karşılıklı doğrulama.\n\nYöntem 2 — JWT:\n- Cihaz gizli anahtar ile JWT imzalar.\n- Backend imzayı doğrular, kısa ömürlü token kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Platform & Cloud",
+      "name": "MQTT → Kafka Köprüsü",
+      "desc": "MQTT mesajlarını Kafka topic'lerine köprüleyerek ölçeklenebilir pipeline kurun.",
+      "tags": [
+        "Kafka",
+        "köprü",
+        "pipeline"
+      ],
+      "badge1": "İleri",
+      "content": "## MQTT-Kafka Köprüsü\nAraç: Confluent MQTT Proxy veya Kafka Connect MQTT Source\n```properties\n# connector.properties\nname=mqtt-source\nconnector.class=io.confluent.connect.mqtt.MqttSourceConnector\nmqtt.server.uri=tcp://broker:1883\nmqtt.topics=sensor/#\nkafka.topic=iot-events\n```\nBu köprü ile MQTT mesajları Kafka'ya akar, consumer'lar tüketir.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

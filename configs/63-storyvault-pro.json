@@ -48,6 +48,293 @@
     "border3": "#2a3232",
     "heroBg": "#0a1212"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Hikaye Yapısı",
+      "name": "Hikaye Yapısı",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "Karakter Geliştirme",
+      "name": "Karakter Geliştirme",
+      "color": "#3ab8b8"
+    },
+    {
+      "id": "Dünya İnşası",
+      "name": "Dünya İnşası",
+      "color": "#5dd8d8"
+    },
+    {
+      "id": "Diyalog & Sahne",
+      "name": "Diyalog & Sahne",
+      "color": "#2aa8a8"
+    },
+    {
+      "id": "Düzenleme & Taslak",
+      "name": "Düzenleme & Taslak",
+      "color": "#7de3e3"
+    },
+    {
+      "id": "Yayınlama",
+      "name": "Yayınlama",
+      "color": "#1a9898"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Hikaye Yapısı",
+      "name": "Hero's Journey (Kahramanın Yolculuğu)",
+      "desc": "Joseph Campbell'ın monomiti ve 17 aşamasının pratik hikaye yazımına uygulanması.",
+      "tags": [
+        "hero's journey",
+        "Campbell",
+        "monomit"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kahramanın Yolculuğu (Sadeleştirilmiş)\n1. Olağan dünya: Kahraman normal hayatında.\n2. Çağrı: Serüvene davet.\n3. Reddetme: Kahraman tereddüt eder.\n4. Mentorla tanışma: Rehber belirir.\n5. Eşiği geçme: Normal dünyayı terk et.\n6. Testler ve sınavlar: Düşman ve müttefikler.\n7. Derin mağara: En büyük tehlike.\n8. Sınav: Büyük kriz.\n9. Ödül: Kazanım.\n10. Geri dönüş: Normal dünyaya dön.\n11. Dönüşüm: Kahraman değişmiştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Hikaye Yapısı",
+      "name": "Snowflake Method",
+      "desc": "Randy Ingermanson'un roman geliştirme metodunu adım adım uygulayın.",
+      "tags": [
+        "Snowflake",
+        "roman",
+        "geliştirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Snowflake Adımları\n1. 1 cümle özet (25 kelime): 'X, Y yapmak zorunda kalınca Z'yi keşfeder.'\n2. 1 paragraf (5 cümle): Başlangıç, çatışma, 3 felaket, son.\n3. Karakter tek sayfa: motivasyon, hedef, engel, dönüşüm.\n4. 1 sayfa özet: Her paragraf 1 bölüme.\n5. Her bölüm için karakter sayfası.\n6. 4 sayfalık genişletme.\n7. Karakter detay sayfaları.\n8. Sahne listesi (tablo).\n9. Birinci taslak.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Karakter Geliştirme",
+      "name": "Karakter Arası Dinamikler",
+      "desc": "Karakterler arasındaki güç, güven ve çatışma ilişkilerini haritalayin.",
+      "tags": [
+        "karakter",
+        "ilişki",
+        "dinamik"
+      ],
+      "badge1": "Orta",
+      "content": "## İlişki Matrisi\n```\nKarakter A ← Karakter B\n• Güven: 7/10 (A, B'ye güvenir)\n• Güç: B dominant (kıdemli)\n• Gizlilik: A'nın sakladığı sır\n• Çatışma: Kaynak: gelecek planı\n• Dönüşüm: Sonunda rol değişimi\n```\n\nHer karakter çifti için:\n1. Ne ister biri diğerinden?\n2. Ne korkuyor?\n3. Ne gizliyor?\n4. Nasıl değişecek bu ilişki?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Karakter Geliştirme",
+      "name": "Karakter Ses Protokolü",
+      "desc": "Her karakterin özgün ses, dil kalıpları ve konuşma biçimi geliştirme rehberi.",
+      "tags": [
+        "ses",
+        "diyalog",
+        "karakter"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Sesi Geliştirme\n1. Sözcük dağarcığı: Üniversiteli mi, sokak ağzı mı?\n2. Cümle uzunluğu: Kısa ve doğrudan mı, dolaylı ve uzun mu?\n3. Metafor: Hangi alandan? (tıp, inşaat, doğa)\n4. Konuşmama: Ne söylemez? Konudan ne kaçınır?\n5. Doldurucu kelimeler: 'yani', 'hani', 'falan'\n6. Test: İsim olmadan konuşmayı oku → kim olduğu belli mi?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Dünya İnşası",
+      "name": "Fantastik Dünya İnşası",
+      "desc": "Coğrafya, sihir sistemi, siyaset ve kültür katmanlarıyla tutarlı fantazi dünya.",
+      "tags": [
+        "world building",
+        "fantazi",
+        "sihir"
+      ],
+      "badge1": "Orta",
+      "content": "## Dünya İnşa Katmanları\n1. **Coğrafya:** Harita çiz — dağ, nehir, şehir.\n2. **Doğa kanunları:** Sihir sistemi: sınırları net olsun.\n3. **Tarih:** Önemli savaşlar, imparatorluklar, efsaneler.\n4. **Kültür:** Din, adet, giysi, yemek, müzik.\n5. **Siyaset:** Kim yönetiyor ve neden?\n6. **Ekonomi:** İnsanlar ne ile geçinir?\n\nKural: Geliştirdiğinin %20'si hikayede görünür. Derinlik, gerçekçilik yaratır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Diyalog & Sahne",
+      "name": "Aksiyonda Açıklama (Show Don't Tell)",
+      "desc": "Anlatmak yerine göstermek ilkesini somut tekniklerle pratiğe dökün.",
+      "tags": [
+        "show don't tell",
+        "göster",
+        "anlatma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Show Don't Tell\n**Anlatma:** 'Ahmet sinirliydi.'\n**Göster:** 'Ahmet bardağı masaya fırlatırcasına koydu.'\n\nDönüştürme adımları:\n1. Duyguyu belirle: öfke, üzüntü, heyecan.\n2. Beyin fırtınası: Bu duygu bedende nasıl görünür?\n3. Aksiyona çevir: kas gerilimi, nefes, hareket.\n4. Duyuları ekle: ses, koku, doku.\n5. Anlatıcı yorum cümlesini sil.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Diyalog & Sahne",
+      "name": "Sahne Yapısı: Sahne vs Sekans",
+      "desc": "Sahne ve sekans farkı; her sahnenin hedef, çatışma ve dönüş içermesi zorunluluğu.",
+      "tags": [
+        "sahne",
+        "sekans",
+        "yapı"
+      ],
+      "badge1": "Orta",
+      "content": "## Sahne Yapısı\nHer etkili sahne içerir:\n1. **Hedef:** Karakter ne istiyor?\n2. **Çatışma:** Neden alamıyor?\n3. **Fiyasko/Kararma:** Başarısız ya da daha kötü.\n4. **Reaksiyon:** Duygusal tepki.\n5. **İkilem:** İki kötü seçenek.\n6. **Karar:** Bir sonraki sahneyi tetikler.\n\nKural: Her sahne bir sonrakini zorunlu kılar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Düzenleme & Taslak",
+      "name": "Birinci Taslak Stratejisi",
+      "desc": "Mükemmeliyetçiliği bir kenara bırakarak hızlı ilk taslak tamamlama teknikleri.",
+      "tags": [
+        "taslak",
+        "hız",
+        "düzenleme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## İlk Taslak Kuralları\n1. Düzeltme yok: İlerle, geri bakma.\n2. Hedef kelime sayısı: Günde 500-1000 kelime.\n3. Placeholder kullan: [NE OLDU BIRAK] gibi.\n4. Sahneyi atla: Sıkıştıysan sonrakine geç.\n5. İlk taslak aşılacak yeterince kötü olmak için.\n6. Yazmak ≠ Düzenlemek: Aynı oturumda ikisini yapma.\n\nHeming: 'All first drafts are sh*t' — serbest yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Düzenleme & Taslak",
+      "name": "Öz Düzenleme Kontrol Listesi",
+      "desc": "Yayın öncesi son düzenleme turu için kapsamlı kontrol listesi.",
+      "tags": [
+        "düzenleme",
+        "kontrol listesi",
+        "revizyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Düzenleme Kontrol Listesi\n**Yapı:**\n- [ ] Her sahnenin hedefi var mı?\n- [ ] Tempo değişimi var mı?\n\n**Karakter:**\n- [ ] Her karakter farklı mı konuşuyor?\n- [ ] Motivasyonlar tutarlı mı?\n\n**Dil:**\n- [ ] Edilgen cümleler → etken yap.\n- [ ] Gereksiz zarflar (çok, fazla, oldukça) sil.\n- [ ] 'Olan, bulunan, yapılan' → kısalt.\n\n**Son okuma:** Sesli oku → kulak ritim yanlışlarını yakalar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Yayınlama",
+      "name": "Kendi Kendine Yayımlama (Self-Publishing)",
+      "desc": "Amazon KDP ve Türkiye platformlarıyla e-kitap ve basılı kitap yayımlama adımları.",
+      "tags": [
+        "self-publishing",
+        "KDP",
+        "Amazon"
+      ],
+      "badge1": "Orta",
+      "content": "## Self-Publishing Adımları\n1. Profesyonel düzenleme: Dil editörü (mecburi).\n2. Kapak tasarımı: canva veya profesyonel.\n3. Format: .docx → Kindle Direct Publishing.\n4. Metadata: başlık, kategori, anahtar kelimeler.\n5. Fiyatlandırma: 2.99-9.99$ e-kitap ideal.\n6. Türkiye için: D&R, Bkmkitap, idefix.\n7. Pazarlama: ARC (ilk okuyucular) + NetGalley.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Yayınlama",
+      "name": "Sorgu Mektubu (Query Letter)",
+      "desc": "Yayınevi veya ajansa başvuru için sorgu mektubu formatı ve ipuçları.",
+      "tags": [
+        "query letter",
+        "yayınevi",
+        "ajan"
+      ],
+      "badge1": "Orta",
+      "content": "## Sorgu Mektubu Yapısı\n1. **Kanca:** İlk cümle romanın özünü çarpıcı özetler.\n2. **Pitch:** 2-3 paragraf → roman özeti (detay yok, merak uyandır).\n3. **Karşılaştırma:** 'X × Y gibi' — tanınan iki eser.\n4. **Biyografi:** Kısa, alakalı deneyim.\n5. **Teknik:** Tür, kelime sayısı.\n\nİpucu: Ajan QueryTracker.net'ten bul. Her ajana özel kişiselleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Hikaye Yapısı",
+      "name": "Gerilim Artırma Teknikleri",
+      "desc": "Sayfayı çevirten gerilimi sürdürmek için hız, zamanlama ve bilgi manipülasyonu.",
+      "tags": [
+        "gerilim",
+        "hız",
+        "tempo"
+      ],
+      "badge1": "Orta",
+      "content": "## Gerilim Teknikleri\n1. **Saat bombası:** Sayım var — 3 günleri kaldı.\n2. **Bilgi asimetrisi:** Okuyucu tehlikeyi bilir, karakter bilmez.\n3. **Kötüleşen seçenekler:** Her çözüm yeni bir sorunu açar.\n4. **Bölüm kancası:** Her bölüm cliffhanger ile biter.\n5. **Tempo değişimi:** Hızlı sahne → yavaş refleksiyon → hızlı tekrar.\n6. **Güvenilmez anlatıcı:** Okuyucu ne kadar inanabilir?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Karakter Geliştirme",
+      "name": "Antagonist Psikolojisi",
+      "desc": "İnanılır bir antagonist için iç motivasyon ve kendi doğruluğunu taşıyan kötü adam.",
+      "tags": [
+        "antagonist",
+        "kötü adam",
+        "motivasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Güçlü Antagonist Tasarımı\nKötü antagonist: Saf kötü, motivasyonsuz.\nİyi antagonist: Kendi bakış açısından haklı.\n\nSorular:\n1. Antagonistin hikayesi başka bir romanda kahraman olur muydu?\n2. Neye inanıyor, neden?\n3. Kayıpları ve acısı nedir?\n4. Kahramanla ortak noktası nedir (bu gerilimi artırır)?\n5. Ne elde etmek istiyor — elle tutulur amaç?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Dünya İnşası",
+      "name": "Tarihi Kurgu Araştırma Yöntemi",
+      "desc": "Tarihi romanda dönem detaylarını araştırıp sürükleyici gerçekçilik oluşturma.",
+      "tags": [
+        "tarihi kurgu",
+        "araştırma",
+        "dönem"
+      ],
+      "badge1": "İleri",
+      "content": "## Tarihi Kurgu Araştırması\n1. Birincil kaynaklar: Dönemin mektupları, günlükleri.\n2. İkincil: Akademik tarih kitapları.\n3. Maddi kültür: Ne giyilir, yenilir, içilir.\n4. Dil: Dönemin kelimeleri, hitap biçimi.\n5. Teknik: Ulaşım, aydınlatma, tıp.\n6. Ayrıntı miktarı: Tarihi detay atmosfer için, bilgi vermek için değil.\n\nHata kaçınma: Anachronism listesi tut.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Diyalog & Sahne",
+      "name": "Sensory Detail Şablonu",
+      "desc": "Beş duyu unsurunu bir sahnede dengeli kullanarak okuyucuyu içine çekme.",
+      "tags": [
+        "duyular",
+        "detay",
+        "atmosfer"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Beş Duyu Şablonu\nSahne taslağından önce:\n```\nGörsel: Renk, ışık, hareket, form\nİşitsel: Arka plan ses, yakın ses, sessizlik\nKoklama: Giysi, mekân, hava\nDokunsal: Sıcak/soğuk, yüzey dokusu\nTatsal: Yemek varsa, ya da ağız tadı\n```\nHer sahnede 3 duyuyu birleştir — hepsini değil.\nEn güçlü: koku → en hızlı hafıza bağlantısı kurar.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

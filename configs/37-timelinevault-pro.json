@@ -48,6 +48,293 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Kronoloji Yapıları",
+      "name": "Kronoloji Yapıları",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Kırılma Noktaları",
+      "name": "Kırılma Noktaları",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Sebep-Sonuç Zincirleri",
+      "name": "Sebep-Sonuç Zincirleri",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Dönem Analizi",
+      "name": "Dönem Analizi",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Karşılaştırmalı Tarih",
+      "name": "Karşılaştırmalı Tarih",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Veri Modelleme",
+      "name": "Veri Modelleme",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Kronoloji Yapıları",
+      "name": "Çok Katmanlı Zaman Çizelgesi",
+      "desc": "Siyasi, ekonomik ve kültürel olayları paralel şeritlerde gösteren yapı.",
+      "tags": [
+        "zaman çizelgesi",
+        "katman",
+        "paralel"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Çok Katmanlı Timeline\n1. Şeritleri ayır: siyaset, ekonomi, kültür, teknoloji.\n2. Her olaya tarih, şerit ve önem puanı ata.\n3. Aynı yıldaki olayları dikey hizala.\n4. Şeritler arası etkileşim oklarını ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Kronoloji Yapıları",
+      "name": "Göreli Tarihleme Sistemi",
+      "desc": "Kesin tarih bilinmeyen olaylar için 'önce/sonra' ilişki ağı kurun.",
+      "tags": [
+        "göreli",
+        "tarihleme",
+        "sıra"
+      ],
+      "badge1": "Orta",
+      "content": "## Göreli Tarihleme\n1. Olayları `before`/`after` ilişkileriyle bağla.\n2. Çapraz referanslarla sıralamayı daralt.\n3. Belirsizlik aralıklarını (örn: 1200-1250) işaretle.\n4. Çelişen kaynakları ayrı not düş.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Kronoloji Yapıları",
+      "name": "Dönemsel Etiketleme",
+      "desc": "Olayları çağ ve dönem etiketleriyle gruplayan taksonomi oluşturun.",
+      "tags": [
+        "dönem",
+        "etiket",
+        "taksonomi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Dönem Etiketleme\n1. Üst dönemler tanımla (Antik, Orta, Modern).\n2. Alt dönemlere böl (örn: Erken/Geç).\n3. Her olaya birincil dönem ata.\n4. Geçiş dönemlerini ayrı işaretle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Kırılma Noktaları",
+      "name": "Devrim Eşiği Analizi",
+      "desc": "Bir toplumu köklü değişime iten birikimli faktörleri tespit edin.",
+      "tags": [
+        "devrim",
+        "eşik",
+        "faktör"
+      ],
+      "badge1": "İleri",
+      "content": "## Devrim Eşiği\n1. Yapısal gerilimleri listele (ekonomik, sosyal).\n2. Tetikleyici olayı ayrı tut.\n3. Eşiği aşan birikim noktasını belirle.\n4. Karşı-olgusal (ne olmasaydı) senaryoyu test et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Kırılma Noktaları",
+      "name": "Teknolojik Sıçrama Anları",
+      "desc": "Tarihin akışını değiştiren icat ve keşifleri etkileriyle haritalayın.",
+      "tags": [
+        "teknoloji",
+        "icat",
+        "sıçrama"
+      ],
+      "badge1": "Orta",
+      "content": "## Teknolojik Sıçrama\n1. İcadı ve ilk uygulama tarihini belirle.\n2. Yayılım hızını ve coğrafyasını izle.\n3. Birincil ve ikincil etkileri ayır.\n4. Toplumsal direnç/uyum sürecini değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Kırılma Noktaları",
+      "name": "Salgın ve Demografik Şok",
+      "desc": "Salgınların nüfus, ekonomi ve siyaset üzerindeki zincirleme etkileri.",
+      "tags": [
+        "salgın",
+        "demografi",
+        "şok"
+      ],
+      "badge1": "İleri",
+      "content": "## Demografik Şok\n1. Salgının nüfus kaybı ölçeğini belirle.\n2. İşgücü ve ücret etkilerini incele.\n3. Sosyal yapı ve inanç değişimlerini ele al.\n4. Uzun vadeli kurumsal dönüşümleri izle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Sebep-Sonuç Zincirleri",
+      "name": "Çok Nedenli Olay Haritası",
+      "desc": "Bir olayın ardındaki birden çok nedeni ağırlıklarıyla görselleştirin.",
+      "tags": [
+        "neden",
+        "harita",
+        "ağırlık"
+      ],
+      "badge1": "İleri",
+      "content": "## Çok Nedenli Harita\n1. Olayı merkeze koy, nedenleri çevresine diz.\n2. Her nedene uzak/yakın ve ağırlık etiketi ver.\n3. Nedenler arası etkileşimi oklarla göster.\n4. Tek-neden yanılgısından kaçın.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Sebep-Sonuç Zincirleri",
+      "name": "Domino Etkisi Modellemesi",
+      "desc": "Bir olayın tetiklediği ardışık sonuçları zincir halinde kurgulayın.",
+      "tags": [
+        "domino",
+        "zincir",
+        "sonuç"
+      ],
+      "badge1": "Orta",
+      "content": "## Domino Modeli\n1. Başlangıç olayını tanımla.\n2. Birinci derece sonuçları sırala.\n3. Her sonucun tetiklediği yeni olayları bağla.\n4. Zincirin söndüğü noktayı belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Dönem Analizi",
+      "name": "Bir Çağın Karakter Profili",
+      "desc": "Bir dönemi tanımlayan değerler, korkular ve estetiği özetleyin.",
+      "tags": [
+        "çağ",
+        "profil",
+        "değer"
+      ],
+      "badge1": "Orta",
+      "content": "## Çağ Profili\n1. Dönemin hakim değerlerini belirle.\n2. Ortak korkular ve tehditleri listele.\n3. Sanat ve estetik eğilimleri ekle.\n4. Kendi içindeki çelişkileri vurgula.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Dönem Analizi",
+      "name": "Geçiş Dönemi Dinamikleri",
+      "desc": "İki çağ arasındaki belirsizlik dönemlerinin özelliklerini inceleyin.",
+      "tags": [
+        "geçiş",
+        "belirsizlik",
+        "dinamik"
+      ],
+      "badge1": "İleri",
+      "content": "## Geçiş Dönemi\n1. Eski düzenin çözülme işaretlerini belirle.\n2. Rakip yeni modelleri karşılaştır.\n3. Kararsızlık ve çatışma alanlarını haritalandır.\n4. Yeni düzenin yerleşme kriterlerini tanımla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Karşılaştırmalı Tarih",
+      "name": "Paralel Medeniyetler Tablosu",
+      "desc": "Aynı dönemde farklı bölgelerdeki gelişmeleri yan yana karşılaştırın.",
+      "tags": [
+        "paralel",
+        "medeniyet",
+        "tablo"
+      ],
+      "badge1": "Orta",
+      "content": "## Paralel Karşılaştırma\n1. Bir zaman dilimi seç (örn: MS 1000).\n2. Bölgeleri sütun yap (Avrupa, İslam, Çin).\n3. Satırları tema yap (yönetim, bilim, sanat).\n4. Etkileşim ve özgün gelişmeleri ayır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Karşılaştırmalı Tarih",
+      "name": "Tekrarlayan Tarih Kalıpları",
+      "desc": "Farklı dönemlerde benzer şekilde tekrar eden süreçleri tespit edin.",
+      "tags": [
+        "kalıp",
+        "tekrar",
+        "döngü"
+      ],
+      "badge1": "İleri",
+      "content": "## Tarih Kalıpları\n1. İmparatorluk yükseliş-çöküş aşamalarını şablonla.\n2. Farklı örnekleri aynı şablona yerleştir.\n3. Benzerlik ve sapmaları not et.\n4. Aşırı genellemeden kaçınarak yorumla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Veri Modelleme",
+      "name": "Olay İlişki Veritabanı Şeması",
+      "desc": "Tarihsel olayları, kişileri ve yerleri bağlayan ilişkisel şema tasarlayın.",
+      "tags": [
+        "veritabanı",
+        "ilişki",
+        "şema"
+      ],
+      "badge1": "İleri",
+      "content": "## Olay Veri Şeması\n1. Tablolar: Olay, Kişi, Yer, Kaynak.\n2. İlişkiler: katıldı, gerçekleşti, kaynaklandı.\n3. Her kayda tarih aralığı ve güven puanı ekle.\n4. Çapraz sorgularla örüntü çıkar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Veri Modelleme",
+      "name": "Coğrafi-Zamansal Etiketleme",
+      "desc": "Olaylara hem konum hem zaman koordinatı ekleyen veri yapısı.",
+      "tags": [
+        "coğrafi",
+        "zaman",
+        "koordinat"
+      ],
+      "badge1": "Orta",
+      "content": "## Coğrafi-Zamansal Veri\n1. Her olaya `lat/lon` ve tarih ekle.\n2. Yayılım hareketlerini vektörle modelle.\n3. Harita üzerinde zaman kaydırıcısıyla oynat.\n4. Bölgesel yoğunlaşmaları analiz et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Veri Modelleme",
+      "name": "Kaynak Güvenilirlik Derecelendirmesi",
+      "desc": "Her tarihsel iddiayı kaynak türü ve güvenilirliğiyle etiketleyin.",
+      "tags": [
+        "kaynak",
+        "güvenilirlik",
+        "derece"
+      ],
+      "badge1": "İleri",
+      "content": "## Kaynak Derecelendirme\n1. Kaynak türünü belirle (birincil/ikincil).\n2. Yazarın konumu ve önyargısını not et.\n3. Çapraz doğrulama sayısını kaydet.\n4. İddiaya 1-5 güven puanı ata.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

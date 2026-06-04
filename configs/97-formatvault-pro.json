@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Belge Formatları",
+      "name": "Belge Formatları",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Veri Formatları",
+      "name": "Veri Formatları",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Medya Formatları",
+      "name": "Medya Formatları",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Format Dönüşümü",
+      "name": "Format Dönüşümü",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Sıkıştırma & Arşiv",
+      "name": "Sıkıştırma & Arşiv",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Format Güvenliği",
+      "name": "Format Güvenliği",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Veri Formatları",
+      "name": "JSON vs YAML vs TOML Karşılaştırması",
+      "desc": "Yapılandırma ve veri aktarımı için JSON, YAML ve TOML seçim rehberi.",
+      "tags": [
+        "JSON",
+        "YAML",
+        "TOML"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Format Karşılaştırma\n| Özellik | JSON | YAML | TOML |\n|---------|------|------|------|\n| Okunabilirlik | Orta | Yüksek | Yüksek |\n| Yorum satırı | Hayır | Evet | Evet |\n| Tip güvenliği | Temel | Yok | İyi |\n| Kullanım | API | Config | Config |\n\nÖnerimiz:\n- API yanıtı → JSON\n- Uygulama config → TOML (Rust, Python)\n- Ansible/k8s → YAML",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Veri Formatları",
+      "name": "Protocol Buffers (Protobuf) Temelleri",
+      "desc": "Google'ın binary serializasyon formatını tanımlayın ve kullanın.",
+      "tags": [
+        "protobuf",
+        "binary",
+        "serializasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Protobuf Kullanımı\n```protobuf\n// message.proto\nsyntax = \"proto3\";\nmessage Person {\n  string name = 1;\n  int32 age = 2;\n  repeated string emails = 3;\n}\n```\n```bash\nprotoc --python_out=. message.proto\n```\n```python\nfrom message_pb2 import Person\np = Person(name='Ali', age=30)\nbytes_data = p.SerializeToString()\np2 = Person.FromString(bytes_data)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Veri Formatları",
+      "name": "Apache Parquet Formatı",
+      "desc": "Büyük veri analitiği için sütunsal Parquet formatının avantajları ve kullanımı.",
+      "tags": [
+        "Parquet",
+        "sütunsal",
+        "büyük veri"
+      ],
+      "badge1": "Orta",
+      "content": "## Parquet Kullanımı\n```python\nimport pandas as pd\n# Yaz\ndf.to_parquet('data.parquet', compression='snappy')\n# Oku\ndf = pd.read_parquet('data.parquet')\n# Sütun seçimi — sadece gerekli sütunları yükle\ndf = pd.read_parquet('data.parquet', columns=['id','name'])\n```\nJSON'a karşı: 5-10x daha küçük, 10-100x daha hızlı sorgulama.\nKullanım: data lake, Spark, AWS Athena.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Belge Formatları",
+      "name": "PDF/A Arşivleme Standardı",
+      "desc": "Uzun süreli belge saklama için PDF/A standardı ve dönüştürme araçları.",
+      "tags": [
+        "PDF/A",
+        "arşiv",
+        "ISO"
+      ],
+      "badge1": "Orta",
+      "content": "## PDF/A Standartları\n| Seviye | Açıklama |\n|--------|----------|\n| PDF/A-1 | Temel, ISO 19005-1 |\n| PDF/A-2 | JPEG 2000, şeffaflık |\n| PDF/A-3 | Gömülü dosya izni |\n\nDönüştürme:\n```bash\n# Ghostscript ile\ngs -dPDFA=2 -dBATCH -dNOPAUSE \\\n   -sColorConversionStrategy=UseDeviceIndependentColor \\\n   -sDEVICE=pdfwrite -dPDFACompatibilityPolicy=1 \\\n   -sOutputFile=output_pdfa.pdf input.pdf\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Belge Formatları",
+      "name": "Markdown'dan PDF Üretimi",
+      "desc": "Pandoc ile Markdown belgelerini profesyonel PDF, DOCX veya HTML'ye dönüştürün.",
+      "tags": [
+        "Pandoc",
+        "Markdown",
+        "dönüşüm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Pandoc Kullanımı\n```bash\n# Markdown → PDF (LaTeX gerekli)\npandoc input.md -o output.pdf\n# Şablon ile\npandoc input.md --template=eisvogel.latex -o output.pdf\n# Markdown → DOCX\npandoc input.md -o output.docx\n# Markdown → HTML (CSS ile)\npandoc input.md -s --css=style.css -o output.html\n# Bibliyografya\npandoc input.md --citeproc --bibliography=refs.bib -o output.pdf\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Medya Formatları",
+      "name": "Görüntü Format Rehberi",
+      "desc": "JPEG, PNG, WebP, AVIF ve SVG formatlarını kullanım senaryosuna göre seçin.",
+      "tags": [
+        "JPEG",
+        "WebP",
+        "SVG"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görüntü Format Seçimi\n| Format | Kullanım | Sıkıştırma |\n|--------|----------|------------|\n| JPEG | Fotoğraf | Kayıplı |\n| PNG | Şeffaf, UI | Kayıpsız |\n| WebP | Web fotoğraf | Kayıplı/Kayıpsız |\n| AVIF | Modern web | En iyi sıkıştırma |\n| SVG | İkon, logo | Vektör |\n| GIF | Animasyon | Zayıf (WebP ile değiştir) |\n\nWeb önerisi: WebP veya AVIF → %25-50 küçük dosya.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Medya Formatları",
+      "name": "Audio Format Karşılaştırması",
+      "desc": "MP3, AAC, FLAC, OGG formatları ve hangi senaryoda hangisini kullanmalısınız.",
+      "tags": [
+        "MP3",
+        "FLAC",
+        "AAC"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ses Format Seçimi\n| Format | Tür | Bit Rate | Kullanım |\n|--------|-----|----------|----------|\n| MP3 | Kayıplı | 128-320 kbps | Genel |\n| AAC | Kayıplı | 128-256 kbps | iOS, YouTube |\n| OGG | Kayıplı | 80-320 kbps | Web, oyun |\n| FLAC | Kayıpsız | ~1000 kbps | Arşiv, müzisyen |\n| WAV | Kayıpsız | ~1400 kbps | Prodüksiyon |\n\nStreaming: AAC 192kbps dengeli kalite/boyut.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Format Dönüşümü",
+      "name": "FFmpeg Şablonları",
+      "desc": "Video ve ses format dönüşümü için en sık kullanılan FFmpeg komutları.",
+      "tags": [
+        "FFmpeg",
+        "dönüşüm",
+        "video"
+      ],
+      "badge1": "Orta",
+      "content": "## FFmpeg Komutları\n```bash\n# Video dönüşümü\nffmpeg -i input.mov -c:v libx264 -crf 23 -c:a aac output.mp4\n# Ses çıkarma\nffmpeg -i video.mp4 -vn -c:a libmp3lame -q:a 2 audio.mp3\n# Yeniden boyutlandırma\nffmpeg -i input.mp4 -vf scale=1920:1080 output.mp4\n# GIF oluşturma\nffmpeg -i input.mp4 -vf 'fps=15,scale=480:-1' output.gif\n# Kırpma (ss: başlangıç, t: süre)\nffmpeg -ss 00:01:00 -i input.mp4 -t 30 clip.mp4\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Format Dönüşümü",
+      "name": "Python ile Toplu Format Dönüşümü",
+      "desc": "Pathlib ve subprocess ile klasördeki tüm dosyaları format dönüşümü yapın.",
+      "tags": [
+        "Python",
+        "toplu",
+        "dönüşüm"
+      ],
+      "badge1": "Orta",
+      "content": "## Toplu Dönüşüm\n```python\nfrom pathlib import Path\nimport subprocess\n\nsource_dir = Path('input')\noutput_dir = Path('output')\noutput_dir.mkdir(exist_ok=True)\n\nfor f in source_dir.glob('*.mov'):\n    out = output_dir / f.with_suffix('.mp4').name\n    subprocess.run([\n        'ffmpeg', '-i', str(f),\n        '-c:v', 'libx264', '-crf', '23',\n        str(out)\n    ], check=True)\n    print(f'Dönüştürüldü: {out}')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Sıkıştırma & Arşiv",
+      "name": "Sıkıştırma Algoritmaları Karşılaştırması",
+      "desc": "gzip, bzip2, zstd ve lz4 sıkıştırma algoritmalarının hız ve oran dengesi.",
+      "tags": [
+        "gzip",
+        "zstd",
+        "sıkıştırma"
+      ],
+      "badge1": "Orta",
+      "content": "## Sıkıştırma Karşılaştırma\n| Algoritma | Oran | Sıkıştırma | Açma |\n|-----------|------|------------|------|\n| gzip | Orta | Orta | Hızlı |\n| bzip2 | İyi | Yavaş | Yavaş |\n| xz | En iyi | Çok yavaş | Yavaş |\n| zstd | İyi | Hızlı | Çok hızlı |\n| lz4 | Zayıf | En hızlı | En hızlı |\n\nÖnerimiz:\n- Arşiv: xz veya zstd --ultra\n- Streaming: lz4 veya zstd\n- Genel: zstd (hız+oran dengesi en iyi)",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sıkıştırma & Arşiv",
+      "name": "tar ve zip Şablonları",
+      "desc": "tar.gz, tar.xz ve zip arşivlerini oluşturma ve açma komutları.",
+      "tags": [
+        "tar",
+        "zip",
+        "arşiv"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Arşiv Komutları\n```bash\n# Oluşturma\ntar -czf archive.tar.gz dir/    # gzip\ntar -cJf archive.tar.xz dir/    # xz\nzip -r archive.zip dir/         # zip\n\n# Açma\ntar -xzf archive.tar.gz\ntar -xJf archive.tar.xz\nunzip archive.zip\n\n# Parçalama (4GB'dan büyük)\ntar -czf - dir/ | split -b 2G - archive.tar.gz.\n# Birleştirme\ncat archive.tar.gz.* | tar -xzf -\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Format Güvenliği",
+      "name": "Dosya Bütünlük Doğrulama",
+      "desc": "SHA-256, MD5 ve Blake2 ile dosya checksum hesaplama ve doğrulama.",
+      "tags": [
+        "checksum",
+        "SHA-256",
+        "bütünlük"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Checksum Doğrulama\n```bash\n# SHA-256 hesapla\nsha256sum dosya.iso > dosya.iso.sha256\n# Doğrula\nsha256sum -c dosya.iso.sha256\n\n# Python ile\nimport hashlib\ndef file_hash(path, algo='sha256'):\n    h = hashlib.new(algo)\n    with open(path, 'rb') as f:\n        for chunk in iter(lambda: f.read(65536), b''):\n            h.update(chunk)\n    return h.hexdigest()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Format Güvenliği",
+      "name": "Dijital İmza ile Belge Doğrulama",
+      "desc": "PDF ve dosyalara GPG dijital imzası ekleyip doğrulama.",
+      "tags": [
+        "GPG",
+        "imza",
+        "belge"
+      ],
+      "badge1": "Orta",
+      "content": "## GPG İmzalama\n```bash\n# Anahtar oluştur\ngpg --full-generate-key\n# Dosya imzala\ngpg --armor --detach-sign document.pdf\n# → document.pdf.asc\n# Doğrula\ngpg --verify document.pdf.asc document.pdf\n# Şifreleyerek imzala\ngpg --encrypt --sign --recipient recipient@email.com file.txt\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Veri Formatları",
+      "name": "Arrow In-Memory Format",
+      "desc": "Apache Arrow ile sıfır kopyalama (zero-copy) columnar veri işleme.",
+      "tags": [
+        "Arrow",
+        "sütunsal",
+        "zero-copy"
+      ],
+      "badge1": "İleri",
+      "content": "## Apache Arrow\n```python\nimport pyarrow as pa\nimport pyarrow.parquet as pq\n\n# Arrow tablosu oluştur\ntable = pa.table({\n    'id': [1, 2, 3],\n    'value': [1.1, 2.2, 3.3]\n})\n# Parquet'e yaz\npq.write_table(table, 'data.parquet')\n# Pandas'a dönüştür (zero-copy)\ndf = table.to_pandas()\n# IPC format (inter-process)\nwith pa.ipc.new_file('data.arrow', table.schema) as writer:\n    writer.write(table)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Belge Formatları",
+      "name": "OpenDocument Format (ODF) Standartları",
+      "desc": "LibreOffice ve ISO standardı ODF formatlarını yazılımsal olarak oluşturun.",
+      "tags": [
+        "ODF",
+        "LibreOffice",
+        "ISO"
+      ],
+      "badge1": "Orta",
+      "content": "## Python-docx & odfpy\n```python\n# python-docx ile DOCX oluştur\nfrom docx import Document\ndoc = Document()\ndoc.add_heading('Rapor Başlığı', 0)\ndoc.add_paragraph('İçerik metni.')\ndoc.add_table(rows=3, cols=4)\ndoc.save('rapor.docx')\n\n# odfpy ile ODS (hesap tablosu)\nfrom odf.opendocument import OpenDocumentSpreadsheet\nfrom odf.table import Table, TableRow, TableCell\nfrom odf.text import P\ndoc = OpenDocumentSpreadsheet()\ntable = Table(name='Sayfa1')\ndoc.spreadsheet.addElement(table)\ndoc.save('tablo.ods')\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

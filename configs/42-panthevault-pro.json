@@ -48,6 +48,293 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Karşılaştırmalı Tanrı Sistemleri",
+      "name": "Karşılaştırmalı Tanrı Sistemleri",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Teogoni ve Yaratılış",
+      "name": "Teogoni ve Yaratılış",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Kahramanlar ve Yarı-Tanrılar",
+      "name": "Kahramanlar ve Yarı-Tanrılar",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Kozmoloji ve Yeraltı",
+      "name": "Kozmoloji ve Yeraltı",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Ritüel ve İbadet",
+      "name": "Ritüel ve İbadet",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Mitoloji Analizi",
+      "name": "Mitoloji Analizi",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Karşılaştırmalı Tanrı Sistemleri",
+      "name": "Fonksiyon Bazlı Tanrı Karşılaştırması",
+      "desc": "Farklı panteonlardaki savaş, aşk, ölüm tanrılarını işlevleriyle karşılaştırın.",
+      "tags": [
+        "tanrı",
+        "fonksiyon",
+        "karşılaştırma"
+      ],
+      "badge1": "Orta",
+      "content": "## Fonksiyon Karşılaştırması\n1. Karşılaştırılacak işlevi seç (örn: savaş).\n2. Her panteondan temsilciyi listele.\n3. Karakteristik özellikler ve silahları karşılaştır.\n4. Ortak arketip ve yerel farklılıkları belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Karşılaştırmalı Tanrı Sistemleri",
+      "name": "Tek-Çok Tanrılılık Sürekliliği",
+      "desc": "Henoteizmden politeizme farklı teolojik yapıları analiz edin.",
+      "tags": [
+        "monoteizm",
+        "politeizm",
+        "süreklililik"
+      ],
+      "badge1": "İleri",
+      "content": "## Teolojik Yapılar\n1. Tanrı sistemini tanımla (mono/heno/poli).\n2. Baş tanrı hiyerarşisini göster.\n3. Diğer inançlarla etkileşim noktalarını belirle.\n4. Teolojik değişim dönemlerini haritalandır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Karşılaştırmalı Tanrı Sistemleri",
+      "name": "Tanrı Soybilimi (Theogony) Karşılaştırması",
+      "desc": "Tanrıların birbirinden türeyiş mitlerini farklı kültürlerde karşılaştırın.",
+      "tags": [
+        "soy",
+        "theogony",
+        "köken"
+      ],
+      "badge1": "İleri",
+      "content": "## Tanrı Soybilimi\n1. İlk varlık/kaos anlatısını belirle.\n2. Nesil zincirini (köken→tanrılar) çiz.\n3. İlahlar arası güç mücadelelerini sırala.\n4. Farklı kültürlerle yapısal karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Teogoni ve Yaratılış",
+      "name": "Evren Yaratılış Mitleri Tipolojisi",
+      "desc": "Evrenin yoktan mı, kaostan mı, savaştan mı yaratıldığını tipolojileyin.",
+      "tags": [
+        "yaratılış",
+        "kozmos",
+        "tipoji"
+      ],
+      "badge1": "Orta",
+      "content": "## Yaratılış Tipolojisi\n1. Yoktan yaratma (creatio ex nihilo) örneklerini topla.\n2. Bedenden/kaotik maddenin şekillendirilmesi örneklerini ekle.\n3. Tanrılar arası savaştan doğan evren mitlerini incele.\n4. Doğa kuvvetleri personifikasyonlarını karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Teogoni ve Yaratılış",
+      "name": "İnsan Yaratılış Mitleri",
+      "desc": "Toprağdan, kandaşlıktan, kazadan doğan insan yaratılış anlatıları.",
+      "tags": [
+        "insan",
+        "yaratılış",
+        "mit"
+      ],
+      "badge1": "Orta",
+      "content": "## İnsan Yaratılışı\n1. Malzeme kaynağını belirle (toprak, kan, ağaç).\n2. Tanrının amacını veya kazayı tanımla.\n3. İnsanın ilk kusur/sınavını ekle.\n4. Farklı kültür mitlerini karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Kahramanlar ve Yarı-Tanrılar",
+      "name": "Kahraman Arketipi Kılavuzu",
+      "desc": "Herkülden Manas'a kahramanların ortak ve özgün özelliklerini karşılaştırın.",
+      "tags": [
+        "kahraman",
+        "arketip",
+        "mitoloji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kahraman Arketipi\n1. Doğa üstü köken özelliğini belirle.\n2. Sınavlar ve ölüme yakınlaşmayı incele.\n3. Toplumsal işlevini tanımla (kurucu, kurtarıcı).\n4. Yerel kültürün özgün katkısını belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Kahramanlar ve Yarı-Tanrılar",
+      "name": "Trickster Figürü Analizi",
+      "desc": "Kurnaz, düzeni bozan trickster karakterlerin kültürler arası karşılaştırması.",
+      "tags": [
+        "trickster",
+        "kurnaz",
+        "düzenbaz"
+      ],
+      "badge1": "Orta",
+      "content": "## Trickster Analizi\n1. Kültürdeki trickster karakteri belirle.\n2. Düzeni bozma ve yaratma fonksiyonunu incele.\n3. Tanrı mı, hayvan mı, insan mı olduğuna bak.\n4. Coyote, Loki, Anansi karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Kozmoloji ve Yeraltı",
+      "name": "Ölüm Sonrası Coğrafyası",
+      "desc": "Farklı kültürlerin ölüler dünyası haritalarını karşılaştırın.",
+      "tags": [
+        "ölüm",
+        "ahiret",
+        "coğrafya"
+      ],
+      "badge1": "Orta",
+      "content": "## Ölüler Dünyası Haritası\n1. Yeraltı bölgelerini ve adlarını listele.\n2. Geçiş ritüeli ve figürünü belirle (Charon, Anubis).\n3. Ödül/ceza coğrafyasını karşılaştır.\n4. Geri dönüş mitlerini incele.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Kozmoloji ve Yeraltı",
+      "name": "Dünya Ağacı ve Eksen Mundi",
+      "desc": "Kozmik merkez sembolünü farklı mitolojilerde karşılaştırın.",
+      "tags": [
+        "dünya ağacı",
+        "eksen",
+        "sembol"
+      ],
+      "badge1": "İleri",
+      "content": "## Eksen Mundi\n1. Yggdrasil, Ashvattha, Hayat Ağacı örneklerini topla.\n2. Katmanları (gök-yer-yeraltı) karşılaştır.\n3. Ağacın kozmik işlevini belirle.\n4. Şamanizm bağlantısını incele.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Ritüel ve İbadet",
+      "name": "Kurban Ritüeli Tipolojisi",
+      "desc": "Farklı kültürlerdeki kurban pratiklerini işlev ve biçimde karşılaştırın.",
+      "tags": [
+        "kurban",
+        "ritüel",
+        "ibadet"
+      ],
+      "badge1": "İleri",
+      "content": "## Kurban Tipolojisi\n1. Hayvan, bitki, insan kurban örneklerini kategorile.\n2. İşlevi belirle (bereket, bağışlanma, güç).\n3. Ritüel uygulayıcısını ve mekanı incele.\n4. Sembolik/gerçek değişim dönemlerini takip et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Ritüel ve İbadet",
+      "name": "Takvim ve Mevsim Festivalleri",
+      "desc": "Tarım ve avcılık döngüsüne bağlı kutsal zaman sistemlerini analiz edin.",
+      "tags": [
+        "takvim",
+        "festival",
+        "mevsim"
+      ],
+      "badge1": "Orta",
+      "content": "## Takvim Festivalleri\n1. Mevsim dönümü ve gündönümü ritüellerini listele.\n2. Ekin/hasat kutlamalarını karşılaştır.\n3. Ölüler anma ve yeniden doğuş sembolizmini incele.\n4. Modern dini tatillerle sürekliliği belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Mitoloji Analizi",
+      "name": "Euhemerism Analizi",
+      "desc": "Tarihi figürlerin mitolojik kahramana dönüşüm sürecini izleyin.",
+      "tags": [
+        "euhemerism",
+        "tarih",
+        "mit"
+      ],
+      "badge1": "İleri",
+      "content": "## Euhemerism\n1. Gerçek tarihi kişiyi belirle.\n2. Mitolojik katmanlanma aşamalarını izle.\n3. Abartı ve mucize eklenmesini incele.\n4. Karşı örneklerle sınırları test et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Mitoloji Analizi",
+      "name": "Kültürel Baskı ve Mit Değişimi",
+      "desc": "Yeni kültürlerin eski mitleri nasıl dönüştürdüğünü belgeleyin.",
+      "tags": [
+        "kültür",
+        "baskı",
+        "dönüşüm"
+      ],
+      "badge1": "İleri",
+      "content": "## Mit Dönüşümü\n1. Orijinal mit ve kültürel bağlamı belirle.\n2. Fetih/yayılma sonrası değişimleri listele.\n3. Eski tanrıların yenilere entegrasyonunu incele.\n4. Hristiyanlaştırma/İslamlaştırma örneklerini ele al.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Mitoloji Analizi",
+      "name": "Yapısalcı Mit Analizi",
+      "desc": "Lévi-Strauss yöntemiyle mitlerin ikili karşıtlıklarını çözümleyin.",
+      "tags": [
+        "yapısalcılık",
+        "lévi-strauss",
+        "ikili"
+      ],
+      "badge1": "İleri",
+      "content": "## Yapısalcı Analiz\n1. Miti episodlara böl.\n2. Her episodun temasını belirle.\n3. İkili karşıtlıkları (ham/pişmiş, doğa/kültür) çıkar.\n4. Karşıtlıkların çözümünü bul.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Teogoni ve Yaratılış",
+      "name": "Tufan Mitleri Karşılaştırması",
+      "desc": "Dünyanın yeniden başladığı su felaketi anlatılarını sistematik karşılaştırın.",
+      "tags": [
+        "tufan",
+        "felaket",
+        "yeniden başlangıç"
+      ],
+      "badge1": "Orta",
+      "content": "## Tufan Mitleri\n1. Anlatının tetikleyicisini belirle (günah, kaza, test).\n2. Kurtarılan figürü ve aracı incele.\n3. Tufan sonrası yeniden kuruluşu karşılaştır.\n4. Gilgamesh, Nuh, Manu örneklerini yan yana koy.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

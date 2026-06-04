@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "WASM Temelleri",
+      "name": "WASM Temelleri",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Rust & WASM",
+      "name": "Rust & WASM",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "C/C++ & Emscripten",
+      "name": "C/C++ & Emscripten",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "JS Entegrasyonu",
+      "name": "JS Entegrasyonu",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Performans",
+      "name": "Performans",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "WASI & Sunucu",
+      "name": "WASI & Sunucu",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "WASM Temelleri",
+      "name": "WebAssembly Nedir?",
+      "desc": "WASM binary format, stack machine mimarisi ve web ortamındaki rolü.",
+      "tags": [
+        "WASM",
+        "binary",
+        "tarayıcı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## WebAssembly Temelleri\nBinary format (.wasm) → tarayıcı sandbox'ında native hıza yakın çalışır.\nDesteklenen diller: C, C++, Rust, Go, AssemblyScript, Zig.\n\nÇalışma modeli:\n- Stack machine: push/pop tabanlı bytecode.\n- Linear memory: izole bellek alanı (default 64KB, max 4GB).\n- JS birlikte çalışır: WASM fonksiyonlarını JS'ten çağır.\n\nKullanım: oyun, ses/görüntü işleme, şifreleme, codec.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "WASM Temelleri",
+      "name": "WAT ile WASM Anlama",
+      "desc": "WebAssembly Text Format (WAT) ile basit fonksiyon yazarak bytecode'u anlayın.",
+      "tags": [
+        "WAT",
+        "text format",
+        "bytecode"
+      ],
+      "badge1": "Orta",
+      "content": "## WAT Örneği\n```wat\n(module\n  (func $add (param $a i32) (param $b i32) (result i32)\n    local.get $a\n    local.get $b\n    i32.add)\n  (export \"add\" (func $add))\n)\n```\n```bash\n# WAT → WASM\nwat2wasm add.wat -o add.wasm\n\n# WASM → WAT (decompile)\nwasm2wat add.wasm\n```\n```javascript\nconst { add } = await WebAssembly.instantiateStreaming(fetch('add.wasm')).then(r => r.instance.exports);\nconsole.log(add(3, 4)); // 7\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Rust & WASM",
+      "name": "wasm-pack ile Rust→WASM",
+      "desc": "Rust'ta wasm-pack ile npm paketi oluşturma ve tarayıcıda kullanma.",
+      "tags": [
+        "Rust",
+        "wasm-pack",
+        "npm"
+      ],
+      "badge1": "Orta",
+      "content": "## Rust + wasm-pack\n```bash\ncargo install wasm-pack\ncargo new --lib my-wasm\n```\n```toml\n# Cargo.toml\n[lib]\ncrate-type = ['cdylib']\n[dependencies]\nwasm-bindgen = '0.2'\n```\n```rust\n// src/lib.rs\nuse wasm_bindgen::prelude::*;\n#[wasm_bindgen]\npub fn greet(name: &str) -> String {\n    format!(\"Merhaba, {}!\", name)\n}\n```\n```bash\nwasm-pack build --target web\n# pkg/ klasöründe JS wrapper + .wasm\n```\n```javascript\nimport init, { greet } from './pkg/my_wasm.js';\nawait init();\nconsole.log(greet('Dünya'));\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Rust & WASM",
+      "name": "Bellek Yönetimi Rust-WASM",
+      "desc": "Rust ve JavaScript arasında bellek sahipliği ve veri transferi.",
+      "tags": [
+        "bellek",
+        "ownership",
+        "js-sys"
+      ],
+      "badge1": "İleri",
+      "content": "## Bellek Paylaşımı\n```rust\nuse wasm_bindgen::prelude::*;\n\n// Vec<u8> JS'e döndür\n#[wasm_bindgen]\npub fn process_bytes(input: &[u8]) -> Vec<u8> {\n    input.iter().map(|b| b.wrapping_add(1)).collect()\n}\n\n// JS Float64Array ile sıfır kopya\n#[wasm_bindgen]\npub fn sum_array(arr: &[f64]) -> f64 {\n    arr.iter().sum()\n}\n```\n```javascript\nconst memory = new Float64Array(wasm.memory.buffer, ptr, len);\n// Doğrudan WASM belleğine yaz\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "C/C++ & Emscripten",
+      "name": "Emscripten ile C→WASM",
+      "desc": "Emscripten toolchain ile C/C++ kodunu WebAssembly'a derleyin.",
+      "tags": [
+        "Emscripten",
+        "C",
+        "derleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Emscripten\n```bash\n# Kurulum\ngit clone https://github.com/emscripten-core/emsdk\ncd emsdk && ./emsdk install latest && ./emsdk activate latest\nsource emsdk_env.sh\n```\n```c\n// hello.c\n#include <stdio.h>\nint add(int a, int b) { return a + b; }\nint main() { printf(\"Merhaba WASM!\\n\"); return 0; }\n```\n```bash\nemcc hello.c -o hello.js \\\n  -s EXPORTED_FUNCTIONS='[\"_add\",\"_main\"]' \\\n  -s EXPORTED_RUNTIME_METHODS='[\"ccall\"]'\n# hello.js + hello.wasm\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "JS Entegrasyonu",
+      "name": "WASM Memory ve TypedArray",
+      "desc": "WASM doğrusal belleğini TypedArray görünümüyle JS'ten okuma ve yazma.",
+      "tags": [
+        "memory",
+        "TypedArray",
+        "buffer"
+      ],
+      "badge1": "Orta",
+      "content": "## WASM Memory\n```javascript\nconst importObject = {\n  env: { memory: new WebAssembly.Memory({ initial: 10 }) }\n};\nconst { instance } = await WebAssembly.instantiate(wasmBytes, importObject);\n\n// Belleğe yaz\nconst mem = new Uint8Array(instance.exports.memory.buffer);\nconst data = new TextEncoder().encode('Merhaba');\nmem.set(data, 0);  // Offset 0'dan başla\n\n// WASM fonksiyonunu çağır\nconst result = instance.exports.process_string(0, data.length);\n\n// Sonucu oku\nconst resultStr = new TextDecoder().decode(mem.slice(result, result + 100));\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "JS Entegrasyonu",
+      "name": "SharedArrayBuffer ile Çoklu Thread",
+      "desc": "SharedArrayBuffer + Atomics ile WASM'ı Web Worker'larla paralel çalıştırın.",
+      "tags": [
+        "SharedArrayBuffer",
+        "Atomics",
+        "Worker"
+      ],
+      "badge1": "İleri",
+      "content": "## WASM + Web Workers\n```javascript\n// main.js\nconst sharedMem = new WebAssembly.Memory({\n  initial: 10,\n  shared: true\n});\nconst worker = new Worker('worker.js');\nworker.postMessage({ memory: sharedMem });\n\n// worker.js\nonmessage = async (e) => {\n  const { memory } = e.data;\n  const { instance } = await WebAssembly.instantiate(\n    wasmBytes, { env: { memory } });\n  // Her worker aynı belleği paylaşır\n  instance.exports.heavy_compute();\n};\n\n// Atomics ile senkronizasyon\nAtomics.wait(new Int32Array(sharedMem.buffer), 0, 0);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Performans",
+      "name": "WASM vs JavaScript Benchmark",
+      "desc": "Sayısal hesaplamada WASM ve JavaScript'i doğru karşılaştırma metodolojisi.",
+      "tags": [
+        "benchmark",
+        "performans",
+        "karşılaştırma"
+      ],
+      "badge1": "Orta",
+      "content": "## Doğru Benchmark\n```javascript\n// Warm-up: JIT optimizasyonu için önce çalıştır\nfor (let i = 0; i < 100; i++) wasmFn();\n\n// Ölçüm\nconst N = 1000;\nconst start = performance.now();\nfor (let i = 0; i < N; i++) wasmFn();\nconst elapsed = (performance.now() - start) / N;\nconsole.log(`Ortalama: ${elapsed.toFixed(3)}ms`);\n```\nWASM kazanır: Sayısal işlem, simülasyon, codec.\nJS kazanır: DOM manipülasyonu, küçük veri, string işleme.\nOverhead: JS↔WASM çağrı sınırı pahalı → batch işle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Performans",
+      "name": "SIMD ile Vektörel İşlem",
+      "desc": "WebAssembly SIMD talimatları ile paralel veri işleme ve hız artışı.",
+      "tags": [
+        "SIMD",
+        "vektör",
+        "paralel"
+      ],
+      "badge1": "İleri",
+      "content": "## WASM SIMD\n```rust\n// Rust'ta SIMD (wasm32 hedefi)\n#[cfg(target_arch = \"wasm32\")]\nuse std::arch::wasm32::*;\n\n#[wasm_bindgen]\npub fn dot_product_simd(a: &[f32], b: &[f32]) -> f32 {\n    let mut sum = f32x4_splat(0.0);\n    for i in (0..a.len()).step_by(4) {\n        let va = v128_load(a.as_ptr().add(i) as _);\n        let vb = v128_load(b.as_ptr().add(i) as _);\n        sum = f32x4_add(sum, f32x4_mul(va, vb));\n    }\n    f32x4_extract_lane::<0>(sum) + f32x4_extract_lane::<1>(sum)\n    + f32x4_extract_lane::<2>(sum) + f32x4_extract_lane::<3>(sum)\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "WASI & Sunucu",
+      "name": "WASI ile Sunucu Tarafı WASM",
+      "desc": "WebAssembly System Interface kullanarak sandbox izolasyonlu sunucu bileşeni.",
+      "tags": [
+        "WASI",
+        "sunucu",
+        "sandbox"
+      ],
+      "badge1": "İleri",
+      "content": "## WASI Kullanımı\n```bash\n# wasmtime çalıştırıcı\ncurl https://wasmtime.dev/install.sh | bash\n\n# Rust → WASI\ncargo build --target wasm32-wasi --release\nwasmtime target/wasm32-wasi/release/app.wasm\n\n# WASI ile dosya izni\nwasmtime --dir /tmp app.wasm\n```\n\nKullanım alanları:\n- Untrusted plugin sandbox (Figma, Adobe)\n- Serverless fonksiyon (Fastly Compute)\n- Edge computing (Cloudflare Workers)\n- Konteyner alternatifi: docker yerine wasmtime",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "WASI & Sunucu",
+      "name": "Fastly Compute ile WASM Edge",
+      "desc": "Fastly Compute@Edge platformunda Rust WASM fonksiyonu deploy etme.",
+      "tags": [
+        "Fastly",
+        "edge",
+        "CDN"
+      ],
+      "badge1": "İleri",
+      "content": "## Fastly Compute\n```rust\n// src/main.rs\nuse fastly::http::{Method, StatusCode};\nuse fastly::{Error, Request, Response};\n\n#[fastly::main]\nfn main(req: Request) -> Result<Response, Error> {\n    match (req.get_method(), req.get_path()) {\n        (&Method::GET, \"/api/data\") => {\n            Ok(Response::from_body(\"Merhaba Edge!\"))\n        }\n        _ => Ok(Response::from_status(StatusCode::NOT_FOUND))\n    }\n}\n```\n```bash\nfastly compute publish\n```\nFaydası: <1ms cold start, global PoP.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Rust & WASM",
+      "name": "web-sys DOM Erişimi",
+      "desc": "Rust kodundan web-sys crate ile DOM elemanlarını manipüle etme.",
+      "tags": [
+        "web-sys",
+        "DOM",
+        "Rust"
+      ],
+      "badge1": "Orta",
+      "content": "## web-sys DOM\n```rust\nuse wasm_bindgen::prelude::*;\nuse web_sys::{Document, HtmlElement};\n\n#[wasm_bindgen]\npub fn update_dom() {\n    let window = web_sys::window().unwrap();\n    let document: Document = window.document().unwrap();\n    \n    let el: HtmlElement = document\n        .get_element_by_id(\"output\")\n        .unwrap()\n        .dyn_into::<HtmlElement>()\n        .unwrap();\n    \n    el.set_inner_text(\"Rust'tan Merhaba!\");\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "JS Entegrasyonu",
+      "name": "WASM Streaming ve Instantiation",
+      "desc": "WebAssembly.instantiateStreaming ile hızlı yükleme ve hata yönetimi.",
+      "tags": [
+        "streaming",
+        "instantiate",
+        "yükleme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## WASM Yükleme\n```javascript\n// Önerilen: streaming (sunucudan)\nconst { instance, module } = await WebAssembly.instantiateStreaming(\n  fetch('/app.wasm'),\n  { env: { log: (ptr, len) => console.log(readString(ptr, len)) } }\n);\n\n// Alternatif: ArrayBuffer\nconst bytes = await (await fetch('/app.wasm')).arrayBuffer();\nconst { instance } = await WebAssembly.instantiate(bytes, {});\n\n// Module önbelleğe al\nconst cachedModule = await WebAssembly.compileStreaming(fetch('/app.wasm'));\nconst inst1 = await WebAssembly.instantiate(cachedModule);\nconst inst2 = await WebAssembly.instantiate(cachedModule);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Performans",
+      "name": "WASM Boyut Optimizasyonu",
+      "desc": "wasm-opt ve strip komutları ile WASM binary boyutunu küçültme.",
+      "tags": [
+        "wasm-opt",
+        "boyut",
+        "optimize"
+      ],
+      "badge1": "Orta",
+      "content": "## Boyut Optimizasyonu\n```bash\n# wasm-opt (Binaryen)\nwasm-opt -Oz input.wasm -o optimized.wasm\n# -O0 hız, -Oz boyut için\n\n# Rust release\n[profile.release]\nopt-level = 'z'  # Boyut için\nlto = true       # Link-time optimization\ncodegen-units = 1\npanic = 'abort'\n\n# wasm-bindgen strip\nwasm-pack build --release -- --cfg no-std\n\n# Sıkıştırma\ngzip -9 app.wasm  # Sunucu gzip/brotli\n# Brotli: brotli -q 11 app.wasm\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "C/C++ & Emscripten",
+      "name": "Emscripten Dosya Sistemi",
+      "desc": "Emscripten'de MEMFS, NODEFS ve önceden yüklenmiş dosyalar kullanımı.",
+      "tags": [
+        "Emscripten",
+        "dosya sistemi",
+        "MEMFS"
+      ],
+      "badge1": "İleri",
+      "content": "## Emscripten FS\n```bash\n# Dosyaları önceden yükle\nemcc app.c -o app.js \\\n  --preload-file assets/  \\\n  -s FORCE_FILESYSTEM=1\n\n# NODEFS ile Node.js gerçek dosya sistemi\n```\n```c\n// C'de normal dosya API'si çalışır\n#include <stdio.h>\nFILE *f = fopen(\"/assets/data.bin\", \"rb\");\nfread(buffer, 1, size, f);\n```\n```javascript\n// JS'ten MEMFS'e dosya ekle\nModule.FS.writeFile('/data.txt', 'İçerik');\nModule.callMain(['-f', '/data.txt']);\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

@@ -48,6 +48,293 @@
     "border3": "#2a3232",
     "heroBg": "#0a1212"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Vault Kurulumu",
+      "name": "Vault Kurulumu",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "Not Alma Sistemi",
+      "name": "Not Alma Sistemi",
+      "color": "#3ab8b8"
+    },
+    {
+      "id": "Graph & Link",
+      "name": "Graph & Link",
+      "color": "#5dd8d8"
+    },
+    {
+      "id": "Plugin & Tema",
+      "name": "Plugin & Tema",
+      "color": "#2aa8a8"
+    },
+    {
+      "id": "Dataview & Query",
+      "name": "Dataview & Query",
+      "color": "#7de3e3"
+    },
+    {
+      "id": "Günlük & Görev",
+      "name": "Günlük & Görev",
+      "color": "#1a9898"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Vault Kurulumu",
+      "name": "PARA Klasör Yapısı",
+      "desc": "Projects, Areas, Resources, Archive ile Obsidian vault klasör organizasyonu.",
+      "tags": [
+        "PARA",
+        "klasör",
+        "organizasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## PARA Vault Yapısı\n```\nvault/\n├── 00 - Index/          # Ana dizin notları\n├── 10 - Projects/       # Aktif projeler\n│   ├── 2026 Web Sitesi/\n│   └── Kitap Özeti/\n├── 20 - Areas/          # Sorumluluk alanları\n│   ├── Sağlık/\n│   └── Öğrenme/\n├── 30 - Resources/      # Referans materyali\n│   ├── Yazılım/\n│   └── Finans/\n├── 40 - Archive/        # Tamamlananlar\n└── 50 - Templates/      # Şablonlar\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Not Alma Sistemi",
+      "name": "Zettelkasten Yöntemi",
+      "desc": "Atomik notlar ve çift yönlü linkler ile Zettelkasten bilgi yönetimi sistemi.",
+      "tags": [
+        "Zettelkasten",
+        "atomik",
+        "bağlantı"
+      ],
+      "badge1": "Orta",
+      "content": "## Zettelkasten Kuralları\n1. **Atomik not:** Her not tek bir fikri işler.\n2. **Kalıcı not:** Kendi cümlelerinle yaz, alıntı değil.\n3. **Bağlantı:** Her nota en az 2 ilgili nota link ver.\n4. **Başlık:** Fikri özetleyen tam cümle.\n5. **ID:** Tarih bazlı: 202606041000\n\nObsidian uygulama:\n- [[Wikilink]] ile bağla\n- Orphan notları sil veya bağla\n- Graph view ile kümeleri keşfet",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Not Alma Sistemi",
+      "name": "Cornell Not Şablonu",
+      "desc": "Cornell metodu ile ders ve toplantı notlarını yapılandırma şablonu.",
+      "tags": [
+        "Cornell",
+        "şablon",
+        "not"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Cornell Not Şablonu\n```markdown\n---\ntarih: 2026-06-04\nkonu: \nkaynak: \n---\n\n## Cue (İpuçları)\n- Anahtar sorular\n- Önemli terimler\n\n## Notlar\n- Ayrıntılı notlar burada\n\n## Özet\nBu sayfanın özeti (okuma bittikten sonra doldur)\n```\nMetod: Önce notlar → cue → özet → 24 saat sonra gözden geçir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Graph & Link",
+      "name": "Backlink ve MOC Kullanımı",
+      "desc": "Maps of Content ile ana konu sayfaları ve backlink'lerle bilgi haritası.",
+      "tags": [
+        "MOC",
+        "backlink",
+        "harita"
+      ],
+      "badge1": "Orta",
+      "content": "## Map of Content (MOC)\n```markdown\n# Yazılım Mühendisliği MOC\n\n## Algoritmalar\n- [[Sıralama Algoritmaları]]\n- [[Graf Algoritmaları]]\n\n## Veri Yapıları\n- [[Ağaç Yapıları]]\n- [[Hash Table]]\n\n## Tasarım Örüntüleri\n- [[Creational Patterns]]\n```\nMOC, ilgili notların ana kapısı olur.\nBacklink paneli: hangi notların bağlandığını gösterir → bilgi boşluklarını tespit et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Plugin & Tema",
+      "name": "Temel Plugin Listesi",
+      "desc": "Verimliliği katlayan 10 Obsidian plugin kurulum ve kullanım rehberi.",
+      "tags": [
+        "plugin",
+        "community",
+        "kurulum"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Önerilen Pluginler\n1. **Dataview:** Not veritabanı sorguları.\n2. **Templater:** Güçlü şablon motoru.\n3. **Calendar:** Günlük not takvimi.\n4. **Tasks:** Görev takibi.\n5. **Excalidraw:** Vault içi çizim.\n6. **Advanced Tables:** Tablo düzenleme.\n7. **Obsidian Git:** Otomatik git yedek.\n8. **QuickAdd:** Hızlı not ekleme makrosu.\n9. **Kanban:** Proje panosu.\n10. **Periodic Notes:** Haftalık/aylık not.\n\nKurulum: Settings → Community plugins → Browse.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dataview & Query",
+      "name": "Dataview Temel Sorgular",
+      "desc": "Dataview plugin ile not listesi, tablo ve takvim sorgulama örnekleri.",
+      "tags": [
+        "Dataview",
+        "sorgu",
+        "tablo"
+      ],
+      "badge1": "Orta",
+      "content": "## Dataview Örnekleri\n```dataview\n// Tüm proje notları\nTABLE tarih, durum, etiket\nFROM \"10 - Projects\"\nWHERE durum != \"tamamlandı\"\nSORT tarih DESC\n\n// Bu haftaki görevler\nTASK FROM #görev\nWHERE !completed\nSORT file.mtime DESC\n\n// Belirli etiketli notlar\nLIST FROM #okuma AND #2026\nSORT file.ctime DESC\nLIMIT 10\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Dataview & Query",
+      "name": "Frontmatter Standartları",
+      "desc": "YAML frontmatter alanlarını standartlaştırarak Dataview sorgularını güçlendirin.",
+      "tags": [
+        "frontmatter",
+        "YAML",
+        "meta"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Frontmatter Şablonu\n```yaml\n---\ntitle: Not Başlığı\ntarih: 2026-06-04\ndurum: aktif          # aktif/beklemede/tamamlandı\nkategori: proje       # proje/alan/kaynak/arşiv\netiketler:\n  - yazılım\n  - python\nkaynak: https://...\nöncelik: yüksek       # yüksek/orta/düşük\ngözden-geçirme: 2026-07-01\n---\n```\nTutarlı frontmatter → güçlü Dataview sorguları.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Günlük & Görev",
+      "name": "Daily Note Şablonu",
+      "desc": "Günlük not şablonu: sabah rutini, görevler ve günün özeti.",
+      "tags": [
+        "daily note",
+        "şablon",
+        "rutin"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Daily Note Şablonu\n```markdown\n---\ntarih: {{date}}\nhafta: {{date:w}}\n---\n\n## 🌅 Sabah Rutini\n- [ ] Hedef belirle\n- Bugünün en önemli 3 görevi:\n  1.\n  2.\n  3.\n\n## 📝 Günlük Notlar\n\n## ✅ Görevler\n- [ ] \n\n## 🌙 Günün Özeti\n- Başarılar:\n- Öğrendiklerim:\n- Yarın için:\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Günlük & Görev",
+      "name": "Görev Yönetimi Sistemi",
+      "desc": "Tasks plugin ile Obsidian'ı proje yönetim aracına dönüştürün.",
+      "tags": [
+        "Tasks",
+        "görev",
+        "yönetim"
+      ],
+      "badge1": "Orta",
+      "content": "## Tasks Plugin\nGörev sözdizimi:\n```markdown\n- [ ] Raporu tamamla 📅 2026-06-10 ⏫\n- [ ] E-postayı yanıtla 🔁 every day 📅 2026-06-05\n- [x] Toplantı hazırlığı ✅ 2026-06-04\n```\n\nToplama sorgusu:\n```tasks\nnot done\ndue before next week\nsort by priority\ngroup by due\n```\nÖzellikler: Tekrarlayan görev, öncelik, bitiş tarihi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Plugin & Tema",
+      "name": "Obsidian Git Yedekleme",
+      "desc": "Obsidian Git plugin ile vault'u otomatik GitHub'a commit ve push edin.",
+      "tags": [
+        "git",
+        "yedekleme",
+        "senkronizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Obsidian Git Kurulum\n1. Git kur: git-scm.com.\n2. Vault klasöründe: `git init && git remote add origin <URL>`.\n3. Plugin: Community → 'Obsidian Git' yükle.\n4. Ayarlar:\n   - Auto pull interval: 10 dakika.\n   - Auto commit: 5 dakika.\n   - Commit message: `Vault backup: {{date}}`.\n5. İlk push: Command Palette → 'Git: Commit all'.\n\nFaydası: Ücretsiz, çok cihaz senkronizasyon.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Vault Kurulumu",
+      "name": "Hızlı Not Yakalama Sistemi",
+      "desc": "Inbox klasörü ve QuickAdd ile düşünceleri hızla yakalayan inbox sistemi.",
+      "tags": [
+        "inbox",
+        "yakalama",
+        "QuickAdd"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Inbox Sistemi\n```\nvault/\n└── 00 - Inbox/          # Tüm ham notlar buraya düşer\n    ├── Düşünceler.md\n    └── Okuma Listesi.md\n```\n\nQuickAdd makrosu:\n- Hotkey: Alt+N\n- Soru: 'Ne yakalamak istiyorsun?'\n- Hedef: 00 - Inbox/\n- Format: `- {{value}} ({{date}})`\n\nHaftalık gözden geçirme: Inbox → sınıflandır → uygun klasöre taşı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Graph & Link",
+      "name": "Graph View Filtreleri",
+      "desc": "Global ve yerel graph filtreleri ile bilgi haritanızı anlamlı hale getirin.",
+      "tags": [
+        "graph",
+        "filtre",
+        "görselleştirme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Graph View Kullanımı\n**Filtreler (sol panel):**\n- Sadece belirli klasör: `path:\"10 - Projects\"`\n- Etiket filtresi: `tag:#aktif`\n- Bağlantısız notlar: Orphan notları filtrele.\n\n**Görsel ayarlar:**\n- Node size: bağlantı sayısına göre büyüt.\n- Color groups: etiket rengi.\n- Force: yakın notları grupla.\n\n**Yerel graph:** Bir notun yalnızca komşularını gör — derinlik: 2.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Not Alma Sistemi",
+      "name": "Progressive Summarization",
+      "desc": "Tiago Forte'nun kademeli özetleme tekniği ile okuduğunuzu içselleştirin.",
+      "tags": [
+        "özet",
+        "kademeli",
+        "Forte"
+      ],
+      "badge1": "Orta",
+      "content": "## Progressive Summarization\nKatman 1: Orijinal alıntı/pasaj.\nKatman 2: **Kalın** ile önemli bölümleri vurgula.\nKatman 3: ==Sarı ile== en önemli cümleleri işaretle.\nKatman 4: Kendi cümlelerinle kısa özet yaz.\nKatman 5: MOC'ta bu nota yer ver, bağla.\n\nKural: Her katmanı ayrı zamanda yap, oturumda tüm katmanları tamamlama. Gelecekte okuyunca işaretleri ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Dataview & Query",
+      "name": "İlerleme Takip Panosu",
+      "desc": "Dataview ile öğrenme ilerlemesini ve proje durumunu gösteren kontrol paneli.",
+      "tags": [
+        "pano",
+        "ilerleme",
+        "dashboard"
+      ],
+      "badge1": "İleri",
+      "content": "## Ana Dashboard\n```dataview\n// Aktif projeler\nTABLE durum, öncelik, gözden-geçirme\nFROM \"10 - Projects\"\nWHERE durum = \"aktif\"\nSORT öncelik ASC\n\n// Bu hafta tamamlananlar\nLIST file.link + \" ✅\"\nFROM \"40 - Archive\"\nWHERE date(tamamlanma) >= date(today) - dur(7 days)\n\n// Okunacak liste\nTABLE kaynak\nFROM #okuma\nWHERE !okundu\nSORT file.ctime ASC\nLIMIT 5\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Günlük & Görev",
+      "name": "Haftalık Gözden Geçirme",
+      "desc": "GTD ilkelerine göre haftalık vault gözden geçirme süreci ve şablonu.",
+      "tags": [
+        "haftalık",
+        "GTD",
+        "gözden geçirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Haftalık Review Şablonu\n```markdown\n---\ntarih: {{date}}\ntür: haftalık-review\n---\n\n## ✅ Bu Hafta Neler Yaptım?\n\n## 📦 Inbox Temizleme\n- [ ] 00-Inbox klasörünü boşalt\n- [ ] Tamamlananları arşivle\n\n## 🎯 Gelecek Hafta Öncelikleri\n1.\n2.\n3.\n\n## 💡 Öğrendiklerim & Fikirler\n\n## 📊 Proje Durumu\n```tasks\nnot done\ndue this week\n```\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

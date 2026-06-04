@@ -48,6 +48,293 @@
     "border3": "#322e2a",
     "heroBg": "#120e0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Hikaye Yapıları",
+      "name": "Hikaye Yapıları",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Karakter Yolculuğu",
+      "name": "Karakter Yolculuğu",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Dünya İnşası",
+      "name": "Dünya İnşası",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Anlatı Teknikleri",
+      "name": "Anlatı Teknikleri",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Gerilim ve Tempo",
+      "name": "Gerilim ve Tempo",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Tematik Yapı",
+      "name": "Tematik Yapı",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Hikaye Yapıları",
+      "name": "Üç Perde Yapısı İskeleti",
+      "desc": "Klasik başlangıç-gelişme-sonuç yapısını sahne sayılarıyla planlayın.",
+      "tags": [
+        "perde",
+        "yapı",
+        "klasik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Üç Perde İskeleti\n1. Perde 1 (~%25): Dünya, kahraman, rahatsızlık anı.\n2. Perde 2 (~%50): Mücadele, dönüm noktaları, kayıp.\n3. Perde 3 (~%25): Klimaks, çözüm, yeni denge.\n4. Her perdeye somut sahne hedefi yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Hikaye Yapıları",
+      "name": "Monomyth Haritası",
+      "desc": "Joseph Campbell'ın Kahramanın Yolculuğu aşamalarını hikayeye uygulayın.",
+      "tags": [
+        "monomyth",
+        "campbell",
+        "kahraman"
+      ],
+      "badge1": "Orta",
+      "content": "## Monomyth Aşamaları\n1. Çağrı ve reddi belirle.\n2. Eşiği geçişi ve mentoru ekle.\n3. Sınavlar, müttefikler, düşmanlar bölümünü planla.\n4. Büyük sınav ve dönüşü finalle kapat.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Hikaye Yapıları",
+      "name": "Dan Harmon Hikaye Çemberi",
+      "desc": "8 adımlı döngüsel anlatı iskeletini bölüm/sahne planlamaya uygulayın.",
+      "tags": [
+        "harmon",
+        "çember",
+        "döngü"
+      ],
+      "badge1": "Orta",
+      "content": "## Hikaye Çemberi\n1. Karakter konfor alanındayken başla.\n2. İstek belirle → eşiği geç → uyumu bul.\n3. Bedeli öde → dönüş yolunu bul.\n4. Değişmiş halde konfor alanına dön.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Karakter Yolculuğu",
+      "name": "İç ve Dış Yolculuk Uyumu",
+      "desc": "Dış olay örgüsüyle karakterin iç dönüşümünü paralel yapılandırın.",
+      "tags": [
+        "iç",
+        "dış",
+        "paralel"
+      ],
+      "badge1": "İleri",
+      "content": "## İç-Dış Uyum\n1. Dış hedefe karşılık gelen iç eksikliği belirle.\n2. Dış engelleri iç engellerin yansıması yap.\n3. Dış klimaksı iç kırılmayla eşleştir.\n4. Dış çözümü iç dönüşümden türet.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Karakter Yolculuğu",
+      "name": "Yanlış İnanç Kırılma Sahnesi",
+      "desc": "Karakterin temel yanılgısının parçalandığı pivotal sahneyi yazın.",
+      "tags": [
+        "inanç",
+        "kırılma",
+        "pivot"
+      ],
+      "badge1": "İleri",
+      "content": "## Kırılma Sahnesi\n1. Yanlış inancı önceki sahnelerde sağlamlaştır.\n2. Kırılmayı tetikleyen somut bir olgu sun.\n3. Karakterin ilk reddini göster.\n4. Kabul ve değişimi bir eylemle dışa vur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dünya İnşası",
+      "name": "Çatışma Kaynağı Olarak Dünya",
+      "desc": "Ortamın kendisinin anlatı çatışması üretmesini sağlayan tasarım.",
+      "tags": [
+        "dünya",
+        "çatışma",
+        "ortam"
+      ],
+      "badge1": "Orta",
+      "content": "## Dünya Kaynaklı Çatışma\n1. Dünyanın temel gerilimini belirle (kaynak kıtlığı, iki kültür).\n2. Bu gerilimi karakter ilişkilerine yansıt.\n3. Her lokasyonu bir çatışma potansiyeli taşıyacak şekilde tasarla.\n4. Dünyanın kurallarını hikayenin zor seçimleri için kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Dünya İnşası",
+      "name": "Buzdağı Dünya İnşası",
+      "desc": "Görünen detayların altındaki derin tarih ve kültürü planlayın.",
+      "tags": [
+        "buzdağı",
+        "derinlik",
+        "kültür"
+      ],
+      "badge1": "İleri",
+      "content": "## Buzdağı Yöntemi\n1. Arka planı kurgula (tarih, mitler, savaşlar).\n2. Bunların yalnızca %10'unu metne yansıt.\n3. Geri kalanı karakterlerin varsayımlarına göm.\n4. Okuyucu 'daha fazlası var' hissini taşısın.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Anlatı Teknikleri",
+      "name": "Güvenilmez Anlatıcı Tasarımı",
+      "desc": "Okuyucuyu yanlış yönlendiren, sonradan sorgulanacak bir ses kurun.",
+      "tags": [
+        "anlatıcı",
+        "güvenilmez",
+        "yanıltma"
+      ],
+      "badge1": "İleri",
+      "content": "## Güvenilmez Anlatıcı\n1. Anlatıcının motivasyonu veya sınırlılığını belirle.\n2. Gerçeği çarpıtan tutarsızlıkları ince ek.\n3. Dikkatli okuyucuya ipuçları bırak.\n4. Deşifre anını güçlü bir sahneye sakla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Anlatı Teknikleri",
+      "name": "In Medias Res Başlangıcı",
+      "desc": "Okuyucuyu anında aksiyonun içine düşüren açılış sahnesi yazın.",
+      "tags": [
+        "açılış",
+        "aksiyon",
+        "teknik"
+      ],
+      "badge1": "Orta",
+      "content": "## In Medias Res\n1. Yüksek gerilimli bir anı başlangıç noktası seç.\n2. Arka planı diyalog ve eylem içine göm.\n3. İlk birkaç sayfa içinde temel soruyu yarat.\n4. Ekspozisyon bloğundan kaçın.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Gerilim ve Tempo",
+      "name": "Gerilim Eğrisi Tasarımı",
+      "desc": "Okuyucuyu nefessiz bırakmayan ritimli yükseliş-alçalış dengesi.",
+      "tags": [
+        "gerilim",
+        "tempo",
+        "ritim"
+      ],
+      "badge1": "Orta",
+      "content": "## Gerilim Eğrisi\n1. Büyük klimakslar için yavaşlama anları planla.\n2. Küçük gerilim-çözüm döngülerini sık tekrarla.\n3. Bölüm sonlarını çözümsüz sorularla bitir.\n4. Okuyucu nefes alırken merak tohumunu dik.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Gerilim ve Tempo",
+      "name": "Saat Bombası Anlatısı",
+      "desc": "Gerçek veya mecazi son tarih baskısıyla sahne yoğunluğunu artırın.",
+      "tags": [
+        "süre",
+        "baskı",
+        "son tarih"
+      ],
+      "badge1": "Orta",
+      "content": "## Saat Bombası\n1. Somut bir son tarihi erken belirle.\n2. Her sahnede kalan zamanı ima et.\n3. Engeller süreyi yiyor gibi göster.\n4. Çözümü son anda gerçekleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Tematik Yapı",
+      "name": "Tema İfadesi Hiyerarşisi",
+      "desc": "Ana temayı alt temalar ve sahnelerle katmanlı işleyin.",
+      "tags": [
+        "tema",
+        "hiyerarşi",
+        "katman"
+      ],
+      "badge1": "İleri",
+      "content": "## Tema Hiyerarşisi\n1. Ana temayı tek cümleyle ifade et.\n2. Her alt karaktere bir tematik perspektif ver.\n3. Temayı diyalog değil eylemle ilet.\n4. Sonunda temaya dair bir soru bırak.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Tematik Yapı",
+      "name": "İronik Tema Sunumu",
+      "desc": "Temayı karakterin aksiyonlarıyla çelişen bir biçimde ortaya koyun.",
+      "tags": [
+        "ironi",
+        "tema",
+        "çelişki"
+      ],
+      "badge1": "İleri",
+      "content": "## İronik Yapı\n1. Karakterin savunduğu değeri belirle.\n2. Eylemlerinin bu değeri nasıl ihlal ettiğini göster.\n3. Okuyucunun farkında, karakterin farkında olmadığı durumu yarat.\n4. Gerçeği kabul anını güçlü tutun.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Hikaye Yapıları",
+      "name": "Çok Katmanlı Zaman Anlatısı",
+      "desc": "Doğrusal olmayan zaman yapılarını anlatı avantajına çevirin.",
+      "tags": [
+        "zaman",
+        "doğrusal olmayan",
+        "yapı"
+      ],
+      "badge1": "İleri",
+      "content": "## Çok Katmanlı Zaman\n1. Zaman atlamalarını karakter gelişimine hizmet için kullan.\n2. Her zaman katmanına farklı ton/ses ver.\n3. Katmanlar arasındaki bağlantıyı tematik yap.\n4. Okuyucuyu kayboldurmadan yönlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Anlatı Teknikleri",
+      "name": "Göster-Anlatma Dengesi",
+      "desc": "Aksiyonla gösterme ve anlatıcı yorumunu doğru orantıda kullanın.",
+      "tags": [
+        "göster",
+        "anlat",
+        "denge"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Göster-Anlat Dengesi\n1. Duygusal sahnelerde sadece göster, yorumlama.\n2. Ekspozisyon ve geçişlerde anlat.\n3. 'Hissetti' yerine beden dili ve eylem yaz.\n4. Her paragrafta aktif fiilleri tercih et.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

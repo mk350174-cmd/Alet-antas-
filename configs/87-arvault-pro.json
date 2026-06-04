@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "AR Temelleri",
+      "name": "AR Temelleri",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "WebAR",
+      "name": "WebAR",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "ARKit & ARCore",
+      "name": "ARKit & ARCore",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Marker & Tracking",
+      "name": "Marker & Tracking",
+      "color": "#cc4444"
+    },
+    {
+      "id": "3D İçerik Entegrasyonu",
+      "name": "3D İçerik Entegrasyonu",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Kullanıcı Deneyimi",
+      "name": "Kullanıcı Deneyimi",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "AR Temelleri",
+      "name": "AR Koordinat Sistemi",
+      "desc": "World space, camera space ve AR koordinat dönüşümlerini anlayın.",
+      "tags": [
+        "koordinat",
+        "transform",
+        "AR"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## AR Koordinat Sistemi\n- World Space: sabit referans çerçevesi (yer düzlemi).\n- Camera Space: kameranın bakış açısından koordinatlar.\n- Screen Space: 2D ekran piksel koordinatları.\n\nDönüşüm: World → Camera: ViewMatrix; Camera → Screen: ProjectionMatrix.\nAR'da World Origin, uygulama başladığında cihaz pozisyonuna yerleşir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "AR Temelleri",
+      "name": "SLAM Algoritması Temelleri",
+      "desc": "Simultaneous Localization and Mapping ile cihazın ortamı haritalandırması.",
+      "tags": [
+        "SLAM",
+        "haritalama",
+        "takip"
+      ],
+      "badge1": "İleri",
+      "content": "## SLAM Özeti\n1. Feature detection: FAST/ORB ile görsel özellikler tespit.\n2. Feature matching: ardışık kareler arasında eşleştir.\n3. Pose estimation: kamera konumunu hesapla.\n4. Map update: yeni 3D noktaları haritaya ekle.\n5. Loop closure: daha önce görülen yeri tanı, drift düzelt.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "WebAR",
+      "name": "AR.js ile İşaretçi AR",
+      "desc": "AR.js ve A-Frame ile tarayıcı tabanlı işaretçi (marker) AR uygulaması.",
+      "tags": [
+        "AR.js",
+        "WebAR",
+        "marker"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## AR.js Temel\n```html\n<script src='https://aframe.io/releases/1.3.0/aframe.min.js'></script>\n<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>\n<a-scene embedded arjs>\n  <a-marker preset='hiro'>\n    <a-box position='0 0.5 0' color='#f00'></a-box>\n  </a-marker>\n  <a-entity camera></a-entity>\n</a-scene>\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "WebAR",
+      "name": "WebXR API Kullanımı",
+      "desc": "Native WebXR API ile immersive-ar oturumu başlatma ve hit-test uygulama.",
+      "tags": [
+        "WebXR",
+        "browser",
+        "API"
+      ],
+      "badge1": "Orta",
+      "content": "## WebXR Oturum\n```javascript\nconst button = document.getElementById('ar-btn');\nbutton.addEventListener('click', async () => {\n  if (!navigator.xr) return;\n  const session = await navigator.xr.requestSession('immersive-ar', {\n    requiredFeatures: ['hit-test']\n  });\n  // session ile render loop başlat\n  session.requestAnimationFrame(onXRFrame);\n});\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "ARKit & ARCore",
+      "name": "ARKit RealityKit Yerleşimi",
+      "desc": "iOS'ta RealityKit kullanarak yüzeye 3D model yerleştirme şablonu.",
+      "tags": [
+        "ARKit",
+        "RealityKit",
+        "iOS"
+      ],
+      "badge1": "Orta",
+      "content": "## RealityKit Temel\n```swift\nimport RealityKit\nimport ARKit\nclass ARViewController: UIViewController {\n    @IBOutlet var arView: ARView!\n    override func viewDidLoad() {\n        super.viewDidLoad()\n        let config = ARWorldTrackingConfiguration()\n        config.planeDetection = [.horizontal]\n        arView.session.run(config)\n        arView.addGestureRecognizer(\n            UITapGestureRecognizer(target: self, action: #selector(handleTap)))\n    }\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "ARKit & ARCore",
+      "name": "ARCore Plane Detection",
+      "desc": "Android'de ARCore ile yatay/dikey yüzey tespiti ve anchor oluşturma.",
+      "tags": [
+        "ARCore",
+        "Android",
+        "plane"
+      ],
+      "badge1": "Orta",
+      "content": "## ARCore Plane\n```java\nSession session = new Session(this);\nConfig config = new Config(session);\nconfig.setPlaneFindingMode(Config.PlaneFindingMode.HORIZONTAL_AND_VERTICAL);\nsession.configure(config);\n// Frame update\nFrame frame = session.update();\nfor (Plane plane : session.getAllTrackables(Plane.class)) {\n    if (plane.getTrackingState() == TrackingState.TRACKING) {\n        // Yüzey bulundu, anchor oluşturabilirsin\n    }\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Marker & Tracking",
+      "name": "NFT (Natural Feature Tracking)",
+      "desc": "Özel görsel işaretçisiz gerçek dünya nesnesi üzerinde AR takibi yapın.",
+      "tags": [
+        "NFT",
+        "takip",
+        "markerless"
+      ],
+      "badge1": "İleri",
+      "content": "## NFT Süreci\n1. Hedef görsel seç: yüksek kontrast, zengin doku.\n2. AR.js NFT Marker Trainer ile target dosyası oluştur.\n3. .fset, .fset3, .iset dosyalarını proje klasörüne ekle.\n4. AR.js NFT ile yükle:\n```html\n<a-nft type='nft' url='targets/pinball' smooth>\n  <a-entity gltf-model='model.glb'></a-entity>\n</a-nft>\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "3D İçerik Entegrasyonu",
+      "name": "USDZ ile AR Quick Look",
+      "desc": "iOS'ta USDZ formatındaki modelleri AR Quick Look ile gösterin.",
+      "tags": [
+        "USDZ",
+        "QuickLook",
+        "iOS"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## AR Quick Look\n```html\n<!-- Sadece Safari iOS'ta çalışır -->\n<a href='model.usdz' rel='ar'>\n  <img src='preview.jpg' alt='AR'>\n</a>\n<!-- veya JavaScript ile -->\n<script>\nconst a = document.createElement('a');\na.href = 'model.usdz#allowsContentScaling=0';\na.rel = 'ar';\na.click();\n</script>\n```\nFaydası: uygulama indirmeye gerek yok.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "3D İçerik Entegrasyonu",
+      "name": "glTF/GLB Model Optimizasyonu",
+      "desc": "AR için glTF modellerini mesh ve texture açısından optimize edin.",
+      "tags": [
+        "glTF",
+        "GLB",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## glTF Optimizasyon\n1. Polycount: mobil AR için maks. 50K tri/model.\n2. Texture: 1K-2K boyut; KTX2 ile sıkıştır.\n3. Draco mesh compression: glTF-transform kullan.\n4. LOD: farklı mesafe için farklı kalite.\n```bash\nnpx gltf-transform optimize input.glb output.glb --compress draco\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Kullanıcı Deneyimi",
+      "name": "AR Yerleşim Geri Bildirimi",
+      "desc": "Kullanıcıya yüzey taraması ve nesne yerleşim durumunu görsel olarak bildirin.",
+      "tags": [
+        "UX",
+        "feedback",
+        "tarama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## AR UX Desenleri\n1. Tarama animasyonu: radar halkası veya noktalı ızgara.\n2. Yüzey bulundu: yeşil ızgara overlay.\n3. Nesne yerleştir: halka→daire tap ikonu.\n4. Yerleştirme sonrası: obje hafifçe sink animasyonu.\n5. Kaldırma: trash ikonu + confirm dialog.\nNetlik için ses+haptic feedback ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "AR Temelleri",
+      "name": "Okklüzyon (Gizleme) Tekniği",
+      "desc": "AR nesnesinin gerçek dünya nesneleri arkasına gizlenmesini sağlayan teknikler.",
+      "tags": [
+        "okklüzyon",
+        "derinlik",
+        "gerçekçilik"
+      ],
+      "badge1": "İleri",
+      "content": "## Okklüzyon Yöntemleri\n1. Depth API (ARCore/ARKit): gerçek derinlik haritası kullan.\n2. Semantic segmentation: insan silüetini tespit et, önünde render et.\n3. Manuel: statik collider geometry ile sahneye el ile ekle.\nARKit: `ARWorldTrackingConfiguration.frameSemantics = .personSegmentationWithDepth`",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "WebAR",
+      "name": "8th Wall Entegrasyonu",
+      "desc": "Profesyonel WebAR geliştirme için 8th Wall platformunu kullanın.",
+      "tags": [
+        "8th Wall",
+        "platform",
+        "WebAR"
+      ],
+      "badge1": "Orta",
+      "content": "## 8th Wall Kurulum\n1. 8thwall.com'da proje oluştur.\n2. App Key al, script tag'e ekle.\n3. SLAM, image target veya face effect seç.\n4. React Three Fiber veya A-Frame ile entegre.\n5. iOS Safari + Android Chrome test et.\nAvantajı: cross-platform, ARKit/ARCore gerekmez.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Kullanıcı Deneyimi",
+      "name": "AR Erişilebilirlik Tasarımı",
+      "desc": "AR uygulamalarında görme engeli, titreme ve baş dönmesi önleme rehberi.",
+      "tags": [
+        "erişilebilirlik",
+        "inclusive",
+        "UX"
+      ],
+      "badge1": "Orta",
+      "content": "## AR Erişilebilirlik\n1. Motion sickness: teleport hareketi, fade geçiş.\n2. FOV sınırı: yoğun animasyon ekran kenarında kalmasın.\n3. Renk körü: renk+şekil+label ile bilgi aktar.\n4. Tek elle kullanım: tüm aksiyonlar tek dokunuş ile.\n5. Gürültülü ortam: ses olmadan da kullanılabilir ol.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Marker & Tracking",
+      "name": "Yüz Takibi AR Filtreleri",
+      "desc": "Face landmarks ile gerçek zamanlı yüz üstü AR efekti oluşturma.",
+      "tags": [
+        "yüz",
+        "filter",
+        "landmark"
+      ],
+      "badge1": "İleri",
+      "content": "## Yüz AR Filtresi\nKütüphane: MediaPipe Face Mesh (468 landmark)\n```javascript\nconst faceMesh = new FaceMesh({ locateFile: ... });\nfaceMesh.onResults(results => {\n  const keypoints = results.multiFaceLandmarks[0];\n  // Gözler: 33,133,362,263\n  // Burun: 4\n  // Ağız: 13,14\n  drawMask(ctx, keypoints);\n});\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "3D İçerik Entegrasyonu",
+      "name": "Animasyonlu AR Nesneleri",
+      "desc": "glTF animasyonlarını AR ortamında tetikleyin ve yönetin.",
+      "tags": [
+        "animasyon",
+        "glTF",
+        "clip"
+      ],
+      "badge1": "Orta",
+      "content": "## glTF Animasyon\n```javascript\nimport { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';\nconst loader = new GLTFLoader();\nloader.load('model.glb', (gltf) => {\n  scene.add(gltf.scene);\n  const mixer = new THREE.AnimationMixer(gltf.scene);\n  const action = mixer.clipAction(gltf.animations[0]);\n  action.play();\n  // Her frame: mixer.update(delta)\n});\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

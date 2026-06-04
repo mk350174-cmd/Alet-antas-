@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Güvenlik Mimarisi",
+      "name": "Güvenlik Mimarisi",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Savunma Katmanları",
+      "name": "Savunma Katmanları",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Risk Analizi",
+      "name": "Risk Analizi",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Fiziksel Güvenlik",
+      "name": "Fiziksel Güvenlik",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Endüstriyel Güvenlik",
+      "name": "Endüstriyel Güvenlik",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Güvenlik Protokolleri",
+      "name": "Güvenlik Protokolleri",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Güvenlik Mimarisi",
+      "name": "Derinlemesine Savunma Modeli",
+      "desc": "Çok katmanlı savunma mimarisini ağdan uygulamaya kadar tasarlayın.",
+      "tags": [
+        "savunma",
+        "katman",
+        "mimari"
+      ],
+      "badge1": "İleri",
+      "content": "## Derinlemesine Savunma\n1. Ağ perimetresi (firewall, IDS) katmanını kur.\n2. Uygulama katmanı güvenliğini (WAF, auth) ekle.\n3. Veri katmanı şifrelemesini tanımla.\n4. İzleme ve tespit katmanını ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Güvenlik Mimarisi",
+      "name": "Zero Trust Mimari Şablonu",
+      "desc": "Ağ içindeki hiçbir kaynağa varsayılan güvenin olmadığı mimari.",
+      "tags": [
+        "zero trust",
+        "kimlik",
+        "erişim"
+      ],
+      "badge1": "İleri",
+      "content": "## Zero Trust\n1. Her erişim isteğini kimlik doğrulat.\n2. En az ayrıcalık (least privilege) ilkesini uygula.\n3. Micro-segmentation ile ağı böl.\n4. Tüm trafiği logla ve anomali izle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Güvenlik Mimarisi",
+      "name": "Güvenlik Kontrol Matrisi",
+      "desc": "Varlıklar ve tehditleri kontroller ile eşleştiren kapsamlı matris.",
+      "tags": [
+        "matris",
+        "kontrol",
+        "tehdit"
+      ],
+      "badge1": "Orta",
+      "content": "## Kontrol Matrisi\n1. Korunacak varlıkları (veri, sistem) listele.\n2. Her varlığa yönelik tehditleri belirle.\n3. Mevcut kontrolleri karşı hizala.\n4. Açıkları ve önceliklendirmeyi göster.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Savunma Katmanları",
+      "name": "WAF Kural Seti Tasarımı",
+      "desc": "Web uygulama güvenlik duvarı için OWASP tabanlı kural seti.",
+      "tags": [
+        "waf",
+        "owasp",
+        "kural"
+      ],
+      "badge1": "İleri",
+      "content": "## WAF Kural Seti\n1. OWASP Top 10'u temel al.\n2. SQL injection, XSS, CSRF kurallarını etkinleştir.\n3. Rate limiting kuralını ekle.\n4. Whitelist ve blacklist dengesi kur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Savunma Katmanları",
+      "name": "API Gateway Güvenlik Katmanı",
+      "desc": "API'yi kimlik doğrulama, throttling ve input validation ile koruyun.",
+      "tags": [
+        "api gateway",
+        "güvenlik",
+        "throttling"
+      ],
+      "badge1": "Orta",
+      "content": "## API Güvenlik Katmanı\n1. JWT veya OAuth2 kimlik doğrulama ekle.\n2. Rate limiting: IP ve kullanıcı bazlı.\n3. Request payload boyutu ve şema doğrulama.\n4. Yanıt sızıntısını (stack trace) önle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Risk Analizi",
+      "name": "STRIDE Tehdit Modelleme",
+      "desc": "Spoofing, Tampering, Repudiation, DoS tehditlerini sistematik analiz edin.",
+      "tags": [
+        "stride",
+        "tehdit",
+        "modelleme"
+      ],
+      "badge1": "İleri",
+      "content": "## STRIDE Analizi\n1. Sistemi bileşenlere böl.\n2. Her bileşen için 6 STRIDE kategorisini kontrol et.\n3. Her tehdit için etki ve olasılık puanla.\n4. Azaltma kontrollerini önceliklendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Risk Analizi",
+      "name": "CVSSv3 Skor Hesaplama",
+      "desc": "Güvenlik açıklarını CVSSv3 ölçeğiyle standardize şekilde değerlendirin.",
+      "tags": [
+        "cvss",
+        "açık",
+        "skor"
+      ],
+      "badge1": "Orta",
+      "content": "## CVSSv3 Skoru\n1. Temel (Base) ölçüt vektörünü belirle.\n2. Geçici (Temporal) faktörleri ekle.\n3. Çevre (Environmental) modifikasyonlarını uygula.\n4. Sonuç skoru ile önceliklendirme yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Fiziksel Güvenlik",
+      "name": "Veri Merkezi Fiziksel Kontrolleri",
+      "desc": "Sunucu odaları için erişim kontrolü, CCTV ve çevre güvenliği planı.",
+      "tags": [
+        "veri merkezi",
+        "fiziksel",
+        "erişim"
+      ],
+      "badge1": "Orta",
+      "content": "## Fiziksel Güvenlik\n1. Bölge bazlı erişim kontrolü (mantrap, kart).\n2. CCTV kapsamı ve saklama süresini belirle.\n3. Rack kilitleri ve kablo yönetimini planla.\n4. Ziyaretçi kayıt ve refakat protokolünü yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Fiziksel Güvenlik",
+      "name": "Isı ve Yangın Yönetimi",
+      "desc": "Sunucu odası sıcaklık izleme ve yangın söndürme sistemleri.",
+      "tags": [
+        "ısı",
+        "yangın",
+        "veri merkezi"
+      ],
+      "badge1": "Orta",
+      "content": "## Isı-Yangın Yönetimi\n1. Sıcaklık sensörlerini rack üst/alt noktalarına yerleştir.\n2. Soğuk/sıcak koridor ayrımı uygula.\n3. FM-200 veya inert gaz söndürme seç.\n4. Uyarı eşiklerini ve otomatik tepkileri ayarla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Endüstriyel Güvenlik",
+      "name": "ICS/SCADA Ağ Segmentasyonu",
+      "desc": "Endüstriyel kontrol sistemlerini IT ağından izole eden güvenlik mimarisi.",
+      "tags": [
+        "ics",
+        "scada",
+        "segmentasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## ICS/SCADA Güvenlik\n1. IT/OT ağlarını DMZ ile ayır.\n2. Data diode ile tek yönlü veri akışı kur.\n3. SCADA protokollerini (Modbus, DNP3) izole et.\n4. Patch yönetimi için izole test ortamı ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Endüstriyel Güvenlik",
+      "name": "Kritik Altyapı Dayanıklılık Planı",
+      "desc": "Enerji, su, ulaşım sistemleri için felaket kurtarma mimarisi.",
+      "tags": [
+        "kritik altyapı",
+        "felaket",
+        "kurtarma"
+      ],
+      "badge1": "İleri",
+      "content": "## Dayanıklılık Planı\n1. Kritik bileşenleri ve bağımlılıkları haritala.\n2. Tek başarısızlık noktalarını (SPOF) belirle.\n3. Yedeklilik ve failover sürelerini tanımla.\n4. Tatbikat ve test periyodunu planla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Güvenlik Protokolleri",
+      "name": "Olay Müdahale Oyun Kitabı",
+      "desc": "Siber güvenlik olaylarına müdahalede adım adım prosedür.",
+      "tags": [
+        "olay",
+        "müdahale",
+        "playbook"
+      ],
+      "badge1": "Orta",
+      "content": "## Olay Müdahale\n1. Tespit ve sınıflandırma adımını tanımla.\n2. Kontrol altına alma (containment) prosedürünü yaz.\n3. Kök neden analizi adımlarını sırala.\n4. Kurtarma ve öğrenilen dersler aşamasını ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Güvenlik Protokolleri",
+      "name": "Güvenli Haberleşme Protokolü",
+      "desc": "Hassas operasyonlarda şifreli ve doğrulanmış iletişim prosedürü.",
+      "tags": [
+        "şifreleme",
+        "haberleşme",
+        "protokol"
+      ],
+      "badge1": "Orta",
+      "content": "## Güvenli Haberleşme\n1. End-to-end şifreleme aracını belirle.\n2. Kimlik doğrulama yöntemini kur (PGP, Signal).\n3. Anahtar değişim prosedürünü yaz.\n4. Güvenliği ihlal edilmiş kanal için adım ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Risk Analizi",
+      "name": "Üçüncü Taraf Risk Değerlendirme",
+      "desc": "Tedarikçi ve ortakların siber güvenlik risklerini sistematik değerlendirin.",
+      "tags": [
+        "tedarikçi",
+        "üçüncü taraf",
+        "risk"
+      ],
+      "badge1": "Orta",
+      "content": "## Tedarikçi Riski\n1. Kritik tedarikçileri ve erişim düzeylerini listele.\n2. Güvenlik soruları anketi gönder.\n3. Sertifika (SOC2, ISO27001) doğrulamasını yap.\n4. Sözleşmeye güvenlik maddesi ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Savunma Katmanları",
+      "name": "Honeypot ve Aldatma Teknolojisi",
+      "desc": "Saldırganları tespit etmek için sahte varlıklar ve tuzak sistemler kurun.",
+      "tags": [
+        "honeypot",
+        "tuzak",
+        "tespit"
+      ],
+      "badge1": "İleri",
+      "content": "## Honeypot Tasarımı\n1. Gerçekçi görünen sahte varlıklar oluştur.\n2. Erişim girişimlerini kayıt altına al.\n3. Uyarı mekanizmasını kur.\n4. İzolasyon sağlayarak yayılmayı önle.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

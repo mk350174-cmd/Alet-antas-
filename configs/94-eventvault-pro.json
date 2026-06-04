@@ -48,6 +48,293 @@
     "border3": "#322a2a",
     "heroBg": "#120a0a"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Etkinlik Planlama",
+      "name": "Etkinlik Planlama",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Konferans & Kongre",
+      "name": "Konferans & Kongre",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Dijital Etkinlikler",
+      "name": "Dijital Etkinlikler",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Bütçe & Tedarik",
+      "name": "Bütçe & Tedarik",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Pazarlama & Bilet",
+      "name": "Pazarlama & Bilet",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Sonrası & Analitik",
+      "name": "Sonrası & Analitik",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Etkinlik Planlama",
+      "name": "Etkinlik Brief Şablonu",
+      "desc": "Organizasyon öncesi tüm paydaşlarla netleştirilecek etkinlik brief dokümanı.",
+      "tags": [
+        "brief",
+        "planlama",
+        "şablon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Etkinlik Brief\n```markdown\n## Etkinlik Adı:\n## Tarih & Saat:\n## Mekan / Platform:\n## Hedef Kitle: (kaç kişi, hangi profil)\n## Hedefler: (3 somut hedef)\n## Bütçe:\n## Paydaşlar: (sponsor, konuşmacı, yayıncı)\n## Başarı Kriterleri:\n## Kritik Tarihler:\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Etkinlik Planlama",
+      "name": "12 Haftalık Geri Sayım",
+      "desc": "Büyük etkinlik için haftalar bazında görev listesi ve sorumluluk matrisi.",
+      "tags": [
+        "timeline",
+        "geri sayım",
+        "plan"
+      ],
+      "badge1": "Orta",
+      "content": "## 12 Haftalık Plan\n| Hafta | Görevler |\n|-------|---------|\n| 12 | Brief onay, mekan seç, tarih duyur |\n| 10 | Konuşmacı davet, kayıt sistemi aç |\n| 8 | Sponsorlarla anlaş, içerik planı |\n| 6 | Pazarlama kampanyası başlat |\n| 4 | Program kesinleştir, caterer sözleş |\n| 2 | Teknik prova, baskı materyali |\n| 1 | Final briefing, koordinasyon |\n| 0 | Etkinlik günü yönetimi |",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Konferans & Kongre",
+      "name": "Konuşmacı Yönetimi Süreci",
+      "desc": "Davet, sözleşme, brifing ve teknik hazırlık dahil konuşmacı iş akışı.",
+      "tags": [
+        "konuşmacı",
+        "koordinasyon",
+        "brief"
+      ],
+      "badge1": "Orta",
+      "content": "## Konuşmacı Süreci\n1. Davet e-postası: tarih, süre, konu, koşullar.\n2. Kabul sonrası: sözleşme, telif ücreti, seyahat.\n3. 4 hafta önce: sunum başlığı ve özeti.\n4. 2 hafta önce: slayt kontrolü, teknik gereksinim.\n5. Gün öncesi: sahne brifing ve ses-görüntü testi.\n6. Sonrası: teşekkür ve geri bildirim.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Dijital Etkinlikler",
+      "name": "Webinar Platform Karşılaştırması",
+      "desc": "Zoom, Hopin, StreamYard ve Teams'i özellik ve maliyet bazında karşılaştırın.",
+      "tags": [
+        "webinar",
+        "platform",
+        "karşılaştırma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Platform Karşılaştırma\n| Platform | Max Katılımcı | Networking | Fiyat |\n|----------|--------------|------------|-------|\n| Zoom Webinar | 10.000 | Hayır | $400/ay |\n| Hopin | 100.000 | Evet | $99+/ay |\n| StreamYard | Sınırsız yayın | Hayır | $49/ay |\n| Teams Live | 10.000 | Hayır | Microsoft 365 |\n\nHybrid için: in-person + stream platformu birleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Dijital Etkinlikler",
+      "name": "Canlı Yayın Teknik Kontrol Listesi",
+      "desc": "Yayın öncesi ses, görüntü, internet ve yedek sistem kontrolleri.",
+      "tags": [
+        "canlı yayın",
+        "teknik",
+        "kontrol"
+      ],
+      "badge1": "Orta",
+      "content": "## Yayın Öncesi Kontrol\n- [ ] Internet: kablolu bağlantı, min. 10 Mbps yükleme.\n- [ ] Ses: kulaklık mikrofon + yedek mikrofon hazır.\n- [ ] Kamera: ışık yeterli, arka plan düzgün.\n- [ ] OBS/StreamYard: test stream yapıldı.\n- [ ] Yedek akış planı: kesintide ne yapılır.\n- [ ] Moderatör: chat ve soru yönetimi.\n- [ ] Kayıt: yerel + bulut kayıt açık.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Bütçe & Tedarik",
+      "name": "Etkinlik Bütçe Şablonu",
+      "desc": "Mekan, catering, teknik, pazarlama ve personel kalemlerini içeren bütçe çerçevesi.",
+      "tags": [
+        "bütçe",
+        "maliyet",
+        "planlama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Etkinlik Bütçe Kalemleri\n| Kalem | Tahmini | Gerçek |\n|-------|---------|--------|\n| Mekan kirası | | |\n| Catering | | |\n| AV/teknik | | |\n| Konuşmacı ücreti | | |\n| Pazarlama | | |\n| Baskı & tasarım | | |\n| Personel/host | | |\n| Beklenmedik (%10) | | |\n| **TOPLAM** | | |\n\nKural: Bütçenin %10'unu beklenmedik için ayır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Pazarlama & Bilet",
+      "name": "Erken Kuş Bilet Stratejisi",
+      "desc": "Erken satış ile aciliyet ve sosyal kanıt oluşturan biletleme stratejisi.",
+      "tags": [
+        "erken kuş",
+        "bilet",
+        "satış"
+      ],
+      "badge1": "Orta",
+      "content": "## Erken Kuş Stratejisi\n1. Aşama 1 (İlk 100 bilet): %30 indirim → erken benimseyenler.\n2. Aşama 2 (101-300): %15 indirim → standart erken.\n3. Aşama 3 (Tam fiyat): normal fiyat.\n4. Son gün aciliyeti: 'Sadece X bilet kaldı.'\n5. Grup indirimi: 5+ kişi → %10 ek indirim.\n\nPlatform: Eventbrite, Biletix, kendi sitende Stripe.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Pazarlama & Bilet",
+      "name": "Etkinlik E-posta Serisi",
+      "desc": "Duyuru, hatırlatma ve takip dahil etkinlik e-posta kampanya şablonları.",
+      "tags": [
+        "e-posta",
+        "kampanya",
+        "dönüşüm"
+      ],
+      "badge1": "Orta",
+      "content": "## E-posta Serisi\n1. **Duyuru:** 8 hafta önce — tarih, yer, konuşmacılar.\n2. **Early bird kapanıyor:** 6 hafta — son X gün.\n3. **Program açıklandı:** 4 hafta — detaylı program.\n4. **Hatırlatma:** 1 hafta — lojistik bilgiler.\n5. **Son gün:** 24 saat öncesi — son çağrı.\n6. **Teşekkür + kayıt:** etkinlik sonrası 24 saat.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Sonrası & Analitik",
+      "name": "Etkinlik ROI Hesabı",
+      "desc": "Etkinliğin gelir, maliyet ve marka değeri açısından geri dönüşünü ölçün.",
+      "tags": [
+        "ROI",
+        "analitik",
+        "ölçüm"
+      ],
+      "badge1": "İleri",
+      "content": "## Etkinlik ROI\nROI = (Kazanılan - Harcanan) / Harcanan × 100\n\nKazanılan:\n- Bilet geliri\n- Sponsor katkısı\n- Üretilen fırsat değeri (pipeline)\n\nKalitatif değer:\n- Basın görünürlüğü\n- Topluluk büyümesi\n- Net Promoter Score\n\nHedef: en az 3:1 ROI (3₺ değer / 1₺ harcama).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Sonrası & Analitik",
+      "name": "Katılımcı Geri Bildirim Anketi",
+      "desc": "Net Promoter Score ve içerik kalitesini ölçen etkinlik sonrası anket şablonu.",
+      "tags": [
+        "anket",
+        "NPS",
+        "geri bildirim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Etkinlik Sonrası Anket\n1. NPS: '0-10 arası bu etkinliği tavsiye eder misiniz?'\n2. İçerik kalitesi: 1-5 puan.\n3. Organizasyon kalitesi: 1-5 puan.\n4. En beğendiğiniz oturum?\n5. Geliştirmemizi istediğiniz?\n6. Hangi konularda etkinlik görmek istersiniz?\n\nSüre: max 3 dakika. Yanıt oranı için teşvik sun (kuponlar, kayıtlar).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Konferans & Kongre",
+      "name": "Networking Alanı Tasarımı",
+      "desc": "Katılımcıların organik bağlantı kurmasını kolaylaştıran mekan ve aktivite tasarımı.",
+      "tags": [
+        "networking",
+        "mekan",
+        "bağlantı"
+      ],
+      "badge1": "Orta",
+      "content": "## Networking Tasarımı\n1. Oturma düzeni: yuvarlak masalar → grup sohbeti.\n2. Ice-breaker: katılımcı rozetlerine bir 'süper güç' etiketi.\n3. Speed networking: 5 dakika, çan, yer değiştir.\n4. Dijital: etkinlik uygulaması → profil eşleştirme.\n5. Ortak alan: kahve noktası etrafında doğal akış.\n6. Facilitated intro: ev sahibi çiftler oluşturur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Etkinlik Planlama",
+      "name": "Kriz Yönetimi Planı",
+      "desc": "Mekan iptali, teknik arıza ve güvenlik sorunları için etkinlik kriz protokolü.",
+      "tags": [
+        "kriz",
+        "plan B",
+        "güvenlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Kriz Senaryoları\n| Senaryo | Plan B |\n|---------|--------|\n| Mekan iptal | Yedek mekan listesi hazır |\n| Konuşmacı gelmez | Video link veya yedek konuşmacı |\n| İnternet kesilir | Hotspot + offline içerik |\n| Yangın/tahliye | Acil çıkış brifing, toplanma noktası |\n| Düşük katılım | Katılımcıları ön sıralara topla |\n\nKriz iletişim sorumlusu tek kişi belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Dijital Etkinlikler",
+      "name": "Hibrit Etkinlik Tasarımı",
+      "desc": "Fiziksel ve çevrimiçi katılımcılar için eşit deneyim sunan hibrit format.",
+      "tags": [
+        "hibrit",
+        "online",
+        "fiziksel"
+      ],
+      "badge1": "İleri",
+      "content": "## Hibrit Tasarım İlkeleri\n1. Online-first: Her karar uzak katılımcıyı önce düşün.\n2. Eşit etkileşim: Soru-cevap hem fiziksel hem chat'ten.\n3. Dedicated host: Online katılımcılar için ayrı moderatör.\n4. Networking: Breakout rooms online, fiziksel masalar offline.\n5. İçerik: Kamera açıları sunum ekranını ve salonun tepkisini yansıtsın.\n6. Kayıt: Tüm oturumları kaydet → VOD.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Bütçe & Tedarik",
+      "name": "Tedarikçi Değerlendirme Rubriği",
+      "desc": "Catering, AV ve dekor tedarikçilerini karşılaştırmak için puanlama formu.",
+      "tags": [
+        "tedarikçi",
+        "değerlendirme",
+        "seçim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tedarikçi Rubriği\n| Kriter | Ağırlık | Puanlar |\n|--------|---------|----------|\n| Fiyat | %30 | 1-5 |\n| Referans | %25 | 1-5 |\n| Esneklik | %20 | 1-5 |\n| İletişim hızı | %15 | 1-5 |\n| Sürdürülebilirlik | %10 | 1-5 |\n\nAğırlıklı puan hesapla; en az 2 teklif karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Pazarlama & Bilet",
+      "name": "Sosyal Medya Etkinlik Kampanyası",
+      "desc": "Etkinlik öncesi, sırasında ve sonrasında sosyal medya içerik takvimi.",
+      "tags": [
+        "sosyal medya",
+        "kampanya",
+        "içerik"
+      ],
+      "badge1": "Orta",
+      "content": "## Sosyal Medya Takvimi\n**Öncesi:**\n- 8 hafta: Tarih duyurusu + countdown\n- 4 hafta: Konuşmacı spotlight serisi\n- 1 hafta: Katılımcı hikayesi/teaser\n\n**Sırasında:**\n- Canlı tweet/story\n- Alıntı kartları (quote graphics)\n- Sahne arkası stories\n\n**Sonrası:**\n- Öne çıkan anlar\n- Topluluk teşekkür postu\n- Kayıt ve fotoğraf paylaşımı",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

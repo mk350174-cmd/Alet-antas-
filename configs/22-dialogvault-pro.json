@@ -48,6 +48,293 @@
     "border3": "#2a342e",
     "heroBg": "#0a140e"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Diyalog Ağaçları",
+      "name": "Diyalog Ağaçları",
+      "color": "#5ed47e"
+    },
+    {
+      "id": "Bağlamsal Tepkiler",
+      "name": "Bağlamsal Tepkiler",
+      "color": "#43b86a"
+    },
+    {
+      "id": "JSON Şablonları",
+      "name": "JSON Şablonları",
+      "color": "#7ee89a"
+    },
+    {
+      "id": "Karakter Sesi",
+      "name": "Karakter Sesi",
+      "color": "#36a85c"
+    },
+    {
+      "id": "Dallanma Mantığı",
+      "name": "Dallanma Mantığı",
+      "color": "#9ff0b3"
+    },
+    {
+      "id": "Duygu Sistemleri",
+      "name": "Duygu Sistemleri",
+      "color": "#2f9450"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Diyalog Ağaçları",
+      "name": "Temel Diyalog Ağacı İskeleti",
+      "desc": "NPC için kök düğüm, dallar ve yaprak yanıtlardan oluşan ağaç yapısı kurun.",
+      "tags": [
+        "ağaç",
+        "düğüm",
+        "iskelet"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Diyalog Ağacı İskeleti\n1. Kök düğümü (selamlama) tanımla.\n2. Her düğüme `id`, `text`, `choices[]` alanları ekle.\n3. Choices içinde `next` ile hedef düğüm id'sini bağla.\n4. Yaprak düğümlere `end:true` koyarak konuşmayı sonlandır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Diyalog Ağaçları",
+      "name": "Geri Dönüşlü Konuşma Döngüleri",
+      "desc": "Oyuncunun ana menüye dönebildiği döngüsel diyalog yapıları tasarlayın.",
+      "tags": [
+        "döngü",
+        "menü",
+        "navigasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Döngüsel Diyalog\n1. Bir `hub` düğümü belirle (tüm konular buraya döner).\n2. Alt konuları hub'a `back` seçeneğiyle bağla.\n3. Ziyaret edilen düğümleri `visited[]` ile işaretle.\n4. Tükenmiş seçenekleri gri/pasif göster.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Diyalog Ağaçları",
+      "name": "Koşullu Düğüm Kilitleri",
+      "desc": "Belirli koşullar sağlanmadan açılmayan diyalog dallarını planlayın.",
+      "tags": [
+        "koşul",
+        "kilit",
+        "flag"
+      ],
+      "badge1": "İleri",
+      "content": "## Koşullu Kilitler\n1. Düğüme `requires` alanı ekle (örn: `hasKey`, `level>=5`).\n2. Koşul sağlanmazsa seçeneği gizle veya kilitli göster.\n3. Oyuncu durumunu merkezi `gameState` objesinden oku.\n4. Kilit açıldığında küçük bir ipucu metni sun.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Bağlamsal Tepkiler",
+      "name": "Zaman Duyarlı Selamlamalar",
+      "desc": "Oyun içi saate göre değişen NPC karşılama replikleri üretin.",
+      "tags": [
+        "zaman",
+        "selamlama",
+        "bağlam"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Zamana Duyarlı Replik\n1. `timeOfDay` değişkenini (sabah/öğle/akşam/gece) oku.\n2. Her dilim için ayrı selamlama dizisi tanımla.\n3. Rastgele varyasyonla tekrarı azalt.\n4. Özel günlerde (bayram) override repliği ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Bağlamsal Tepkiler",
+      "name": "İlişki Seviyesine Göre Ton",
+      "desc": "Oyuncuyla NPC arasındaki güven puanına göre konuşma tonunu değiştirin.",
+      "tags": [
+        "ilişki",
+        "ton",
+        "güven"
+      ],
+      "badge1": "Orta",
+      "content": "## İlişkiye Bağlı Ton\n1. `affinity` puanını 0-100 aralığında tut.\n2. Düşük/orta/yüksek için üç ton seti yaz (soğuk, nötr, sıcak).\n3. Eşik geçişlerinde kısa bir tepki cümlesi tetikle.\n4. Hakaret/iyilik eylemleriyle puanı güncelle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Bağlamsal Tepkiler",
+      "name": "Çevresel Olay Yorumları",
+      "desc": "Yakın çevrede olan olaylara NPC'nin anlık tepki vermesini sağlayın.",
+      "tags": [
+        "olay",
+        "tepki",
+        "çevre"
+      ],
+      "badge1": "İleri",
+      "content": "## Çevresel Yorum\n1. `nearbyEvents[]` listesini her tick'te kontrol et.\n2. Yangın, savaş, hava durumu için tepki şablonları hazırla.\n3. En yüksek öncelikli olayı seç ve bark (anlık replik) bas.\n4. Tekrarı önlemek için 30 sn cooldown uygula.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "JSON Şablonları",
+      "name": "Standart Diyalog JSON Şeması",
+      "desc": "Motor bağımsız, taşınabilir bir diyalog JSON şeması tanımlayın.",
+      "tags": [
+        "json",
+        "şema",
+        "standart"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Diyalog JSON Şeması\n```json\n{\"id\":\"npc_01\",\"nodes\":[{\"id\":1,\"speaker\":\"Demirci\",\"text\":\"...\",\"choices\":[{\"text\":\"Evet\",\"next\":2}]}]}\n```\n1. `speaker`, `text`, `choices` zorunlu.\n2. `next` null ise konuşma biter.\n3. `flags` ile yan etki tetikle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "JSON Şablonları",
+      "name": "Lokalizasyon Anahtarlı Çıktı",
+      "desc": "Metinleri çeviri anahtarlarıyla ayıran çok dilli JSON yapısı.",
+      "tags": [
+        "lokalizasyon",
+        "çeviri",
+        "i18n"
+      ],
+      "badge1": "Orta",
+      "content": "## Lokalize JSON\n1. `text` yerine `textKey` kullan (örn: `npc01.greet`).\n2. Gerçek metni ayrı `tr.json`/`en.json` dosyasında tut.\n3. Çalışma anında aktif dile göre anahtarı çöz.\n4. Eksik anahtarları fallback dil ile doldur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "JSON Şablonları",
+      "name": "Sesli Replik Metadata'sı",
+      "desc": "Her repliğe ses dosyası ve dudak senkronu verisi bağlayan şema.",
+      "tags": [
+        "ses",
+        "metadata",
+        "lipsync"
+      ],
+      "badge1": "İleri",
+      "content": "## Ses Metadata\n1. Düğüme `audioClip` ve `duration` alanları ekle.\n2. `lipsyncData` için viseme zaman damgaları tut.\n3. Altyazı zamanlamasını `duration` ile eşle.\n4. Ses yoksa metni varsayılan hızda göster.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Karakter Sesi",
+      "name": "Arketip Bazlı Konuşma Stili",
+      "desc": "Bilge, palyaço, asker gibi arketiplere özgü kelime dağarcığı oluşturun.",
+      "tags": [
+        "arketip",
+        "stil",
+        "ses"
+      ],
+      "badge1": "Orta",
+      "content": "## Arketip Sesi\n1. Karaktere bir arketip ata (bilge/asker/tüccar).\n2. Her arketip için 10 imza kelime/deyim belirle.\n3. Cümle uzunluğu ve resmiyet seviyesini ayarla.\n4. Repliklere arketip filtresi uygulayarak tutarlılık sağla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Karakter Sesi",
+      "name": "Lehçe ve Aksan İşaretleri",
+      "desc": "Bölgesel karakterler için yazımda aksan yansıtan metin kuralları.",
+      "tags": [
+        "lehçe",
+        "aksan",
+        "bölge"
+      ],
+      "badge1": "İleri",
+      "content": "## Lehçe Yansıtma\n1. Karakterin geldiği bölgeyi belirle.\n2. Birkaç fonetik kural tanımla (örn: 'geliyorum'→'geliyom').\n3. Aşırıya kaçmadan 2-3 imza değişiklik uygula.\n4. Okunabilirliği test et, gerekirse yumuşat.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Dallanma Mantığı",
+      "name": "Sonuç Odaklı Seçim Ağırlıkları",
+      "desc": "Oyuncu seçimlerinin uzun vadeli sonuçlara bağlandığı ağırlık sistemi.",
+      "tags": [
+        "seçim",
+        "ağırlık",
+        "sonuç"
+      ],
+      "badge1": "İleri",
+      "content": "## Seçim Ağırlığı\n1. Her seçime `weight` ve `consequence` etiketi ver.\n2. Seçimleri `decisionLog[]` içinde biriktir.\n3. Belirli eşiklerde hikaye dalını değiştir.\n4. Finalde log'a göre uygun sonu seç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Dallanma Mantığı",
+      "name": "Zaman Baskılı Diyalog",
+      "desc": "Oyuncunun sınırlı sürede yanıt vermesi gereken gergin sahneler kurun.",
+      "tags": [
+        "zaman",
+        "baskı",
+        "gerilim"
+      ],
+      "badge1": "Orta",
+      "content": "## Zaman Baskısı\n1. Seçim ekranına `timer` (örn: 5 sn) ekle.\n2. Süre dolarsa varsayılan/sessizlik dalına geç.\n3. Geri sayımı görsel bir çubukla göster.\n4. Sonucu `timedOut:true` ile işaretleyip sahneyi etkile.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Duygu Sistemleri",
+      "name": "NPC Ruh Hali Makinesi",
+      "desc": "Mutlu, kızgın, korkmuş durumları arası geçiş yapan durum makinesi.",
+      "tags": [
+        "ruh hali",
+        "fsm",
+        "duygu"
+      ],
+      "badge1": "İleri",
+      "content": "## Ruh Hali FSM\n1. Durumları tanımla: sakin, tedirgin, öfkeli, neşeli.\n2. Geçiş tetikleyicilerini belirle (tehdit→tedirgin).\n3. Her duruma özel replik havuzu bağla.\n4. Zamanla nötr duruma geri dönüş (decay) ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Duygu Sistemleri",
+      "name": "Hafıza Tabanlı Sitem",
+      "desc": "Geçmiş oyuncu davranışlarını hatırlayıp dile getiren NPC hafızası.",
+      "tags": [
+        "hafıza",
+        "geçmiş",
+        "sitem"
+      ],
+      "badge1": "İleri",
+      "content": "## Hafıza ve Sitem\n1. Önemli oyuncu eylemlerini `memories[]` içinde sakla.\n2. Her hafızaya duygu etiketi ve tarih ekle.\n3. İlgili bağlamda hafızayı çağırıp replik üret.\n4. Eski hafızaların etkisini zamanla azalt.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

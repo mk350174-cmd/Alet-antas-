@@ -48,6 +48,276 @@
     "border3": "#2a3232",
     "heroBg": "#0a1212"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Görev Otomasyonu",
+      "name": "Görev Otomasyonu",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "Workflow Araçları",
+      "name": "Workflow Araçları",
+      "color": "#3ab8b8"
+    },
+    {
+      "id": "E-posta Otomasyonu",
+      "name": "E-posta Otomasyonu",
+      "color": "#5dd8d8"
+    },
+    {
+      "id": "Dosya & Veri",
+      "name": "Dosya & Veri",
+      "color": "#2aa8a8"
+    },
+    {
+      "id": "API & Entegrasyon",
+      "name": "API & Entegrasyon",
+      "color": "#7de3e3"
+    },
+    {
+      "id": "AI Otomasyon",
+      "name": "AI Otomasyon",
+      "color": "#1a9898"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Workflow Araçları",
+      "name": "n8n ile Otomasyon",
+      "desc": "n8n no-code/low-code workflow aracı ile servisleri birleştirme.",
+      "tags": [
+        "n8n",
+        "workflow",
+        "no-code"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## n8n Kurulum\n```bash\n# Docker ile\ndocker run -it --rm \\\n  -p 5678:5678 \\\n  -v ~/.n8n:/home/node/.n8n \\\n  n8nio/n8n\n# Arayüz: localhost:5678\n```\nTemel workflow:\n1. Trigger → (Webhook/Schedule/Manual)\n2. HTTP Request → API çağrısı\n3. Function → Veri dönüşümü\n4. Gmail/Slack/Notion → Çıktı\n\nÖrnek: Yeni Airtable kaydı → Slack bildirimi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Workflow Araçları",
+      "name": "Make (Integromat) Kullanımı",
+      "desc": "Make platformunda tetikleyici, modül ve hata yönetimi ile otomasyon senaryosu.",
+      "tags": [
+        "Make",
+        "integromat",
+        "otomasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Make Temel Senaryosu\n1. Senaryo oluştur → + Modül ekle.\n2. Trigger: 'Webhook' veya 'Google Sheets - Watch rows'.\n3. Aksiyon modülü: 'Gmail - Send an email'.\n4. Mapping: Sheets sütununu email alanına bağla.\n5. Hata yönetimi: Error handler modülü ekle.\n6. Zamanlama: 15 dakika → run.\n\nÜcretsiz: 1000 operasyon/ay.\nÖrnek: Form dolu → Trello kart + e-posta.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Görev Otomasyonu",
+      "name": "Python ile Dosya İzleme",
+      "desc": "Watchdog kütüphanesi ile dosya değişikliklerini izleyerek otomatik işlem başlatın.",
+      "tags": [
+        "watchdog",
+        "dosya izleme",
+        "Python"
+      ],
+      "badge1": "Orta",
+      "content": "## Watchdog ile Dosya İzleme\n```python\nfrom watchdog.observers import Observer\nfrom watchdog.events import FileSystemEventHandler\nimport time\n\nclass AutoHandler(FileSystemEventHandler):\n    def on_created(self, event):\n        if event.src_path.endswith('.csv'):\n            print(f'Yeni CSV: {event.src_path}')\n            process_csv(event.src_path)\n    \n    def on_modified(self, event):\n        if not event.is_directory:\n            print(f'Değişti: {event.src_path}')\n\nobserver = Observer()\nobserver.schedule(AutoHandler(), '/watched/folder', recursive=True)\nobserver.start()\ntry:\n    while True: time.sleep(1)\nfinally:\n    observer.stop()\n    observer.join()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Görev Otomasyonu",
+      "name": "Playwright ile UI Otomasyonu",
+      "desc": "Playwright ile web tarayıcısını kontrol ederek tekrarlayan web görevlerini otomatize edin.",
+      "tags": [
+        "Playwright",
+        "tarayıcı",
+        "UI"
+      ],
+      "badge1": "Orta",
+      "content": "## Playwright Otomasyon\n```python\nfrom playwright.sync_api import sync_playwright\n\nwith sync_playwright() as p:\n    browser = p.chromium.launch(headless=True)\n    page = browser.new_page()\n    \n    page.goto('https://example.com/login')\n    page.fill('#email', 'user@example.com')\n    page.fill('#password', 'secret')\n    page.click('button[type=submit]')\n    page.wait_for_url('**/dashboard')\n    \n    # Veri çek\n    items = page.query_selector_all('.item')\n    for item in items:\n        print(item.inner_text())\n    \n    page.screenshot(path='screenshot.png')\n    browser.close()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "E-posta Otomasyonu",
+      "name": "Gmail API ile E-posta Okuma",
+      "desc": "Google Gmail API kullanarak e-postaları filtreleme, okuma ve etiketleme.",
+      "tags": [
+        "Gmail",
+        "API",
+        "e-posta"
+      ],
+      "badge1": "Orta",
+      "content": "## Gmail API\n```python\nfrom googleapiclient.discovery import build\nfrom google.oauth2.credentials import Credentials\n\ncreds = Credentials.from_authorized_user_file('token.json')\nservice = build('gmail', 'v1', credentials=creds)\n\n# Belirli mesajları listele\nresults = service.users().messages().list(\n    userId='me',\n    q='from:sender@example.com is:unread'\n).execute()\n\nmessages = results.get('messages', [])\nfor msg in messages:\n    detail = service.users().messages().get(\n        userId='me', id=msg['id']).execute()\n    subject = next(h['value'] for h in detail['payload']['headers']\n                   if h['name'] == 'Subject')\n    print(subject)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dosya & Veri",
+      "name": "Excel Otomasyonu (openpyxl)",
+      "desc": "openpyxl ile Excel dosyalarını oluşturma, güncelleme ve raporlama.",
+      "tags": [
+        "Excel",
+        "openpyxl",
+        "rapor"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## openpyxl Kullanımı\n```python\nimport openpyxl\nfrom openpyxl.styles import Font, PatternFill, Alignment\n\n# Rapor oluştur\nwb = openpyxl.Workbook()\nws = wb.active\nws.title = 'Satış Raporu'\n\n# Başlık stili\nheader_style = Font(bold=True, color='FFFFFF')\nfill = PatternFill('solid', fgColor='366092')\n\nfor col, header in enumerate(['Ürün', 'Adet', 'Tutar'], 1):\n    cell = ws.cell(1, col, header)\n    cell.font = header_style\n    cell.fill = fill\n\n# Veri\ndata = [('Widget', 100, 9999), ('Gadget', 50, 4999)]\nfor row, (prod, qty, price) in enumerate(data, 2):\n    ws.append([prod, qty, price])\n\nwb.save('rapor.xlsx')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "API & Entegrasyon",
+      "name": "Zapier Webhook Entegrasyonu",
+      "desc": "Zapier webhook trigger ile özel uygulamadan Zapier zinciri tetikleme.",
+      "tags": [
+        "Zapier",
+        "webhook",
+        "trigger"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Zapier Webhook\n```python\nimport requests\n\nZAPIER_WEBHOOK = 'https://hooks.zapier.com/hooks/catch/xxx/yyy/'\n\ndef trigger_zapier(event_type, data):\n    payload = {\n        'event': event_type,\n        'timestamp': datetime.utcnow().isoformat(),\n        **data\n    }\n    response = requests.post(ZAPIER_WEBHOOK, json=payload)\n    return response.status_code == 200\n\n# Kullanım: Yeni kullanıcı kaydında tetikle\ntrigger_zapier('new_signup', {\n    'email': user.email,\n    'name': user.name,\n    'plan': 'starter'\n})\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "API & Entegrasyon",
+      "name": "Slack Bot Mesaj Gönderme",
+      "desc": "Slack Web API ile kanal mesajı, blok kit ve etkileşimli buton gönderme.",
+      "tags": [
+        "Slack",
+        "bot",
+        "bildirim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Slack Mesajı\n```python\nfrom slack_sdk import WebClient\n\nclient = WebClient(token=SLACK_BOT_TOKEN)\n\n# Basit mesaj\nclient.chat_postMessage(\n    channel='#alerts',\n    text='Deploy başarıyla tamamlandı!'\n)\n\n# Block kit ile zengin mesaj\nclient.chat_postMessage(\n    channel='#deploys',\n    blocks=[\n        {'type': 'header', 'text': {'type': 'plain_text', 'text': '🚀 Deploy Başarılı'}},\n        {'type': 'section', 'fields': [\n            {'type': 'mrkdwn', 'text': '*Ortam:*\\nProduction'},\n            {'type': 'mrkdwn', 'text': '*Sürüm:*\\nv1.2.0'},\n        ]}\n    ]\n)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "AI Otomasyon",
+      "name": "Claude API ile Belge Özetleme",
+      "desc": "Anthropic API kullanarak büyük belgeleri otomatik özetleyen pipeline.",
+      "tags": [
+        "Claude",
+        "API",
+        "özetleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Belge Özetleme Pipeline\n```python\nimport anthropic\n\nclient = anthropic.Anthropic()\n\ndef summarize_document(text: str, max_length: int = 500) -> str:\n    message = client.messages.create(\n        model='claude-sonnet-4-6',\n        max_tokens=max_length,\n        messages=[{\n            'role': 'user',\n            'content': f'Aşağıdaki belgeyi Türkçe olarak 3-5 cümleyle özetle:\\n\\n{text[:4000]}'\n        }]\n    )\n    return message.content[0].text\n\n# Dosya işleme\nfor pdf_path in Path('docs').glob('*.txt'):\n    text = pdf_path.read_text()\n    summary = summarize_document(text)\n    print(f'{pdf_path.name}:\\n{summary}\\n')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "AI Otomasyon",
+      "name": "LLM ile Veri Etiketleme",
+      "desc": "Claude API ile büyük veri setlerini otomatik sınıflandırma ve etiketleme.",
+      "tags": [
+        "etiketleme",
+        "sınıflandırma",
+        "AI"
+      ],
+      "badge1": "İleri",
+      "content": "## Otomatik Etiketleme\n```python\nimport anthropic, json\nclient = anthropic.Anthropic()\n\nSYSTEM = '''Müşteri geri bildirimlerini şu kategorilere sınıflandır:\nKATEGORİLER: teknik_sorun, fiyat_şikayeti, teşekkür, öneri, diğer\nYanıt formatı: {\"category\": \"...\", \"confidence\": 0.9}'''\n\ndef classify(feedback: str) -> dict:\n    msg = client.messages.create(\n        model='claude-sonnet-4-6',\n        max_tokens=100,\n        system=SYSTEM,\n        messages=[{'role': 'user', 'content': feedback}]\n    )\n    return json.loads(msg.content[0].text)\n\nresults = [classify(fb) for fb in feedbacks]\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Görev Otomasyonu",
+      "name": "APScheduler ile Zamanlanmış Görev",
+      "desc": "APScheduler ile cron, interval ve date tabanlı Python görev zamanlayıcı.",
+      "tags": [
+        "APScheduler",
+        "zamanlama",
+        "görev"
+      ],
+      "badge1": "Orta",
+      "content": "## APScheduler\n```python\nfrom apscheduler.schedulers.background import BackgroundScheduler\nfrom apscheduler.triggers.cron import CronTrigger\n\nscheduler = BackgroundScheduler()\n\n# Her gün sabah 9'da\nscheduler.add_job(\n    send_daily_report,\n    CronTrigger(hour=9, minute=0),\n    id='daily_report'\n)\n\n# Her 5 dakikada\nscheduler.add_job(\n    check_health,\n    'interval', minutes=5,\n    id='health_check'\n)\n\nscheduler.start()\n# ... uygulama çalışır ...\nscheduler.shutdown()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Dosya & Veri",
+      "name": "PDF İşleme Otomasyonu",
+      "desc": "pdfplumber ve PyPDF2 ile PDF'ten metin, tablo ve metadata çıkarma.",
+      "tags": [
+        "PDF",
+        "pdfplumber",
+        "tablo"
+      ],
+      "badge1": "Orta",
+      "content": "## PDF İşleme\n```python\nimport pdfplumber\n\nwith pdfplumber.open('fatura.pdf') as pdf:\n    for page in pdf.pages:\n        # Metin\n        text = page.extract_text()\n        \n        # Tablo\n        tables = page.extract_tables()\n        for table in tables:\n            for row in table:\n                print(row)\n        \n        # Belirli alan\n        crop = page.crop((0, 0, 300, 200))  # x0,y0,x1,y1\n        print(crop.extract_text())\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "E-posta Otomasyonu",
+      "name": "E-posta Template Motoru",
+      "desc": "Jinja2 ile kişiselleştirilmiş HTML e-posta şablonları ve toplu gönderim.",
+      "tags": [
+        "Jinja2",
+        "HTML e-posta",
+        "şablon"
+      ],
+      "badge1": "Orta",
+      "content": "## HTML E-posta Şablonu\n```python\nfrom jinja2 import Template\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\n\ntpl = Template('''\n<html><body>\n<h2>Merhaba {{ name }},</h2>\n<p>{{ message }}</p>\n</body></html>\n''')\n\nfor recipient in recipients:\n    html = tpl.render(name=recipient['name'], message=recipient['msg'])\n    msg = MIMEMultipart('alternative')\n    msg['Subject'] = f\"Kişisel: {recipient['name']}\"\n    msg['From'] = SENDER\n    msg['To'] = recipient['email']\n    msg.attach(MIMEText(html, 'html'))\n    # smtp.sendmail(...)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Workflow Araçları",
+      "name": "Airflow DAG Şablonu",
+      "desc": "Apache Airflow ile veri pipeline'ı tanımlayan DAG yazma şablonu.",
+      "tags": [
+        "Airflow",
+        "DAG",
+        "pipeline"
+      ],
+      "badge1": "İleri",
+      "content": "## Airflow DAG\n```python\nfrom airflow import DAG\nfrom airflow.operators.python import PythonOperator\nfrom datetime import datetime, timedelta\n\ndef extract(): ...\ndef transform(**context):\n    data = context['ti'].xcom_pull(task_ids='extract')\n    return processed_data\ndef load(**context): ...\n\nwith DAG(\n    'etl_pipeline',\n    schedule='0 2 * * *',\n    start_date=datetime(2026, 1, 1),\n    catchup=False,\n    default_args={'retries': 2, 'retry_delay': timedelta(minutes=5)}\n) as dag:\n    t1 = PythonOperator(task_id='extract', python_callable=extract)\n    t2 = PythonOperator(task_id='transform', python_callable=transform)\n    t3 = PythonOperator(task_id='load', python_callable=load)\n    t1 >> t2 >> t3\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }

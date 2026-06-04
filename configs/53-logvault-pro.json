@@ -48,6 +48,293 @@
     "border3": "#2a2c32",
     "heroBg": "#0a0c12"
   },
-  "categories": [],
-  "items": []
+  "categories": [
+    {
+      "id": "Log Toplama",
+      "name": "Log Toplama",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Anomali Tespiti",
+      "name": "Anomali Tespiti",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Log İşleme",
+      "name": "Log İşleme",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Uyarı Kuralları",
+      "name": "Uyarı Kuralları",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Log Mimarisi",
+      "name": "Log Mimarisi",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Görselleştirme",
+      "name": "Görselleştirme",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Log Toplama",
+      "name": "Fluentd/Fluent Bit Konfigürasyonu",
+      "desc": "Container log'larını merkezi sisteme iletmek için Fluent Bit kurulumu.",
+      "tags": [
+        "fluentd",
+        "fluent bit",
+        "toplama"
+      ],
+      "badge1": "Orta",
+      "content": "## Fluent Bit\n```ini\n[INPUT]\n  Name   tail\n  Path   /var/log/app/*.log\n  Tag    app.*\n\n[OUTPUT]\n  Name   elasticsearch\n  Host   es-host\n  Port   9200\n  Index  app-logs\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Log Toplama",
+      "name": "Yapılandırılmış Log Şeması",
+      "desc": "JSON formatında tutarlı ve aranabilir log kayıtları oluşturun.",
+      "tags": [
+        "json",
+        "yapılandırılmış",
+        "şema"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Structured Log\n```json\n{\"timestamp\":\"2024-01-01T10:00:00Z\",\n \"level\":\"ERROR\",\n \"service\":\"api\",\n \"trace_id\":\"abc123\",\n \"message\":\"DB bağlantı hatası\",\n \"error\":{\"code\":\"CONN_REFUSED\",\"host\":\"db:5432\"}}\n```\nDaima trace_id ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Log Toplama",
+      "name": "Syslog Merkezi Toplama",
+      "desc": "Linux syslog'larını rsyslog ile merkezi sunucuya yönlendirin.",
+      "tags": [
+        "syslog",
+        "rsyslog",
+        "merkezi"
+      ],
+      "badge1": "Orta",
+      "content": "## rsyslog Yönlendirme\n```\n# /etc/rsyslog.d/remote.conf\n*.* @@logserver.internal:514  # TCP\n*.* @logserver.internal:514   # UDP\n```\nLogserver'da alma konfigürasyonu:\n```\nmodload('imtcp')\nInputTCPServerRun 514\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Anomali Tespiti",
+      "name": "Hata Oranı Spike Tespiti",
+      "desc": "Belirli zaman penceresinde hata oranı artışını tespit eden kural.",
+      "tags": [
+        "spike",
+        "hata oranı",
+        "tespit"
+      ],
+      "badge1": "Orta",
+      "content": "## Hata Spike Kuralı\n1. 5 dakikalık kayan pencerede hata sayısını say.\n2. Son 1 saatin ortalamasıyla karşılaştır.\n3. 3× üzeri sapmada uyarı tetikle.\n4. Uyarıyı servise ve zaman dilimine göre grupla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Anomali Tespiti",
+      "name": "Yavaş Sorgu Tespiti",
+      "desc": "Veritabanı ve API log'larından yavaş işlemleri otomatik ayıklayın.",
+      "tags": [
+        "yavaş sorgu",
+        "latency",
+        "tespit"
+      ],
+      "badge1": "Orta",
+      "content": "## Yavaş Sorgu\n```python\n# ElasticSearch query\n{\"query\":{\"bool\":{\"filter\":[\n  {\"range\":{\"duration_ms\":{\"gt\":1000}}},\n  {\"range\":{\"@timestamp\":{\"gte\":\"now-15m\"}}}\n]}}}\n```\nSlowlog'u da etkinleştir (MySQL slow_query_log).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Anomali Tespiti",
+      "name": "İstatistiksel Anomali Skoru",
+      "desc": "Z-skoru ile beklenen değerden sapan log metriklerini işaretleyin.",
+      "tags": [
+        "z-skoru",
+        "istatistik",
+        "anomali"
+      ],
+      "badge1": "İleri",
+      "content": "## Z-Skoru Anomali\n```python\nimport numpy as np\ndef anomali_skoru(veri, pencere=60):\n    ort = np.mean(veri[-pencere:])\n    std = np.std(veri[-pencere:])\n    if std == 0: return 0\n    return abs((veri[-1] - ort) / std)\n# z > 3 ise anomali\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Log İşleme",
+      "name": "Grok Pattern ile Parse",
+      "desc": "Logstash/OpenSearch'te Grok pattern ile yapılandırılmamış log parse.",
+      "tags": [
+        "grok",
+        "logstash",
+        "parse"
+      ],
+      "badge1": "Orta",
+      "content": "## Grok Pattern\n```\n# Apache log\n%{COMBINEDAPACHELOG}\n# Özel\n%{TIMESTAMP_ISO8601:zaman} %{LOGLEVEL:seviye} %{GREEDYDATA:mesaj}\n```\nGrok Debugger ile test et: kibana dev tools veya grokdebugger.io",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Log İşleme",
+      "name": "Log Sampling Stratejisi",
+      "desc": "Yüksek hacimli log'ları maliyet için örnekleyerek azaltın.",
+      "tags": [
+        "sampling",
+        "hacim",
+        "maliyet"
+      ],
+      "badge1": "İleri",
+      "content": "## Log Sampling\n1. Hata ve uyarıları %100 al.\n2. Başarılı request'leri %10 örnekle.\n3. Debug log'ları yalnızca hata ayıklama sırasında etkinleştir.\n4. Trace ID ile örnekleme tutarlılığını koru.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Log İşleme",
+      "name": "Log Maskeleme ve PII Gizleme",
+      "desc": "Kişisel verilerin log'lara sızmasını önleyen maskeleme kuralları.",
+      "tags": [
+        "pii",
+        "maskeleme",
+        "gizlilik"
+      ],
+      "badge1": "İleri",
+      "content": "## PII Maskeleme\n1. Regex ile e-posta, telefon, kredi kartı tespiti.\n2. Loglamadan önce değeri mask ile değiştir: `***`.\n3. Hash'leme ile aynı değeri gizli ama izlenebilir tut.\n4. Maskeleme kütüphanelerini ara katmana ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Uyarı Kuralları",
+      "name": "Prometheus Alertmanager Kuralı",
+      "desc": "Log metriklerine dayalı Prometheus uyarı kuralı şablonu.",
+      "tags": [
+        "prometheus",
+        "alertmanager",
+        "kural"
+      ],
+      "badge1": "Orta",
+      "content": "## Alert Kuralı\n```yaml\ngroups:\n- name: api\n  rules:\n  - alert: YuksekHataOrani\n    expr: |\n      rate(http_requests_total{status=~\"5..\"}[5m])\n      / rate(http_requests_total[5m]) > 0.05\n    for: 2m\n    labels: {severity: critical}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Uyarı Kuralları",
+      "name": "Uyarı Yorgunluğu Yönetimi",
+      "desc": "Çok fazla uyarının dikkati dağıtmasını önleyen gruplama ve throttling.",
+      "tags": [
+        "uyarı yorgunluğu",
+        "gruplama",
+        "throttling"
+      ],
+      "badge1": "İleri",
+      "content": "## Uyarı Yorgunluğu\n1. Benzer uyarıları servis+ortam bazında grupla.\n2. Yoğun saatlerde benzer uyarıları bastır.\n3. Kritik olmayan uyarıları iş saatlerine yönlendir.\n4. Her uyarıya runbook bağlantısı ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Log Mimarisi",
+      "name": "ELK Stack Hızlı Kurulum",
+      "desc": "Elasticsearch, Logstash, Kibana'yı docker-compose ile çalıştırın.",
+      "tags": [
+        "elk",
+        "elasticsearch",
+        "kibana"
+      ],
+      "badge1": "Orta",
+      "content": "## ELK docker-compose\n```yaml\nservices:\n  elasticsearch:\n    image: elasticsearch:8.12.0\n    environment: [discovery.type=single-node]\n  kibana:\n    image: kibana:8.12.0\n    ports: [\"5601:5601\"]\n  logstash:\n    image: logstash:8.12.0\n    volumes: [./pipeline:/usr/share/logstash/pipeline]\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Log Mimarisi",
+      "name": "Log Saklama ve TTL Politikası",
+      "desc": "Farklı log seviyelerini farklı sürelerde saklayan retention politikası.",
+      "tags": [
+        "saklama",
+        "ttl",
+        "politika"
+      ],
+      "badge1": "Orta",
+      "content": "## Retention Politikası\n1. Error/Critical: 12 ay (compliance gerekebilir).\n2. Warning/Info: 30 gün.\n3. Debug: 7 gün.\n4. ILM (Index Lifecycle Management) ile otomatik yönet.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Görselleştirme",
+      "name": "Kibana Dashboard Şablonu",
+      "desc": "Error rate, latency dağılımı ve volume trendlerini gösteren panel.",
+      "tags": [
+        "kibana",
+        "dashboard",
+        "görselleştirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Dashboard Paneller\n1. HTTP status dağılımı: pie chart.\n2. Request/s trendi: line chart, 1h window.\n3. P50/P95/P99 latency: line chart.\n4. Top 10 hata mesajı: data table.\n5. Geo IP dağılımı: harita.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Görselleştirme",
+      "name": "Grafana Log Panel Konfigürasyonu",
+      "desc": "Loki log kaynağını Grafana ile görselleştiren panel yapılandırması.",
+      "tags": [
+        "grafana",
+        "loki",
+        "panel"
+      ],
+      "badge1": "Orta",
+      "content": "## Grafana + Loki\n```logql\n# Hata logları sayısı\nsum(count_over_time({app=\"api\"} |= \"ERROR\" [5m]))\n# Unique trace ID'ler\ncount(distinct_over_time({app=\"api\"} | logfmt | trace_id [1h]))\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
 }
