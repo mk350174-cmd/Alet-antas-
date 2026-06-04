@@ -1,0 +1,323 @@
+{
+  "slug": "73-funnelvault-pro",
+  "title": "FunnelVault Pro — Verimlilik & Otomasyon",
+  "metaDescription": "Satış hunisi tasarımı ve kullanıcı yolculuğu (customer journey) haritalama.",
+  "metaKeywords": [
+    "Funnel",
+    "FunnelVault Pro",
+    "Verimlilik & Otomasyon",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Satış hunisi tasarımı ve kullanıcı yolculuğu (customer journey) haritalama.",
+  "heroCorner": "F",
+  "heroEyebrow": "Verimlilik & Otomasyon · Alet Çantası",
+  "heroTitleHTML": "Funnel<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Funnel<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "FunnelVault Pro · Verimlilik & Otomasyon",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Funnel ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "funnelvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "productivity",
+  "categoryLabel": "Verimlilik & Otomasyon",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4cc9c9",
+    "primary2": "#4cc9c9",
+    "primaryDim": "#4cc9c915",
+    "primaryGlow": "#4cc9c930",
+    "primaryDark": "#2eabab",
+    "accent": "#5ed47e",
+    "accent2": "#5ed47e",
+    "accentDim": "#5ed47e18",
+    "accentGlow": "#5ed47e30",
+    "bg": "#060e0e",
+    "bg2": "#0a1212",
+    "bg3": "#0e1616",
+    "bg4": "#121a1a",
+    "border": "#161e1e",
+    "border2": "#1e2626",
+    "border3": "#2a3232",
+    "heroBg": "#0a1212"
+  },
+  "categories": [
+    {
+      "id": "yapilar",
+      "name": "Huni Yapıları",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "trafik",
+      "name": "Trafik Kaynakları",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "kursun",
+      "name": "Kurşun Mıknatıs",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "email-seq",
+      "name": "E-posta Dizileri",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "optimizasyon",
+      "name": "Huni Optimizasyonu",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "araclar",
+      "name": "Araçlar & Platformlar",
+      "color": "#4cc9c9"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "yapilar",
+      "name": "Klasik 4 Aşamalı Huni",
+      "desc": "TOFU / MOFU / BOFU / Sadakat aşamaları.",
+      "tags": [
+        "AIDA",
+        "huni",
+        "4 aşama"
+      ],
+      "badge1": "Temel",
+      "content": "**4 Aşamalı Huni:** Farkındalık (TOFU): içerik, reklam, SEO → trafik. İlgi (MOFU): lead magnet, webinar → e-posta listesi. Karar (BOFU): teklif sayfası, demo → satış. Sadakat: onboarding, upsell → tekrar satış. Her aşamada farklı KPI: trafik, liste büyümesi, dönüşüm, LTV. Zayıf halka hangisi?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "yapilar",
+      "name": "Tripwire Huni Modeli",
+      "desc": "Düşük fiyatlı ön ürünle müşteri kazanma.",
+      "tags": [
+        "tripwire",
+        "ön ürün",
+        "müşteri"
+      ],
+      "badge1": "Gelir",
+      "content": "**Tripwire Modeli:** Lead magnet (ücretsiz) → Tripwire (9-47₺ mini ürün) → Core offer (ana ürün) → Upsell (premium). Tripwire amacı kâr değil müşteri ilişkisi. Satın alan = güvenen. Core offer'a geçiş: 10-20%. Otomatik e-posta dizisiyle yönet. Stripe + ClickFunnels veya Gumroad.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "trafik",
+      "name": "Organik vs Ücretli Trafik Dengesi",
+      "desc": "İkisini birlikte kullanan sürdürülebilir strateji.",
+      "tags": [
+        "organik",
+        "ücretli",
+        "denge"
+      ],
+      "badge1": "Strateji",
+      "content": "**Trafik Dengesi:** Başlangıç (<6 ay): ücretli reklam + organik liste büyütme. Orta (6-18 ay): SEO/içerik devreye giriyor. Uzun vade: organik > ücretli. Ücretli: hızlı sonuç, durdursan biter. Organik: yavaş ama kalıcı. İdeal: ücretli ile test et, kazananı organikle ölçeklendir. Asla tek kaynağa bağımlı olma.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "kursun",
+      "name": "Lead Magnet Tasarım Formülü",
+      "desc": "Dönüşüm oranı yüksek ücretsiz içerik nasıl yapılır.",
+      "tags": [
+        "lead magnet",
+        "ücretsiz",
+        "opt-in"
+      ],
+      "badge1": "Temel",
+      "content": "**Lead Magnet Kriterleri:** Tek bir spesifik problemi çözmeli. 5-15 dakikada tüketilmeli. Anında değer vermeli. Core offer'a köprü oluşturmalı. Format: PDF kontrol listesi > uzun e-kitap. Başlık: 'X Adımda Y Sonucu' formatı. Test et: 2 başlık A/B. %40+ opt-in oranı hedefle (spesifik trafik için).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "kursun",
+      "name": "Webinar Hunisi",
+      "desc": "Canlı veya evergreen webinar ile yüksek biletli satış.",
+      "tags": [
+        "webinar",
+        "canlı",
+        "satış"
+      ],
+      "badge1": "Güçlü",
+      "content": "**Webinar Hunisi:** Kayıt sayfası → Onay + hatırlatma e-postası → Webinar (60-90 dk: değer + pitch) → Replay + teklif e-postası. Pitch yapısı: son 20 dakika, teklifi göster. Dönüşüm: %5-20 (sıcak kitle). Evergreen: kaydedilmiş webinar, otomasyon ile. Yüksek biletli ürünler (1000₺+) için ideal.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "email-seq",
+      "name": "Hoş Geldin Dizisi (7 E-posta)",
+      "desc": "Yeni abonenin güvenini inşa eden ilk 7 e-posta.",
+      "tags": [
+        "hoş geldin",
+        "dizi",
+        "onboarding"
+      ],
+      "badge1": "Kritik",
+      "content": "**7 E-posta Dizisi:** 1. gün: teşekkür + lead magnet teslim. 2. gün: kim olduğun hikayesi. 3. gün: değerli içerik (öğretici). 4. gün: sosyal kanıt (başarı hikayesi). 5. gün: en büyük hata (eğitim). 6. gün: sık sorulan soru yanıtı. 7. gün: yumuşak satış (teklif). Açılma oranı: ilk e-posta %60+, 7. günde %30+.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "email-seq",
+      "name": "Terkedilen Sepet Dizisi",
+      "desc": "Checkout'u bırakanlara 72 saatlik kurtarma serisi.",
+      "tags": [
+        "sepet terk",
+        "recovery",
+        "dizi"
+      ],
+      "badge1": "Gelir",
+      "content": "**Sepet Kurtarma:** E-posta 1 (1 saat): 'Bir şey unuttun!' + ürün + buton. E-posta 2 (24 saat): özellikler + müşteri yorumu. E-posta 3 (48 saat): soru sor 'Tereddüt neydi?' E-posta 4 (72 saat): son şans + %10 kupon. Kurtarma oranı: %10-15. Klaviyo veya ActiveCampaign ile kur. Kişiselleştir: ürün adını ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "optimizasyon",
+      "name": "Huni Darboğaz Analizi",
+      "desc": "Hangi adımda kullanıcı kaybettiğini tespit et.",
+      "tags": [
+        "darboğaz",
+        "analiz",
+        "optimizasyon"
+      ],
+      "badge1": "Temel",
+      "content": "**Darboğaz Tespiti:** Her huni adımını ölç: trafik → opt-in (hedef %40) → satış sayfası (hedef %3-5) → checkout (hedef %70). En kötü oranı bul — orası darboğaz. Fikir: A/B test başlık, CTA rengi, kısa vs uzun form. Heatmap (Hotjar): kullanıcı nerede durdu? Günde 100 ziyaretçi yoksa reklam değil dönüşüm test et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "optimizasyon",
+      "name": "Tek Değişken A/B Testi",
+      "desc": "Huni sayfalarında doğru A/B test metodolojisi.",
+      "tags": [
+        "A/B test",
+        "değişken",
+        "veri"
+      ],
+      "badge1": "Metodoloji",
+      "content": "**A/B Test Kuralı:** Aynı anda yalnızca 1 değişken test et (başlık veya görsel, ikisi birden değil). Anlamlı sonuç için min 100 dönüşüm/varyant. Test süresi: 2 hafta (hafta içi/sonu farkını kapsamak için). Kazananı yürürlüğe koy. Sonra yeni test. Yıllık 24 test = büyük birikim. Aceleyle test geçersiz veri üretir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "araclar",
+      "name": "ClickFunnels vs Kartra vs Systeme.io",
+      "desc": "Huni platformu seçimi: özellik ve fiyat karşılaştırması.",
+      "tags": [
+        "platform",
+        "karşılaştırma",
+        "seçim"
+      ],
+      "badge1": "Araç",
+      "content": "**Platform Karşılaştırma:** ClickFunnels: en yaygın, $97-297/ay. Kartra: hepsi bir arada, $99+/ay. Systeme.io: ücretsiz plan var, en ucuz. Türkiye önerisi: Systeme.io (ücretsiz) başlangıç için yeterli. Büyüyünce Kartra'ya geç. Araçlar fikri yerine geçmez — önce huni stratejini netleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "araclar",
+      "name": "Stripe + Gumroad ile Dijital Satış",
+      "desc": "Dijital ürün satmak için en kolay ödeme kurulumu.",
+      "tags": [
+        "stripe",
+        "gumroad",
+        "ödeme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "**Dijital Ürün Ödeme:** Gumroad: en kolay, anında başla. Komisyon %10 + 30¢. Türk kartları için iyzico entegrasyonu. Stripe: daha düşük komisyon (%2.9), kurulum gerektiriyor. Gumroad başlangıç için ideal: link paylaş, ödeme al, indirme linki otomatik gönder. İlk 10 satıştan sonra Stripe'a geç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "yapilar",
+      "name": "Ücretsiz Deneme Hunisi",
+      "desc": "SaaS modeli için deneme → ödeme dönüşüm sistemi.",
+      "tags": [
+        "freemium",
+        "deneme",
+        "SaaS"
+      ],
+      "badge1": "SaaS",
+      "content": "**Deneme Hunisi:** Kayıt (ücretsiz, kredi kartı yok) → Onboarding e-postası dizisi (7-14 gün) → Değer aktivasyonu anı ('Aha moment') → Upgrade teklifi → Ücretli plan. Deneme → ödeme oranı: %15-25 hedef. Onboarding kritik: kullanıcı değeri görmeden ödeme yapmaz. In-app mesaj + e-posta kombinasyonu en etkili.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "trafik",
+      "name": "SEO ile Ücretsiz Huni Trafiği",
+      "desc": "Long-tail anahtar kelimelerle nitelikli ziyaretçi çek.",
+      "tags": [
+        "SEO",
+        "organik",
+        "long-tail"
+      ],
+      "badge1": "Uzun Vade",
+      "content": "**SEO ile Huni Trafiği:** TOFU: 'X nasıl yapılır' — farkındalık içeriği. MOFU: '[ürün tipi] karşılaştırma' — değerlendirme. BOFU: '[marka] inceleme' + '[ürün] satın al' — satın alma niyeti. Long-tail: hacim düşük ama niyet yüksek → dönüşüm yüksek. Blog → iç link → lead magnet → dizi. 6-12 ay sabır gerekli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "email-seq",
+      "name": "Re-engagement Kampanyası",
+      "desc": "6 aydan uzun süredir açmayan aboneleri geri kazan.",
+      "tags": [
+        "re-engagement",
+        "uyku",
+        "temizlik"
+      ],
+      "badge1": "Liste Bakımı",
+      "content": "**Geri Kazanım Kampanyası:** 6 ay açmayan abonelere: E-posta 1: 'Hâlâ orada mısın?' + güçlü değer öneri. E-posta 2 (3 gün): 'Özledik + küçük hediye.' E-posta 3 (7 gün): 'Bu son e-postamız olabilir.' Yanıtsızları listeden çıkar. Temiz liste = yüksek açılma oranı = daha iyi deliverability = daha fazla satış.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "slug": "11-synthvault-pro",
+  "title": "SynthVault Pro — AI & Prompt Mühendisliği",
+  "metaDescription": "Özel veri setleri oluşturmak için sentetik veri üretimi otomasyon şablonları.",
+  "metaKeywords": [
+    "Synth",
+    "SynthVault Pro",
+    "AI & Prompt Mühendisliği",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Özel veri setleri oluşturmak için sentetik veri üretimi otomasyon şablonları.",
+  "heroCorner": "S",
+  "heroEyebrow": "AI & Prompt Mühendisliği · Alet Çantası",
+  "heroTitleHTML": "Synth<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Synth<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "SynthVault Pro · AI & Prompt Mühendisliği",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Synth ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "synthvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "ai",
+  "categoryLabel": "AI & Prompt Mühendisliği",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#a375ff",
+    "primary2": "#a375ff",
+    "primaryDim": "#a375ff15",
+    "primaryGlow": "#a375ff30",
+    "primaryDark": "#8557e1",
+    "accent": "#ff6b9d",
+    "accent2": "#ff6b9d",
+    "accentDim": "#ff6b9d18",
+    "accentGlow": "#ff6b9d30",
+    "bg": "#08060e",
+    "bg2": "#0c0a12",
+    "bg3": "#100e16",
+    "bg4": "#14121a",
+    "border": "#18161e",
+    "border2": "#201e26",
+    "border3": "#2c2a32",
+    "heroBg": "#0c0a12"
+  },
+  "categories": [
+    {
+      "id": "Veri Üretimi",
+      "name": "Veri Üretimi",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Metin Üretimi",
+      "name": "Metin Üretimi",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Görüntü Üretimi",
+      "name": "Görüntü Üretimi",
+      "color": "#FF9800"
+    },
+    {
+      "id": "Kod Üretimi",
+      "name": "Kod Üretimi",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Prompt Optimizasyonu",
+      "name": "Prompt Optimizasyonu",
+      "color": "#F44336"
+    },
+    {
+      "id": "Sentetik Veri Analizi",
+      "name": "Sentetik Veri Analizi",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Veri Üretimi",
+      "name": "Tablosal Veri Oluşturucu",
+      "desc": "Yapılandırılmış tablo verileri üretin.",
+      "tags": [
+        "tablo",
+        "yapısal",
+        "sentetik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tablosal Sentetik Veri Üretimi\n1. Veri yapısını (sütun adları, veri tipleri) tanımlayın.\n2. Örnek bir satır oluşturun veya kurallar belirleyin.\n3. İstediğiniz satır sayısını girin ve AI'dan üretmesini isteyin.\nBu şablon, makine öğrenimi modelleri için sentetik veri kümeleri oluşturmada etkilidir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Veri Üretimi",
+      "name": "Sınıflandırma Veri Üretici",
+      "desc": "Sınıflandırma görevleri için etiketli veriler üretin.",
+      "tags": [
+        "sınıflandırma",
+        "etiketli",
+        "veri kümesi"
+      ],
+      "badge1": "Orta",
+      "content": "## Sınıflandırma İçin Sentetik Veri\n1. Sınıfları ve özelliklerini tanımlayın.\n2. Her sınıf için örnekler ve karşı örnekler belirleyin.\n3. AI'ya bu kurallara göre veri üretmesini söyleyin.\nModel eğitimi için dengeli ve çeşitli veri setleri sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Veri Üretimi",
+      "name": "Zaman Serisi Veri Oluşturucu",
+      "desc": "Zaman serisi analizi için sentetik veriler.",
+      "tags": [
+        "zaman serisi",
+        "analiz",
+        "trend"
+      ],
+      "badge1": "Orta",
+      "content": "## Zaman Serisi Sentetik Veri\n1. Temel trend, mevsimsellik ve gürültüyü tanımlayın.\n2. Başlangıç ve bitiş zamanlarını belirleyin.\n3. AI'dan bu parametrelerle zaman serisi verisi üretmesini isteyin.\nPeriyodik desenleri ve anormallikleri simüle eder.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Metin Üretimi",
+      "name": "Ürün Açıklaması Şablonu",
+      "desc": "Çekici ürün açıklamaları oluşturun.",
+      "tags": [
+        "metin",
+        "ürün",
+        "pazarlama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ürün Açıklaması Üretici\n1. Ürün adı, temel özellikleri ve hedef kitleyi girin.\n2. Vurgulanacak ana faydaları belirtin.\n3. AI'dan bu bilgilere dayanarak ikna edici bir açıklama yazmasını isteyin.\nE-ticaret siteleri için optimize edilmiş metinler sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Metin Üretimi",
+      "name": "Blog Yazısı Taslağı Oluşturucu",
+      "desc": "İlgi çekici blog yazıları için taslaklar.",
+      "tags": [
+        "blog",
+        "içerik",
+        "taslak"
+      ],
+      "badge1": "Orta",
+      "content": "## Blog Yazısı Taslağı Oluşturma\n1. Konu, anahtar kelimeler ve hedef kitleyi girin.\n2. Yazının ana bölümlerini (giriş, gelişme, sonuç) belirtin.\n3. AI'dan bu yapıya uygun bir taslak oluşturmasını isteyin.\nİçerik üretim sürecini hızlandırır, fikir verir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Metin Üretimi",
+      "name": "Sosyal Medya Gönderi Metni",
+      "desc": "Etkileşimli sosyal medya gönderileri oluşturun.",
+      "tags": [
+        "sosyal medya",
+        "metin",
+        "etkileşim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sosyal Medya Gönderi Metinleri\n1. Platform (Twitter, Instagram vb.) ve konu başlığını girin.\n2. Hedef kitleyi ve istenen tonu belirtin.\n3. AI'dan platforma uygun, ilgi çekici bir gönderi metni yazmasını isteyin.\nMarka bilinirliğini ve etkileşimi artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Metin Üretimi",
+      "name": "Hikaye Başlangıcı Üretici",
+      "desc": "Yaratıcı hikaye başlangıçları için fikirler.",
+      "tags": [
+        "hikaye",
+        "yaratıcı",
+        "yazma"
+      ],
+      "badge1": "Orta",
+      "content": "## Yaratıcı Hikaye Başlangıçları\n1. Tür (fantastik, bilim kurgu vb.) ve ana karakteri tanımlayın.\n2. Başlangıçta yer alacak bir olay örgüsü unsuru ekleyin.\n3. AI'dan bu unsurları içeren ilgi çekici bir başlangıç yazmasını isteyin.\nYazarlar için ilham kaynağı olur, kurguyu tetikler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Görüntü Üretimi",
+      "name": "Soyut Sanat Görüntü Oluşturucu",
+      "desc": "Benzersiz soyut sanat eserleri üretin.",
+      "tags": [
+        "görüntü",
+        "sanat",
+        "soyut"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Soyut Sanat Üretimi\n1. Renk paleti, stil (minimalist, ekspresyonist vb.) ve kompozisyonu tanımlayın.\n2. Eklemek istediğiniz dokuları veya formları belirtin.\n3. AI'dan bu girdilere göre bir görüntü oluşturmasını isteyin.\nDijital sanat projeleri için özgün görseller sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Görüntü Üretimi",
+      "name": "Karakter Tasarımcı",
+      "desc": "Oyun ve animasyon için karakter tasarımları.",
+      "tags": [
+        "görüntü",
+        "karakter",
+        "tasarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Tasarımı Üretici\n1. Karakterin türü (insan, canavar vb.), özellikleri ve giysilerini tanımlayın.\n2. İstenen sanat stilini (çizgi film, gerçekçi vb.) belirtin.\n3. AI'dan bu detaylara uygun bir karakter görseli oluşturmasını isteyin.\nProjelere özel karakterler yaratmak için kullanılır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Görüntü Üretimi",
+      "name": "Mekân Konsept Sanatı",
+      "desc": "Fütüristik veya fantastik mekânlar için konsept sanatı.",
+      "tags": [
+        "görüntü",
+        "mekân",
+        "konsept"
+      ],
+      "badge1": "Orta",
+      "content": "## Mekân Konsept Sanatı Oluşturma\n1. Mekânın türünü (şehir, orman, uzay istasyonu vb.) ve atmosferini tanımlayın.\n2. Aydınlatma koşullarını ve renk şemasını belirtin.\n3. AI'dan bu girdilerle detaylı bir mekân görseli üretmesini isteyin.\nOyunlar ve filmler için görselleştirme sunar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Kod Üretimi",
+      "name": "Python Fonksiyon Üretici",
+      "desc": "Belirli görevler için Python fonksiyonları yazın.",
+      "tags": [
+        "kod",
+        "python",
+        "fonksiyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Python Fonksiyon Üretici\n1. Fonksiyonun amacını ve alacağı parametreleri tanımlayın.\n2. Fonksiyonun ne döndüreceğini belirtin.\n3. AI'dan bu gereksinimlere uygun Python kodunu üretmesini isteyin.\nTekrarlayan kodlama görevlerini otomatikleştirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Kod Üretimi",
+      "name": "SQL Sorgu Oluşturucu",
+      "desc": "Veritabanı sorguları için SQL kodları üretin.",
+      "tags": [
+        "kod",
+        "sql",
+        "veritabanı"
+      ],
+      "badge1": "Orta",
+      "content": "## SQL Sorgu Oluşturucu\n1. Veritabanı tablosunu ve istenen veriyi tanımlayın.\n2. Filtreleme, sıralama veya gruplama kriterlerini belirtin.\n3. AI'dan bu gereksinimlere uygun SQL sorgusunu üretmesini isteyin.\nVeri çekme ve manipülasyonunu kolaylaştırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Kod Üretimi",
+      "name": "API İstek Şablonu",
+      "desc": "Farklı API'ler için istek kodları oluşturun.",
+      "tags": [
+        "kod",
+        "api",
+        "istek"
+      ],
+      "badge1": "Orta",
+      "content": "## API İstek Kod Üretici\n1. Kullanılacak API endpoint'ini ve HTTP metodunu (GET, POST vb.) girin.\n2. Gerekli başlıkları (headers) ve gövde verilerini (body) tanımlayın.\n3. AI'dan bu parametrelerle bir kod parçacığı (örn. Python `requests`) üretmesini isteyin.\nAPI entegrasyonlarını hızlandırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Detaylı Prompt Oluşturucu",
+      "desc": "AI modelleri için daha etkili prompt'lar tasarlayın.",
+      "tags": [
+        "prompt",
+        "optimizasyon",
+        "metin"
+      ],
+      "badge1": "Orta",
+      "content": "## Detaylı Prompt Tasarım Aracı\n1. Hedef çıktıyı ve AI modelini belirtin.\n2. İstediğiniz tonu, formatı ve kısıtlamaları ekleyin.\n3. AI'dan bu girdilere göre daha spesifik ve yönlendirici bir prompt oluşturmasını isteyin.\nDaha doğru ve istenen sonuçları almanızı sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Negatif Prompt Üretici",
+      "desc": "İstenmeyen sonuçları engellemek için negatif prompt'lar.",
+      "tags": [
+        "prompt",
+        "negatif",
+        "görüntü"
+      ],
+      "badge1": "Orta",
+      "content": "## Negatif Prompt Oluşturucu\n1. İstenmeyen öğeleri veya stilleri listeleyin.\n2. Görüntü üretimi için (örn. 'kötü anatomi', 'bulanık').\n3. AI'dan bu girdilere göre etkili bir negatif prompt oluşturmasını isteyin.\nGörüntü kalitesini ve doğruluğunu artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Prompt Optimizasyonu",
+      "name": "Prompt Zincirleme Sihirbazı",
+      "desc": "Karmaşık görevler için çok adımlı prompt'lar.",
+      "tags": [
+        "prompt",
+        "zincirleme",
+        "karmaşık"
+      ],
+      "badge1": "İleri",
+      "content": "## Prompt Zincirleme Sihirbazı\n1. Tamamlanması gereken ana görevi ve ara adımları tanımlayın.\n2. Her adım için girdi ve çıktı beklentilerini belirleyin.\n3. AI'dan bu adımları birbirine bağlayan bir prompt zinciri oluşturmasını isteyin.\nKarmaşık süreçleri AI ile yönetmeyi sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Sentetik Veri Analizi",
+      "name": "Veri Kalitesi Değerlendirici",
+      "desc": "Üretilen sentetik verinin kalitesini kontrol edin.",
+      "tags": [
+        "veri",
+        "analiz",
+        "kalite"
+      ],
+      "badge1": "Orta",
+      "content": "## Sentetik Veri Kalite Kontrolü\n1. Üretilen veri setini ve beklenen istatistikleri girin.\n2. Tutarlılık, doğruluk ve çeşitlilik açısından kontrol edin.\n3. AI'dan olası sorunları ve iyileştirme önerilerini raporlamasını isteyin.\nVeri setlerinin güvenilirliğini artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Sentetik Veri Analizi",
+      "name": "Model Performans Simülatörü",
+      "desc": "Sentetik verilerle model performansını tahmin edin.",
+      "tags": [
+        "veri",
+        "model",
+        "performans"
+      ],
+      "badge1": "İleri",
+      "content": "## Model Performans Simülasyonu\n1. Kullanılacak ML modelini ve sentetik veri özelliklerini tanımlayın.\n2. Başarı metriklerini (doğruluk, F1 vb.) belirtin.\n3. AI'dan sentetik veri setindeki potansiyel model performansını tahmin etmesini isteyin.\nModel geliştirmeden önce fizibilite analizi yapar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Veri Üretimi",
+      "name": "Metin Veri Zenginleştirici",
+      "desc": "Mevcut metin verilerini çeşitlendirin.",
+      "tags": [
+        "metin",
+        "veri",
+        "zenginleştirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Metin Veri Zenginleştirme\n1. Orijinal metin verisini ve eklenmesini istediğiniz varyasyonları girin.\n2. Eşanlamlı kelime kullanımı, cümle yapısı değişikliği gibi.\n3. AI'dan bu kriterlere göre metni yeniden yazmasını veya genişletmesini isteyin.\nNLP modellerinin genelleme yeteneğini artırır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Görüntü Üretimi",
+      "name": "Stil Transferi Uygulayıcı",
+      "desc": "Bir görüntünün stilini diğerine uygulayın.",
+      "tags": [
+        "görüntü",
+        "stil",
+        "transfer"
+      ],
+      "badge1": "İleri",
+      "content": "## Görüntü Stil Transferi\n1. İçerik ve stil görüntüsünü yükleyin veya tanımlayın.\n2. Transferin yoğunluğunu ayarlayın.\n3. AI'dan stil görüntüsünün özelliklerini içerik görüntüsüne aktarmasını isteyin.\nSanatsal ve özgün görseller yaratır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 21,
+      "no": "021",
+      "cat": "Kod Üretimi",
+      "name": "Regex Desen Oluşturucu",
+      "desc": "Metin eşleştirme için RegEx desenleri üretin.",
+      "tags": [
+        "kod",
+        "regex",
+        "metin"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Regex Desen Üretici\n1. Eşleştirilecek metin türünü veya deseni tanımlayın.\n2. İstenen karmaşıklık seviyesini belirtin.\n3. AI'dan bu gereksinimlere uygun bir RegEx ifadesi oluşturmasını isteyin.\nMetin işleme ve doğrulama görevlerini basitleştirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

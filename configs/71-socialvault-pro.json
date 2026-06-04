@@ -1,0 +1,323 @@
+{
+  "slug": "71-socialvault-pro",
+  "title": "SocialVault Pro — Verimlilik & Otomasyon",
+  "metaDescription": "Sosyal medya algoritma analizleri ve etkileşim artırıcı içerik kancaları (hooks).",
+  "metaKeywords": [
+    "Social",
+    "SocialVault Pro",
+    "Verimlilik & Otomasyon",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Sosyal medya algoritma analizleri ve etkileşim artırıcı içerik kancaları (hooks).",
+  "heroCorner": "S",
+  "heroEyebrow": "Verimlilik & Otomasyon · Alet Çantası",
+  "heroTitleHTML": "Social<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Social<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "SocialVault Pro · Verimlilik & Otomasyon",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Social ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "socialvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "productivity",
+  "categoryLabel": "Verimlilik & Otomasyon",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4cc9c9",
+    "primary2": "#4cc9c9",
+    "primaryDim": "#4cc9c915",
+    "primaryGlow": "#4cc9c930",
+    "primaryDark": "#2eabab",
+    "accent": "#5ed47e",
+    "accent2": "#5ed47e",
+    "accentDim": "#5ed47e18",
+    "accentGlow": "#5ed47e30",
+    "bg": "#060e0e",
+    "bg2": "#0a1212",
+    "bg3": "#0e1616",
+    "bg4": "#121a1a",
+    "border": "#161e1e",
+    "border2": "#1e2626",
+    "border3": "#2a3232",
+    "heroBg": "#0a1212"
+  },
+  "categories": [
+    {
+      "id": "strateji",
+      "name": "İçerik Stratejisi",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "twitter",
+      "name": "X / Twitter",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "analiz",
+      "name": "Analitik",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "buyume",
+      "name": "Büyüme Taktikleri",
+      "color": "#4cc9c9"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "strateji",
+      "name": "İçerik Sütunları Belirleme",
+      "desc": "3-5 konu odağı belirleyerek hesabına tutarlılık ver.",
+      "tags": [
+        "sütun",
+        "konu",
+        "strateji"
+      ],
+      "badge1": "Temel",
+      "content": "**İçerik Sütunları:** Hesabın için 3-5 temel konu belirle. Örnek bir danışman için: ipucu/öğretici + kişisel hikaye + sektör haberleri + müşteri başarısı. Her içerik bu sütunlardan birine girmeli. Rastgele içerik = rastgele takipçi. Tutarlı sütunlar = doğru kitle çeker.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "strateji",
+      "name": "İçerik Takvimi Hazırlama",
+      "desc": "Aylık içerik takvimi ile önceden planlama yap.",
+      "tags": [
+        "takvim",
+        "plan",
+        "aylık"
+      ],
+      "badge1": "Organizasyon",
+      "content": "**İçerik Takvimi:** Ayda 1 kez 2 saat: tüm içerikleri planla. Araç: Notion, Trello veya Google Sheets. Sütunlar: Tarih | Platform | Format | Konu | Durum. Toplu içerik üretimi: benzer içerikleri aynı günde yaz. Buffer/Later ile önceden zamanla. Planlı içerik kalitesi planlanmamıştan 3× yüksek.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "instagram",
+      "name": "Reels Algoritması Formülü",
+      "desc": "İzleme süresini artıran Reels yapı taşları.",
+      "tags": [
+        "reels",
+        "algoritma",
+        "video"
+      ],
+      "badge1": "Kritik",
+      "content": "**Reels Yapısı:** İlk 3 saniye: dikkat çekici hook ('Bunu bilmiyor olabilirsin...'). Orta: değer/eğlence/şok. Son: CTA ('Kaydet' veya 'Yorum yaz'). Süre: 7-15 saniye en iyi performans. Altyazı ekle (sesten bağımsız izleniyor). Kapak görseli profiline uygun. Haftada 3-5 Reels algoritma patlamasını tetikler.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "instagram",
+      "name": "Carousel Post Yapısı",
+      "desc": "Kaydırmalı gönderilerde bilgi sunmanın formülü.",
+      "tags": [
+        "carousel",
+        "kaydırma",
+        "eğitim"
+      ],
+      "badge1": "Etkileşim",
+      "content": "**Carousel Formülü:** Slayt 1: dikkat çekici başlık + hook. Slayt 2-9: her slayt 1 fikir, az metin, görsel ağırlıklı. Son slayt: CTA + kaydet isteği. İpucu: 'Tüm liste için kaydedin' → kaydetme oranı artar. Kaydetme = algoritma sinyali. 10 slayt ideal uzunluk.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "linkedin",
+      "name": "LinkedIn Kanca Yazma Sanatı",
+      "desc": "İlk satır açılmadan 'Daha fazla gör' ile durduran hook.",
+      "tags": [
+        "hook",
+        "kanca",
+        "açılma"
+      ],
+      "badge1": "Temel",
+      "content": "**LinkedIn Hook:** İlk satır her şey — merak, istatistik, karşı sezgisel fikir veya kişisel hikaye. Örnekler: '5 yıl önce şirketi battı. Bugün milyoner.' / '%80 uzaktan çalışan bu hatayı yapıyor.' / 'Kovuldum ve hayatımın en iyi şeyiydi.' Uzun paragraf değil tek satır. 'Daha fazla gör' tıklaması etkileşim sayılır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "linkedin",
+      "name": "LinkedIn Profil Optimizasyonu",
+      "desc": "Başlık, özet ve deneyim alanı için en iyi pratikler.",
+      "tags": [
+        "profil",
+        "başlık",
+        "SEO"
+      ],
+      "badge1": "Profil",
+      "content": "**Profil Optimizasyonu:** Başlık: unvan değil değer önerisi + keyword. Özet: kim yardım edersin + nasıl + kanıt. Deneyim: madde madde başarı + rakam. Öne çıkan: en iyi içerik veya portfolyo. Anahtar kelimeler: uzmanlık alanını koy (arama'da bulunmak için). Profil fotoğrafı profesyonel. Arka plan görseli markan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "twitter",
+      "name": "Tweet Thread Yazma Rehberi",
+      "desc": "Viral thread yapısı ve içerik akışı.",
+      "tags": [
+        "thread",
+        "twitter",
+        "viral"
+      ],
+      "badge1": "Viral",
+      "content": "**Thread Yapısı:** Tweet 1: büyük vaad ('X adımda Y öğrendim'). Tweet 2-9: her tweet 1 fikir, merak bırak. Son tweet: özet + CTA (takip et / RT). Numarala: '1/', '2/'... Görseller ekle (etkileşim +2×). Thread takip kazanır. 280 karakter kuralı: her tweet bağımsız anlaşılmalı ama sıradakini merak ettirmeli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "twitter",
+      "name": "X'te Otorite İnşası",
+      "desc": "Niche uzman olmak için sistematik yanıt ve içerik stratejisi.",
+      "tags": [
+        "otorite",
+        "niche",
+        "uzman"
+      ],
+      "badge1": "Strateji",
+      "content": "**Otorite İnşası:** Büyük hesapları takip et + her gün değerli yanıtlar ver (yorum kopyalama değil). Kendi içerik döngüsü: gözlem → tweet → thread → Uzun form (blog/bülten). İstatistik ve araştırma paylaş — ciddiye alınırsın. Niche seç: 10K niş takipçi, 100K genel takipçiden değerli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "analiz",
+      "name": "Sosyal Medya KPI Takibi",
+      "desc": "İzlenecek 5 temel metrik ve ölçüm sıklığı.",
+      "tags": [
+        "KPI",
+        "metrik",
+        "analiz"
+      ],
+      "badge1": "Ölçüm",
+      "content": "**5 SM Metriği:** 1) Erişim (reach): içerik kaç kişiye ulaştı. 2) Etkileşim oranı: (beğeni+yorum+kaydet)/erişim. 3) Takipçi artışı: haftalık net büyüme. 4) Tıklama oranı (CTR): link paylaşımlarda. 5) Dönüşüm: takipçi → e-posta listesi → satış. Haftalık 15 dk: sayıları kaydet, trend gör. Sayı olmayan strateji değil tahmin.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "analiz",
+      "name": "İçerik Performans Auditi",
+      "desc": "Aylık en iyi ve en kötü içerik analizinden öğren.",
+      "tags": [
+        "audit",
+        "analiz",
+        "öğrenme"
+      ],
+      "badge1": "İyileştirme",
+      "content": "**Performans Auditi:** Ay sonu: en çok etkileşim alan 3 içerik. En az alan 3 içerik. Soru: neden? Format? Konu? Saat? Ton? Kazanan formatı tekrar et. Kaybedeni analiz et — o konuyu bırak veya formatı değiştir. 3 aylık audit: trendler netleşir. Başarılı içeriği 'repurpose' et: tweet → carousel → video.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "buyume",
+      "name": "Koalisyon Büyüme Taktiği",
+      "desc": "Aynı niş başkalarıyla işbirliği yaparak karşılıklı büyü.",
+      "tags": [
+        "koalisyon",
+        "işbirliği",
+        "büyüme"
+      ],
+      "badge1": "Hız",
+      "content": "**Koalisyon Büyümesi:** Benzer büyüklükte 5-10 hesap bul (aynı niş, rakip değil). Birbirini etiketle, yorumlarda destekle. Ortak içerik üret (ortak canlı, kolaborasyon post). Takipçi paylaşımı: 'Takip etmen gerekenler' listesi. Algoritma: etkileşim = erişim. Karşılıklı yorum = iki kitleye görünürlük.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "buyume",
+      "name": "Çapraz Platform Stratejisi",
+      "desc": "İçeriği bir kez üret, tüm platformlara uyarla.",
+      "tags": [
+        "çapraz",
+        "platform",
+        "repurpose"
+      ],
+      "badge1": "Verimli",
+      "content": "**Repurpose Sistemi:** Ana içerik: 1 blog yazısı veya uzun video. → LinkedIn makalesi. → Instagram carousel. → Twitter thread. → Shorts/Reels (3 clip). → Podcast bölümü. 1 içerik = 6 paylaşım. Araç: Descript (video → transcript → blog). İçerik ölmez, form değiştirir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "strateji",
+      "name": "Akış Hali'nde İçerik Üretimi",
+      "desc": "Haftanın belirli günlerinde toplu içerik yaz ve kaydet.",
+      "tags": [
+        "toplu",
+        "batch",
+        "üretim"
+      ],
+      "badge1": "Sistem",
+      "content": "**Batch İçerik Üretimi:** Haftada 1 gün 'içerik günü': o gün sadece içerik üret (yazma, çekme, düzenleme). Diğer 6 gün: sadece yayınla ve etkileşim kur. Buffer veya Later ile zamanla. Fayda: ruh haline göre kalite dalgalanmaz, sürekli 'ne paylaşsam' kaygısı yok. İçerik birikimi = güvenlik tamponu.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "instagram",
+      "name": "Instagram Bio Optimizasyonu",
+      "desc": "150 karakterle izleyiciyi takipçiye dönüştür.",
+      "tags": [
+        "bio",
+        "profil",
+        "dönüşüm"
+      ],
+      "badge1": "Profil",
+      "content": "**Instagram Bio:** Satır 1: kim? + ne yapıyorsun? Satır 2: kime yardım edersin? Satır 3: kanıt veya sosyal referans. Satır 4: CTA + link. Emoji: evet, ama aşırıya kaçma. Anahtar kelime: Instagram bio'su aranabilir. Link: Linktree değil tek önemli CTA. 'DM için mesaj at' → daha fazla mesaj gelir.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

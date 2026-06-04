@@ -1,0 +1,340 @@
+{
+  "slug": "81-medvault-pro",
+  "title": "MedVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Medikal/anatomik terimler için yapılandırılmış flashcard (çalışma kartı) üreticisi.",
+  "metaKeywords": [
+    "Med",
+    "MedVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Medikal/anatomik terimler için yapılandırılmış flashcard (çalışma kartı) üreticisi.",
+  "heroCorner": "M",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Med<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Med<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "MedVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Med ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "medvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Anatomi Flashcard",
+      "name": "Anatomi Flashcard",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Fizyoloji",
+      "name": "Fizyoloji",
+      "color": "#e85555"
+    },
+    {
+      "id": "Farmakoloji",
+      "name": "Farmakoloji",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Klinik Tıp",
+      "name": "Klinik Tıp",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Tıbbi Terminoloji",
+      "name": "Tıbbi Terminoloji",
+      "color": "#ff9999"
+    },
+    {
+      "id": "Sınav Hazırlığı",
+      "name": "Sınav Hazırlığı",
+      "color": "#bb3333"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Anatomi Flashcard",
+      "name": "Kalp Odacıkları ve Kapakçıklar",
+      "desc": "Dört oda, dört kapakçık ve kan akış yönünü sistematik öğrenin.",
+      "tags": [
+        "kalp",
+        "odacık",
+        "kapakçık"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kalp Anatomisi\nSoru: Kalbin 4 odası nedir?\nYanıt: Sağ/sol atrium, sağ/sol ventrikül.\nKapakçıklar: Triküspit (sağ AV), Mitral (sol AV), Pulmoner, Aortik.\nKan akışı: Sağ atrium → triküspit → sağ ventrikül → pulmoner kapak → akciğer → mitral → sol ventrikül → aort.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Anatomi Flashcard",
+      "name": "Brakiyal Pleksus Yapısı",
+      "desc": "C5-T1 kökleri, trunkuslar, kordlar ve terminal dalları öğrenin.",
+      "tags": [
+        "brakiyal pleksus",
+        "sinir",
+        "anatomi"
+      ],
+      "badge1": "İleri",
+      "content": "## Brakiyal Pleksus\nKökler: C5-C6-C7-C8-T1\nTrunkuslar: Üst (C5-6), Orta (C7), Alt (C8-T1)\nKordlar: Lateral, Medial, Posterior\nTerminal dallar: Müskülo-kutan, Median, Ulnar, Radial, Aksiller\nMnemonik: 'Robert Taylor Drinks Cold Beer'",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Anatomi Flashcard",
+      "name": "Karaciğer Segmentasyonu",
+      "desc": "Couinaud segmentasyonuyla 8 karaciğer segmentini tanımlayın.",
+      "tags": [
+        "karaciğer",
+        "segment",
+        "couinaud"
+      ],
+      "badge1": "İleri",
+      "content": "## Karaciğer Segmentleri\n1. I: Kaudat lob.\n2. II-IV: Sol lob (II sol posterior, III sol anterior, IV quadrat).\n3. V-VIII: Sağ lob (portal ven ve hepatik ven sınırları).\n4. Cerrahi rezeksiyonlar segment bazlı planlanır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Fizyoloji",
+      "name": "Aksiyon Potansiyeli Aşamaları",
+      "desc": "Depolarizasyon, repolarizasyon ve refraktör dönemleri numaralandırın.",
+      "tags": [
+        "aksiyon potansiyeli",
+        "nöron",
+        "fizyoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## Aksiyon Potansiyeli\n0. Eşik (-55 mV) → Na⁺ kanalları açılır.\n1. Depolarizasyon: +30 mV'e ulaşır.\n2. Repolarizasyon: K⁺ çıkar, Na⁺ kapanır.\n3. Hiperpolarizasyon: -90 mV altına düşer.\n4. Mutlak refraktör: yeni AP imkânsız.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Fizyoloji",
+      "name": "Böbrek GFR Düzenlemesi",
+      "desc": "Otoregülasyon, RAAS ve tübüloglomerüler feedback mekanizmaları.",
+      "tags": [
+        "böbrek",
+        "gfr",
+        "raas"
+      ],
+      "badge1": "İleri",
+      "content": "## GFR Düzenlemesi\n1. Miyojenik refleks: kan basıncı artınca afferent arteriol daralır.\n2. Tübüloglomerüler feedback: maküla densa NaCl artışı → afferent daralma.\n3. RAAS: düşük basınç → anjiotensin II → efferent daralma.\n4. Sonuç: GFR görece sabit tutulur.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Farmakoloji",
+      "name": "Beta Bloker Sınıflandırması",
+      "desc": "Kardiyoselektif, non-selektif ve ISA özellikli beta blokerları ayırt edin.",
+      "tags": [
+        "beta bloker",
+        "farmakoloji",
+        "sınıflama"
+      ],
+      "badge1": "Orta",
+      "content": "## Beta Blokerlar\n1. Kardiyoselektif (β1): Metoprolol, Bisoprolol, Atenolol.\n2. Non-selektif (β1+β2): Propranolol, Karvedilol.\n3. ISA'lı (parsiyel agonist): Pindolol.\n4. KI: astım, AV blok, dekompanse KY.\nMnemonik: 'ABCDEFGhijklm' → Atenolol, Bisoprolol...",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Farmakoloji",
+      "name": "ACE İnhibitörleri vs ARB",
+      "desc": "Etki mekanizması, yan etki ve kullanım farklarını karşılaştırın.",
+      "tags": [
+        "ace inhibitörü",
+        "arb",
+        "farmakoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## ACEi vs ARB\nACEi: Anjiotensin II oluşumunu engeller + bradikinin birikir → kuru öksürük.\nARB: AT1 reseptörünü bloke eder → öksürük yok.\nOrtak endikasyon: HT, KKY, diyabetik nefropati.\nACEi yan etki: öksürük (%10-15) → ARB'ye geç.\nHer ikisini beraber KULLANma (ONTARGET çalışması).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Klinik Tıp",
+      "name": "SEPSIS-3 Tanı Kriterleri",
+      "desc": "qSOFA ve SOFA skorlarıyla sepsis ve septik şok tanımı.",
+      "tags": [
+        "sepsis",
+        "sofa",
+        "tanı"
+      ],
+      "badge1": "İleri",
+      "content": "## Sepsis-3\nqSOFA (2/3 kriter):\n• GCS < 15\n• SS ≥ 22/dk\n• SKB ≤ 100 mmHg\nSepsis: enfeksiyon + SOFA ≥ 2.\nSeptik şok: sepsis + vazopressör + laktat > 2 mmol/L.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Klinik Tıp",
+      "name": "Akut Koroner Sendrom Ayırımı",
+      "desc": "STEMI, NSTEMI ve kararsız angina arasındaki EKG ve biyobelirteç farkları.",
+      "tags": [
+        "aks",
+        "stemi",
+        "troponin"
+      ],
+      "badge1": "İleri",
+      "content": "## AKS Ayırımı\nSTEMI: ST elevasyonu + troponin yükseliyor → acil kateter.\nNSTEMI: ST çökmesi/normal EKG + troponin (+) → erken kateter.\nKararsız angina: ST değişikliği + troponin (-) → ilaç tedavisi.\nOrtak: aspirin + P2Y12 inhibitörü başla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Tıbbi Terminoloji",
+      "name": "Yaygın Latince Köklü Terimler",
+      "desc": "-itis, -ectomy, -plasty gibi yaygın tıbbi ek ve kökleri öğrenin.",
+      "tags": [
+        "terminoloji",
+        "latin",
+        "ek"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tıbbi Ekler\n-itis: iltihaplanma (appendicit)\n-ectomy: çıkarma (gastrektomi)\n-plasty: onarım/şekillendirme (rinoplasti)\n-oscopy: görme ile inceleme (laparoskopi)\n-otomy: kesi (trakeotomi)\n-orrhaphy: onarma/dikme (herniyorafi)",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Tıbbi Terminoloji",
+      "name": "Anatomi Pozisyon Terimleri",
+      "desc": "Anterior/posterior, medial/lateral, proksimal/distal eksenlerini öğrenin.",
+      "tags": [
+        "anatomi",
+        "pozisyon",
+        "eksen"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Pozisyon Terimleri\nAnterior/Posterior: ön-arka\nMedial/Lateral: orta-yan\nSüperior/İnferior: üst-alt\nProksimal/Distal: gövdeye yakın-uzak\nSupinasyon/Pronasyon: avuç yukarı-aşağı\nİpsilateral/Kontralateral: aynı/karşı taraf",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Sınav Hazırlığı",
+      "name": "Aktif Hatırlama Tekniği",
+      "desc": "Pasif okuma yerine test-kendiniz yöntemiyle kalıcı öğrenme.",
+      "tags": [
+        "aktif hatırlama",
+        "sınav",
+        "teknik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Aktif Hatırlama\n1. Konuyu oku, kapat, boş sayfaya hatırladıklarını yaz.\n2. Flashcard'ı cevaplamadan önce kendi yanıtını düşün.\n3. Aralıklı tekrar (Anki): 1-3-7-14 gün.\n4. Yanlış cevaplara %80 zaman ayır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Sınav Hazırlığı",
+      "name": "Klinik Soru Çözme Stratejisi",
+      "desc": "TUS/USMLE tarzı vaka sorularında hızlı ve doğru yanıt tekniği.",
+      "tags": [
+        "soru çözme",
+        "strateji",
+        "tus"
+      ],
+      "badge1": "Orta",
+      "content": "## Vaka Sorusu Tekniği\n1. Son cümleyi önce oku: ne soruluyor?\n2. Yaş, cinsiyet, süre ve anahtar semptomları belirle.\n3. Ayırıcı tanıyı zihninde hızla daralt.\n4. Elimine et, en tipik cevabı seç.\n5. 'Hariç değil' tuzağına dikkat et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Fizyoloji",
+      "name": "Oksijen Disosiyasyon Eğrisi",
+      "desc": "Sigmoidal eğriyi etkileyen faktörleri ve sağa-sola kayma nedenlerini bilin.",
+      "tags": [
+        "oksijen",
+        "disosiyasyon",
+        "eğri"
+      ],
+      "badge1": "Orta",
+      "content": "## O₂ Disosiyasyon Eğrisi\nSağa kayma (↓afinite): ↑T, ↑PCO₂, ↓pH, ↑2,3-DPG.\nSola kayma (↑afinite): ↓T, ↓PCO₂, ↑pH, fetal Hb, MetHb.\nP50: normal ~26 mmHg.\nBohr etkisi: pH ↓ → sağa kayma → periferik salınım ↑.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Farmakoloji",
+      "name": "Antibiyotik Spektrum Özeti",
+      "desc": "Dar, geniş spektrumlu antibiyotik sınıflarını etki alanıyla öğrenin.",
+      "tags": [
+        "antibiyotik",
+        "spektrum",
+        "sınıflama"
+      ],
+      "badge1": "Orta",
+      "content": "## Antibiyotik Spektrum\nGram (+): Penisilin, 1. kuşak sefalosporin, Vankomisin.\nGram (-): 3-4. kuşak sefalosporin, Aztreonam, Aminoglikozid.\nAtipik: Makrolid, Florokinolon, Doksisiklin.\nAnaerop: Metronidazol, Karbapenem.\nGeniş spektrum: Piperasilin-Tazobaktam, Karbapenem.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

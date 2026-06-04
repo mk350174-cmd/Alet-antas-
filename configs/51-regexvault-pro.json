@@ -1,0 +1,340 @@
+{
+  "slug": "51-regexvault-pro",
+  "title": "RegexVault Pro — Yazılım Mimarisi & DevOps",
+  "metaDescription": "Karmaşık metin madenciliği ve log analizi için Regex jeneratörü.",
+  "metaKeywords": [
+    "Regex",
+    "RegexVault Pro",
+    "Yazılım Mimarisi & DevOps",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Karmaşık metin madenciliği ve log analizi için Regex jeneratörü.",
+  "heroCorner": "R",
+  "heroEyebrow": "Yazılım Mimarisi & DevOps · Alet Çantası",
+  "heroTitleHTML": "Regex<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Regex<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "RegexVault Pro · Yazılım Mimarisi & DevOps",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Regex ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "regexvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "devops",
+  "categoryLabel": "Yazılım Mimarisi & DevOps",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4a9eff",
+    "primary2": "#4a9eff",
+    "primaryDim": "#4a9eff15",
+    "primaryGlow": "#4a9eff30",
+    "primaryDark": "#2c80e1",
+    "accent": "#a78bfa",
+    "accent2": "#a78bfa",
+    "accentDim": "#a78bfa18",
+    "accentGlow": "#a78bfa30",
+    "bg": "#06080e",
+    "bg2": "#0a0c12",
+    "bg3": "#0e1016",
+    "bg4": "#12141a",
+    "border": "#16181e",
+    "border2": "#1e2026",
+    "border3": "#2a2c32",
+    "heroBg": "#0a0c12"
+  },
+  "categories": [
+    {
+      "id": "Temel Desenler",
+      "name": "Temel Desenler",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Log Analizi",
+      "name": "Log Analizi",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Veri Çıkarma",
+      "name": "Veri Çıkarma",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Doğrulama Regex",
+      "name": "Doğrulama Regex",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Performans ve Optimizasyon",
+      "name": "Performans ve Optimizasyon",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Dil Spesifik",
+      "name": "Dil Spesifik",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Temel Desenler",
+      "name": "IP Adresi Eşleme",
+      "desc": "IPv4 ve IPv6 adreslerini doğru biçimde yakalayan regex desenleri.",
+      "tags": [
+        "ip",
+        "ipv4",
+        "ipv6"
+      ],
+      "badge1": "Orta",
+      "content": "## IP Regex\n```regex\n# IPv4\n^((25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(25[0-5]|2[0-4]\\d|[01]?\\d\\d?)$\n# IPv6 (basit)\n^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$\n```\nBilinen kütüphane çözümlerini tercih et; regex IP doğrulaması kırılgan olabilir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Temel Desenler",
+      "name": "Tarih Formatı Eşleme",
+      "desc": "DD/MM/YYYY, YYYY-MM-DD gibi farklı tarih formatlarını yakalayın.",
+      "tags": [
+        "tarih",
+        "format",
+        "regex"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tarih Regex\n```regex\n# ISO 8601\n^\\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])$\n# DD/MM/YYYY\n^(?:0[1-9]|[12]\\d|3[01])/(?:0[1-9]|1[0-2])/\\d{4}$\n```\nAy/gün validasyonu kısmidir; tam doğrulama için dil kütüphanelerini kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Temel Desenler",
+      "name": "URL ve URI Eşleme",
+      "desc": "HTTP/HTTPS URL'leri path, query ve fragment dahil yakalayan regex.",
+      "tags": [
+        "url",
+        "http",
+        "regex"
+      ],
+      "badge1": "Orta",
+      "content": "## URL Regex\n```regex\n^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)$\n```\nProduktion için WHATWG URL API'yi tercih et; regex eksik vakaları atlayabilir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Log Analizi",
+      "name": "Apache/Nginx Log Parser",
+      "desc": "Common Log Format satırlarını gruplayan regex ve parse şablonu.",
+      "tags": [
+        "apache",
+        "nginx",
+        "log"
+      ],
+      "badge1": "Orta",
+      "content": "## Access Log Regex\n```regex\n^(\\S+) \\S+ \\S+ \\[(.+?)\\] \"(\\S+) (\\S+) \\S+\" (\\d{3}) (\\S+)\n```\nGruplar: IP, tarih, method, path, status, bytes.\nNamed group versiyonu: `(?P<ip>\\S+)` kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Log Analizi",
+      "name": "Stack Trace İlk Satırı Yakalama",
+      "desc": "Java/Python/Node stack trace başlangıç satırını tespit eden regex.",
+      "tags": [
+        "stack trace",
+        "exception",
+        "log"
+      ],
+      "badge1": "Orta",
+      "content": "## Stack Trace Regex\n```regex\n# Java\n^(\\w+\\.)*\\w+(Exception|Error):.*\n# Python\n^(\\w+Error|\\w+Exception): .*\n# Node.js\n^Error: .+\n```\nMultiline modda ilk satırdan sonraki 'at' satırlarını da yakala.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Log Analizi",
+      "name": "Zaman Damgası Normalleştirme",
+      "desc": "Farklı formatlardaki log zaman damgalarını standart ISO'ya dönüştürün.",
+      "tags": [
+        "timestamp",
+        "normalleştirme",
+        "log"
+      ],
+      "badge1": "İleri",
+      "content": "## Timestamp Normalleştirme\n1. Farklı formatları tanıyan regex listesi oluştur.\n2. Her format için named group tanımla.\n3. Yakalanan değerleri ISO 8601'e dönüştür.\n4. Timezone offset'i normalize et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Veri Çıkarma",
+      "name": "HTML Tag Temizleme",
+      "desc": "HTML etiketlerini içerik koruyarak temizleyen güvenli regex yaklaşımı.",
+      "tags": [
+        "html",
+        "temizleme",
+        "etiket"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## HTML Temizleme\n```regex\n<[^>]+>\n```\nUyarı: regex ile HTML parse etme — tam HTML için DOMParser/BeautifulSoup kullan.\nYalnızca basit metin çıkarımında bu pattern yeterli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Veri Çıkarma",
+      "name": "CSV Satır Parser",
+      "desc": "Tırnaklı ve virgül içeren değerleri doğru işleyen CSV regex.",
+      "tags": [
+        "csv",
+        "parser",
+        "regex"
+      ],
+      "badge1": "İleri",
+      "content": "## CSV Regex\n```regex\n(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|([^\",\\r\\n]*))\n```\nTırnak içindeki virgülleri ve kaçış karakterlerini yakalar.\nProduktion için csv kütüphanesi kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Veri Çıkarma",
+      "name": "Telefon Numarası Normalleştirme",
+      "desc": "Farklı formatlardaki telefon numaralarını standart forma getirin.",
+      "tags": [
+        "telefon",
+        "normalleştirme",
+        "format"
+      ],
+      "badge1": "Orta",
+      "content": "## Telefon Regex\n```regex\n# Türk numaraları\n^(\\+90|0)?[5][0-9]{9}$\n# Uluslararası genel\n^\\+?[1-9]\\d{1,14}$\n```\ngoogle-libphonenumber kütüphanesini produktion için tercih et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Doğrulama Regex",
+      "name": "Güçlü Şifre Doğrulama",
+      "desc": "Büyük/küçük harf, rakam, özel karakter içeren şifre kuralları.",
+      "tags": [
+        "şifre",
+        "doğrulama",
+        "güvenlik"
+      ],
+      "badge1": "Orta",
+      "content": "## Şifre Regex\n```regex\n^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$\n```\nLookahead grupları: küçük, büyük, rakam, özel karakter — her biri zorunlu.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Doğrulama Regex",
+      "name": "TR ID (TC Kimlik) Doğrulama",
+      "desc": "11 haneli TC Kimlik numarasını format ve algoritma bazlı doğrulayın.",
+      "tags": [
+        "tc kimlik",
+        "doğrulama",
+        "türkiye"
+      ],
+      "badge1": "Orta",
+      "content": "## TC Kimlik\n```regex\n# Format kontrolü\n^[1-9][0-9]{10}$\n```\nAlgoritma kontrolü için: tek pozisyon rakamlar toplamı × 7 - çift toplamı ≡ 10.basamak (mod 10).\n```javascript\nfunction validateTC(id) {\n  if (!/^[1-9][0-9]{10}$/.test(id)) return false;\n  const d = id.split('').map(Number);\n  return (d[0]+d[2]+d[4]+d[6]+d[8])*7-(d[1]+d[3]+d[5]+d[7]) === d[9]*10 % 10 ;\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Performans ve Optimizasyon",
+      "name": "Catastrophic Backtracking Önleme",
+      "desc": "Üstel zaman karmaşıklığına yol açan tehlikeli regex desenlerinden kaçının.",
+      "tags": [
+        "backtracking",
+        "performans",
+        "tehlike"
+      ],
+      "badge1": "İleri",
+      "content": "## ReDoS Önleme\n1. İç içe tekrarlayan gruplardan kaçın: `(a+)+`.\n2. Alternation'da önek paylaşımını önle.\n3. Atomic group veya possessive quantifier kullan (destekleniyorsa).\n4. regex101.com ile backtracking görselleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Performans ve Optimizasyon",
+      "name": "Regex Derleme ve Önbellekleme",
+      "desc": "Tekrar kullanılan regex'leri derleme zamanında önbelleğe alın.",
+      "tags": [
+        "derleme",
+        "cache",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Regex Önbellekleme\n```javascript\n// Kötü: her çağrıda yeniden derleme\nfunction check(s) { return /pattern/.test(s); }\n// İyi: bir kez derle\nconst RE = /pattern/;\nfunction check(s) { return RE.test(s); }\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Dil Spesifik",
+      "name": "Python re Modülü Şablonları",
+      "desc": "Named groups, finditer ve compiled pattern kullanım şablonları.",
+      "tags": [
+        "python",
+        "re",
+        "named group"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Python Regex\n```python\nimport re\npattern = re.compile(r'(?P<yil>\\d{4})-(?P<ay>\\d{2})')\nfor m in pattern.finditer(metin):\n    print(m.group('yil'), m.group('ay'))\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Dil Spesifik",
+      "name": "JavaScript Regex Bayrakları",
+      "desc": "g, i, m, s, u bayraklarını doğru senaryoda kullanın.",
+      "tags": [
+        "javascript",
+        "bayrak",
+        "regex"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## JS Regex Bayrakları\n```javascript\n// g: tüm eşleşmeleri bul\nstr.match(/desen/g);\n// m: çok satırlı ^ $\n/^satır/m.test(str);\n// s: . yeni satırı kapsasın\n/a.b/s.test('a\\nb');\n// u: Unicode\n/\\p{L}+/u.test(str);\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

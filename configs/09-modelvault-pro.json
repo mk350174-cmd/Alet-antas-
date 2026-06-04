@@ -1,0 +1,484 @@
+{
+  "slug": "09-modelvault-pro",
+  "title": "ModelVault Pro — AI & Prompt Mühendisliği",
+  "metaDescription": "Lokal LLM modelleri için ince ayar (fine-tuning) veri setleri ve format dönüştürücüler.",
+  "metaKeywords": [
+    "Model",
+    "ModelVault Pro",
+    "AI & Prompt Mühendisliği",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Lokal LLM modelleri için ince ayar (fine-tuning) veri setleri ve format dönüştürücüler.",
+  "heroCorner": "M",
+  "heroEyebrow": "AI & Prompt Mühendisliği · Alet Çantası",
+  "heroTitleHTML": "Model<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Model<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ModelVault Pro · AI & Prompt Mühendisliği",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Model ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "modelvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "ai",
+  "categoryLabel": "AI & Prompt Mühendisliği",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#a375ff",
+    "primary2": "#a375ff",
+    "primaryDim": "#a375ff15",
+    "primaryGlow": "#a375ff30",
+    "primaryDark": "#8557e1",
+    "accent": "#ff6b9d",
+    "accent2": "#ff6b9d",
+    "accentDim": "#ff6b9d18",
+    "accentGlow": "#ff6b9d30",
+    "bg": "#08060e",
+    "bg2": "#0c0a12",
+    "bg3": "#100e16",
+    "bg4": "#14121a",
+    "border": "#18161e",
+    "border2": "#201e26",
+    "border3": "#2c2a32",
+    "heroBg": "#0c0a12"
+  },
+  "categories": [
+    {
+      "id": "Veri Seti Oluşturma",
+      "name": "Veri Seti Oluşturma",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Format Dönüştürme",
+      "name": "Format Dönüştürme",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Veri Temizleme",
+      "name": "Veri Temizleme",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Prompt Şablonları",
+      "name": "Prompt Şablonları",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "İnce Ayar Teknikleri",
+      "name": "İnce Ayar Teknikleri",
+      "color": "#F44336"
+    },
+    {
+      "id": "Değerlendirme Metrikleri",
+      "name": "Değerlendirme Metrikleri",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Veri Seti Oluşturma",
+      "name": "Soru-Cevap Veri Seti",
+      "desc": "LLM'ler için etkileşimli soru-cevap formatında veri seti.",
+      "tags": [
+        "QA",
+        "dataset",
+        "LLM"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Soru-Cevap Veri Seti Oluşturma\n\n1. **Konu Belirleme:** İnce ayar yapılacak konuyu netleştirin.\n2. **Soru Yazımı:** Konuyla ilgili özgün sorular hazırlayın.\n3. **Cevap Üretimi:** Her soru için doğru ve kapsamlı cevaplar yazın.\n4. **Formatlama:** '{\"prompt\": \"Soru\", \"completion\": \"Cevap\"}' JSON formatına dönüştürün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Veri Seti Oluşturma",
+      "name": "Özetleme Veri Seti",
+      "desc": "Metin özetleme yeteneği kazandırmak için veri seti.",
+      "tags": [
+        "summarization",
+        "dataset",
+        "text"
+      ],
+      "badge1": "Orta",
+      "content": "## Özetleme Veri Seti Oluşturma\n\n1. **Kaynak Metin Toplama:** Uzun metinler (makale, haber) toplayın.\n2. **Özet Yazımı:** Her metin için kısa, doğru özetler oluşturun.\n3. **Formatlama:** '{\"text\": \"Kaynak Metin\", \"summary\": \"Özet\"}' JSON formatına uyun.\n4. **Doğruluk Kontrolü:** Özetlerin ana fikri yansıttığından emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Veri Seti Oluşturma",
+      "name": "Diyalog Veri Seti",
+      "desc": "Sohbet botları için doğal diyalog veri seti.",
+      "tags": [
+        "dialogue",
+        "chatbot",
+        "dataset"
+      ],
+      "badge1": "Orta",
+      "content": "## Diyalog Veri Seti Oluşturma\n\n1. **Senaryo Geliştirme:** Farklı kullanım senaryoları belirleyin.\n2. **Katılımcı Rolleri:** Konuşmacı rollerini tanımlayın.\n3. **Diyalog Yazımı:** Doğal ve akıcı konuşmalar yazın.\n4. **Formatlama:** '{\"messages\": [{\"role\": \"user\", \"content\": \"Mesaj\"}, {\"role\": \"assistant\", \"content\": \"Yanıt\"}]}' formatını kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Veri Seti Oluşturma",
+      "name": "Talimat Takip Veri Seti",
+      "desc": "Komutları anlama ve uygulama için veri seti.",
+      "tags": [
+        "instruction",
+        "following",
+        "dataset"
+      ],
+      "badge1": "İleri",
+      "content": "## Talimat Takip Veri Seti Oluşturma\n\n1. **Komut Türleri:** Farklı karmaşıklıktaki komutları listele.\n2. **Girdi-Çıktı Eşleştirme:** Her komut için beklenen çıktıyı tanımla.\n3. **Formatlama:** '{\"instruction\": \"Komut\", \"input\": \"Girdi (isteğe bağlı)\", \"output\": \"Beklenen Çıktı\"}' JSON formatını kullan.\n4. **Çeşitlilik:** Komutlarda çeşitlilik sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Veri Seti Oluşturma",
+      "name": "Kod Üretimi Veri Seti",
+      "desc": "Doğal dilden kod üretimi için veri seti.",
+      "tags": [
+        "code generation",
+        "dataset",
+        "programming"
+      ],
+      "badge1": "İleri",
+      "content": "## Kod Üretimi Veri Seti Oluşturma\n\n1. **Programlama Dili Seçimi:** Hedef dili belirleyin (Python, JS vb.).\n2. **Açıklama Yazımı:** Yapılacak işlevi net anlatan açıklamalar yazın.\n3. **Kod Yazımı:** Açıklamaya uygun çalışan kodu yazın.\n4. **Formatlama:** '{\"prompt\": \"Açıklama\", \"completion\": \"Kod\"}' formatını kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Format Dönüştürme",
+      "name": "CSV to JSONL",
+      "desc": "CSV dosyalarını JSON Lines formatına dönüştürür.",
+      "tags": [
+        "conversion",
+        "CSV",
+        "JSONL"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## CSV to JSONL Dönüştürücü\n\n1. **CSV Yükleme:** `pandas.read_csv()` ile CSV'yi oku.\n2. **JSONL Yazma:** `df.to_json(orient='records', lines=True)` ile JSON Lines'a kaydet.\n3. **Kod Örneği:** `import pandas as pd; df = pd.read_csv('input.csv'); df.to_json('output.jsonl', orient='records', lines=True)`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Format Dönüştürme",
+      "name": "JSON to JSONL",
+      "desc": "JSON dizilerini JSON Lines formatına dönüştürür.",
+      "tags": [
+        "conversion",
+        "JSON",
+        "JSONL"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## JSON to JSONL Dönüştürücü\n\n1. **JSON Okuma:** `json.load()` ile JSON dosyasını yükle.\n2. **JSONL Yazma:** Her öğeyi ayrı satırda JSON olarak yaz.\n3. **Kod Örneği:** `import json; with open('input.json', 'r') as f_in, open('output.jsonl', 'w') as f_out: data = json.load(f_in); for item in data: f_out.write(json.dumps(item) + '\\n')`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Format Dönüştürme",
+      "name": "Metin Dosyasından Yapılandırılmış Veri",
+      "desc": "Yapılandırılmamış metni JSON'a dönüştürür.",
+      "tags": [
+        "conversion",
+        "text",
+        "JSON"
+      ],
+      "badge1": "Orta",
+      "content": "## Metin Dosyasından Yapılandırılmış Veri\n\n1. **Dosya Okuma:** Metin dosyasını satır satır oku.\n2. **Desene Göre Ayrıştırma:** Regex veya string işlemleriyle bilgi çıkar.\n3. **JSON Oluşturma:** Çıkarılan bilgileri JSON nesnesine dönüştür.\n4. **Örnek:** Her satır 'Anahtar: Değer' ise, `{'Anahtar': 'Değer'}` yapısına çevir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Format Dönüştürme",
+      "name": "XML to JSON",
+      "desc": "XML verilerini JSON formatına dönüştürür.",
+      "tags": [
+        "conversion",
+        "XML",
+        "JSON"
+      ],
+      "badge1": "Orta",
+      "content": "## XML to JSON Dönüştürücü\n\n1. **XML Ayrıştırma:** `xmltodict` gibi kütüphaneler kullan.\n2. **JSON'a Çevirme:** Ayrıştırılan veriyi standart JSON'a çevir.\n3. **Kod Örneği:** `import xmltodict, json; with open('input.xml') as f: data = xmltodict.parse(f.read()); json_data = json.dumps(data, indent=2); print(json_data)`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Format Dönüştürme",
+      "name": "HTML Tablosundan Veri Çıkarma",
+      "desc": "HTML tablolarını yapısal veri formatlarına dönüştürür.",
+      "tags": [
+        "scraping",
+        "HTML",
+        "data extraction"
+      ],
+      "badge1": "İleri",
+      "content": "## HTML Tablosundan Veri Çıkarma\n\n1. **HTML Ayrıştırma:** `BeautifulSoup` ile HTML'i parse et.\n2. **Tablo Bulma:** `find_all('table')` ile tabloları bul.\n3. **Satır/Hücre İşleme:** `<tr>`, `<th>`, `<td>` etiketlerini işle.\n4. **Formatlama:** Veriyi list veya DataFrame'e dönüştür, ardından JSON/CSV yap.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Veri Temizleme",
+      "name": "Tekrarlanan Kayıtları Kaldırma",
+      "desc": "Veri setindeki mükerrer kayıtları temizler.",
+      "tags": [
+        "cleaning",
+        "deduplication",
+        "dataset"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Tekrarlanan Kayıtları Kaldırma\n\n1. **Benzersiz Anahtar Belirleme:** Kayıtları benzersiz kılan sütunları/alanları seç.\n2. **Kaldırma:** Seçilen anahtarlara göre tekrarlanan satırları sil.\n3. **Kod Örneği (Pandas):** `df.drop_duplicates(subset=['sutun1', 'sutun2'], keep='first', inplace=True)`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Veri Temizleme",
+      "name": "Eksik Değerleri Doldurma",
+      "desc": "Eksik verileri stratejik olarak doldurur.",
+      "tags": [
+        "cleaning",
+        "missing data",
+        "imputation"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Eksik Değerleri Doldurma\n\n1. **Tespit:** Eksik değerleri (`NaN`) tespit et.\n2. **Strateji Seçimi:** Ortalama, medyan, mod veya model tabanlı doldurma seç.\n3. **Uygulama:** Seçilen stratejiyi `fillna()` ile uygula.\n4. **Örnek (Ortalama):** `df['sutun'].fillna(df['sutun'].mean(), inplace=True)`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Veri Temizleme",
+      "name": "Aykırı Değer Tespiti ve İşlemesi",
+      "desc": "Aykırı değerleri tespit eder ve uygun şekilde işler.",
+      "tags": [
+        "cleaning",
+        "outliers",
+        "statistics"
+      ],
+      "badge1": "Orta",
+      "content": "## Aykırı Değer Tespiti ve İşlemesi\n\n1. **Tespit Yöntemi:** IQR veya Z-skoru gibi yöntemlerle aykırı değerleri bul.\n2. **İşlem Yöntemi:** Aykırı değerleri sınırla (capping), sil veya dönüştür.\n3. **Kod Örneği (IQR):** `Q1 = df['sutun'].quantile(0.25); Q3 = df['sutun'].quantile(0.75); IQR = Q3 - Q1; lower_bound = Q1 - 1.5 * IQR; upper_bound = Q3 + 1.5 * IQR`.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Veri Temizleme",
+      "name": "Metin Normalleştirme",
+      "desc": "Metin verilerini standart bir formata getirir.",
+      "tags": [
+        "cleaning",
+        "text processing",
+        "NLP"
+      ],
+      "badge1": "Orta",
+      "content": "## Metin Normalleştirme\n\n1. **Küçük Harfe Çevirme:** Tüm metni küçük harfe dönüştür.\n2. **Noktalama Kaldırma:** İstenmeyen noktalama işaretlerini temizle.\n3. **Sayıları İşleme:** Sayıları kelimeye çevir veya kaldır.\n4. **Stop Words Temizliği:** Yaygın kelimeleri (ve, ile vb.) çıkar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Prompt Şablonları",
+      "name": "Sınıflandırma Prompt'u",
+      "desc": "Metinleri önceden tanımlanmış kategorilere ayırır.",
+      "tags": [
+        "prompt",
+        "classification",
+        "template"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Metin Sınıflandırma Prompt'u\n\n**Girdi:**\n```\nAşağıdaki metni [Kategori 1], [Kategori 2], [Kategori 3] kategorilerinden birine sınıflandır:\n\nMetin: \"{metin_buraya}\"\n\nKategori:\n```\n\n**Çıktı:** Sadece ilgili kategori adı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Prompt Şablonları",
+      "name": "Özetleme Prompt'u",
+      "desc": "Uzun metinleri kısa özetlere dönüştürür.",
+      "tags": [
+        "prompt",
+        "summarization",
+        "template"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Metin Özetleme Prompt'u\n\n**Girdi:**\n```\nLütfen aşağıdaki metni en fazla {kelime_sayisi} kelime olacak şekilde özetle:\n\nMetin:\n\"\"\"\n{metin_buraya}\n\"\"\"\n\nÖzet:\n```\n\n**Çıktı:** Kısa ve öz metin özeti.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Prompt Şablonları",
+      "name": "Soru Cevaplama Prompt'u",
+      "desc": "Verilen bağlamdan soruları yanıtlar.",
+      "tags": [
+        "prompt",
+        "QA",
+        "template"
+      ],
+      "badge1": "Orta",
+      "content": "## Soru Cevaplama Prompt'u\n\n**Girdi:**\n```\nBağlam:\n\"\"\"\n{baglam_buraya}\n\"\"\"\n\nSoru: \"{soru_buraya}\"\n\nCevap:\n```\n\n**Çıktı:** Sorunun cevabı, bağlamdan türetilmiş olmalı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "İnce Ayar Teknikleri",
+      "name": "LoRA (Low-Rank Adaptation)",
+      "desc": "Verimli ince ayar için popüler bir parametre-verimli yöntem.",
+      "tags": [
+        "fine-tuning",
+        "PEFT",
+        "LoRA"
+      ],
+      "badge1": "Orta",
+      "content": "## LoRA İnce Ayarı\n\n1. **LoRA Modülü Ekleme:** Modelin dikkat katmanlarına düşük rank'lı matrisler ekle.\n2. **Eğitim:** Sadece LoRA matrislerini eğit, ana model ağırlıkları dondur.\n3. **Avantajları:** Düşük bellek kullanımı, hızlı eğitim, model ağırlıklarını koruma.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "İnce Ayar Teknikleri",
+      "name": "QLoRA",
+      "desc": "LoRA'nın bellek verimliliğini artıran nicemlenmiş versiyonu.",
+      "tags": [
+        "fine-tuning",
+        "PEFT",
+        "QLoRA"
+      ],
+      "badge1": "İleri",
+      "content": "## QLoRA İnce Ayarı\n\n1. **Nicemleme (Quantization):** Model ağırlıklarını 4-bit gibi düşük hassasiyete indir.\n2. **LoRA Uygulama:** Nicemlenmiş modele LoRA modüllerini ekle.\n3. **Eğitim:** Sadece LoRA ağırlıklarını eğit.\n4. **Faydası:** Çok büyük modelleri bile standart GPU'larda eğitmeyi sağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Değerlendirme Metrikleri",
+      "name": "Perplexity (Perpleksite)",
+      "desc": "Dil modellerinin metin üretme yeteneğini ölçer.",
+      "tags": [
+        "evaluation",
+        "metrics",
+        "language modeling"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Perpleksite Değerlendirmesi\n\n1. **Anlamı:** Modelin bir sonraki kelimeyi ne kadar iyi tahmin ettiğini ölçer.\n2. **Hesaplama:** Test veri setindeki kelimelerin olasılıklarının geometrik ortalamasının tersidir.\n3. **Yorumlama:** Düşük perpleksite, daha iyi model performansı anlamına gelir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 21,
+      "no": "021",
+      "cat": "Değerlendirme Metrikleri",
+      "name": "BLEU Skoru",
+      "desc": "Makine çevirisi ve metin üretimi için kullanılan bir metrik.",
+      "tags": [
+        "evaluation",
+        "metrics",
+        "translation"
+      ],
+      "badge1": "Orta",
+      "content": "## BLEU Skoru\n\n1. **Amaç:** Model çıktısını referans çevirilerle karşılaştırır.\n2. **Hesaplama:** N-gram örtüşmelerini (precision) ve kısa cümle cezası (brevity penalty) kullanır.\n3. **Kullanım:** Çeviri kalitesini değerlendirmede yaygındır.\n4. **Not:** Sadece kelime düzeyinde benzerliğe bakar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

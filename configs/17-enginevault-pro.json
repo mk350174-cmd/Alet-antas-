@@ -1,0 +1,465 @@
+{
+  "slug": "17-enginevault-pro",
+  "title": "EngineVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.",
+  "metaKeywords": [
+    "Engine",
+    "EngineVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları.",
+  "heroCorner": "E",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Engine<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Engine<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "EngineVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Engine ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "enginevault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "Bellek Yönetimi",
+      "name": "Bellek Yönetimi",
+      "color": "#FF6347"
+    },
+    {
+      "id": "Render Pipeline",
+      "name": "Render Pipeline",
+      "color": "#4682B4"
+    },
+    {
+      "id": "Component Sistemi",
+      "name": "Component Sistemi",
+      "color": "#32CD32"
+    },
+    {
+      "id": "Asset Yönetimi",
+      "name": "Asset Yönetimi",
+      "color": "#FFD700"
+    },
+    {
+      "id": "Fizik Motoru",
+      "name": "Fizik Motoru",
+      "color": "#DA70D6"
+    },
+    {
+      "id": "Giriş Sistemi",
+      "name": "Giriş Sistemi",
+      "color": "#8A2BE2"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Bellek Yönetimi",
+      "name": "Havuzlama (Pooling)",
+      "desc": "Tekrar kullanılan nesneler için bellek ön-tahsis.",
+      "tags": [
+        "bellek",
+        "optimizasyon",
+        "performans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Nesne Havuzlama Şablonu\n\n### Amaç:\nSık oluşturulup silinen nesneler için GC yükünü azaltmak.\n\n### Adımlar:\n1. Nesne havuzunu (pool) tanımlayın.\n2. Nesne istendiğinde havuzdan alın.\n3. Havuz boşsa yeni nesne oluşturun.\n4. Nesne kullanılmadığında havuza geri verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Bellek Yönetimi",
+      "name": "Akıllı İşaretçiler",
+      "desc": "Otomatik bellek yönetimi için C++ işaretçileri.",
+      "tags": [
+        "bellek",
+        "c++",
+        "ptr"
+      ],
+      "badge1": "Orta",
+      "content": "## Akıllı İşaretçi Kullanım Rehberi\n\n### `std::unique_ptr`:\nTekil sahipliği garanti eder, kapsam dışı kaldığında otomatik siler.\n\n### `std::shared_ptr`:\nPaylaşılan sahiplik, referans sayacı ile yönetilir.\n\n### `std::weak_ptr`:\nSızıntıları önlemek için `shared_ptr` döngülerini kırar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Bellek Yönetimi",
+      "name": "Bellek Ayırıcı",
+      "desc": "Özel bellek ayırma ve toplama stratejileri.",
+      "tags": [
+        "bellek",
+        "performans",
+        "strateji"
+      ],
+      "badge1": "İleri",
+      "content": "## Özel Bellek Ayırıcı Tasarımı\n\n### Amaç:\nGenel `new`/`delete` yerine özelleştirilmiş ayırma.\n\n### Yaklaşımlar:\n1. **Yığın Ayırıcı:** Hızlı, kısa ömürlü nesneler.\n2. **Serbest Liste Ayırıcı:** Belirli boyutlardaki bloklar.\n3. **Huş (Pool) Ayırıcı:** Tekrarlayan nesneler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Render Pipeline",
+      "name": "Temel Render Döngüsü",
+      "desc": "Sahne çizimi için temel adımlar.",
+      "tags": [
+        "render",
+        "pipeline",
+        "grafik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel Render Döngüsü\n\n1. **Girdi Toplama:** Sahnedeki nesneleri belirle.\n2. **Kamera Dönüşümü:** Nesneleri kamera uzayına taşı.\n3. **Projeksiyon:** Nesneleri 2D ekrana izdüşür.\n4. **Görünürlük Testi:** Kamera arkasındaki nesneleri ele.\n5. **Rasterizasyon:** Piksel renklerini hesapla.\n6. **Görüntüleme:** Sonucu ekrana bas.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Render Pipeline",
+      "name": "Deferred Shading",
+      "desc": "Işık hesaplamasını sonradan yapan render tekniği.",
+      "tags": [
+        "render",
+        "lighting",
+        "teknik"
+      ],
+      "badge1": "Orta",
+      "content": "## Deferred Shading Temelleri\n\n### Aşama 1: G-Buffer Oluşturma\nNesne yüzey bilgilerini (renk, normal, derinlik vb.) ayrı dokulara yazar.\n\n### Aşama 2: Işıklandırma\nG-Buffer'daki bilgilere dayanarak her piksel için ışık hesaplaması yapılır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Render Pipeline",
+      "name": "MSAA (Çoklu Örnekleme)",
+      "desc": "Kenar yumuşatma için gelişmiş örnekleme tekniği.",
+      "tags": [
+        "render",
+        "aa",
+        "kalite"
+      ],
+      "badge1": "Orta",
+      "content": "## MSAA Uygulama Kılavuzu\n\n### Prensip:\nKenar piksellerinde birden fazla alt örnekleme yapılır.\n\n### Kullanım:\nRender hedefi (render target) üzerinde MSAA etkinleştirilir.\nDonanım, örnekleri otomatik olarak birleştirir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Render Pipeline",
+      "name": "Shader Optimizasyonu",
+      "desc": "Shader performansını artırma yöntemleri.",
+      "tags": [
+        "render",
+        "shader",
+        "optimizasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Shader Performans İpuçları\n\n1. **Döngüleri Azaltın:** Mümkünse 'if' yerine 'mix/lerp' kullanın.\n2. **Tekstür Okumaları:** Tekstür cache'ini verimli kullanın.\n3. **Hesaplamaları Birleştirin:** Tek bir karmaşık işlem, çoklu basit işlemden hızlı olabilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Component Sistemi",
+      "name": "Temel Entity-Component",
+      "desc": "Oyun nesneleri için modüler yapı.",
+      "tags": [
+        "ecs",
+        "component",
+        "mimari"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Entity-Component Sistemi (ECS) Taslağı\n\n### Entity:\nBenzersiz ID'ye sahip boş bir kapsayıcı.\n\n### Component:\nVeri taşıyan yapılar (örn. Pozisyon, Renk).\n\n### Sistem:\nBelirli Component türlerini işleyen mantık (örn. Hareket Sistemi).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Component Sistemi",
+      "name": "Veri Odaklı Tasarım",
+      "desc": "ECS'de veri yerleşimi ve önbellek dostu erişim.",
+      "tags": [
+        "ecs",
+        "veri",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Veri Odaklı ECS Tasarımı\n\n### Amaç:\nVeriyi bellekte bitişik gruplamak (Array of Structs -> Struct of Arrays).\n\n### Faydalar:\n- CPU önbellek isabet oranını artırır.\n- Paralel işleme için uygundur.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Component Sistemi",
+      "name": "Sistem Bağımlılıkları",
+      "desc": "Sistemlerin birbirleriyle etkileşimini yönetme.",
+      "tags": [
+        "ecs",
+        "sistem",
+        "mimari"
+      ],
+      "badge1": "Orta",
+      "content": "## Sistem Bağımlılık Yönetimi\n\n### Yaklaşım:\n1. **Sıralama:** Sistemlerin çalışma sırasını belirleyin.\n2. **Bağımlılık Grafiği:** Sistemler arası veri akışını modelleyin.\n3. **Paralel Yürütme:** Bağımlı olmayan sistemleri eş zamanlı çalıştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Component Sistemi",
+      "name": "Event Sistemi Entegrasyonu",
+      "desc": "ECS içinde olay tabanlı iletişim.",
+      "tags": [
+        "ecs",
+        "event",
+        "iletişim"
+      ],
+      "badge1": "İleri",
+      "content": "## ECS'de Olay Sistemi\n\n### Tasarım:\n1. **Olay Verisi:** Gönderilecek veriyi tanımlayın.\n2. **Olay Yayıncı:** Olayı oluşturan sistem/entity.\n3. **Olay Dinleyici:** Olayı işleyen sistem/entity.\n4. **Aracı (Bus):** Olayların yönlendirildiği merkez.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Asset Yönetimi",
+      "name": "Asset Yükleyici",
+      "desc": "Farklı formatlardaki varlıkları yükleme arayüzü.",
+      "tags": [
+        "asset",
+        "yükleme",
+        "arayüz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Genel Asset Yükleyici Arayüzü\n\n`IAssetLoader` arayüzü:\n- `Load(path)`: Belirtilen yoldan asset yükler.\n- `Unload(asset)`: Asset'i bellekten kaldırır.\n- `GetAssetType()`: Desteklenen asset türünü döndürür.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Asset Yönetimi",
+      "name": "Asenkron Yükleme",
+      "desc": "Arka planda varlık yükleyerek takılmaları önleme.",
+      "tags": [
+        "asset",
+        "asenkron",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## Asenkron Asset Yükleme\n\n### Prensip:\nKullanıcı arayüzünü bloke etmeden varlıkları yüklemek.\n\n### Uygulama:\n- İş parçacığı (thread) havuzu kullanın.\n- Yükleme tamamlandığında geri bildirim mekanizması (callback/event) sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Asset Yönetimi",
+      "name": "Asset Veritabanı",
+      "desc": "Projedeki tüm varlıkları yöneten indeks.",
+      "tags": [
+        "asset",
+        "veritabanı",
+        "yönetim"
+      ],
+      "badge1": "Orta",
+      "content": "## Varlık Veritabanı Tasarımı\n\n### İçerik:\n- Varlık adı/ID.\n- Dosya yolu.\n- Yüklenme durumu.\n- Kullanım sayısı (referans sayacı).\n- Varlık türü.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Asset Yönetimi",
+      "name": "Paketleme (Packaging)",
+      "desc": "Varlıkları dağıtım için tek dosyalarda birleştirme.",
+      "tags": [
+        "asset",
+        "paket",
+        "dağıtım"
+      ],
+      "badge1": "İleri",
+      "content": "## Varlık Paketleme Stratejisi\n\n### Amaç:\nDosya sayısı ve disk erişimini azaltmak.\n\n### Yöntemler:\n1. **Sıkıştırma:** Dosya boyutunu küçültür.\n2. **İndeksleme:** Paket içindeki verilere hızlı erişim sağlar.\n3. **Sanal Dosya Sistemi:** Paketi disk gibi gösterme.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Fizik Motoru",
+      "name": "Katı Cisim Dinamiği",
+      "desc": "Nesnelerin kütle, hız ve çarpışma simülasyonu.",
+      "tags": [
+        "fizik",
+        "katı cisim",
+        "simülasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Katı Cisim Dinamiği Temelleri\n\n### Bileşenler:\n- **Kütle Merkezi (Center of Mass):** Cisim geometrisinin merkezi.\n- **Dönme Eylemsizliği (Inertia Tensor):** Dönme hareketine karşı direnç.\n- **Kuvvet/Tork Uygulama:** Hareket denklemlerini çözme.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Fizik Motoru",
+      "name": "Çarpışma Tespiti (Broadphase)",
+      "desc": "Potansiyel çarpışan nesne çiftlerini hızlıca bulma.",
+      "tags": [
+        "fizik",
+        "çarpışma",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Broadphase Çarpışma Tespiti\n\n### Algoritmalar:\n1. **AABB Ağacı (Axis-Aligned Bounding Box):** Nesnelerin sınırlayıcı kutularını kullanır.\n2. **Bölgesel Bölme (Spatial Partitioning):** Sabit veya dinamik hücreler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Fizik Motoru",
+      "name": "Çarpışma Çözümü (Narrowphase)",
+      "desc": "Tespit edilen çiftlerin kesin kesişimini hesaplama.",
+      "tags": [
+        "fizik",
+        "çarpışma",
+        "narrowphase"
+      ],
+      "badge1": "İleri",
+      "content": "## Narrowphase Çarpışma Çözümü\n\n### Algoritmalar:\n1. **GJK (Gilbert-Johnson-Keerthi):** Konveks cisimler için uzaklık bulma.\n2. **EPA (Expanding Polytope Algorithm):** GJK sonrası kesişim derinliği bulma.\n3. **Satıh-Satıh (Edge-Edge):** Çokgenler için detaylı kontrol.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Giriş Sistemi",
+      "name": "Giriş Eşleme",
+      "desc": "Farklı donanımları soyutlayarak komut atama.",
+      "tags": [
+        "giriş",
+        "kontrol",
+        "eşleme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Giriş Eşleme Sistemi\n\n### Amaç:\nKullanıcı komutlarını (örn. 'Ateş Et') donanım girdilerine bağlamak.\n\n### Yapı:\n1. **Girdi Cihazları:** Klavye, fare, gamepad vb.\n2. **Eylemler (Actions):** Oyun içi komutlar.\n3. **Eşleme Tablosu:** Cihaz girdilerini eylemlere bağlar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Giriş Sistemi",
+      "name": "Girdi Yönetimi",
+      "desc": "Girdi olaylarını işleme ve yönlendirme.",
+      "tags": [
+        "giriş",
+        "yönetim",
+        "olay"
+      ],
+      "badge1": "Orta",
+      "content": "## Giriş Olay Yönetimi\n\n### Süreç:\n1. **Olay Yakalama:** İşletim sisteminden girdi olaylarını al.\n2. **Filtreleme/Normalleştirme:** Gereksiz veya yinelenen olayları ayıkla.\n3. **Eşleme Uygulama:** Eşleme tablosuna göre eylemlere dönüştür.\n4. **Sistemlere Bildirme:** Eylemleri ilgili sistemlere ilet.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

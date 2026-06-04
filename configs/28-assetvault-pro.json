@@ -1,0 +1,465 @@
+{
+  "slug": "28-assetvault-pro",
+  "title": "AssetVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "On binlerce oyun içi grafik ve ses dosyasını kategorize eden, meta-veri etiketleme sistemi.",
+  "metaKeywords": [
+    "Asset",
+    "AssetVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "On binlerce oyun içi grafik ve ses dosyasını kategorize eden, meta-veri etiketleme sistemi.",
+  "heroCorner": "A",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Asset<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Asset<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "AssetVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Asset ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "assetvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "3D Modeller & Karakterler",
+      "name": "3D Modeller & Karakterler",
+      "color": "#FF5733"
+    },
+    {
+      "id": "Dokular & Materyaller",
+      "name": "Dokular & Materyaller",
+      "color": "#33FF57"
+    },
+    {
+      "id": "Animasyonlar & Rigging",
+      "name": "Animasyonlar & Rigging",
+      "color": "#3357FF"
+    },
+    {
+      "id": "Ortam & Sahne Öğeleri",
+      "name": "Ortam & Sahne Öğeleri",
+      "color": "#FFD700"
+    },
+    {
+      "id": "Görsel Efektler (VFX)",
+      "name": "Görsel Efektler (VFX)",
+      "color": "#8A2BE2"
+    },
+    {
+      "id": "Ses & Müzik",
+      "name": "Ses & Müzik",
+      "color": "#00CED1"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "3D Modeller & Karakterler",
+      "name": "Karakter Modeli Optimizasyonu",
+      "desc": "Oyun içi performans için 3D karakter modellerini optimize edin.",
+      "tags": [
+        "model",
+        "optimizasyon",
+        "karakter"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Poligon Optimizasyonu\nOyun performansı için karakter modellerini optimize edin. Gereksiz kenarları ve yüzeyleri azaltarak poligon sayısını düşürün.\n\n1.  **Detay İncelemesi**: Modelin hangi kısımlarının daha az detaya ihtiyaç duyduğunu belirleyin.\n2.  **Decimate Modifikatörü**: Yazılımınızdaki Decimate modifikatörünü kullanarak poligon sayısını kademeli olarak azaltın. Hedef FPS'e uygun değerler bulun.\n3.  **Manuel Temizlik**: Modeldeki küçük, görünmez yüzeyleri manuel olarak silin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "3D Modeller & Karakterler",
+      "name": "Yüksek Poligonlu Obje İçe Aktarımı",
+      "desc": "Detaylı 3D objeleri oyun motoruna sorunsuz aktarma kılavuzu.",
+      "tags": [
+        "import",
+        "model",
+        "detay"
+      ],
+      "badge1": "Orta",
+      "content": "## Yüksek Detaylı Obje İçe Aktarımı\nYüksek poligonlu modelleri oyun motoruna aktarırken performans sorunlarını önleyin.\n\n1.  **Format Seçimi**: FBX veya OBJ gibi yaygın formatları tercih edin, materyal ve animasyon desteği için FBX önerilir.\n2.  **Ölçek ve Birimler**: Modeli dışa aktarırken doğru ölçek ve birim ayarlarını kullanın, genellikle metre veya santimetre.\n3.  **Pivot Noktası**: Modelin pivot noktasının merkezde veya istenilen dönüş noktasında olduğundan emin olun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "3D Modeller & Karakterler",
+      "name": "LOD (Level of Detail) Oluşturma",
+      "desc": "Farklı mesafeler için model detay seviyeleri oluşturarak performansı artırın.",
+      "tags": [
+        "LOD",
+        "performans",
+        "optimizasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## LOD Seti Oluşturma\nPerformansı artırmak için modellerinize LOD (Level of Detail) ekleyin.\n\n1.  **LOD 0 (Full Detay)**: Orijinal yüksek poligonlu modelinizi kullanın.\n2.  **LOD 1, 2, 3**: Modeli kademeli olarak basitleştirin (poligon azaltma, materyal sadeleştirme). Her LOD seviyesi için görünürlük mesafelerini belirleyin.\n3.  **Motor Entegrasyonu**: Oyun motorunuzda LOD grubunu ayarlayın ve her seviyenin ne zaman etkinleşeceğini tanımlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "3D Modeller & Karakterler",
+      "name": "Modular Asset Tasarımı",
+      "desc": "Oyun dünyası için tekrar kullanılabilir modüler parçalar tasarlayın.",
+      "tags": [
+        "modüler",
+        "tasarım",
+        "çevre"
+      ],
+      "badge1": "Orta",
+      "content": "## Modüler Çevre Öğeleri Tasarımı\nOyun seviyeleri oluşturmak için modüler assetler tasarlayın ve uygulayın.\n\n1.  **Grid Sistem**: Tüm assetlerinizi ortak bir grid sistemi (örn. 2x2m, 4x4m) üzerinde tasarlayın.\n2.  **Snap Noktaları**: Assetlerin kolayca birleşmesi için doğru snap noktaları belirleyin.\n3.  **Materyal Tutarlılığı**: Modüller arasında materyal ve doku tutarlılığını sağlayarak görsel bütünlüğü koruyun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Dokular & Materyaller",
+      "name": "PBR Doku Seti Oluşturma",
+      "desc": "Fiziksel Tabanlı İşleme (PBR) için doku setleri hazırlayın.",
+      "tags": [
+        "PBR",
+        "doku",
+        "materyal"
+      ],
+      "badge1": "İleri",
+      "content": "## PBR Doku Seti Hazırlığı\nGerçekçi materyaller için PBR doku setlerini doğru şekilde oluşturun.\n\n1.  **Gerekli Haritalar**: Base Color (Albedo), Normal, Roughness, Metallic ve Ambient Occlusion haritalarını üretin.\n2.  **Doğru Değerler**: Her haritanın amacına uygun değerler içerdiğinden emin olun (örn. Metallic haritası siyah/beyaz olmalı).\n3.  **Motor Ayarları**: Oyun motorunuzda PBR materyal ayarlarını kullanarak haritaları doğru slotlara atayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Dokular & Materyaller",
+      "name": "Normal Harita Üretimi",
+      "desc": "Yüksek detaylı geometriden normal haritalar çıkarın.",
+      "tags": [
+        "normal",
+        "doku",
+        "detay"
+      ],
+      "badge1": "Orta",
+      "content": "## Normal Harita Oluşturma\nYüksek poligonlu modellerin detaylarını düşük poligonlu modellere normal haritalar ile aktarın.\n\n1.  **High-Poly & Low-Poly**: Yüksek detaylı (kaynak) ve optimize edilmiş (hedef) modelinizi hazırlayın.\n2.  **Baking Yazılımı**: Substance Painter, Marmoset Toolbag veya Blender gibi yazılımları kullanarak normal haritayı bake edin.\n3.  **Ayarlar**: Baking ayarlarında 'Cage' veya 'Ray Distance' gibi parametreleri doğru ayarlayarak artefaktları önleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Dokular & Materyaller",
+      "name": "Materyal Örnekleri Atama",
+      "desc": "3D objelere ve yüzeylere materyalleri etkili bir şekilde uygulayın.",
+      "tags": [
+        "materyal",
+        "kaplama",
+        "uygulama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Objeye Materyal Ataması\n3D objelerinize materyal atayarak görsel kimliklerini belirleyin.\n\n1.  **Materyal Oluşturma**: Oyun motorunuzda yeni bir materyal asseti oluşturun.\n2.  **Doku Bağlantısı**: Oluşturduğunuz materyale Albedo, Normal, Roughness gibi doku haritalarını bağlayın.\n3.  **Objeye Sürükle**: Materyal assetini doğrudan 3D modelinizin üzerine veya modelin materyal slotuna sürükleyerek uygulayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Dokular & Materyaller",
+      "name": "Tiling Doku Ayarları",
+      "desc": "Tekrarlayan dokuların sorunsuz görünmesi için ayarları yapın.",
+      "tags": [
+        "doku",
+        "tiling",
+        "tekrar"
+      ],
+      "badge1": "Orta",
+      "content": "## Tiling Dokuların Ayarlanması\nBüyük yüzeylerde dokuların tekrarlanmasını doğal ve görünmez hale getirin.\n\n1.  **Doku Hazırlığı**: Dokunuzun kenarlarının sorunsuz bir şekilde birleştiğinden (seamless) emin olun.\n2.  **UV Ayarları**: Modelinizin UV haritasında dokunun tiling (tekrarlama) değerlerini ayarlayın. Genellikle UV koordinatlarını büyütmek veya küçültmekle yapılır.\n3.  **Offset & Rotation**: Gerekirse dokunun başlangıç noktasını kaydırın (offset) veya döndürerek tekrarlama desenini kırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Animasyonlar & Rigging",
+      "name": "İskelet Sistemi Kurulumu",
+      "desc": "Karakterlere veya objelere temel bir iskelet sistemi ekleyin.",
+      "tags": [
+        "rigging",
+        "iskelet",
+        "animasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Temel İskelet Sistemi Kurulumu\nKarakterinizi veya objenizi hareket ettirmek için temel bir iskelet (rig) oluşturun.\n\n1.  **Kemik Ekleme**: Modelin ana eklem noktalarına (kalça, diz, omuz vb.) kemikler ekleyin.\n2.  **Hiyerarşi Oluşturma**: Kemikler arasında doğru üst-alt ilişkilerini kurarak hiyerarşik bir yapı oluşturun.\n3.  **Skinning/Weight Painting**: Kemiklerin modelin hangi bölgelerini etkileyeceğini belirlemek için ağırlık boyama yapın, deformasyonları düzeltin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Animasyonlar & Rigging",
+      "name": "Yürüme Animasyonu Oluşturma",
+      "desc": "Karakterler için döngüsel bir yürüme animasyonu oluşturun.",
+      "tags": [
+        "animasyon",
+        "yürüme",
+        "döngü"
+      ],
+      "badge1": "Orta",
+      "content": "## Döngüsel Yürüme Animasyonu\nKarakteriniz için doğal ve döngüsel bir yürüme animasyonu tasarlayın.\n\n1.  **Anahtar Pozlar**: Yürüme döngüsünün kritik pozlarını (ayak basma, ayak kaldırma, ileri adım) belirleyin ve anahtar kareler oluşturun.\n2.  **Döngü Entegrasyonu**: Animasyonun başlangıç ve bitiş karelerinin sorunsuz bir şekilde birleştiğinden emin olun.\n3.  **Hız ve Ağırlık**: Animasyon eğrilerini ayarlayarak yürümenin hızı ve karakterin ağırlık transferini gerçekçi hale getirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Animasyonlar & Rigging",
+      "name": "Ters Kinematik (IK) Ayarı",
+      "desc": "Animasyon kontrolünü kolaylaştırmak için IK zincirleri oluşturun.",
+      "tags": [
+        "IK",
+        "rigging",
+        "kontrol"
+      ],
+      "badge1": "İleri",
+      "content": "## Ters Kinematik (IK) Kurulumu\nAnimasyon sürecini kolaylaştırmak için IK zincirleri oluşturun.\n\n1.  **Zincir Seçimi**: IK uygulamak istediğiniz kemik zincirini belirleyin (örn. bacak veya kol).\n2.  **IK Handle Oluşturma**: Zincirin sonuna bir IK handle veya hedef nesne ekleyin.\n3.  **Poles & Kısıtlamalar**: Diz/dirsek yönünü kontrol etmek için pole vektörleri ekleyin ve kemik rotasyon kısıtlamaları ayarlayarak doğal hareket aralığı sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Animasyonlar & Rigging",
+      "name": "Blend Shape Animasyon Entegrasyonu",
+      "desc": "Yüz ifadeleri için blend shape animasyonlarını entegre edin.",
+      "tags": [
+        "blend shape",
+        "yüz",
+        "animasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Blend Shape Uygulaması\nKarakterlerinize yüz ifadeleri ve detaylı deformasyonlar için blend shape (morph target) uygulayın.\n\n1.  **Hedef Şekiller**: Ana modelinize dayanarak farklı yüz ifadelerini temsil eden bir dizi hedef şekil (ör. gülümseme, kaş çatma) oluşturun.\n2.  **Blend Shape Oluşturma**: Bu hedef şekilleri ana modele blend shape olarak bağlayın.\n3.  **Değer Kontrolü**: Oyun motorunuzda veya animasyon yazılımınızda blend shape'lerin ağırlık değerlerini kontrol ederek ifadeler arasında geçiş yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Ortam & Sahne Öğeleri",
+      "name": "Arazi (Terrain) Modelleme",
+      "desc": "Oyun dünyası için detaylı araziler oluşturun ve şekillendirin.",
+      "tags": [
+        "arazi",
+        "çevre",
+        "modelleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Gerçekçi Arazi Modelleme\nOyununuz için detaylı ve inandırıcı araziler oluşturun.\n\n1.  **Yükseklik Haritası**: Bir yükseklik haritası (heightmap) kullanarak arazinin temel şeklini oluşturun veya manuel olarak yükseltme/alçaltma araçlarını kullanın.\n2.  **Doku Katmanları**: Çimen, toprak, kaya gibi farklı doku katmanları ekleyin ve fırçalarla boyayarak doğal geçişler sağlayın.\n3.  **Detay Ekleme**: Ağaçlar, kayalar, çalılar gibi detay objeleri yerleştirerek araziye gerçekçilik katın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Ortam & Sahne Öğeleri",
+      "name": "Bitki Örtüsü Yerleşimi",
+      "desc": "Oyun ortamına doğal görünümlü bitki örtüsü ekleyin.",
+      "tags": [
+        "bitki",
+        "çevre",
+        "detay"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Doğal Bitki Örtüsü Yerleşimi\nOyun seviyenizi zenginleştirmek için bitki örtüsü (ağaçlar, çalılar, çimenler) yerleştirin.\n\n1.  **Asset Seçimi**: Ortamınıza uygun, optimize edilmiş bitki assetlerini seçin.\n2.  **Yoğunluk Ayarı**: Bitki yerleştirme fırçasının yoğunluğunu ve boyutunu ayarlayarak doğal dağılımlar elde edin.\n3.  **Rüzgar Efektleri**: Bitki örtüsüne rüzgar efektleri ekleyerek dinamik ve canlı bir görünüm kazandırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Ortam & Sahne Öğeleri",
+      "name": "Işıklandırma ve Gölge Ayarı",
+      "desc": "Sahnenin atmosferini belirlemek için ışık ve gölgeleri ayarlayın.",
+      "tags": [
+        "ışık",
+        "gölge",
+        "atmosfer"
+      ],
+      "badge1": "Orta",
+      "content": "## Sahne Işıklandırma Prensipleri\nOyun sahnenizin atmosferini ve görsel kalitesini artırmak için ışıklandırmayı ayarlayın.\n\n1.  **Ana Işık (Key Light)**: Sahnedeki ana ışık kaynağını belirleyin (örn. güneş). Yönünü ve yoğunluğunu ayarlayın.\n2.  **Dolgu Işık (Fill Light)**: Ana ışığın yarattığı sert gölgeleri yumuşatmak için daha az yoğun bir dolgu ışığı kullanın.\n3.  **Arka Işık (Rim Light)**: Objeleri arka plandan ayırmak için bir arka ışık ekleyin. Gölge kalitesini ve çözünürlüğünü ayarlayarak performansı dengeleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Ortam & Sahne Öğeleri",
+      "name": "Çarpışma Kutusu (Collider) Tanımlama",
+      "desc": "Objelere fiziksel etkileşim için çarpışma kutuları ekleyin.",
+      "tags": [
+        "fizik",
+        "çarpışma",
+        "collider"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Collider Ayarları\nOyun içi fiziksel etkileşimler için objelere çarpışma kutuları (colliders) tanımlayın.\n\n1.  **Collider Türü**: Objeye uygun bir collider türü seçin (Box, Sphere, Capsule veya Mesh Collider).\n2.  **Boyut ve Konum**: Collider'ın boyutunu ve konumunu objenin geometrisine uyacak şekilde ayarlayın. Özellikle karmaşık objeler için basitleştirilmiş bir form kullanın.\n3.  **Trigger Ayarı**: Collider'ın sadece tetikleyici olarak mı (geçilebilir) yoksa fiziksel bir engel olarak mı davranacağını belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Görsel Efektler (VFX)",
+      "name": "Patlama Efekti Tasarımı",
+      "desc": "Dinamik ve görsel olarak etkileyici patlama efektleri oluşturun.",
+      "tags": [
+        "VFX",
+        "patlama",
+        "parçacık"
+      ],
+      "badge1": "İleri",
+      "content": "## Dinamik Patlama Efekti\nOyununuz için görsel olarak etkileyici bir patlama efekti tasarlayın ve uygulayın.\n\n1.  **Parçacık Sistemi**: Duman, ateş ve kıvılcım için ayrı parçacık sistemleri oluşturun. Her birine uygun dokular atayın.\n2.  **Yüksek Detay**: Başlangıçta yoğun ve hızlı yayılan parçacıklar, sonra yavaş yavaş azalan duman ve kül efektleri kullanın.\n3.  **Işık ve Ses**: Patlamaya dinamik ışıklandırma ve patlama sesi efektleri ekleyerek etkiyi artırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Görsel Efektler (VFX)",
+      "name": "Parçacık Sistemi Oluşturma",
+      "desc": "Duman, ateş veya büyü gibi parçacık sistemleri tasarlayın.",
+      "tags": [
+        "VFX",
+        "parçacık",
+        "sistem"
+      ],
+      "badge1": "Orta",
+      "content": "## Parçacık Sistemi Tasarımı\nDuman, ateş, su sıçraması gibi dinamik görsel efektler için parçacık sistemleri oluşturun.\n\n1.  **Emitör Ayarları**: Parçacıkların nereden ve nasıl yayılacağını (şekil, hız, yaşam süresi) ayarlayın.\n2.  **Görsel Özellikler**: Parçacıklara uygun dokular (texture), renk geçişleri ve boyut değişimi uygulayın.\n3.  **Fizik ve Etkileşim**: Yerçekimi, rüzgar veya çarpışma gibi fiziksel etkileşimleri etkinleştirerek parçacıkların gerçekçi davranmasını sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Görsel Efektler (VFX)",
+      "name": "Post-Process Efektleri",
+      "desc": "Oyunun son görsel kalitesini artırmak için ekran sonrası efektler uygulayın.",
+      "tags": [
+        "VFX",
+        "post-process",
+        "görsel"
+      ],
+      "badge1": "İleri",
+      "content": "## Post-Process Efektleri Uygulaması\nOyununuzun görsel atmosferini ve kalitesini artırmak için ekran sonrası (post-process) efektleri uygulayın.\n\n1.  **Profil Oluşturma**: Oyun motorunuzda yeni bir post-process profili oluşturun.\n2.  **Efekt Ekleme**: Bloom, Vignette, Depth of Field, Renk Düzeltme gibi efektleri profile ekleyin.\n3.  **Değer Ayarı**: Her efektin yoğunluğunu ve parametrelerini oyununuzun görsel hedeflerine uygun şekilde ayarlayın. Performans etkisini göz önünde bulundurun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Ses & Müzik",
+      "name": "Ortam Sesi Entegrasyonu",
+      "desc": "Oyun dünyasına atmosfer katmak için ortam sesleri ekleyin.",
+      "tags": [
+        "ses",
+        "ortam",
+        "atmosfer"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ortam Sesi Entegrasyonu\nOyun dünyasına derinlik ve gerçekçilik katmak için ortam seslerini entegre edin.\n\n1.  **Ses Seçimi**: Sahnenin atmosferine uygun (orman, şehir, mağara vb.) döngüsel (looping) ortam seslerini seçin.\n2.  **Ses Kaynağı Ekleme**: Oyun motorunuzda bir ses kaynağı (Audio Source) oluşturun ve ses dosyasını atayın.\n3.  **Mesafe ve Hacim**: Sesin yayılma mesafesini (attenuation) ve maksimum hacmini ayarlayarak oyuncunun mesafesine göre sesin değişmesini sağlayın. Döngü modunu etkinleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

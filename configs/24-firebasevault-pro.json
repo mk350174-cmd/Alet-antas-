@@ -1,0 +1,738 @@
+{
+  "slug": "24-firebasevault-pro",
+  "title": "FirebaseVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "Oyunlar ve web araçları için backend, yetkilendirme ve sunucusuz veritabanı şablonları.",
+  "metaKeywords": [
+    "Firebase",
+    "FirebaseVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Oyunlar ve web araçları için backend, yetkilendirme ve sunucusuz veritabanı şablonları.",
+  "heroCorner": "F",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Firebase<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Firebase<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "FirebaseVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Firebase ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "firebasevault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "web",
+  "sourceUrl": "github-search:firebase template",
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "TypeScript",
+      "name": "TypeScript",
+      "color": "#4a9eff",
+      "count": 6
+    },
+    {
+      "id": "JavaScript",
+      "name": "JavaScript",
+      "color": "#5ed47e",
+      "count": 8
+    },
+    {
+      "id": "Dart",
+      "name": "Dart",
+      "color": "#a375ff",
+      "count": 5
+    },
+    {
+      "id": "Vue",
+      "name": "Vue",
+      "color": "#ff6b6b",
+      "count": 1
+    },
+    {
+      "id": "SCSS",
+      "name": "SCSS",
+      "color": "#d4a04c",
+      "count": 2
+    },
+    {
+      "id": "Kotlin",
+      "name": "Kotlin",
+      "color": "#4cc9c9",
+      "count": 1
+    },
+    {
+      "id": "HTML",
+      "name": "HTML",
+      "color": "#ff6b9d",
+      "count": 1
+    },
+    {
+      "id": "Svelte",
+      "name": "Svelte",
+      "color": "#fb923c",
+      "count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "cat": "TypeScript",
+      "name": "material-kit-react",
+      "desc": "React Dashboard made with Material UI’s components. Our pro template contains features like TypeScript version, authenti",
+      "tags": [
+        "admin",
+        "admin-dashboard",
+        "admin-template",
+        "auth0",
+        "★5584"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 5.584",
+      "content": "devias-io/material-kit-react\n\nReact Dashboard made with Material UI’s components. Our pro template contains features like TypeScript version, authentication system with Firebase and Auth0 plus many other \n\n⭐ Yıldız: 5584\n🍴 Fork: 2572\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/devias-io/material-kit-react",
+      "meta": {
+        "Yıldız": 5584,
+        "Dil": "TypeScript",
+        "Fork": 2572
+      },
+      "source": {
+        "url": "https://github.com/devias-io/material-kit-react",
+        "license": "MIT",
+        "author": "devias-io"
+      }
+    },
+    {
+      "id": 2,
+      "cat": "TypeScript",
+      "name": "create-expo-stack",
+      "desc": "CLI tool to initialize a React Native application with Expo. Provides options to include Typescript, file-based routing ",
+      "tags": [
+        "boilerplate",
+        "cli",
+        "expo",
+        "expo-cli",
+        "★2555"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 2.555",
+      "content": "roninoss/create-expo-stack\n\nCLI tool to initialize a React Native application with Expo. Provides options to include Typescript, file-based routing via Expo Router, configuration based routing via pure React Navigation, styling via Nativewind, Restyle, Unistyles, StyleSheets, or Tamagui, and/or backend as a service such as Firebase and Supabase.\n\n⭐ Yıldız: 2555\n🍴 Fork: 114\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/roninoss/create-expo-stack",
+      "meta": {
+        "Yıldız": 2555,
+        "Dil": "TypeScript",
+        "Fork": 114
+      },
+      "source": {
+        "url": "https://github.com/roninoss/create-expo-stack",
+        "license": "MIT",
+        "author": "roninoss"
+      }
+    },
+    {
+      "id": 3,
+      "cat": "JavaScript",
+      "name": "bento-starter",
+      "desc": ":bento: Full-Stack solution to quickly build PWA applications with Vue.js and Firebase",
+      "tags": [
+        "circleci",
+        "firebase",
+        "firebase-auth",
+        "firebase-firestore",
+        "★1512"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 1.512",
+      "content": "kefranabg/bento-starter\n\n:bento: Full-Stack solution to quickly build PWA applications with Vue.js and Firebase\n\n⭐ Yıldız: 1512\n🍴 Fork: 128\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/kefranabg/bento-starter",
+      "meta": {
+        "Yıldız": 1512,
+        "Dil": "JavaScript",
+        "Fork": 128
+      },
+      "source": {
+        "url": "https://github.com/kefranabg/bento-starter",
+        "license": "MIT",
+        "author": "kefranabg"
+      }
+    },
+    {
+      "id": 4,
+      "cat": "TypeScript",
+      "name": "hoverboard",
+      "desc": "Conference website template",
+      "tags": [
+        "conference-management",
+        "firebase",
+        "firestore",
+        "gdg",
+        "★1150"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 1.150",
+      "content": "gdg-x/hoverboard\n\nConference website template\n\n⭐ Yıldız: 1150\n🍴 Fork: 1084\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/gdg-x/hoverboard",
+      "meta": {
+        "Yıldız": 1150,
+        "Dil": "TypeScript",
+        "Fork": 1084
+      },
+      "source": {
+        "url": "https://github.com/gdg-x/hoverboard",
+        "license": "NOASSERTION",
+        "author": "gdg-x"
+      }
+    },
+    {
+      "id": 5,
+      "cat": "JavaScript",
+      "name": "web",
+      "desc": "Supercharged version of Create React App with all the bells and whistles.",
+      "tags": [
+        "avatar",
+        "boilerplate",
+        "create-react-app",
+        "demo",
+        "★727"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 727",
+      "content": "rmuif/web\n\nSupercharged version of Create React App with all the bells and whistles.\n\n⭐ Yıldız: 727\n🍴 Fork: 141\n📅 Güncelleme: 2026-05-24\n🔗 https://github.com/rmuif/web",
+      "meta": {
+        "Yıldız": 727,
+        "Dil": "JavaScript",
+        "Fork": 141
+      },
+      "source": {
+        "url": "https://github.com/rmuif/web",
+        "license": "MIT",
+        "author": "rmuif"
+      }
+    },
+    {
+      "id": 6,
+      "cat": "Dart",
+      "name": "flutter_getx_template",
+      "desc": "Create flutter project with all needed configuration in two minutes (theme, localization, connect to firebase, FCM, loca",
+      "tags": [
+        "android",
+        "api",
+        "app",
+        "dart",
+        "★514"
+      ],
+      "badge1": "Dart",
+      "badge2": "★ 514",
+      "content": "EmadBeltaje/flutter_getx_template\n\nCreate flutter project with all needed configuration in two minutes (theme, localization, connect to firebase, FCM, local notifications, safe API call, error handling, animation..etc)\n\n⭐ Yıldız: 514\n🍴 Fork: 136\n📅 Güncelleme: 2026-05-30\n🔗 https://github.com/EmadBeltaje/flutter_getx_template",
+      "meta": {
+        "Yıldız": 514,
+        "Dil": "Dart",
+        "Fork": 136
+      },
+      "source": {
+        "url": "https://github.com/EmadBeltaje/flutter_getx_template",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "EmadBeltaje"
+      }
+    },
+    {
+      "id": 7,
+      "cat": "JavaScript",
+      "name": "react-firebase-admin",
+      "desc": "React ⚛️ starter kit with Firebase 🔥 and Bulma for setting up an admin dashboard - Highly scalable, PWA, Serverless",
+      "tags": [
+        "admin-dashboard",
+        "boilerplate",
+        "bulma",
+        "cloud-functions",
+        "★418"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 418",
+      "content": "CreateThrive/react-firebase-admin\n\nReact ⚛️ starter kit with Firebase 🔥 and Bulma for setting up an admin dashboard - Highly scalable, PWA, Serverless\n\n⭐ Yıldız: 418\n🍴 Fork: 100\n📅 Güncelleme: 2026-05-15\n🔗 https://github.com/CreateThrive/react-firebase-admin",
+      "meta": {
+        "Yıldız": 418,
+        "Dil": "JavaScript",
+        "Fork": 100
+      },
+      "source": {
+        "url": "https://github.com/CreateThrive/react-firebase-admin",
+        "license": "MIT",
+        "author": "CreateThrive"
+      }
+    },
+    {
+      "id": 8,
+      "cat": "JavaScript",
+      "name": "Amazon-starter-template-nextjs",
+      "desc": "This is the Official Starter template for the AMAZON 5 Day challenge (The SECRET Challenge!) - Next.js | React.js | Tail",
+      "tags": [
+        "★383"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 383",
+      "content": "sonnysangha/Amazon-starter-template-nextjs\n\nThis is the Official Starter template for the AMAZON 5 Day challenge (The SECRET Challenge!) - Next.js | React.js | Tailwind CSS | Redux | Tailwind | Firebase\n\n⭐ Yıldız: 383\n🍴 Fork: 183\n📅 Güncelleme: 2026-05-03\n🔗 https://github.com/sonnysangha/Amazon-starter-template-nextjs",
+      "meta": {
+        "Yıldız": 383,
+        "Dil": "JavaScript",
+        "Fork": 183
+      },
+      "source": {
+        "url": "https://github.com/sonnysangha/Amazon-starter-template-nextjs",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "sonnysangha"
+      }
+    },
+    {
+      "id": 9,
+      "cat": "Vue",
+      "name": "karngyan.com",
+      "desc": "Dark themed, SEO friendly: Nuxt Content + TailwindCSS + Firebase + i18n + RSS2 based SPA for procrastinating developers ",
+      "tags": [
+        "blog",
+        "comments",
+        "developer",
+        "firebase",
+        "★368"
+      ],
+      "badge1": "Vue",
+      "badge2": "★ 368",
+      "content": "karngyan/karngyan.com\n\nDark themed, SEO friendly: Nuxt Content + TailwindCSS + Firebase + i18n + RSS2 based SPA for procrastinating developers to quickly spin up their own kickass blog and showcase their projects.\n\n⭐ Yıldız: 368\n🍴 Fork: 120\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/karngyan/karngyan.com",
+      "meta": {
+        "Yıldız": 368,
+        "Dil": "Vue",
+        "Fork": 120
+      },
+      "source": {
+        "url": "https://github.com/karngyan/karngyan.com",
+        "license": "MIT",
+        "author": "karngyan"
+      }
+    },
+    {
+      "id": 10,
+      "cat": "JavaScript",
+      "name": "graphcool-templates",
+      "desc": "📗 Collection of Graphcool Templates",
+      "tags": [
+        "auth0",
+        "firebase",
+        "graphcool",
+        "graphql",
+        "★350"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 350",
+      "content": "prisma-archive/graphcool-templates\n\n📗 Collection of Graphcool Templates\n\n⭐ Yıldız: 350\n🍴 Fork: 97\n📅 Güncelleme: 2026-02-07\n🔗 https://github.com/prisma-archive/graphcool-templates",
+      "meta": {
+        "Yıldız": 350,
+        "Dil": "JavaScript",
+        "Fork": 97
+      },
+      "source": {
+        "url": "https://github.com/prisma-archive/graphcool-templates",
+        "license": "MIT",
+        "author": "prisma-archive"
+      }
+    },
+    {
+      "id": 11,
+      "cat": "SCSS",
+      "name": "adminlte-3-react",
+      "desc": "React 18.3.1 start-up project with AdminLTE 3.2.0 template",
+      "tags": [
+        "admin-panel",
+        "admin-template",
+        "adminlte",
+        "adminlte3",
+        "★281"
+      ],
+      "badge1": "SCSS",
+      "badge2": "★ 281",
+      "content": "erdkse/adminlte-3-react\n\nReact 18.3.1 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 281\n🍴 Fork: 143\n📅 Güncelleme: 2026-04-22\n🔗 https://github.com/erdkse/adminlte-3-react",
+      "meta": {
+        "Yıldız": 281,
+        "Dil": "SCSS",
+        "Fork": 143
+      },
+      "source": {
+        "url": "https://github.com/erdkse/adminlte-3-react",
+        "license": "MIT",
+        "author": "erdkse"
+      }
+    },
+    {
+      "id": 12,
+      "cat": "Kotlin",
+      "name": "Beaver",
+      "desc": "Android MVVM + Dagger 2 (Hilt) + JetPack project template ",
+      "tags": [
+        "android",
+        "androidx",
+        "appindexing",
+        "crashlytics",
+        "★274"
+      ],
+      "badge1": "Kotlin",
+      "badge2": "★ 274",
+      "content": "SamYStudiO/Beaver\n\nAndroid MVVM + Dagger 2 (Hilt) + JetPack project template \n\n⭐ Yıldız: 274\n🍴 Fork: 29\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/SamYStudiO/Beaver",
+      "meta": {
+        "Yıldız": 274,
+        "Dil": "Kotlin",
+        "Fork": 29
+      },
+      "source": {
+        "url": "https://github.com/SamYStudiO/Beaver",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "SamYStudiO"
+      }
+    },
+    {
+      "id": 13,
+      "cat": "HTML",
+      "name": "adminlte-3-vue",
+      "desc": "Vue 3.4.27 start-up project with AdminLTE 3.2.0 template",
+      "tags": [
+        "admin-lte",
+        "admin-panel",
+        "admin-template",
+        "adminlte",
+        "★268"
+      ],
+      "badge1": "HTML",
+      "badge2": "★ 268",
+      "content": "erdkse/adminlte-3-vue\n\nVue 3.4.27 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 268\n🍴 Fork: 118\n📅 Güncelleme: 2026-03-28\n🔗 https://github.com/erdkse/adminlte-3-vue",
+      "meta": {
+        "Yıldız": 268,
+        "Dil": "HTML",
+        "Fork": 118
+      },
+      "source": {
+        "url": "https://github.com/erdkse/adminlte-3-vue",
+        "license": "MIT",
+        "author": "erdkse"
+      }
+    },
+    {
+      "id": 14,
+      "cat": "SCSS",
+      "name": "adminlte-3-angular",
+      "desc": "Angular 18.0.0 start-up project with AdminLTE 3.2.0 template",
+      "tags": [
+        "admin-panel",
+        "admin-template",
+        "adminlte",
+        "adminlte3",
+        "★260"
+      ],
+      "badge1": "SCSS",
+      "badge2": "★ 260",
+      "content": "erdkse/adminlte-3-angular\n\nAngular 18.0.0 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 260\n🍴 Fork: 205\n📅 Güncelleme: 2026-05-17\n🔗 https://github.com/erdkse/adminlte-3-angular",
+      "meta": {
+        "Yıldız": 260,
+        "Dil": "SCSS",
+        "Fork": 205
+      },
+      "source": {
+        "url": "https://github.com/erdkse/adminlte-3-angular",
+        "license": "MIT",
+        "author": "erdkse"
+      }
+    },
+    {
+      "id": 15,
+      "cat": "Svelte",
+      "name": "svelte-firebase",
+      "desc": "A template to help you start developing SPAs with Svelte and Firebase.",
+      "tags": [
+        "hacktoberfest",
+        "★228"
+      ],
+      "badge1": "Svelte",
+      "badge2": "★ 228",
+      "content": "jorgegorka/svelte-firebase\n\nA template to help you start developing SPAs with Svelte and Firebase.\n\n⭐ Yıldız: 228\n🍴 Fork: 50\n📅 Güncelleme: 2026-04-21\n🔗 https://github.com/jorgegorka/svelte-firebase",
+      "meta": {
+        "Yıldız": 228,
+        "Dil": "Svelte",
+        "Fork": 50
+      },
+      "source": {
+        "url": "https://github.com/jorgegorka/svelte-firebase",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "jorgegorka"
+      }
+    },
+    {
+      "id": 16,
+      "cat": "JavaScript",
+      "name": "expo-native-firebase",
+      "desc": "🔥 Native Firebase Expo App (iOS, Android) Demo for Firestore, Notifications, Analytics, Storage, Messaging, Database  \ud83d",
+      "tags": [
+        "android",
+        "app",
+        "boilerplate",
+        "cross-platform",
+        "★217"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 217",
+      "content": "EvanBacon/expo-native-firebase\n\n🔥 Native Firebase Expo App (iOS, Android) Demo for Firestore, Notifications, Analytics, Storage, Messaging, Database  🚨\n\n⭐ Yıldız: 217\n🍴 Fork: 30\n📅 Güncelleme: 2025-06-26\n🔗 https://github.com/EvanBacon/expo-native-firebase",
+      "meta": {
+        "Yıldız": 217,
+        "Dil": "JavaScript",
+        "Fork": 30
+      },
+      "source": {
+        "url": "https://github.com/EvanBacon/expo-native-firebase",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "EvanBacon"
+      }
+    },
+    {
+      "id": 17,
+      "cat": "Dart",
+      "name": "TallyAssist",
+      "desc": "Open source Flutter-based template for a business assistant application",
+      "tags": [
+        "android",
+        "android-apps",
+        "business-solutions",
+        "firebase",
+        "★211"
+      ],
+      "badge1": "Dart",
+      "badge2": "★ 211",
+      "content": "TallyAssist/TallyAssist\n\nOpen source Flutter-based template for a business assistant application\n\n⭐ Yıldız: 211\n🍴 Fork: 95\n📅 Güncelleme: 2026-04-26\n🔗 https://github.com/TallyAssist/TallyAssist",
+      "meta": {
+        "Yıldız": 211,
+        "Dil": "Dart",
+        "Fork": 95
+      },
+      "source": {
+        "url": "https://github.com/TallyAssist/TallyAssist",
+        "license": "MIT",
+        "author": "TallyAssist"
+      }
+    },
+    {
+      "id": 18,
+      "cat": "Dart",
+      "name": "templates",
+      "desc": "The official library of starter templates for Firebase Studio",
+      "tags": [
+        "★194"
+      ],
+      "badge1": "Dart",
+      "badge2": "★ 194",
+      "content": "firebase-studio/templates\n\nThe official library of starter templates for Firebase Studio\n\n⭐ Yıldız: 194\n🍴 Fork: 80\n📅 Güncelleme: 2026-05-11\n🔗 https://github.com/firebase-studio/templates",
+      "meta": {
+        "Yıldız": 194,
+        "Dil": "Dart",
+        "Fork": 80
+      },
+      "source": {
+        "url": "https://github.com/firebase-studio/templates",
+        "license": "Apache-2.0",
+        "author": "firebase-studio"
+      }
+    },
+    {
+      "id": 19,
+      "cat": "Dart",
+      "name": "flutter_app_template",
+      "desc": "Flutter + Firebaseアプリのスターターキット、新規アプリ開発はこのテンプレートをベースに始める。お仕事のご相談はこちらから https://neverjp.com/contact/",
+      "tags": [
+        "android",
+        "dart",
+        "firebase",
+        "flutter",
+        "★193"
+      ],
+      "badge1": "Dart",
+      "badge2": "★ 193",
+      "content": "hukusuke1007/flutter_app_template\n\nFlutter + Firebaseアプリのスターターキット、新規アプリ開発はこのテンプレートをベースに始める。お仕事のご相談はこちらから https://neverjp.com/contact/\n\n⭐ Yıldız: 193\n🍴 Fork: 47\n📅 Güncelleme: 2026-05-22\n🔗 https://github.com/hukusuke1007/flutter_app_template",
+      "meta": {
+        "Yıldız": 193,
+        "Dil": "Dart",
+        "Fork": 47
+      },
+      "source": {
+        "url": "https://github.com/hukusuke1007/flutter_app_template",
+        "license": "MIT",
+        "author": "hukusuke1007"
+      }
+    },
+    {
+      "id": 20,
+      "cat": "TypeScript",
+      "name": "nextjs-firebase-starter",
+      "desc": "A production-ready starter template for building full-stack web applications with Next.js 15, React 19, and Firebase. Th",
+      "tags": [
+        "authentication",
+        "authentification",
+        "crud",
+        "database",
+        "★157"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 157",
+      "content": "milliorn/nextjs-firebase-starter\n\nA production-ready starter template for building full-stack web applications with Next.js 15, React 19, and Firebase. This template ships with email/password authentication, Firestore data helpers, a route-protected admin page, and a global auth context so you can skip the boilerplate.\n\n⭐ Yıldız: 157\n🍴 Fork: 36\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/milliorn/nextjs-firebase-starter",
+      "meta": {
+        "Yıldız": 157,
+        "Dil": "TypeScript",
+        "Fork": 36
+      },
+      "source": {
+        "url": "https://github.com/milliorn/nextjs-firebase-starter",
+        "license": "MIT",
+        "author": "milliorn"
+      }
+    },
+    {
+      "id": 21,
+      "cat": "Dart",
+      "name": "flutter_login_screen",
+      "desc": "A basic login/register screen that can be used as a template for future Flutter projects. ",
+      "tags": [
+        "firebase",
+        "flutter",
+        "flutter-examples",
+        "flutter-template",
+        "★141"
+      ],
+      "badge1": "Dart",
+      "badge2": "★ 141",
+      "content": "KimLangholz/flutter_login_screen\n\nA basic login/register screen that can be used as a template for future Flutter projects. \n\n⭐ Yıldız: 141\n🍴 Fork: 28\n📅 Güncelleme: 2025-08-21\n🔗 https://github.com/KimLangholz/flutter_login_screen",
+      "meta": {
+        "Yıldız": 141,
+        "Dil": "Dart",
+        "Fork": 28
+      },
+      "source": {
+        "url": "https://github.com/KimLangholz/flutter_login_screen",
+        "license": "MIT",
+        "author": "KimLangholz"
+      }
+    },
+    {
+      "id": 22,
+      "cat": "TypeScript",
+      "name": "cloudflare-starter-kit",
+      "desc": "Template (boilerplate) repository for scaffolding Cloudflare Workers projects",
+      "tags": [
+        "boilerplate",
+        "cdn",
+        "cloudflare",
+        "cloudflare-workers",
+        "★139"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 139",
+      "content": "kriasoft/cloudflare-starter-kit\n\nTemplate (boilerplate) repository for scaffolding Cloudflare Workers projects\n\n⭐ Yıldız: 139\n🍴 Fork: 20\n📅 Güncelleme: 2026-03-10\n🔗 https://github.com/kriasoft/cloudflare-starter-kit",
+      "meta": {
+        "Yıldız": 139,
+        "Dil": "TypeScript",
+        "Fork": 20
+      },
+      "source": {
+        "url": "https://github.com/kriasoft/cloudflare-starter-kit",
+        "license": "MIT",
+        "author": "kriasoft"
+      }
+    },
+    {
+      "id": 23,
+      "cat": "TypeScript",
+      "name": "venefish",
+      "desc": "Boilerplate & template for Next.js project deployable on Vercel. Firebase, shadcn/ui and Tailwind.",
+      "tags": [
+        "boilerplate",
+        "boilerplate-application",
+        "boilerplate-front-end",
+        "boilerplate-react",
+        "★130"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 130",
+      "content": "enesien/venefish\n\nBoilerplate & template for Next.js project deployable on Vercel. Firebase, shadcn/ui and Tailwind.\n\n⭐ Yıldız: 130\n🍴 Fork: 38\n📅 Güncelleme: 2026-04-22\n🔗 https://github.com/enesien/venefish",
+      "meta": {
+        "Yıldız": 130,
+        "Dil": "TypeScript",
+        "Fork": 38
+      },
+      "source": {
+        "url": "https://github.com/enesien/venefish",
+        "license": "MIT",
+        "author": "enesien"
+      }
+    },
+    {
+      "id": 24,
+      "cat": "JavaScript",
+      "name": "ReactJS-ecommerce-template",
+      "desc": "online shop template - React, Redux, Firebase, Stripe",
+      "tags": [
+        "★128"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 128",
+      "content": "bruceallday/ReactJS-ecommerce-template\n\nonline shop template - React, Redux, Firebase, Stripe\n\n⭐ Yıldız: 128\n🍴 Fork: 70\n📅 Güncelleme: 2026-05-29\n🔗 https://github.com/bruceallday/ReactJS-ecommerce-template",
+      "meta": {
+        "Yıldız": 128,
+        "Dil": "JavaScript",
+        "Fork": 70
+      },
+      "source": {
+        "url": "https://github.com/bruceallday/ReactJS-ecommerce-template",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "bruceallday"
+      }
+    },
+    {
+      "id": 25,
+      "cat": "JavaScript",
+      "name": "sapper-firebase-typescript-graphql-tailwindcss-actions-template",
+      "desc": "A template that includes Sapper for Svelte, Firebase functions and hosting, TypeScript and TypeGraphQL, Tailwind CSS, ES",
+      "tags": [
+        "apollo-server",
+        "cssnano",
+        "eslint",
+        "firebase",
+        "★105"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 105",
+      "content": "babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template\n\nA template that includes Sapper for Svelte, Firebase functions and hosting, TypeScript and TypeGraphQL, Tailwind CSS, ESLint, and automatic building and deployment with GitHub Actions\n\n⭐ Yıldız: 105\n🍴 Fork: 14\n📅 Güncelleme: 2024-12-25\n🔗 https://github.com/babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template",
+      "meta": {
+        "Yıldız": 105,
+        "Dil": "JavaScript",
+        "Fork": 14
+      },
+      "source": {
+        "url": "https://github.com/babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template",
+        "license": "MIT",
+        "author": "babichjacob"
+      }
+    }
+  ]
+}

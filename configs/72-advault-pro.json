@@ -1,0 +1,323 @@
+{
+  "slug": "72-advault-pro",
+  "title": "AdVault Pro — Verimlilik & Otomasyon",
+  "metaDescription": "Dijital reklamcılık için A/B test senaryoları ve reklam metni (ad copy) şablonları.",
+  "metaKeywords": [
+    "Ad",
+    "AdVault Pro",
+    "Verimlilik & Otomasyon",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Dijital reklamcılık için A/B test senaryoları ve reklam metni (ad copy) şablonları.",
+  "heroCorner": "A",
+  "heroEyebrow": "Verimlilik & Otomasyon · Alet Çantası",
+  "heroTitleHTML": "Ad<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Ad<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "AdVault Pro · Verimlilik & Otomasyon",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Ad ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "advault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "productivity",
+  "categoryLabel": "Verimlilik & Otomasyon",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4cc9c9",
+    "primary2": "#4cc9c9",
+    "primaryDim": "#4cc9c915",
+    "primaryGlow": "#4cc9c930",
+    "primaryDark": "#2eabab",
+    "accent": "#5ed47e",
+    "accent2": "#5ed47e",
+    "accentDim": "#5ed47e18",
+    "accentGlow": "#5ed47e30",
+    "bg": "#060e0e",
+    "bg2": "#0a1212",
+    "bg3": "#0e1616",
+    "bg4": "#121a1a",
+    "border": "#161e1e",
+    "border2": "#1e2626",
+    "border3": "#2a3232",
+    "heroBg": "#0a1212"
+  },
+  "categories": [
+    {
+      "id": "strateji",
+      "name": "Reklam Stratejisi",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "google",
+      "name": "Google Ads",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "meta",
+      "name": "Meta Ads",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "kreatif",
+      "name": "Kreatif & Metin",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "optimizasyon",
+      "name": "Optimizasyon",
+      "color": "#4cc9c9"
+    },
+    {
+      "id": "olcum",
+      "name": "Ölçüm & ROI",
+      "color": "#4cc9c9"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "strateji",
+      "name": "Reklam Hunisi Modeli",
+      "desc": "Farkındalık / Değerlendirme / Dönüşüm için farklı reklam tipleri.",
+      "tags": [
+        "huni",
+        "TOFU",
+        "BOFU"
+      ],
+      "badge1": "Temel",
+      "content": "**Reklam Hunisi:** TOFU (farkındalık): geniş kitle, marka mesajı, video/görsel. MOFU (değerlendirme): retargeting, kanıt, karşılaştırma. BOFU (dönüşüm): sıcak kitle, teklif, urgency. Her aşamada farklı mesaj. TOFU olmadan BOFU çalışmaz. Bütçeyi 20/30/50 oranında dağıt.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "google",
+      "name": "Arama Kampanyası Yapısı",
+      "desc": "SKAG veya STAG yaklaşımıyla kampanya organize et.",
+      "tags": [
+        "arama",
+        "kampanya",
+        "SKAG"
+      ],
+      "badge1": "Yapı",
+      "content": "**Arama Kampanyası:** Kampanya: ürün/hizmet kategorisi. Reklam grubu: belirli arama niyeti. Anahtar kelime: hem geniş hem tam eşleşme. Negatif kelimeler: alakasız trafiği kes. Her reklam grubu için özel açılış sayfası. STAG (tek reklam grubu/tema) başlangıç için yeterli. Günlük bütçe: min 50₺.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "google",
+      "name": "Anahtar Kelime Eşleşme Türleri",
+      "desc": "Geniş, sıralı ve tam eşleşme farkları ve kullanımı.",
+      "tags": [
+        "eşleşme",
+        "keyword",
+        "geniş"
+      ],
+      "badge1": "Teknik",
+      "content": "**Eşleşme Türleri:** Geniş eşleşme: en fazla erişim, en az kontrol. Sıralı eşleşme: 'kelime öbeği' — içeriyor. Tam eşleşme: [tam kelime] — sadece o. Başlangıç önerisi: sıralı + tam. Geniş eşleşmeyi sadece öğrenme aşamasında kullan. Arama terimi raporunu haftalık tara — yeni negatif kelimeler ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "meta",
+      "name": "Meta Reklam Kampanyası Kurulumu",
+      "desc": "Kampanya / Reklam seti / Reklam hiyerarşisi.",
+      "tags": [
+        "meta",
+        "kampanya",
+        "kurulum"
+      ],
+      "badge1": "Temel",
+      "content": "**Meta Hiyerarşi:** Kampanya: hedef (satın alma, trafik, etkileşim). Reklam seti: kitle + bütçe + zamanlama. Reklam: görsel/video + metin + CTA. Her test için ayrı reklam seti oluştur. Kampanya bütçe optimizasyonu (CBO): Meta bütçeyi dağıtır. Öğrenme aşaması: 50 dönüşüm/hafta gerekli.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "meta",
+      "name": "Lookalike Audience Oluşturma",
+      "desc": "Mevcut müşterilere benzer kitle bul.",
+      "tags": [
+        "lookalike",
+        "kitle",
+        "benzer"
+      ],
+      "badge1": "Güçlü",
+      "content": "**Lookalike Audience:** Kaynak: müşteri listesi (min 1000 kişi) veya Pixel verisi (alışveriş). Benzerlik: %1-2 (en yakın), %5-10 (daha geniş). %1 LAL: en yüksek dönüşüm, küçük kitle. %5-10 LAL: daha fazla erişim, daha az benzer. Başlangıç: Pixel Events (Purchase) ile %1 LAL. Veri büyüdükçe 'value-based LAL' dene.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "kreatif",
+      "name": "Reklam Görseli Tasarım Kuralları",
+      "desc": "Scroll durduran görsel 3 saniye prensibi.",
+      "tags": [
+        "görsel",
+        "tasarım",
+        "hook"
+      ],
+      "badge1": "Dikkat",
+      "content": "**3 Saniye Prensibi:** İlk kare tek başına mesajı taşımalı. Metin: görsel üzerinde min, net, büyük. Renk: markan rengini kullan — tanınırlık. Hareket: statik görsel videoya kıyasla %30 daha az izleniyor. Mobil önce tasarla (9:16). UGC (kullanıcı içeriği) stüdyo görselinden genellikle iyi performans gösterir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "kreatif",
+      "name": "AIDA Reklam Metni Formülü",
+      "desc": "Dikkat – İlgi – İstek – Eylem yapısıyla metin yaz.",
+      "tags": [
+        "AIDA",
+        "metin",
+        "kopya"
+      ],
+      "badge1": "Klasik",
+      "content": "**AIDA Formülü:** Attention (Dikkat): 'Türkiye'deki en büyük [sektör] hatası.' Interest (İlgi): neden önemli, rakam. Desire (İstek): fayda + sosyal kanıt. Action (Eylem): net CTA ('Şimdi ücretsiz dene'). Kısa metin: 125 karakter, uzun: 500+. A/B test: her kampanyada 2-3 metin varyasyonu. Kazananı ölçeklendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "optimizasyon",
+      "name": "Reklam Yorgunluğunu Tespit Etme",
+      "desc": "Frequency artışında performans düşüşünü nasıl fark edersin.",
+      "tags": [
+        "yorgunluk",
+        "frequency",
+        "CPM"
+      ],
+      "badge1": "Dikkat",
+      "content": "**Reklam Yorgunluğu:** İşaretler: Frequency >3, CTR düşüyor, CPM yükseliyor, dönüşüm maliyeti artıyor. Çözüm: yeni kreatif ekle (reklam seti değil). En az 3-5 kreatif döngüde tut. Her 2-3 haftada yeni varyasyon test et. Yorgun reklam = para yakma. Kreatif tazeleme = maliyeti sıfırlama.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "optimizasyon",
+      "name": "Açılış Sayfası Optimizasyonu",
+      "desc": "Reklam → landing page dönüşüm oranını artır.",
+      "tags": [
+        "açılış sayfası",
+        "dönüşüm",
+        "CRO"
+      ],
+      "badge1": "Kritik",
+      "content": "**Açılış Sayfası Checklist:** Reklam mesajı = sayfa başlığı (message match). Tek CTA (birden fazla karıştırır). Hero görsel ürünü göstermeli. Sosyal kanıt fold üzerinde (yorum/logo). Hız: 3 saniyenin altı (PageSpeed test). Mobil uyumlu. Form alanı: sadece gerekli olanlar. Her fazladan adım dönüşümü %10-20 düşürür.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "olcum",
+      "name": "ROAS ve CPA Hedefleri",
+      "desc": "Return on Ad Spend ve dönüşüm başı maliyet hesaplama.",
+      "tags": [
+        "ROAS",
+        "CPA",
+        "ROI"
+      ],
+      "badge1": "Finans",
+      "content": "**ROAS Hesabı:** ROAS = Reklam geliri / Reklam harcaması. Hedef: sektöre göre 3-5×. CPA = Harcama / Dönüşüm sayısı. Kârlı CPA = Ürün kârı × 0.3 (max). Eğer ürün 100₺ kâr veriyorsa max 30₺ CPA harca. Break-even ROAS = Gelir / (Gelir - Maliyet). Altında harcama durdur veya kreatifi değiştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "olcum",
+      "name": "UTM Parametreleri ile İzleme",
+      "desc": "Hangi reklamın hangi satışı getirdiğini anlık izle.",
+      "tags": [
+        "UTM",
+        "izleme",
+        "analitik"
+      ],
+      "badge1": "Teknik",
+      "content": "**UTM Kurulumu:** UTM parametreleri: source (meta/google), medium (cpc/paid), campaign (isim), content (reklam_id). Google URL Builder ile oluştur. Google Analytics'te: Edinim → Trafik kaynakları → kampanyalara göre filtrele. Her reklam için ayrı UTM. Hangi içerik, platform, kampanya satış getiriyor? Net cevap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "strateji",
+      "name": "Rakip Reklam Analizi",
+      "desc": "Meta Ad Library ve SpyFu ile rakipler ne yapıyor?",
+      "tags": [
+        "rakip",
+        "analiz",
+        "casusluk"
+      ],
+      "badge1": "Araştırma",
+      "content": "**Rakip Analizi:** Meta Ad Library (ücretsiz): rakibin aktif reklamlarını gör. SpyFu / SEMrush: Google Ads rakip anahtar kelimeleri. SimilarWeb: rakip trafik kaynakları. Öğren: hangi formatlar kullanıyor, hangi mesajlar öne çıkıyor, ne kadar süredir yayında (uzun süre = işe yarıyor). İlham al, kopyalama — uyarla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "meta",
+      "name": "Retargeting Kampanyası Kurma",
+      "desc": "Web sitesi ziyaretçilerini geri çeken yeniden hedefleme.",
+      "tags": [
+        "retargeting",
+        "pixel",
+        "geri kazanma"
+      ],
+      "badge1": "Dönüşüm",
+      "content": "**Retargeting Kampanyası:** Pixel kur → özel kitleler oluştur: tüm ziyaretçiler (30 gün), ürün sayfası görüntüleyenler, sepete ekleyenler, satın almalar (hariç tut). Mesaj farklı: 'Geri döndün mü?' veya indirim kodu. Ürün dinamik reklamı (DPA): katalog bağla, otomatik ürün göster. Retargeting dönüşümü soğuk kitleye kıyasla 3-5× yüksek.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "kreatif",
+      "name": "Video Reklam Yapısı",
+      "desc": "15-30 saniyelik reklam videosunun optimal formatı.",
+      "tags": [
+        "video",
+        "reklam",
+        "yapı"
+      ],
+      "badge1": "Video",
+      "content": "**Video Reklam Yapısı:** 0-3 sn: hook (problem veya dikkat çekici sahne). 3-10 sn: problem/çözüm göster. 10-25 sn: sosyal kanıt + özellikler. 25-30 sn: CTA. Alt yazı ekle (sessiz izleme). İlk kare her şey — güçlü başla. Dikey format (9:16) mobil için. UGC tarzı (selfie video) stüdyo görüntüsünden %30 daha ucuz ve etkili.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "slug": "92-investvault-pro",
+  "title": "InvestVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Finansal okuryazarlık, temel analiz ve veri okuma (scraping ile toplanan veriler için) aracı.",
+  "metaKeywords": [
+    "Invest",
+    "InvestVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Finansal okuryazarlık, temel analiz ve veri okuma (scraping ile toplanan veriler için) aracı.",
+  "heroCorner": "I",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Invest<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Invest<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "InvestVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Invest ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "investvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Temel Analiz",
+      "name": "Temel Analiz",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Teknik Analiz",
+      "name": "Teknik Analiz",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Portföy Yönetimi",
+      "name": "Portföy Yönetimi",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Kripto & DeFi",
+      "name": "Kripto & DeFi",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Risk Yönetimi",
+      "name": "Risk Yönetimi",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Kişisel Finans",
+      "name": "Kişisel Finans",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Temel Analiz",
+      "name": "P/E Oranı Değerlendirme",
+      "desc": "Fiyat/Kazanç oranını yorumlamak ve sektörle kıyaslamak için rehber.",
+      "tags": [
+        "P/E",
+        "değerleme",
+        "hisse"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## P/E Oranı\nFormül: P/E = Hisse Fiyatı / Hisse Başı Kazanç\n\n- Düşük P/E: ucuz veya düşük büyüme beklentisi.\n- Yüksek P/E: pahalı veya yüksek büyüme beklentisi.\n- Sektörle kıyasla: teknoloji P/E>30 normal, banka P/E<15 normal.\n- Forward P/E: gelecek yıl kazanç tahmini kullanır.\n\nUyarı: Tek metrik yeterli değil, P/B, EV/EBITDA ile birlikte yorumla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Temel Analiz",
+      "name": "DCF Değerleme Hesabı",
+      "desc": "İndirgenmiş nakit akışı ile bir şirketin iç değerini hesaplayın.",
+      "tags": [
+        "DCF",
+        "değerleme",
+        "nakit akışı"
+      ],
+      "badge1": "İleri",
+      "content": "## DCF Formülü\nIV = Σ(FCF_t / (1+r)^t) + Terminal Value\n- FCF: Serbest nakit akışı tahmini.\n- r: WACC (ağırlıklı ortalama sermaye maliyeti).\n- Terminal Value: Gordon Growth Model.\n\n```python\ndef dcf(fcfs, r, terminal_growth):\n    pv = sum(fcf/(1+r)**t for t, fcf in enumerate(fcfs, 1))\n    tv = fcfs[-1]*(1+terminal_growth)/(r-terminal_growth)/(1+r)**len(fcfs)\n    return pv + tv\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Teknik Analiz",
+      "name": "Hareketli Ortalama Stratejileri",
+      "desc": "SMA, EMA ve MACD göstergelerini birleştiren ticaret stratejileri.",
+      "tags": [
+        "SMA",
+        "EMA",
+        "MACD"
+      ],
+      "badge1": "Orta",
+      "content": "## Hareketli Ortalamalar\n```python\nimport pandas as pd\n# SMA\ndf['SMA50'] = df['close'].rolling(50).mean()\ndf['SMA200'] = df['close'].rolling(200).mean()\n# Altın kesişim sinyali:\ndf['signal'] = (df['SMA50'] > df['SMA200']).astype(int).diff()\n# +1: AL sinyali, -1: SAT sinyali\n\n# EMA\ndf['EMA12'] = df['close'].ewm(span=12).mean()\ndf['EMA26'] = df['close'].ewm(span=26).mean()\ndf['MACD'] = df['EMA12'] - df['EMA26']\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Teknik Analiz",
+      "name": "RSI Aşırı Alım/Satım",
+      "desc": "Relative Strength Index ile aşırı alım ve satım seviyelerini tespit edin.",
+      "tags": [
+        "RSI",
+        "momentum",
+        "sinyal"
+      ],
+      "badge1": "Orta",
+      "content": "## RSI Hesabı\n```python\ndef compute_rsi(prices, window=14):\n    delta = prices.diff()\n    gain = (delta.where(delta > 0, 0)).rolling(window).mean()\n    loss = (-delta.where(delta < 0, 0)).rolling(window).mean()\n    rs = gain / loss\n    return 100 - (100 / (1 + rs))\n\ndf['RSI'] = compute_rsi(df['close'])\n# RSI > 70: aşırı alım\n# RSI < 30: aşırı satım\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Portföy Yönetimi",
+      "name": "Modern Portföy Teorisi",
+      "desc": "Markowitz'in etkin sınır kavramı ve çeşitlendirmenin risk-getiri dengesi.",
+      "tags": [
+        "Markowitz",
+        "çeşitlendirme",
+        "portföy"
+      ],
+      "badge1": "İleri",
+      "content": "## MPT Özeti\n- Risk = standart sapma, Getiri = beklenen ortalama.\n- Korelasyon < 1 olan varlıklar portföy riskini düşürür.\n- Etkin sınır: belirli risk için maksimum getiri portföyleri.\n```python\nimport numpy as np\ndef portfolio_stats(weights, returns, cov_matrix):\n    port_return = np.dot(weights, returns)\n    port_risk = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))\n    return port_return, port_risk\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Risk Yönetimi",
+      "name": "Stop-Loss Stratejileri",
+      "desc": "Sabit yüzde, ATR tabanlı ve trailing stop-loss yöntemlerini karşılaştırın.",
+      "tags": [
+        "stop-loss",
+        "kayıp yönetimi",
+        "strateji"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Stop-Loss Türleri\n1. Sabit yüzde: Giriş × (1 - 0.05) → %5 zarar limitl.\n2. ATR tabanlı: Giriş - 2×ATR(14) → volatiliteye uyarlanır.\n3. Trailing stop: En yüksekten %X aşağı → kazancı korur.\n4. Destek bazlı: Önemli destek seviyesinin biraz altı.\n\nAltın kural: Risk/Ödül ≥ 1:2 olmadan pozisyon açma.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Risk Yönetimi",
+      "name": "Kelly Kriteri",
+      "desc": "Bileşik büyümeyi maksimize eden optimal pozisyon büyüklüğü hesabı.",
+      "tags": [
+        "Kelly",
+        "pozisyon",
+        "büyüklük"
+      ],
+      "badge1": "İleri",
+      "content": "## Kelly Kriteri\nf = (bp - q) / b\n- b: Kazanç/kayıp oranı\n- p: Kazanma olasılığı\n- q: Kaybetme olasılığı (1-p)\n\nÖrnek: p=0.55, b=1.5\nf = (1.5×0.55 - 0.45)/1.5 = 0.25 → %25 sermaye koy.\n\nPratik: Full Kelly riskli → Half Kelly (f/2) veya Quarter Kelly kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Kripto & DeFi",
+      "name": "DeFi Temel Kavramlar",
+      "desc": "Merkeziyetsiz finans protokollerinin temel bileşenleri: AMM, liquidity pool, yield farming.",
+      "tags": [
+        "DeFi",
+        "AMM",
+        "yield"
+      ],
+      "badge1": "Orta",
+      "content": "## DeFi Bileşenleri\n1. **AMM (Automated Market Maker):** x × y = k formülü ile fiyat belirler.\n2. **Liquidity Pool:** İki token çifti sağlanır, swap fee kazanılır.\n3. **Impermanent Loss:** LP token değeri, doğrudan tutmaya göre düşüş.\n4. **Yield Farming:** LP tokeni stake et → ek token ödülü.\n5. **TVL:** Total Value Locked — protokol büyüklüğü göstergesi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Kripto & DeFi",
+      "name": "On-Chain Analiz Metrikleri",
+      "desc": "NVT, MVRV, realized cap gibi on-chain verilerle piyasa döngüsü analizi.",
+      "tags": [
+        "on-chain",
+        "NVT",
+        "MVRV"
+      ],
+      "badge1": "İleri",
+      "content": "## On-Chain Metrikler\n- **NVT (Network Value to Transactions):** Market cap / günlük transfer hacmi. Yüksek → balon riski.\n- **MVRV:** Market cap / Realized cap. >3.7 tarihsel tepe sinyali.\n- **SOPR:** Harcanan çıktıların kâr/zarar durumu. <1 kapitülasyon.\n- **Exchange Inflow:** Borsaya akan coin artışı → satış baskısı.\nAraçlar: Glassnode, CryptoQuant, Dune Analytics.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Kişisel Finans",
+      "name": "50/30/20 Bütçe Kuralı",
+      "desc": "Aylık geliri ihtiyaç, istek ve tasarrufa ayıran temel bütçeleme çerçevesi.",
+      "tags": [
+        "bütçe",
+        "50/30/20",
+        "tasarruf"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## 50/30/20 Kuralı\n- **%50 İhtiyaçlar:** Kira, faturalar, market, ulaşım.\n- **%30 İstekler:** Yeme/içme dışarıda, eğlence, hobi.\n- **%20 Tasarruf/Yatırım:** Acil fon, emeklilik, yatırım.\n\nTürkiye adaptasyonu: yüksek kira payında %50→%60 esnetebilirsin.\nAcil fon hedefi önce: 3-6 aylık gider = hedef #1.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Kişisel Finans",
+      "name": "Bileşik Faizin Gücü",
+      "desc": "Yatırım süresinin getiriye etkisini somutlaştıran bileşik faiz hesapları.",
+      "tags": [
+        "bileşik",
+        "faiz",
+        "zaman"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bileşik Faiz\n```python\ndef compound_growth(principal, rate, years, monthly=0):\n    balance = principal\n    for _ in range(years * 12):\n        balance += monthly\n        balance *= (1 + rate/12)\n    return balance\n\nprint(compound_growth(10000, 0.10, 30, 500))\n# ≈ 1.13 milyon TL\n```\n72 kuralı: 72 / faiz oranı = paranın iki katlanma yılı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Temel Analiz",
+      "name": "Bilanço Okuma Rehberi",
+      "desc": "Varlıklar, yükümlülükler ve özkaynak dengesini anlayarak finansal sağlığı değerlendirin.",
+      "tags": [
+        "bilanço",
+        "finansal",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Bilanço Temel\n**Varlıklar = Yükümlülükler + Özkaynak**\n\nKritik oranlar:\n- Current Ratio = Dönen Varlıklar / Kısa Vadeli Borç > 1.5 iyi.\n- Debt/Equity = Toplam Borç / Özkaynak — sektöre göre yorumla.\n- ROE = Net Kâr / Özkaynak — verimlilik ölçüsü.\n\nKırmızı bayrak: Dönen varlıklar < Kısa vadeli borç → likidite riski.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Portföy Yönetimi",
+      "name": "Yeniden Dengeleme Stratejileri",
+      "desc": "Portföy ağırlıklarını hedef tahsise döndürmenin yöntemleri ve sıklığı.",
+      "tags": [
+        "rebalancing",
+        "tahsis",
+        "denge"
+      ],
+      "badge1": "Orta",
+      "content": "## Yeniden Dengeleme\n1. **Takvim bazlı:** Yılda 1-2 kez, sabit tarihte.\n2. **Bant bazlı:** Varlık ağırlığı ±5%'ten sapınca dengele.\n3. **Nakit akışı:** Yeni yatırımı az olan varlığa yönlendir.\n\nVergi verimliliği: Önce kayıplı pozisyonu sat (tax-loss harvesting); kazançlı pozisyon yerine nakit ekle.\nSıklık: Çok sık → yüksek işlem maliyeti.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Risk Yönetimi",
+      "name": "Korelasyon Matrisi Analizi",
+      "desc": "Portföy varlıklarının korelasyonunu hesaplayarak çeşitlendirme kalitesini ölçün.",
+      "tags": [
+        "korelasyon",
+        "çeşitlendirme",
+        "matris"
+      ],
+      "badge1": "İleri",
+      "content": "## Korelasyon Analizi\n```python\nimport pandas as pd\nimport seaborn as sns\n\n# df: her sütun bir varlığın getirisi\ncorr = df.pct_change().corr()\nsns.heatmap(corr, annot=True, cmap='coolwarm')\n# -1: mükemmel negatif korelasyon\n# 0: korelasyon yok\n# +1: mükemmel pozitif korelasyon\n\n# Hedef: varlık çiftleri < 0.5 korelasyon\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Teknik Analiz",
+      "name": "Fibonacci Düzeltme Seviyeleri",
+      "desc": "Fibonacci oranlarından türetilen destek/direnç seviyelerini ticaret analizine uygulayın.",
+      "tags": [
+        "Fibonacci",
+        "düzeltme",
+        "destek"
+      ],
+      "badge1": "Orta",
+      "content": "## Fibonacci Seviyeleri\nTemel seviyeler: %23.6, %38.2, %50, %61.8, %78.6\n\nHesaplama:\n```python\ndef fib_retracement(high, low):\n    diff = high - low\n    return {level: high - diff*level/100\n            for level in [23.6, 38.2, 50, 61.8, 78.6]}\nlevels = fib_retracement(100, 70)\n# %61.8 'altın oran' — en güçlü destek/direnç\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

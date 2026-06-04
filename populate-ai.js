@@ -1,0 +1,257 @@
+#!/usr/bin/env node
+/**
+ * populate-ai.js — dataSource:"ai" olan config'leri AI ile doldurur.
+ *
+ * Claude (Anthropic), Gemini (Google) veya xAI (Grok) destekler.
+ * Key formatından sağlayıcı otomatik algılanır:
+ *   "AIza..."   → Gemini
+ *   "sk-ant..." → Claude
+ *   "xai-..."   → xAI (Grok)
+ *
+ * Kullanım:
+ *   node populate-ai.js --key AIza...                 # Gemini
+ *   node populate-ai.js --key xai-...                 # xAI / Grok
+ *   node populate-ai.js --key sk-ant-...              # Claude
+ *   node populate-ai.js --only 31-mythvault-pro --key AIza...
+ *   node populate-ai.js --limit 5 --key AIza...       # ilk 5 (test)
+ *   node populate-ai.js --from 50 --key xai-...       # 50. vault'tan başla
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const CONFIG_DIR = path.join(__dirname, 'configs');
+const args = process.argv.slice(2);
+function getArg(f) { const i = args.indexOf(f); return i !== -1 ? args[i + 1] : null; }
+
+const API_KEY = getArg('--key') || process.env.GEMINI_API_KEY || process.env.ANTHROPIC_API_KEY || process.env.XAI_API_KEY;
+const onlyArg = getArg('--only');
+const limitArg = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
+const fromArg = getArg('--from') ? parseInt(getArg('--from'), 10) : null;
+const TARGET_ITEMS = getArg('--items') ? parseInt(getArg('--items'), 10) : 20;
+
+if (!API_KEY) {
+  console.error('HATA: API key gerekli. --key AIza... (Gemini), --key xai-... (xAI) veya --key sk-ant-... (Claude).');
+  process.exit(1);
+}
+
+// Sağlayıcıyı key formatından algıla
+const PROVIDER = getArg('--provider') || (
+  API_KEY.startsWith('sk-ant') ? 'claude' :
+  API_KEY.startsWith('xai-') ? 'xai' :
+  'gemini'
+);
+const MODEL = getArg('--model') || (
+  PROVIDER === 'claude' ? 'claude-sonnet-4-6' :
+  PROVIDER === 'xai' ? 'grok-3-mini' :
+  'gemini-2.5-flash'
+);
+
+const SYSTEM_PROMPT = `Sen bir AI araç kütüphanesi (vault) için içerik üreten uzman bir editörsün.
+Sana bir vault'un adı ve amacı verilir. Türkçe olarak, bu vault'a ait gerçekçi ve
+yüksek kaliteli içerik üret.
+
+ÇIKTI: Yalnızca geçerli JSON döndür (markdown yok, açıklama yok). Şema:
+{
+  "categories": [
+    {"id": "Kategori Adı", "name": "Kategori Adı", "color": "#rrggbb"}
+  ],
+  "items": [
+    {
+      "cat": "Kategori Adı (yukarıdakilerden biri)",
+      "name": "Kısa öğe adı",
+      "desc": "Tek cümlelik açıklama (max 90 karakter)",
+      "tags": ["etiket1", "etiket2", "etiket3"],
+      "badge1": "Zorluk (Başlangıç/Orta/İleri)",
+      "content": "Kullanıcının doğrudan kullanabileceği profesyonel talimat/şablon metni. Markdown başlıklar (## ile) ve adımlar içersin. 200-350 karakter, öz ve somut."
+    }
+  ]
+}
+
+KURALLAR:
+- 5-6 alt kategori üret, her birine farklı uyumlu hex renk ver.
+- Tam ${TARGET_ITEMS} item üret, kategorilere dengeli dağıt.
+- content alanı gerçekten kullanılabilir, somut ve değerli olsun — yer tutucu değil ama gereksiz uzun da değil.
+- Tüm metin Türkçe olsun. JSON dışında hiçbir şey yazma.`;
+
+function buildUserMessage(cfg) {
+  return `Vault: ${cfg.title}
+Amaç: ${cfg.subtitle}
+Genel Kategori: ${cfg.categoryLabel}
+
+Bu vault için ${TARGET_ITEMS}+ item ve 5-6 kategori içeren JSON üret.`;
+}
+
+async function callClaude(cfg) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': API_KEY,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 8000,
+      system: SYSTEM_PROMPT,
+      messages: [{ role: 'user', content: buildUserMessage(cfg) }],
+    }),
+  });
+  if (res.status === 429 || res.status === 529) { const e = new Error(`yoğunluk ${res.status}`); e.retryable = true; throw e; }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return (data.content || []).map(b => b.type === 'text' ? b.text : '').join('');
+}
+
+async function callGemini(cfg) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+      contents: [{ role: 'user', parts: [{ text: buildUserMessage(cfg) }] }],
+      generationConfig: { maxOutputTokens: 12288, temperature: 0.8, responseMimeType: 'application/json' },
+    }),
+  });
+  if (res.status === 429 || res.status === 503) {
+    const data = await res.json().catch(() => ({}));
+    const msg = data.error?.message || '';
+    const m = msg.match(/retry in ([\d.]+)s/i);
+    const e = new Error(`yoğunluk ${res.status}`);
+    e.retryable = true;
+    e.retryAfter = m ? Math.ceil(parseFloat(m[1])) + 2 : null; // API'nin önerdiği bekleme
+    throw e;
+  }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+}
+
+async function callXai(cfg) {
+  const res = await fetch('https://api.x.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 8000,
+      temperature: 0.8,
+      response_format: { type: 'json_object' },
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'user', content: buildUserMessage(cfg) },
+      ],
+    }),
+  });
+  if (res.status === 429 || res.status === 503) {
+    const retryAfter = parseInt(res.headers.get('retry-after') || '0', 10);
+    const e = new Error(`yoğunluk ${res.status}`);
+    e.retryable = true;
+    e.retryAfter = retryAfter || null;
+    throw e;
+  }
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  return data.choices?.[0]?.message?.content || '';
+}
+
+async function callAI(cfg, retries = 5) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      if (PROVIDER === 'claude') return await callClaude(cfg);
+      if (PROVIDER === 'xai') return await callXai(cfg);
+      return await callGemini(cfg);
+    } catch (e) {
+      if (attempt < retries) {
+        // API "retry in Xs" önerdiyse tam o kadar bekle (kota israfını önler),
+        // yoksa kademeli backoff
+        const wait = e.retryAfter ? e.retryAfter * 1000 : Math.min((attempt + 1) * 15000, 60000);
+        console.log(`    ⏳ ${e.message}, ${Math.round(wait/1000)}s bekleniyor...`);
+        await new Promise(r => setTimeout(r, wait));
+        continue;
+      }
+      throw e;
+    }
+  }
+}
+
+function extractJSON(text) {
+  // Markdown fence ve baştaki çöpü temizle, ilk { 'ten başla
+  let t = text.trim().replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
+  const start = t.indexOf('{');
+  if (start === -1) throw new Error('JSON bulunamadı');
+  t = t.slice(start);
+
+  // 1) Doğrudan dene
+  try { return JSON.parse(t); } catch (_) {}
+  // 2) Son } 'a kadar dene
+  try { return JSON.parse(t.slice(0, t.lastIndexOf('}') + 1)); } catch (_) {}
+  // 3) Kurtarma: yanıt truncate olduysa son tam item objesine kadar kes,
+  //    items array'ini ve root objeyi kapat. (şema: {categories:[...], items:[...]})
+  const cut = t.lastIndexOf('},');
+  if (cut !== -1) {
+    try { return JSON.parse(t.slice(0, cut + 1) + ']}'); } catch (_) {}
+  }
+  throw new Error('JSON kurtarılamadı (truncate)');
+}
+
+async function processConfig(file) {
+  const fullPath = path.join(CONFIG_DIR, file);
+  const cfg = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+  if (cfg.dataSource !== 'ai') return 'skip';
+  if (cfg.items && cfg.items.length >= TARGET_ITEMS) { return 'skip'; }
+
+  try {
+    const raw = await callAI(cfg);
+    const parsed = extractJSON(raw);
+    if (!parsed.items || !parsed.items.length) throw new Error('item üretilmedi');
+
+    cfg.categories = parsed.categories || [];
+    cfg.items = parsed.items.map((it, i) => ({
+      id: i + 1,
+      no: String(i + 1).padStart(3, '0'),
+      ...it,
+      source: { generated: true, provider: PROVIDER, model: MODEL },
+    }));
+    fs.writeFileSync(fullPath, JSON.stringify(cfg, null, 2), 'utf8');
+    console.log(`  ✓ ${cfg.slug}: ${cfg.items.length} item, ${cfg.categories.length} kategori`);
+    return 'ok';
+  } catch (e) {
+    console.log(`  ✗ ${cfg.slug}: ${e.message}`);
+    return 'fail';
+  }
+}
+
+async function main() {
+  let files = fs.readdirSync(CONFIG_DIR).filter(f => f.endsWith('.json'));
+  if (onlyArg) files = files.filter(f => f.startsWith(onlyArg) || f === onlyArg + '.json');
+
+  // Sadece ai-vault'lar
+  files = files.filter(f => {
+    const c = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, f), 'utf8'));
+    return c.dataSource === 'ai';
+  });
+  // --from N: slug numarası N ve üzeri (paralel çalıştırma için bölme)
+  if (fromArg) files = files.filter(f => {
+    const num = parseInt(f.split('-')[0], 10);
+    return num >= fromArg;
+  });
+  if (limitArg) files = files.slice(0, limitArg);
+
+  const DELAY = getArg('--delay') ? parseInt(getArg('--delay'), 10) : 5000;
+  console.log(`AI ile veri üretiliyor (${files.length} vault, sağlayıcı: ${PROVIDER}, model: ${MODEL}, aralık: ${DELAY}ms)...`);
+  let ok = 0, skipped = 0;
+  for (const f of files) {
+    const r = await processConfig(f);
+    if (r === 'ok') ok++;
+    if (r === 'skip') { skipped++; continue; } // dolu vault: bekleme yok
+    // Sadece gerçek API çağrısından sonra bekle (RPM dostu akış)
+    await new Promise(res => setTimeout(res, DELAY));
+  }
+  console.log(`\nTamamlandı: ${ok} yeni vault dolduruldu (${skipped} zaten doluydu).`);
+}
+
+main();

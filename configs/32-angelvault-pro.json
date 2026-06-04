@@ -1,0 +1,465 @@
+{
+  "slug": "32-angelvault-pro",
+  "title": "AngelVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Mastema, kerublar ve melek hiyerarşileri gibi spesifik figürler için karakter/lore jeneratörü.",
+  "metaKeywords": [
+    "Angel",
+    "AngelVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Mastema, kerublar ve melek hiyerarşileri gibi spesifik figürler için karakter/lore jeneratörü.",
+  "heroCorner": "A",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Angel<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Angel<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "AngelVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Angel ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "angelvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Melek Hiyerarşileri",
+      "name": "Melek Hiyerarşileri",
+      "color": "#A5D6A7"
+    },
+    {
+      "id": "Düşmüş Varlıklar",
+      "name": "Düşmüş Varlıklar",
+      "color": "#EF9A9A"
+    },
+    {
+      "id": "İlahi Haberciler",
+      "name": "İlahi Haberciler",
+      "color": "#B39DDB"
+    },
+    {
+      "id": "Göksel Mekanlar",
+      "name": "Göksel Mekanlar",
+      "color": "#90CAF9"
+    },
+    {
+      "id": "Antik Mitler",
+      "name": "Antik Mitler",
+      "color": "#FFCC80"
+    },
+    {
+      "id": "Kozmik Olaylar",
+      "name": "Kozmik Olaylar",
+      "color": "#C5E1A5"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Melek Hiyerarşileri",
+      "name": "Serafim Özellikleri",
+      "desc": "Yüksek rütbeli Serafim meleklerinin fiziksel ve ruhsal özelliklerini keşfedin.",
+      "tags": [
+        "Serafim",
+        "Hiyerarşi",
+        "Kutsal"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Serafim Meleklerinin Karakteristiği\n1.  **Görünüm:** Genellikle altı kanatlı, ateşten varlıklar olarak tasvir edilirler. Yüzleri veya vücutları ateşle kaplıdır.\n2.  **Rol:** Tanrı'ya en yakın konumda dururlar, ilahi sevgiyi ve ışığı yansıtırlar. Sürekli \"Kutsal, Kutsal, Kutsal\" diye ilahi söylerler.\n3.  **Anlam:** İbranice \"yakanlar\" veya \"parlayanlar\" anlamına gelir, saflığı ve arınmayı temsil ederler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Melek Hiyerarşileri",
+      "name": "Kerubim Görevleri",
+      "desc": "Kerubim meleklerinin kutsal metinlerdeki koruyucu ve bilgi aktarıcı rollerini öğrenin.",
+      "tags": [
+        "Kerubim",
+        "Koruyucu",
+        "Bilgi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kerubim Meleklerinin Kutsal Görevleri\n1.  **Koruma:** Cennet Bahçesi'nin girişini korumakla görevlidirler (Yaratılış 3:24).\n2.  **Bilgi Taşıyıcıları:** Tanrı'nın taht arabasını (Merkabah) taşıyan ve ilahi bilgeliği aktaran varlıklar olarak betimlenirler.\n3.  **Sembolizm:** Bilgeliği, Tanrı'nın ihtişamını ve ilahi adaletini simgelerler. Genellikle dört yüzlü ve dört kanatlı tasvir edilirler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Melek Hiyerarşileri",
+      "name": "Tahtlar Sınıflandırması",
+      "desc": "Göksel hiyerarşideki Tahtlar meleklerinin konumunu ve fonksiyonlarını inceleyin.",
+      "tags": [
+        "Tahtlar",
+        "Hiyerarşi",
+        "Adalet"
+      ],
+      "badge1": "Orta",
+      "content": "## Tahtlar Meleklerinin Konumu ve Rolü\n1.  **Hiyerarşi:** Üçüncü en yüksek melek sınıfıdır, Serafim ve Kerubim'den sonra gelirler.\n2.  **Görev:** İlahi adaleti, otoriteyi ve yargıyı temsil ederler. Tanrı'nın tahtının dayanağı olarak kabul edilirler.\n3.  **Özellikler:** Genellikle ışık çarkları veya büyük, parlayan tekerlekler olarak tasvir edilirler, hareket ve ilahi iradenin sembolüdürler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Düşmüş Varlıklar",
+      "name": "Mastema'nın Kökeni",
+      "desc": "Yahudi mitolojisindeki Mastema'nın kökenini, rolünü ve etkilerini derinlemesine analiz edin.",
+      "tags": [
+        "Mastema",
+        "Düşmüş",
+        "Şeytan"
+      ],
+      "badge1": "İleri",
+      "content": "## Mastema'nın Mitolojik Kökenleri\n1.  **Kimlik:** Yahudi apokrif metinlerinde (Örn. Jubilees Kitabı) Tanrı'nın izniyle insanlığı test eden ve cezalandıran bir baş iblis/düşmüş melek figürüdür.\n2.  **Rol:** İnsanları günaha teşvik eder, yargılar ve bazen Mısır'daki veba gibi felaketlere neden olur. İblislerin lideri olarak da görülür.\n3.  **Etki:** Kötülüğün ve ilahi adaletin bir aracı olarak hem ceza hem de gelişim aracıdır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Düşmüş Varlıklar",
+      "name": "Azazel'in Laneti",
+      "desc": "Apokrif metinlerdeki Azazel'in düşüşünü, lanetini ve insanlık üzerindeki etkilerini keşfedin.",
+      "tags": [
+        "Azazel",
+        "Düşüş",
+        "Lanet"
+      ],
+      "badge1": "Orta",
+      "content": "## Azazel'in Düşüşü ve Laneti\n1.  **Köken:** Enoch Kitabı'nda, insanlara yasak bilgiyi (silah yapımı, kozmetik) öğreten düşmüş meleklerin liderlerinden biridir.\n2.  **Cezası:** Dünyanın derinliklerine hapsedilmiş ve Kıyamet Günü'nde yargılanmak üzere zincirlenmiştir.\n3.  **Sembolizm:** Günahın, kirliliğin ve yasak bilginin sembolüdür. Yahudi geleneğindeki kefaret törenlerinde \"günah keçisi\" ile ilişkilendirilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Düşmüş Varlıklar",
+      "name": "Lilith'in Hikayesi",
+      "desc": "Yahudi folklorundaki ilk kadın Lilith'in direnişini, sürgününü ve karanlık yönlerini inceleyin.",
+      "tags": [
+        "Lilith",
+        "İlk Kadın",
+        "Demon"
+      ],
+      "badge1": "Orta",
+      "content": "## Lilith'in Efsanevi Hikayesi\n1.  **Yaratılış:** Adem'in ilk karısı olarak yaratıldığına inanılır, ancak eşitlik talebiyle cennetten ayrılır.\n2.  **Sürgün:** Deniz kenarında iblislerle ilişkiye girer ve çocuklarını kaybeder. İntikam arayışıyla bebekleri hedef alan bir demon figürüne dönüşür.\n3.  **Sembolizm:** Bağımsızlığın, isyanın ve karanlık dişiliğin güçlü bir sembolü haline gelmiştir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Düşmüş Varlıklar",
+      "name": "İblis Hiyerarşisi",
+      "desc": "Çeşitli mitolojilerdeki iblislerin hiyerarşik yapılarını ve önemli figürlerini analiz edin.",
+      "tags": [
+        "İblis",
+        "Hiyerarşi",
+        "Kötülük"
+      ],
+      "badge1": "İleri",
+      "content": "## İblis Hiyerarşilerinin Genel Yapısı\n1.  **Sınıflandırma:** Genellikle rütbe, güç veya etki alanına göre sınıflandırılırlar (Örn. Lucifer, Beelzebub, Asmodeus).\n2.  **Kökenler:** Düşmüş meleklerden, pagan tanrılarından veya kötü ruhlardan türeyebilirler.\n3.  **Fonksiyonlar:** İnsanları günaha teşvik etmek, felaketlere neden olmak ve ruhları yoldan çıkarmak gibi çeşitli roller üstlenirler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "İlahi Haberciler",
+      "name": "Mikail'in Rolü",
+      "desc": "Başmelek Mikail'in kutsal metinlerdeki koruyucu, savaşçı ve yargıç rollerini detaylandırın.",
+      "tags": [
+        "Mikail",
+        "Başmelek",
+        "Savaşçı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Başmelek Mikail'in Temel Rolleri\n1.  **Koruyucu:** İsrail'in ve Hristiyan kilisesinin koruyucu meleği olarak kabul edilir.\n2.  **Savaşçı:** Şeytan ve düşmüş meleklerle savaşan göksel orduların lideridir (Vahiy 12:7-9).\n3.  **Yargıç:** Ölülerin ruhlarını tartarak ilahi adalete yardımcı olduğuna inanılır. Cesaret ve inancın sembolüdür.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "İlahi Haberciler",
+      "name": "Cebrail'in Misyonu",
+      "desc": "Başmelek Cebrail'in ilahi mesajları iletme ve peygamberlerle iletişim kurma misyonunu inceleyin.",
+      "tags": [
+        "Cebrail",
+        "Mesajcı",
+        "Peygamber"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Başmelek Cebrail'in İlahi Misyonları\n1.  **Mesajcı:** Tanrı'nın en önemli mesajlarını peygamberlere (Örn. Meryem'e İsa'nın doğumunu müjdelemesi, Hz. Muhammed'e Kuran'ı indirmesi) iletmekle görevlidir.\n2.  **Bilgi Aktarımı:** İlahi bilgiyi ve vahyi insanlığa taşıyan bir aracıdır.\n3.  **Sembolizm:** Haberci, ilham ve yaratılışın sembolüdür. Genellikle beyaz kanatlı ve nurani olarak tasvir edilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "İlahi Haberciler",
+      "name": "Rafael'in Şifası",
+      "desc": "Başmelek Rafael'in şifa, rehberlik ve ruhsal arınma alanındaki fonksiyonlarını analiz edin.",
+      "tags": [
+        "Rafael",
+        "Şifa",
+        "Rehber"
+      ],
+      "badge1": "Orta",
+      "content": "## Başmelek Rafael'in Şifacı Rolü\n1.  **Şifa:** Hem fiziksel hem de ruhsal hastalıkları iyileştirmesiyle tanınır. Tobit Kitabı'nda Tobias'a rehberlik eder ve şeytanı kovar.\n2.  **Rehberlik:** Yolculuklarda ve ruhsal arayışlarda insanlara rehberlik eder.\n3.  **Sembolizm:** Şifa, arınma, seyahat ve korumanın sembolüdür. Genellikle bir balık veya asayla tasvir edilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "İlahi Haberciler",
+      "name": "Metatron'un Gizemi",
+      "desc": "Yahudi mistisizminde önemli bir figür olan Metatron'un kökenini ve esrarengiz rolünü araştırın.",
+      "tags": [
+        "Metatron",
+        "Gizem",
+        "Kabalist"
+      ],
+      "badge1": "İleri",
+      "content": "## Metatron'un Kabalistik Gizemleri\n1.  **Kimlik:** Enoch'un göğe yükselip bir meleğe dönüştüğü veya Tanrı'nın sesi olarak bilinen yüce bir başmelektir.\n2.  **Rol:** İlahi iradenin ve yasanın yazıcısı, cennet kapılarının bekçisi ve insanlığın kayıtlarını tutan bir katiptir.\n3.  **Sembolizm:** İlahi bilgelik, kozmik düzen ve insanlığın ilahiyle bağlantısının sembolüdür. Metatron'un Küpü, kutsal geometriyle ilişkilidir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Göksel Mekanlar",
+      "name": "Yedi Cennet Tasviri",
+      "desc": "Çeşitli dinlerdeki Yedi Cennet kavramının katmanlarını ve özelliklerini keşfedin.",
+      "tags": [
+        "Cennet",
+        "Katmanlar",
+        "Mekan"
+      ],
+      "badge1": "Orta",
+      "content": "## Yedi Cennetin Katmanları ve Özellikleri\n1.  **İslami Geleneğe Göre:** Her bir katmanın farklı peygamberlerle ilişkilendirildiği ve farklı ruhani halleri temsil ettiği düşünülür.\n2.  **Yahudi Mistik Anlayışı:** Farklı cennetlerin farklı ilahi güçlere ve meleklere ev sahipliği yaptığına inanılır.\n3.  **Genel Özellikler:** Her katman, bir öncekinden daha kutsal ve daha yakın bir ilahi varlığa sahiptir, manevi yükselişin aşamalarını simgeler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Göksel Mekanlar",
+      "name": "Aden Bahçesi Konumu",
+      "desc": "Cennet Bahçesi Aden'in mitolojik konumunu, coğrafi ipuçlarını ve sembolik anlamlarını inceleyin.",
+      "tags": [
+        "Aden",
+        "Bahçe",
+        "Cennet"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Aden Bahçesi'nin Mitolojik Konumu\n1.  **Kitab-ı Mukaddes:** Dört nehrin (Fırat, Dicle, Pishon, Gihon) birleştiği bir bölgede, genellikle Mezopotamya'da konumlandırılır.\n2.  **Sembolizm:** İnsanlığın masumiyetinin, ilahi bolluğun ve yaratılışın mükemmeliyetinin sembolüdür.\n3.  **Mistik Yorumlar:** Fiziksel bir yer olmaktan çok, ruhsal bir durumu veya kayıp bir altın çağı temsil ettiğine inanılır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Göksel Mekanlar",
+      "name": "Göksel Kudüs Mimarisi",
+      "desc": "Vahiy Kitabı'ndaki Göksel Kudüs'ün eşsiz mimarisini, malzemelerini ve sembolizmini analiz edin.",
+      "tags": [
+        "Kudüs",
+        "Mimarisi",
+        "Vahiy"
+      ],
+      "badge1": "İleri",
+      "content": "## Göksel Kudüs'ün Görkemli Mimarisi\n1.  **Tanım:** Vahiy Kitabı'nda (21:9-27), Tanrı'nın yeryüzüne ineceği ve insanlarla yaşayacağı mükemmel yeni şehir olarak tasvir edilir.\n2.  **Malzemeler:** Duvarları yeşim taşı, temelleri değerli taşlar, kapıları inci ve sokakları saf altından yapılmıştır.\n3.  **Sembolizm:** Saflık, kutsallık, ebedi barış ve Tanrı'nın görkeminin kusursuz bir ifadesidir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Antik Mitler",
+      "name": "Anunnakiler ve Kökenleri",
+      "desc": "Sümer mitolojisindeki Anunnakilerin kimliğini, rollerini ve dünya üzerindeki etkilerine dair teorileri inceleyin.",
+      "tags": [
+        "Anunnaki",
+        "Sümer",
+        "Tanrı"
+      ],
+      "badge1": "Orta",
+      "content": "## Anunnakilerin Sümer Kökenleri\n1.  **Tanım:** Sümer ve Akad mitolojisinde yeraltı dünyası tanrıları veya göksel meclisin üyeleri olarak geçen bir grup tanrısal varlık.\n2.  **Rolleri:** Yaratılış, düzen ve bazen de yargılama ile ilişkilendirilirler. Bazı modern teorilerde dünya dışı varlıklar olarak yorumlanmıştır.\n3.  **Etki:** Antik Mezopotamya kültüründe önemli bir yere sahiptirler, insanlık ve kozmos arasındaki bağlantıyı temsil ederler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Antik Mitler",
+      "name": "Nefilimlerin Mirası",
+      "desc": "Eski Ahit'teki Nefilimlerin kökenini, boyutlarını ve tufan öncesi dünya üzerindeki etkilerini analiz edin.",
+      "tags": [
+        "Nefilim",
+        "Devler",
+        "Tufan"
+      ],
+      "badge1": "Orta",
+      "content": "## Nefilimlerin Efsanevi Mirası\n1.  **Köken:** Yaratılış Kitabı'nda, \"Tanrı oğulları\" (melekler) ile \"insan kızları\"nın birleşmesinden doğan devler olarak tanımlanırlar.\n2.  **Özellikleri:** Güçlü, melez ve kötücül varlıklar olarak tasvir edilirler. Tufanın sebeplerinden biri olarak gösterilirler.\n3.  **Sembolizm:** İlahi düzenin bozulması, doğaüstü ve insanlığın yozlaşmasının sembolüdürler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Antik Mitler",
+      "name": "Sümer Yaratılış Efsanesi",
+      "desc": "Sümer mitolojisindeki evrenin ve insanlığın yaratılışına dair temel efsaneleri ve tanrısal rolleri keşfedin.",
+      "tags": [
+        "Sümer",
+        "Yaratılış",
+        "Efsane"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sümer Yaratılış Efsanesinin Ana Hatları\n1.  **Başlangıç:** Başlangıçta sadece su vardı. Tanrıça Nammu, gök tanrısı An ve yer tanrıçası Ki'yi doğurdu.\n2.  **İnsan Yaratılışı:** Enki ve Ninmah gibi tanrılar, işlerini hafifletmek için insanlığı kilden yarattı.\n3.  **Amaç:** İnsanlar, tanrılara hizmet etmek ve onlara yiyecek sunmak için yaratıldı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Kozmik Olaylar",
+      "name": "Büyük Tufan Detayları",
+      "desc": "Nuh Tufanı'nın mitolojik detaylarını, evrensel anlatılarını ve sembolik anlamlarını inceleyin.",
+      "tags": [
+        "Tufan",
+        "Nuh",
+        "Felaket"
+      ],
+      "badge1": "Orta",
+      "content": "## Büyük Tufan'ın Mitolojik Detayları\n1.  **Sebep:** İnsanlığın günahları ve yozlaşması nedeniyle Tanrı'nın veya tanrıların gazabı.\n2.  **Kurtuluş:** Nuh (veya Utnapiştim/Ziusudra gibi figürler) ve ailesi, her türden canlıdan birer çift ile bir gemi inşa ederek kurtulur.\n3.  **Sonuç:** Dünya yeniden arındırılır ve yeni bir başlangıç yapılır. İlahi adalet ve merhametin sembolüdür.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Kozmik Olaylar",
+      "name": "Yaratılış Efsanesi",
+      "desc": "Kutsal kitaplardaki ve antik mitolojilerdeki evrenin yaratılış efsanelerini karşılaştırın ve analiz edin.",
+      "tags": [
+        "Yaratılış",
+        "Kozmoloji",
+        "Başlangıç"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Evrensel Yaratılış Efsaneleri\n1.  **İbrahimi Dinler:** Tanrı'nın altı günde dünyayı ve canlıları yaratması, yedinci gün dinlenmesi.\n2.  **Antik Mitler:** Kaostan düzenin çıkışı, kozmik yumurtadan veya tanrısal bir varlığın bedeninden yaratılış.\n3.  **Ortak Tema:** Bir yüce varlığın veya ilahi gücün evreni ve yaşamı şekillendirmesi.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Kozmik Olaylar",
+      "name": "Kıyamet Kehanetleri",
+      "desc": "Çeşitli din ve mitolojilerdeki dünyanın sonuna dair kehanetleri, işaretleri ve olayları analiz edin.",
+      "tags": [
+        "Kıyamet",
+        "Kehanet",
+        "Son"
+      ],
+      "badge1": "İleri",
+      "content": "## Kıyamet Kehanetlerinin Temel Unsurları\n1.  **İşaretler:** Savaşlar, doğal afetler, ahlaki çöküş ve belirli göksel olaylar gibi öncü işaretler.\n2.  **Olaylar:** Büyük bir yıkım, yargılama, diriliş ve yeni bir düzenin başlangıcı.\n3.  **Amaç:** İnsanlığı uyanmaya ve tövbe etmeye çağırmak, ilahi adaletin ve döngüsel zamanın bir ifadesidir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

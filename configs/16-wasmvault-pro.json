@@ -1,0 +1,465 @@
+{
+  "slug": "16-wasmvault-pro",
+  "title": "WasmVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "C++ tabanlı sistemleri ve motorları WebAssembly'e derlerken kullanılan optimizasyon şablonları.",
+  "metaKeywords": [
+    "Wasm",
+    "WasmVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "C++ tabanlı sistemleri ve motorları WebAssembly'e derlerken kullanılan optimizasyon şablonları.",
+  "heroCorner": "W",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Wasm<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Wasm<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "WasmVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Wasm ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "wasmvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "Optimizasyon Teknikleri",
+      "name": "Optimizasyon Teknikleri",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Derleme Ayarları",
+      "name": "Derleme Ayarları",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Performans Profilleme",
+      "name": "Performans Profilleme",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Bellek Yönetimi",
+      "name": "Bellek Yönetimi",
+      "color": "#E91E63"
+    },
+    {
+      "id": "Grafik Optimizasyonu",
+      "name": "Grafik Optimizasyonu",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Fizik Motoru",
+      "name": "Fizik Motoru",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Kod Küçültme",
+      "desc": "Wasm boyutunu küçültmek için gereksiz kodları kaldırın.",
+      "tags": [
+        "wasm",
+        "optimizasyon",
+        "küçültme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kod Küçültme Şablonu\n\n### Adımlar:\n1. **Gereksiz Fonksiyonları Belirle:** Kullanılmayan fonksiyonları ve metotları tespit edin.\n2. **Ölü Kod Eleme:** Derleyici optimizasyonlarını etkinleştirerek kullanılmayan kodları temizleyin.\n3. **Sembolleri Kaldır:** Debug sembollerini üretimden çıkararak dosya boyutunu azaltın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Fonksiyon Seviyesi Optimizasyonu",
+      "desc": "Daha hızlı fonksiyon çağrıları ve daha küçük kod.",
+      "tags": [
+        "fonksiyon",
+        "optimizasyon",
+        "hız"
+      ],
+      "badge1": "Orta",
+      "content": "## Fonksiyon Optimizasyonu\n\n### Adımlar:\n1. **Inline Etme:** Küçük ve sık çağrılan fonksiyonları ana kod akışına dahil edin.\n2. **Yapısal Yeniden Düzenleme:** Fonksiyonları mantıksal bloklara ayırarak okunurluğu ve optimizasyonu artırın.\n3. **Aşırı Yüklemeyi Azalt:** Gereksiz fonksiyon aşırı yüklemelerini (overload) kaldırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "Veri Yapısı Optimizasyonu",
+      "desc": "Daha verimli veri erişimi için yapıları optimize edin.",
+      "tags": [
+        "veri yapısı",
+        "optimizasyon",
+        "bellek"
+      ],
+      "badge1": "Orta",
+      "content": "## Veri Yapısı Optimizasyonu\n\n### Adımlar:\n1. **Struct-of-Arrays (SoA):** Bellek erişimini iyileştirmek için verileri gruplandırın.\n2. **Array-of-Structs (AoS):** Bellek yerleşimini optimize etmek için benzer verileri bir araya getirin.\n3. **Alignment:** Veri yapılarının bellek hizalamasını kontrol edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Derleme Ayarları",
+      "name": "Emscripten Optimizasyon Bayrakları",
+      "desc": "Wasm derlemesi için en iyi performans bayraklarını kullanın.",
+      "tags": [
+        "emscripten",
+        "derleyici",
+        "optimizasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Emscripten Optimizasyon Bayrakları\n\n### Adımlar:\n1. **`-O3` veya `-Os` Kullanın:** Genel optimizasyon seviyesi için `-O3` (hız) veya `-Os` (boyut) seçin.\n2. **`-Oz` ile Boyut Odaklı:** En küçük Wasm için `-Oz` bayrağını deneyin.\n3. **Teknik Spesifik Bayraklar:** `-enable-bigint`, `-enable-threads` gibi özellikleri etkinleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Derleme Ayarları",
+      "name": "Link-Time Optimizasyonu (LTO)",
+      "desc": "Tüm modülleri tek seferde optimize ederek daha iyi sonuçlar alın.",
+      "tags": [
+        "lto",
+        "derleme",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Link-Time Optimizasyonu (LTO)\n\n### Adımlar:\n1. **LTO'yu Etkinleştirin:** Emscripten derleyicisinde `-flto` bayrağını kullanın.\n2. **Optimizasyon Seviyesi:** LTO ile birlikte `-O3` veya `-Os` gibi seviyeleri ayarlayın.\n3. **Derleme Süresi:** LTO'nun derleme süresini artırabileceğini unutmayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Derleme Ayarları",
+      "name": "WebAssembly GC Desteği",
+      "desc": "Garbage Collector (GC) ile bellek yönetimini kolaylaştırın.",
+      "tags": [
+        "wasm",
+        "gc",
+        "bellek"
+      ],
+      "badge1": "İleri",
+      "content": "## WebAssembly GC Desteği\n\n### Adımlar:\n1. **GC'yi Etkinleştirin:** Emscripten'da `--enable-gc` bayrağıyla derleyin.\n2. **Yönetilen Diller:** C++'da `GC` etiketli nesneler kullanın.\n3. **Performans Etkisi:** GC'nin performans üzerindeki etkisini test edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Performans Profilleme",
+      "name": "Emscripten Profilleme Araçları",
+      "desc": "Wasm modüllerinin performans darboğazlarını bulun.",
+      "tags": [
+        "profiling",
+        "wasm",
+        "performans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Emscripten Profilleme\n\n### Adımlar:\n1. **`perf` Kullanımı:** C++ kodunuza `emscripten_perf_timer_t` ekleyin.\n2. **`console.log` ile İzleme:** Önemli bölümleri `printf` ile loglayın.\n3. **Tarayıcı Geliştirici Araçları:** JavaScript tarafındaki performansını Chrome DevTools ile analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Performans Profilleme",
+      "name": "Bellek Kullanımı Analizi",
+      "desc": "Wasm modülünüzün bellek ayak izini izleyin.",
+      "tags": [
+        "bellek",
+        "profiling",
+        "wasm"
+      ],
+      "badge1": "Orta",
+      "content": "## Bellek Kullanımı Analizi\n\n### Adımlar:\n1. **`emscripten_get_heap_size()`:** Mevcut heap boyutunu alın.\n2. **`emscripten_resize_heap()`:** Heap boyutunu dinamik olarak ayarlayın.\n3. **Bellek Sızıntısı Tespiti:** Periyodik olarak heap boyutunu kontrol ederek sızıntıları bulun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Performans Profilleme",
+      "name": "CPU Kullanımı Optimizasyonu",
+      "desc": "CPU yoğun işlemlerin Wasm'da verimli çalışmasını sağlayın.",
+      "tags": [
+        "cpu",
+        "optimizasyon",
+        "performans"
+      ],
+      "badge1": "Orta",
+      "content": "## CPU Kullanımı Optimizasyonu\n\n### Adımlar:\n1. **Algoritma Seçimi:** En verimli algoritmaları tercih edin.\n2. **Paralel İşlem:** Web Workers ile CPU'yu daha iyi kullanın.\n3. **Sıkı Döngüler:** Döngü içi işlemleri optimize edin, gereksiz hesaplamalardan kaçının.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Bellek Yönetimi",
+      "name": "Akıllı İşaretçiler (Smart Pointers)",
+      "desc": "C++'da manuel bellek yönetimini azaltın.",
+      "tags": [
+        "bellek",
+        "c++",
+        "smart pointers"
+      ],
+      "badge1": "Orta",
+      "content": "## Akıllı İşaretçiler\n\n### Adımlar:\n1. **`std::unique_ptr`:** Tekil sahipli nesneler için kullanın.\n2. **`std::shared_ptr`:** Paylaşılan sahiplik gerektiren durumlar için kullanın.\n3. **`std::weak_ptr`:** Döngüsel referansları kırmak için `shared_ptr` ile birlikte kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Bellek Yönetimi",
+      "name": "Özel Bellek Ayırıcılar",
+      "desc": "Wasm heap'i üzerinde daha fazla kontrol sağlayın.",
+      "tags": [
+        "bellek",
+        "allocator",
+        "wasm"
+      ],
+      "badge1": "İleri",
+      "content": "## Özel Bellek Ayırıcılar\n\n### Adımlar:\n1. **Custom Allocator:** `std::pmr::polymorphic_allocator` ile özel ayırıcılar tanımlayın.\n2. **Arena/Pool Ayırıcılar:** Belirli nesne türleri için hızlı ayırma/serbest bırakma sağlayın.\n3. **Embind ile Entegrasyon:** C++ ayırıcılarını JavaScript'e açın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Bellek Yönetimi",
+      "name": "Stack Overflow Önleme",
+      "desc": "Büyük özyinelemeli fonksiyonlarda stack taşmasını engelleyin.",
+      "tags": [
+        "bellek",
+        "stack",
+        "recursion"
+      ],
+      "badge1": "Orta",
+      "content": "## Stack Overflow Önleme\n\n### Adımlar:\n1. **Özyinelemeyi Azaltın:** Özyinelemeli fonksiyonları döngülere dönüştürün.\n2. **Tail Call Optimizasyonu:** Derleyici tarafından destekleniyorsa kuyruk çağrısı optimizasyonunu kullanın.\n3. **Daha Büyük Stack:** Emscripten'da `--emrun-stack-size` ile stack boyutunu artırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Grafik Optimizasyonu",
+      "name": "Düşük Seviye Grafik API'leri",
+      "desc": "WebGL 2 veya WebGPU ile daha hızlı renderlama.",
+      "tags": [
+        "grafik",
+        "webgl",
+        "webgpu"
+      ],
+      "badge1": "Orta",
+      "content": "## Düşük Seviye Grafik API'leri\n\n### Adımlar:\n1. **WebGL 2 Kullanımı:** `EXT_disjoint_timer_query` gibi uzantıları araştırın.\n2. **WebGPU Entegrasyonu:** Modern GPU özelliklerinden yararlanın.\n3. **C++ Grafik Kütüphaneleri:** ANGLE veya benzeri kütüphaneleri Wasm'a derleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Grafik Optimizasyonu",
+      "name": "Doku Sıkıştırma",
+      "desc": "Doku boyutlarını küçülterek VRAM kullanımını azaltın.",
+      "tags": [
+        "grafik",
+        "doku",
+        "optimizasyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Doku Sıkıştırma\n\n### Adımlar:\n1. **ASTC/ETC2 Formatları:** Platformunuza uygun sıkıştırılmış doku formatlarını kullanın.\n2. **Mipmap Kullanımı:** Farklı uzaklıklar için önceden hesaplanmış doku seviyeleri oluşturun.\n3. **Doku Boyutları:** Güç 2 (power-of-two) boyutlarında dokular kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Grafik Optimizasyonu",
+      "name": "Shader Optimizasyonu",
+      "desc": "GPU'da çalışan shader kodlarını hızlandırın.",
+      "tags": [
+        "shader",
+        "gpu",
+        "optimizasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Shader Optimizasyonu\n\n### Adımlar:\n1. **Shader Kodunu Basitleştirin:** Karmaşık matematiksel işlemleri azaltın.\n2. **Vektörleştirme:** GPU'nun SIMD yeteneklerinden yararlanın.\n3. **Texture Fetch Optimizasyonu:** Doku erişimini minimize edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Fizik Motoru",
+      "name": "Fizik Motoru Seçimi",
+      "desc": "Projeniz için en uygun Wasm uyumlu fizik motorunu seçin.",
+      "tags": [
+        "fizik",
+        "wasm",
+        "motor"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Fizik Motoru Seçimi\n\n### Adımlar:\n1. **Bullet Physics:** Kapsamlı ve popüler bir seçenek.\n2. **PhysX:** NVIDIA tarafından geliştirilmiş, yüksek performanslı.\n3. **Box2D:** 2D oyunlar için hafif ve optimize.\n4. **Entegrasyon:** Seçtiğiniz motoru Emscripten ile derleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Fizik Motoru",
+      "name": "Fizik Simülasyon Optimizasyonu",
+      "desc": "Fizik hesaplamalarını daha verimli hale getirin.",
+      "tags": [
+        "fizik",
+        "optimizasyon",
+        "simülasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Fizik Simülasyon Optimizasyonu\n\n### Adımlar:\n1. **Sabit Adım Boyutu:** Zamansal tutarlılık için sabit bir `deltaTime` kullanın.\n2. **Cisimleri Gruplandırma:** Benzer fizik özelliklerine sahip cisimleri gruplayarak işlem yapın.\n3. **Statik Cisimler:** Hareket etmeyen cisimleri fizik simülasyonundan çıkarın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Fizik Motoru",
+      "name": "Çarpışma Tespiti Optimizasyonu",
+      "desc": "Gereksiz çarpışma kontrollerini eleyin.",
+      "tags": [
+        "fizik",
+        "collision",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Çarpışma Tespiti Optimizasyonu\n\n### Adımlar:\n1. **Broadphase Algoritmaları:** `SAP` (Sweep and Prune) veya `DBVT` (Dynamic Bounding Volume Tree) gibi algoritmalar kullanın.\n2. **Katmanlama (Layering):** Çarpışma kontrollerini katmanlara ayırarak sadece ilgili nesneleri kontrol edin.\n3. **Basitleştirilmiş Geometriler:** Karmaşık modeller yerine basitleştirilmiş çarpışma kutuları kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Optimizasyon Teknikleri",
+      "name": "SIMD Kullanımı",
+      "desc": "Tek talimatla çoklu veri (SIMD) işlemlerini etkinleştirin.",
+      "tags": [
+        "wasm",
+        "simd",
+        "performans"
+      ],
+      "badge1": "İleri",
+      "content": "## WebAssembly SIMD\n\n### Adımlar:\n1. **SIMD Bayrağı:** Emscripten'da `-msimd128` bayrağını etkinleştirin.\n2. **SIMD Talimatları:** C++ kodunuzda `simd` intrinsics veya kütüphaneleri kullanın.\n3. **Test Edin:** SIMD'nin performans üzerindeki etkisini dikkatlice ölçün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Bellek Yönetimi",
+      "name": "Wasm GC ile C++ Nesneleri",
+      "desc": "WebAssembly Garbage Collector ile C++ nesnelerini yönetin.",
+      "tags": [
+        "wasm",
+        "gc",
+        "c++"
+      ],
+      "badge1": "İleri",
+      "content": "## Wasm GC ile C++ Nesneleri\n\n### Adımlar:\n1. **`GC` Etiketi:** C++ sınıflarınıza `[[gc]]` özniteliğini ekleyin.\n2. **`Root` Nesneler:** GC'nin takibini sağlamak için `Root` nesneleri kullanın.\n3. **Performans İzleme:** GC'nin bellek yönetimi ve performans üzerindeki etkisini izleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "slug": "38-etymologyvault-pro",
+  "title": "EtymologyVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Kelimelerin kökenlerini, diller arası geçişlerini ve anlamsal evrimlerini inceleyen sözlük.",
+  "metaKeywords": [
+    "Etymology",
+    "EtymologyVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Kelimelerin kökenlerini, diller arası geçişlerini ve anlamsal evrimlerini inceleyen sözlük.",
+  "heroCorner": "E",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Etymology<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Etymology<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "EtymologyVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Etymology ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "etymologyvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Kök Analizi",
+      "name": "Kök Analizi",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Diller Arası Geçiş",
+      "name": "Diller Arası Geçiş",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Anlamsal Evrim",
+      "name": "Anlamsal Evrim",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Türkçe Etimoloji",
+      "name": "Türkçe Etimoloji",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Ödünç Kelimeler",
+      "name": "Ödünç Kelimeler",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Semantik Alanlar",
+      "name": "Semantik Alanlar",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Kök Analizi",
+      "name": "Hint-Avrupa Kök Tespiti",
+      "desc": "Bir kelimeyi proto-Hint-Avrupa köküne kadar geriye izleyin.",
+      "tags": [
+        "kök",
+        "hint-avrupa",
+        "proto"
+      ],
+      "badge1": "İleri",
+      "content": "## Kök Tespiti\n1. Kelimenin bilinen en eski yazılı biçimini bul.\n2. Akraba dillerdeki karşılıklarını topla.\n3. Ses değişim kurallarıyla ortak köke ulaş.\n4. Yeniden kurulan kökü *yıldızla işaretle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Kök Analizi",
+      "name": "Ek ve Gövde Ayrıştırma",
+      "desc": "Kelimeyi kök, yapım eki ve çekim eki bileşenlerine ayırın.",
+      "tags": [
+        "ek",
+        "gövde",
+        "ayrıştırma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Morfolojik Ayrıştırma\n1. Çekim eklerini soyarak gövdeye in.\n2. Yapım eklerini sırayla ayır.\n3. Çıplak kökü belirle.\n4. Her ekin anlam katkısını not et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Kök Analizi",
+      "name": "Akraba Kelime Ağı",
+      "desc": "Aynı kökten türeyen kelimeleri tek bir aile ağacında toplayın.",
+      "tags": [
+        "akraba",
+        "aile",
+        "ağaç"
+      ],
+      "badge1": "Orta",
+      "content": "## Kelime Ailesi\n1. Ortak kökü merkeze koy.\n2. Türevleri dallara yerleştir.\n3. Her dala anlam kaymasını not et.\n4. Yanlış akrabalıkları (halk etimolojisi) ele.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Diller Arası Geçiş",
+      "name": "Ödünçleme Yol Haritası",
+      "desc": "Bir kelimenin diller arası göç rotasını ve uğradığı değişimleri izleyin.",
+      "tags": [
+        "ödünç",
+        "rota",
+        "göç"
+      ],
+      "badge1": "Orta",
+      "content": "## Ödünçleme Rotası\n1. Kaynak dili ve ilk biçimi belirle.\n2. Aracı dilleri sırayla ekle.\n3. Her geçişte ses/yazım değişimini not et.\n4. Hedef dildeki son biçimle karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Diller Arası Geçiş",
+      "name": "Ses Değişim Kuralları",
+      "desc": "Diller arası geçişte düzenli ses karşılıklarını kurallaştırın.",
+      "tags": [
+        "ses",
+        "kural",
+        "değişim"
+      ],
+      "badge1": "İleri",
+      "content": "## Ses Değişimi\n1. Düzenli karşılıkları tablola (örn: p→f).\n2. İstisnaları ayrı not et.\n3. Bağlama bağlı (ünlü uyumu) kuralları belirle.\n4. Kuralı yeni örneklerle test et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Diller Arası Geçiş",
+      "name": "Calque (Öyküntü) Tespiti",
+      "desc": "Yapı çevirisiyle alınmış öyküntü kelimeleri saptayın.",
+      "tags": [
+        "calque",
+        "öyküntü",
+        "çeviri"
+      ],
+      "badge1": "İleri",
+      "content": "## Öyküntü Analizi\n1. Bileşik kelimeyi parçalara ayır.\n2. Her parçanın kaynak dildeki karşılığını bul.\n3. Birebir yapı çevirisi olup olmadığını test et.\n4. Doğrudan ödünçten ayırt et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Anlamsal Evrim",
+      "name": "Anlam Daralması ve Genişlemesi",
+      "desc": "Bir kelimenin zaman içinde anlam kapsamı değişimini izleyin.",
+      "tags": [
+        "anlam",
+        "daralma",
+        "genişleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Anlam Değişimi\n1. Kelimenin ilk anlamını belirle.\n2. Ara dönem anlamlarını sırala.\n3. Daralma/genişleme/kayma türünü etiketle.\n4. Güncel anlamla başlangıcı karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Anlamsal Evrim",
+      "name": "Metafor Yoluyla Anlam Kayması",
+      "desc": "Somut anlamların soyut alanlara taşınmasını örneklerle açıklayın.",
+      "tags": [
+        "metafor",
+        "kayma",
+        "soyut"
+      ],
+      "badge1": "İleri",
+      "content": "## Metaforik Kayma\n1. Somut kaynak anlamı belirle (örn: 'kavramak'=tutmak).\n2. Soyut hedef alanı tespit et (anlamak).\n3. Köprü kuran benzerliği açıkla.\n4. Benzer kalıpları başka kelimelerde ara.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Anlamsal Evrim",
+      "name": "Olumlu-Olumsuz Anlam Kayması",
+      "desc": "Kelimelerin değer yükünün zamanla iyileşmesini/kötüleşmesini inceleyin.",
+      "tags": [
+        "değer",
+        "kayma",
+        "konnotasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Değer Kayması\n1. Kelimenin tarihsel değer yükünü belirle.\n2. Toplumsal tutum değişimleriyle ilişkilendir.\n3. İyileşme/kötüleşme yönünü etiketle.\n4. Eşanlamlılarla karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Türkçe Etimoloji",
+      "name": "Öz Türkçe Kök Araştırması",
+      "desc": "Türkçe kelimeleri Eski Türkçe ve Orhun yazıtlarına kadar izleyin.",
+      "tags": [
+        "öz türkçe",
+        "orhun",
+        "eski türkçe"
+      ],
+      "badge1": "İleri",
+      "content": "## Türkçe Kök\n1. Kelimenin Eski Türkçe biçimini bul.\n2. Orhun/Uygur kaynaklarında ara.\n3. Lehçeler arası (Kıpçak, Oğuz) karşılıkları topla.\n4. Ortak kök biçimini belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Türkçe Etimoloji",
+      "name": "Dil Devrimi Türetmeleri",
+      "desc": "1930'lardaki öz Türkçe türetme çalışmalarını ve sonuçlarını analiz edin.",
+      "tags": [
+        "dil devrimi",
+        "türetme",
+        "tdk"
+      ],
+      "badge1": "Orta",
+      "content": "## Dil Devrimi Türetmeleri\n1. Eski Osmanlıca kelimeyi ve yerine önerileni eşle.\n2. Türetme yöntemini (kök+ek) çöz.\n3. Tutan ve tutmayan örnekleri ayır.\n4. Anlam isabetini değerlendir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Ödünç Kelimeler",
+      "name": "Arapça-Farsça Katman Tespiti",
+      "desc": "Türkçedeki Arapça ve Farsça kökenli kelime katmanlarını ayırın.",
+      "tags": [
+        "arapça",
+        "farsça",
+        "katman"
+      ],
+      "badge1": "Orta",
+      "content": "## Ödünç Katmanlar\n1. Kelimenin kaynak dilini belirle.\n2. Giriş dönemini (Selçuklu/Osmanlı) tahmin et.\n3. Ses uyarlamasını incele.\n4. Türkçe karşılığı varsa karşılaştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Ödünç Kelimeler",
+      "name": "Batı Dillerinden Alıntılar",
+      "desc": "Fransızca, İngilizce kökenli modern alıntıları dönemleriyle haritalayın.",
+      "tags": [
+        "fransızca",
+        "ingilizce",
+        "alıntı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Batı Alıntıları\n1. Kelimenin kaynak Batı dilini belirle.\n2. Giriş dönemini (Tanzimat/Cumhuriyet/günümüz) tahmin et.\n3. Yazım Türkçeleşmesini izle.\n4. Teknik/günlük kullanım ayrımı yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Semantik Alanlar",
+      "name": "Kavram Alanı Haritalama",
+      "desc": "Belirli bir kavram etrafındaki kelime kümesini ilişkileriyle haritalayın.",
+      "tags": [
+        "kavram",
+        "alan",
+        "küme"
+      ],
+      "badge1": "Orta",
+      "content": "## Kavram Alanı\n1. Merkez kavramı seç (örn: 'korku').\n2. Eşanlamlı ve yakın kelimeleri topla.\n3. İncelik farklarını (şiddet, ton) sırala.\n4. Kümeyi yoğunluk eksenine yerleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Semantik Alanlar",
+      "name": "Zıtlık ve Karşıtlık Ağları",
+      "desc": "Kelimeler arası zıtlık ilişkilerini sistematik olarak modelleyin.",
+      "tags": [
+        "zıtlık",
+        "karşıt",
+        "ağ"
+      ],
+      "badge1": "İleri",
+      "content": "## Zıtlık Ağı\n1. Karşıt çiftleri belirle (sıcak-soğuk).\n2. Zıtlık türünü etiketle (derece/tümleyen).\n3. Ara terimleri yerleştir.\n4. Bağlama göre değişen zıtlıkları not et.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

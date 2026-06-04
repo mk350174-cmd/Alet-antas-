@@ -1,0 +1,340 @@
+{
+  "slug": "40-charactervault-pro",
+  "title": "CharacterVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Psikolojik derinliğe sahip kurgusal figür profilleri jeneratörü.",
+  "metaKeywords": [
+    "Character",
+    "CharacterVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Psikolojik derinliğe sahip kurgusal figür profilleri jeneratörü.",
+  "heroCorner": "C",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Character<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Character<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "CharacterVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Character ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "charactervault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Psikolojik Profil",
+      "name": "Psikolojik Profil",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Arka Plan Hikayesi",
+      "name": "Arka Plan Hikayesi",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Motivasyon Haritası",
+      "name": "Motivasyon Haritası",
+      "color": "#e0b566"
+    },
+    {
+      "id": "İlişki Ağları",
+      "name": "İlişki Ağları",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Karakter Arkı",
+      "name": "Karakter Arkı",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Kusur ve Çatışma",
+      "name": "Kusur ve Çatışma",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Psikolojik Profil",
+      "name": "Beş Faktör Kişilik Modeli",
+      "desc": "Karakteri açıklık, sorumluluk, dışadönüklük eksenlerinde konumlandırın.",
+      "tags": [
+        "kişilik",
+        "ocean",
+        "profil"
+      ],
+      "badge1": "Orta",
+      "content": "## Beş Faktör Profili\n1. Beş ekseni (OCEAN) 1-10 puanla.\n2. Uç değerlerin davranışsal yansımasını yaz.\n3. Eksenler arası çelişkileri belirle.\n4. Stres altında değişen değerleri not et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Psikolojik Profil",
+      "name": "Çocukluk Yarası Tespiti",
+      "desc": "Karakterin davranışlarını şekillendiren temel travmayı tasarlayın.",
+      "tags": [
+        "travma",
+        "çocukluk",
+        "yara"
+      ],
+      "badge1": "İleri",
+      "content": "## Temel Yara\n1. Erken dönem bir kayıp/ihanet kurgula.\n2. Bundan doğan yanlış inancı belirle.\n3. Savunma mekanizmasını tanımla.\n4. Bu yaranın güncel tetikleyicilerini ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Psikolojik Profil",
+      "name": "Bilişsel Çarpıtmalar Listesi",
+      "desc": "Karakterin gerçeği algılama biçimindeki sistematik hataları belirleyin.",
+      "tags": [
+        "biliş",
+        "çarpıtma",
+        "algı"
+      ],
+      "badge1": "İleri",
+      "content": "## Bilişsel Çarpıtmalar\n1. Hakim çarpıtmayı seç (ya hep ya hiç, felaketleştirme).\n2. Tipik iç monologunu yaz.\n3. Karar verirken etkisini göster.\n4. Gelişimle yumuşama potansiyelini not et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Arka Plan Hikayesi",
+      "name": "Şekillendirici Anlar Zaman Çizelgesi",
+      "desc": "Karakteri bugünkü haline getiren 5-7 dönüm noktasını sıralayın.",
+      "tags": [
+        "geçmiş",
+        "dönüm",
+        "zaman"
+      ],
+      "badge1": "Orta",
+      "content": "## Şekillendirici Anlar\n1. Doğum koşulları ve aile ortamını belirle.\n2. İlk büyük başarı/başarısızlığı ekle.\n3. Hayatı değiştiren karşılaşmayı kurgula.\n4. Bugüne bağlanan son kırılmayı yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Arka Plan Hikayesi",
+      "name": "Kültürel ve Sınıfsal Köken",
+      "desc": "Karakterin değerlerini biçimleyen toplumsal arka planını inşa edin.",
+      "tags": [
+        "kültür",
+        "sınıf",
+        "köken"
+      ],
+      "badge1": "Orta",
+      "content": "## Toplumsal Köken\n1. Doğduğu sınıf ve ekonomik koşulu belirle.\n2. Kültürel değer ve tabuları ekle.\n3. Bunlara uyum/isyan konumunu seç.\n4. Konuşma ve davranışa yansımasını yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Arka Plan Hikayesi",
+      "name": "Gizli Sır Tasarımı",
+      "desc": "Karaktere gerilim katacak, açığa çıkabilecek bir sır yaratın.",
+      "tags": [
+        "sır",
+        "gizli",
+        "gerilim"
+      ],
+      "badge1": "İleri",
+      "content": "## Gizli Sır\n1. Sırrın ne olduğunu ve neden saklandığını belirle.\n2. Açığa çıkma riskini ve sonuçlarını tanımla.\n3. Sırrı bilen başka kişileri ekle.\n4. Davranışa sızan küçük ipuçları bırak.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Motivasyon Haritası",
+      "name": "İstek-İhtiyaç Gerilimi",
+      "desc": "Karakterin bilinçli isteği ile gerçek ihtiyacı arasındaki çatışmayı kurun.",
+      "tags": [
+        "istek",
+        "ihtiyaç",
+        "gerilim"
+      ],
+      "badge1": "İleri",
+      "content": "## İstek vs İhtiyaç\n1. Karakterin açıkça istediğini yaz (dış hedef).\n2. Aslında ihtiyaç duyduğunu belirle (iç).\n3. İkisinin çatışma noktasını göster.\n4. Hangisini seçeceğini finale sakla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Motivasyon Haritası",
+      "name": "Korku Hiyerarşisi",
+      "desc": "Karakteri harekete geçiren veya felç eden korkuları katmanlayın.",
+      "tags": [
+        "korku",
+        "hiyerarşi",
+        "motivasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Korku Katmanları\n1. Yüzeysel korkuyu belirle (somut tehdit).\n2. Altındaki sosyal korkuyu ekle (reddedilme).\n3. En derin varoluşsal korkuya in (anlamsızlık).\n4. Her katmanın tetikleyicisini yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "İlişki Ağları",
+      "name": "Çekirdek İlişki Haritası",
+      "desc": "Karakterin etrafındaki kilit kişileri rol ve gerilimle haritalayın.",
+      "tags": [
+        "ilişki",
+        "harita",
+        "ağ"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## İlişki Haritası\n1. Karakteri merkeze koy.\n2. Müttefik, rakip, mentor rollerini yerleştir.\n3. Her bağa duygusal yük ve geçmiş ekle.\n4. Gizli/değişen ilişkileri işaretle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "İlişki Ağları",
+      "name": "Ayna Karakter Tasarımı",
+      "desc": "Ana karakterin farklı bir seçim yapmış versiyonunu temsil eden figür kurun.",
+      "tags": [
+        "ayna",
+        "tezat",
+        "karakter"
+      ],
+      "badge1": "İleri",
+      "content": "## Ayna Karakter\n1. Ana karakterle ortak başlangıcı belirle.\n2. Ayrıldıkları kritik seçimi tanımla.\n3. Bu seçimin onu getirdiği yeri göster.\n4. Karşılaşmalarını tematik kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "İlişki Ağları",
+      "name": "Güç Dengesi Dinamikleri",
+      "desc": "İlişkilerdeki üstünlük-bağımlılık dengelerini ve değişimini modelleyin.",
+      "tags": [
+        "güç",
+        "denge",
+        "dinamik"
+      ],
+      "badge1": "Orta",
+      "content": "## Güç Dengesi\n1. Her ilişkide kimin üstün olduğunu belirle.\n2. Gücün kaynağını tanımla (bilgi, kaynak, duygu).\n3. Denge değişim anlarını planla.\n4. Tersine dönüşün sonuçlarını yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Karakter Arkı",
+      "name": "Dönüşüm Arkı İskeleti",
+      "desc": "Karakterin baştan sona köklü değişim yolculuğunu aşamalandırın.",
+      "tags": [
+        "dönüşüm",
+        "ark",
+        "değişim"
+      ],
+      "badge1": "Orta",
+      "content": "## Dönüşüm Arkı\n1. Başlangıç yanlış inancını belirle.\n2. İnancı sarsan olayları sırala.\n3. Direniş ve geri düşüş anını ekle.\n4. Yeni gerçeği kabul edişle bitir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Karakter Arkı",
+      "name": "Düşüş (Tragedy) Arkı",
+      "desc": "Karakterin kusurları yüzünden çöküşe sürüklendiği trajik yapı kurun.",
+      "tags": [
+        "düşüş",
+        "trajedi",
+        "kusur"
+      ],
+      "badge1": "İleri",
+      "content": "## Düşüş Arkı\n1. Karakterin ölümcül kusurunu (hubris) belirle.\n2. Küçük tavizlerle başlayan kaymayı göster.\n3. Geri dönülmez eşiği işaretle.\n4. Kaçınılmaz çöküşle ve farkındalıkla bitir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Kusur ve Çatışma",
+      "name": "Erdem-Kusur İkilemi",
+      "desc": "Karakterin en büyük gücünün aynı zamanda zaafı olduğu tasarım.",
+      "tags": [
+        "erdem",
+        "kusur",
+        "ikilem"
+      ],
+      "badge1": "İleri",
+      "content": "## Erdem-Kusur\n1. Karakterin baş erdemini seç (kararlılık).\n2. Aynı özelliğin aşırı halini göster (inatçılık).\n3. Bağlama göre ne zaman güç/zaaf olduğunu ayır.\n4. Kritik sahnede ikilemi tetikle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Kusur ve Çatışma",
+      "name": "İç Çatışma Diyaloğu",
+      "desc": "Karakterin kararsız kaldığı anlardaki iç sesini dramatize edin.",
+      "tags": [
+        "iç çatışma",
+        "diyalog",
+        "karar"
+      ],
+      "badge1": "Orta",
+      "content": "## İç Çatışma\n1. Çelişen iki sesi tanımla (korku vs vicdan).\n2. Her sesin argümanını yaz.\n3. Bedensel/davranışsal kararsızlık belirtileri ekle.\n4. Çözümü bir eylemle dışa vur.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

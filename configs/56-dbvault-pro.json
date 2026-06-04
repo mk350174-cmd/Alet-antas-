@@ -1,0 +1,340 @@
+{
+  "slug": "56-dbvault-pro",
+  "title": "DbVault Pro — Yazılım Mimarisi & DevOps",
+  "metaDescription": "SQL ve NoSQL veritabanı şema tasarımı, ilişki haritaları ve sorgu optimizasyonu.",
+  "metaKeywords": [
+    "Db",
+    "DbVault Pro",
+    "Yazılım Mimarisi & DevOps",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "SQL ve NoSQL veritabanı şema tasarımı, ilişki haritaları ve sorgu optimizasyonu.",
+  "heroCorner": "D",
+  "heroEyebrow": "Yazılım Mimarisi & DevOps · Alet Çantası",
+  "heroTitleHTML": "Db<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Db<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "DbVault Pro · Yazılım Mimarisi & DevOps",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Db ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "dbvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "devops",
+  "categoryLabel": "Yazılım Mimarisi & DevOps",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4a9eff",
+    "primary2": "#4a9eff",
+    "primaryDim": "#4a9eff15",
+    "primaryGlow": "#4a9eff30",
+    "primaryDark": "#2c80e1",
+    "accent": "#a78bfa",
+    "accent2": "#a78bfa",
+    "accentDim": "#a78bfa18",
+    "accentGlow": "#a78bfa30",
+    "bg": "#06080e",
+    "bg2": "#0a0c12",
+    "bg3": "#0e1016",
+    "bg4": "#12141a",
+    "border": "#16181e",
+    "border2": "#1e2026",
+    "border3": "#2a2c32",
+    "heroBg": "#0a0c12"
+  },
+  "categories": [
+    {
+      "id": "SQL Şablonları",
+      "name": "SQL Şablonları",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "İndeks & Performans",
+      "name": "İndeks & Performans",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Veri Modelleme",
+      "name": "Veri Modelleme",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "NoSQL Kalıpları",
+      "name": "NoSQL Kalıpları",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Migration & Yedek",
+      "name": "Migration & Yedek",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "ORM & Query Builder",
+      "name": "ORM & Query Builder",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "SQL Şablonları",
+      "name": "Window Functions Şablonları",
+      "desc": "ROW_NUMBER, RANK, LAG/LEAD ile analitik pencere fonksiyonu örnekleri.",
+      "tags": [
+        "window",
+        "ROW_NUMBER",
+        "analitik"
+      ],
+      "badge1": "Orta",
+      "content": "## Window Functions\n```sql\n-- ROW_NUMBER: bölüm içi sıralama\nSELECT\n  user_id, order_date, amount,\n  ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY order_date) AS order_num\nFROM orders;\n\n-- LAG: önceki satır değeri\nSELECT\n  date, revenue,\n  LAG(revenue) OVER (ORDER BY date) AS prev_revenue,\n  revenue - LAG(revenue) OVER (ORDER BY date) AS growth\nFROM daily_revenue;\n\n-- RANK vs DENSE_RANK\nSELECT name, score,\n  RANK() OVER (ORDER BY score DESC),       -- 1,2,2,4\n  DENSE_RANK() OVER (ORDER BY score DESC)  -- 1,2,2,3\nFROM scores;\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "SQL Şablonları",
+      "name": "CTE ile Hiyerarşik Sorgular",
+      "desc": "Özyinelemeli CTE ile ağaç yapısı ve yönetici hiyerarşisi sorgulama.",
+      "tags": [
+        "CTE",
+        "hiyerarşi",
+        "recursive"
+      ],
+      "badge1": "İleri",
+      "content": "## Recursive CTE\n```sql\nWITH RECURSIVE org_chart AS (\n  -- Base case: üst yönetici (manager_id IS NULL)\n  SELECT id, name, manager_id, 1 AS depth, name AS path\n  FROM employees\n  WHERE manager_id IS NULL\n  \n  UNION ALL\n  \n  -- Recursive: alt çalışanlar\n  SELECT e.id, e.name, e.manager_id,\n    oc.depth + 1,\n    oc.path || ' > ' || e.name\n  FROM employees e\n  JOIN org_chart oc ON e.manager_id = oc.id\n)\nSELECT * FROM org_chart ORDER BY depth, path;\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "SQL Şablonları",
+      "name": "UPSERT Şablonları",
+      "desc": "PostgreSQL INSERT ON CONFLICT ve MySQL INSERT ON DUPLICATE KEY şablonları.",
+      "tags": [
+        "upsert",
+        "conflict",
+        "insert"
+      ],
+      "badge1": "Orta",
+      "content": "## UPSERT\n```sql\n-- PostgreSQL\nINSERT INTO products (sku, name, price)\nVALUES ('ABC-001', 'Widget', 29.99)\nON CONFLICT (sku)\nDO UPDATE SET\n  name = EXCLUDED.name,\n  price = EXCLUDED.price,\n  updated_at = NOW();\n\n-- MySQL\nINSERT INTO products (sku, name, price)\nVALUES ('ABC-001', 'Widget', 29.99)\nON DUPLICATE KEY UPDATE\n  name = VALUES(name),\n  price = VALUES(price);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "İndeks & Performans",
+      "name": "İndeks Türleri ve Seçimi",
+      "desc": "B-tree, hash, GIN ve bitmaps indekslerini doğru sorguda kullanma rehberi.",
+      "tags": [
+        "indeks",
+        "B-tree",
+        "GIN"
+      ],
+      "badge1": "Orta",
+      "content": "## İndeks Türleri\n```sql\n-- B-tree: varsayılan, =, <, > için\nCREATE INDEX idx_users_email ON users(email);\n\n-- Kısmi indeks: yalnızca belirli satırlar\nCREATE INDEX idx_active_users ON users(email) WHERE active = true;\n\n-- Bileşik indeks: sütun sırası önemli\nCREATE INDEX idx_orders_user_date ON orders(user_id, created_at DESC);\n\n-- GIN: JSONB, array, full-text\nCREATE INDEX idx_tags ON products USING GIN(tags);\n\n-- Partial indeks maliyetsiz satırları dışlar\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "İndeks & Performans",
+      "name": "EXPLAIN ANALYZE Okuma",
+      "desc": "PostgreSQL EXPLAIN ANALYZE çıktısını yorumlayarak sorgu optimizasyonu yapın.",
+      "tags": [
+        "EXPLAIN",
+        "query plan",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## EXPLAIN ANALYZE\n```sql\nEXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)\nSELECT u.name, COUNT(o.id)\nFROM users u\nJOIN orders o ON u.id = o.user_id\nWHERE u.created_at > '2025-01-01'\nGROUP BY u.id;\n```\nOkuma:\n- `Seq Scan`: tablo taraması → indeks ekle.\n- `Index Scan`: indeks kullanılıyor ✓\n- `Hash Join` vs `Nested Loop`: satır sayısına göre değişir.\n- `actual rows`: tahminden büyük sapma → ANALYZE çalıştır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Veri Modelleme",
+      "name": "Soft Delete Tasarımı",
+      "desc": "Deleted_at ile kayıtları fiziksel silmeden arşivleyen soft delete kalıbı.",
+      "tags": [
+        "soft delete",
+        "arşiv",
+        "deleted_at"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Soft Delete\n```sql\nALTER TABLE users ADD COLUMN deleted_at TIMESTAMPTZ;\n\n-- Silme\nUPDATE users SET deleted_at = NOW() WHERE id = 123;\n\n-- Aktif kayıtlar sorgusu\nSELECT * FROM users WHERE deleted_at IS NULL;\n\n-- View ile kolaylaştır\nCREATE VIEW active_users AS\n  SELECT * FROM users WHERE deleted_at IS NULL;\n\n-- PostgreSQL Row Level Security ile zorunlu filtre\nCREATE POLICY no_deleted ON users\n  USING (deleted_at IS NULL);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Veri Modelleme",
+      "name": "Event Sourcing Schema",
+      "desc": "Veritabanı event sourcing için events tablosu ve projeksiyon kalıbı.",
+      "tags": [
+        "event sourcing",
+        "append-only",
+        "projeksiyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Event Sourcing Schema\n```sql\nCREATE TABLE events (\n  id BIGSERIAL PRIMARY KEY,\n  aggregate_type VARCHAR(100) NOT NULL,\n  aggregate_id UUID NOT NULL,\n  event_type VARCHAR(100) NOT NULL,\n  payload JSONB NOT NULL,\n  version INT NOT NULL,\n  occurred_at TIMESTAMPTZ DEFAULT NOW(),\n  UNIQUE (aggregate_id, version)\n);\n\n-- Projeksiyon (materialized view)\nCREATE TABLE user_projections AS\nSELECT aggregate_id AS user_id,\n  MAX(CASE WHEN event_type='NameChanged' THEN payload->>'name' END) AS name\nFROM events WHERE aggregate_type='User'\nGROUP BY aggregate_id;\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "NoSQL Kalıpları",
+      "name": "MongoDB Aggregation Pipeline",
+      "desc": "MongoDB'nin $match, $group, $lookup, $unwind aşamalarını kullanın.",
+      "tags": [
+        "MongoDB",
+        "aggregation",
+        "pipeline"
+      ],
+      "badge1": "Orta",
+      "content": "## Aggregation Pipeline\n```javascript\ndb.orders.aggregate([\n  { $match: { status: 'completed', date: { $gte: ISODate('2026-01-01') } } },\n  { $lookup: {\n      from: 'users',\n      localField: 'user_id',\n      foreignField: '_id',\n      as: 'user'\n  }},\n  { $unwind: '$user' },\n  { $group: {\n      _id: '$user.country',\n      total: { $sum: '$amount' },\n      count: { $sum: 1 }\n  }},\n  { $sort: { total: -1 } },\n  { $limit: 10 }\n]);\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "NoSQL Kalıpları",
+      "name": "Redis Veri Yapıları Şablonları",
+      "desc": "String, Hash, List, Set ve Sorted Set kullanım senaryoları ve komutları.",
+      "tags": [
+        "Redis",
+        "hash",
+        "sorted set"
+      ],
+      "badge1": "Orta",
+      "content": "## Redis Yapıları\n```python\nimport redis\nr = redis.Redis()\n\n# Session (Hash)\nr.hset('session:abc', mapping={'user_id': 1, 'role': 'admin'})\nr.expire('session:abc', 3600)\n\n# Leaderboard (Sorted Set)\nr.zadd('leaderboard', {'user1': 1500, 'user2': 2000})\nrtop = r.zrevrange('leaderboard', 0, 9, withscores=True)\n\n# Rate limit (Incr + Expire)\ncount = r.incr('rate:user1')\nif count == 1: r.expire('rate:user1', 60)\nif count > 100: raise Exception('Rate limit')\n\n# Pub/Sub\npubsub = r.pubsub()\npubsub.subscribe('notifications')\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Migration & Yedek",
+      "name": "Alembic Migration Şablonu",
+      "desc": "SQLAlchemy Alembic ile veri tabanı şema değişikliklerini yönetin.",
+      "tags": [
+        "Alembic",
+        "migration",
+        "SQLAlchemy"
+      ],
+      "badge1": "Orta",
+      "content": "## Alembic Migration\n```python\n# alembic revision --autogenerate -m 'add_user_phone'\n\"\"\"add_user_phone\"\"\"\nfrom alembic import op\nimport sqlalchemy as sa\n\ndef upgrade():\n    op.add_column('users',\n        sa.Column('phone', sa.String(20), nullable=True)\n    )\n    op.create_index('ix_users_phone', 'users', ['phone'])\n\ndef downgrade():\n    op.drop_index('ix_users_phone', 'users')\n    op.drop_column('users', 'phone')\n```\nKomut: `alembic upgrade head` / `alembic downgrade -1`",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Migration & Yedek",
+      "name": "Zero-Downtime Migration",
+      "desc": "Büyük tablolarda sütun ekleme/silme için kesintisiz migration stratejisi.",
+      "tags": [
+        "zero-downtime",
+        "migration",
+        "büyük tablo"
+      ],
+      "badge1": "İleri",
+      "content": "## Zero-Downtime Strateji\nSütun ekleme (güvenli):\n1. Nullable sütun ekle — tablo kilidi yok.\n2. Arka planda eski satırları doldur (batch).\n3. NOT NULL constraint ekle (default ile).\n4. Uygulama yeni sütunu kullanmaya başlar.\n\nSütun silme:\n1. Uygulama sütunu okumayı bırakır.\n2. Sütunu kaldır.\n\nKısıtlama: PostgreSQL'de `ADD COLUMN ... DEFAULT` büyük tabloda lock alır → nullable ekle, sonra default.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "ORM & Query Builder",
+      "name": "SQLAlchemy 2.0 Şablonları",
+      "desc": "SQLAlchemy 2.0 select(), join() ve async session kullanım örnekleri.",
+      "tags": [
+        "SQLAlchemy",
+        "ORM",
+        "async"
+      ],
+      "badge1": "Orta",
+      "content": "## SQLAlchemy 2.0\n```python\nfrom sqlalchemy import select, func\nfrom sqlalchemy.ext.asyncio import AsyncSession\n\nasync def get_user_orders(session: AsyncSession, user_id: int):\n    stmt = (\n        select(User, func.count(Order.id).label('order_count'))\n        .join(Order, User.id == Order.user_id, isouter=True)\n        .where(User.id == user_id)\n        .group_by(User.id)\n    )\n    result = await session.execute(stmt)\n    return result.first()\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "SQL Şablonları",
+      "name": "JSON/JSONB Sorguları",
+      "desc": "PostgreSQL JSONB operatörleri ile esnek yapılandırılmamış veri sorgulama.",
+      "tags": [
+        "JSONB",
+        "JSON",
+        "PostgreSQL"
+      ],
+      "badge1": "Orta",
+      "content": "## JSONB Operatörleri\n```sql\n-- Alan erişimi\nSELECT data->>'name', data->'address'->>'city'\nFROM users;\n\n-- Filtre\nSELECT * FROM users\nWHERE data @> '{\"role\": \"admin\"}'::jsonb;\n\n-- Array içinde arama\nSELECT * FROM products\nWHERE tags ? 'electronics';\n\n-- İndeks\nCREATE INDEX idx_user_data ON users USING GIN(data jsonb_path_ops);\n\n-- jsonb_set ile güncelle\nUPDATE users\nSET data = jsonb_set(data, '{address,city}', '\"Ankara\"');\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "İndeks & Performans",
+      "name": "Bağlantı Havuzu Yönetimi",
+      "desc": "PgBouncer ve SQLAlchemy connection pool ile verimli bağlantı yönetimi.",
+      "tags": [
+        "connection pool",
+        "PgBouncer",
+        "bağlantı"
+      ],
+      "badge1": "Orta",
+      "content": "## Connection Pool\n```python\nfrom sqlalchemy.ext.asyncio import create_async_engine\n\nengine = create_async_engine(\n    DATABASE_URL,\n    pool_size=20,          # Min bağlantı\n    max_overflow=10,       # Ek bağlantı\n    pool_timeout=30,       # Bağlantı bekleme süresi\n    pool_recycle=1800,     # Bağlantı yenileme (sn)\n    pool_pre_ping=True,    # Ölü bağlantı tespiti\n)\n```\nPgBouncer: transaction mode → çok daha az bağlantı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Veri Modelleme",
+      "name": "Çok Kiracılı (Multi-Tenant) Schema",
+      "desc": "Tenant izolasyonu için schema-per-tenant ve tenant_id sütun stratejileri.",
+      "tags": [
+        "multi-tenant",
+        "izolasyon",
+        "schema"
+      ],
+      "badge1": "İleri",
+      "content": "## Multi-Tenant Stratejiler\n**Strateji 1 — Ayrı DB:** Tam izolasyon, yüksek maliyet.\n**Strateji 2 — Schema per tenant:**\n```sql\nCREATE SCHEMA tenant_acme;\nCREATE TABLE tenant_acme.orders (id SERIAL, ...);\n```\n**Strateji 3 — Shared table + RLS:**\n```sql\nALTER TABLE orders ENABLE ROW LEVEL SECURITY;\nCREATE POLICY tenant_isolation ON orders\n  USING (tenant_id = current_setting('app.tenant_id')::int);\nSET app.tenant_id = 42;\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

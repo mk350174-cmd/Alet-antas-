@@ -1,0 +1,465 @@
+{
+  "slug": "07-visionvault-pro",
+  "title": "VisionVault Pro — AI & Prompt Mühendisliği",
+  "metaDescription": "Görsel veri işleme, teknik şema analizi ve sentetik görüntü üretimi komutları.",
+  "metaKeywords": [
+    "Vision",
+    "VisionVault Pro",
+    "AI & Prompt Mühendisliği",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Görsel veri işleme, teknik şema analizi ve sentetik görüntü üretimi komutları.",
+  "heroCorner": "V",
+  "heroEyebrow": "AI & Prompt Mühendisliği · Alet Çantası",
+  "heroTitleHTML": "Vision<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Vision<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "VisionVault Pro · AI & Prompt Mühendisliği",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Vision ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "visionvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "ai",
+  "categoryLabel": "AI & Prompt Mühendisliği",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#a375ff",
+    "primary2": "#a375ff",
+    "primaryDim": "#a375ff15",
+    "primaryGlow": "#a375ff30",
+    "primaryDark": "#8557e1",
+    "accent": "#ff6b9d",
+    "accent2": "#ff6b9d",
+    "accentDim": "#ff6b9d18",
+    "accentGlow": "#ff6b9d30",
+    "bg": "#08060e",
+    "bg2": "#0c0a12",
+    "bg3": "#100e16",
+    "bg4": "#14121a",
+    "border": "#18161e",
+    "border2": "#201e26",
+    "border3": "#2c2a32",
+    "heroBg": "#0c0a12"
+  },
+  "categories": [
+    {
+      "id": "Gorsel Analizi",
+      "name": "Görsel Analizi",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Teknik SEMA",
+      "name": "Teknik Şema",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Sentetik Gorsel",
+      "name": "Sentetik Görü Üretimi",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Nesne Tespiti",
+      "name": "Nesne Tespiti",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "Icerik Olusturma",
+      "name": "İçerik Oluşturma",
+      "color": "#F44336"
+    },
+    {
+      "id": "Veri Zenginlestirme",
+      "name": "Veri Zenginleştirme",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Gorsel Analizi",
+      "name": "Detaylı Görü Açıklaması",
+      "desc": "Bir görselin içeriğini detaylı ve anlamlı şekilde açıkla.",
+      "tags": [
+        "gorsel",
+        "analiz",
+        "aciklama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görsel Detay Analizi Komutu\n\nGörselin ana konusunu, arka planını, renk paletini ve önemli nesneleri tanımlayan 100 kelimelik bir açıklama üret.\n\n**Prompt:** \"Bu görseldeki ana unsurları, atmosferi ve olası hikayeyi anlatan detaylı bir betimleme yap.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Gorsel Analizi",
+      "name": "Görü Duygu Analizi",
+      "desc": "Bir görselin yaydığı duyguyu analiz et.",
+      "tags": [
+        "duygu",
+        "analiz",
+        "gorsel"
+      ],
+      "badge1": "Orta",
+      "content": "## Görsel Duygu Çıkarımı\n\nGörseldeki renklerin, kompozisyonun ve nesnelerin yarattığı baskın duyguyu (örneğin, neşe, hüzün, gerilim) belirle.\n\n**Prompt:** \"Bu görsel hangi temel duyguları uyandırıyor? Renkler, ışık ve kompozisyon bu duyguyu nasıl destekliyor?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Gorsel Analizi",
+      "name": "Görü Tarz Tespiti",
+      "desc": "Bir görselin sanat veya fotoğrafçılık tarzını belirle.",
+      "tags": [
+        "tarz",
+        "analiz",
+        "sanat"
+      ],
+      "badge1": "Orta",
+      "content": "## Görsel Tarz Tanımlama\n\nGörselin sahip olduğu sanat akımı, fotoğrafçılık tekniği veya estetik stili tanımla.\n\n**Prompt:** \"Bu görsel hangi sanat veya fotoğrafçılık tarzına ait? (örn. Empresyonizm, Minimalizm, Siyah Beyaz vb.)\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Gorsel Analizi",
+      "name": "Görü Kalite Değerlendirmesi",
+      "desc": "Bir görselin teknik kalitesini değerlendir.",
+      "tags": [
+        "kalite",
+        "analiz",
+        "teknik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görsel Kalite Kontrolü\n\nGörselin keskinliğini, pozlamasını, renk doğruluğunu ve kompozisyonunu değerlendir.\n\n**Prompt:** \"Bu görselin teknik kalitesini (keskinlik, pozlama, renk) değerlendirip iyileştirme önerileri sun.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Teknik SEMA",
+      "name": "Basit SEMA Açıklaması",
+      "desc": "Bir teknik şemanın temel işlevini açıkla.",
+      "tags": [
+        "sema",
+        "teknik",
+        "aciklama"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Teknik Şema İşlev Tanımı\n\nSağlanan teknik şemanın (örn. devre, akış) ana bileşenlerini ve genel işlevini özetle.\n\n**Prompt:** \"Bu teknik şemanın temel amacı nedir ve ana bileşenleri hangi işlevleri yerine getirir?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Teknik SEMA",
+      "name": "Akış Şeması Adımları",
+      "desc": "Bir akış şemasındaki adımları sırala.",
+      "tags": [
+        "sema",
+        "akış",
+        "adımlar"
+      ],
+      "badge1": "Orta",
+      "content": "## Akış Şeması Adım Çıkarımı\n\nVerilen akış şemasındaki her bir adımı sırasıyla ve kısa açıklamalarıyla listele.\n\n**Prompt:** \"Bu akış şemasındaki tüm adımları mantıksal bir sıra içinde belirt.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Teknik SEMA",
+      "name": "Devre Şeması Bileşenleri",
+      "desc": "Bir devre şemasındaki bileşenleri tanımla.",
+      "tags": [
+        "devre",
+        "sema",
+        "bileşen"
+      ],
+      "badge1": "Orta",
+      "content": "## Devre Şeması Bileşen Listesi\n\nBu devre şemasında kullanılan temel elektronik bileşenleri (direnç, kapasitör, transistör vb.) ve sembollerini listele.\n\n**Prompt:** \"Resimdeki devre şemasında yer alan tüm elektronik bileşenleri ve sembollerini tanımla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Teknik SEMA",
+      "name": "SEMA Hata Ayıklama",
+      "desc": "Teknik şemadaki olası sorunları bul.",
+      "tags": [
+        "sema",
+        "hata",
+        "analiz"
+      ],
+      "badge1": "İleri",
+      "content": "## Teknik Şema Sorun Tespiti\n\nŞemadaki potansiyel tasarım hatalarını, mantıksal tutarsızlıkları veya verimsizlikleri belirle.\n\n**Prompt:** \"Bu teknik şemada gözden kaçabilecek olası hataları veya iyileştirme alanlarını listele.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Sentetik Gorsel",
+      "name": "Basit Nesne Üretimi",
+      "desc": "Belirli bir nesnenin sentetik görüntüsünü oluştur.",
+      "tags": [
+        "sentetik",
+        "gorsel",
+        "nesne"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Basit Nesne Görseli Oluşturma\n\nBelirtilen nesnenin (örn. kırmızı elma) temel bir temsilini oluştur.\n\n**Prompt:** \"Arka planı sade, tek bir kırmızı elma görseli üret.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Sentetik Gorsel",
+      "name": "Ortamda Nesne Yerleştirme",
+      "desc": "Nesneyi belirli bir ortama yerleştirerek görsel üret.",
+      "tags": [
+        "sentetik",
+        "gorsel",
+        "ortam"
+      ],
+      "badge1": "Orta",
+      "content": "## Ortamda Nesne Görselleştirme\n\nBelirtilen nesneyi, tanımlanmış bir ortamda (örn. ahşap masa üzerinde) gerçekçi bir şekilde yerleştir.\n\n**Prompt:** \"Bir fincan kahveyi ahşap bir masa üzerinde, doğal ışık altında gösteren bir görsel oluştur.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sentetik Gorsel",
+      "name": "Farklı Stillerde Görü",
+      "desc": "Görseli farklı sanatsal stillerde yeniden üret.",
+      "tags": [
+        "sentetik",
+        "gorsel",
+        "stil"
+      ],
+      "badge1": "Orta",
+      "content": "## Görsel Stil Dönüşümü\n\nVerilen bir görselin içeriğini koruyarak, farklı bir sanat tarzında (örn. Van Gogh, anime) yeniden oluştur.\n\n**Prompt:** \"Bu sahneyi Van Gogh'un 'Yıldızlı Gece' tablosu tarzında yeniden çiz.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Sentetik Gorsel",
+      "name": "Soyut Görü Tasarımı",
+      "desc": "Belirli bir temada soyut görseller üret.",
+      "tags": [
+        "sentetik",
+        "gorsel",
+        "soyut"
+      ],
+      "badge1": "İleri",
+      "content": "## Soyut Kavram Görselleştirme\n\n'Umut' veya 'kaos' gibi soyut bir kavramı temsil eden estetik ve yaratıcı bir görsel oluştur.\n\n**Prompt:** \"'Teknolojinin doğayla entegrasyonu' temasını işleyen, akışkan ve renkli bir soyut görsel tasarla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Nesne Tespiti",
+      "name": "Resimdeki Nesneleri Listele",
+      "desc": "Bir resimde bulunan tüm nesneleri tespit et.",
+      "tags": [
+        "nesne",
+        "tespit",
+        "gorsel"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Nesne Tanıma ve Listeleme\n\nGörseldeki ana nesneleri (kişiler, hayvanlar, eşyalar) tespit et ve basit bir liste halinde sun.\n\n**Prompt:** \"Bu resimde hangi nesneler bulunuyor?\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Nesne Tespiti",
+      "name": "Nesne Konumlandırma",
+      "desc": "Tespit edilen nesnelerin konumlarını belirt.",
+      "tags": [
+        "nesne",
+        "tespit",
+        "konum"
+      ],
+      "badge1": "Orta",
+      "content": "## Nesne Konum Analizi\n\nTespit edilen her nesnenin görsel içindeki yaklaşık konumunu (örn. sol üst, merkez) belirt.\n\n**Prompt:** \"Resimdeki nesneleri ve konumlarını (örn. 'köpek ortada, sağ üstte kedi') listele.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Nesne Tespiti",
+      "name": "Küçük Nesneleri Bulma",
+      "desc": "Görseldeki küçük veya gizli nesneleri bul.",
+      "tags": [
+        "nesne",
+        "tespit",
+        "detay"
+      ],
+      "badge1": "İleri",
+      "content": "## Detaylı Nesne Avı\n\nGörseldeki belirgin olmayan, küçük veya kısmen gizlenmiş nesneleri tespit etmeye odaklan.\n\n**Prompt:** \"Bu karmaşık görselde saklı kalmış veya küçük detayları (örn. böcek, yüzük) bul.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Icerik Olusturma",
+      "name": "Görselden Metin Özeti",
+      "desc": "Bir görselin içeriğine dayalı kısa özet oluştur.",
+      "tags": [
+        "gorsel",
+        "ozet",
+        "metin"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görselden Metin Özeti Üretimi\n\nGörseldeki ana temayı ve unsurları içeren 2-3 cümlelik bir özet yaz.\n\n**Prompt:** \"Bu görselin içeriğini özetleyen kısa bir metin oluştur.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Icerik Olusturma",
+      "name": "Görsel İçin Başlık Önerileri",
+      "desc": "Bir görsele uygun başlıklar öner.",
+      "tags": [
+        "gorsel",
+        "baslik",
+        "icerik"
+      ],
+      "badge1": "Orta",
+      "content": "## Görsel İçin Başlık Fikirleri\n\nGörselin içeriğine ve atmosferine uygun, yaratıcı ve ilgi çekici başlık önerileri sun.\n\n**Prompt:** \"Bu görsel için 5 farklı başlık önerisi yap.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Icerik Olusturma",
+      "name": "Görselden Hikaye Taslağı",
+      "desc": "Bir görsele dayalı kısa hikaye taslağı oluştur.",
+      "tags": [
+        "gorsel",
+        "hikaye",
+        "icerik"
+      ],
+      "badge1": "İleri",
+      "content": "## Görselden Hikaye Oluşturma\n\nGörseldeki karakterler, mekan ve olay örgüsüne dayalı kısa bir hikaye taslağı (giriş, gelişme, sonuç) oluştur.\n\n**Prompt:** \"Bu görseldeki unsurları kullanarak bir kısa hikaye taslağı hazırla.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Veri Zenginlestirme",
+      "name": "Görü Metadata Etiketleme",
+      "desc": "Görsel içeriğiyle ilgili anahtar kelimeler üret.",
+      "tags": [
+        "veri",
+        "metadata",
+        "etiket"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görsel Metadata Etiketleme\n\nGörselin içeriğini en iyi tanımlayan 5-10 anahtar kelime (etiket) üret.\n\n**Prompt:** \"Bu görsel için uygun metadata etiketleri (anahtar kelimeler) öner.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Veri Zenginlestirme",
+      "name": "Görü İçin Alternatif Metin (Alt Text)",
+      "desc": "Erişilebilirlik için görsel açıklaması üret.",
+      "tags": [
+        "veri",
+        "erişilebilirlik",
+        "alt text"
+      ],
+      "badge1": "Orta",
+      "content": "## Alternatif Metin (Alt Text) Oluşturma\n\nGörsel içeriğini anlaşılır bir şekilde anlatan, erişilebilirlik standartlarına uygun bir alt metin yaz.\n\n**Prompt:** \"Bu görsel için web erişilebilirliği amacıyla kullanılacak bir alt metin yaz.\"",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

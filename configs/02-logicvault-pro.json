@@ -1,0 +1,465 @@
+{
+  "slug": "02-logicvault-pro",
+  "title": "LogicVault Pro — AI & Prompt Mühendisliği",
+  "metaDescription": "\"5 Göz Analizi\" gibi çok boyutlu mantıksal çözümleme çerçeveleri ve analiz algoritmaları.",
+  "metaKeywords": [
+    "Logic",
+    "LogicVault Pro",
+    "AI & Prompt Mühendisliği",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "\"5 Göz Analizi\" gibi çok boyutlu mantıksal çözümleme çerçeveleri ve analiz algoritmaları.",
+  "heroCorner": "L",
+  "heroEyebrow": "AI & Prompt Mühendisliği · Alet Çantası",
+  "heroTitleHTML": "Logic<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Logic<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "LogicVault Pro · AI & Prompt Mühendisliği",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Logic ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "logicvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "ai",
+  "categoryLabel": "AI & Prompt Mühendisliği",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#a375ff",
+    "primary2": "#a375ff",
+    "primaryDim": "#a375ff15",
+    "primaryGlow": "#a375ff30",
+    "primaryDark": "#8557e1",
+    "accent": "#ff6b9d",
+    "accent2": "#ff6b9d",
+    "accentDim": "#ff6b9d18",
+    "accentGlow": "#ff6b9d30",
+    "bg": "#08060e",
+    "bg2": "#0c0a12",
+    "bg3": "#100e16",
+    "bg4": "#14121a",
+    "border": "#18161e",
+    "border2": "#201e26",
+    "border3": "#2c2a32",
+    "heroBg": "#0c0a12"
+  },
+  "categories": [
+    {
+      "id": "Çok Boyutlu Analiz",
+      "name": "Çok Boyutlu Analiz",
+      "color": "#FF5733"
+    },
+    {
+      "id": "Karar Verme Çerçeveleri",
+      "name": "Karar Verme Çerçeveleri",
+      "color": "#33FF57"
+    },
+    {
+      "id": "Problem Çözme Algoritmaları",
+      "name": "Problem Çözme Algoritmaları",
+      "color": "#3357FF"
+    },
+    {
+      "id": "Veri Analizi Teknikleri",
+      "name": "Veri Analizi Teknikleri",
+      "color": "#FF33A1"
+    },
+    {
+      "id": "Stratejik Planlama",
+      "name": "Stratejik Planlama",
+      "color": "#F1C40F"
+    },
+    {
+      "id": "Yaratıcı Düşünme",
+      "name": "Yaratıcı Düşünme",
+      "color": "#9B33FF"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Çok Boyutlu Analiz",
+      "name": "5 Göz Analizi",
+      "desc": "Bir konuyu 5 farklı perspektiften inceleyen analiz metodu.",
+      "tags": [
+        "analiz",
+        "çok boyutlu",
+        "perspektif"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## 5 Göz Analizi\n\nBir konuyu derinlemesine anlamak için 5 farklı bakış açısı kullanın:\n\n1.  **Göz 1 (Mevcut Durum):** Şu anda ne oluyor?\n2.  **Göz 2 (Nedenler):** Neden böyle oluyor? Kök nedenler neler?\n3.  **Göz 3 (Etkiler):** Bunun sonuçları nelerdir? Kimler etkileniyor?\n4.  **Göz 4 (Çözümler):** Olası çözüm yolları nelerdir?\n5.  **Göz 5 (Gelecek Vizyonu):** İdeal gelecek nasıl olmalı?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Çok Boyutlu Analiz",
+      "name": "SWOT Analizi Şablonu",
+      "desc": "Güçlü Yönler, Zayıf Yönler, Fırsatlar ve Tehditleri listeler.",
+      "tags": [
+        "swot",
+        "strateji",
+        "analiz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## SWOT Analizi Şablonu\n\nKurumunuzun veya projenizin durumunu değerlendirin:\n\n*   **Güçlü Yönler (Strengths):** Nelerde iyisiniz?\n*   **Zayıf Yönler (Weaknesses):** Neler geliştirilmeli?\n*   **Fırsatlar (Opportunities):** Hangi dış etkenlerden faydalanabilirsiniz?\n*   **Tehditler (Threats):** Hangi dış etkenler risk oluşturuyor?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Çok Boyutlu Analiz",
+      "name": "PESTEL Analizi İskeleti",
+      "desc": "Politik, Ekonomik, Sosyal, Teknolojik, Çevresel, Yasal faktörleri inceler.",
+      "tags": [
+        "pestel",
+        "pazar",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## PESTEL Analizi İskeleti\n\nMakro çevresel faktörleri analiz edin:\n\n*   **Politik:** Hükümet politikaları, istikrar.\n*   **Ekonomik:** Büyüme, enflasyon, faiz oranları.\n*   **Sosyal:** Demografi, yaşam tarzı, kültür.\n*   **Teknolojik:** İnovasyon, Ar-Ge, otomasyon.\n*   **Çevresel:** İklim değişikliği, sürdürülebilirlik.\n*   **Yasal:** Mevzuat, düzenlemeler, iş hukuku.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Karar Verme Çerçeveleri",
+      "name": "Olasılık Matrisi Oluşturucu",
+      "desc": "Kararların olası sonuçlarını ve olasılıklarını değerlendirir.",
+      "tags": [
+        "karar",
+        "olasılık",
+        "matris"
+      ],
+      "badge1": "Orta",
+      "content": "## Olasılık Matrisi Oluşturucu\n\nKararlarınızın olası sonuçlarını ve ihtimallerini listeleyin:\n\n| Karar Seçeneği | Senaryo 1 (Olasılık %) | Sonuç 1 | Senaryo 2 (Olasılık %) | Sonuç 2 |\n|---|---|---|---|---|\n| A | X | ... | Y | ... |\n| B | Z | ... | W | ... |\n\nBu tablo ile en olası ve en riskli seçenekleri belirleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Karar Verme Çerçeveleri",
+      "name": "6 Şapkalı Düşünme Prompt'u",
+      "desc": "Farklı düşünme modlarını kullanarak karar verme sürecini zenginleştirir.",
+      "tags": [
+        "karar",
+        "düşünme",
+        "yaratıcılık"
+      ],
+      "badge1": "Orta",
+      "content": "## 6 Şapkalı Düşünme Prompt'u\n\nKonu: [Konuyu Belirtin]\n\nLütfen aşağıdaki şapkaları sırayla takarak konuyu analiz edin:\n\n1.  **Beyaz Şapka:** Veriler, gerçekler ne diyor?\n2.  **Kırmızı Şapka:** Duygular ve sezgiler neler?\n3.  **Siyah Şapka:** Riskler, olumsuzluklar neler?\n4.  **Sarı Şapka:** Faydalar, olumlu yönler neler?\n5.  **Yeşil Şapka:** Yaratıcı fikirler, alternatifler neler?\n6.  **Mavi Şapka:** Süreç, özet ve sonuç ne?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Karar Verme Çerçeveleri",
+      "name": "Avantaj-Dezavantaj Analizi",
+      "desc": "Bir seçeneğin tüm artılarını ve eksilerini listeler.",
+      "tags": [
+        "karar",
+        "analiz",
+        "artı eksi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Avantaj-Dezavantaj Analizi\n\nSeçenek: [Seçenek Adı]\n\n**Avantajlar:**\n\n*   [Avantaj 1]\n*   [Avantaj 2]\n\n**Dezavantajlar:**\n\n*   [Dezavantaj 1]\n*   [Dezavantaj 2]\n\nBu analizi kullanarak bilinçli bir karar verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Problem Çözme Algoritmaları",
+      "name": "Kök Neden Analizi (5 Neden)",
+      "desc": "Bir sorunun temel nedenini bulmak için tekrar tekrar 'neden' sorar.",
+      "tags": [
+        "problem",
+        "kök neden",
+        "analiz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kök Neden Analizi (5 Neden)\n\nSorun: [Sorunu Belirtin]\n\n1.  Neden [Sorun] oldu?\n2.  Neden [1. Nedenin Cevabı] oldu?\n3.  Neden [2. Nedenin Cevabı] oldu?\n4.  Neden [3. Nedenin Cevabı] oldu?\n5.  Neden [4. Nedenin Cevabı] oldu? (Bu genellikle kök nedendir.)",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Problem Çözme Algoritmaları",
+      "name": "Diyagram Tabanlı Problem Çözme",
+      "desc": "İlişkileri görselleştiren diyagramlarla problemi analiz eder.",
+      "tags": [
+        "problem",
+        "diyagram",
+        "görselleştirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Diyagram Tabanlı Problem Çözme\n\nProblemi daha iyi anlamak için bir diyagram oluşturun:\n\n*   **Akış Diyagramı:** Sürecin adımlarını gösterin.\n*   **İş Ishikawa (Balık Kılçığı) Diyagramı:** Olası nedenleri kategorilere ayırın.\n*   **Zihin Haritası:** Fikirleri ve bağlantıları görselleştirin.\nHangi diyagramın probleminize en uygun olduğunu seçin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Problem Çözme Algoritmaları",
+      "name": "Deneme Yanılma Yaklaşımı",
+      "desc": "Farklı çözümleri deneyerek doğru olana ulaşma yöntemidir.",
+      "tags": [
+        "problem",
+        "deneme",
+        "algoritma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Deneme Yanılma Yaklaşımı\n\n1.  Problemi tanımlayın.\n2.  Olası bir çözüm önerin.\n3.  Çözümü uygulayın ve sonucu gözlemleyin.\n4.  Sonuç tatmin edici değilse, başka bir çözüm önerin.\n5.  Tatmin edici bir sonuca ulaşana kadar tekrarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Veri Analizi Teknikleri",
+      "name": "Trend Analizi Prompt'u",
+      "desc": "Zaman içindeki verilerin eğilimini ve yönünü belirler.",
+      "tags": [
+        "veri",
+        "trend",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Trend Analizi Prompt'u\n\nVeri Seti: [Veri Setini Tanımlayın]\n\nZaman Aralığı: [Başlangıç ve Bitiş Tarihi]\n\nLütfen bu veri setindeki ana eğilimleri (trendleri), mevsimsel değişimleri ve aykırı değerleri analiz edin. Varsa, gelecekteki olası trend yönleri hakkında öngörüde bulunun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Veri Analizi Teknikleri",
+      "name": "Korelasyon Analizi Kılavuzu",
+      "desc": "İki veya daha fazla değişken arasındaki ilişkiyi inceler.",
+      "tags": [
+        "veri",
+        "korelasyon",
+        "ilişki"
+      ],
+      "badge1": "Orta",
+      "content": "## Korelasyon Analizi Kılavuzu\n\nDeğişkenler: [Değişken 1], [Değişken 2]\n\nBu değişkenler arasında güçlü bir pozitif, negatif veya zayıf bir ilişki var mı? İlişkinin gücünü ve yönünü belirtin. Korelasyonun nedensellik anlamına gelmediğini unutmayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Veri Analizi Teknikleri",
+      "name": "Anomali Tespiti Yöntemi",
+      "desc": "Veri setindeki olağandışı veya beklenmedik değerleri bulur.",
+      "tags": [
+        "veri",
+        "anomali",
+        "tespit"
+      ],
+      "badge1": "İleri",
+      "content": "## Anomali Tespiti Yöntemi\n\nVeri Seti: [Veri Setini Tanımlayın]\n\nStandart sapma, IQR (Çeyrekler Açıklığı) veya makine öğrenmesi modelleri gibi yöntemler kullanarak veri setinizdeki aykırı değerleri (anomalileri) belirleyin. Bu anomalilerin olası nedenlerini araştırın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Stratejik Planlama",
+      "name": "Vizyon ve Misyon Beyanı Taslağı",
+      "desc": "Kurumun uzun vadeli hedeflerini ve amacını belirler.",
+      "tags": [
+        "strateji",
+        "vizyon",
+        "misyon"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Vizyon ve Misyon Beyanı Taslağı\n\n**Vizyon:** Gelecekte nerede olmak istiyoruz? (İlham verici, uzun vadeli)\n\n**Misyon:** Neden varız? Ne yapıyoruz? Kime hizmet ediyoruz? (Amaç odaklı, net)",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Stratejik Planlama",
+      "name": "Hedef Belirleme (SMART) Yöntemi",
+      "desc": "Hedeflerin Spesifik, Ölçülebilir, Ulaşılabilir, İlgili ve Zamana Bağlı olmasını sağlar.",
+      "tags": [
+        "strateji",
+        "hedef",
+        "smart"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Hedef Belirleme (SMART) Yöntemi\n\nHedef: [Hedefi Belirtin]\n\n*   **Spesifik (Özgül):** Ne başarmak istiyorsunuz?\n*   **Ölçülebilir:** Başarıyı nasıl ölçeceksiniz?\n*   **Ulaşılabilir:** Hedefe ulaşmak mümkün mü?\n*   **İlgili:** Hedef, genel amaçlarla uyumlu mu?\n*   **Zamana Bağlı:** Hedef ne zaman tamamlanmalı?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Stratejik Planlama",
+      "name": "Risk Değerlendirme Matrisi",
+      "desc": "Risklerin olasılık ve etkisine göre önceliklendirilmesini sağlar.",
+      "tags": [
+        "strateji",
+        "risk",
+        "değerlendirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Risk Değerlendirme Matrisi\n\nRisk: [Riski Tanımlayın]\n\n*   **Olasılık:** Bu riskin gerçekleşme ihtimali nedir? (Düşük, Orta, Yüksek)\n*   **Etki:** Gerçekleşirse sonuçları ne kadar ciddi olur? (Düşük, Orta, Yüksek)\n\nOlasılık x Etki = Risk Skoru. Yüksek skorlu risklere öncelik verin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Stratejik Planlama",
+      "name": "Rekabet Analizi Çerçevesi",
+      "desc": "Rakiplerin stratejilerini, güçlü ve zayıf yönlerini analiz eder.",
+      "tags": [
+        "strateji",
+        "rekabet",
+        "analiz"
+      ],
+      "badge1": "Orta",
+      "content": "## Rekabet Analizi Çerçevesi\n\nRakip: [Rakip Adı]\n\n*   **Ürün/Hizmetler:** Ne sunuyorlar?\n*   **Fiyatlandırma:** Nasıl fiyatlandırıyorlar?\n*   **Pazarlama:** Nasıl tanıtım yapıyorlar?\n*   **Güçlü Yönler:** Nelerde iyiler?\n*   **Zayıf Yönler:** Nelerde eksikler?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Yaratıcı Düşünme",
+      "name": "Beyin Fırtınası Prompt Taslağı",
+      "desc": "Belirli bir konu hakkında çok sayıda fikir üretmeyi hedefler.",
+      "tags": [
+        "yaratıcılık",
+        "fikir",
+        "beyin fırtınası"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Beyin Fırtınası Prompt Taslağı\n\nKonu: [Konuyu Belirtin]\n\nAmacımız, bu konuyla ilgili mümkün olduğunca çok fikir üretmektir. Lütfen yaratıcı olun, yargılamayın ve her türlü fikri paylaşın. Hiçbir fikir 'kötü' değildir. Başlayalım!",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Yaratıcı Düşünme",
+      "name": "SCAMPER Yöntemi Uygulayıcı",
+      "desc": "Mevcut fikirleri geliştirmek için sostitüe etme, birleştirme vb. yöntemler kullanır.",
+      "tags": [
+        "yaratıcılık",
+        "geliştirme",
+        "scamper"
+      ],
+      "badge1": "Orta",
+      "content": "## SCAMPER Yöntemi Uygulayıcı\n\nÖğe/Fikir: [Geliştirilecek Öğe/Fikir]\n\n*   **S (Substitute):** Yerine ne koyabiliriz?\n*   **C (Combine):** Neleri birleştirebiliriz?\n*   **A (Adapt):** Başka neye uyarlayabiliriz?\n*   **M (Modify):** Ne büyütebilir/küçültebiliriz?\n*   **P (Put to another use):** Başka ne için kullanabiliriz?\n*   **E (Eliminate):** Neleri çıkarabiliriz?\n*   **R (Reverse/Rearrange):** Tersine çevirebilir/yeniden düzenleyebilir miyiz?",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Yaratıcı Düşünme",
+      "name": "Zihin Haritası Oluşturma Kılavuzu",
+      "desc": "Merkezi bir fikir etrafında dallanan fikirler oluşturur.",
+      "tags": [
+        "yaratıcılık",
+        "zihin haritası",
+        "görsel"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Zihin Haritası Oluşturma Kılavuzu\n\nMerkez Konu: [Merkezi Konu]\n\n1.  Merkezi konuyu kağıdın ortasına yazın/çizin.\n2.  Ana fikirleri merkezden çıkan dallar olarak ekleyin.\n3.  Alt fikirleri ana dallardan çıkan daha ince dallar olarak bağlayın.\n4.  Anahtar kelimeler, renkler ve görseller kullanın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Yaratıcı Düşünme",
+      "name": "Ters Beyin Fırtınası Tekniği",
+      "desc": "Sorunu çözmek yerine, sorunu nasıl yaratabileceğinizi düşünür.",
+      "tags": [
+        "yaratıcılık",
+        "problem",
+        "ters"
+      ],
+      "badge1": "Orta",
+      "content": "## Ters Beyin Fırtınası Tekniği\n\nSorun: [Sorunu Belirtin]\n\nBu sorunu nasıl daha da kötüleştirebiliriz? Hangi eylemler bu sorunu garantiler? Bu 'kötü' fikirlerin tam tersi muhtemelen çözüm olacaktır. Fikirleri listeleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

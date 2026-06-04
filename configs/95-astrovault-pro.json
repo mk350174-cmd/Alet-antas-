@@ -1,0 +1,340 @@
+{
+  "slug": "95-astrovault-pro",
+  "title": "AstroVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Uzay bilimleri, göksel mekanik ve kurgusal evrenler için gezegen/yörünge formülasyonları.",
+  "metaKeywords": [
+    "Astro",
+    "AstroVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Uzay bilimleri, göksel mekanik ve kurgusal evrenler için gezegen/yörünge formülasyonları.",
+  "heroCorner": "A",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Astro<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Astro<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "AstroVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Astro ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "astrovault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Gözlemsel Astronomi",
+      "name": "Gözlemsel Astronomi",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Uzay Fiziği",
+      "name": "Uzay Fiziği",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Teleskop & Ekipman",
+      "name": "Teleskop & Ekipman",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Astronomi Yazılımları",
+      "name": "Astronomi Yazılımları",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Uzay Keşfi",
+      "name": "Uzay Keşfi",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Astrofotografi",
+      "name": "Astrofotografi",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Gözlemsel Astronomi",
+      "name": "Gökyüzü Haritası Kullanımı",
+      "desc": "Stellarium ve SkySafari ile yıldız haritası oluşturma ve gözlem planlama.",
+      "tags": [
+        "harita",
+        "Stellarium",
+        "gözlem"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Gözlem Planlama\n1. Stellarium.org'u yükle veya tarayıcıda kullan.\n2. Konumu ayarla: Türkiye için UTC+3.\n3. Tarih/saati ilerlet → gece gökyüzünü önizle.\n4. Hedef nesneyi ara: M42 (Oryon Bulutsusu).\n5. En yüksek irtifa anını bul → en az atmosfer distorsiyon.\n6. Işık kirliliği haritası: lightpollutionmap.info",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Gözlemsel Astronomi",
+      "name": "Messier Kataloğu Rehberi",
+      "desc": "110 Messier nesnesini başlangıç teleskopuyla gözlemlemek için öncelik listesi.",
+      "tags": [
+        "Messier",
+        "katalog",
+        "DSO"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Messier Başlangıç Listesi\n**Kolay hedefler (6cm teleskop ile):**\n- M45 Pleiades: açık küme, çıplak gözle\n- M44 Beehive: Yengeç takımında açık küme\n- M42 Oryon Bulutsusu: en parlak bulutsu\n- M31 Andromeda: yakın galaksi, çıplak gözle\n- M13 Herkül Küre Kümesi: yaz hedefi\n\nİpucu: Mehtapsız geceleri ve Yeni Ay dönemini seç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Teleskop & Ekipman",
+      "name": "Teleskop Türleri Karşılaştırması",
+      "desc": "Refraktör, reflektör ve Cassegrain teleskopları kullanım senaryosuna göre seçin.",
+      "tags": [
+        "teleskop",
+        "reflektör",
+        "refraktör"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Teleskop Karşılaştırma\n| Tür | Avantaj | Dezavantaj |\n|-----|---------|------------|\n| Refraktör | Keskin, bakımsız | Pahalı, renk aberasyonu |\n| Dobsonian | En büyük açıklık/fiyat | Taşıması zor |\n| SCT (Cassegrain) | Kompakt, çok yönlü | Geç soğuma |\n| Maksutov | Gezegen için mükemmel | Dar alan |\n\nBaşlangıç için: 6-8 inch Dobsonian veya 70-80mm refraktör.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Teleskop & Ekipman",
+      "name": "Okular Seçimi ve FOV Hesabı",
+      "desc": "Büyütme, çıkış göz bebeği ve gerçek görüş alanı hesaplamalarını yapın.",
+      "tags": [
+        "okular",
+        "büyütme",
+        "FOV"
+      ],
+      "badge1": "Orta",
+      "content": "## Okular Hesapları\nBüyütme = Odak Uzunluğu / Okular Odak Uzunluğu\nÇıkış Göz Bebeği = Okular / f-oranı (ideal: 5-7mm)\nGerçek FOV = Okular AFOV / Büyütme\n\nÖrnek (1200mm f/6 teleskop, 25mm okular):\n- Büyütme: 1200/25 = 48×\n- Çıkış göz bebeği: 25/6 = 4.2mm\n- Max büyütme: 1200/4 = 300× (pratik limit D×2)",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Uzay Fiziği",
+      "name": "Hertzsprung-Russell Diyagramı",
+      "desc": "Yıldızları parlakçık ve sıcaklığa göre sınıflandıran HR diyagramını anlayın.",
+      "tags": [
+        "HR",
+        "yıldız",
+        "sınıflama"
+      ],
+      "badge1": "Orta",
+      "content": "## HR Diyagramı\nY ekseni: Mutlak kadir (parlaklık)\nX ekseni: Yüzey sıcaklığı (Kelvin, sağdan sola artar)\n\nAna Dizi: Güneş benzeri yıldızlar → %90 yıldız burada.\nDev Dalı: Yaşlanan, genişleyen yıldızlar.\nBeyaz Cüceler: Sol alt → küçük, sıcak, ölmekte.\nSüpervev: Sol üst → en parlak.\n\nRenkler: O (mavi) B A F G K M (kırmızı) → 'Oh Be A Fine Girl Kiss Me'",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Uzay Fiziği",
+      "name": "Kara Delik Türleri",
+      "desc": "Yıldız kütleli, süper kütleli ve orta kütleli kara deliklerin oluşumu ve özellikleri.",
+      "tags": [
+        "kara delik",
+        "olay ufku",
+        "singülarite"
+      ],
+      "badge1": "Orta",
+      "content": "## Kara Delik Türleri\n1. **Yıldız kütleli:** 5-100 M☉, süpernova sonrası.\n2. **Orta kütleli (IMBH):** 100-10.000 M☉, hâlâ araştırılıyor.\n3. **Süper kütleli:** 10⁶-10¹⁰ M☉, galaksi merkezlerinde.\nÖrnek: Sagittarius A* = 4 milyon M☉.\n\nOlay ufku: geri dönüşün olmadığı sınır.\nSchwarzschild yarıçapı: Rs = 2GM/c²",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Astronomi Yazılımları",
+      "name": "Python ile Astronomi",
+      "desc": "Astropy kütüphanesi ile gök cismi koordinatları, birimler ve FITS dosyaları.",
+      "tags": [
+        "Astropy",
+        "Python",
+        "FITS"
+      ],
+      "badge1": "Orta",
+      "content": "## Astropy Temel\n```python\nfrom astropy.coordinates import SkyCoord\nimport astropy.units as u\n\n# M42 koordinatları\nm42 = SkyCoord(ra=83.82*u.degree, dec=-5.39*u.degree, frame='icrs')\nprint(m42.ra.hms)  # RA saat:dakika:saniye\nprint(m42.dec.dms) # Dec derece:dakika:saniye\n\n# FITS dosyası okuma\nfrom astropy.io import fits\nhdul = fits.open('image.fits')\ndata = hdul[0].data\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Astronomi Yazılımları",
+      "name": "NINA ile Otomasyon",
+      "desc": "N.I.N.A. yazılımı ile otomatik gözlem sekansı ve görüntü alma.",
+      "tags": [
+        "NINA",
+        "otomasyon",
+        "gözlem"
+      ],
+      "badge1": "İleri",
+      "content": "## NINA Kurulum\n1. nina-tool.com'dan indir, Windows gerekli.\n2. Kamera, montür, filtre tekerleği, odaklayıcı bağla.\n3. Platesolver kur: ASTAP veya PlateSolve2.\n4. Polar alignment: Three Point PA veya DARV.\n5. Sequence oluştur: DSO hedefi, süre, filtre, tekrar.\n6. Meridian flip: otomatik ile gece boyunca çalış.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Astrofotografi",
+      "name": "Derin Gökyüzü Stacking",
+      "desc": "Birden fazla pozlamayı DeepSkyStacker veya Siril ile birleştirme iş akışı.",
+      "tags": [
+        "stacking",
+        "DSS",
+        "gürültü"
+      ],
+      "badge1": "Orta",
+      "content": "## Image Stacking Akışı\n1. Light frame: hedef nesne pozlamaları.\n2. Dark frame: aynı ISO+süre, kapak kapalı → termal gürültü.\n3. Flat frame: düz beyaz yüzey → vignet düzeltme.\n4. Bias frame: en kısa süre, aynı ISO.\n5. Yazılım: DeepSkyStacker (ücretsiz) → kalibre + stack.\n6. Çıktı: 16/32-bit TIFF → PixInsight veya Siril'de işle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Astrofotografi",
+      "name": "Polar Hizalama Adımları",
+      "desc": "EQ montürünü Kuzey Yıldızı ve drift yöntemiyle hassas polar hizalama.",
+      "tags": [
+        "polar",
+        "hizalama",
+        "montür"
+      ],
+      "badge1": "Orta",
+      "content": "## Polar Hizalama\n**Görsel yöntem:**\n1. Kuzey yıldızını (Polaris) RA eksenine yaklaştır.\n2. Polar scope ile Polaris'i doğru konuma yerleştir.\n3. Sharpcap Pro → Polar Alignment asistanı.\n\n**Drift yöntemi (en hassas):**\n1. Meridyen'e yakın yıldız seç.\n2. DEC kaymasını izle → azimut ayarla.\n3. Doğu/Batı ufkunda yıldız izle → altitude ayarla.\n4. İteratif olarak tekrarla; <1 açıkdakika hedefi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Uzay Keşfi",
+      "name": "Mars Araçları Karşılaştırması",
+      "desc": "Curiosity, Perseverance ve Ingenuity'nin görev amaçları ve bilimsel katkıları.",
+      "tags": [
+        "Mars",
+        "rover",
+        "Perseverance"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Mars Araçları\n| Araç | Yıl | Görev |\n|------|-----|-------|\n| Curiosity | 2012 | Habitabilite, radyasyon ölçümü |\n| Perseverance | 2021 | Biyobelirteç arama, örnek depolama |\n| Ingenuity | 2021 | Mars atmosferinde ilk uçuş |\n\nPerseverance Jezero krateri: eski göl tabanı → geçmiş yaşam izi.\n2030'larda örnek geri getirme görevi planlanıyor.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Uzay Keşfi",
+      "name": "James Webb Uzay Teleskobu",
+      "desc": "JWST'nin kızılötesi görüşünün Hubble'dan farklı olduğu ve keşifleri.",
+      "tags": [
+        "JWST",
+        "kızılötesi",
+        "derin evren"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## JWST Neden Farklı?\n- Dalga boyu: 0.6-28 μm kızılötesi → toz bulutlarını deler.\n- Ayna: 6.5m altın kaplama beril → Hubble'ın 2.4m'sinden büyük.\n- Konum: L2 Lagrange noktası → karanlık, soğuk.\n\nBaşlıca keşifler:\n- Evrenin en eski galaksileri (z>12).\n- Ötegezegen atmosferi spektroskopisi.\n- Yıldız doğum bölgelerinin detaylı görüntüleri.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Gözlemsel Astronomi",
+      "name": "Çift Yıldız Gözlemi",
+      "desc": "Ay ışığı ve ışık kirliliğine rağmen gözlemlenebilen çift yıldız hedefleri.",
+      "tags": [
+        "çift yıldız",
+        "binary",
+        "gözlem"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Başlangıç Çift Yıldız Listesi\n1. Albireo (Kuğu): Sarı+mavi kontrast — muhteşem!\n2. Mizar & Alcor: Büyükayı kuyruğu, çıplak gözle.\n3. Epsilon Lyrae: 'Çift çift' — dört yıldız.\n4. Porrima (Virgo): Dar ayrım — iyi test.\n5. Castor: Altı bileşenli sistem.\n\nAvantaj: Ay etkisinden bağımsız, ışık kirliliğine dayanıklı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Astrofotografi",
+      "name": "Geniş Alan Astrofotografi",
+      "desc": "DSLR ve geniş açı lensle Samanyolu ve meteor yağmuru fotoğrafı.",
+      "tags": [
+        "geniş alan",
+        "Samanyolu",
+        "DSLR"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Geniş Alan Ayarları\n- Lens: 14-24mm f/2.8\n- ISO: 1600-6400 (kameraya göre)\n- Enstantane: 500 kuralı → 500/odak uzunluğu = max saniye\n(24mm → 500/24 ≈ 20s)\n- Tripod ve kablo deklanşör zorunlu.\n- Odak: Sonsuz odak, LiveView ile parlak yıldıza yakınlaştır.\n- İşleme: Lightroom → gürültü azaltma → Milky Way preset.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Uzay Fiziği",
+      "name": "Kozmik Mesafe Merdiveni",
+      "desc": "Paralaks, Cepheid değişkenleri ve standart mumlarla kozmik mesafe ölçümü.",
+      "tags": [
+        "mesafe",
+        "paralaks",
+        "Cepheid"
+      ],
+      "badge1": "İleri",
+      "content": "## Mesafe Ölçüm Yöntemleri\n| Yöntem | Menzil | Açıklama |\n|--------|--------|---------|\n| Trigonometrik paralaks | <1 kpc | Yıldız kayması açısı |\n| Cepheid değişkeni | <100 Mpc | Dönem-parlaklık ilişkisi |\n| Tip Ia supernova | <1000 Mpc | Standart mum |\n| Hubble-Lemaître | Tüm evren | v = H₀ × d |\n\nHubble sabiti: ~70 km/s/Mpc → tartışmalı (Hubble gerilimi).",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

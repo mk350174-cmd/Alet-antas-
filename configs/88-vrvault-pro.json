@@ -1,0 +1,340 @@
+{
+  "slug": "88-vrvault-pro",
+  "title": "VrVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Sanal gerçeklik ortamlarında 3D etkileşim ve UI tasarım şablonları.",
+  "metaKeywords": [
+    "Vr",
+    "VrVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Sanal gerçeklik ortamlarında 3D etkileşim ve UI tasarım şablonları.",
+  "heroCorner": "V",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Vr<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Vr<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "VrVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Vr ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "vrvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "VR Temelleri",
+      "name": "VR Temelleri",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Unity XR",
+      "name": "Unity XR",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Unreal VR",
+      "name": "Unreal VR",
+      "color": "#ff8585"
+    },
+    {
+      "id": "WebVR & WebXR",
+      "name": "WebVR & WebXR",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Performans & Optimizasyon",
+      "name": "Performans & Optimizasyon",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Etkileşim Tasarımı",
+      "name": "Etkileşim Tasarımı",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "VR Temelleri",
+      "name": "VR Konfor Kılavuzu",
+      "desc": "Hareket hastalığını önleyen VR deneyimi tasarım ilkeleri.",
+      "tags": [
+        "konfor",
+        "motion sickness",
+        "VR"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## VR Konfor İlkeleri\n1. Frame rate: maks. 90fps hedefle, asla 72fps altına inme.\n2. Latency: motion-to-photon < 20ms.\n3. Hareket: kullanıcıya bağlı kamera asla hareket ettirme.\n4. Locomotion: teleport > smooth locomotion.\n5. FOV kısıtlama: hareket sırasında vignette efekti.\n6. Comfort mode seçeneği sun.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "VR Temelleri",
+      "name": "6DOF vs 3DOF Farkı",
+      "desc": "6 serbestlik derecesi ile 3 serbestlik derecesi VR headset farkları.",
+      "tags": [
+        "6DOF",
+        "3DOF",
+        "headset"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## DOF Karşılaştırma\n| | 3DOF | 6DOF |\n|---|---|---|\n| Rotation | ✓ | ✓ |\n| Translation | ✗ | ✓ |\n| Örnek | Cardboard | Quest 3, Vive |\n| İçerik | 360 video | Tam VR oyunu |\n\n6DOF controller tracking için inside-out veya outside-in kamera gerekir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Unity XR",
+      "name": "Unity XR Interaction Toolkit",
+      "desc": "Unity'de XR Interaction Toolkit ile grab, teleport ve UI etkileşimleri.",
+      "tags": [
+        "Unity",
+        "XR",
+        "etkileşim"
+      ],
+      "badge1": "Orta",
+      "content": "## XR Toolkit Temel\n1. Package Manager: 'XR Interaction Toolkit' yükle.\n2. XR Rig prefab'ını sahneye ekle.\n3. Grab: XRGrabInteractable component ekle.\n4. Teleport: Teleportation Area/Anchor komponentleri.\n5. Ray Interactor: UI canvas'lar için World Space Canvas.\n6. Action-based input: InputActionAsset ile kontroller haritalama.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Unity XR",
+      "name": "Render Texture ile Ayna Efekti",
+      "desc": "VR sahnede gerçek zamanlı ayna efekti için Render Texture kullanımı.",
+      "tags": [
+        "ayna",
+        "render texture",
+        "Unity"
+      ],
+      "badge1": "İleri",
+      "content": "## VR Ayna\n1. Render Texture oluştur: Create → Render Texture.\n2. Ayna yüzeyine bir kamera ekle.\n3. Kameranın target texture'ını RenderTexture'a bağla.\n4. Yüzey materyalinin main texture'ı RenderTexture.\n5. Her frame kamera pozisyonunu yansıt: pos.x negele.\nPerformans: maks 1-2 ayna, düşük çözünürlük RenderTexture.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Unreal VR",
+      "name": "Unreal VR Pawn Kurulumu",
+      "desc": "Unreal Engine'de VR Pawn blueprint ve hareket sistemi kurulumu.",
+      "tags": [
+        "Unreal",
+        "Pawn",
+        "VR"
+      ],
+      "badge1": "Orta",
+      "content": "## Unreal VR Pawn\n1. New Blueprint → VRPawn (MotionControllerPawn).\n2. Scene Component ekle → Camera Component ekle (head).\n3. Sol/sağ MotionController Component ekle.\n4. Teleport Logic: BeginPlay → Setup Movement Component.\n5. Input: IA_Teleport action mapping → right joystick press.\n6. Forward Locomotion: alternatif smooth locomotion tipi.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "WebVR & WebXR",
+      "name": "A-Frame VR Sahnesi",
+      "desc": "A-Frame ile beş dakikada tarayıcı tabanlı VR sahnesi oluşturun.",
+      "tags": [
+        "A-Frame",
+        "WebVR",
+        "hızlı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## A-Frame Temel\n```html\n<script src='https://aframe.io/releases/1.4.0/aframe.min.js'></script>\n<a-scene>\n  <a-sky color='#87CEEB'></a-sky>\n  <a-plane position='0 0 0' rotation='-90 0 0' width='10' height='10' color='#7BC8A4'></a-plane>\n  <a-box position='0 1 -3' color='#EF2D5E'></a-box>\n  <a-sphere position='1 1.25 -5' radius='1' color='#4CC3D9'></a-sphere>\n  <a-entity id='camera' camera look-controls wasd-controls></a-entity>\n</a-scene>\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "WebVR & WebXR",
+      "name": "Three.js VR Modu",
+      "desc": "Three.js WebXRManager ile VR modunu etkinleştirme ve controller ekleyin.",
+      "tags": [
+        "Three.js",
+        "WebXR",
+        "controller"
+      ],
+      "badge1": "Orta",
+      "content": "## Three.js VR\n```javascript\nimport { VRButton } from 'three/addons/webxr/VRButton.js';\nrenderer.xr.enabled = true;\ndocument.body.appendChild(VRButton.createButton(renderer));\nconst controller = renderer.xr.getController(0);\ncontroller.addEventListener('selectstart', onSelectStart);\nscene.add(controller);\n// Render loop\nrenderer.setAnimationLoop(() => renderer.render(scene, camera));\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Performans & Optimizasyon",
+      "name": "Single Pass Stereo Rendering",
+      "desc": "Her göz için ayrı ayrı değil tek geçişte stereo render ile %40 GPU tasarrufu.",
+      "tags": [
+        "stereo",
+        "performans",
+        "GPU"
+      ],
+      "badge1": "İleri",
+      "content": "## Single Pass Stereo\nUnity:\n```csharp\n// PlayerSettings → XR → Stereo Rendering Mode:\n// Single Pass Instanced seç\n// Shader'lar UNITY_STEREO_INSTANCING_ENABLED ile güncellenmeli\n```\nUnreal: Project Settings → VR → Instanced Stereo = true.\nFayda: GPU draw call sayısı yarıya düşer.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Performans & Optimizasyon",
+      "name": "Foveated Rendering",
+      "desc": "Bakış noktası ortasını yüksek, kenarları düşük çözünürlükte render ederek güç tasarrufu.",
+      "tags": [
+        "foveated",
+        "göz takibi",
+        "GPU"
+      ],
+      "badge1": "İleri",
+      "content": "## Foveated Rendering\n- Fixed Foveated: göz takibi olmadan, merkez yüksek kalite.\n- Dynamic (Eye-tracked): PSVR2/Quest Pro gibi göz takipli headset'lerde.\nUnity:\n```csharp\nUnityEngine.XR.XRSettings.eyeTextureResolutionScale = 1.4f;\n// Quest için OVRManager → Fixed Foveated Level = High\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Etkileşim Tasarımı",
+      "name": "VR UI Tasarım Kuralları",
+      "desc": "VR içinde okunabilir, rahat ve erişilebilir 3D kullanıcı arayüzü tasarımı.",
+      "tags": [
+        "UI",
+        "3D",
+        "ergonomi"
+      ],
+      "badge1": "Orta",
+      "content": "## VR UI Kuralları\n1. Mesafe: UI paneli 1.5-2m kullanıcıdan uzakta.\n2. Boyut: 1m mesafede min. 5cm yükseklik metin.\n3. Kontrast: arka plan opaklık %70+, metin beyaz/sarı.\n4. Takip: UI kullanıcı hareketiyle kayar, sabit değil.\n5. Hover feedback: göz veya kontroller ile fokus görsel efekti.\n6. Exit: her zaman görünür kapat/geri butonu.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Etkileşim Tasarımı",
+      "name": "Haptic Feedback Tasarımı",
+      "desc": "Dokunsal geri bildirim örüntülerini olaylarla eşleştirme rehberi.",
+      "tags": [
+        "haptic",
+        "titreşim",
+        "geri bildirim"
+      ],
+      "badge1": "Orta",
+      "content": "## Haptic Örüntüler\n| Olay | Örüntü |\n|------|---------|\n| Nesne tutma | Kısa darbe (0.1s, 0.5 amplitude) |\n| Yüzey çarpışma | Orta darbe (0.15s, 0.8 amplitude) |\n| Hata/engel | Çift darbe (0.05s+pause+0.05s) |\n| Başarı | Uzun-kısa (0.2s+0.05s) |\n\nUnity: `OVRInput.SetControllerVibration(freq, amp, ctrl)`",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Unity XR",
+      "name": "Passthrough AR/VR Geçiş",
+      "desc": "Meta Quest'te passthrough kamera ile gerçek dünya + VR harmanlama.",
+      "tags": [
+        "passthrough",
+        "MR",
+        "Quest"
+      ],
+      "badge1": "İleri",
+      "content": "## Quest Passthrough\n```csharp\nusing UnityEngine.XR.Management;\n// OVRManager ekle\nOVRManager.instance.isInsightPassthroughEnabled = true;\nvar passthroughLayer = GetComponent<OVRPassthroughLayer>();\npassthroughLayer.overlayType = OVROverlay.OverlayType.Underlay;\n// Skybox'ı şeffaf yap: clear flags = Solid Color, alpha = 0\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "VR Temelleri",
+      "name": "VR Audio Spatialization",
+      "desc": "3D uzamsal ses ile VR'da gerçekçi ses alanı oluşturma.",
+      "tags": [
+        "ses",
+        "spatial",
+        "3D audio"
+      ],
+      "badge1": "Orta",
+      "content": "## Spatial Audio\nUnity: AudioSource → Spatial Blend = 1 (3D).\nPlugin: Resonance Audio veya Steam Audio (binaural HRTF).\n```csharp\nAudioSource src = GetComponent<AudioSource>();\nsrc.spatialBlend = 1.0f;\nsrc.rolloffMode = AudioRolloffMode.Logarithmic;\nsrc.maxDistance = 20f;\n// Steam Audio Spatializer: Inspector'dan seç\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "WebVR & WebXR",
+      "name": "VR Performans Ölçümü",
+      "desc": "WebXR uygulamasında FPS ve GPU metriklerini ölçün ve iyileştirin.",
+      "tags": [
+        "benchmark",
+        "FPS",
+        "profiling"
+      ],
+      "badge1": "Orta",
+      "content": "## WebXR Profil\n1. Chrome DevTools → Performance sekmesi.\n2. stats.js ekle: FPS overlay.\n3. GPU: SpectorJS eklentisi, draw call sayısı.\n4. Hedef: Meta Quest → 72fps, PC VR → 90fps.\n5. Bottleneck: draw call > 100 ise batching yap; texture > 2K ise compress et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Performans & Optimizasyon",
+      "name": "LOD Sistemi VR İçin",
+      "desc": "Level of Detail ile uzak nesneleri basitleştirip VR performansını artırın.",
+      "tags": [
+        "LOD",
+        "mesafe",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## LOD Seviyeleri\nUnity: LOD Group component → 3 LOD seviyesi öner.\n| Mesafe | Polygon |\n|--------|---------|\n| 0-5m | 10.000 tri |\n| 5-15m | 2.000 tri |\n| 15m+ | 500 tri |\n\nOtomatik LOD üretimi: Simplygon veya Unity'de LOD Group Generate butonunu kullan.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

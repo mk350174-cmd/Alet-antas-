@@ -1,0 +1,500 @@
+{
+  "slug": "29-questvault-pro",
+  "title": "QuestVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "Çok dallı (branching) RPG görev tasarımı jeneratörü.",
+  "metaKeywords": [
+    "Quest",
+    "QuestVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Çok dallı (branching) RPG görev tasarımı jeneratörü.",
+  "heroCorner": "Q",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Quest<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Quest<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "QuestVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Quest ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "questvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "Görev Yapısı",
+      "name": "Görev Yapısı",
+      "color": "#7CB9E8"
+    },
+    {
+      "id": "Diyalog Tasarımı",
+      "name": "Diyalog Tasarımı",
+      "color": "#FFB6C1"
+    },
+    {
+      "id": "Mekan & Çevre",
+      "name": "Mekan & Çevre",
+      "color": "#90EE90"
+    },
+    {
+      "id": "NPC Etkileşimleri",
+      "name": "NPC Etkileşimleri",
+      "color": "#DDA0DD"
+    },
+    {
+      "id": "Sonuç & Karar",
+      "name": "Sonuç & Karar",
+      "color": "#FFD700"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Görev Yapısı",
+      "name": "Basit Toplama Görevi",
+      "desc": "Belirli öğeleri toplayıp bir NPC'ye teslim etmeyi içeren temel görev şablonu.",
+      "tags": [
+        "temel",
+        "toplama",
+        "NPC",
+        "başlangıç"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Toplama Görevi Şablonu\n1. Görev Veren: [NPC Adı] ile etkileşime geç.\n2. Hedef: [X] adet [Öğe Adı]'nı [Konum]'dan topla.\n3. Teslimat: Toplanan öğeleri [NPC Adı]'na geri götür.\n4. Ödül: [Deneyim Puanı] ve [Altın/Öğe] kazan. Görev akışını Quest Editor'de görselleştir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Görev Yapısı",
+      "name": "Zincirleme Görev Akışı",
+      "desc": "Bir görevin tamamlanmasının başka bir görevi tetiklediği doğrusal akış şablonu.",
+      "tags": [
+        "zincirleme",
+        "doğrusal",
+        "ilerleme",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Zincirleme Görev Oluşturma\n1. Görev A: [Başlangıç NPC]'den al, [Hedef 1]'i tamamla.\n2. Görev B: Görev A bitince otomatik tetiklenir, [Hedef 2]'yi tamamla.\n3. Görev C: Görev B bitince tetiklenir, [Hedef 3]'ü tamamla.\n4. Sonuç: Büyük ödül ve hikaye ilerlemesi. Dallanma noktalarını belirle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Görev Yapısı",
+      "name": "Seçime Dayalı Başlangıç",
+      "desc": "Oyuncunun başlangıçta yaptığı seçime göre farklı görev kollarını başlatan yapı.",
+      "tags": [
+        "dallanma",
+        "seçim",
+        "başlangıç",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Seçimli Görev Başlatma\n1. NPC Diyaloğu: [NPC] oyuncuya iki seçenek sunar (örn: 'A tarafı' veya 'B tarafı').\n2. Seçenek A: Seçim A yapılırsa, 'A Görevi' başlar.\n3. Seçenek B: Seçim B yapılırsa, 'B Görevi' başlar.\n4. İzleme: Oyuncunun seçimini bir görev değişkeni ile takip et ve ilgili görevi aktif et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Görev Yapısı",
+      "name": "Zaman Kısıtlı Görev",
+      "desc": "Belirli bir süre içinde tamamlanması gereken, başarısızlık ihtimalli görev şablonu.",
+      "tags": [
+        "zaman",
+        "gerilim",
+        "başarısızlık",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Zaman Kısıtlı Görev Tasarımı\n1. Tetikleyici: Görev başladığında [Süre]'lik bir geri sayım sayacı başlat.\n2. Hedef: [Belirli Eylem]'i süre bitmeden tamamla.\n3. Başarı: Süre içinde tamamlarsan, [Başarı Ödülü] kazan.\n4. Başarısızlık: Süre biterse, [Başarısızlık Sonucu] ile karşılaş. Alternatif akışları düşün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Diyalog Tasarımı",
+      "name": "Basit Diyalog Ağacı",
+      "desc": "Tek yollu, temel bilgi aktarımı için kullanılan diyalog akış şablonu.",
+      "tags": [
+        "diyalog",
+        "NPC",
+        "bilgi",
+        "başlangıç"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Temel Diyalog Ağacı\n1. NPC: 'Merhaba, sana bir görevim var.'\n2. Oyuncu: 'Görev nedir?'\n3. NPC: 'Bana [Öğe Adı]'nı getir.'\n4. Oyuncu: 'Peki, getiririm.'\n5. NPC: 'Harika.'\nDiyalog editöründe bu basit akışı kur. Seçeneksiz düz bir konuşma.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Diyalog Tasarımı",
+      "name": "Çoklu Seçimli Diyalog",
+      "desc": "Oyuncuya birden fazla yanıt seçeneği sunan, görev akışını etkileyen diyalog.",
+      "tags": [
+        "seçim",
+        "diyalog",
+        "dallanma",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Çoklu Seçimli Diyalog\n1. NPC: 'Ne yapmayı düşünüyorsun?'\n2. Oyuncu Seçenekleri:\n   a) 'Sana yardım ederim.' -> Görev A'yı aktif et.\n   b) 'Beni ilgilendirmez.' -> Görev teklifini reddet.\n   c) 'Daha fazla bilgi alabilir miyim?' -> Yeni NPC diyalog kolu aç.\nHer seçeneği ayrı bir görev state'ine bağla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Diyalog Tasarımı",
+      "name": "NPC Tepkili Diyalog",
+      "desc": "Oyuncunun geçmiş eylemlerine veya itibarına göre NPC yanıtlarını değiştiren sistem.",
+      "tags": [
+        "itibar",
+        "tepki",
+        "dinamik",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## NPC Tepki Diyaloğu\n1. Koşul: Oyuncunun [Fraksiyon] itibarı [Eşik Değer]'den yüksekse/düşükse.\n2. Diyalog A: İtibar yüksekse, NPC dostça yanıt verir ve özel bir görev sunar.\n3. Diyalog B: İtibar düşükse, NPC düşmanca konuşur ve görev vermeyi reddeder.\nKoşullu diyalog düğümleri kullanarak akışı tasarla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Diyalog Tasarımı",
+      "name": "Geçmiş Bilgisi Diyaloğu",
+      "desc": "Oyuncunun öğrendiği bilgilere göre yeni diyalog seçenekleri açan mekanik.",
+      "tags": [
+        "bilgi",
+        "keşif",
+        "sır",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Bilgi Tabanlı Diyalog\n1. Önkoşul: Oyuncu [Belirli Bilgi]'yi (örn: bir not okuyarak) edinmiş olmalı.\n2. Diyalog: [NPC] ile konuşurken, oyuncuya 'Öğrendiğim bilgilerle ilgili soru sor' seçeneği belirir.\n3. Yeni Kol: Bu seçenek seçildiğinde, NPC yeni bilgiler veya bir yan görev sunar.\nGörev değişkenleri ile bilgi edinimi durumunu kontrol et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Mekan & Çevre",
+      "name": "Keşif Odaklı Mekan",
+      "desc": "Oyuncuyu gizli geçitler ve sırlarla dolu bir alanı keşfetmeye teşvik eden görev.",
+      "tags": [
+        "keşif",
+        "mekan",
+        "gizli",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Keşif Görevi Mekanı\n1. Alan Tanımı: [Harita Bölgesi]'ni tasarla (örn: eski tapınak).\n2. Hedefler: Oyuncuyu [X] adet [Gizli Obje]'yi bulmaya yönlendir.\n3. İpuçları: Harita üzerinde ipuçları (notlar, işaretler) bırak.\n4. Engel: Bölgeyi düşmanlar veya çevresel bulmacalarla doldur. Görevin ödülü keşif hissiyatı olsun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Mekan & Çevre",
+      "name": "Engel Temelli Mekan",
+      "desc": "Oyuncunun ilerlemek için çeşitli engelleri aşması gereken mekan tasarımı.",
+      "tags": [
+        "engel",
+        "bulmaca",
+        "çevre",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Engel Mekanı Taslağı\n1. Mekan: [Zorlu Bölge] (örn: yıkık kale) oluştur.\n2. Engeller: İlk kapı için [Anahtar Bulmaca], sonraki oda için [Düşman Dalgaları], son geçit için [Platforming Engel].\n3. Çözüm: Her engelin farklı bir çözüm yolu olsun.\n4. İlerleme: Engelleri aşmak, görevin bir sonraki adımını tetiklesin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Mekan & Çevre",
+      "name": "Dinamik Çevre Etkileşimi",
+      "desc": "Oyuncunun çevredeki objelerle etkileşime girerek görevleri tamamladığı senaryo.",
+      "tags": [
+        "dinamik",
+        "etkileşim",
+        "çevre",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Dinamik Çevre Görevi\n1. Görev: [Hedef Obje]'yi [Mekan]'dan al.\n2. Engeller: Obje, [Hareketli Platform], [Kaldıraç Sistemi] gibi çevresel öğelerle korunuyor.\n3. Çözüm: Oyuncunun çevresel öğeleri manipüle ederek objeye ulaşmasını sağla.\n4. Geribildirim: Her etkileşimde görsel ve işitsel geribildirim ekle.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Mekan & Çevre",
+      "name": "Gizli Geçit Görevi",
+      "desc": "Oyuncunun mekan içindeki gizli bir geçidi bulup kullanmasını gerektiren görev.",
+      "tags": [
+        "gizli",
+        "geçit",
+        "bulmaca",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Gizli Geçit Keşfi\n1. Görev Veren: [NPC Adı] 'kayıp bir geçitten' bahseder.\n2. Hedef: [Mekan]'da 'Gizli Geçit'i bul.\n3. İpuçları: Geçide giden yolu gösteren notlar, semboller veya çevresel ipuçları yerleştir.\n4. Etkileşim: Geçidi aktive etmek için bir bulmaca veya anahtar kullan. Geçit keşfi ile yeni bir alana erişim sağla.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "NPC Etkileşimleri",
+      "name": "Düşman NPC Etkileşimi",
+      "desc": "Düşman bir NPC'den bilgi alma veya onu alt etme odaklı görev şablonu.",
+      "tags": [
+        "düşman",
+        "bilgi",
+        "savaş",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Düşman NPC Görevi\n1. Hedef: [Düşman NPC]'den [Gizli Bilgi]'yi elde et VEYA onu alt et.\n2. Seçenek 1 (Diplomasi): Diyalog seçenekleriyle onu ikna etmeyi dene.\n3. Seçenek 2 (Savaş): Onu yenerek bilgiyi veya görev objesini al.\n4. Sonuç: Seçime göre farklı görev akışları veya ödüller. Görev değişkenleriyle seçimleri kaydet.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "NPC Etkileşimleri",
+      "name": "Müttefik NPC Görevi",
+      "desc": "Oyuncunun bir müttefik NPC'ye yardım ederek güvenini kazanmasını sağlayan görev.",
+      "tags": [
+        "müttefik",
+        "yardım",
+        "güven",
+        "başlangıç"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Müttefik NPC Yardımı\n1. Görev Veren: [Müttefik NPC] senden [Talep] eder (örn: 'kayıp aile yadigarı bul').\n2. Hedef: Talebi yerine getirerek NPC'nin sorununu çöz.\n3. Ödül: Görev tamamlandığında NPC'nin sana olan 'güven' seviyesini artır.\n4. Sonuç: Yüksek güven, gelecekte özel görevler veya indirimler sunabilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "NPC Etkileşimleri",
+      "name": "Tüccar NPC Diyaloğu",
+      "desc": "Tüccar NPC ile yapılan diyalogların görevleri tetiklediği veya etkilediği senaryo.",
+      "tags": [
+        "tüccar",
+        "ekonomi",
+        "diyalog",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## Tüccar Görev Diyaloğu\n1. Etkileşim: [Tüccar NPC] ile alım/satım yaparken sohbet başlat.\n2. İpucu: Tüccar, belirli bir [Nadir Öğe] için yüksek fiyat ödeyeceğini söyler.\n3. Görev: Bu ipucu, oyuncuya o nadir öğeyi bulma görevi verir.\n4. Dallanma: Öğeyi bulup getirirsen, özel bir ödül veya yeni bir tüccar bağlantısı açılır.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "NPC Etkileşimleri",
+      "name": "Güven Temelli Görev Veren",
+      "desc": "Oyuncunun belirli bir NPC ile olan güven seviyesine göre görevlerin açıldığı sistem.",
+      "tags": [
+        "güven",
+        "ilişki",
+        "dallanma",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Güven Tabanlı Görevler\n1. Görev Veren: [Gizemli NPC]'nin başlangıçta güven seviyesi düşüktür.\n2. Görev A: Basit bir iyilik yaparak güveni artır (örn: 'kayıp eşya bul').\n3. Görev B: Güven eşiğine ulaşıldığında, NPC daha kritik ve dallanmalı bir görev verir.\n4. Sonuç: Güven seviyesi, diyalogları ve mevcut görevleri dinamik olarak değiştirsin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Sonuç & Karar",
+      "name": "İkili Sonuç Kararı",
+      "desc": "Oyuncunun yaptığı tek bir seçimin iki farklı görev sonundan birini tetiklediği yapı.",
+      "tags": [
+        "karar",
+        "sonuç",
+        "ikili",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## İkili Sonuç Kararı\n1. Problem: [Durum] hakkında bir karar verme gerekliliği (örn: 'köylüyü kurtar mı, yoksa eşkıyaya yardım et mi?').\n2. Seçenek A: [Seçenek A]'yı seçmek, [Sonuç A]'ya yol açar (örn: 'köylülerle iyi ilişkiler').\n3. Seçenek B: [Seçenek B]'yi seçmek, [Sonuç B]'ye yol açar (örn: 'eşkiyalarla iyi ilişkiler').\n4. Etki: Bu kararın oyun dünyasına kalıcı etkileri olsun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Sonuç & Karar",
+      "name": "Çoklu Dallanma Sonu",
+      "desc": "Birden fazla faktörün görevin nihai sonucunu belirlediği karmaşık görev yapısı.",
+      "tags": [
+        "dallanma",
+        "karmaşık",
+        "çoklu",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Çoklu Dallanma Sonu\n1. Başlangıç: Görev A başlar.\n2. Ara Kararlar: Görev boyunca yapılan [Karar 1], [Karar 2], [Karar 3] gibi seçimler kaydedilir.\n3. Koşullar: Görevin sonunda, kaydedilen kararların kombinasyonuna göre [Sonuç X], [Sonuç Y] veya [Sonuç Z] tetiklenir.\n4. Varyasyon: Her sonuç, farklı NPC diyalogları, dünya durumu değişiklikleri veya ödüller içersin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Sonuç & Karar",
+      "name": "Yan Görev Etkisi",
+      "desc": "Tamamlanan veya göz ardı edilen yan görevlerin ana hikayeyi etkilediği sistem.",
+      "tags": [
+        "yan görev",
+        "ana hikaye",
+        "etkileşim",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Yan Görev Etkisi\n1. Ana Görev: [Ana Görev X] devam ederken.\n2. Yan Görev: [Yan Görev Y]'yi tamamlamak, ana görevdeki bir NPC'nin tutumunu değiştirir.\n3. Yan Görev: [Yan Görev Z]'yi ihmal etmek, ana görevde yeni bir engelin ortaya çıkmasına neden olur.\n4. İzleme: Görev tamamlama durumlarını görev yöneticisinde takip et.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Sonuç & Karar",
+      "name": "İtibar Değişimi",
+      "desc": "Oyuncunun görev içi kararlarının çeşitli fraksiyonlarla olan itibarını değiştirdiği sistem.",
+      "tags": [
+        "itibar",
+        "fraksiyon",
+        "dallanma",
+        "orta"
+      ],
+      "badge1": "Orta",
+      "content": "## İtibar Değişimi\n1. Görev: [Grup A] ve [Grup B] arasındaki bir anlaşmazlıkta taraf seç.\n2. Seçenek A: Grup A'ya yardım et -> Grup A itibarı artar, Grup B itibarı düşer.\n3. Seçenek B: Grup B'ye yardım et -> Grup B itibarı artar, Grup A itibarı düşer.\n4. Sonuç: İtibar değişiklikleri, NPC diyaloglarını, görev tekliflerini ve fiyatları etkilemeli.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 21,
+      "no": "021",
+      "cat": "Sonuç & Karar",
+      "name": "Alternatif Görev Tamamlama",
+      "desc": "Bir görevin birden fazla farklı yolla tamamlanabileceği esnek bir yapı.",
+      "tags": [
+        "esnek",
+        "tamamlama",
+        "seçim",
+        "ileri"
+      ],
+      "badge1": "İleri",
+      "content": "## Alternatif Görev Tamamlama\n1. Hedef: [Hedef X]'e ulaş.\n2. Yol A: [Savaş Yolu] ile düşmanları yenerek hedefe ulaş.\n3. Yol B: [Gizlilik Yolu] ile düşmanlardan saklanarak hedefe ulaş.\n4. Yol C: [Diplomasi Yolu] ile düşman liderini ikna ederek hedefe ulaş.\n5. Ödül: Her yolun sonunda farklı ödüller veya hikaye varyasyonları sun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

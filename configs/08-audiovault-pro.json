@@ -1,0 +1,465 @@
+{
+  "slug": "08-audiovault-pro",
+  "title": "AudioVault Pro — AI & Prompt Mühendisliği",
+  "metaDescription": "Ses üretimi, müzik teorisi ve TTS (Text-to-Speech) motorları için optimize edilmiş AI komutları.",
+  "metaKeywords": [
+    "Audio",
+    "AudioVault Pro",
+    "AI & Prompt Mühendisliği",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Ses üretimi, müzik teorisi ve TTS (Text-to-Speech) motorları için optimize edilmiş AI komutları.",
+  "heroCorner": "A",
+  "heroEyebrow": "AI & Prompt Mühendisliği · Alet Çantası",
+  "heroTitleHTML": "Audio<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Audio<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "AudioVault Pro · AI & Prompt Mühendisliği",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Audio ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "audiovault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "ai",
+  "categoryLabel": "AI & Prompt Mühendisliği",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#a375ff",
+    "primary2": "#a375ff",
+    "primaryDim": "#a375ff15",
+    "primaryGlow": "#a375ff30",
+    "primaryDark": "#8557e1",
+    "accent": "#ff6b9d",
+    "accent2": "#ff6b9d",
+    "accentDim": "#ff6b9d18",
+    "accentGlow": "#ff6b9d30",
+    "bg": "#08060e",
+    "bg2": "#0c0a12",
+    "bg3": "#100e16",
+    "bg4": "#14121a",
+    "border": "#18161e",
+    "border2": "#201e26",
+    "border3": "#2c2a32",
+    "heroBg": "#0c0a12"
+  },
+  "categories": [
+    {
+      "id": "TTS Optimizasyonu",
+      "name": "TTS Optimizasyonu",
+      "color": "#FF6347"
+    },
+    {
+      "id": "Müzik Üretimi",
+      "name": "Müzik Üretimi",
+      "color": "#4682B4"
+    },
+    {
+      "id": "Ses Efektleri",
+      "name": "Ses Efektleri",
+      "color": "#32CD32"
+    },
+    {
+      "id": "Müzik Teorisi",
+      "name": "Müzik Teorisi",
+      "color": "#DAA520"
+    },
+    {
+      "id": "Ses Karıştırma",
+      "name": "Ses Karıştırma",
+      "color": "#9370DB"
+    },
+    {
+      "id": "Ses Analizi",
+      "name": "Ses Analizi",
+      "color": "#FF4500"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "TTS Optimizasyonu",
+      "name": "Duygusal Konuşma",
+      "desc": "Metinden duygusal TTS çıktısı üretme komutları.",
+      "tags": [
+        "tts",
+        "duygu",
+        "konuşma"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Duygusal TTS Üretimi\n\nKonuşma tonunu ve duygusunu belirleyin:\n1. Metni girin.\n2. Duyguyu (mutlu, üzgün, öfkeli) belirtin.\n3. İstediğiniz sesi seçin (yaş, cinsiyet).\nÖrnek: 'Ne harika bir gün!' (mutlu, genç kadın sesi).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "TTS Optimizasyonu",
+      "name": "Karakter Sesi",
+      "desc": "Farklı karakterler için özgün TTS sesleri oluşturun.",
+      "tags": [
+        "tts",
+        "karakter",
+        "ses"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Sesi Oluşturma\n\nKarakterin yaşını, cinsiyetini ve konuşma tarzını tanımlayın:\n1. Karakterin özelliklerini girin.\n2. Konuşma hızını ve vurgusunu ayarlayın.\n3. Örnek metinle test edin.\nÖrnek: 'Biraz yaşlı, bilge bir büyücü gibi konuş.' (yavaş, derin ses).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "TTS Optimizasyonu",
+      "name": "Teknik Kelime",
+      "desc": "Teknik terimleri doğru telaffuz eden TTS komutları.",
+      "tags": [
+        "tts",
+        "teknik",
+        "telaffuz"
+      ],
+      "badge1": "Orta",
+      "content": "## Teknik Terim Telaffuzu\n\nTeknik kelimelerin doğru okunmasını sağlayın:\n1. Metni girin.\n2. Zor kelimeleri listeleyin.\n3. Gerekirse fonetik yazım ekleyin.\nÖrnek: 'API' (ey-pi-ay), 'algoritma' (al-go-rit-ma).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "TTS Optimizasyonu",
+      "name": "Farklı Diller",
+      "desc": "Çok dilli TTS çıktıları için komutlar.",
+      "tags": [
+        "tts",
+        "dil",
+        "çoklu"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Çok Dilli TTS\n\nFarklı dillerde metin okutun:\n1. Metni girin.\n2. Hedef dili belirtin.\n3. Gerekirse aksan seçeneği ekleyin.\nÖrnek: 'Hello, how are you?' (İngilizce, Amerikan aksanı).",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Müzik Üretimi",
+      "name": "Basit Melodi",
+      "desc": "Belirli bir modda basit melodiler üretin.",
+      "tags": [
+        "müzik",
+        "melodi",
+        "üretim"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Basit Melodi Oluşturma\n\nBelirli bir modda basit melodiler üretin:\n1. Anahtar ve modu belirtin (örn. Do majör).\n2. Ritim uzunluklarını tanımlayın (örn. dört dörtlük).\n3. Melodinin genel yapısını açıklayın.\nÖrnek: 'Do majörde, 4/4 ritimde, basit bir ana melodi.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Müzik Üretimi",
+      "name": "Davul Ritmi",
+      "desc": "Farklı türler için davul ritimleri oluşturun.",
+      "tags": [
+        "müzik",
+        "davul",
+        "ritim"
+      ],
+      "badge1": "Orta",
+      "content": "## Davul Ritmi Üretimi\n\nFarklı türler için davul ritimleri oluşturun:\n1. Müzik türünü belirtin (rock, pop, caz).\n2. Tempo (BPM) ve zaman imzasını tanımlayın.\n3. Ana ritim kalıplarını açıklayın.\nÖrnek: 'Rock müziği için 120 BPM, 4/4'lük basit bir kick-snare ritmi.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Müzik Üretimi",
+      "name": "Akustik Gitar",
+      "desc": "Akustik gitar eşlikleri oluşturma komutları.",
+      "tags": [
+        "müzik",
+        "gitar",
+        "akustik"
+      ],
+      "badge1": "Orta",
+      "content": "## Akustik Gitar Eşlik\n\nAkustik gitar için eşlik desenleri oluşturun:\n1. Akor dizisini girin.\n2. Ritim stilini belirtin (örn. fingerpicking, strumming).\n3. Tempo ve atmosferi tanımlayın.\nÖrnek: 'Am-G-C-F akorları için sakin fingerpicking eşlik.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Müzik Üretimi",
+      "name": "Bas Gitar Hattı",
+      "desc": "Müzik parçaları için bas gitar hatları oluşturun.",
+      "tags": [
+        "müzik",
+        "bas",
+        "gitar"
+      ],
+      "badge1": "Orta",
+      "content": "## Bas Gitar Hattı Üretimi\n\nParçaya uygun bas gitar hatları oluşturun:\n1. Şarkının ana ritmini ve akorlarını verin.\n2. Bas hattının stilini belirtin (walking bass, root-fifth).\n3. Tempo ve yoğunluğu ayarlayın.\nÖrnek: ' Caz parçası için yürüyen bas hattı, 100 BPM.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Ses Efektleri",
+      "name": "Ortam Sesleri",
+      "desc": "Doğal ortam sesleri (yağmur, orman) üretme komutları.",
+      "tags": [
+        "ses",
+        "efekt",
+        "ortam"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ortam Sesleri Oluşturma\n\nDoğal ortam sesleri üretin:\n1. Ortamı tanımlayın (orman, şehir, plaj).\n2. Yoğunluğu ve uzaklığı belirtin.\n3. Ek sesler ekleyin (kuş, rüzgar).\nÖrnek: 'Sakin bir orman ortamı, hafif rüzgar, uzaktan kuş sesleri.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Ses Efektleri",
+      "name": "Fütüristik Sesler",
+      "desc": "Bilim kurgu temalı fütüristik ses efektleri oluşturun.",
+      "tags": [
+        "ses",
+        "efekt",
+        "fütüristik"
+      ],
+      "badge1": "Orta",
+      "content": "## Fütüristik Ses Efektleri\n\nBilim kurgu sesleri üretin:\n1. Sesin amacını belirtin (makine, lazer, uzay gemisi).\n2. Frekansları ve modülasyonları tanımlayın.\n3. Efektin dinamiklerini ayarlayın.\nÖrnek: 'Yüksek frekanslı, metalik bir lazer sesi, kısa ve keskin.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Ses Efektleri",
+      "name": "Hayvan Sesleri",
+      "desc": "Gerçekçi veya stilize hayvan sesleri üretin.",
+      "tags": [
+        "ses",
+        "efekt",
+        "hayvan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Hayvan Sesi Üretimi\n\nGerçekçi veya stilize hayvan sesleri üretin:\n1. Hayvan türünü belirtin.\n2. Sesin türünü tanımlayın (havlama, miyavlama, kükreme).\n3. Duyguyu veya eylemi belirtin.\nÖrnek: 'Mutlu bir köpek yavrusunun neşeli havlaması.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Ses Efektleri",
+      "name": "İnsan Sesi Efektleri",
+      "desc": "Nefes, öksürük, kahkaha gibi insan sesleri efektleri.",
+      "tags": [
+        "ses",
+        "efekt",
+        "insan"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## İnsan Sesi Efektleri\n\nNefes, öksürük, kahkaha gibi efektler üretin:\n1. Efekt türünü belirtin.\n2. Yoğunluğu ve süreyi ayarlayın.\n3. Eylemin bağlamını tanımlayın.\nÖrnek: 'Yüksek sesli, ani bir öksürük efekti.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Müzik Teorisi",
+      "name": "Akor İlerleyişleri",
+      "desc": "Belirli bir modda akor ilerleyişleri oluşturun.",
+      "tags": [
+        "müzik",
+        "teori",
+        "akor"
+      ],
+      "badge1": "Orta",
+      "content": "## Akor İlerleyişi Oluşturma\n\nBelirli bir modda akor ilerleyişleri oluşturun:\n1. Anahtar ve modu belirtin (örn. La minör).\n2. İstenen akor sayısını girin.\n3. Genel duyguyu veya tarzı tanımlayın.\nÖrnek: 'La minörde, hüzünlü bir his veren 4 akorluk ilerleyiş.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Müzik Teorisi",
+      "name": "Gam Oluşturucu",
+      "desc": "Farklı gam türleri ve modları oluşturun.",
+      "tags": [
+        "müzik",
+        "teori",
+        "gam"
+      ],
+      "badge1": "Orta",
+      "content": "## Gam Oluşturucu\n\nFarklı gam türleri ve modları oluşturun:\n1. Anahtar notayı ve gam türünü belirtin (Majör, Minör, Pentatonik).\n2. Modu seçin (Dorian, Phrygian, Lydian).\n3. Gamın seslerini listeleyin.\nÖrnek: 'Do majör gamı, Lydian modu. Sesler: Do, Re, Mi, Fa#, Sol, La, Si.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Müzik Teorisi",
+      "name": "Armoni Analizi",
+      "desc": "Müzikal parçaların armonisini analiz edin.",
+      "tags": [
+        "müzik",
+        "teori",
+        "armoni"
+      ],
+      "badge1": "İleri",
+      "content": "## Armoni Analizi\n\nMüzikal parçaların armonisini analiz edin:\n1. Parçanın akor dizisini girin.\n2. Armonik fonksiyonları (tonik, dominant) belirleyin.\n3. Modülasyonları veya özel akorları not edin.\nÖrnek: 'C-G-Am-F ilerleyişinde, C tonik, G dominant.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Müzik Teorisi",
+      "name": "Ritim Kalıpları",
+      "desc": "Karmaşık ritim kalıpları oluşturun.",
+      "tags": [
+        "müzik",
+        "teori",
+        "ritim"
+      ],
+      "badge1": "Orta",
+      "content": "## Ritim Kalıbı Oluşturma\n\nKarmaşık ritim kalıpları oluşturun:\n1. Zaman imzasını belirtin (örn. 7/8).\n2. Vurguları ve vuruşları tanımlayın.\n3. Ritimdeki boşlukları belirleyin.\nÖrnek: '4/4'lük, senkoplu bir perküsyon ritmi.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Ses Karıştırma",
+      "name": "Vokal EQ",
+      "desc": "Vokaller için EQ ayarları komutları.",
+      "tags": [
+        "ses",
+        "karıştırma",
+        "vokal"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Vokal EQ Ayarları\n\nVokalleri netleştirmek için EQ kullanın:\n1. Düşük frekansları (sub-bass) kesin.\n2. Orta frekanslardaki 'çamurlu' sesleri azaltın.\n3. Yüksek frekansları (air) hafifçe artırın.\nÖrnek: '100Hz altını kesin, 250Hz'de hafif kesim, 8kHz'de hafif artış.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Ses Karıştırma",
+      "name": "Geniş Stereo Alanı",
+      "desc": "Enstrümanlar için geniş stereo alanlar oluşturun.",
+      "tags": [
+        "ses",
+        "karıştırma",
+        "stereo"
+      ],
+      "badge1": "Orta",
+      "content": "## Geniş Stereo Alan Oluşturma\n\nEnstrümanlara genişlik katın:\n1. PAN (panoramik) ayarlarını kullanın.\n2. Stereo gecikme veya chorus efektleri ekleyin.\n3. Mono uyumluluğu kontrol edin.\nÖrnek: 'Gitarı sola 50%, diğer gitarı sağa 50% panla.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Ses Karıştırma",
+      "name": "Kompresör Ayarları",
+      "desc": "Dinamikleri kontrol etmek için kompresör kullanımı.",
+      "tags": [
+        "ses",
+        "karıştırma",
+        "kompresör"
+      ],
+      "badge1": "Orta",
+      "content": "## Kompresör Kullanımı\n\nDinamikleri kontrol edin:\n1. Threshold (eşik) seviyesini ayarlayın.\n2. Ratio (oran) değerini belirleyin.\n3. Attack (saldırı) ve Release (bırakma) sürelerini ayarlayın.\nÖrnek: 'Davullar için -10dB eşik, 4:1 oran.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Ses Analizi",
+      "name": "Frekans Spektrumu",
+      "desc": "Sesin frekans içeriğini analiz edin.",
+      "tags": [
+        "ses",
+        "analiz",
+        "frekans"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Frekans Spektrumu Analizi\n\nSesin frekans içeriğini görselleştirin:\n1. Ses dosyasını yükleyin.\n2. Frekans aralığını (örn. 20Hz-20kHz) belirleyin.\n3. Yoğunlukları ve tepe noktalarını inceleyin.\nÖrnek: 'Vokaldeki 200Hz civarı yoğunluğu azalt.'",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

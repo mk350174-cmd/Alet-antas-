@@ -1,0 +1,727 @@
+{
+  "slug": "78-cryptovault-pro",
+  "title": "CryptoVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Akıllı kontrat yazımı, blokzincir algoritması analizi ve Web3 entegrasyon komutları.",
+  "metaKeywords": [
+    "Crypto",
+    "CryptoVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Akıllı kontrat yazımı, blokzincir algoritması analizi ve Web3 entegrasyon komutları.",
+  "heroCorner": "C",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Crypto<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Crypto<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "CryptoVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Crypto ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "cryptovault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "web",
+  "sourceUrl": "github-search:smart contract solidity web3",
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Diğer",
+      "name": "Diğer",
+      "color": "#4a9eff",
+      "count": 2
+    },
+    {
+      "id": "TypeScript",
+      "name": "TypeScript",
+      "color": "#5ed47e",
+      "count": 7
+    },
+    {
+      "id": "Solidity",
+      "name": "Solidity",
+      "color": "#a375ff",
+      "count": 7
+    },
+    {
+      "id": "Markdown",
+      "name": "Markdown",
+      "color": "#ff6b6b",
+      "count": 1
+    },
+    {
+      "id": "JavaScript",
+      "name": "JavaScript",
+      "color": "#d4a04c",
+      "count": 4
+    },
+    {
+      "id": "Python",
+      "name": "Python",
+      "color": "#4cc9c9",
+      "count": 1
+    },
+    {
+      "id": "Cairo",
+      "name": "Cairo",
+      "color": "#ff6b9d",
+      "count": 1
+    },
+    {
+      "id": "Rust",
+      "name": "Rust",
+      "color": "#fb923c",
+      "count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "cat": "Diğer",
+      "name": "full-blockchain-solidity-course-py",
+      "desc": "Ultimate Solidity, Blockchain, and Smart Contract - Beginner to Expert Full Course | Python Edition",
+      "tags": [
+        "blockchain",
+        "chainlink",
+        "dapp",
+        "ethereum",
+        "★11205"
+      ],
+      "badge1": "—",
+      "badge2": "★ 11.205",
+      "content": "smartcontractkit/full-blockchain-solidity-course-py\n\nUltimate Solidity, Blockchain, and Smart Contract - Beginner to Expert Full Course | Python Edition\n\n⭐ Yıldız: 11205\n🍴 Fork: 2942\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/smartcontractkit/full-blockchain-solidity-course-py",
+      "meta": {
+        "Yıldız": 11205,
+        "Dil": "—",
+        "Fork": 2942
+      },
+      "source": {
+        "url": "https://github.com/smartcontractkit/full-blockchain-solidity-course-py",
+        "license": "MIT",
+        "author": "smartcontractkit"
+      }
+    },
+    {
+      "id": 2,
+      "cat": "TypeScript",
+      "name": "TypeChain",
+      "desc": "🔌 TypeScript bindings for Ethereum smart contracts",
+      "tags": [
+        "abi",
+        "blockchain",
+        "ethereum",
+        "smartcontract",
+        "★2801"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 2.801",
+      "content": "dethcrypto/TypeChain\n\n🔌 TypeScript bindings for Ethereum smart contracts\n\n⭐ Yıldız: 2801\n🍴 Fork: 380\n📅 Güncelleme: 2026-05-29\n🔗 https://github.com/dethcrypto/TypeChain",
+      "meta": {
+        "Yıldız": 2801,
+        "Dil": "TypeScript",
+        "Fork": 380
+      },
+      "source": {
+        "url": "https://github.com/dethcrypto/TypeChain",
+        "license": "MIT",
+        "author": "dethcrypto"
+      }
+    },
+    {
+      "id": 3,
+      "cat": "Solidity",
+      "name": "DeFiVulnLabs",
+      "desc": "To learn common smart contract vulnerabilities using Foundry!",
+      "tags": [
+        "defi",
+        "ethereum",
+        "foundry",
+        "solidity",
+        "★1942"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 1.942",
+      "content": "SunWeb3Sec/DeFiVulnLabs\n\nTo learn common smart contract vulnerabilities using Foundry!\n\n⭐ Yıldız: 1942\n🍴 Fork: 345\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/SunWeb3Sec/DeFiVulnLabs",
+      "meta": {
+        "Yıldız": 1942,
+        "Dil": "Solidity",
+        "Fork": 345
+      },
+      "source": {
+        "url": "https://github.com/SunWeb3Sec/DeFiVulnLabs",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "SunWeb3Sec"
+      }
+    },
+    {
+      "id": 4,
+      "cat": "Markdown",
+      "name": "Blockchain-Development-Resources",
+      "desc": "The contents of this repository will help you launch a career in Blockchain development. How to deploy Smart contracts o",
+      "tags": [
+        "awesome-list",
+        "awesome-readme",
+        "bitcoin",
+        "blockchain",
+        "★1526"
+      ],
+      "badge1": "Markdown",
+      "badge2": "★ 1.526",
+      "content": "frankiefab100/Blockchain-Development-Resources\n\nThe contents of this repository will help you launch a career in Blockchain development. How to deploy Smart contracts on Ethereum, build DApps, DeFi, DAO, NFT and Token protocol.\n\n⭐ Yıldız: 1526\n🍴 Fork: 371\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/frankiefab100/Blockchain-Development-Resources",
+      "meta": {
+        "Yıldız": 1526,
+        "Dil": "Markdown",
+        "Fork": 371
+      },
+      "source": {
+        "url": "https://github.com/frankiefab100/Blockchain-Development-Resources",
+        "license": "CC0-1.0",
+        "author": "frankiefab100"
+      }
+    },
+    {
+      "id": 5,
+      "cat": "Solidity",
+      "name": "contracts",
+      "desc": "Collection of smart contracts deployable via thirdweb",
+      "tags": [
+        "ethereum",
+        "smart-contracts",
+        "solidity",
+        "web3",
+        "★1087"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 1.087",
+      "content": "thirdweb-dev/contracts\n\nCollection of smart contracts deployable via thirdweb\n\n⭐ Yıldız: 1087\n🍴 Fork: 589\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/thirdweb-dev/contracts",
+      "meta": {
+        "Yıldız": 1087,
+        "Dil": "Solidity",
+        "Fork": 589
+      },
+      "source": {
+        "url": "https://github.com/thirdweb-dev/contracts",
+        "license": "Apache-2.0",
+        "author": "thirdweb-dev"
+      }
+    },
+    {
+      "id": 6,
+      "cat": "Diğer",
+      "name": "SmartContracts-audit-checklist",
+      "desc": "A checklist of things to look for when auditing Solidity smart contracts. ",
+      "tags": [
+        "audit",
+        "awesome",
+        "awesome-list",
+        "ethereum",
+        "★795"
+      ],
+      "badge1": "—",
+      "badge2": "★ 795",
+      "content": "tamjid0x01/SmartContracts-audit-checklist\n\nA checklist of things to look for when auditing Solidity smart contracts. \n\n⭐ Yıldız: 795\n🍴 Fork: 129\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/tamjid0x01/SmartContracts-audit-checklist",
+      "meta": {
+        "Yıldız": 795,
+        "Dil": "—",
+        "Fork": 129
+      },
+      "source": {
+        "url": "https://github.com/tamjid0x01/SmartContracts-audit-checklist",
+        "license": "MIT",
+        "author": "tamjid0x01"
+      }
+    },
+    {
+      "id": 7,
+      "cat": "JavaScript",
+      "name": "project_crowdfunding",
+      "desc": "With a stunning design, connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereu",
+      "tags": [
+        "blockchain",
+        "solidity",
+        "thirdweb",
+        "web3",
+        "★781"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 781",
+      "content": "adrianhajdin/project_crowdfunding\n\nWith a stunning design, connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereum through the blockchain network, and writing solidity code.\n\n⭐ Yıldız: 781\n🍴 Fork: 403\n📅 Güncelleme: 2026-05-27\n🔗 https://github.com/adrianhajdin/project_crowdfunding",
+      "meta": {
+        "Yıldız": 781,
+        "Dil": "JavaScript",
+        "Fork": 403
+      },
+      "source": {
+        "url": "https://github.com/adrianhajdin/project_crowdfunding",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "adrianhajdin"
+      }
+    },
+    {
+      "id": 8,
+      "cat": "Solidity",
+      "name": "contracts",
+      "desc": "Solidity smart contracts of CodeforDAO",
+      "tags": [
+        "contracts",
+        "cryotos",
+        "dao",
+        "evm",
+        "★626"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 626",
+      "content": "CodeforDAO/contracts\n\nSolidity smart contracts of CodeforDAO\n\n⭐ Yıldız: 626\n🍴 Fork: 94\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/CodeforDAO/contracts",
+      "meta": {
+        "Yıldız": 626,
+        "Dil": "Solidity",
+        "Fork": 94
+      },
+      "source": {
+        "url": "https://github.com/CodeforDAO/contracts",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "CodeforDAO"
+      }
+    },
+    {
+      "id": 9,
+      "cat": "TypeScript",
+      "name": "4naly3er",
+      "desc": "Static smart contract code 4naly3er",
+      "tags": [
+        "code4rena",
+        "ethereum",
+        "security",
+        "solc",
+        "★553"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 553",
+      "content": "Picodes/4naly3er\n\nStatic smart contract code 4naly3er\n\n⭐ Yıldız: 553\n🍴 Fork: 141\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/Picodes/4naly3er",
+      "meta": {
+        "Yıldız": 553,
+        "Dil": "TypeScript",
+        "Fork": 141
+      },
+      "source": {
+        "url": "https://github.com/Picodes/4naly3er",
+        "license": "GPL-3.0",
+        "author": "Picodes"
+      }
+    },
+    {
+      "id": 10,
+      "cat": "TypeScript",
+      "name": "truffle-plugin-verify",
+      "desc": "✅ Verify your smart contracts on Etherscan from the Truffle CLI",
+      "tags": [
+        "ethereum",
+        "etherscan",
+        "solidity",
+        "truffle",
+        "★501"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 501",
+      "content": "rkalis/truffle-plugin-verify\n\n✅ Verify your smart contracts on Etherscan from the Truffle CLI\n\n⭐ Yıldız: 501\n🍴 Fork: 130\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/rkalis/truffle-plugin-verify",
+      "meta": {
+        "Yıldız": 501,
+        "Dil": "TypeScript",
+        "Fork": 130
+      },
+      "source": {
+        "url": "https://github.com/rkalis/truffle-plugin-verify",
+        "license": "MIT",
+        "author": "rkalis"
+      }
+    },
+    {
+      "id": 11,
+      "cat": "JavaScript",
+      "name": "project_web3_battle_game",
+      "desc": "With a stunning design, interactive gameplay, smart wallet pairing, live interaction with smart contracts, and, most imp",
+      "tags": [
+        "avalanche",
+        "blockchain",
+        "nft",
+        "solidity",
+        "★479"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 479",
+      "content": "adrianhajdin/project_web3_battle_game\n\nWith a stunning design, interactive gameplay, smart wallet pairing, live interaction with smart contracts, and, most importantly, the ability to battle other players in real-time, AvaxGods is the best and the only Web3 battle-style online multiplayer card game that you can currently find on YouTube.\n\n⭐ Yıldız: 479\n🍴 Fork: 168\n📅 Güncelleme: 2026-05-29\n🔗 https://github.com/adrianhajdin/project_web3_battle_game",
+      "meta": {
+        "Yıldız": 479,
+        "Dil": "JavaScript",
+        "Fork": 168
+      },
+      "source": {
+        "url": "https://github.com/adrianhajdin/project_web3_battle_game",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "adrianhajdin"
+      }
+    },
+    {
+      "id": 12,
+      "cat": "JavaScript",
+      "name": "eth-sdk",
+      "desc": "Type-safe, lightweight SDKs for Ethereum smart contracts",
+      "tags": [
+        "abi",
+        "dapp",
+        "ethereum",
+        "sdk",
+        "★430"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 430",
+      "content": "dethcrypto/eth-sdk\n\nType-safe, lightweight SDKs for Ethereum smart contracts\n\n⭐ Yıldız: 430\n🍴 Fork: 45\n📅 Güncelleme: 2026-04-19\n🔗 https://github.com/dethcrypto/eth-sdk",
+      "meta": {
+        "Yıldız": 430,
+        "Dil": "JavaScript",
+        "Fork": 45
+      },
+      "source": {
+        "url": "https://github.com/dethcrypto/eth-sdk",
+        "license": "MIT",
+        "author": "dethcrypto"
+      }
+    },
+    {
+      "id": 13,
+      "cat": "Python",
+      "name": "web3-security-resources",
+      "desc": "Curated Web3 security learning hub for smart contract auditors and protocol teams: roadmaps, audit tools, public reports",
+      "tags": [
+        "ai-assisted-auditing",
+        "ai-security",
+        "bugbounty",
+        "ctf-challenges",
+        "★405"
+      ],
+      "badge1": "Python",
+      "badge2": "★ 405",
+      "content": "Raiders0786/web3-security-resources\n\nCurated Web3 security learning hub for smart contract auditors and protocol teams: roadmaps, audit tools, public reports, fuzzing, formal verification, AI-assisted workflows, offchain security, incident response, and launch checklists.\n\n⭐ Yıldız: 405\n🍴 Fork: 63\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/Raiders0786/web3-security-resources",
+      "meta": {
+        "Yıldız": 405,
+        "Dil": "Python",
+        "Fork": 63
+      },
+      "source": {
+        "url": "https://github.com/Raiders0786/web3-security-resources",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "Raiders0786"
+      }
+    },
+    {
+      "id": 14,
+      "cat": "Solidity",
+      "name": "web3-bootcamp",
+      "desc": "Open-Sourced Turkish Smart Contract Developer Bootcamp by ITU Blockchain",
+      "tags": [
+        "blockchain",
+        "dapps-development",
+        "ethereum",
+        "ethersjs",
+        "★280"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 280",
+      "content": "itublockchain/web3-bootcamp\n\nOpen-Sourced Turkish Smart Contract Developer Bootcamp by ITU Blockchain\n\n⭐ Yıldız: 280\n🍴 Fork: 72\n📅 Güncelleme: 2026-05-03\n🔗 https://github.com/itublockchain/web3-bootcamp",
+      "meta": {
+        "Yıldız": 280,
+        "Dil": "Solidity",
+        "Fork": 72
+      },
+      "source": {
+        "url": "https://github.com/itublockchain/web3-bootcamp",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "itublockchain"
+      }
+    },
+    {
+      "id": 15,
+      "cat": "Solidity",
+      "name": "solidity-security-by-example",
+      "desc": "Learn Solidity Smart Contract Security By Examples",
+      "tags": [
+        "blockchain",
+        "defi",
+        "ethereum",
+        "gamefi",
+        "★175"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 175",
+      "content": "serial-coder/solidity-security-by-example\n\nLearn Solidity Smart Contract Security By Examples\n\n⭐ Yıldız: 175\n🍴 Fork: 43\n📅 Güncelleme: 2026-05-22\n🔗 https://github.com/serial-coder/solidity-security-by-example",
+      "meta": {
+        "Yıldız": 175,
+        "Dil": "Solidity",
+        "Fork": 43
+      },
+      "source": {
+        "url": "https://github.com/serial-coder/solidity-security-by-example",
+        "license": "NOASSERTION",
+        "author": "serial-coder"
+      }
+    },
+    {
+      "id": 16,
+      "cat": "Solidity",
+      "name": "solidity-examples",
+      "desc": "Collection of smart contracts examples and projects in Solidity.",
+      "tags": [
+        "ethereum",
+        "excercises",
+        "road-to-web3",
+        "smart-contracts",
+        "★172"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 172",
+      "content": "samnang/solidity-examples\n\nCollection of smart contracts examples and projects in Solidity.\n\n⭐ Yıldız: 172\n🍴 Fork: 38\n📅 Güncelleme: 2026-05-13\n🔗 https://github.com/samnang/solidity-examples",
+      "meta": {
+        "Yıldız": 172,
+        "Dil": "Solidity",
+        "Fork": 38
+      },
+      "source": {
+        "url": "https://github.com/samnang/solidity-examples",
+        "license": "MIT",
+        "author": "samnang"
+      }
+    },
+    {
+      "id": 17,
+      "cat": "JavaScript",
+      "name": "truffle-assertions",
+      "desc": "🛠 Assertions and utilities for testing Ethereum smart contracts with Truffle unit tests",
+      "tags": [
+        "ethereum",
+        "events",
+        "revert",
+        "solidity",
+        "★152"
+      ],
+      "badge1": "JavaScript",
+      "badge2": "★ 152",
+      "content": "rkalis/truffle-assertions\n\n🛠 Assertions and utilities for testing Ethereum smart contracts with Truffle unit tests\n\n⭐ Yıldız: 152\n🍴 Fork: 20\n📅 Güncelleme: 2025-12-26\n🔗 https://github.com/rkalis/truffle-assertions",
+      "meta": {
+        "Yıldız": 152,
+        "Dil": "JavaScript",
+        "Fork": 20
+      },
+      "source": {
+        "url": "https://github.com/rkalis/truffle-assertions",
+        "license": "MIT",
+        "author": "rkalis"
+      }
+    },
+    {
+      "id": 18,
+      "cat": "Solidity",
+      "name": "faillapop",
+      "desc": "Vulnerable-by-design solidity protocol to help Web3 security enthusiasts practice their skills in an environment closer ",
+      "tags": [
+        "audit",
+        "beginner",
+        "bug",
+        "bugbounty",
+        "★149"
+      ],
+      "badge1": "Solidity",
+      "badge2": "★ 149",
+      "content": "Faillapop/faillapop\n\nVulnerable-by-design solidity protocol to help Web3 security enthusiasts practice their skills in an environment closer to real live.\n\n⭐ Yıldız: 149\n🍴 Fork: 11\n📅 Güncelleme: 2026-05-05\n🔗 https://github.com/Faillapop/faillapop",
+      "meta": {
+        "Yıldız": 149,
+        "Dil": "Solidity",
+        "Fork": 11
+      },
+      "source": {
+        "url": "https://github.com/Faillapop/faillapop",
+        "license": "GPL-3.0",
+        "author": "Faillapop"
+      }
+    },
+    {
+      "id": 19,
+      "cat": "Cairo",
+      "name": "WTF-Cairo",
+      "desc": "学习Starknet Cairo智能合约。 Learn to write smart contracts on Starknet. Based on Cairo 2.2.",
+      "tags": [
+        "blockchain",
+        "cairo",
+        "cairo-lang",
+        "ethereum",
+        "★142"
+      ],
+      "badge1": "Cairo",
+      "badge2": "★ 142",
+      "content": "WTFAcademy/WTF-Cairo\n\n学习Starknet Cairo智能合约。 Learn to write smart contracts on Starknet. Based on Cairo 2.2.\n\n⭐ Yıldız: 142\n🍴 Fork: 48\n📅 Güncelleme: 2026-02-27\n🔗 https://github.com/WTFAcademy/WTF-Cairo",
+      "meta": {
+        "Yıldız": 142,
+        "Dil": "Cairo",
+        "Fork": 48
+      },
+      "source": {
+        "url": "https://github.com/WTFAcademy/WTF-Cairo",
+        "license": "MIT",
+        "author": "WTFAcademy"
+      }
+    },
+    {
+      "id": 20,
+      "cat": "TypeScript",
+      "name": "flashswap-arbitrage-avalanche",
+      "desc": "Crypto arbitrage bot that searches multiple token exchanges on the Avalanche blockchain for a significant difference in ",
+      "tags": [
+        "avalanche",
+        "avalanche-c-chain",
+        "blockchain",
+        "evm",
+        "★140"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 140",
+      "content": "cjthoma1/flashswap-arbitrage-avalanche\n\nCrypto arbitrage bot that searches multiple token exchanges on the Avalanche blockchain for a significant difference in price between two tokens. Once a arbitrage opportunity is found the bot will execute the simultaneous buying and selling of the tokens through a flash swap provided by token exchanges (selected exchanges are forks of the Uniswap V2 Smart Contract).\n\n⭐ Yıldız: 140\n🍴 Fork: 46\n📅 Güncelleme: 2025-12-31\n🔗 https://github.com/cjthoma1/flashswap-arbitrage-avalanche",
+      "meta": {
+        "Yıldız": 140,
+        "Dil": "TypeScript",
+        "Fork": 46
+      },
+      "source": {
+        "url": "https://github.com/cjthoma1/flashswap-arbitrage-avalanche",
+        "license": "BSD-3-Clause",
+        "author": "cjthoma1"
+      }
+    },
+    {
+      "id": 21,
+      "cat": "TypeScript",
+      "name": "blockhead",
+      "desc": "An open-source interface for the decentralized web. Track, visualize and explore EVM-based blockchains, onchain accounts",
+      "tags": [
+        "block-explorer",
+        "blockchain",
+        "cryptocurrency-portfolio",
+        "data-agnostic",
+        "★132"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 132",
+      "content": "darrylyeo/blockhead\n\nAn open-source interface for the decentralized web. Track, visualize and explore EVM-based blockchains, onchain accounts, smart contracts, transactions, DeFi apps and web3 protocols in one place – YOU decide which data sources to use! B⃞\n\n⭐ Yıldız: 132\n🍴 Fork: 49\n📅 Güncelleme: 2026-05-24\n🔗 https://github.com/darrylyeo/blockhead",
+      "meta": {
+        "Yıldız": 132,
+        "Dil": "TypeScript",
+        "Fork": 49
+      },
+      "source": {
+        "url": "https://github.com/darrylyeo/blockhead",
+        "license": "NOASSERTION",
+        "author": "darrylyeo"
+      }
+    },
+    {
+      "id": 22,
+      "cat": "TypeScript",
+      "name": "solidity-template",
+      "desc": "A Solidity starter template for developing smart contracts.",
+      "tags": [
+        "contracts",
+        "ethereum",
+        "ethersjs",
+        "foundry",
+        "★118"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 118",
+      "content": "mattstam/solidity-template\n\nA Solidity starter template for developing smart contracts.\n\n⭐ Yıldız: 118\n🍴 Fork: 16\n📅 Güncelleme: 2026-05-12\n🔗 https://github.com/mattstam/solidity-template",
+      "meta": {
+        "Yıldız": 118,
+        "Dil": "TypeScript",
+        "Fork": 16
+      },
+      "source": {
+        "url": "https://github.com/mattstam/solidity-template",
+        "license": "MIT",
+        "author": "mattstam"
+      }
+    },
+    {
+      "id": 23,
+      "cat": "TypeScript",
+      "name": "web3gpt",
+      "desc": "Develop and deploy smart contracts using natural language.",
+      "tags": [
+        "agents-web3",
+        "ai-solidity",
+        "ai-web3",
+        "solidity",
+        "★115"
+      ],
+      "badge1": "TypeScript",
+      "badge2": "★ 115",
+      "content": "Markeljan/web3gpt\n\nDevelop and deploy smart contracts using natural language.\n\n⭐ Yıldız: 115\n🍴 Fork: 51\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/Markeljan/web3gpt",
+      "meta": {
+        "Yıldız": 115,
+        "Dil": "TypeScript",
+        "Fork": 51
+      },
+      "source": {
+        "url": "https://github.com/Markeljan/web3gpt",
+        "license": "MIT",
+        "author": "Markeljan"
+      }
+    },
+    {
+      "id": 24,
+      "cat": "Rust",
+      "name": "my-web3-projects",
+      "desc": "Blockchain projects(+ smart contract) - DeFi, DEX, NFT(+ pnft, cnt, xnft), minting, staking, raffle/auction, marketplace",
+      "tags": [
+        "anchor",
+        "auction",
+        "cnft",
+        "contract",
+        "★112"
+      ],
+      "badge1": "Rust",
+      "badge2": "★ 112",
+      "content": "microgift/my-web3-projects\n\nBlockchain projects(+ smart contract) - DeFi, DEX, NFT(+ pnft, cnt, xnft), minting, staking, raffle/auction, marketplace, launchpad, nft lend/borrow platform, P2E(coinflip, crash, poker) on Solana, EVM(Eth - Ethereum, Base etc), TRON, TON, Bitcoin. pumpdotfun(pump.fun + bonding curve) and delta neutral strategy(+ token swap cpi) are the latest ones\n\n⭐ Yıldız: 112\n🍴 Fork: 4\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/microgift/my-web3-projects",
+      "meta": {
+        "Yıldız": 112,
+        "Dil": "Rust",
+        "Fork": 4
+      },
+      "source": {
+        "url": "https://github.com/microgift/my-web3-projects",
+        "license": "GitHub Search API · her repo kendi lisansına tabidir",
+        "author": "microgift"
+      }
+    }
+  ]
+}

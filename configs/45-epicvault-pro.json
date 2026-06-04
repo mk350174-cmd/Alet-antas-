@@ -1,0 +1,340 @@
+{
+  "slug": "45-epicvault-pro",
+  "title": "EpicVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Destansı anlatı formlarını taklit eden, ritmik ve arkaik metin jeneratörü.",
+  "metaKeywords": [
+    "Epic",
+    "EpicVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Destansı anlatı formlarını taklit eden, ritmik ve arkaik metin jeneratörü.",
+  "heroCorner": "E",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Epic<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Epic<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "EpicVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Epic ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "epicvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Destansı Anlatı",
+      "name": "Destansı Anlatı",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Arkaik Dil ve Üslup",
+      "name": "Arkaik Dil ve Üslup",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Epik Kahramanlar",
+      "name": "Epik Kahramanlar",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Savaş ve Zafer",
+      "name": "Savaş ve Zafer",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Epik Cihazlar",
+      "name": "Epik Cihazlar",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Modern Destansılık",
+      "name": "Modern Destansılık",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Destansı Anlatı",
+      "name": "Epik In Medias Res Açılışı",
+      "desc": "Destanı savaşın veya krizin tam ortasından başlatın.",
+      "tags": [
+        "epik",
+        "açılış",
+        "in medias res"
+      ],
+      "badge1": "Orta",
+      "content": "## Epik Açılış\n1. Şiirsel bir çağrışımla (tanrı, ilham perisi) başla.\n2. Konuyu ve kahramanı iki üç satırda özetle.\n3. Doğrudan bir girdapla okuyucuyu al.\n4. Arka planı ilk bölümde dolaylı ver.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Destansı Anlatı",
+      "name": "Katalog Sahnesi",
+      "desc": "Savaşçılar, gemiler veya ulusların Homeros tarzı listelenmesi.",
+      "tags": [
+        "katalog",
+        "liste",
+        "homeros"
+      ],
+      "badge1": "İleri",
+      "content": "## Katalog Sahnesi\n1. Listelenecek öğeyi belirle (gemiler, ülkeler).\n2. Her öğeye özgün niteleyici sıfat ver.\n3. Önemli öğeleri detayla, geri kalanları kısa geç.\n4. Ritmi ölçüyle koru.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Destansı Anlatı",
+      "name": "Destansı Başlangıç ve Son",
+      "desc": "Destan açılışı (invocatio) ve kapanış (exordium) kalıplarını uygulayın.",
+      "tags": [
+        "invocatio",
+        "kapanış",
+        "kalıp"
+      ],
+      "badge1": "Orta",
+      "content": "## Destan Çerçevesi\n1. Açılışı ilham çağrısıyla başlat.\n2. Konunun evrensel önemini ilan et.\n3. Kapanışta kahramanın mirasını özetle.\n4. Destanın dinleyici/okuyucuyu etkileme dileğiyle bitir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Arkaik Dil ve Üslup",
+      "name": "Epitetler ve Kalıp Sıfatlar",
+      "desc": "Kahramana ve nesnelere özgü tekrarlanan epik niteleyiciler yazın.",
+      "tags": [
+        "epitet",
+        "sıfat",
+        "kalıp"
+      ],
+      "badge1": "Orta",
+      "content": "## Epitetler\n1. Her kahramana 2-3 kalıp epitet yaz.\n2. Nesnelere de özelleşmiş sıfat ver (kara gemi).\n3. Ritme uygun epitet uzunluklarını seç.\n4. Epitetleri bağlama uygun kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Arkaik Dil ve Üslup",
+      "name": "Uzun Teşbih (Homeric Simile)",
+      "desc": "Savaş sahnelerini günlük hayat imgesiyle genişleten uzun benzetme.",
+      "tags": [
+        "teşbih",
+        "benzetme",
+        "homeros"
+      ],
+      "badge1": "İleri",
+      "content": "## Homeros Teşbihi\n1. Anlatının durduğu yeri belirle.\n2. Günlük hayattan uzun bir sahne aç.\n3. Ana sahneyle bağ kurarak geri dön.\n4. Teşbihin tonunu ana sahneyle eşleştir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Epik Kahramanlar",
+      "name": "Destansı Kahraman Profili",
+      "desc": "Aşil, Bilgamış, Manas özelliklerini içeren epik kahraman şablonu.",
+      "tags": [
+        "kahraman",
+        "epik",
+        "profil"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Epik Kahraman\n1. İnsan-üstü niteliği (güç, hız, akıl) belirle.\n2. Ölümcül kusurunu (hubris, öfke) ekle.\n3. Tanrısal veya soylu kökenini kur.\n4. Kaderine olan ilişkisini tanımla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Epik Kahramanlar",
+      "name": "Mentor/Tanrısal Yardımcı Figürü",
+      "desc": "Kahramana rehberlik eden ölümlü veya ilahi yardımcı karakteri tasarlayın.",
+      "tags": [
+        "mentor",
+        "tanrı",
+        "yardımcı"
+      ],
+      "badge1": "Orta",
+      "content": "## Yardımcı Figür\n1. Kahramanla ilişkisini belirle (tanrı, bilge, hayvan).\n2. Sahip olduğu özgün bilgi veya gücü tanımla.\n3. Yardımın sınırlarını koy.\n4. Kritik anda geri çekilme anını planla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Savaş ve Zafer",
+      "name": "Epik Savaş Sahnesi Yapısı",
+      "desc": "Duel, toplu çatışma ve taktik unsurları içeren destansı muharebe.",
+      "tags": [
+        "savaş",
+        "duel",
+        "çatışma"
+      ],
+      "badge1": "İleri",
+      "content": "## Savaş Sahnesi\n1. Önce panoramik toplu çatışmayı göster.\n2. Bireysel kahramanların eylemlerine in.\n3. Eşleşmiş duel sahnesiyle doruk kur.\n4. Ölüm sahnelerini ritüel yas sözleriyle işle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Savaş ve Zafer",
+      "name": "Silah ve Zırh Betimlemesi",
+      "desc": "Kahramanın silahlarını mitolojik kökenle tanımlayan betim geleneği.",
+      "tags": [
+        "silah",
+        "zırh",
+        "betimleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Silah Betimi\n1. Silahın yapım hikâyesini kısaca anlat.\n2. Malzeme ve işçiliği somut sıfatlarla betimle.\n3. Daha önce kullanıldığı zaferlerden söz et.\n4. Ritim ve ölçüyü koru.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Epik Cihazlar",
+      "name": "Tanrı Meclisi Sahnesi",
+      "desc": "Olympos veya benzeri bir yerde tanrıların kahramanın kaderini tartışması.",
+      "tags": [
+        "tanrı",
+        "meclis",
+        "kader"
+      ],
+      "badge1": "İleri",
+      "content": "## Tanrı Meclisi\n1. Tanrıların taraflarını belirle.\n2. Baş tanrının konuşması ve kararı.\n3. Muhalif tanrının gizli eylemini ekle.\n4. İnsan dünyasına yansımayı göster.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Epik Cihazlar",
+      "name": "Katábasis: Yeraltı Yolculuğu",
+      "desc": "Kahramanın ölüler diyarına inip geri dönüş sahnesini yapılandırın.",
+      "tags": [
+        "katábasis",
+        "yeraltı",
+        "ölüler"
+      ],
+      "badge1": "İleri",
+      "content": "## Yeraltı Yolculuğu\n1. İniş nedenini belirle (bilgi, kurtarma).\n2. Yeraltı coğrafyasını haritalandır.\n3. Ölü ruhlarla karşılaşmaları dramatize et.\n4. Dönüşü mümkün kılan koşulu ekle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Epik Cihazlar",
+      "name": "Epitaphios: Yas Övgüsü",
+      "desc": "Düşen bir kahramanın ardından söylenen destansı yas şiiri.",
+      "tags": [
+        "yas",
+        "övgü",
+        "ölüm"
+      ],
+      "badge1": "Orta",
+      "content": "## Yas Övgüsü\n1. Kahramanın zaferlerini kısa özetle.\n2. Toplumun kaybını dile getir.\n3. Ölümsüzleşen adını vurgula.\n4. Yas ritüelini betimle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Modern Destansılık",
+      "name": "Kentsel Epik Uyarlaması",
+      "desc": "Destansı yapıyı çağdaş şehir hayatına ve modern kahramana taşıyın.",
+      "tags": [
+        "modern",
+        "kentsel",
+        "uyarlama"
+      ],
+      "badge1": "Orta",
+      "content": "## Modern Epik\n1. Destansı yolculuğu şehir mekânlarına çevir.\n2. Tanrıları kurumlar veya güçlerle değiştir.\n3. Epitetleri modern jargonla yenile.\n4. Tematik büyüklüğü koru.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Modern Destansılık",
+      "name": "Kolektif Kahraman Anlatısı",
+      "desc": "Tek kahraman yerine bir topluluğun veya neslin destanını yazın.",
+      "tags": [
+        "kolektif",
+        "topluluk",
+        "nesil"
+      ],
+      "badge1": "İleri",
+      "content": "## Kolektif Kahraman\n1. Temsil figürünü topluluğun özeti yap.\n2. Bireysel hikayeleri büyük anlatıya dokuyun.\n3. Kolektif hafızayı şiirsel tekrara çevir.\n4. Neslin dönüşümünü epik sonla tamamla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Arkaik Dil ve Üslup",
+      "name": "Daktil Hekzametresi Ritim Egzersizi",
+      "desc": "Destansı dizeyi parmak ölçüsüyle kurma ve test etme yöntemi.",
+      "tags": [
+        "hekzametre",
+        "ölçü",
+        "ritim"
+      ],
+      "badge1": "İleri",
+      "content": "## Hekzametre Ritmi\n1. Daktilik birimi öğren (- uu).\n2. Altı birimlik dizeyi kur.\n3. Son birimi spondee ile bitir (- -).\n4. Anlam ve ritim çatışırsa sözcük sırasını değiştir.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

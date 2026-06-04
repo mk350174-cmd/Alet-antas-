@@ -1,0 +1,340 @@
+{
+  "slug": "60-gitvault-pro",
+  "title": "GitVault Pro — Yazılım Mimarisi & DevOps",
+  "metaDescription": "Gelişmiş Git repo yönetimi, conflict çözümleri ve geçmiş (history) manipülasyonu komutları.",
+  "metaKeywords": [
+    "Git",
+    "GitVault Pro",
+    "Yazılım Mimarisi & DevOps",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Gelişmiş Git repo yönetimi, conflict çözümleri ve geçmiş (history) manipülasyonu komutları.",
+  "heroCorner": "G",
+  "heroEyebrow": "Yazılım Mimarisi & DevOps · Alet Çantası",
+  "heroTitleHTML": "Git<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Git<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "GitVault Pro · Yazılım Mimarisi & DevOps",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Git ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "gitvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "devops",
+  "categoryLabel": "Yazılım Mimarisi & DevOps",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4a9eff",
+    "primary2": "#4a9eff",
+    "primaryDim": "#4a9eff15",
+    "primaryGlow": "#4a9eff30",
+    "primaryDark": "#2c80e1",
+    "accent": "#a78bfa",
+    "accent2": "#a78bfa",
+    "accentDim": "#a78bfa18",
+    "accentGlow": "#a78bfa30",
+    "bg": "#06080e",
+    "bg2": "#0a0c12",
+    "bg3": "#0e1016",
+    "bg4": "#12141a",
+    "border": "#16181e",
+    "border2": "#1e2026",
+    "border3": "#2a2c32",
+    "heroBg": "#0a0c12"
+  },
+  "categories": [
+    {
+      "id": "Temel Git",
+      "name": "Temel Git",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Branch Stratejileri",
+      "name": "Branch Stratejileri",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Git Hooks",
+      "name": "Git Hooks",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "Merge & Rebase",
+      "name": "Merge & Rebase",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Takım İş Akışı",
+      "name": "Takım İş Akışı",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Git Araçları",
+      "name": "Git Araçları",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Temel Git",
+      "name": "İnteraktif Rebase Şablonu",
+      "desc": "Commit geçmişini düzenlemek için git rebase -i kullanım rehberi.",
+      "tags": [
+        "rebase",
+        "commit",
+        "düzenleme"
+      ],
+      "badge1": "Orta",
+      "content": "## İnteraktif Rebase\n```bash\n# Son 5 commit'i düzenle\ngit rebase -i HEAD~5\n\n# Komutlar:\n# pick   → olduğu gibi bırak\n# reword → mesajı değiştir\n# squash → öncekiyle birleştir\n# fixup  → squash ama mesajı at\n# drop   → commit'i sil\n# edit   → durakla, değiştir\n\n# Örnek: 3 commit'i 1'e sıkıştır\n# pick abc123 ilk commit\n# squash def456 ikinci\n# squash ghi789 üçüncü\n\n# Devam\ngit rebase --continue\ngit rebase --abort  # İptal\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Temel Git",
+      "name": "Git Stash Gelişmiş Kullanım",
+      "desc": "Çoklu stash yönetimi, isimli stash ve kısmi stash işlemleri.",
+      "tags": [
+        "stash",
+        "geçici",
+        "kayıt"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Git Stash\n```bash\n# Stash ile kaydet\ngit stash push -m 'WIP: kullanıcı formu'\ngit stash push --include-untracked\n\n# Listele\ngit stash list\n# stash@{0}: WIP: kullanıcı formu\n\n# Belirli stash'i uygula\ngit stash apply stash@{0}\ngit stash pop stash@{1}  # Uygula + sil\n\n# Belirli dosyaları stash\ngit stash push -p  # İnteraktif\ngit stash push -- src/feature.js\n\n# Stash'ten dal aç\ngit stash branch feature/wip stash@{0}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Branch Stratejileri",
+      "name": "Git Flow Komutları",
+      "desc": "Feature, release ve hotfix branching iş akışı komutları ve kurallari.",
+      "tags": [
+        "git flow",
+        "feature",
+        "release"
+      ],
+      "badge1": "Orta",
+      "content": "## Git Flow\n```bash\n# Feature geliştirme\ngit checkout -b feature/user-auth develop\n# ... geliştir ...\ngit checkout develop\ngit merge --no-ff feature/user-auth\ngit branch -d feature/user-auth\n\n# Release\ngit checkout -b release/1.2.0 develop\n# Versiyon bump, son düzeltmeler\ngit checkout main && git merge --no-ff release/1.2.0\ngit tag -a v1.2.0 -m 'Sürüm 1.2.0'\ngit checkout develop && git merge --no-ff release/1.2.0\ngit branch -d release/1.2.0\n\n# Hotfix\ngit checkout -b hotfix/critical-fix main\ngit checkout main && git merge --no-ff hotfix/critical-fix\ngit checkout develop && git merge --no-ff hotfix/critical-fix\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Git Hooks",
+      "name": "Pre-commit Hook Şablonu",
+      "desc": "Commit öncesi lint, test ve format kontrolü yapan pre-commit hook.",
+      "tags": [
+        "hook",
+        "pre-commit",
+        "lint"
+      ],
+      "badge1": "Orta",
+      "content": "## Pre-commit Hook\n```bash\n#!/bin/bash\n# .git/hooks/pre-commit\nset -e\n\necho 'Pre-commit kontrolleri...'\n\n# Değişen Python dosyalarını lint\nCHANGED_PY=$(git diff --cached --name-only --diff-filter=ACM | grep '\\.py$' || true)\nif [[ -n $CHANGED_PY ]]; then\n    python -m flake8 $CHANGED_PY\n    python -m black --check $CHANGED_PY\nfi\n\n# JS/TS dosyaları\nCHANGED_JS=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\\.(js|ts)x?$' || true)\n[[ -n $CHANGED_JS ]] && npx eslint $CHANGED_JS\n\necho 'Tüm kontroller geçti ✓'\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Merge & Rebase",
+      "name": "Merge Conflict Çözümü",
+      "desc": "Conflict işaretlerini okuma ve ours/theirs stratejileri ile çözüm.",
+      "tags": [
+        "conflict",
+        "merge",
+        "çözüm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Conflict Çözümü\n```\n<<<<<<< HEAD\n// Bizim değişikliğimiz\nconst timeout = 5000;\n=======\n// Gelen değişiklik\nconst timeout = 10000;\n>>>>>>> feature/retry\n```\n\nStratejiler:\n```bash\n# Tamamen bize ait\ngit checkout --ours dosya.js\n# Tamamen karşı tarafa ait\ngit checkout --theirs dosya.js\n\n# Belirli dosyada merge yolu\ngit checkout -m dosya.js\n\n# Araçla\ngit mergetool  # vimdiff, vscode vs.\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Merge & Rebase",
+      "name": "Cherry-pick Kullanımı",
+      "desc": "Belirli commit'leri başka bir branch'e seçici kopyalama.",
+      "tags": [
+        "cherry-pick",
+        "seçim",
+        "commit"
+      ],
+      "badge1": "Orta",
+      "content": "## Cherry-pick\n```bash\n# Tek commit\ngit cherry-pick abc123\n\n# Aralık (a dahil değil, b dahil)\ngit cherry-pick a123^..b456\n\n# Commit etmeden staging\ngit cherry-pick -n abc123\ngit diff --cached  # Kontrol et\ngit commit -m 'Cherry-picked fix'\n\n# Conflict varsa\ngit cherry-pick --continue\ngit cherry-pick --abort\n\n# Başka repodaki commit\ngit remote add other https://github.com/org/other.git\ngit fetch other\ngit cherry-pick other/main\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Takım İş Akışı",
+      "name": "PR Review Checklist",
+      "desc": "Pull request gözden geçirme için kapsamlı değerlendirme kontrol listesi.",
+      "tags": [
+        "PR",
+        "review",
+        "checklist"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## PR Review Checklist\n**Kod kalitesi:**\n- [ ] İş mantığı doğru mu?\n- [ ] Edge case'ler ele alınmış mı?\n- [ ] Test kapsamı yeterli mi?\n- [ ] Performans etkisi var mı?\n\n**Güvenlik:**\n- [ ] SQL injection, XSS riski var mı?\n- [ ] Gizli bilgi commit'te mi?\n- [ ] Yetkilendirme kontrolü var mı?\n\n**Okunabilirlik:**\n- [ ] İsimler anlamlı mı?\n- [ ] Karmaşık mantık açıklanmış mı?\n- [ ] PR açıklaması yeterli mi?",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Takım İş Akışı",
+      "name": "Commit Mesajı Standartları",
+      "desc": "Conventional Commits formatı ile okunabilir ve araçlarla işlenebilir commit mesajları.",
+      "tags": [
+        "commit",
+        "conventional",
+        "mesaj"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Conventional Commits\n```\n<type>(<scope>): <subject>\n\n[body]\n\n[footer]\n```\nType'lar:\n- `feat`: Yeni özellik\n- `fix`: Bug düzeltme\n- `docs`: Dokümantasyon\n- `refactor`: Yeniden yapılandırma\n- `test`: Test ekleme\n- `chore`: Bakım\n- `perf`: Performans\n\nÖrnekler:\n```\nfeat(auth): JWT refresh token eklendi\nfix(api): null pointer hatası düzeltildi\nfeat!: API v2'ye geçiş (breaking change)\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Git Araçları",
+      "name": "git bisect ile Bug Bulma",
+      "desc": "Binary search yöntemiyle hangi commit'in bug oluşturduğunu tespit edin.",
+      "tags": [
+        "bisect",
+        "bug",
+        "arama"
+      ],
+      "badge1": "İleri",
+      "content": "## git bisect\n```bash\ngit bisect start\ngit bisect bad          # Şu anki commit bozuk\ngit bisect good v1.0.0  # Bu tag iyiydi\n\n# Git otomatik olarak commit checkout yapar\n# Her adımda test et:\nif ./test.sh; then\n    git bisect good\nelse\n    git bisect bad\nfi\n\n# Otomasyon\ngit bisect run ./test.sh\n\n# Sonuç\n# 'abc123 is the first bad commit'\n\n# Bitir\ngit bisect reset\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Git Araçları",
+      "name": "git log Filtreleme",
+      "desc": "Tarih, yazar, mesaj ve dosya bazlı git log sorgulama ve görselleştirme.",
+      "tags": [
+        "log",
+        "history",
+        "filtre"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## git log Şablonları\n```bash\n# Özet görünüm\ngit log --oneline --graph --decorate --all\n\n# Yazar filtresi\ngit log --author='Ahmet' --since='2 weeks ago'\n\n# Mesaj araması\ngit log --grep='fix' --all\n\n# Dosya geçmişi\ngit log --follow -p -- src/auth.py\n\n# Belirli tarih aralığı\ngit log --after='2026-01-01' --before='2026-06-01'\n\n# Özel format\ngit log --format='%h %an %s' --no-merges -20\n\n# Diff ile\ngit log -p --stat HEAD~5..HEAD\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Branch Stratejileri",
+      "name": "Trunk-Based Development",
+      "desc": "Tek main branch üzerinde feature flag kullanarak sürekli entegrasyon iş akışı.",
+      "tags": [
+        "trunk",
+        "feature flag",
+        "CI"
+      ],
+      "badge1": "Orta",
+      "content": "## Trunk-Based Development\n1. Herkes doğrudan `main`'e veya max. 1-2 günlük kısa branch'e iter.\n2. Feature flag ile tamamlanmamış kod main'de gizlenir.\n3. Her push CI tetikler → tüm testler geçmeli.\n4. Release: tag + feature flag açma.\n\nFaydası: Uzun yaşayan branch merge cehennemi yok.\nGereksiz: Code review gecikme riski artar → pair programming önerilir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Temel Git",
+      "name": "git reflog ile Kurtarma",
+      "desc": "Yanlışlıkla silinen commit veya branch'i git reflog ile geri getirin.",
+      "tags": [
+        "reflog",
+        "kurtarma",
+        "kayıp"
+      ],
+      "badge1": "Orta",
+      "content": "## git reflog ile Kurtarma\n```bash\n# Tüm HEAD hareketleri\ngit reflog\n# HEAD@{0}: reset: moving to HEAD~3\n# HEAD@{1}: commit: önemli değişiklik\n\n# Kayıp commit'i geri al\ngit checkout HEAD@{1}\n# veya\ngit cherry-pick HEAD@{1}\n\n# Silinen branch geri al\ngit reflog --all | grep 'feature/deleted'\n# feature/deleted: HEAD@{5} commit abc123\ngit checkout -b feature/deleted abc123\n\n# Zamana göre arama\ngit reflog 'HEAD@{2 days ago}'\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Git Hooks",
+      "name": "Commit-msg Hook Şablonu",
+      "desc": "Commit mesajını Conventional Commits formatına uyan hook şablonu.",
+      "tags": [
+        "hook",
+        "commit-msg",
+        "format"
+      ],
+      "badge1": "Orta",
+      "content": "## commit-msg Hook\n```bash\n#!/bin/bash\n# .git/hooks/commit-msg\nMSG_FILE=$1\nMSG=$(cat \"$MSG_FILE\")\n\n# Conventional Commits regex\nPATTERN='^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\\(.+\\))?(!)?: .{1,72}'\n\nif ! echo \"$MSG\" | grep -qE \"$PATTERN\"; then\n    echo \"HATA: Commit mesajı format dışı!\"\n    echo \"Beklenen: type(scope): mesaj\"\n    echo \"Örnek: feat(auth): JWT eklendi\"\n    exit 1\nfi\n\n# WIP commit'leri engelle (isteğe bağlı)\nif echo \"$MSG\" | grep -qi '^wip'; then\n    echo \"HATA: WIP commit'ler ana branch'e izin verilmez.\"\n    exit 1\nfi\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Git Araçları",
+      "name": "GitHub CLI (gh) Şablonları",
+      "desc": "gh CLI ile PR oluşturma, review ve issue yönetimi komutları.",
+      "tags": [
+        "gh",
+        "GitHub",
+        "CLI"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## GitHub CLI\n```bash\n# PR oluştur\ngh pr create --title 'feat: yeni özellik' --body 'Açıklama' --base main\n\n# PR listele ve incele\ngh pr list\ngh pr view 123\ngh pr checkout 123\n\n# PR birleştir\ngh pr merge 123 --squash\n\n# Issue\ngh issue create --title 'Bug: ...' --label 'bug,critical'\ngh issue list --assignee @me\ngh issue close 456\n\n# Workflow tetikle\ngh workflow run deploy.yml -f env=production\n\n# Repo klonla\ngh repo clone org/repo\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Merge & Rebase",
+      "name": "Rebase vs Merge Kılavuzu",
+      "desc": "Rebase ve merge arasındaki farklar ve hangi senaryoda hangisini kullanmalısınız.",
+      "tags": [
+        "rebase",
+        "merge",
+        "geçmiş"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Rebase vs Merge\n| | Rebase | Merge |\n|--|--------|-------|\n| Geçmiş | Doğrusal, temiz | Gerçek, dal yapısı |\n| Conflict | Her commit için | Bir kez |\n| Public branch | Tehlikeli | Güvenli |\n| Feature → main | Rebase sonra fast-forward | Merge commit |\n\nAltın kural: Public/shared branch'leri rebase etme → başkalarının geçmişini bozar.\nİş akışı: `git pull --rebase` ile yerel commit'leri saat üstüne taşı.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

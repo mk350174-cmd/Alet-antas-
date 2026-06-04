@@ -1,0 +1,340 @@
+{
+  "slug": "50-deployvault-pro",
+  "title": "DeployVault Pro — Yazılım Mimarisi & DevOps",
+  "metaDescription": "CI/CD pipeline'ları için Docker, Kubernetes ve Terraform konfigürasyon şablonları.",
+  "metaKeywords": [
+    "Deploy",
+    "DeployVault Pro",
+    "Yazılım Mimarisi & DevOps",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "CI/CD pipeline'ları için Docker, Kubernetes ve Terraform konfigürasyon şablonları.",
+  "heroCorner": "D",
+  "heroEyebrow": "Yazılım Mimarisi & DevOps · Alet Çantası",
+  "heroTitleHTML": "Deploy<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Deploy<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "DeployVault Pro · Yazılım Mimarisi & DevOps",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Deploy ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "deployvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "devops",
+  "categoryLabel": "Yazılım Mimarisi & DevOps",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4a9eff",
+    "primary2": "#4a9eff",
+    "primaryDim": "#4a9eff15",
+    "primaryGlow": "#4a9eff30",
+    "primaryDark": "#2c80e1",
+    "accent": "#a78bfa",
+    "accent2": "#a78bfa",
+    "accentDim": "#a78bfa18",
+    "accentGlow": "#a78bfa30",
+    "bg": "#06080e",
+    "bg2": "#0a0c12",
+    "bg3": "#0e1016",
+    "bg4": "#12141a",
+    "border": "#16181e",
+    "border2": "#1e2026",
+    "border3": "#2a2c32",
+    "heroBg": "#0a0c12"
+  },
+  "categories": [
+    {
+      "id": "Docker",
+      "name": "Docker",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Kubernetes",
+      "name": "Kubernetes",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Terraform",
+      "name": "Terraform",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "GitOps",
+      "name": "GitOps",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "Deployment Stratejileri",
+      "name": "Deployment Stratejileri",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Docker",
+      "name": "Multi-Stage Dockerfile Şablonu",
+      "desc": "Build ve runtime aşamalarını ayıran üretim kalitesi Dockerfile.",
+      "tags": [
+        "dockerfile",
+        "multi-stage",
+        "build"
+      ],
+      "badge1": "Orta",
+      "content": "## Multi-Stage Build\n```dockerfile\nFROM node:20-alpine AS builder\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --only=production\n\nFROM node:20-alpine\nCOPY --from=builder /app/node_modules ./node_modules\nCOPY . .\nCMD [\"node\",\"server.js\"]\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Docker",
+      "name": "Docker Compose Prod Şablonu",
+      "desc": "Sağlık kontrolü ve yeniden başlatma politikasıyla üretim docker-compose.",
+      "tags": [
+        "docker compose",
+        "prod",
+        "healthcheck"
+      ],
+      "badge1": "Orta",
+      "content": "## Prod Compose\n```yaml\nservices:\n  api:\n    image: myapp:latest\n    restart: unless-stopped\n    healthcheck:\n      test: [\"CMD\",\"curl\",\"-f\",\"http://localhost/health\"]\n      interval: 30s\n      retries: 3\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Kubernetes",
+      "name": "Deployment + Service Şablonu",
+      "desc": "Replica, resource limitleri ve sağlık kontrolü içeren Kubernetes manifesti.",
+      "tags": [
+        "kubernetes",
+        "deployment",
+        "service"
+      ],
+      "badge1": "Orta",
+      "content": "## K8s Deployment\n```yaml\napiVersion: apps/v1\nkind: Deployment\nspec:\n  replicas: 3\n  template:\n    spec:\n      containers:\n      - name: api\n        resources:\n          limits: {cpu: 500m, memory: 512Mi}\n        livenessProbe:\n          httpGet: {path: /health, port: 8080}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Kubernetes",
+      "name": "HPA Otomatik Ölçekleme",
+      "desc": "CPU ve özel metriklere göre pod sayısını otomatik ayarlayan HPA.",
+      "tags": [
+        "hpa",
+        "ölçekleme",
+        "kubernetes"
+      ],
+      "badge1": "İleri",
+      "content": "## HPA Konfigürasyonu\n```yaml\napiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nspec:\n  minReplicas: 2\n  maxReplicas: 20\n  metrics:\n  - type: Resource\n    resource: {name: cpu, target: {averageUtilization: 70}}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Terraform",
+      "name": "Terraform Modül Yapısı",
+      "desc": "Yeniden kullanılabilir, versiyonlanmış Terraform modülü klasör yapısı.",
+      "tags": [
+        "terraform",
+        "modül",
+        "yapı"
+      ],
+      "badge1": "Orta",
+      "content": "## Modül Yapısı\n```\nmodules/vpc/\n  main.tf      # Kaynaklar\n  variables.tf # Girdi değişkenleri\n  outputs.tf   # Çıktılar\n  versions.tf  # Provider kısıtları\n```\nRoot modülde `source = \"./modules/vpc\"` ile çağır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Terraform",
+      "name": "Remote State Konfigürasyonu",
+      "desc": "Terraform state'ini S3 backend ve DynamoDB lock ile yönetin.",
+      "tags": [
+        "terraform",
+        "state",
+        "backend"
+      ],
+      "badge1": "Orta",
+      "content": "## Remote State\n```hcl\nterraform {\n  backend \"s3\" {\n    bucket = \"tf-state-bucket\"\n    key    = \"prod/terraform.tfstate\"\n    region = \"eu-central-1\"\n    dynamodb_table = \"tf-locks\"\n    encrypt = true\n  }\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "CI/CD Pipeline",
+      "name": "GitHub Actions Node.js Pipeline",
+      "desc": "Test, build ve Docker push adımlarından oluşan eksiksiz workflow.",
+      "tags": [
+        "github actions",
+        "pipeline",
+        "nodejs"
+      ],
+      "badge1": "Orta",
+      "content": "## GitHub Actions Workflow\n```yaml\non: [push]\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    steps:\n    - uses: actions/checkout@v4\n    - run: npm ci && npm test\n    - run: docker build -t app:${{ github.sha }} .\n    - run: docker push app:${{ github.sha }}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "CI/CD Pipeline",
+      "name": "Pipeline Aşama Tasarımı",
+      "desc": "Lint→Test→Build→Scan→Deploy aşamalarını paralel ve sıralı kurgulayın.",
+      "tags": [
+        "pipeline",
+        "aşama",
+        "tasarım"
+      ],
+      "badge1": "Orta",
+      "content": "## Pipeline Aşamaları\n1. Paralel: lint + unit test + security scan.\n2. Sıralı: build image → integration test → push.\n3. Manual onay kapısı: staging'den prod'a geçiş.\n4. Rollback tetikleyicisini tanımla.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "GitOps",
+      "name": "ArgoCD Uygulama Tanımı",
+      "desc": "Git repo'yu tek doğru kaynak olarak kullanan ArgoCD app manifesti.",
+      "tags": [
+        "argocd",
+        "gitops",
+        "manifest"
+      ],
+      "badge1": "İleri",
+      "content": "## ArgoCD Application\n```yaml\napiVersion: argoproj.io/v1alpha1\nkind: Application\nspec:\n  source:\n    repoURL: https://github.com/org/repo\n    targetRevision: HEAD\n    path: k8s/prod\n  syncPolicy:\n    automated: {prune: true, selfHeal: true}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "GitOps",
+      "name": "Flux CD Konfigürasyonu",
+      "desc": "GitRepository ve Kustomization kaynaklarıyla Flux CD kurulumu.",
+      "tags": [
+        "flux",
+        "gitops",
+        "kubernetes"
+      ],
+      "badge1": "İleri",
+      "content": "## Flux CD\n```yaml\napiVersion: source.toolkit.fluxcd.io/v1\nkind: GitRepository\nspec:\n  url: https://github.com/org/fleet\n  interval: 1m\n  ref: {branch: main}\n```\nKustomization ile hangi path'in sync edileceğini belirle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Deployment Stratejileri",
+      "name": "Blue-Green Deployment",
+      "desc": "Sıfır kesinti ile iki özdeş ortam arasında geçiş yapın.",
+      "tags": [
+        "blue-green",
+        "sıfır kesinti",
+        "deployment"
+      ],
+      "badge1": "İleri",
+      "content": "## Blue-Green Deployment\n1. Blue (aktif) ve Green (pasif) ortam kur.\n2. Green'e yeni sürümü deploy et.\n3. Smoke test geçtikten sonra trafiği yönlendir.\n4. Blue'yu hızlı rollback için beklemede tut.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Deployment Stratejileri",
+      "name": "Canary Release Stratejisi",
+      "desc": "Yeni sürümü küçük yüzde trafikle kademeli olarak açın.",
+      "tags": [
+        "canary",
+        "kademeli",
+        "release"
+      ],
+      "badge1": "İleri",
+      "content": "## Canary Release\n1. %5 trafiği yeni sürüme yönlendir.\n2. Hata oranı ve latency metriklerini izle.\n3. Sorun yoksa %25 → %50 → %100 artır.\n4. Threshold aşılırsa otomatik rollback tetikle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Kubernetes",
+      "name": "Namespace ve RBAC Şablonu",
+      "desc": "Ortam izolasyonu için namespace ve rol tabanlı erişim kontrolü.",
+      "tags": [
+        "namespace",
+        "rbac",
+        "izolasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Namespace RBAC\n```yaml\nkind: Role\nrules:\n- apiGroups: [\"apps\"]\n  resources: [\"deployments\"]\n  verbs: [\"get\",\"list\",\"update\"]\n---\nkind: RoleBinding\nsubjects:\n- kind: ServiceAccount\n  name: deployer\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Docker",
+      "name": "Docker Build Cache Optimizasyonu",
+      "desc": "Layer cache'i etkili kullanarak build süresini minimize edin.",
+      "tags": [
+        "docker",
+        "cache",
+        "optimizasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Cache Optimizasyonu\n1. Sık değişen COPY satırlarını en sona al.\n2. package.json'u ayrı COPY et, bağımlılıkları önce kur.\n3. `--mount=type=cache` ile BuildKit cache kullan.\n4. Multi-stage ile gereksiz katmanları at.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "CI/CD Pipeline",
+      "name": "Ortam Değişkeni Güvenli Yönetim",
+      "desc": "Sırları CI'da güvenli saklama ve inject etme yöntemleri.",
+      "tags": [
+        "secret",
+        "env",
+        "güvenli"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Secret Yönetimi\n1. Sırları asla koda commit etme.\n2. GitHub Secrets / Vault'a kaydet.\n3. Pipeline'da `${{ secrets.API_KEY }}` ile inject et.\n4. Runtime'da environment variable olarak sun.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

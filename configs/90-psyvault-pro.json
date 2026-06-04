@@ -1,0 +1,340 @@
+{
+  "slug": "90-psyvault-pro",
+  "title": "PsyVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Psikolojik teoriler, kullanıcı davranış analizi ve persona derinleştirme araçları.",
+  "metaKeywords": [
+    "Psy",
+    "PsyVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Psikolojik teoriler, kullanıcı davranış analizi ve persona derinleştirme araçları.",
+  "heroCorner": "P",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Psy<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Psy<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "PsyVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Psy ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "psyvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Bilişsel Psikoloji",
+      "name": "Bilişsel Psikoloji",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Davranışsal Ekonomi",
+      "name": "Davranışsal Ekonomi",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Motivasyon & Pekiştirme",
+      "name": "Motivasyon & Pekiştirme",
+      "color": "#ff8585"
+    },
+    {
+      "id": "UX Psikolojisi",
+      "name": "UX Psikolojisi",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Öğrenme Psikolojisi",
+      "name": "Öğrenme Psikolojisi",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Sosyal Psikoloji",
+      "name": "Sosyal Psikoloji",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Bilişsel Psikoloji",
+      "name": "Bilişsel Yük Teorisi",
+      "desc": "Çalışma belleğinin sınırlılığını yönetmek için öğretim tasarımı ilkeleri.",
+      "tags": [
+        "bilişsel yük",
+        "çalışma belleği",
+        "öğrenme"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bilişsel Yük Teorisi\n3 yük türü:\n1. **İçsel yük:** Konunun doğasındaki zorluk.\n2. **Dışsal yük:** Kötü tasarımdan kaynaklı zorluk → azalt.\n3. **Germane yük:** Şema oluşturmak için harcanan çaba → artır.\n\nUI'da uygulama: Bir ekranda max 4±2 unsur; kompleks adımları chunk'la.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Bilişsel Psikoloji",
+      "name": "Onay Yanlılığı (Confirmation Bias)",
+      "desc": "Var olan inançları doğrulayan bilgiyi arama eğilimi ve önleme stratejileri.",
+      "tags": [
+        "onay yanlılığı",
+        "önyargı",
+        "düşünce"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Onay Yanlılığı\nNasıl ortaya çıkar: karşı kanıtları görmezden gelme, destekleyici veri seçimi.\n\nÖnleme:\n1. Aktif olarak çürütücü kanıt ara (red teaming).\n2. Hipotez öncesi sonucu kaydet (preregistration).\n3. Analistleri sonuçtan bihaber tut (blind analysis).\n4. Çeşitlendirilmiş veri kaynakları kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Davranışsal Ekonomi",
+      "name": "Çıpa Etkisi (Anchoring)",
+      "desc": "İlk sunulan sayının sonraki yargıları etkileme mekanizması ve uygulamaları.",
+      "tags": [
+        "çıpa",
+        "fiyatlama",
+        "önyargı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Çıpa Etkisi Uygulamaları\nPazarlama: Fiyat sayfasında en pahalıyı ilk göster → diğerleri ucuz görünür.\nMüzakere: Yüksek açılış teklifi çıpa oluşturur.\nÜrün: 'Normalde X, şimdi Y' — fiyat çıpası.\n\nSavunma: Kendi bağımsız değerlendirmeni yap; karşı tarafın çıpasını geç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Davranışsal Ekonomi",
+      "name": "Kayıp Korkusu (Loss Aversion)",
+      "desc": "Kazanç sevincinin kayıp acısına kıyasla 2x daha zayıf hissettirdiği psikolojik gerçek.",
+      "tags": [
+        "kayıp",
+        "kahraman",
+        "karar"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kayıp Korkusu\nKahneman & Tversky: 100₺ kazanmak ≈ 50₺ kaybetmemek (duygusal eşdeğer).\n\nUygulamalar:\n- Ücretsiz deneme → kaybetmemek için abone olma.\n- 'Kaçırıyorsun' mesajı > 'Kazanırsın' mesajı.\n- Sağlık: 'Bunu yaparsan kaybedersin' framesi daha etkili.\nEtik kullanım: manipülatif değil, gerçek faydayı öne çıkar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Motivasyon & Pekiştirme",
+      "name": "Self-Determination Theory",
+      "desc": "İçsel motivasyonu besleyen özerklik, yeterlilik ve ilişki ihtiyaçları.",
+      "tags": [
+        "SDT",
+        "motivasyon",
+        "özerklik"
+      ],
+      "badge1": "Orta",
+      "content": "## SDT 3 İhtiyacı\n1. **Özerklik:** Kendi seçimini yap → kontrol hissi.\n2. **Yeterlilik:** Zorluk seviyesi uygun → akış (flow) hissi.\n3. **İlişki:** Topluluk bağı → ait olma hissi.\n\nÜrün tasarımı:\n- Özerklik: kullanıcı ayarları, kişiselleştirme.\n- Yeterlilik: kademeli zorluk, ilerlemek görünür.\n- İlişki: topluluk özellikleri, paylaşım.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Motivasyon & Pekiştirme",
+      "name": "Değişken Ödül Takvimi",
+      "desc": "Aralıklı ve öngörülemeyen ödüllerin motivasyon üzerindeki güçlü etkisi.",
+      "tags": [
+        "ödül",
+        "slot makinesi",
+        "davranış"
+      ],
+      "badge1": "Orta",
+      "content": "## Değişken Ödül\nSkinner: Değişken oran en güçlü koşullanma → slot makinesi prensibi.\n\nUygulamalar:\n- Sosyal medya: 'pull to refresh' → yeni şey var mı?\n- Loot box: ne çıkacağını bilmemek.\n- Email: yeni mesaj gelebilir → sık kontrol.\n\nEtik not: bağımlılık yaratma riski. Tasarımda bilinçli kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "UX Psikolojisi",
+      "name": "Hick Yasası",
+      "desc": "Seçenek sayısı arttıkça karar verme süresinin logaritmik uzadığı yasa.",
+      "tags": [
+        "Hick",
+        "seçenek",
+        "karar"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Hick Yasası\nFormül: T = b × log₂(n + 1)\n\nUygulama:\n1. Navigasyon: max 7 ana menü öğesi.\n2. Form: dropdown yerine radio (az seçenekte).\n3. Onboarding: her adımda tek karar.\n4. Mobil: alt nav max 5 sekme.\n5. Paralel seçenekleri kategorize et, seçenek sayısı düşür.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "UX Psikolojisi",
+      "name": "Gestalt İlkeleri",
+      "desc": "Beynin görsel unsurları gruplamak için kullandığı Gestalt algı yasaları.",
+      "tags": [
+        "Gestalt",
+        "grup",
+        "görsel"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Gestalt İlkeleri\n1. Yakınlık: Yakın elemanlar grup görünür.\n2. Benzerlik: Aynı renkli elemanlar grup görünür.\n3. Süreklilik: Göz çizgiyi takip eder.\n4. Kapalılık: Eksik şekli beyin tamamlar.\n5. Şekil-zemin: Ön plan vs. arka plan ayrımı.\n\nKullanım: form alanlarını label'larına yakın koy; ilgili aksiyonları gruplayın.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Öğrenme Psikolojisi",
+      "name": "Desirable Difficulties",
+      "desc": "Öğrenimi zorlaştıran ama uzun vadeli kalıcılığı artıran teknikler.",
+      "tags": [
+        "zorluk",
+        "uzun dönem",
+        "hafıza"
+      ],
+      "badge1": "Orta",
+      "content": "## Faydalı Zorluklar\n1. Retrieval practice: okumak yerine hatırlamaya çalış.\n2. Interleaving: konuları karıştırarak çalış (blok değil).\n3. Spacing: sınavdan önce değil, süreç boyunca tekrar.\n4. Generation effect: cevabı kendin üret, sonra kontrol et.\n5. Desirable difficulty ≠ arbitrary difficulty: amaca uygun zorluk seç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Öğrenme Psikolojisi",
+      "name": "Ebbinghaus Unutma Eğrisi",
+      "desc": "Unutmanın logaritmik ilişkisini ve tekrar zamanlamasının hafızaya etkisini anlayın.",
+      "tags": [
+        "unutma",
+        "Ebbinghaus",
+        "tekrar"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Unutma Eğrisi\n- İlk 24 saat: %50-80 kayıp.\n- Optimal tekrar: 1 gün, 3 gün, 7 gün, 30 gün.\n- Her tekrar eğrinin düzleşmesini sağlar.\n\nUygulama: SRS (Anki) bu algoritmayı otomatize eder.\nYeni bilgi öğrendikten 24 saat içinde bir kez tekrar et → kalıcılık %80+ artar.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sosyal Psikoloji",
+      "name": "Sosyal Kanıt (Social Proof)",
+      "desc": "Başkalarının davranışının bireysel kararları yönlendirdiği temel ikna prensibi.",
+      "tags": [
+        "sosyal kanıt",
+        "Cialdini",
+        "ikna"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sosyal Kanıt Türleri\n1. Kullanıcı sayısı: '10.000+ şirket kullanıyor.'\n2. Yorum/rating: yıldızlar ve kullanıcı yorumları.\n3. Uzman onayı: 'Forbes tarafından önerildi.'\n4. Arkadaş kullanımı: 'X kişi bağlantın da kullanıyor.'\n5. Belirsizlik → sosyal kanıt gücü artar.\n\nEtik: gerçek kanıtları kullan, sahte yorum oluşturma.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Bilişsel Psikoloji",
+      "name": "Çerçeveleme Etkisi (Framing)",
+      "desc": "Aynı bilginin farklı sunumunun algı ve kararı nasıl değiştirdiği.",
+      "tags": [
+        "framing",
+        "çerçeve",
+        "karar"
+      ],
+      "badge1": "Orta",
+      "content": "## Çerçeveleme Örnekleri\nNegative frame: '%30'u hastaları hayatını kaybetti.'\nPositive frame: '%70'i kurtarıldı.' → daha cazip.\n\nSağlık: kazanım çerçevesi koruyucu davranışta, kayıp çerçevesi riskli davranışı önlemede etkili.\nPazarlama: '5 hata yapmamak' > '5 doğru yapmak' başlığı → dikkat çeker.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "UX Psikolojisi",
+      "name": "Fitts Yasası",
+      "desc": "Hedef büyüklüğü ve mesafesiyle dokunma/tıklama süresinin ilişkisi.",
+      "tags": [
+        "Fitts",
+        "hedef",
+        "UI"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Fitts Yasası\nT = a + b × log₂(D/W + 1)\n- D: mesafe, W: hedef genişliği\n\nUygulama:\n1. Sık kullanılan butonlar büyük ve yakın olsun.\n2. Ekran kenarı (köşe): sonsuz genişlik → en kolay hedef.\n3. Mobil: dokunma hedefi min. 44×44px (Apple HIG).\n4. Destructive buton (sil): küçük ve uzakta koy.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Davranışsal Ekonomi",
+      "name": "Tükenme Etkisi (Scarcity)",
+      "desc": "Az kalan veya sınırlı erişimin algılanan değeri ve aciliyeti artırması.",
+      "tags": [
+        "kıtlık",
+        "aciliyet",
+        "dönüşüm"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kıtlık Etkisi\nCialdini: Elde edilmesi zor olan şey daha değerli algılanır.\n\nUygulama:\n- 'Son 3 oda kaldı!'\n- '2 saat içinde bitecek'\n- 'Sınırlı üretim'\n\nEtik sınır: gerçek kıtlık vs. sahte kıtlık. Sahte kıtlık uzun vadede güven kırar.\nTest: A/B ile kıtlık mesajının gerçek etkisini ölç.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Sosyal Psikoloji",
+      "name": "Hazcılık vs Eudaimonia",
+      "desc": "Anlık zevk odaklı ile anlam ve gelişme odaklı mutluluk teorilerinin karşılaştırması.",
+      "tags": [
+        "mutluluk",
+        "anlam",
+        "psikoloji"
+      ],
+      "badge1": "Orta",
+      "content": "## İki Mutluluk Teorisi\n**Hazcılık (Hedonism):** Zevk > acı → anlık mutluluk.\n**Eudaimonia:** Potansiyeli gerçekleştirme, anlam, erdem.\n\nAraştırma: eudaimonia uzun dönemli refahla daha güçlü ilişkili.\nÜrün tasarımı: anlık tatmin + uzun vadeli büyüme fırsatı sun.\nKullanıcı bağlılığı: sadece engagement değil, 'hayatıma katkı' hissi.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

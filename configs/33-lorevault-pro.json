@@ -1,0 +1,465 @@
+{
+  "slug": "33-lorevault-pro",
+  "title": "LoreVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Devasa evrenler için (10.000+ karakterlik) \"Görsel Veri Motoru\" iş akışlarına uygun karakter şablonları.",
+  "metaKeywords": [
+    "Lore",
+    "LoreVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Devasa evrenler için (10.000+ karakterlik) \"Görsel Veri Motoru\" iş akışlarına uygun karakter şablonları.",
+  "heroCorner": "L",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Lore<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Lore<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "LoreVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Lore ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "lorevault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Antik Çağ Kahramanları",
+      "name": "Antik Çağ Kahramanları",
+      "color": "#A52A2A"
+    },
+    {
+      "id": "Mitolojik Varlıklar",
+      "name": "Mitolojik Varlıklar",
+      "color": "#8B008B"
+    },
+    {
+      "id": "Fantastik Diyarlar Sakinleri",
+      "name": "Fantastik Diyarlar Sakinleri",
+      "color": "#228B22"
+    },
+    {
+      "id": "Tarihi Figür Adaptasyonları",
+      "name": "Tarihi Figür Adaptasyonları",
+      "color": "#DAA520"
+    },
+    {
+      "id": "Bilim Kurgu Uzaylı Irklar",
+      "name": "Bilim Kurgu Uzaylı Irklar",
+      "color": "#4682B4"
+    },
+    {
+      "id": "Efsanevi Yaratıklar",
+      "name": "Efsanevi Yaratıklar",
+      "color": "#800000"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Antik Çağ Kahramanları",
+      "name": "Spartalı Savaşçı",
+      "desc": "Antik Sparta'nın disiplinli askeri için temel görsel veri motoru şablonu.",
+      "tags": [
+        "Sparta",
+        "Antik",
+        "Savaşçı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Spartalı Savaşçı Şablonu\n1. **Fiziksel Özellikler:** Kaslı yapı, kısa saç, sakalsız.\n2. **Giyim:** Kırmızı pelerin, bronz zırh, kalkan, mızrak.\n3. **Duruş:** Dik, kararlı, savaş pozisyonu.\n4. **İfade:** Ciddi, odaklanmış.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Antik Çağ Kahramanları",
+      "name": "Mısır Firavunu",
+      "desc": "Antik Mısır'ın güçlü hükümdarı için detaylı görsel profil oluşturma rehberi.",
+      "tags": [
+        "Mısır",
+        "Firavun",
+        "Hükümdar"
+      ],
+      "badge1": "Orta",
+      "content": "## Mısır Firavunu Görsel Rehberi\n1. **Taç & Aksesuar:** Nemes başlık, Uraeus yılanı, firavun sakalı.\n2. **Giysi:** Pilili keten etek, zengin mücevherler.\n3. **Duruş:** Heybetli, tahtta oturur veya ayakta durur.\n4. **İfade:** Sakin, otoriter.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Antik Çağ Kahramanları",
+      "name": "Roma Senatörü",
+      "desc": "Roma İmparatorluğu'nun siyasi figürleri için görsel özellikler şablonu.",
+      "tags": [
+        "Roma",
+        "Senatör",
+        "Siyasetçi"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Roma Senatörü Görsel Şablonu\n1. **Giysi:** Beyaz toga, mor şerit (clavus).\n2. **Fiziksel Özellikler:** Orta yaşlı veya yaşlı, saygın yüz hatları.\n3. **Aksesuar:** Altın yüzük, parşömen rulo.\n4. **Duruş:** Onurlu, düşünceli.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Antik Çağ Kahramanları",
+      "name": "Yunan Filozofu",
+      "desc": "Antik Yunan düşünürleri için karakteristik görsel profil oluşturma talimatı.",
+      "tags": [
+        "Yunan",
+        "Filozof",
+        "Bilgin"
+      ],
+      "badge1": "Orta",
+      "content": "## Yunan Filozofu Görsel Kılavuzu\n1. **Giysi:** Himasyon (pelerin), tunik.\n2. **Fiziksel Özellikler:** Uzun sakal, düşünceli bakışlar.\n3. **Mekan:** Kütüphane, agora veya doğa.\n4. **Duruş:** Oturur veya yürürken, elinde parşömen.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Mitolojik Varlıklar",
+      "name": "Zeus (Yunan Tanrısı)",
+      "desc": "Olimpos'un baş tanrısı Zeus için güçlü ve heybetli bir görsel şablonu.",
+      "tags": [
+        "Yunan",
+        "Zeus",
+        "Tanrı"
+      ],
+      "badge1": "İleri",
+      "content": "## Zeus Görsel Şablonu\n1. **Fiziksel Özellikler:** Kaslı, yaşlı ancak güçlü, gür sakal.\n2. **Semboller:** Şimşek, kartal, taht.\n3. **Giyim:** Altın işlemeli toga, pelerin.\n4. **İfade:** Otoriter, ciddi, zaman zaman öfkeli.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Mitolojik Varlıklar",
+      "name": "Anubis (Mısır Tanrısı)",
+      "desc": "Mısır'ın ölüler tanrısı Anubis'in ikonik görsel temsilini oluşturun.",
+      "tags": [
+        "Mısır",
+        "Anubis",
+        "Ölüler"
+      ],
+      "badge1": "Orta",
+      "content": "## Anubis Görsel Rehberi\n1. **Kafa:** Çakal kafası (siyah).\n2. **Vücut:** İnsan vücudu, bazen mumyalanmış.\n3. **Aksesuar:** Ankh sembolü, asa.\n4. **Renk Paleti:** Siyah, altın, koyu mavi.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Mitolojik Varlıklar",
+      "name": "Odin (Nors Tanrısı)",
+      "desc": "Nors mitolojisinin bilge ve savaşçı tanrısı Odin için görsel profil.",
+      "tags": [
+        "Nors",
+        "Odin",
+        "Bilge"
+      ],
+      "badge1": "İleri",
+      "content": "## Odin Görsel Şablonu\n1. **Fiziksel Özellikler:** Tek gözlü, uzun gri sakal, yaşlı bilge yüz.\n2. **Hayvanlar:** İki kuzgun (Hugin & Munin), iki kurt (Geri & Freki).\n3. **Semboller:** Gungnir mızrağı, sekiz ayaklı at Sleipnir.\n4. **Giyim:** Geniş kenarlı şapka, mavi pelerin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Fantastik Diyarlar Sakinleri",
+      "name": "Yüksek Elf Büyücüsü",
+      "desc": "Zarif ve güçlü bir yüksek elf büyücüsü için görsel detaylandırma şablonu.",
+      "tags": [
+        "Elf",
+        "Büyücü",
+        "Fantastik"
+      ],
+      "badge1": "Orta",
+      "content": "## Yüksek Elf Büyücüsü Şablonu\n1. **Fiziksel Özellikler:** Uzun boylu, narin, sivri kulaklar, parlak gözler.\n2. **Giyim:** Akıcı, ipekli kumaşlar, gümüş işlemeler.\n3. **Aksesuar:** Asa, büyü kitabı, mistik kolyeler.\n4. **Duruş:** Zarif, bilge, hafifçe havada süzülür gibi.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Fantastik Diyarlar Sakinleri",
+      "name": "Cüce Savaşçısı",
+      "desc": "Sağlam ve cesur cüce savaşçıları için görsel özellikler kılavuzu.",
+      "tags": [
+        "Cüce",
+        "Savaşçı",
+        "Diyarlar"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Cüce Savaşçısı Görsel Rehberi\n1. **Fiziksel Özellikler:** Kısa boylu, kaslı, gür sakal, örgülü saçlar.\n2. **Zırh:** Ağır demir veya çelik zırh, boynuzlu miğfer.\n3. **Silah:** Balta, çekiç, kalkan.\n4. **Duruş:** Yere sağlam basan, kararlı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Fantastik Diyarlar Sakinleri",
+      "name": "Orman Haydutu",
+      "desc": "Fantastik ormanlarda yaşayan kurnaz bir haydut için görsel profil.",
+      "tags": [
+        "Haydut",
+        "Orman",
+        "Gizemli"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Orman Haydutu Görsel Kılavuzu\n1. **Giyim:** Koyu renkli, yıpranmış deri zırh, kapüşon.\n2. **Silah:** Yay ve oklar, hançer.\n3. **Fiziksel Özellikler:** Çevik, atletik, gözleri keskin.\n4. **Duruş:** Eğik, gizlenen, tetikte.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Fantastik Diyarlar Sakinleri",
+      "name": "Ejderha Binicisi",
+      "desc": "Güçlü bir ejderha binicisi için epik ve detaylı görsel şablonu.",
+      "tags": [
+        "Ejderha",
+        "Binici",
+        "Epik"
+      ],
+      "badge1": "İleri",
+      "content": "## Ejderha Binicisi Şablonu\n1. **Giyim:** Özel yapım deri veya pul zırh, rüzgara dayanıklı pelerin.\n2. **Aksesuar:** Ejderha derisi eldivenler, kask, özel eyer.\n3. **Duruş:** Güçlü, kararlı, ejderhasıyla uyum içinde.\n4. **Mekan:** Yüksek dağlar, bulutlar arasında.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Tarihi Figür Adaptasyonları",
+      "name": "Cengiz Han (Fantastik)",
+      "desc": "Cengiz Han'ın fantastik bir evrende savaş lordu olarak görsel adaptasyonu.",
+      "tags": [
+        "Cengiz Han",
+        "Savaş Lordu",
+        "Adaptasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Cengiz Han (Fantastik) Görseli\n1. **Giyim:** Ağır işlemeli deri ve metal zırh, kürklü pelerin.\n2. **Silah:** Kavisli kılıç, kompozit yay.\n3. **Binek:** Güçlü, zırhlı at veya fantastik bir binek.\n4. **İfade:** Acımasız, stratejik, kararlı.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Tarihi Figür Adaptasyonları",
+      "name": "Kleopatra (Gotik)",
+      "desc": "Kleopatra'nın gotik bir evrende mistik kraliçe olarak görsel adaptasyonu.",
+      "tags": [
+        "Kleopatra",
+        "Gotik",
+        "Kraliçe"
+      ],
+      "badge1": "İleri",
+      "content": "## Kleopatra (Gotik) Görseli\n1. **Giyim:** Koyu renkli, dantelli, kadife elbiseler, yüksek yakalar.\n2. **Aksesuar:** Karmaşık mücevherler (obsidyen, gümüş), yılan motifleri.\n3. **Makyaj:** Koyu göz makyajı, soluk ten.\n4. **İfade:** Gizemli, büyüleyici, hafif melankolik.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Tarihi Figür Adaptasyonları",
+      "name": "Leonardo da Vinci (Steampunk)",
+      "desc": "Leonardo da Vinci'nin steampunk evreninde mucit olarak görsel adaptasyonu.",
+      "tags": [
+        "Da Vinci",
+        "Steampunk",
+        "Mucit"
+      ],
+      "badge1": "Orta",
+      "content": "## Leonardo da Vinci (Steampunk)\n1. **Giyim:** Kahverengi deri yelek, gözlük, dişli çark detaylı ceket.\n2. **Aksesuar:** Mekanik aletler, çizim defteri, teleskop.\n3. **Arka Plan:** Buhar motorlu atölye, uçan makineler.\n4. **İfade:** Meraklı, dahi, hafif dağınık.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Bilim Kurgu Uzaylı Irklar",
+      "name": "Teknolojik Uzaylı",
+      "desc": "Yüksek teknolojili, insansı olmayan bir uzaylı ırkı için görsel şablon.",
+      "tags": [
+        "Uzaylı",
+        "Teknolojik",
+        "Bilim Kurgu"
+      ],
+      "badge1": "Orta",
+      "content": "## Teknolojik Uzaylı Şablonu\n1. **Fiziksel Özellikler:** Uzun, narin vücut, büyük gözler, pürüzsüz ten.\n2. **Giyim:** Biyolüminesan kıyafetler, entegre çipler.\n3. **Aksesuar:** Holografik cihazlar, enerji silahları.\n4. **Renk Paleti:** Gümüş, mavi, mor tonları.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "Bilim Kurgu Uzaylı Irklar",
+      "name": "Bitki Bazlı Yaşam Formu",
+      "desc": "Bitkisel özelliklere sahip, barışçıl bir uzaylı ırkı için görsel rehber.",
+      "tags": [
+        "Bitkisel",
+        "Yaşam",
+        "Ekolojik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Bitki Bazlı Uzaylı Şablonu\n1. **Fiziksel Özellikler:** Ağaç kabuğu benzeri ten, yaprak benzeri uzuvlar, çiçek açan kafa.\n2. **Giyim:** Organik liflerden dokunmuş, doğa ile bütünleşik.\n3. **Renk Paleti:** Yeşil, kahverengi, toprak tonları, çiçek renkleri.\n4. **İfade:** Sakin, huzurlu, bilge.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "Bilim Kurgu Uzaylı Irklar",
+      "name": "Sibernetik Asker",
+      "desc": "Uzayda görev yapan, sibernetik geliştirmelere sahip bir asker şablonu.",
+      "tags": [
+        "Siber",
+        "Asker",
+        "Gelişmiş"
+      ],
+      "badge1": "İleri",
+      "content": "## Sibernetik Asker Şablonu\n1. **Vücut:** Kısmen insan, kısmen mekanik uzuvlar, entegre zırh.\n2. **Silah:** Enerji tüfeği, lazer kılıç.\n3. **Gözler:** Kırmızı veya mavi parlayan optikler.\n4. **Duruş:** Hazır, tehditkar, yüksek teknoloji ürünü.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "Efsanevi Yaratıklar",
+      "name": "Griffin (Mitolojik)",
+      "desc": "Yarı kartal yarı aslan olan efsanevi yaratık Griffin için görsel talimatlar.",
+      "tags": [
+        "Griffin",
+        "Mitolojik",
+        "Yaratık"
+      ],
+      "badge1": "Orta",
+      "content": "## Griffin Görsel Rehberi\n1. **Vücut:** Aslan vücudu, kartal başı ve kanatları.\n2. **Renkler:** Altın tüyler, bronz aslan kürkü.\n3. **Duruş:** Heybetli, avına odaklanmış, kanatları açık.\n4. **Mekan:** Yüksek dağ zirveleri, antik kalıntılar.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "Efsanevi Yaratıklar",
+      "name": "Feniks (Ateş Kuşu)",
+      "desc": "Küllerinden yeniden doğan efsanevi Feniks kuşu için görsel şablonu.",
+      "tags": [
+        "Feniks",
+        "Ateş",
+        "Yeniden Doğuş"
+      ],
+      "badge1": "İleri",
+      "content": "## Feniks Görsel Şablonu\n1. **Görünüm:** Parlak kırmızı, turuncu ve altın tüyler, ateşten kanatlar.\n2. **Enerji:** Etrafında alevler, parlayan bir aura.\n3. **Duruş:** Uçarken, kanatları açık, zarif.\n4. **Mekan:** Küllerden yükselirken veya alevler içinde.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "Efsanevi Yaratıklar",
+      "name": "Deniz Kızı (Siren)",
+      "desc": "Denizlerin güzeli ve tehlikesi sirenler için çekici görsel profil oluşturma.",
+      "tags": [
+        "Deniz Kızı",
+        "Siren",
+        "Deniz"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Deniz Kızı Görsel Rehberi\n1. **Vücut:** Üst kısım insan, alt kısım balık kuyruğu.\n2. **Saç:** Uzun, dalgalı, deniz yosunlarıyla süslü.\n3. **Kuyruk Renkleri:** Mavi, yeşil, mor tonlarında pullu.\n4. **Aksesuar:** Deniz kabuklarından kolyeler, inciler.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

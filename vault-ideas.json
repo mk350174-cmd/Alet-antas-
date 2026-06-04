@@ -1,0 +1,487 @@
+[
+  {
+    "num": null,
+    "name": "PromptVault Pro",
+    "desc": "Karmaşık \"PromptCraft\" mimarisine uygun, modüler sistem promptu kütüphanesi."
+  },
+  {
+    "num": null,
+    "name": "LogicVault Pro",
+    "desc": "\"5 Göz Analizi\" gibi çok boyutlu mantıksal çözümleme çerçeveleri ve analiz algoritmaları."
+  },
+  {
+    "num": null,
+    "name": "TestVault Pro",
+    "desc": "LLM halüsinasyonlarını test etmek ve çapraz sorgu yapmak için \"Hata Dedektifi\" senaryoları."
+  },
+  {
+    "num": null,
+    "name": "AgentVault Pro",
+    "desc": "Otonom AI ajanları için görev tabanlı talimat setleri ve API yönlendirme şablonları."
+  },
+  {
+    "num": null,
+    "name": "ContextVault Pro",
+    "desc": "Büyük modellerin (Claude Pro, Gemini Plus vb.) uzun bağlam pencerelerini (1M+ token) yönetmek için hafıza indeksleme araçları."
+  },
+  {
+    "num": null,
+    "name": "PersonaVault Pro",
+    "desc": "Belirli uzmanlık alanlarına göre derinlemesine eğitilmiş AI persona koleksiyonu."
+  },
+  {
+    "num": null,
+    "name": "VisionVault Pro",
+    "desc": "Görsel veri işleme, teknik şema analizi ve sentetik görüntü üretimi komutları."
+  },
+  {
+    "num": null,
+    "name": "AudioVault Pro",
+    "desc": "Ses üretimi, müzik teorisi ve TTS (Text-to-Speech) motorları için optimize edilmiş AI komutları."
+  },
+  {
+    "num": null,
+    "name": "ModelVault Pro",
+    "desc": "Lokal LLM modelleri için ince ayar (fine-tuning) veri setleri ve format dönüştürücüler."
+  },
+  {
+    "num": null,
+    "name": "RouterVault Pro",
+    "desc": "Gelen API isteğinin maliyet/performans analizini yapıp en uygun modele yönlendiren arayüz."
+  },
+  {
+    "num": null,
+    "name": "SynthVault Pro",
+    "desc": "Özel veri setleri oluşturmak için sentetik veri üretimi otomasyon şablonları."
+  },
+  {
+    "num": null,
+    "name": "JailbreakVault Pro",
+    "desc": "Beyaz şapkalı siber güvenlik uzmanları için red-teaming ve model dayanıklılık testleri."
+  },
+  {
+    "num": null,
+    "name": "ChainVault Pro",
+    "desc": "Düşünce zinciri (Chain of Thought) süreçlerini adım adım kurgulayan algoritmik promptlar."
+  },
+  {
+    "num": null,
+    "name": "EmbedVault Pro",
+    "desc": "Vektör veritabanları (RAG sistemleri) için embedding stratejileri ve parçalama (chunking) rehberi."
+  },
+  {
+    "num": null,
+    "name": "OmniVault Pro",
+    "desc": "Diğer tüm Vault'ları birbirine bağlayan ve projeler arası veri köprüsü kuran ana (master) API arayüzü."
+  },
+  {
+    "num": "16",
+    "name": "WasmVault Pro",
+    "desc": "C++ tabanlı sistemleri ve motorları WebAssembly'e derlerken kullanılan optimizasyon şablonları."
+  },
+  {
+    "num": "17",
+    "name": "EngineVault Pro",
+    "desc": "Özel oyun motoru mimarileri için bellek yönetimi, render pipeline ve component sistemi taslakları."
+  },
+  {
+    "num": "18",
+    "name": "ChessVault Pro",
+    "desc": "Standart dışı satranç varyantları geliştirmek için kural setleri, oyun ağaçları ve yapay zeka değerlendirme (eval) fonksiyonları."
+  },
+  {
+    "num": "19",
+    "name": "GodotVault Pro",
+    "desc": "Godot Engine ve GDScript entegrasyonları için yapay zeka destekli kod parçacıkları."
+  },
+  {
+    "num": "20",
+    "name": "NiloVault Pro",
+    "desc": "3D modelleme iş akışlarını (özellikle Nilo AI gibi araçlarla) hızlandıran asset promptları."
+  },
+  {
+    "num": "21",
+    "name": "PGCVault Pro",
+    "desc": "Prosedürel içerik (harita, zindan, arazi) üretimi için matematiksel algoritmalar."
+  },
+  {
+    "num": "22",
+    "name": "DialogVault Pro",
+    "desc": "NPC'ler için dinamik, bağlama duyarlı diyalog ağaçları ve JSON formatında senaryo çıktıları."
+  },
+  {
+    "num": "23",
+    "name": "BalanceVault Pro",
+    "desc": "Oyun içi ekonomi ve güç dengesini (skill cooldown, hasar formülleri) simüle eden hesaplama aracı."
+  },
+  {
+    "num": "24",
+    "name": "FirebaseVault Pro",
+    "desc": "Oyunlar ve web araçları için backend, yetkilendirme ve sunucusuz veritabanı şablonları."
+  },
+  {
+    "num": "25",
+    "name": "ShaderVault Pro",
+    "desc": "GLSL/HLSL shader kodları üreten, optimize eden ve görselleştiren AI asistanı."
+  },
+  {
+    "num": "26",
+    "name": "StateVault Pro",
+    "desc": "Karmaşık state-machine (durum makinesi) yapılarını modelleyen ve C++ çıktı veren araç."
+  },
+  {
+    "num": "27",
+    "name": "PhysicsVault Pro",
+    "desc": "Özel fizik motoru çarpışma testleri için vektör hesabı ve optimizasyon algoritmaları."
+  },
+  {
+    "num": "28",
+    "name": "AssetVault Pro",
+    "desc": "On binlerce oyun içi grafik ve ses dosyasını kategorize eden, meta-veri etiketleme sistemi."
+  },
+  {
+    "num": "29",
+    "name": "QuestVault Pro",
+    "desc": "Çok dallı (branching) RPG görev tasarımı jeneratörü."
+  },
+  {
+    "num": "30",
+    "name": "MatchVault Pro",
+    "desc": "Çok oyunculu rekabetçi oyunlar (örn: battle royale veya satranç) için eşleştirme (matchmaking) şablonları."
+  },
+  {
+    "num": "31",
+    "name": "MythVault Pro",
+    "desc": "Manihéizm, apokrif metinler ve antik mitolojiler üzerine derinlemesine teolojik veri tabanı."
+  },
+  {
+    "num": "32",
+    "name": "AngelVault Pro",
+    "desc": "Mastema, kerublar ve melek hiyerarşileri gibi spesifik figürler için karakter/lore jeneratörü."
+  },
+  {
+    "num": "33",
+    "name": "LoreVault Pro",
+    "desc": "Devasa evrenler için (10.000+ karakterlik) \"Görsel Veri Motoru\" iş akışlarına uygun karakter şablonları."
+  },
+  {
+    "num": "34",
+    "name": "HistoryVault Pro",
+    "desc": "Profesyonel seviyede birincil kaynak analizi, çapraz referanslama ve tarihsel veri doğrulama asistanı."
+  },
+  {
+    "num": "35",
+    "name": "KemalistVault Pro",
+    "desc": "Kemalizm, milli şuur hareketleri ve Cumhuriyet dönemi ideolojik yapıları üzerine araştırma promptları."
+  },
+  {
+    "num": "36",
+    "name": "GökalpVault Pro",
+    "desc": "Ziya Gökalp sosyolojisi, Türkçülük fikirleri ve dönemsel akımları modern bağlamda sentezleyen analiz aracı."
+  },
+  {
+    "num": "37",
+    "name": "TimelineVault Pro",
+    "desc": "Tarihsel olayları, kırılma noktalarını ve sebep-sonuç ilişkilerini haritalayan veri yapıları."
+  },
+  {
+    "num": "38",
+    "name": "EtymologyVault Pro",
+    "desc": "Kelimelerin kökenlerini, diller arası geçişlerini ve anlamsal evrimlerini inceleyen sözlük."
+  },
+  {
+    "num": "39",
+    "name": "ArchiveVault Pro",
+    "desc": "Eski metinlerin ve arşiv belgelerinin (OCR sonrası) çeviri optimizasyonu ve anlamlandırma promptları."
+  },
+  {
+    "num": "40",
+    "name": "CharacterVault Pro",
+    "desc": "Psikolojik derinliğe sahip kurgusal figür profilleri jeneratörü."
+  },
+  {
+    "num": "41",
+    "name": "NarrativeVault Pro",
+    "desc": "Senaryolar ve kurgusal eserler için yapısal iskelet (Monomyth vb.) kurucu."
+  },
+  {
+    "num": "42",
+    "name": "PantheVault Pro",
+    "desc": "Farklı panteonlar arası karşılaştırmalı teoloji ve mitoloji analizi yapan sorgu aracı."
+  },
+  {
+    "num": "43",
+    "name": "ProphecyVault Pro",
+    "desc": "Kurgu evrenler için apokaliptik metinler, kehanetler ve kadim sembolizm üreteci."
+  },
+  {
+    "num": "44",
+    "name": "CultureVault Pro",
+    "desc": "Kurgusal kültürlerin antropolojik altyapısını (gelenek, din, dil ailesi) inşa eden asistan."
+  },
+  {
+    "num": "45",
+    "name": "EpicVault Pro",
+    "desc": "Destansı anlatı formlarını taklit eden, ritmik ve arkaik metin jeneratörü."
+  },
+  {
+    "num": "46",
+    "name": "KargoVault Pro",
+    "desc": "GitHub limitlerini aşmak için büyük dosyaları parselleyen (örn: 500MB'ı 20MB'lık paketlere bölen) sistem mimarisi."
+  },
+  {
+    "num": "47",
+    "name": "AegisVault Pro",
+    "desc": "Hibrid güvenlik mimarileri, ısı koruma (Thermo-Guard) ve biyolojik web (Bio-Web) katmanları gibi kompleks endüstriyel tasarımlar için teknik fizibilite şablonları."
+  },
+  {
+    "num": "48",
+    "name": "ArchVault Pro",
+    "desc": "Mikroservis ve monolitik sistem tasarımları için mimari çizim ve C4 modeli komutları."
+  },
+  {
+    "num": "49",
+    "name": "SecVault Pro",
+    "desc": "Statik kod analizleri ve güvenlik açığı testleri (SAST/DAST) için denetim promptları."
+  },
+  {
+    "num": "50",
+    "name": "DeployVault Pro",
+    "desc": "CI/CD pipeline'ları için Docker, Kubernetes ve Terraform konfigürasyon şablonları."
+  },
+  {
+    "num": "51",
+    "name": "RegexVault Pro",
+    "desc": "Karmaşık metin madenciliği ve log analizi için Regex jeneratörü."
+  },
+  {
+    "num": "52",
+    "name": "CronVault Pro",
+    "desc": "Zamanlanmış sunucu görevleri ve sistem otomasyonları için betik kütüphanesi."
+  },
+  {
+    "num": "53",
+    "name": "LogVault Pro",
+    "desc": "Anormallikleri (anomaly detection) tespit etmek üzere tasarlanmış log işleme ajanları."
+  },
+  {
+    "num": "54",
+    "name": "CloudVault Pro",
+    "desc": "Mimari maliyet optimizasyonu ve cloud-native yapılandırma promptları."
+  },
+  {
+    "num": "55",
+    "name": "ApiVault Pro",
+    "desc": "RESTful ve GraphQL API tasarımı, uç nokta (endpoint) dokümantasyonu."
+  },
+  {
+    "num": "56",
+    "name": "DbVault Pro",
+    "desc": "SQL ve NoSQL veritabanı şema tasarımı, ilişki haritaları ve sorgu optimizasyonu."
+  },
+  {
+    "num": "57",
+    "name": "WasmDevVault Pro",
+    "desc": "Tarayıcı içi WebAssembly modüllerinin performans metriklerini ve darboğazlarını (bottleneck) analiz eden debug aracı."
+  },
+  {
+    "num": "58",
+    "name": "MemVault Pro",
+    "desc": "C++ tabanlı projeler için bellek sızıntısı (memory leak) analizi ve pointer yönetim şablonları."
+  },
+  {
+    "num": "59",
+    "name": "ScriptVault Pro",
+    "desc": "Bash ve PowerShell üzerinden terminal tabanlı iş akışı otomasyonu komut dizileri."
+  },
+  {
+    "num": "60",
+    "name": "GitVault Pro",
+    "desc": "Gelişmiş Git repo yönetimi, conflict çözümleri ve geçmiş (history) manipülasyonu komutları."
+  },
+  {
+    "num": "61",
+    "name": "AutoVault Pro",
+    "desc": "Kapsamlı otomasyon kampları ve e-ticaret süreçlerinin teknik kurgularını yöneten AI şablonları."
+  },
+  {
+    "num": "62",
+    "name": "ObsiVault Pro",
+    "desc": "Obsidian ve Zettelkasten metodolojisi için Markdown tabanlı kişisel bilgi yönetimi promptları."
+  },
+  {
+    "num": "63",
+    "name": "StoryVault Pro",
+    "desc": "Storytel gibi platformlardaki uzun formatlı sesli kitaplar/metinler için bölüm sonu özetleyici ve tematik analiz aracı."
+  },
+  {
+    "num": "64",
+    "name": "TravelVault Pro",
+    "desc": "Şehirlerarası otobüs yolculukları gibi solo seyahatler için rota, bütçe ve yolda geçirilecek zamanı (okuma, kodlama) optimize eden planlayıcı."
+  },
+  {
+    "num": "65",
+    "name": "AgendaVault Pro",
+    "desc": "Haftalık ajanda planlaması, önceliklendirme matrisleri ve hedef takibi aracı."
+  },
+  {
+    "num": "66",
+    "name": "FocusVault Pro",
+    "desc": "Derin çalışma (deep work) seansları için görev bölücü ve motivasyonel takip aracı."
+  },
+  {
+    "num": "67",
+    "name": "BudgetVault Pro",
+    "desc": "Abonelikler, öğrenci bursları ve mikro-satın alımlar (oyun içi harcamalar dahil) için harcama/nakit akışı izleyici."
+  },
+  {
+    "num": "68",
+    "name": "EcomVault Pro",
+    "desc": "Ürün açıklamaları, SEO metinleri ve dönüşüm oranı optimizasyonu (CRO) için pazarlama promptları."
+  },
+  {
+    "num": "69",
+    "name": "MealVault Pro",
+    "desc": "Yerel restoran siparişlerini (tavuk döner, çiğ köfte vb.) makro besin değerleri ve bütçe ile eşleştiren günlük takip asistanı."
+  },
+  {
+    "num": "70",
+    "name": "MailVault Pro",
+    "desc": "Kurumsal iletişim, sponsorluk dosyaları ve profesyonel ağ kurma (networking) için e-posta taslakları."
+  },
+  {
+    "num": "71",
+    "name": "SocialVault Pro",
+    "desc": "Sosyal medya algoritma analizleri ve etkileşim artırıcı içerik kancaları (hooks)."
+  },
+  {
+    "num": "72",
+    "name": "AdVault Pro",
+    "desc": "Dijital reklamcılık için A/B test senaryoları ve reklam metni (ad copy) şablonları."
+  },
+  {
+    "num": "73",
+    "name": "FunnelVault Pro",
+    "desc": "Satış hunisi tasarımı ve kullanıcı yolculuğu (customer journey) haritalama."
+  },
+  {
+    "num": "74",
+    "name": "ScrapVault Pro",
+    "desc": "Web kazıma (scraping) süreçleri için etik sınırları koruyan ve veri yapılandıran scriptler."
+  },
+  {
+    "num": "75",
+    "name": "MacroVault Pro",
+    "desc": "Klavye kısayolları ve işletim sistemi makroları üreten hızlandırıcı komutlar."
+  },
+  {
+    "num": "76",
+    "name": "PwaVault Pro",
+    "desc": "Çevrimdışı çalışabilen Progressive Web App manifestoları ve service worker şablonları."
+  },
+  {
+    "num": "77",
+    "name": "UI/UXVault Pro",
+    "desc": "Karanlık tema (dark mode), minimalizm ve font hiyerarşisi üzerine tasarım kuralları/CSS snippet kütüphanesi."
+  },
+  {
+    "num": "78",
+    "name": "CryptoVault Pro",
+    "desc": "Akıllı kontrat yazımı, blokzincir algoritması analizi ve Web3 entegrasyon komutları."
+  },
+  {
+    "num": "79",
+    "name": "BioVault Pro",
+    "desc": "Biyolojik sistemler ve veri analizi üzerine kavramsal araştırma şablonları."
+  },
+  {
+    "num": "80",
+    "name": "LawVault Pro",
+    "desc": "Sözleşme incelemesi, maddelendirme ve temel analitik okuma için yapılandırılmış promptlar."
+  },
+  {
+    "num": "81",
+    "name": "MedVault Pro",
+    "desc": "Medikal/anatomik terimler için yapılandırılmış flashcard (çalışma kartı) üreticisi."
+  },
+  {
+    "num": "82",
+    "name": "LinguaVault Pro",
+    "desc": "Yabancı dil öğreniminde etimolojik bağlar kurarak kelime ezberleten asistan."
+  },
+  {
+    "num": "83",
+    "name": "MathVault Pro",
+    "desc": "İleri düzey lineer cebir ve algoritmik matematik problemlerini parçalara ayıran çözümleyici."
+  },
+  {
+    "num": "84",
+    "name": "StatVault Pro",
+    "desc": "Veri görselleştirme ve istatistiksel veri setlerini anlamlandırma komutları."
+  },
+  {
+    "num": "85",
+    "name": "IoTVault Pro",
+    "desc": "Sensör verisi işleme, cihaz telemetrisi ve donanım/yazılım haberleşme protokolleri."
+  },
+  {
+    "num": "86",
+    "name": "HrdVault Pro",
+    "desc": "Donanım mantığı, devre şeması analizi ve mikrodenetleyici entegrasyonu rehberi."
+  },
+  {
+    "num": "87",
+    "name": "ArVault Pro",
+    "desc": "Artırılmış gerçeklik arayüzleri ve uzamsal (spatial) tasarım kuralları."
+  },
+  {
+    "num": "88",
+    "name": "VrVault Pro",
+    "desc": "Sanal gerçeklik ortamlarında 3D etkileşim ve UI tasarım şablonları."
+  },
+  {
+    "num": "89",
+    "name": "EcoVault Pro",
+    "desc": "Sistem mimarilerinin enerji tüketimini ve karbon ayak izini simüle eden hesaplama araçları."
+  },
+  {
+    "num": "90",
+    "name": "PsyVault Pro",
+    "desc": "Psikolojik teoriler, kullanıcı davranış analizi ve persona derinleştirme araçları."
+  },
+  {
+    "num": "91",
+    "name": "PhiloVault Pro",
+    "desc": "Felsefi argümantasyon, düşünce deneyleri ve diyalektik tartışma şablonları."
+  },
+  {
+    "num": "92",
+    "name": "InvestVault Pro",
+    "desc": "Finansal okuryazarlık, temel analiz ve veri okuma (scraping ile toplanan veriler için) aracı."
+  },
+  {
+    "num": "93",
+    "name": "ReelVault Pro",
+    "desc": "Kısa form video kurgusu, sahne ritmi ve retention (elde tutma) optimizasyon senaryoları."
+  },
+  {
+    "num": "94",
+    "name": "EventVault Pro",
+    "desc": "Fiziksel/online eğitim kampları ve etkinlikler için akış yönetimi şablonları."
+  },
+  {
+    "num": "95",
+    "name": "AstroVault Pro",
+    "desc": "Uzay bilimleri, göksel mekanik ve kurgusal evrenler için gezegen/yörünge formülasyonları."
+  },
+  {
+    "num": "96",
+    "name": "AgriVault Pro",
+    "desc": "Algoritmik büyüme modelleri ve kaynak optimizasyonu veri setleri."
+  },
+  {
+    "num": "97",
+    "name": "FormatVault Pro",
+    "desc": "Üretilen çıktıların JSON, XML, Markdown veya spesifik özel formatlara (custom parser'lar için) hatasız dökülmesini sağlayan güvenlik duvarı promptları."
+  }
+]

@@ -1,0 +1,340 @@
+{
+  "slug": "43-prophecyvault-pro",
+  "title": "ProphecyVault Pro — Tarih, Mitoloji & Hikaye",
+  "metaDescription": "Kurgu evrenler için apokaliptik metinler, kehanetler ve kadim sembolizm üreteci.",
+  "metaKeywords": [
+    "Prophecy",
+    "ProphecyVault Pro",
+    "Tarih, Mitoloji & Hikaye",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Kurgu evrenler için apokaliptik metinler, kehanetler ve kadim sembolizm üreteci.",
+  "heroCorner": "P",
+  "heroEyebrow": "Tarih, Mitoloji & Hikaye · Alet Çantası",
+  "heroTitleHTML": "Prophecy<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Prophecy<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ProphecyVault Pro · Tarih, Mitoloji & Hikaye",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Prophecy ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "prophecyvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "history",
+  "categoryLabel": "Tarih, Mitoloji & Hikaye",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#d4a04c",
+    "primary2": "#d4a04c",
+    "primaryDim": "#d4a04c15",
+    "primaryGlow": "#d4a04c30",
+    "primaryDark": "#b6822e",
+    "accent": "#c97e4c",
+    "accent2": "#c97e4c",
+    "accentDim": "#c97e4c18",
+    "accentGlow": "#c97e4c30",
+    "bg": "#0e0a06",
+    "bg2": "#120e0a",
+    "bg3": "#16120e",
+    "bg4": "#1a1612",
+    "border": "#1e1a16",
+    "border2": "#26221e",
+    "border3": "#322e2a",
+    "heroBg": "#120e0a"
+  },
+  "categories": [
+    {
+      "id": "Kehanet Yazımı",
+      "name": "Kehanet Yazımı",
+      "color": "#d4a04c"
+    },
+    {
+      "id": "Apokaliptik Metinler",
+      "name": "Apokaliptik Metinler",
+      "color": "#b8863a"
+    },
+    {
+      "id": "Sembolik Dil",
+      "name": "Sembolik Dil",
+      "color": "#e0b566"
+    },
+    {
+      "id": "Kadim Öngörü Sistemleri",
+      "name": "Kadim Öngörü Sistemleri",
+      "color": "#9c7030"
+    },
+    {
+      "id": "Kurgu Kehaneti",
+      "name": "Kurgu Kehaneti",
+      "color": "#eac57f"
+    },
+    {
+      "id": "Kader ve Özgür İrade",
+      "name": "Kader ve Özgür İrade",
+      "color": "#8a6228"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Kehanet Yazımı",
+      "name": "Muğlak Kehanet Formülü",
+      "desc": "Farklı yorumlara açık, geriye dönük doğrulanabilir kehanet metinleri yazın.",
+      "tags": [
+        "kehanet",
+        "muğlak",
+        "yorum"
+      ],
+      "badge1": "Orta",
+      "content": "## Muğlak Kehanet\n1. Sembolik imgeler kullan (kartal, ay, kılıç).\n2. Soyut fiiller seç (yükselir, düşer, kavuşur).\n3. Zamanı belirsiz tut (bir gün, karanlık çağda).\n4. İki zıt yorumu mümkün kıl.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Kehanet Yazımı",
+      "name": "Kıyamet Kehaneti Yapısı",
+      "desc": "Belirli semboller ve olaylar dizisiyle inandırıcı son zaman metni oluşturun.",
+      "tags": [
+        "kıyamet",
+        "yapı",
+        "son"
+      ],
+      "badge1": "İleri",
+      "content": "## Kıyamet Yapısı\n1. Habercileri listele (yıldız düşmesi, salgın).\n2. Yedi/on kademe sistemini kurgula.\n3. Kurtarılanlar ve yargılananlar ayrımını yap.\n4. Yeni çağın doğuşuyla bitir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Kehanet Yazımı",
+      "name": "Arkaik Dil ve Ritim",
+      "desc": "Kehanetin otoritesini pekiştiren kadim ve ritmik dil kalıpları.",
+      "tags": [
+        "arkaik",
+        "ritim",
+        "dil"
+      ],
+      "badge1": "Orta",
+      "content": "## Arkaik Üslup\n1. Özne-yüklem inversiyonu uygula.\n2. Tekrarlayan sesler (aliterasyon) ekle.\n3. Şiirsel ölçü veya dörtlük biçimi dene.\n4. Anlaşılmaz bir veya iki hapax legomenon bırak.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Apokaliptik Metinler",
+      "name": "Yedi Mühür / Yedi Bela Yapısı",
+      "desc": "Kademeli felaket aşamalarını simgelerle yapılandırın.",
+      "tags": [
+        "yedi",
+        "bela",
+        "mühür"
+      ],
+      "badge1": "İleri",
+      "content": "## Yedi Aşama\n1. Her aşamaya bir sembol ve felaket tipi ata.\n2. Şiddet artan bir ilerleme kur.\n3. Ara vizyonlar ve iç içe anlatı ekle.\n4. Yedinci aşamayı beklenmedik sonla bitir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Apokaliptik Metinler",
+      "name": "Son Savaş Sahneleme",
+      "desc": "Armageddon türü son çatışmayı mitolojik çerçevede tasarlayın.",
+      "tags": [
+        "son savaş",
+        "armageddon",
+        "çatışma"
+      ],
+      "badge1": "İleri",
+      "content": "## Son Savaş\n1. Karşıt güçleri (ışık/karanlık) sembolik adla belirle.\n2. Savaş öncesi işaretleri listele.\n3. Kahramanın kurban olarak rolünü ekle.\n4. Yeni düzenin nasıl doğduğunu göster.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Sembolik Dil",
+      "name": "Sayı Sembolizmi Rehberi",
+      "desc": "3, 7, 12, 40 gibi kutsal sayıların anlatıda kullanım kuralları.",
+      "tags": [
+        "sayı",
+        "sembol",
+        "kutsal"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Sayı Sembolizmi\n1. Temel kutsal sayıları ve anlamlarını listele.\n2. Sayıları sahne yapısında kullan (üçlü tekrar).\n3. Dini/kültürel bağlamla sayı seçimini uyumlu tut.\n4. Sayı üst üste binmelerinden anlam üret.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Sembolik Dil",
+      "name": "Hayvan Sembolizmi Sözlüğü",
+      "desc": "Kehanet ve apokaliptik metinlerde hayvanların sembolik anlamları.",
+      "tags": [
+        "hayvan",
+        "sembol",
+        "sözlük"
+      ],
+      "badge1": "Orta",
+      "content": "## Hayvan Sembolleri\n1. Klasik apokaliptik hayvanları listele (aslan, kartal, ejder).\n2. Her hayvanın taşıdığı güç/olumsuzluğu belirle.\n3. Bileşik yaratıkların nasıl oluşturulacağını göster.\n4. Farklı kültürlerdeki sembol farklılıklarını not et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Sembolik Dil",
+      "name": "Renk Kodu Sistemi",
+      "desc": "Kehanetin renk dilini tutarlı ve güçlü bir anlam sistemiyle kurun.",
+      "tags": [
+        "renk",
+        "kod",
+        "sembol"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Renk Dili\n1. Her renge temel anlam ata (kırmızı=savaş/kan).\n2. Farklı kültürlerdeki renk farklılıklarını incele.\n3. Renk geçişlerini olayların habercisi yap.\n4. Kurgu dünyanda tutarlı renk dilini koru.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Kadim Öngörü Sistemleri",
+      "name": "Şamanistik Vizyon Ritueli",
+      "desc": "Şamanın öteki dünyaya geçiş ve kehanet sürecini yapılandırın.",
+      "tags": [
+        "şaman",
+        "vizyon",
+        "ritüel"
+      ],
+      "badge1": "İleri",
+      "content": "## Şaman Vizyonu\n1. Hazırlık ritüelini tasarla (oruç, dans, madde).\n2. Ruhlar dünyasının coğrafyasını belirle.\n3. Rehber ruh figürünü ekle.\n4. Dönüş ve mesajın aktarımını dramatize et.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Kadim Öngörü Sistemleri",
+      "name": "Kehanet Falı Mekanizmaları",
+      "desc": "Entrail okuma, bird watching, lot çekme gibi fal sistemlerini karşılaştırın.",
+      "tags": [
+        "fal",
+        "augury",
+        "mekanizma"
+      ],
+      "badge1": "Orta",
+      "content": "## Fal Sistemleri\n1. Her sistemin araç ve uzmanını belirle.\n2. Yorumlama kurallarını özetle.\n3. Yanlış yorumun sonuçlarını kurgula.\n4. Farklı kültürlerdeki paralelleri listele.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Kurgu Kehaneti",
+      "name": "Kendi Kendini Gerçekleştiren Kehanet",
+      "desc": "Kahramanın kehanetin doğrulanması için savaştığı paradoksal yapı.",
+      "tags": [
+        "kendi-gerçekleştiren",
+        "paradoks",
+        "kader"
+      ],
+      "badge1": "İleri",
+      "content": "## Kendi Gerçekleştiren Kehanet\n1. Kehanet tam olarak paylaşılıyor mu, belirle.\n2. Kaçınma çabasının felaket getireceğini kurgula.\n3. Kritik kararı kahramanın bilgi eksikliğinden türet.\n4. Kehanetin gerçekleştiği anı ironik yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Kurgu Kehaneti",
+      "name": "Ters Yüz Kehanet",
+      "desc": "Kehanet gerçekleşir ama hiç beklenmedik biçimde — tasarım kalıpları.",
+      "tags": [
+        "ters",
+        "sürpriz",
+        "beklenmedik"
+      ],
+      "badge1": "İleri",
+      "content": "## Ters Yüz Kehanet\n1. Kehanetin kelimelerini ikili anlamlı yaz.\n2. Okuyucuyu bir yoruma yönlendir.\n3. Gerçekleşme anında ikinci yorumu aç.\n4. Adil ipuçlarını geriye dönük görünür yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Kader ve Özgür İrade",
+      "name": "Kader vs Özgür İrade Çatışması",
+      "desc": "Karakterin belirlenmiş kaderiyle verdiği kararlar arasındaki felsefi gerilim.",
+      "tags": [
+        "kader",
+        "özgür irade",
+        "çatışma"
+      ],
+      "badge1": "İleri",
+      "content": "## Kader-Özgür İrade\n1. Kehanetin ne kadarının sabit olduğunu belirle.\n2. Karaktere sahici seçimler ver.\n3. Seçimlerin sonucu değil yolu değiştirdiğini göster.\n4. Soruyu cevapsız bırakarak tematik derinlik yarat.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Kader ve Özgür İrade",
+      "name": "Kader Direncinin Bedeli",
+      "desc": "Kehanetle savaşmanın karaktere maliyetini dramatize edin.",
+      "tags": [
+        "direniş",
+        "bedel",
+        "kader"
+      ],
+      "badge1": "Orta",
+      "content": "## Direniş Bedeli\n1. Karakterin kahramanca kaçınma çabasını göster.\n2. Her çabada beklenmedik bedeli ortaya çıkar.\n3. Direnişin felaketleştirdiği kişileri ekle.\n4. Kabullenme anını derin bir hüzünle işle.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Kurgu Kehaneti",
+      "name": "Seçilmiş Kişi Tuzağı",
+      "desc": "Seçilmiş kişi anlatısını beklenmedik biçimde tersine çevirin.",
+      "tags": [
+        "seçilmiş",
+        "klişe",
+        "tersine çevirme"
+      ],
+      "badge1": "Orta",
+      "content": "## Seçilmiş Kişi Tuzağı\n1. Klişe seçilmiş kişi beklentisini oluştur.\n2. Kahramanın özelliğini olağan göster.\n3. 'Seçilmişlik' kurgusunun içten çürümesini planla.\n4. Gerçek kahramanı beklenmedik bir yerden çıkar.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

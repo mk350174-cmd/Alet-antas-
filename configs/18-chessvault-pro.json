@@ -1,0 +1,465 @@
+{
+  "slug": "18-chessvault-pro",
+  "title": "ChessVault Pro — Oyun Motoru & 3D",
+  "metaDescription": "Standart dışı satranç varyantları geliştirmek için kural setleri, oyun ağaçları ve yapay zeka değerlendirme (eval) fonksiyonları.",
+  "metaKeywords": [
+    "Chess",
+    "ChessVault Pro",
+    "Oyun Motoru & 3D",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Standart dışı satranç varyantları geliştirmek için kural setleri, oyun ağaçları ve yapay zeka değerlendirme (eval) fonksiyonları.",
+  "heroCorner": "C",
+  "heroEyebrow": "Oyun Motoru & 3D · Alet Çantası",
+  "heroTitleHTML": "Chess<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Chess<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ChessVault Pro · Oyun Motoru & 3D",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Chess ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "chessvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "game",
+  "categoryLabel": "Oyun Motoru & 3D",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#5ed47e",
+    "primary2": "#5ed47e",
+    "primaryDim": "#5ed47e15",
+    "primaryGlow": "#5ed47e30",
+    "primaryDark": "#40b660",
+    "accent": "#4fc3f7",
+    "accent2": "#4fc3f7",
+    "accentDim": "#4fc3f718",
+    "accentGlow": "#4fc3f730",
+    "bg": "#06100a",
+    "bg2": "#0a140e",
+    "bg3": "#0e1812",
+    "bg4": "#121c16",
+    "border": "#16201a",
+    "border2": "#1e2822",
+    "border3": "#2a342e",
+    "heroBg": "#0a140e"
+  },
+  "categories": [
+    {
+      "id": "Kural Setleri",
+      "name": "Kural Setleri",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "Oyun Ağaçları",
+      "name": "Oyun Ağaçları",
+      "color": "#2196F3"
+    },
+    {
+      "id": "Değerlendirme Fonksiyonları",
+      "name": "Değerlendirme Fonksiyonları",
+      "color": "#FFC107"
+    },
+    {
+      "id": "Varyant Üretimi",
+      "name": "Varyant Üretimi",
+      "color": "#E91E63"
+    },
+    {
+      "id": "3D Modellemeler",
+      "name": "3D Modellemeler",
+      "color": "#9C27B0"
+    },
+    {
+      "id": "AI Eğitim",
+      "name": "AI Eğitim",
+      "color": "#00BCD4"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Kural Setleri",
+      "name": "Kral Kaçış Satrancı",
+      "desc": "Taşların kaçma kuralı olan satranç varyantı.",
+      "tags": [
+        "kural",
+        "varyant",
+        "kaçış"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kral Kaçış Satrancı Kuralları\n1. Her taş, normal satrançtaki gibi hareket eder.\n2. Rakip şah, mat yerine kaçacak şekilde hareket edebiliyorsa, oyun devam eder.\n3. Şahın kaçabileceği bir kare varsa, şah o kareye gitmelidir.\n4. Kaçış mümkün değilse oyun mat ile biter.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Kural Setleri",
+      "name": "Bomba Satrancı",
+      "desc": "Belirli taşların patlama etkisi olduğu satranç oyunu.",
+      "tags": [
+        "kural",
+        "varyant",
+        "bomba"
+      ],
+      "badge1": "Orta",
+      "content": "## Bomba Satrancı Kuralları\n1. Filler ve Atlara 'bomba' özelliği eklenir.\n2. Bomba taşı ile rakip taş alındığında, etkileşim alanındaki tüm taşlar (kendi taşlarınız dahil) tahtadan kalkar.\n3. Şaha uygulanamaz. Şahı etkilemez.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Kural Setleri",
+      "name": "Ters Satranç",
+      "desc": "Oyunun amacı şahı korumak değil, tüm taşları kaybetmek.",
+      "tags": [
+        "kural",
+        "varyant",
+        "ters"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Ters Satranç Kuralları\n1. Amaç, tüm taşlarınızı rakibe yedirmektir.\n2. Şahı mat eden değil, tüm taşlarını ilk kaybeden kazanır.\n3. Şahın alınması durumunda oyun biter.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Kural Setleri",
+      "name": "Anarşi Satrancı",
+      "desc": "Taşların gelişigüzel hareket edebildiği kaotik varyant.",
+      "tags": [
+        "kural",
+        "varyant",
+        "anarşi"
+      ],
+      "badge1": "İleri",
+      "content": "## Anarşi Satrancı Kuralları\n1. Her hamle, oyuncunun seçtiği bir taşın geçerli olduğu normal hamledir.\n2. Ancak, hamle sonrası taşın yeri değişebilir (normal hamle yapılmışsa).\n3. Oyuncu, hamle sonrası taşın yerini manuel olarak değiştirebilir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Oyun Ağaçları",
+      "name": "Açılış Varyantı Ağacı",
+      "desc": "Yaygın satranç açılışlarının varyantlarını gösteren ağaç.",
+      "tags": [
+        "ağaç",
+        "açılış",
+        "varyant"
+      ],
+      "badge1": "Orta",
+      "content": "## Açılış Varyant Ağacı\n1. Belirli bir açılışın tüm bilinen varyantlarını görselleştirin.\n2. Her düğüm, bir hamle dizisini temsil eder.\n3. Yapraklar, popüler devam yollarını gösterir.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Oyun Ağaçları",
+      "name": "Oyun Sonu Pozisyon Ağacı",
+      "desc": "Oyun sonu pozisyonlarındaki hamleleri ve sonuçları içeren ağaç.",
+      "tags": [
+        "ağaç",
+        "oyun sonu",
+        "pozisyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Oyun Sonu Ağacı\n1. Belirli bir oyun sonu pozisyonu için olası tüm hamleleri ve sonuçları (kazanç, beraberlik) haritalayın.\n2. Değerlendirme fonksiyonu ile pozisyon değerlerini düğümlere atayın.\n3. Kayıp veya kazanç yollarını analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Oyun Ağaçları",
+      "name": "Varyant Kombinasyon Ağacı",
+      "desc": "Farklı kurallı varyantların kesişim noktalarını gösteren ağaç.",
+      "tags": [
+        "ağaç",
+        "kural",
+        "kombinasyon"
+      ],
+      "badge1": "İleri",
+      "content": "## Kombinasyon Ağacı\n1. Farklı kural setlerinin uygulandığı oyunları analiz edin.\n2. Belirli bir hamle dizisinin farklı varyantlardaki sonuçlarını karşılaştırın.\n3. Yeni stratejik fikirler keşfedin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Değerlendirme Fonksiyonları",
+      "name": "Taş Değeri Dengesi Fonksiyonu",
+      "desc": "Standart dışı taş değerlerini hesaplayan eval fonksiyonu.",
+      "tags": [
+        "eval",
+        "değer",
+        "taş"
+      ],
+      "badge1": "Orta",
+      "content": "## Taş Değeri Dengesi\n1. Farklı varyantlardaki taşların göreceli değerlerini belirleyin.\n2. Rastgele başlangıç taş dizilimleri için başlangıç dengesini hesaplayın.\n3. Oyunun ilk aşamalarındaki dengeyi ölçün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Değerlendirme Fonksiyonları",
+      "name": "Güvenlik Odaklı Eval",
+      "desc": "Şah güvenliğini önceliklendiren değerlendirme fonksiyonu.",
+      "tags": [
+        "eval",
+        "güvenlik",
+        "şah"
+      ],
+      "badge1": "Orta",
+      "content": "## Güvenlik Odaklı Eval\n1. Şahın güvenliğini en önemli faktör olarak kabul edin.\n2. Şaha yakınlık, rakip taşların tehditleri gibi metrikleri kullanın.\n3. Açık pozisyonlarda şah güvenliği puanını düşürün.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Değerlendirme Fonksiyonları",
+      "name": "Materyal Avantajı Eval",
+      "desc": "Materyal üstünlüğünü hassas ölçen eval fonksiyonu.",
+      "tags": [
+        "eval",
+        "materyal",
+        "avantaj"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Materyal Avantajı Eval\n1. Standart taş değerlerini temel alın (Piyon=1, At=3, Fil=3, Kale=5, Vezir=9).\n2. Alınan taşları ve verilen taşları hesaba katın.\n3. Pozisyonel faktörleri minimumda tutun.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Varyant Üretimi",
+      "name": "Rastgele Başlangıç Üretici",
+      "desc": "Satranç tahtasında rastgele taş dizilimleri oluşturan araç.",
+      "tags": [
+        "varyant",
+        "üretici",
+        "rastgele"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Rastgele Başlangıç Üretici\n1. Belirli bir sayıda taşı, belirlenen karelere rastgele yerleştirin.\n2. Şahların başlangıçta güvenli olmasını sağlayın.\n3. Oyun dengesini optimize etmek için başlangıçları filtreleyin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Varyant Üretimi",
+      "name": "Kural Modifikasyon Aracı",
+      "desc": "Mevcut satranç kurallarını değiştirmek için şablon.",
+      "tags": [
+        "varyant",
+        "kural",
+        "modifikasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## Kural Modifikasyon Aracı\n1. Mevcut taş hareket kurallarını seçin.\n2. Yeni hareketler, alma kuralları veya özel yetenekler ekleyin.\n3. Oyunun hızını ve karmaşıklığını ayarlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Varyant Üretimi",
+      "name": "Boyut ve Şekil Değiştirici",
+      "desc": "Farklı boyutlarda ve şekillerde satranç tahtaları için kurallar.",
+      "tags": [
+        "varyant",
+        "boyut",
+        "tahta"
+      ],
+      "badge1": "Orta",
+      "content": "## Boyut Değiştirici\n1. Standart 8x8 dışında tahta boyutları tanımlayın (örn. 10x10).\n2. Yeni tahta boyutlarına uygun taş dizilimleri ve kurallar geliştirin.\n3. Ekstra karelerin oyun üzerindeki etkisini analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Varyant Üretimi",
+      "name": "Yeni Taş Tasarımcısı",
+      "desc": "Oyuna yeni taşlar eklemek için tasarım şablonu.",
+      "tags": [
+        "varyant",
+        "taş",
+        "tasarım"
+      ],
+      "badge1": "İleri",
+      "content": "## Yeni Taş Tasarımcısı\n1. Yeni bir taşın hareketini ve alma şeklini tanımlayın.\n2. Taşın başlangıç pozisyonunu ve değerini belirleyin.\n3. Oyun dengesi üzerindeki potansiyel etkisini analiz edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "3D Modellemeler",
+      "name": "Klasik Satranç Seti 3D",
+      "desc": "Standart satranç taşları için 3D modeller.",
+      "tags": [
+        "3D",
+        "model",
+        "klasik"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Klasik Set 3D Modelleri\n1. Her taş için yüksek kaliteli 3D modeller oluşturun.\n2. Farklı materyal ve doku seçenekleri sunun.\n3. Oyun motoru entegrasyonu için optimize edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 16,
+      "no": "016",
+      "cat": "3D Modellemeler",
+      "name": "Fütüristik Satranç Seti 3D",
+      "desc": "Modern ve bilim kurgu temalı 3D satranç taşları.",
+      "tags": [
+        "3D",
+        "model",
+        "fütüristik"
+      ],
+      "badge1": "Orta",
+      "content": "## Fütüristik Set 3D Modelleri\n1. Geometrik ve neon tasarımlı taşlar oluşturun.\n2. Hareket ve alınma animasyonları için efektler ekleyin.\n3. Benzersiz bir görsel deneyim sağlayın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 17,
+      "no": "017",
+      "cat": "3D Modellemeler",
+      "name": "Fantezi Satranç Seti 3D",
+      "desc": "Fantastik varlıkları içeren temalı 3D satranç taşları.",
+      "tags": [
+        "3D",
+        "model",
+        "fantezi"
+      ],
+      "badge1": "Orta",
+      "content": "## Fantezi Set 3D Modelleri\n1. Ejderhalar, büyücüler gibi temalı taşlar tasarlayın.\n2. Her taşın kendine özgü bir hikayesi olsun.\n3. Oyunun atmosferini zenginleştirin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 18,
+      "no": "018",
+      "cat": "AI Eğitim",
+      "name": "Oyun Motoru Parametre Ayarı",
+      "desc": "Yapay zeka motorunun parametrelerini optimize etme rehberi.",
+      "tags": [
+        "AI",
+        "eğitim",
+        "parametre"
+      ],
+      "badge1": "Orta",
+      "content": "## Motor Parametre Ayarı\n1. Eval fonksiyonu ağırlıklarını ayarlayın.\n2. Arama derinliği ve zaman kontrolü parametrelerini optimize edin.\n3. Belirli varyantlara göre ayarlar yapın.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 19,
+      "no": "019",
+      "cat": "AI Eğitim",
+      "name": "Varyant Öğrenme Algoritması",
+      "desc": "Yapay zekanın yeni satranç varyantlarını öğrenmesi için algoritma.",
+      "tags": [
+        "AI",
+        "eğitim",
+        "öğrenme"
+      ],
+      "badge1": "İleri",
+      "content": "## Varyant Öğrenme Algoritması\n1. Oyun verilerini kullanarak kuralları ve stratejileri çıkarın.\n2. Kural setlerindeki değişikliklere adapte olabilen bir model geliştirin.\n3. Kendi kendine öğrenmeyi teşvik edin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    },
+    {
+      "id": 20,
+      "no": "020",
+      "cat": "AI Eğitim",
+      "name": "3D Veri Üretimi için AI",
+      "desc": "3D görselleştirmeler için yapay zeka destekli veri üretimi.",
+      "tags": [
+        "AI",
+        "3D",
+        "veri"
+      ],
+      "badge1": "İleri",
+      "content": "## 3D Veri Üretimi\n1. Satranç pozisyonları için otomatik 3D renderlar oluşturun.\n2. Farklı açılar ve ışıklandırmalarla veri setleri zenginleştirin.\n3. Görsel tanıma modellerini eğitin.",
+      "source": {
+        "generated": true,
+        "provider": "gemini",
+        "model": "gemini-2.5-flash-lite"
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "slug": "93-reelvault-pro",
+  "title": "ReelVault Pro — Spesifik Disiplinler & Analitik",
+  "metaDescription": "Kısa form video kurgusu, sahne ritmi ve retention (elde tutma) optimizasyon senaryoları.",
+  "metaKeywords": [
+    "Reel",
+    "ReelVault Pro",
+    "Spesifik Disiplinler & Analitik",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "Kısa form video kurgusu, sahne ritmi ve retention (elde tutma) optimizasyon senaryoları.",
+  "heroCorner": "R",
+  "heroEyebrow": "Spesifik Disiplinler & Analitik · Alet Çantası",
+  "heroTitleHTML": "Reel<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Reel<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ReelVault Pro · Spesifik Disiplinler & Analitik",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Reel ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "reelvault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "analytic",
+  "categoryLabel": "Spesifik Disiplinler & Analitik",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#ff6b6b",
+    "primary2": "#ff6b6b",
+    "primaryDim": "#ff6b6b15",
+    "primaryGlow": "#ff6b6b30",
+    "primaryDark": "#e14d4d",
+    "accent": "#d4a04c",
+    "accent2": "#d4a04c",
+    "accentDim": "#d4a04c18",
+    "accentGlow": "#d4a04c30",
+    "bg": "#0e0606",
+    "bg2": "#120a0a",
+    "bg3": "#160e0e",
+    "bg4": "#1a1212",
+    "border": "#1e1616",
+    "border2": "#261e1e",
+    "border3": "#322a2a",
+    "heroBg": "#120a0a"
+  },
+  "categories": [
+    {
+      "id": "Sinema Tarihi",
+      "name": "Sinema Tarihi",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "Senaryo Yazımı",
+      "name": "Senaryo Yazımı",
+      "color": "#e05a5a"
+    },
+    {
+      "id": "Yönetmenlik Teknikleri",
+      "name": "Yönetmenlik Teknikleri",
+      "color": "#ff8585"
+    },
+    {
+      "id": "Video Prodüksiyon",
+      "name": "Video Prodüksiyon",
+      "color": "#cc4444"
+    },
+    {
+      "id": "Renk & Görsel",
+      "name": "Renk & Görsel",
+      "color": "#ff9898"
+    },
+    {
+      "id": "Dijital Dağıtım",
+      "name": "Dijital Dağıtım",
+      "color": "#ff5252"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "Senaryo Yazımı",
+      "name": "Üç Perde Yapısı",
+      "desc": "Syd Field'ın klasik 3 perde senaryosunu kendi hikayenize uygulayın.",
+      "tags": [
+        "perde",
+        "senaryo",
+        "yapı"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Üç Perde Yapısı\n**Perde 1 (Setup, ~25%):** Dünya, karakter, çatışma kur.\nPlot point 1: Kahramanın maceraya sürüklenmesi.\n\n**Perde 2 (Confrontation, ~50%):** Çatışma derinleşir.\nMidpoint: Büyük dönüm noktası.\nPlot point 2: Karanlık an, kayıp gibi görünür.\n\n**Perde 3 (Resolution, ~25%):** Doruk ve çözüm.\nKlimaks: Kahraman hedefe ulaşır/ulaşamaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "Senaryo Yazımı",
+      "name": "Diyalog Yazma Kuralları",
+      "desc": "Gereksiz kelimelerden arınmış, karakteri ortaya koyan etkili diyalog yazma.",
+      "tags": [
+        "diyalog",
+        "karakter",
+        "ses"
+      ],
+      "badge1": "Orta",
+      "content": "## Diyalog Kuralları\n1. Her karakter farklı konuşmalı → diyaloğu isimler olmadan okuyunca kim konuşuyor belli.\n2. Subtext: karakterler tam düşündüklerini söylemez.\n3. Kısa tut: uzun monologları diyaloğa çevir.\n4. 'On the nose' kaçın: karakterler tam söylenmeyeni ima eder.\n5. Ses testi: her diyaloğu yüksek sesle oku.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "Yönetmenlik Teknikleri",
+      "name": "180 Derece Kuralı",
+      "desc": "Kurgu tutarlılığı için kamera hattı kuralı ve istisnalarının uygulaması.",
+      "tags": [
+        "180 derece",
+        "hat",
+        "kurgu"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## 180 Derece Kuralı\nİki karakter arasında hayali bir çizgi çiz.\nTüm kameralar bu çizginin aynı tarafında yer almalı.\n\nİhlal edilirse: Karakterler pozisyon değiştirmiş görünür → izleyici yön kaybeder.\n\nKasıtlı ihlal: Kargaşa, rüya, bilinç akışı sahnelerinde kullanılabilir.\nGeçiş: OTS shot veya ara nötr çekimle hat değiştirilebilir.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Yönetmenlik Teknikleri",
+      "name": "Kamera Hareketleri Sözlüğü",
+      "desc": "Pan, tilt, dolly, crane ve steadicam hareketlerinin duygusal etkileri.",
+      "tags": [
+        "pan",
+        "dolly",
+        "steadicam"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Kamera Hareketleri\n| Hareket | Teknik | Duygusal Etki |\n|---------|--------|---------------|\n| Pan | Yatay döndürme | Takip, keşif |\n| Tilt | Dikey döndürme | Güç, boyut |\n| Dolly in | Öne hareket | Gerilim |\n| Dolly out | Geri hareket | Uzaklaşma, yalnızlık |\n| Steadicam | Süzülen hareket | Özgürlük, rüya |\n| Drone | Hava çekimi | Majestetik, bağlam |",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Video Prodüksiyon",
+      "name": "Exposure Triangle",
+      "desc": "Diyafram, enstantane, ISO üçgenini video çekiminde dengeli kullanın.",
+      "tags": [
+        "diyafram",
+        "ISO",
+        "enstantane"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Exposure Triangle\n- **Diyafram (f-stop):** Küçük f = geniş açıklık = sığ alan derinliği.\n- **Enstantane:** Video için kural: 1/(kare hızı×2). 24fps → 1/50s.\n- **ISO:** Düşük=az gürültü; geceleri yükseltin ama max ISO'nuzun sınırını bilin.\n\nND filtre: Gün ışığında 1/50s kuralını korumak için zorunlu.\nHedef: Doğal bokeh için f/2.8, temiz görüntü için ISO<1600.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Video Prodüksiyon",
+      "name": "3 Nokta Işıklandırma",
+      "desc": "Key light, fill light ve back light ile profesyonel stüdyo aydınlatması.",
+      "tags": [
+        "ışık",
+        "key",
+        "fill"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## 3 Nokta Işık\n1. **Key Light:** Ana ışık — konuya 45° açıyla. En güçlü.\n2. **Fill Light:** Gölgeleri yumuşat — karşı tarafa, key'in %50-70 gücünde.\n3. **Back/Rim Light:** Arkadan konuyu arka plandan ayır → derinlik.\n\nNisbetler: 2:1 düz, 4:1 dramatik.\nDoğal ışık: Pencere key, beyaz tahta fill, arka lamba backlight.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Renk & Görsel",
+      "name": "Color Grading Temel Akışı",
+      "desc": "DaVinci Resolve'de renk düzeltme ve grading'in adım adım iş akışı.",
+      "tags": [
+        "color grading",
+        "DaVinci",
+        "LUT"
+      ],
+      "badge1": "Orta",
+      "content": "## Color Grading Akışı\n1. **Primary correction:** Exposure, contrast, beyaz denge dengele.\n2. **Waveform kontrolü:** Siyah 0, beyaz 1023 (10-bit) sınırları içinde.\n3. **Skin tone line:** Vektörskopda ten rengi çizgisine yakın tut.\n4. **LUT uygula:** Creative LUT ile ton belirle.\n5. **Secondary correction:** HSL qualifier ile seçici renk düzelt.\n6. **Noise reduction:** Son adımda uygula.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "Renk & Görsel",
+      "name": "Log Çekim ve Conversion",
+      "desc": "S-Log, Log-C, C-Log formatlarını renk grading için doğru kullanuın.",
+      "tags": [
+        "Log",
+        "S-Log",
+        "LUTS"
+      ],
+      "badge1": "Orta",
+      "content": "## Log Çekim\nLog neden: Kamera sensörünün tüm dinamik aralığını kaydeder.\nGörünüm: Soluk, düşük kontrastlı ham görüntü.\n\nDönüştürme adımları:\n1. Kameraya özel LUT uygula: S-Log3 → Rec.709.\n2. Bunu base LUT olarak kullan.\n3. Üstüne creative grade uygula.\n\nFaydası: Gölge detayı ve highlight kurtarma imkânı.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Dijital Dağıtım",
+      "name": "YouTube SEO Stratejisi",
+      "desc": "YouTube algoritmasy için başlık, thumbnail ve ilk 24 saat optimizasyonu.",
+      "tags": [
+        "YouTube",
+        "SEO",
+        "thumbnail"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## YouTube SEO\n1. **Başlık:** Anahtar kelime öne, merak uyandırıcı.\n2. **Thumbnail:** Yüz yakın plan + kontrast metin + tutarlı marka rengi.\n3. **Açıklama:** İlk 2 satır kritik; anahtar kelimeler doğal akışla.\n4. **Timestamps:** Chapter marks → izlenme süresi artar.\n5. **İlk 24-48 saat:** Trafik en yüksek → tüm paylaşımları bu pencerede yap.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Dijital Dağıtım",
+      "name": "Video Sıkıştırma Rehberi",
+      "desc": "H.264, H.265 ve AV1 kodeklerini platforma göre doğru kullanın.",
+      "tags": [
+        "H.264",
+        "H.265",
+        "kodek"
+      ],
+      "badge1": "Orta",
+      "content": "## Video Kodek Seçimi\n| Platform | Kodek | Bitrate |\n|----------|-------|---------|\n| YouTube 1080p | H.264 | 8-12 Mbps |\n| YouTube 4K | VP9/H.265 | 35-68 Mbps |\n| Instagram Reels | H.264 | 3.5 Mbps |\n| Arşiv | ProRes/DNxHD | ~100+ Mbps |\n\nHandBrake: GUI ücretsiz encoder.\nFFmpeg: `ffmpeg -i input.mov -c:v libx264 -crf 18 output.mp4`",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "Sinema Tarihi",
+      "name": "Fransız Yeni Dalgası",
+      "desc": "Truffaut, Godard liderliğindeki 1950-60 Fransız sinema devriminin temel özellikleri.",
+      "tags": [
+        "Yeni Dalga",
+        "Godard",
+        "Truffaut"
+      ],
+      "badge1": "Orta",
+      "content": "## Fransız Yeni Dalgası\n1959-1968: Cahiers du Cinéma eleştirmenler yönetmen oldu.\n**Özellikler:**\n- Düşük bütçe, sokak çekimi.\n- Jump cut kullanımı (Godard: À bout de souffle).\n- Auteur teorisi: yönetmen filmin yazarı.\n- Doğaçlama diyalog.\n- Sinemaseverliğe gönderme.\n\nBağlantılı akımlar: İtalyan Neorealizm, Yeni Amerikan Sineması.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "Senaryo Yazımı",
+      "name": "Karakter Arızası (Character Flaw)",
+      "desc": "Kahramanın içsel çatışmasını ve dönüşümünü mümkün kılan karakter zayıflığı tasarımı.",
+      "tags": [
+        "karakter",
+        "zayıflık",
+        "yay"
+      ],
+      "badge1": "Orta",
+      "content": "## Karakter Arızası\nArıza: Kahramanın hikaye boyunca aşması gereken psikolojik engel.\nÖrnekler: kibir, güvensizlik, vazgeçme korkusu.\n\n**Karakter yayı:** Arızanın farkında olma → yüzleşme → dönüşüm.\n\nİyi arıza:\n1. Hikayenin tematiğiyle bağlantılı.\n2. Dış çatışmanın tetikleyicisi.\n3. Kazanılabilir ama kolay değil.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "Video Prodüksiyon",
+      "name": "Ses Tasarımı Temelleri",
+      "desc": "Diegetic/non-diegetic ses, foley ve ses miksajının temel kavramları.",
+      "tags": [
+        "ses",
+        "foley",
+        "miksleme"
+      ],
+      "badge1": "Orta",
+      "content": "## Ses Tasarımı\n**Diegetic:** Sahnede var (karakter duyar) — ayak sesi, diyalog.\n**Non-diegetic:** Sahnede yok (izleyici duyar) — müzik, narrasyon.\n**Foley:** Sonradan eklenen efekt sesleri → adımlar, kıyafet sesleri.\n\nMiks seviyeleri (dB):\n- Diyalog: -12 dBFS\n- Müzik: -18 dBFS\n- SFX: -15 dBFS\nLUFS hedefi: YouTube -14 LUFS, Netflix -27 LUFS.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "Renk & Görsel",
+      "name": "Sinematik Oran Seçimi",
+      "desc": "1.33:1, 1.85:1, 2.39:1 görüntü oranlarının hikaye anlatımına etkisi.",
+      "tags": [
+        "aspect ratio",
+        "sinema",
+        "format"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Görüntü Oranları\n| Oran | Kullanım |\n|------|----------|\n| 1.33:1 (4:3) | Klasik TV, nostaljik his |\n| 1.78:1 (16:9) | Modern TV, YouTube |\n| 1.85:1 | Hollywood drama |\n| 2.39:1 | Epik sinema, geniş manzara |\n| 9:16 | Dikey video, Reels/Shorts |\n\nLetterbox: Geniş formatta üst/alt siyah bant → sinematik his.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Dijital Dağıtım",
+      "name": "İçerik Hakları Yönetimi",
+      "desc": "Müzik lisansı, telif hakkı ve güvenli kullanım (fair use) rehberi.",
+      "tags": [
+        "telif",
+        "lisans",
+        "müzik"
+      ],
+      "badge1": "Orta",
+      "content": "## İçerik Hakları\n**Müzik lisansı türleri:**\n- Royalty-free: bir kere öde, tekrar kullan (Artlist, Epidemic Sound).\n- Creative Commons: CC0/CC-BY = ücretsiz; CC-NC = ticari yasak.\n- Sync license: TV/film için telif sahibinden izin.\n\n**Fair use (ABD):** Eğitim, yorum, parodi için kullanım — Türkiye'de doğrudan karşılığı yok.\n\nGüvenli yol: kendi oluşturduğun veya lisanslı müziği kullan.",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}

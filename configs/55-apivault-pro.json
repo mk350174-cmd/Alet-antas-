@@ -1,0 +1,340 @@
+{
+  "slug": "55-apivault-pro",
+  "title": "ApiVault Pro — Yazılım Mimarisi & DevOps",
+  "metaDescription": "RESTful ve GraphQL API tasarımı, uç nokta (endpoint) dokümantasyonu.",
+  "metaKeywords": [
+    "Api",
+    "ApiVault Pro",
+    "Yazılım Mimarisi & DevOps",
+    "AI",
+    "yapay zeka",
+    "şablon"
+  ],
+  "subtitle": "RESTful ve GraphQL API tasarımı, uç nokta (endpoint) dokümantasyonu.",
+  "heroCorner": "A",
+  "heroEyebrow": "Yazılım Mimarisi & DevOps · Alet Çantası",
+  "heroTitleHTML": "Api<em>Vault</em> <span>Pro</span>",
+  "footerBrandHTML": "Api<em>Vault</em> <span style=\"font-family:'DM Mono',monospace;font-size:10px;color:var(--text4)\">Pro</span>",
+  "footerNote": "ApiVault Pro · Yazılım Mimarisi & DevOps",
+  "itemNoun": "Öğe",
+  "itemNounPlural": "Öğeler",
+  "searchPlaceholder": "Api ara...",
+  "emptyGlyph": "◈",
+  "emptyText": "Sol taraftan bir öğe seç",
+  "storageKey": "apivault_pro",
+  "apiPlaceholder": "sk-ant-api...",
+  "apiLink": "https://console.anthropic.com",
+  "apiLinkText": "Anthropic key al →",
+  "category": "devops",
+  "categoryLabel": "Yazılım Mimarisi & DevOps",
+  "dataSource": "ai",
+  "sourceUrl": null,
+  "colors": {
+    "primary": "#4a9eff",
+    "primary2": "#4a9eff",
+    "primaryDim": "#4a9eff15",
+    "primaryGlow": "#4a9eff30",
+    "primaryDark": "#2c80e1",
+    "accent": "#a78bfa",
+    "accent2": "#a78bfa",
+    "accentDim": "#a78bfa18",
+    "accentGlow": "#a78bfa30",
+    "bg": "#06080e",
+    "bg2": "#0a0c12",
+    "bg3": "#0e1016",
+    "bg4": "#12141a",
+    "border": "#16181e",
+    "border2": "#1e2026",
+    "border3": "#2a2c32",
+    "heroBg": "#0a0c12"
+  },
+  "categories": [
+    {
+      "id": "REST API Tasarımı",
+      "name": "REST API Tasarımı",
+      "color": "#4a9eff"
+    },
+    {
+      "id": "Authentication",
+      "name": "Authentication",
+      "color": "#3a8ade"
+    },
+    {
+      "id": "Hata Yönetimi",
+      "name": "Hata Yönetimi",
+      "color": "#5aaeff"
+    },
+    {
+      "id": "API Dokümantasyonu",
+      "name": "API Dokümantasyonu",
+      "color": "#2a7acc"
+    },
+    {
+      "id": "Rate Limiting & Güvenlik",
+      "name": "Rate Limiting & Güvenlik",
+      "color": "#7bbfff"
+    },
+    {
+      "id": "GraphQL & gRPC",
+      "name": "GraphQL & gRPC",
+      "color": "#1a6abb"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": "001",
+      "cat": "REST API Tasarımı",
+      "name": "RESTful URL Tasarım Kuralları",
+      "desc": "Kaynak isimli, fiilsiz ve sürümlenmiş REST endpoint tasarım standartları.",
+      "tags": [
+        "REST",
+        "URL",
+        "endpoint"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## REST URL Kuralları\n```\n# İyi\nGET    /api/v1/users          # Tüm kullanıcılar\nGET    /api/v1/users/123      # Belirli kullanıcı\nPOST   /api/v1/users          # Yeni kullanıcı\nPUT    /api/v1/users/123      # Güncelle (tam)\nPATCH  /api/v1/users/123      # Güncelle (kısmi)\nDELETE /api/v1/users/123      # Sil\n\n# Kötü\nGET /getUser?id=123\nPOST /createNewUser\n```\nKural: URL'de fiil yok, isim var; çoğul kullan.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 2,
+      "no": "002",
+      "cat": "REST API Tasarımı",
+      "name": "HTTP Status Code Rehberi",
+      "desc": "2xx, 4xx, 5xx HTTP durum kodlarını doğru kullanım senaryosuyla uygulayın.",
+      "tags": [
+        "HTTP",
+        "status code",
+        "yanıt"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Durum Kodları\n| Kod | Anlam | Kullanım |\n|-----|-------|----------|\n| 200 | OK | GET, PUT başarı |\n| 201 | Created | POST başarı |\n| 204 | No Content | DELETE başarı |\n| 400 | Bad Request | Geçersiz girdi |\n| 401 | Unauthorized | Auth yok |\n| 403 | Forbidden | Yetkisiz |\n| 404 | Not Found | Kaynak yok |\n| 409 | Conflict | Duplicate |\n| 422 | Unprocessable | Validasyon hatası |\n| 429 | Too Many Requests | Rate limit |\n| 500 | Internal Error | Sunucu hatası |",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 3,
+      "no": "003",
+      "cat": "REST API Tasarımı",
+      "name": "API Pagination Stratejileri",
+      "desc": "Offset, cursor ve keyset tabanlı sayfalama yöntemlerini karşılaştırın.",
+      "tags": [
+        "pagination",
+        "cursor",
+        "offset"
+      ],
+      "badge1": "Orta",
+      "content": "## Pagination Türleri\n**Offset:** `?page=2&limit=20` — basit ama büyük veride yavaş.\n**Cursor:** `?cursor=eyJpZCI6MTAwfQ==&limit=20` — büyük veri için.\n**Keyset:** `?after_id=100&limit=20` — en verimli.\n\n```json\n{\n  \"data\": [...],\n  \"pagination\": {\n    \"total\": 1000,\n    \"page\": 2,\n    \"limit\": 20,\n    \"next_cursor\": \"eyJpZCI6MTIwfQ==\"\n  }\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 4,
+      "no": "004",
+      "cat": "Authentication",
+      "name": "JWT Token Tasarımı",
+      "desc": "Access token, refresh token stratejisi ve güvenli JWT implementasyon rehberi.",
+      "tags": [
+        "JWT",
+        "token",
+        "auth"
+      ],
+      "badge1": "Orta",
+      "content": "## JWT Stratejisi\n```python\nimport jwt\nfrom datetime import datetime, timedelta\n\ndef create_tokens(user_id):\n    access = jwt.encode({\n        'sub': user_id,\n        'exp': datetime.utcnow() + timedelta(minutes=15),\n        'type': 'access'\n    }, SECRET_KEY, algorithm='HS256')\n    \n    refresh = jwt.encode({\n        'sub': user_id,\n        'exp': datetime.utcnow() + timedelta(days=30),\n        'type': 'refresh'\n    }, SECRET_KEY, algorithm='HS256')\n    \n    return access, refresh\n```\nKural: Access token kısa (15dk), refresh uzun (30gün).",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 5,
+      "no": "005",
+      "cat": "Authentication",
+      "name": "OAuth 2.0 Akış Şablonu",
+      "desc": "Authorization Code, Client Credentials ve PKCE akışlarının implementasyon şablonları.",
+      "tags": [
+        "OAuth",
+        "PKCE",
+        "akış"
+      ],
+      "badge1": "İleri",
+      "content": "## OAuth 2.0 Authorization Code + PKCE\n```python\nimport secrets, hashlib, base64\n\n# PKCE: code_verifier oluştur\ncode_verifier = secrets.token_urlsafe(96)\ncode_challenge = base64.urlsafe_b64encode(\n    hashlib.sha256(code_verifier.encode()).digest()\n).rstrip(b'=').decode()\n\n# Auth URL'ine yönlendir\nparams = {\n    'response_type': 'code',\n    'client_id': CLIENT_ID,\n    'redirect_uri': REDIRECT_URI,\n    'code_challenge': code_challenge,\n    'code_challenge_method': 'S256'\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 6,
+      "no": "006",
+      "cat": "Hata Yönetimi",
+      "name": "API Hata Yanıt Standardı",
+      "desc": "RFC 7807 Problem Details formatında tutarlı API hata yanıtları.",
+      "tags": [
+        "hata",
+        "RFC 7807",
+        "format"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## RFC 7807 Hata Formatı\n```json\n{\n  \"type\": \"https://api.example.com/errors/validation\",\n  \"title\": \"Validation Error\",\n  \"status\": 422,\n  \"detail\": \"Email alanı geçersiz format\",\n  \"instance\": \"/api/v1/users\",\n  \"errors\": [\n    {\n      \"field\": \"email\",\n      \"code\": \"invalid_format\",\n      \"message\": \"Geçerli bir e-posta adresi girin\"\n    }\n  ]\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 7,
+      "no": "007",
+      "cat": "Hata Yönetimi",
+      "name": "Idempotency Key Tasarımı",
+      "desc": "Ödeme ve kritik POST işlemlerinde yinelenmeyi önleyen idempotency key.",
+      "tags": [
+        "idempotency",
+        "ödeme",
+        "tekrar"
+      ],
+      "badge1": "İleri",
+      "content": "## Idempotency Key\n```python\n# İstemci başlık gönderir:\n# Idempotency-Key: 550e8400-e29b-41d4-a716-446655440000\n\n@app.post('/payments')\nasync def create_payment(request):\n    key = request.headers.get('Idempotency-Key')\n    if not key:\n        raise HTTPException(400, 'Idempotency-Key zorunlu')\n    \n    # Cache'de varsa aynı yanıtı dön\n    cached = await redis.get(f'idem:{key}')\n    if cached:\n        return JSONResponse(json.loads(cached))\n    \n    result = await process_payment(request.body)\n    await redis.setex(f'idem:{key}', 86400, result.json())\n    return result\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 8,
+      "no": "008",
+      "cat": "API Dokümantasyonu",
+      "name": "OpenAPI/Swagger Şablonu",
+      "desc": "OpenAPI 3.0 spesifikasyonu ile API dokümantasyonu oluşturma rehberi.",
+      "tags": [
+        "OpenAPI",
+        "Swagger",
+        "dökümantasyon"
+      ],
+      "badge1": "Orta",
+      "content": "## OpenAPI 3.0 Şablonu\n```yaml\nopenapi: 3.0.3\ninfo:\n  title: My API\n  version: 1.0.0\npaths:\n  /users/{id}:\n    get:\n      summary: Kullanıcı getir\n      parameters:\n        - name: id\n          in: path\n          required: true\n          schema:\n            type: integer\n      responses:\n        '200':\n          description: Başarılı\n          content:\n            application/json:\n              schema:\n                $ref: '#/components/schemas/User'\n        '404':\n          description: Bulunamadı\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 9,
+      "no": "009",
+      "cat": "Rate Limiting & Güvenlik",
+      "name": "Rate Limiting Algoritmaları",
+      "desc": "Token bucket, sliding window ve leaky bucket rate limiting stratejileri.",
+      "tags": [
+        "rate limit",
+        "throttle",
+        "token bucket"
+      ],
+      "badge1": "Orta",
+      "content": "## Rate Limiting Stratejileri\n**Token Bucket:** Kovaya N token/saniye ekle; her istek 1 token tüketir.\n**Sliding Window:** Son X saniyedeki istek sayısını say.\n**Leaky Bucket:** Sabit hızda işle; fazlası kuyruğa/düşür.\n\n```python\n# Redis ile sliding window\ndef check_rate_limit(user_id, limit=100, window=60):\n    key = f'rate:{user_id}'\n    now = time.time()\n    pipe = redis.pipeline()\n    pipe.zremrangebyscore(key, 0, now - window)\n    pipe.zadd(key, {now: now})\n    pipe.zcard(key)\n    pipe.expire(key, window)\n    _, _, count, _ = pipe.execute()\n    return count <= limit\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 10,
+      "no": "010",
+      "cat": "Rate Limiting & Güvenlik",
+      "name": "CORS Konfigürasyonu",
+      "desc": "Güvenli cross-origin kaynak paylaşımı için origin whitelist ve preflight yönetimi.",
+      "tags": [
+        "CORS",
+        "güvenlik",
+        "origin"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## CORS Konfigürasyonu\n```python\n# FastAPI\nfrom fastapi.middleware.cors import CORSMiddleware\n\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=['https://app.example.com'],  # Wildcard * kullanma\n    allow_credentials=True,\n    allow_methods=['GET', 'POST', 'PUT', 'DELETE'],\n    allow_headers=['Authorization', 'Content-Type'],\n    max_age=600,  # Preflight cache\n)\n```\nUyarı: Production'da `allow_origins=['*']` kesinlikle kullanma.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 11,
+      "no": "011",
+      "cat": "GraphQL & gRPC",
+      "name": "GraphQL Schema Tasarımı",
+      "desc": "Tip-güvenli GraphQL şeması, resolver ve N+1 sorunu çözümü.",
+      "tags": [
+        "GraphQL",
+        "schema",
+        "DataLoader"
+      ],
+      "badge1": "İleri",
+      "content": "## GraphQL Schema\n```graphql\ntype Query {\n  user(id: ID!): User\n  users(limit: Int = 10, offset: Int = 0): [User!]!\n}\n\ntype User {\n  id: ID!\n  name: String!\n  email: String!\n  posts: [Post!]!  # N+1 için DataLoader kullan\n}\n\ntype Mutation {\n  createUser(input: CreateUserInput!): User!\n}\n\ninput CreateUserInput {\n  name: String!\n  email: String!\n}\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 12,
+      "no": "012",
+      "cat": "GraphQL & gRPC",
+      "name": "gRPC Proto Tanımı",
+      "desc": "Protocol Buffers ile gRPC servis tanımı ve Python client/server şablonu.",
+      "tags": [
+        "gRPC",
+        "proto",
+        "servis"
+      ],
+      "badge1": "İleri",
+      "content": "## gRPC Servis\n```protobuf\nservice UserService {\n  rpc GetUser(GetUserRequest) returns (User);\n  rpc ListUsers(ListUsersRequest) returns (stream User);\n  rpc CreateUser(CreateUserRequest) returns (User);\n}\nmessage GetUserRequest { int32 id = 1; }\nmessage User {\n  int32 id = 1;\n  string name = 2;\n  string email = 3;\n}\n```\n```python\n# Client\nchannel = grpc.insecure_channel('localhost:50051')\nstub = UserServiceStub(channel)\nuser = stub.GetUser(GetUserRequest(id=1))\n```",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 13,
+      "no": "013",
+      "cat": "API Dokümantasyonu",
+      "name": "API Versiyonlama Stratejileri",
+      "desc": "URL, başlık ve media type tabanlı API sürümleme yaklaşımları.",
+      "tags": [
+        "sürümleme",
+        "v1",
+        "v2"
+      ],
+      "badge1": "Orta",
+      "content": "## Versiyonlama Yöntemleri\n1. **URL:** `/api/v1/users` — en yaygın, açık.\n2. **Header:** `API-Version: 2024-01` — URL temiz kalır.\n3. **Media Type:** `Accept: application/vnd.api.v2+json`\n\nSürüm geçiş stratejisi:\n- Eski sürümü en az 6 ay destekle.\n- Deprecation header ekle: `Sunset: Tue, 01 Jan 2026`.\n- Yeni sürümü duyur → migration guide yaz.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 14,
+      "no": "014",
+      "cat": "REST API Tasarımı",
+      "name": "API Response Sarma (Envelope)",
+      "desc": "Tutarlı API yanıt zarfı tasarımı ve meta veri dahil etme şablonu.",
+      "tags": [
+        "envelope",
+        "yanıt",
+        "meta"
+      ],
+      "badge1": "Başlangıç",
+      "content": "## Yanıt Zarfı\n```json\n{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Ahmet\"\n  },\n  \"meta\": {\n    \"timestamp\": \"2026-06-04T10:00:00Z\",\n    \"version\": \"1.0\",\n    \"request_id\": \"req_abc123\"\n  }\n}\n```\nTüm endpoint'lerde aynı yapı → istemci geliştirimi kolaylaşır.",
+      "source": {
+        "generated": true
+      }
+    },
+    {
+      "id": 15,
+      "no": "015",
+      "cat": "Authentication",
+      "name": "API Key Yönetimi",
+      "desc": "API key üretimi, hashleme ve izin bazlı erişim kontrolü.",
+      "tags": [
+        "API key",
+        "hash",
+        "izin"
+      ],
+      "badge1": "Orta",
+      "content": "## API Key Tasarımı\n```python\nimport secrets, hashlib\n\ndef generate_api_key():\n    raw_key = secrets.token_urlsafe(32)\n    prefix = 'sk_live_'\n    full_key = prefix + raw_key  # Kullanıcıya ver\n    # Veritabanına hash'ini kaydet\n    key_hash = hashlib.sha256(raw_key.encode()).hexdigest()\n    return full_key, key_hash\n\n# Doğrulama\ndef verify_api_key(provided_key, stored_hash):\n    raw = provided_key.replace('sk_live_', '')\n    return hashlib.sha256(raw.encode()).hexdigest() == stored_hash\n```",
+      "source": {
+        "generated": true
+      }
+    }
+  ]
+}
