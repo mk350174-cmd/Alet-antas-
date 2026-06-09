@@ -93,7 +93,7 @@
         "ızgara"
       ],
       "badge1": "Başlangıç",
-      "content": "## 8px Grid\n1. Tüm padding/margin değerleri 8'in katı olsun: 8, 16, 24, 32, 48, 64.\n2. Bileşen boyutlarını da 8px katları yap.\n3. İstisna: ikon-içi 4px boşluk kabul edilebilir.\n4. Spacing tokenları CSS değişkeni olarak tanımla.",
+      "content": "## 8px Grid Sistemi: Tutarlı UI Aralık Tasarımı\n\nTüm boşluk ve boyutları 8'in katları olarak tanımlayan ızgara sistemi — design token'larla mükemmel hizalanır.\n\n**Temel ilkeler:**\n- Tüm margin, padding, gap değerleri: 4, 8, 16, 24, 32, 48, 64, 96px\n- Bileşen yükseklikleri: 32px (küçük), 40px (orta), 48px (büyük)\n- İkon boyutları: 16, 20, 24, 32px\n\n**CSS custom properties ile token sistemi:**\n```css\n:root {\n  --space-1: 4px;\n  --space-2: 8px;\n  --space-3: 16px;\n  --space-4: 24px;\n  --space-5: 32px;\n  --space-6: 48px;\n  --space-7: 64px;\n  --space-8: 96px;\n}\n.card { padding: var(--space-4); gap: var(--space-3); }\n.button { height: 40px; padding: 0 var(--space-4); }\n```\n\n**Prompt:** \"Bu tasarım için 8px grid sistemine uymayan boşluk değerlerini tespit et ve standart token değerleriyle değiştir.\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "palet"
       ],
       "badge1": "Orta",
-      "content": "## Renk Sistemi\n```css\n:root {\n  --color-primary-500: #4a9eff;\n  --color-success: #22c55e;\n  --color-error: #ef4444;\n  --color-neutral-100: #f5f5f5;\n  --color-neutral-900: #171717;\n}\n```\nSemantik tokenlar (bg-surface, text-primary) kullan.",
+      "content": "## Semantik Renk Paleti Sistemi\n\nKullanım amacına göre katmanlı renk token sistemi: primitive → semantic → component.\n\n**3 katman mimarisi:**\n```css\n/* 1. Primitive: ham değerler */\n--blue-500: #3B82F6;\n--blue-600: #2563EB;\n\n/* 2. Semantic: anlamlı isimler */\n--color-primary: var(--blue-500);\n--color-primary-hover: var(--blue-600);\n--color-surface: #FFFFFF;\n--color-text-primary: #111827;\n--color-text-secondary: #6B7280;\n--color-border: #E5E7EB;\n--color-error: #EF4444;\n--color-success: #10B981;\n\n/* 3. Component: bileşen özel */\n--button-bg: var(--color-primary);\n--button-text: white;\n--input-border: var(--color-border);\n```\n\n**Dark mode için:** semantic katmanı override et — primitive değerler değişmez.\n\n**Prompt:** \"Bu UI için 60-30-10 renk kuralına göre (dominant-ikincil-aksent) semantik token seti oluştur; WCAG AA kontrast uyumunu kontrol et.\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "ağırlık"
       ],
       "badge1": "Başlangıç",
-      "content": "## Visual Hierarchy\n1. Her sayfada tek bir primary action olsun.\n2. Boyut farkı: başlık en az 1.5× gövde.\n3. Kontrast: aksiyon elementleri diğerlerinden ayrışsın.\n4. Boş alan (whitespace) odak noktalarını çerçeveler.",
+      "content": "## Görsel Hiyerarşi: Kullanıcı Gözünü Yönetme\n\nKullanıcının gözünü doğru sırayla bilgiye yönlendiren tasarım prensipleri.\n\n**6 hiyerarşi aracı:**\n\n1. **Boyut:** Büyük = önemli. H1 > H2 > body en açık sinyal.\n2. **Renk ve kontrast:** Yüksek kontrast = öncelikli. CTA her zaman en yüksek kontrast.\n3. **Ağırlık (weight):** Bold = vurgu. Regular = gövde. Thin = ikincil.\n4. **Pozisyon:** Sol üst köşe = F-pattern başlangıcı. İlk görülen yer.\n5. **Boşluk:** Etrafında boşluk olan eleman öne çıkar (whitespace = odak aracı).\n6. **Renk saturasyonu:** Doygun renkler gözü çeker — ikincil içerik için desature.\n\n**Hiyerarşi testi:** Tasarımı gözlerinizi kıstırarak görün — siluette bile sıralama anlaşılmalı.\n\n**Prompt:** \"Bu sayfanın görsel hiyerarşisini analiz et: kullanıcının gözü hangi sırayla nereye gidiyor? CTA yeterince öne çıkıyor mu? Düzeltme önerileri ver.\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "css"
       ],
       "badge1": "Orta",
-      "content": "## Dark Mode Tokenlar\n```css\n:root {\n  --bg: #ffffff;\n  --text: #171717;\n}\n@media (prefers-color-scheme: dark) {\n  :root { --bg: #0a0a0a; --text: #ededed; }\n}\n[data-theme='dark'] { --bg: #0a0a0a; --text: #ededed; }\n```",
+      "content": "## CSS Dark Mode: Token Tabanlı Tema Sistemi\n\nCSS custom properties ile light/dark mode geçişi için ölçeklenebilir token mimarisi.\n\n**Tam sistem:**\n```css\n/* Tek kaynak token dosyası */\n:root {\n  /* Light mode defaults */\n  --bg-primary: #FFFFFF;\n  --bg-secondary: #F9FAFB;\n  --text-primary: #111827;\n  --text-secondary: #6B7280;\n  --border-default: #E5E7EB;\n  --brand-primary: #3B82F6;\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --bg-primary: #111827;\n    --bg-secondary: #1F2937;\n    --text-primary: #F9FAFB;\n    --text-secondary: #9CA3AF;\n    --border-default: #374151;\n    --brand-primary: #60A5FA;\n  }\n}\n\n/* Manuel toggle için [data-theme] attribute */\n[data-theme=\"dark\"] {\n  --bg-primary: #111827;\n  /* ... */\n}\n```\n\n**Prompt:** \"Bu UI component library için dark mode token seti oluştur; surface, on-surface, outline ve state (hover/active/disabled) katmanları dahil.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "localStorage"
       ],
       "badge1": "Orta",
-      "content": "## Tema Toggle\n```javascript\nfunction setTheme(theme) {\n  document.documentElement.dataset.theme = theme;\n  localStorage.setItem('theme', theme);\n}\n// Init\nconst saved = localStorage.getItem('theme')\n  || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');\nsetTheme(saved);\n```",
+      "content": "## Dark Mode: Sistem Tercihi + Manuel Toggle\n\nCSS ve JavaScript ile sistem tercihini okuyup kullanıcıya manuel geçiş imkanı veren tam implementasyon.\n\n**CSS + JS implementasyonu:**\n```css\n:root { --bg: #fff; --text: #111; }\n[data-theme='dark'] { --bg: #111; --text: #f9f9f9; }\n@media (prefers-color-scheme: dark) {\n  :root:not([data-theme='light']) { --bg: #111; --text: #f9f9f9; }\n}\nbody { background: var(--bg); color: var(--text); transition: background 200ms; }\n```\n\n```javascript\n// Sistem tercihini oku, localStorage ile override\nconst saved = localStorage.getItem('theme');\nconst system = window.matchMedia('(prefers-color-scheme: dark)').matches;\nconst theme = saved ?? (system ? 'dark' : 'light');\ndocument.documentElement.setAttribute('data-theme', theme);\n\nfunction toggleTheme() {\n  const current = document.documentElement.getAttribute('data-theme');\n  const next = current === 'dark' ? 'light' : 'dark';\n  document.documentElement.setAttribute('data-theme', next);\n  localStorage.setItem('theme', next);\n}\n```\n\n**Erişilebilirlik:** Toggle butonuna `aria-label=\"Koyu temaya geç\"` ekle ve durum değişimini `aria-pressed` ile bildir.\n\n**Prompt:** \"React uygulamasında dark mode toggle kur: Context ile tema yönetimi, localStorage kalıcılığı ve sistem tercihine otomatik uyum.\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "gölge"
       ],
       "badge1": "Orta",
-      "content": "## Dark Mode Görseller\n```css\n/* SVG ikon rengi */\n.icon { fill: var(--text); }\n/* Resim parlaklığı */\n[data-theme='dark'] img:not([class*='logo']) {\n  filter: brightness(0.85);\n}\n/* Gölge yumuşatma */\n[data-theme='dark'] .card {\n  box-shadow: 0 4px 24px rgba(0,0,0,.6);\n}\n```",
+      "content": "## Görsel İçerik Dark Mode Uyarlaması\n\nResimler, ikonlar, SVG ve medya içeriklerini dark mode'a adapte etme teknikleri.\n\n**CSS filter ile görüntü adaptasyonu:**\n```css\n/* Fotoğrafları dark mode'da biraz karart */\n@media (prefers-color-scheme: dark) {\n  img:not([src*='.svg']) {\n    filter: brightness(0.85) contrast(1.05);\n  }\n  /* Logoları dark arka plana göre uyarla */\n  .logo-dark-only { display: none; }\n  .logo-light-only { display: block; }\n}\n@media (prefers-color-scheme: light) {\n  .logo-dark-only { display: block; }\n  .logo-light-only { display: none; }\n}\n```\n\n**SVG ikon uyarlaması:**\n```css\n/* fill: currentColor kullan — text rengiyle otomatik değişir */\n.icon { fill: currentColor; color: var(--text-secondary); }\n```\n\n**`<picture>` ile farklı görsel:**\n```html\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"logo-dark.svg\">\n  <img src=\"logo-light.svg\" alt=\"Logo\">\n</picture>\n```\n\n**Prompt:** \"Bu icon library'yi dark mode uyumlu yap; CSS currentColor, SVG fill ve filter yaklaşımlarını karşılaştır.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "boyut"
       ],
       "badge1": "Orta",
-      "content": "## Modüler Ölçek\n```css\n:root {\n  --text-xs: 0.64rem;\n  --text-sm: 0.8rem;\n  --text-base: 1rem;\n  --text-lg: 1.25rem;\n  --text-xl: 1.563rem;\n  --text-2xl: 1.953rem;\n  --text-3xl: 2.441rem;\n}\n```\n1.25 oranı (Major Third) dengeli ve okunaklı.",
+      "content": "## Modüler Ölçek: Matematiksel Tipografi Hiyerarşisi\n\nMüzikal oran oranları kullanarak harmonik tipografi ölçeği oluşturma.\n\n**Modüler ölçek hesabı:**\nBaz boyut × oran^katsayı = her seviye\n\n**Örnek: 16px baz, 1.25 (Major Third) oran:**\n```\nh1: 16 × 1.25^4 = 39.06px → 39px\nh2: 16 × 1.25^3 = 31.25px → 31px\nh3: 16 × 1.25^2 = 25px\nh4: 16 × 1.25^1 = 20px\nbody: 16px (baz)\nsmall: 16 × 1.25^-1 = 12.8px → 13px\n```\n\n**Yaygın oranlar:**\n| Oran | İsim | His |\n|------|------|-----|\n| 1.067 | Minor Second | Kompakt |\n| 1.125 | Major Second | Dengeli |\n| 1.250 | Major Third | Genel web |\n| 1.333 | Perfect Fourth | Dramatik |\n| 1.618 | Golden Ratio | Lüks/editorial |\n\n**CSS:**\n```css\n:root { --scale: 1.25; --base: 1rem; }\nh1 { font-size: calc(var(--base) * var(--scale) * var(--scale) * var(--scale) * var(--scale)); }\n```\n\n**Araç:** typescale.com veya utopia.fyi ile otomatik hesapla\n\n**Prompt:** \"Bu proje için 1.333 oranıyla 6 tipografi seviyesi belirle; fluid type ile birleştir.\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "okunabilirlik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Okunabilirlik\n1. Gövde metin: `line-height: 1.6-1.8`.\n2. Başlıklar: `line-height: 1.1-1.3`.\n3. Satır uzunluğu: `max-width: 65-75ch`.\n4. Font boyutu: min 16px gövde, min 14px yardımcı metin.",
+      "content": "## Line Height ve Optimal Satır Uzunluğu Hesabı\n\nOkunabilirlik için satır yüksekliği ve karakter genişliği optimizasyonu.\n\n**Temel kurallar:**\n- **Body text line-height:** 1.5–1.7 (font boyutunun 1.5-1.7 katı)\n- **Başlıklar:** 1.1–1.3 (daha sıkışık — büyük boyutta okunaklı)\n- **Optimal satır uzunluğu:** 45–75 karakter (~600-700px, 16px font)\n\n**CSS implementasyonu:**\n```css\nbody {\n  font-size: 1rem; /* 16px */\n  line-height: 1.6;\n}\nh1, h2, h3 {\n  line-height: 1.2;\n}\n\n/* Optimal satır genişliği: ch birimi (0 karakterinin genişliği) */\n.prose {\n  max-width: 65ch; /* ~65 karakter = optimal okuma */\n  margin-inline: auto;\n}\n\n/* Fluid line-height (geniş ekranda biraz sıkıştır) */\np { line-height: clamp(1.5, 1.5 + 0.5vw, 1.8); }\n```\n\n**Kontrol:** Okuma testi — satır sonunda göz sola dönerken kayıyor mu? Uzun. Satırlar çok sık kırılıyor mu? Kısa.\n\n**Prompt:** \"Bu tipografi sisteminin line-height ve satır uzunluğunu WCAG SC 1.4.8 (Görsel Sunum) kriterlerine göre değerlendir ve optimize et.\"",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "erişilebilirlik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Focus Ring\n```css\nhtml { scroll-behavior: smooth; }\n*:focus-visible {\n  outline: 2px solid var(--color-primary-500);\n  outline-offset: 3px;\n  border-radius: 3px;\n}\n*:focus:not(:focus-visible) { outline: none; }\n```",
+      "content": "## Erişilebilir Smooth Scroll ve Focus Ring\n\nKlavye navigasyonu ve scroll davranışını erişilebilirlik standartlarına uygun şekilde uygulama.\n\n**CSS implementasyonu:**\n```css\n/* Smooth scroll — motion-sensitive kullanıcıları koru */\n@media (prefers-reduced-motion: no-preference) {\n  html { scroll-behavior: smooth; }\n}\n\n/* Focus ring — kaldırma, stilize et */\n:focus-visible {\n  outline: 2px solid var(--brand-primary);\n  outline-offset: 2px;\n  border-radius: 4px;\n}\n\n/* Focus ring'i sadece klavye için göster */\n:focus:not(:focus-visible) {\n  outline: none;\n}\n\n/* Skip link (ekran okuyucu erişimi) */\n.skip-link {\n  position: absolute;\n  top: -40px;\n  left: 0;\n  background: var(--brand-primary);\n  color: white;\n  padding: 8px;\n}\n.skip-link:focus { top: 0; }\n```\n\n**Prompt:** \"Bu sayfada klavye tab sırası doğru mu? Focus ring görünür mü? Erişilebilirlik sorunlarını listele ve CSS düzeltme kodları ver.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "responsive"
       ],
       "badge1": "Orta",
-      "content": "## Fluid Typography\n```css\n:root {\n  --text-base: clamp(1rem, 2.5vw, 1.25rem);\n  --text-xl: clamp(1.5rem, 4vw, 2.5rem);\n}\n```\nMobilde küçük, masaüstünde büyük — ara breakpoint olmadan.",
+      "content": "## Fluid Typography: Viewport'a Orantılı Yazı Boyutu\n\nSabit breakpoint yerine viewport boyutuyla lineer olarak ölçeklenen tipografi sistemi.\n\n**CSS clamp ile fluid type:**\n```css\n/* clamp(min, preferred, max) */\n:root {\n  /* H1: 28px (mobile) → 56px (desktop) */\n  --text-h1: clamp(1.75rem, 5vw, 3.5rem);\n  /* H2: 22px → 36px */\n  --text-h2: clamp(1.375rem, 3.5vw, 2.25rem);\n  /* H3: 18px → 24px */\n  --text-h3: clamp(1.125rem, 2.5vw, 1.5rem);\n  /* Body: 16px → 18px */\n  --text-body: clamp(1rem, 1.5vw, 1.125rem);\n}\n\nh1 { font-size: var(--text-h1); }\nh2 { font-size: var(--text-h2); }\np  { font-size: var(--text-body); }\n```\n\n**Modüler ölçek ile üret:**\n- Oran: 1.25 (Major Third) veya 1.333 (Perfect Fourth)\n- Araç: typescale.com veya utopia.fyi\n\n**Prompt:** \"Bu projenin tipografi sistemi için 4 başlık seviyesi + body için fluid type değerleri hesapla; 375px mobile ve 1440px desktop breakpointleri hedef.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "responsive"
       ],
       "badge1": "Orta",
-      "content": "## Auto-Fit Grid\n```css\n.grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n  gap: 1.5rem;\n}\n```\nMinimum 280px kart, kalan alan eşit bölünür — sıfır media query.",
+      "content": "## CSS Grid Auto-Fit: Responsive Kart Layoutu\n\nMedia query kullanmadan otomatik sütun sayısı ayarlayan responsive grid sistemi.\n\n**Temel pattern:**\n```css\n/* En az 280px, kalan alanı eşit dağıt */\n.card-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n  gap: var(--space-4);\n}\n\n/* Minimum 2 sütun zorla */\n.min-2-grid {\n  grid-template-columns: repeat(auto-fill, minmax(max(280px, (100% - 32px) / 2), 1fr));\n}\n\n/* Farklı boyut kartlar (large + küçük karışık) */\n.mixed-grid {\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  grid-auto-rows: 200px;\n}\n.card-large { grid-column: span 2; grid-row: span 2; }\n```\n\n**auto-fit vs auto-fill farkı:**\n- `auto-fit`: Boş sütunları daraltır → kartlar genişler\n- `auto-fill`: Boş sütunları korur → sabit boyut\n\n**Prompt:** \"E-ticaret ürün grid'i için auto-fit layout yaz; mobilde 1 sütun, tablete 2-3, masaüstünde 4 sütun, responsive breakpoint'siz.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "ekran okuyucu"
       ],
       "badge1": "Orta",
-      "content": "## ARIA Kullanımı\n1. Semantik HTML önce gelir; ARIA son çare.\n2. `aria-label` görünmez etiket için.\n3. `aria-live` dinamik içerik güncellemesi için.\n4. `role` yalnızca native element yoksa.\n5. Her form elemanına eşleşen `<label>` ekle.",
+      "content": "## ARIA Label: Ekran Okuyucu Erişilebilirliği\n\nARIA label, labelledby ve describedby attribute'larını doğru kullanma rehberi.\n\n**Temel ARIA attribute'ları:**\n```html\n<!-- aria-label: görünür metin yok, direkt etiket -->\n<button aria-label=\"Menüyü kapat\">✕</button>\n\n<!-- aria-labelledby: başka element etiket -->\n<section aria-labelledby=\"section-title\">\n  <h2 id=\"section-title\">Öne Çıkan Ürünler</h2>\n</section>\n\n<!-- aria-describedby: ek açıklama -->\n<input type=\"password\" aria-describedby=\"pwd-hint\">\n<p id=\"pwd-hint\">En az 8 karakter, büyük harf ve sayı içermeli</p>\n\n<!-- aria-live: dinamik içerik güncellemesi -->\n<div aria-live=\"polite\" aria-atomic=\"true\">\n  Arama sonuçları yükleniyor...\n</div>\n\n<!-- role -->\n<div role=\"alert\">Form hatası: Email geçersiz</div>\n```\n\n**Prompt:** \"Bu form bileşeninin ARIA implementasyonunu incele; eksik label, role ve live region'ları belirle ve düzeltilmiş HTML ver.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "a11y"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kontrast Kontrol\n1. Normal metin: min 4.5:1 (AA), 7:1 (AAA).\n2. Büyük metin (18pt+): min 3:1 (AA).\n3. UI bileşenleri ve görseller: min 3:1.\n4. Araç: WebAIM Contrast Checker veya browser DevTools.",
+      "content": "## WCAG Renk Kontrast: Uyumluluk Kontrol Listesi\n\nWeb Content Accessibility Guidelines (WCAG) 2.1 renk kontrast gereksinimlerini kontrol eden checklist.\n\n**WCAG seviyeleri:**\n| Seviye | Normal metin | Büyük metin (18px+) | UI bileşen |\n|--------|------------|---------------------|------------|\n| AA (minimum) | 4.5:1 | 3:1 | 3:1 |\n| AAA (gelişmiş) | 7:1 | 4.5:1 | — |\n\n**Kontrol araçları:**\n- Tarayıcı: Chrome DevTools → Accessibility → Contrast\n- Online: webaim.org/resources/contrastchecker\n- Figma: Stark eklentisi\n\n**Sık yapılan hatalar:**\n- Açık gri üzerinde açık gri metin (4:1 altı)\n- Placeholder metni için kontrast ihmal (genelde 3:1 altı)\n- Disabled state renkleri tamamen görünmez\n- Çevre rengiyle kontrast hesabını unutmak\n\n**Prompt:** \"Bu UI'ın renk kombinasyonlarını WCAG AA gereksinimlerine göre test et; başarısız kombinasyonlar için alternatif renk öner ve contrast ratio'yu hesapla.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "akış"
       ],
       "badge1": "Orta",
-      "content": "## Onboarding Akışı\n1. İlk ekranda tek değer önermesini net göster.\n2. Kayıt formunu minimuma indir (email+şifre).\n3. Zorunlu olmayan bilgileri sonra iste.\n4. İlk 'aha moment'e giden en kısa yolu aç.",
+      "content": "## Kullanıcı Onboarding Akışı Tasarımı\n\nYeni kullanıcıyı \"Aha!\" anına götüren kısa, motivasyonel onboarding akışı tasarım çerçevesi.\n\n**Onboarding akış şablonu:**\n\n**Adım 1 — Hoşgeldin (≤10 saniye)**\n- Tek cümleyle değer önerisi\n- Net aksiyon: tek CTA\n- İlerleme göstergesi: \"1/4\"\n\n**Adım 2 — Kişiselleştirme (≤30 saniye)**\n- Kullanıcı hakkında 1-2 kritik bilgi al\n- Seçenek: görsel kart seçimi > dropdown\n- Skip seçeneği her zaman mevcut\n\n**Adım 3 — İlk Değer (2 dakika)**\n- Kullanıcı şimdiden bir şey başarsın\n- Boş durum yok — örnek verilerle başla\n\n**Adım 4 — Tamamlama + Yönlendirme**\n- Küçük kutlama animasyonu\n- \"Sıradaki adım\" açık ve somut\n\n**Anti-pattern'ler:**\n- 10 adımlı registration formu\n- Email verify = değer öncesi duvar\n\n**Prompt:** \"[Ürün tipi] için 4 adımlı onboarding akışı tasarla; her adımın hedefi, içeriği ve drop-off azaltmak için mikro-copy öner.\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "geri bildirim"
       ],
       "badge1": "Orta",
-      "content": "## Mikro-etkileşimler\n```css\n.btn { transition: transform 0.15s, opacity 0.15s; }\n.btn:hover { transform: translateY(-1px); }\n.btn:active { transform: scale(0.97); }\n```\n1. Max süre 300ms.\n2. prefers-reduced-motion'a saygı göster.\n3. Her animasyonun işlevsel nedeni olsun.",
+      "content": "## Mikro-etkileşim Tasarımı: Geri Bildirim ve Delight\n\nKullanıcı aksiyonlarına anlamlı micro-interaction tasarım prensipleri ve CSS implementasyonu.\n\n**Tetikleyici → Kural → Geri Bildirim → Döngü modeli:**\n\n**Button hover/active:**\n```css\n.button {\n  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translateY(0);\n}\n.button:hover {\n  background: var(--color-primary-hover);\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(0,0,0,0.15);\n}\n.button:active { transform: translateY(0); }\n```\n\n**Loading state:**\n```css\n@keyframes spin {\n  to { transform: rotate(360deg); }\n}\n.button[aria-busy=\"true\"] .spinner {\n  animation: spin 600ms linear infinite;\n}\n```\n\n**Form validation feedback (anında):**\n- Başarı: yeşil border + checkmark\n- Hata: kırmızı border + sallanma animasyonu + mesaj\n- Animasyon süresi: 150-300ms (daha uzun = yavaş)\n\n**Prompt:** \"Bu form için error state, success state ve loading state micro-interaction'larını CSS + accessibility (aria-live) ile birlikte tasarla.\"",
       "source": {
         "generated": true
       }

@@ -93,7 +93,7 @@
         "kapakçık"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kalp Anatomisi\nSoru: Kalbin 4 odası nedir?\nYanıt: Sağ/sol atrium, sağ/sol ventrikül.\nKapakçıklar: Triküspit (sağ AV), Mitral (sol AV), Pulmoner, Aortik.\nKan akışı: Sağ atrium → triküspit → sağ ventrikül → pulmoner kapak → akciğer → mitral → sol ventrikül → aort.",
+      "content": "## Kalp Anatomisi: Odacıklar, Kapakçıklar ve Kan Akışı\n\nKalpte kanın izlediği yolu ve kapakçıkların işlevini sistematik olarak açıklar.\n\n**4 odacık ve görev:**\n| Odacık | Görev | Duvar kalınlığı |\n|--------|-------|----------------|\n| Sağ atriyum | Sistemik venöz kan alır (VCS/VCI) | İnce |\n| Sağ ventrikül | Akciğere pompalar (A. pulmonalis) | Orta |\n| Sol atriyum | Akciğerden oksijenli kan alır (V. pulmonalis) | İnce |\n| Sol ventrikül | Sistemik dolaşıma pompalar (Aorta) | Kalın (sistemi yener) |\n\n**4 kapakçık ve sesleri:**\n- Mitral (biküspid): Sol AV — S1 sesi\n- Triküspid: Sağ AV — S1 sesi\n- Aort kapak: Sol çıkım — S2 sesi\n- Pulmoner kapak: Sağ çıkım — S2 sesi\n\n**Kan yolu özeti:** VCS/VCI → SAtr → Triküspid → SVent → Pulmoner kapak → A. Pulmonalis → Akciğer → V. Pulmonalis → SAtr → Mitral → SVent → Aort kapak → Aorta\n\n**Prompt:** \"Mitral kapak stenozu hastasında hangi odacıklar etkilenir, basınç değişimleri nasıl ilerler ve klinik bulgular nelerdir?\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "anatomi"
       ],
       "badge1": "İleri",
-      "content": "## Brakiyal Pleksus\nKökler: C5-C6-C7-C8-T1\nTrunkuslar: Üst (C5-6), Orta (C7), Alt (C8-T1)\nKordlar: Lateral, Medial, Posterior\nTerminal dallar: Müskülo-kutan, Median, Ulnar, Radial, Aksiller\nMnemonik: 'Robert Taylor Drinks Cold Beer'",
+      "content": "## Brakiyal Pleksus: Anatomik Yapı ve Klinik Bağlantı\n\nC5-T1 sinir köklerinden oluşan brakiyal pleksusun anatomisini ve hasar paternlerini öğreten şema.\n\n**Yapı: Kök → Gövde → Bölüm → Fasikül → Dal**\n- **Kökler:** C5, C6, C7, C8, T1\n- **Gövdeler:** Üst (C5-6), Orta (C7), Alt (C8-T1)\n- **Bölümler:** Ön + Arka (her gövdeden)\n- **Fasküller:** Lateral, Medial, Posterior\n- **Terminal dallar:** Musculocutan., Median, Ulnar, Radial, Axillar\n\n**Klinik hasar tipleri:**\n| Hasarı | Kök | Waiter's tip pozisyonu |\n|---------|-----|------------------------|\n| Erb palsy | C5-C6 | Omuz addükte, dirsek ekstanse, önkol pronasyon |\n| Klumpke palsy | C8-T1 | El pençe, Horner sendromu |\n\n**Bellekte tutma hilesi:** \"My Aunt Raped Uncle's Medial Lateral Posterior\" (Motor, Axillar, Radial, Ulnar, Medial/Lateral/Post fasikül)\n\n**Prompt:** \"C5-6 brakiyal pleksus hasarında hangi kaslar tutulur, muayenede nasıl gösterilir ve klinik pared nedir?\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "couinaud"
       ],
       "badge1": "İleri",
-      "content": "## Karaciğer Segmentleri\n1. I: Kaudat lob.\n2. II-IV: Sol lob (II sol posterior, III sol anterior, IV quadrat).\n3. V-VIII: Sağ lob (portal ven ve hepatik ven sınırları).\n4. Cerrahi rezeksiyonlar segment bazlı planlanır.",
+      "content": "## Karaciğer Couinaud Segmentasyonu\n\nKaraciğerin 8 fonksiyonel segmentinin cerrahi anatomisi ve klinik önemi.\n\n**Couinaud segmentleri:**\n- **Segment I:** Kaudat lob (VCI'ya bağımsız drenaj)\n- **Segment II-III:** Sol lateral bölüm\n- **Segment IV:** Quadrat lob (IV-a + IV-b)\n- **Segment V-VIII:** Sağ lob (V-VI alt sağ, VII-VIII üst sağ)\n\n**Referans noktaları:**\n- Portal ven: Sağ-sol lob sınırı (Rex-Cantlie çizgisi)\n- Hepatik venler: Segment sınırlarını belirler\n- Her segment bağımsız damar-safra yoluna sahip → ayrı cerrahi rezeksiyon\n\n**Klinik kullanım:**\n- BT/MR raporlarında lezyon lokalizasyonu: \"Segment VI'da 2 cm lezyon\"\n- Hepatektomi planlaması: Kalanın yeterliliği\n- TACE (kemoemboli) hedefleme\n\n**Prompt:** \"BT'de sağ lob üst kesim karaciğer lezyonu var. Couinaud segmentasyonuna göre hangi segmentler etkilenebilir ve rezeksiyonda ne kadar parankim kalır?\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "fizyoloji"
       ],
       "badge1": "Orta",
-      "content": "## Aksiyon Potansiyeli\n0. Eşik (-55 mV) → Na⁺ kanalları açılır.\n1. Depolarizasyon: +30 mV'e ulaşır.\n2. Repolarizasyon: K⁺ çıkar, Na⁺ kapanır.\n3. Hiperpolarizasyon: -90 mV altına düşer.\n4. Mutlak refraktör: yeni AP imkânsız.",
+      "content": "## Nöron Aksiyon Potansiyeli: 5 Faz\n\nSodyum-potasyum kanallarının koordineli açılıp kapanmasıyla oluşan aksiyon potansiyelinin aşama bazlı analizi.\n\n**5 Faz:**\n| Faz | Durum | mV |\n|-----|-------|----|\n| 0 — Depolarizasyon | Hızlı Na+ kanalı açılır | -70 → +30 |\n| 1 — Erken repolarizasyon | Na+ kanalı inaktive, K+ başlar | +30 → 0 |\n| 2 — Plato (kalp kasına özgü!) | Ca2+ girişi = K+ çıkışı dengeler | ~0 mV |\n| 3 — Geç repolarizasyon | K+ kanalı tam açık | 0 → -70 |\n| 4 — Dinlenme potansiyeli | Na+/K+ ATPaz dengeleme | -70 mV |\n\n**İlaç hedefleri:**\n- Sınıf I antiaritmik: Na+ kanal blokörü (faz 0 yavaşlar)\n- Sınıf II: Beta bloker (pacemaker faz 4)\n- Sınıf III: K+ kanal blokörü (faz 3 uzar → QT uzaması)\n- Sınıf IV: Ca2+ kanal blokörü (faz 2, özellikle AV nod)\n\n**Prompt:** \"Amiodaron'un (Sınıf III) EKG'ye etkisini aksiyon potansiyeli fazlarıyla açıkla ve QT uzaması riski nasıl izlenir?\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "raas"
       ],
       "badge1": "İleri",
-      "content": "## GFR Düzenlemesi\n1. Miyojenik refleks: kan basıncı artınca afferent arteriol daralır.\n2. Tübüloglomerüler feedback: maküla densa NaCl artışı → afferent daralma.\n3. RAAS: düşük basınç → anjiotensin II → efferent daralma.\n4. Sonuç: GFR görece sabit tutulur.",
+      "content": "## GFR Düzenleme: Otoregülasyon ve Hormonal Mekanizmalar\n\nGlomerüler filtrasyon hızının miyojenik, tübüloglomerüler ve hormonal kontrolünü açıklar.\n\n**Otoregülasyon mekanizmaları:**\n1. **Miyojenik:** Afferent arteriyol basınç arttığında büzülür → GFR sabit\n2. **Tübüloglomerüler geri bildirim (TGF):** Makula densa Na+Cl- yüksekse → Afferent konstrüksiyon\n\n**Hormonal düzenleme:**\n| Hormon | Afferent | Efferent | GFR Etkisi |\n|--------|----------|----------|------------|\n| Angiotensin II | Konstrüksiyon | Güçlü konstrüksiyon | Net ↑ (efferent > afferent) |\n| Prostaglandinler | Dilatasyon | — | ↑ |\n| ANP | Dilatasyon | Konstrüksiyon | ↑ |\n| NSAİİ | Bloke prostaglandin | — | ↓ (risk grubu) |\n\n**ACE inhibitörü etkisi:** Ang II bloke → Efferent dilate → GFR düşer → Bazal Cr↑ beklenir (%30 altı normal)\n\n**Prompt:** \"Kalp yetmezliği hastasında ACE inhibitörü başlandıktan sonra kreatinin ne kadar yükselirse ilaç kesilmeli ve RAAS blokajı neden renal koruyucudur?\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "sınıflama"
       ],
       "badge1": "Orta",
-      "content": "## Beta Blokerlar\n1. Kardiyoselektif (β1): Metoprolol, Bisoprolol, Atenolol.\n2. Non-selektif (β1+β2): Propranolol, Karvedilol.\n3. ISA'lı (parsiyel agonist): Pindolol.\n4. KI: astım, AV blok, dekompanse KY.\nMnemonik: 'ABCDEFGhijklm' → Atenolol, Bisoprolol...",
+      "content": "## Beta Bloker Sınıflandırması ve Klinik Seçim\n\nBeta bloker farmakolojisini seçicilik, ek özellikler ve klinik endikasyonlar bazında özetler.\n\n**Seçicilik:**\n| Tip | İlaçlar | B1 | B2 |\n|-----|---------|----|----|\n| Non-selektif | Propranolol, Carvedilol | ✓ | ✓ |\n| B1-selektif | Metoprolol, Atenolol, Bisoprolol | ✓ | ✗ |\n| B1-selektif + alfa1 | Labetalol, Carvedilol | ✓ | +alfa |\n\n**Ek özellikler:**\n- **ISA (iç sempatomimetik aktivite):** Pindolol — istirahat kalp hızını daha az düşürür\n- **Membran stabilize:** Propranolol — Na+ kanal bloke (lokal anestezik benzeri)\n- **Vazodilatör:** Nebivolol — NO salıverir\n\n**Endikasyonlar:**\n- HFrEF: Metoprolol succinate, Bisoprolol, Carvedilol (üç kanıtlı)\n- AF hız kontrolü: Metoprolol IV\n- Migren profilaksisi: Propranolol\n- Tirotoksikoz semptom kontrolü: Propranolol (non-selektif)\n\n**Prompt:** \"KOAH'ı olan hipertansif hastada beta bloker seçimi nasıl yapılır? Kardioselektif beta bloker KOAH'ta güvenli mi?\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "farmakoloji"
       ],
       "badge1": "Orta",
-      "content": "## ACEi vs ARB\nACEi: Anjiotensin II oluşumunu engeller + bradikinin birikir → kuru öksürük.\nARB: AT1 reseptörünü bloke eder → öksürük yok.\nOrtak endikasyon: HT, KKY, diyabetik nefropati.\nACEi yan etki: öksürük (%10-15) → ARB'ye geç.\nHer ikisini beraber KULLANma (ONTARGET çalışması).",
+      "content": "## ACE İnhibitörleri vs ARB: Karşılaştırmalı Farmakologie\n\nRAAS blokajının iki yolunu — ACE inhibitörü ve ARB — mekanizma, etki profili ve klinik tercih açısından karşılaştırır.\n\n**Mekanizma farkı:**\n| Özellik | ACEi | ARB |\n|---------|------|-----|\n| Etki yeri | ACE enzimi bloke | AT1 reseptör bloke |\n| Bradikinin etkisi | Artar (öksürük, anjiyoödem) | Değişmez |\n| Ang II düzeyi | Düşer | Yükselir (AT2 üzerinden) |\n| Aldosteron | Düşer | Düşer |\n\n**Klinik tercih:**\n- DM nefropatisi ilk seçenek: ACEi (Captopril, Ramipril)\n- ACEi öksürüğünde: ARB (Losartan, Valsartan)\n- Kalp yetmezliği: Her ikisi mortalite azaltır\n- Gebelik kontraendikasyonu: Her ikisi (fetotoksik)\n- HFrEF + ARN-i: Sacubitril/Valsartan (ARNI) — ACEi + ARB üstün\n\n**Çift blokaj:** ACEi + ARB birlikte → renal hasar riski, artık önerilmez.\n\n**Prompt:** \"Diabetik nefropatisi olan kronik böbrek hastalığında ACE inhibitörü seçimi, doz titrasyonu ve kreatinin/potasyum izlemi nasıl yapılır?\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "tanı"
       ],
       "badge1": "İleri",
-      "content": "## Sepsis-3\nqSOFA (2/3 kriter):\n• GCS < 15\n• SS ≥ 22/dk\n• SKB ≤ 100 mmHg\nSepsis: enfeksiyon + SOFA ≥ 2.\nSeptik şok: sepsis + vazopressör + laktat > 2 mmol/L.",
+      "content": "## Sepsis-3 Tanım Kriterleri ve Klinik Uygulama\n\n2016 Sepsis-3 konsensus tanımı — SIRS yerine organ disfonksiyonuna dayanan yeni çerçeve.\n\n**Sepsis-3 Tanımı:**\n- Enfeksiyona bağlı, hayatı tehdit eden organ disfonksiyonu\n- **SOFA skoru ≥2 puan artış** → Sepsis\n\n**qSOFA (acil hızlı tarama):**\n3 kriterden 2'si → Sepsis şüphesi\n- Bilinç bozukluğu (GCS < 15)\n- Solunum hızı ≥ 22/dk\n- Sistolik KB ≤ 100 mmHg\n\n**Septik Şok (Sepsis-3):**\n- Sıvı resüsitasyonuna rağmen vazopressör ihtiyacı\n- VE Laktat ≥ 2 mmol/L\n- Mortalite: >40%\n\n**Yönetim (Hour-1 Bundle):**\n1. Laktat ölç\n2. Kan kültürü (antibiyotik öncesi)\n3. Geniş spektrum antibiyotik başla\n4. Kristaloid 30 mL/kg (laktat ≥4 veya hipotansiyon)\n5. Vazopressör (norepinefrin birinci seçenek)\n\n**Prompt:** \"Septik şok kriterlerini karşılayan hasta için ilk 1 saatlik yönetim planı hazırla; antibiyotik seçimi, sıvı titrasyonu ve monitörizasyon parametreleri.\"",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "troponin"
       ],
       "badge1": "İleri",
-      "content": "## AKS Ayırımı\nSTEMI: ST elevasyonu + troponin yükseliyor → acil kateter.\nNSTEMI: ST çökmesi/normal EKG + troponin (+) → erken kateter.\nKararsız angina: ST değişikliği + troponin (-) → ilaç tedavisi.\nOrtak: aspirin + P2Y12 inhibitörü başla.",
+      "content": "## AKS Sınıflandırması: STEMI / NSTEMI / UAP\n\nAkut koroner sendromun EKG ve biyomarker bazlı üçlü sınıflandırması.\n\n**AKS üçlüsü:**\n| Tanı | EKG | Troponin | Yönetim |\n|------|-----|----------|----------|\n| STEMI | ST elevasyonu | Yükselir | Acil PKG/TKB |\n| NSTEMI | ST depresyonu/T neg | Yükselir | Erken invaziv |\n| UAP | Normal/değişken | Normal | Konservatif |\n\n**STEMI kriterleri:**\n- 2 komşu derivasyonda ST elevasyonu:\n  - ≥1 mm (çoğu derivasyonda)\n  - ≥2 mm (V1-V4 anterior)\n  - ≥2.5 mm (erkek <40 yaş)\n- Yeni sol dal bloğu = STEMI eşdeğeri\n\n**Troponin kinetikleri:**\n- Yükselme: 3-6 saat\n- Zirve: 12-24 saat (TnI) / 24-48 saat (TnT)\n- Normalleşme: 7-14 gün\n- High-sensitivity troponin: 0-1 saat protokol\n\n**Prompt:** \"EKG'si var [derivasyon değerleri] olan, troponin T 0.05 ng/mL olan hastada AKS ayırıcı tanısını yap ve acil yönetim kararını ver.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "ek"
       ],
       "badge1": "Başlangıç",
-      "content": "## Tıbbi Ekler\n-itis: iltihaplanma (appendicit)\n-ectomy: çıkarma (gastrektomi)\n-plasty: onarım/şekillendirme (rinoplasti)\n-oscopy: görme ile inceleme (laparoskopi)\n-otomy: kesi (trakeotomi)\n-orrhaphy: onarma/dikme (herniyorafi)",
+      "content": "## Tıp Latincesi: Yaygın Kök ve Ek Çözümleyici\n\nTıbbi terminolojide en sık kullanılan Latince/Yunanca kökler, prefix ve suffix'ler.\n\n**Anatomik kökler:**\n| Kök | Anlam | Örnek |\n|-----|-------|-------|\n| Cardio- | Kalp | Kardiomiyopati |\n| Hepato- | Karaciğer | Hepatit |\n| Nephro- | Böbrek | Nefropati |\n| Osteo- | Kemik | Osteoporoz |\n| Neuro- | Sinir | Nöroloji |\n| Dermo- | Deri | Dermatit |\n\n**Patoloji ekleri:**\n- `-itis` = iltihaplanma (apandisit, peritonit)\n- `-oma` = tümör (melanom, adenoma)\n- `-osis` = patolojik durum (skleroz, fibroz)\n- `-algia` = ağrı (miyalji, nevralji)\n- `-ectomy` = cerrahi çıkarma (apendektomi)\n- `-plasty` = onarım (rinoplasti)\n\n**Hız çözümleme tekniği:** Bilmediğin terimi prefix + kök + suffix'e böl → her parçanın anlamını bil → birleştir.\n\n**Prompt:** \"Bu tıbbi terimleri kök analizi yaparak Türkçe açıkla: [terim listesi]. Her terimin prefix, kök ve suffix bileşenlerini ayrı ayrı tanımla.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "eksen"
       ],
       "badge1": "Başlangıç",
-      "content": "## Pozisyon Terimleri\nAnterior/Posterior: ön-arka\nMedial/Lateral: orta-yan\nSüperior/İnferior: üst-alt\nProksimal/Distal: gövdeye yakın-uzak\nSupinasyon/Pronasyon: avuç yukarı-aşağı\nİpsilateral/Kontralateral: aynı/karşı taraf",
+      "content": "## Anatomi Pozisyon ve Yön Terimleri Rehberi\n\nAnatomik pozisyon esas alınarak kullanılan standart yön terimleri ve klinik önemi.\n\n**Anatomik pozisyon:** Ayakta, eller önde, avuçlar ileri dönük\n\n**Temel yön terimleri:**\n| Terim | Anlam | Karşıtı |\n|-------|-------|--------|\n| Superior / Kranial | Baş yönü | Inferior / Kaudal |\n| Anterior / Ventral | Ön yüz | Posterior / Dorsal |\n| Medial | Orta hat'a yakın | Lateral |\n| Proksimal | Gövdeye yakın | Distal |\n| Superfisyel | Yüzeye yakın | Derin |\n| İpsilateral | Aynı taraf | Kontralateral |\n\n**Düzlemler:**\n- **Sagital:** Vücudu sağ-sol böler (orta = median sagital)\n- **Koronal (frontal):** Ön-arka böler\n- **Transvers (horizontal):** Üst-alt böler\n\n**Klinik kullanım:** BT/MR raporlarında lokalizasyon, cerrahi insizyonlarda yaklaşım.\n\n**Prompt:** \"Sağ alt kadranda ağrısı olan hastanın BT raporunda lezyon tanımı için anatomi pozisyon terimleri ile lokalizasyon raporunu yaz.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "teknik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Aktif Hatırlama\n1. Konuyu oku, kapat, boş sayfaya hatırladıklarını yaz.\n2. Flashcard'ı cevaplamadan önce kendi yanıtını düşün.\n3. Aralıklı tekrar (Anki): 1-3-7-14 gün.\n4. Yanlış cevaplara %80 zaman ayır.",
+      "content": "## Aktif Hatırlama ile Tıp Eğitimi Stratejisi\n\nPasif okuma yerine aktif test yaparak kalıcı hafıza oluşturan çalışma metodolojisi.\n\n**Temel teknikler:**\n\n**1. Spaced Repetition (Anki):**\n- Tıp fakültesi için hazır deck'ler: Anking (Step 1/2)\n- Günlük: 50-100 kart review + 20 yeni kart\n- Yanlış kart → daha sık tekrar\n\n**2. Blurting:**\n- Konuyu kapat, boş kağıda bildiklerini yaz\n- Sonra kontrol et — boşluklar gerçek zayıf noktalar\n\n**3. Feynman Tekniği:**\n- Konuyu 12 yaşındaki birine açıklarmış gibi yaz\n- Açıklayamazsan → henüz bilmiyorsun\n\n**4. Practice Questions (PQ → PA → DR):**\n- PQ: soru çöz\n- PA: yanlışlarını analiz et\n- DR: açıklayarak review\n\n**Hatırlama vs Tanıma:** Çoktan seçmeli tanıma yaratır — soru çözün, ama kendi kendinize de hatırlama yapın.\n\n**Prompt:** \"Bu konu için Anki flash card seti oluştur: [tıp konusu]. Her kart soru + cevap + klinik bağlantı içersin.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "tus"
       ],
       "badge1": "Orta",
-      "content": "## Vaka Sorusu Tekniği\n1. Son cümleyi önce oku: ne soruluyor?\n2. Yaş, cinsiyet, süre ve anahtar semptomları belirle.\n3. Ayırıcı tanıyı zihninde hızla daralt.\n4. Elimine et, en tipik cevabı seç.\n5. 'Hariç değil' tuzağına dikkat et.",
+      "content": "## USMLE/TUS Klinik Soru Çözme Stratejisi\n\nKlinik senaryo sorularını sistematik olarak çözme yaklaşımı.\n\n**4 Adım Strateji:**\n\n**1. Son cümleyi önce oku (Soru kökü)**\n> \"Hangi tanı / Hangi test / Hangi ilaç / Sonraki adım?\"\nNe sorulduğunu bilerek vakayı oku.\n\n**2. Anahtar bulgular listele**\n- Demografik (yaş, cinsiyet, etnik)\n- Vitaller (anormal olanlar)\n- Laboratuvar (anormal olanlar)\n- EKG/Görüntüleme bulgusu\n\n**3. Ayırıcı tanı listesi (2-3 seçenek)**\nHer bulguyu açıklayan tanı seçeneklerini listele.\n\n**4. Eleme**\n- Hangi bulgu elimine ediyor?\n- En tutarlı tanı hangisi?\n- En güvenli/endikeli aksiyon hangisi?\n\n**Tuzak: Dikkat dağıtıcılar**\n- İrrelevant detaylar (ırk, meslek — bazen önemli, bazen tuzak)\n- Benzer semptom, farklı yaş/cinsiyet = farklı tanı\n\n**Prompt:** \"Bu klinik vaka sorusunu çöz: [vaka]. Soru çözme stratejisi adımlarını uygulayarak ve ayırıcı tanı listesi vererek açıkla.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "eğri"
       ],
       "badge1": "Orta",
-      "content": "## O₂ Disosiyasyon Eğrisi\nSağa kayma (↓afinite): ↑T, ↑PCO₂, ↓pH, ↑2,3-DPG.\nSola kayma (↑afinite): ↓T, ↓PCO₂, ↑pH, fetal Hb, MetHb.\nP50: normal ~26 mmHg.\nBohr etkisi: pH ↓ → sağa kayma → periferik salınım ↑.",
+      "content": "## Oksijen Disosiyasyon Eğrisi: Sağa/Sola Kayma\n\nHemoglobin-oksijen bağlanma eğrisinin fizyolojik yorumu ve klinik önemi.\n\n**Sigmoid eğri özellikleri:**\n- x-ekseni: PO2 (mmHg)\n- y-ekseni: SaO2 (%)\n- Normal: P50 = 27 mmHg (bu basınçta Hb %50 doygun)\n\n**Sağa kayma (O2 afinite ↓ = dokulara daha kolay O2 verir):**\n- Asidoz (↑ CO2, ↓ pH)\n- Hipertermi\n- ↑ 2,3-DPG (egzersiz, yüksek irtifa kronik)\n- Bohr etkisi: dokularda CO2 yüksek → O2 salınımı\n\n**Sola kayma (O2 afinite ↑ = O2 dokulara verilmez):**\n- Alkaloz\n- Hipotermi\n- ↑ HbF (fetal Hb — plasenta O2 almak için)\n- Karboksihemoglobin (CO zehirlenmesi — solsola kayma + kör SpO2)\n\n**Klinik: CO zehirlenmesinde SpO2 neden yanıltıcı?**\nPulse oksimetre COHb ile OxyHb'i ayırt edemez → yanıltıcı yüksek gösterir.\n\n**Prompt:** \"CO zehirlenmesi vakasında oksijen disosiyasyon eğrisindeki değişimi, SpO2 yanılmasının mekanizmasını ve tedavi hedef SpO2'yi açıkla.\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "sınıflama"
       ],
       "badge1": "Orta",
-      "content": "## Antibiyotik Spektrum\nGram (+): Penisilin, 1. kuşak sefalosporin, Vankomisin.\nGram (-): 3-4. kuşak sefalosporin, Aztreonam, Aminoglikozid.\nAtipik: Makrolid, Florokinolon, Doksisiklin.\nAnaerop: Metronidazol, Karbapenem.\nGeniş spektrum: Piperasilin-Tazobaktam, Karbapenem.",
+      "content": "## Antibiyotik Spektrum: Hızlı Başvuru Tablosu\n\nKlinik kullanımda yaygın antibiyotiklerin kapsadığı organizmalar ve endikasyonları.\n\n**Gram pozitif güçlüler:**\n- Vankomisın: MRSA, Enterococcus (VRE dışı)\n- Linezolid: MRSA + VRE\n- Daptomicin: MRSA + bakteremi\n\n**Gram negatif güçlüler:**\n- Piperasilin-tazobaktam: Pseudomonas dahil geniş spektrum\n- Meropenem/İmipenem: Karbapenem — ESBL ve çoğu GN\n- Seftazidim-avibaktam: KPC pozitif Klebsiella\n\n**Atipik organizmaları kapsar:**\n- Azitromisin, Doksisiklin: Mycoplasma, Chlamydia\n- Florokinolonlar: Legionella, Mycoplasma\n\n**MRSA empirik tedavi:**\n- Ciddi enfeksiyon: Vankomisın IV\n- Hafif cilt enfeksiyonu: TMP-SMX veya Doksisiklin oral\n\n**5 Kural:** Penisilin, Sefalosporin alerjisinde çapraz reaksiyon düşük (%1-2) — anamnez net alın, anafilaksi öyküsünde karbapenem dışında kalın.\n\n**Prompt:** \"Toplum kökenli pnömoni tedavisinde empirik antibiyotik seçimini risk faktörlerine göre şemalaştır: ayakta tedavi vs yatış gerektiren vs YBÜ.\"",
       "source": {
         "generated": true
       }

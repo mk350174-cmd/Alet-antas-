@@ -93,7 +93,7 @@
         "pazartesi"
       ],
       "badge1": "Temel",
-      "content": "**Haftalık Başlangıç:** Her pazartesi 30 dakika ayır. Geçen haftanın tamamlanmamışlarını aktar, bu hafta için 3 ana hedef belirle, günlere görev dağılımı yap. 'Big 3' metodunu kullan: her gün en önemli 3 görev.",
+      "content": "## Pazartesi Başlangıç Ritüeli: 30 Dakika Sistem\n\nHaftayı netlik ve kontrol hissiyle açan yapılandırılmış ritüel.\n\n**30 dakika şablonu:**\n\n**1. Hafızayı Topla (5 dk)**\n- Geçen haftadan taşınan işler neler?\n- Beklenmedik ne geldi, ne değişti?\n\n**2. Hafta Haritasını Çiz (10 dk)**\n- Bu hafta bitmesi ZORUNLU olan 1-3 iş (MIT)\n- Takvime bakın: toplantılar, son tarihler, engeller\n- Gerçek çalışma saati hesabı: kaç saatim var?\n\n**3. Her Güne MIT At (10 dk)**\n- Pazartesi → [ana iş]\n- Salı → [ana iş]\n- Çarşamba → [ana iş]\n\n**4. Haftanın Niyetini Yaz (5 dk)**\n> \"Bu hafta [X iş] tamamlayarak [sonuç] elde edeceğim.\"\n\n**Prompt şablonu:**\n```\nBu haftaki görevlerim: [liste]\nToplantılarım: [liste]\nHaftalık öncelikleri belirle ve günlere dağıt.\n```",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "cuma"
       ],
       "badge1": "Rutin",
-      "content": "**Cuma Kapanışı:** Tamamlanan görevleri işaretle, tamamlanamayanlara neden olduğunu not al. 'Ne iyi gitti / Ne zordu / Ne öğrendim' üç sorusunu yanıtla. Sonraki hafta için taslak oluştur.",
+      "content": "## Cuma Kapanış Ritüeli: Haftalık Değerlendirme\n\nHaftayı kapatarak zihinsel yükü sıfırlayan ve bir sonraki haftaya hazırlanan 20 dakika ritüel.\n\n**4 Bölüm:**\n\n**1. Tamamlananlar (5 dk)**\n- Bu hafta tamamladığım MIT: ✓\n- Beklenmedik başarılar: ✓\n→ Küçük kutlama — ne iyi gitti?\n\n**2. Taşınanlar (5 dk)**\n- Bitmeyenler neden bitmedi? (kapasite, engel, yanlış öncelik?)\n- Hâlâ önemli mi? Evet → taşı | Hayır → sil\n\n**3. Öğrendiklerim (5 dk)**\n- Bu hafta iş yapış biçimim hakkında ne öğrendim?\n- Bir sonraki haftaya taşıyacağım bir davranış değişikliği\n\n**4. Beyin Boşaltma (5 dk)**\n- Zihnimde takılı kalan her şeyi yaz (görev, korku, fikir)\n- Sisteme gir (takvim/görev listesi) veya sil\n\n**Kapanış cümlesi:** \"Bu hafta tamamlandı. Hafta sonu zihin serbest.\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "planlama"
       ],
       "badge1": "İleri",
-      "content": "**2 Haftalık Görünüm:** Takvimini her zaman 2 hafta ileri açık tut. Yaklaşan teslim tarihlerini görünür yap, buffer günler ekle. Yoğun haftalara önceden hazırlan; beklenmedik işler için %20 boşluk bırak.",
+      "content": "## Rolling 2 Haftalık Planlama Görünümü\n\nBu hafta ve sonraki haftayı aynı anda gören, kayan (rolling) plan sistemi.\n\n**Format:**\n```\nBU HAFTA (25 Haz - 29 Haz)\nMIT: [1-3 kritik iş]\nToplantı: [liste]\nAktif projeler: [isim | durum | sonraki adım]\n\nSONRAKİ HAFTA (2 Tem - 6 Tem)\nBilinen son tarihler: [liste]\nHazırlanması gerekenler: [liste]\nRisk: Yarı ayda ne bitmeliydi?\n```\n\n**Neden işe yarar:**\n- Bu haftaki yükü sonraki haftayı görerek dengelersiniz\n- Sürpriz son tarih azalır\n- Proje momentum kırılmaz (next action her zaman belli)\n\n**Haftalık güncelleme:** Her Cuma kapanışında 2. haftayı bu haftaya çek, yeni 2. haftayı ekle.\n\n**Prompt:** \"Bu haftaki [görev listesi] ve son tarihlerim [liste] ile 2 haftalık rolling plan oluştur.\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "hazırlık"
       ],
       "badge1": "Temel",
-      "content": "**Toplantı Şablonu:** Toplantıdan 15 dk önce: amaç (1 cümle), gündem maddeleri (max 3), beklenen karar/çıktı, katılımcı rolleri. Toplantıyı 5 dakika erken bitir — not alma zamanı. Hiç gündem yoksa toplantıyı iptal et.",
+      "content": "## Verimli Toplantı İçin Hazırlık Sistemi\n\nToplantıya boş elle girmemeyi sağlayan 10 dakika hazırlık protokolü.\n\n**Toplantı öncesi kontrol listesi:**\n- [ ] Toplantının amacı ne? (bilgi paylaşımı / karar / beyin fırtınası)\n- [ ] Benim rolüm nedir? (karar verici / bilgi veren / dinleyen)\n- [ ] Hazırlanmam gereken veri/sunum var mı?\n- [ ] Gündem bende mi? Yoksa istemem gerekiyor mu?\n- [ ] Hangi soruya cevap almak istiyorum?\n- [ ] Toplantıdan çıkış kriterim: hangi çıktı = başarılı toplantı?\n\n**Gündem şablonu (gönderilecek):**\n```\nToplantı: [Konu] | [Tarih Saat] | [Süre]\nKatılımcılar: [isimler + rolleri]\nGündem:\n1. [Konu] — [X dk] — Karar/Bilgi/Tartışma\n2. ...\nBeklenen Çıktı: [kararlar, sonraki adımlar]\n```\n\n**Prompt:** \"[Toplantı konusu] için gündem şablonu hazırla; her maddenin sahibi, süresi ve beklenen çıktısı olsun.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "iletişim"
       ],
       "badge1": "Verimlilik",
-      "content": "**Toplantısız Karar:** Bilgi paylaşımı için Loom videosu kaydet (max 5 dk). Fikir alma için Notion sayfasına yorum bırak. Acil kararlar için: seçenekleri listele + deadline belirle + ilgililere ping at. Haftalık toplantıların yarısını bu yöntemle azalt.",
+      "content": "## Asenkron İletişim: Toplantıyı Dokümanla Değiştirme\n\nRutin toplantıları asenkron formatlara dönüştürme rehberi.\n\n**Toplantı türü → Asenkron alternatif:**\n| Toplantı | Asenkron Karşılığı | Araç |\n|----------|-------------------|------|\n| Durum güncellemesi | Haftalık yazılı özet | Notion/Confluence |\n| Beyin fırtınası | Async yorum dizisi | Loom + Notion |\n| Onay toplantısı | 1-sayfalık brief + imza | Doküman |\n| Bilgi paylaşımı | Video + transcript | Loom/Screen record |\n\n**Asenkron karar belgesi şablonu:**\n```markdown\n# [Karar Başlığı]\n**Bağlam:** ...\n**Seçenekler:**\n- A: Pro: ... / Con: ...\n- B: Pro: ... / Con: ...\n**Öneri:** A, çünkü ...\n**Kararı vermesi gereken:** [İsim]\n**Son yanıt tarihi:** [Tarih]\n```\n\n**Prompt:** \"Bu haftalık durum güncellemesi bilgisini [içerik] asenkron formata çevir; okunması 2 dakikayı geçmesin.\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "matris"
       ],
       "badge1": "Klasik",
-      "content": "**4 Kutu:** Q1 (acil+önemli) → hemen yap. Q2 (önemli+acil değil) → planla. Q3 (acil+önemsiz) → delege et. Q4 (ikisi de değil) → sil. Her sabah görev listeni bu matrisle tara. Q2'ye daha fazla zaman ayır — gerçek büyüme orada.",
+      "content": "## Eisenhower Matrisi: Önceliklendirme Sistemi\n\nAcil/önemli iki eksende görev önceliklendirme ve her kadrant için aksiyon stratejisi.\n\n**Matris:**\n```\n         ACİL            ACİL DEĞİL\nÖNEMLİ  │ I. Yap (hemen) │ II. Planla (büyüme) │\n         ├────────────────┼────────────────────┤\nÖNEMSİZ │ III. Delege Et │ IV. Sil / Daha sonra│\n```\n\n**Kadrant stratejileri:**\n- **I (Kriz):** Hemen yap. Ama kalabalıksa bir sorun var — neden bu kadar kriz üretiyorsunuz?\n- **II (Gelişim):** Blokla. Burada zaman geçirmek geleceği kurar — strateji, öğrenme, ilişki\n- **III (Kesinti):** Delege et veya otomasyon. Email, çoğu toplantı burada.\n- **IV (Gürültü):** Sil. Pişmanlık duymadan.\n\n**Prompt:** \"Bu haftalık görev listem: [liste]. Her birini Eisenhower matrisinde sınıflandır ve her kadrant için bu haftanın aksiyon planını oluştur.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "odak"
       ],
       "badge1": "Basit",
-      "content": "**MIT Metodu:** Sabah gün başlamadan 3 'Most Important Task' seç. Bunlar tamamlanınca gün başarılı sayılır. Seçim kriteri: bugün sadece 1 şey yapabilseydin ne olurdu? Önce o görevi bitir, e-postayı sonra aç.",
+      "content": "## MIT Sistemi: Günlük En Önemli 3 Görev\n\nGünü 3 kritik göreve odaklayan basit ama güçlü önceliklendirme yöntemi.\n\n**MIT seçim kriterleri:**\n1. Bu gün bitseydi ne **kalıcı ilerleme** sağlardı?\n2. Hangi görev **sonraki adımları** kilitliyor?\n3. Hangi görev **en uzun ertelenmiş** ama gerçekten önemli?\n\n**Sabah MIT ritüeli (5 dk):**\n```\nBugünün MIT'leri:\n1. [İş 1] → Neden önemli: ... → Tahmini süre: ...\n2. [İş 2] → ...\n3. [İş 3] → ...\n\nBugün bu üçünü bitirirsem → başarılı gün.\nDiğer her şey bonus.\n```\n\n**MIT önceliği:** MIT'leri günün **ilk 2-3 saatine** bloklayın — önce bunlar, email sonra.\n\n**Prompt:** \"Yapılacaklar listem: [liste]. Bugün için MIT'lerimi seç; seçim gerekçelerini ve tahmini çalışma sürelerini belirt.\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "blok"
       ],
       "badge1": "Güçlü",
-      "content": "**Time Blocking:** Takvimde her görev için blok oluştur — toplantı gibi. Derin çalışma: 90-120 dk bloklar. Yüzeysel iş (e-posta, slack): 30 dk bloklar. Günde 1-2 'tampon blok' bırak. Google Calendar'da farklı renk kategorileri kullan.",
+      "content": "## Zaman Bloklama: Takvim Tabanlı Çalışma Sistemi\n\nGörevleri takvime blok olarak yerleştirerek dikkat dağılmasını önleyen sistem.\n\n**Blok türleri:**\n- **Derin Çalışma Bloğu:** 90-120 dk, tek görev, bildirimler kapalı\n- **Yönetim Bloğu:** Email, Slack, kısa toplantılar — günde 2×30 dk\n- **Yaratıcı Blok:** Beyin fırtınası, planlama — sabah veya yemek sonrası\n- **Tampon Blok:** Beklenmeyen işler, kriz — günde 30 dk boş bırak\n\n**Haftalık blok şablonu:**\n```\nPzt/Çarş/Cum 09:00-11:00 → Derin Çalışma (MIT)\nHer gün 11:30-12:00 → Yönetim Bloğu\nSal/Perş 14:00-16:00 → Toplantı penceresi\nHer gün 16:30-17:00 → Email + Yönetim\nCuma 16:00-17:00 → Haftalık kapanış\n```\n\n**Prompt:** \"Bu haftalık görev ve toplantılarımı [liste] zaman bloklama sistemiyle takvime yerleştir; derin çalışma ve yönetim bloklarını dengeli dağıt.\"",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "mola"
       ],
       "badge1": "Teknik",
-      "content": "**Pomodoro Varyantları:** Standart: 25 çalış / 5 mola / 4 döngü sonra 20 dk uzun mola. Flow state için 50/10. Yaratıcı iş için 90/20 (ultradian ritim). Zorlu başlangıçlar için 2 dk/2 dk: sadece 2 dk çalış, durabilirsin — genellikle devam edersin.",
+      "content": "## Pomodoro Tekniği ve Varyantları\n\nStandart Pomodoro'yu farklı çalışma tiplerine uyarlayan varyantlar.\n\n**Standart Pomodoro:** 25 dk çalış → 5 dk ara → 4 Pomodoro → 30 dk uzun ara\n\n**Varyantlar:**\n| Varyant | Süre | İçin |\n|---------|------|------|\n| Standart | 25+5 | Rutin görevler, öğrenme |\n| Uzun Pomodoro | 50+10 | Derin çalışma, yazma |\n| Kısa Sprint | 15+3 | Dikkat dağınıklığı yoğun gün |\n| Flowmodoro | Flow bitene kadar | Yaratıcı iş, kodlama |\n| 52-17 | 52+17 | Araştırma destekli optimal |\n\n**Dijital araçlar:** Toggl Track, Pomofocus.io, Forest (mobil)\n\n**Pomodoro kayıt şablonu:**\n```\nTarih: [XX.XX.XXXX]\nGörev: [İsim] | Pomodoro: [#] | Gerçek süre: [X dk]\nKesintiler: [adet] | Enerji: [1-5]\nNot: ...\n```\n\n**Prompt:** \"Bugünkü [görev listesi] için Pomodoro planı yap; hangi görev hangi varyantla eşleşir ve toplam süre tahmini ne?\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "quarterly"
       ],
       "badge1": "Kurumsal",
-      "content": "**OKR Şablonu:** Objective: İlham verici, 3 aylık hedef (1 cümle). Key Results: 3-5 ölçülebilir çıktı (sayı/%). Her hafta KR ilerlemeyi 0-1 arasında puan ver. Çeyrek sonu: 0.7+ başarı. 1.0 aldıysan hedef yeterince büyük değildi.",
+      "content": "## OKR Sistemi: Hedef ve Sonuç Çerçevesi\n\nObjectives and Key Results metodolojisini bireysel ve ekip düzeyinde uygulama rehberi.\n\n**OKR yapısı:**\n```\nObjective (Hedef): İlham verici, kaliteli hedef\n  KR1: Nicel, ölçülebilir, zaman sınırlı\n  KR2: ...\n  KR3: ...\n```\n\n**İyi OKR örneği:**\n```\nO: Ürünümüzü kullanıcıların vazgeçilmezi yap\n  KR1: Haftalık aktif kullanıcı Q3 sonunda 5000'e ulaşsın\n  KR2: NPS skoru 40'dan 60'a çıksın\n  KR3: 30 günlük retention %40'dan %60'a yükselsin\n```\n\n**Kötü OKR işaretleri:**\n- KR'lar task (görev) formatında: \"Landing page yap\" → KR değil\n- Objective'ler ölçülmüş: \"X'i %20 artır\" → O değil KR\n- %100 olası görünen KR → zorlayıcı değil\n\n**Prompt:** \"[Çeyreklik alan/ürün/ekip] için OKR seti yaz; 3 hedef, her birinde 2-3 key result, hepsi ölçülebilir ve biraz gergin.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "rutin"
       ],
       "badge1": "Rutin",
-      "content": "**Günlük Döngü:** Sabah (5 dk): bugünün MIT'leri neler? Takvime bak. Akşam (5 dk): ne tamamlandı, ne aktarılıyor, yarın için 1 şey hazırla. Bu 10 dakika haftalık planlama süresini yarıya indirir ve kaybolmuşluk hissini önler.",
+      "content": "## Günlük Kapanış: 10 Dakika İnceleme Döngüsü\n\nGünü kapatarak yarın için hazır olmayı sağlayan kısa döngü.\n\n**3-2-1 Kapanış Formatı:**\n\n**3 — Ne tamamlandı?**\n- [İş 1]\n- [İş 2]\n- [İş 3]\n→ Küçük tatmin anı: \"Bugün şunları yaptım.\"\n\n**2 — Yarın için 2 öncelik:**\n- [MIT 1]\n- [MIT 2]\n→ Zihin \"unfinished loop\"u kapatır — geceye taşımaz\n\n**1 — 1 öğrenim:**\n- Bugün ne çalıştı veya çalışmadı?\n- Yarın nasıl farklı yapacaksın?\n\n**Bonus — Beyin boşaltma:**\nZihinde takılı her şeyi (6 saniye içinde) yaz → sisteme aktar → zihin serbest\n\n**Prompt:** \"Bugün yaşadıklarım: [özet]. 3-2-1 kapanış formatını doldur ve yarınki MIT'lerimi öner.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "haftalık"
       ],
       "badge1": "Profesyonel",
-      "content": "**Durum Raporu Şablonu:** Bu hafta tamamlanan (3 madde). Devam eden (ilerleme %). Engeller / ihtiyaç (varsa). Gelecek hafta planı (3 madde). Her madde max 1 satır. Cuma öğleden sonra gönder. Madde sayısı fazlaysa önceliklendirme hatası var demektir.",
+      "content": "## Haftalık Durum Raporu Şablonu\n\nYöneticiye veya ekibe gönderilecek özlü, yapılandırılmış haftalık güncelleme formatı.\n\n**Şablon (okunması ≤2 dk):**\n```markdown\n## [Ad] | Hafta [N] Güncelleme\n\n### ✅ Tamamlananlar\n- [İş 1 — sonuç]\n- [İş 2 — sonuç]\n\n### 🔄 Devam Edenler\n- [Proje] — %[X] tamamlandı — Tahmini bitiş: [tarih]\n\n### ⚠️ Riskler / Engeller\n- [Engel] → Talep: [neye ihtiyacım var?]\n\n### 📅 Gelecek Hafta Planı\n1. [Öncelik 1]\n2. [Öncelik 2]\n\n### 📊 Metrik\n[İlgili KPI varsa]\n```\n\n**Prompt:** \"Bu haftaki ilerlememim: [durum]. Yöneticime göndermek için haftalık durum raporu hazırla; engeller bölümünü netlik kaybetmeden kısa tut.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "liste"
       ],
       "badge1": "Bakım",
-      "content": "**Backlog Temizliği:** Ayda 1 kez tüm görev listeni gözden geçir. Her görev için: 'Hâlâ önemli mi?' Evet → kalsın. Hayır → sil. Belki → 'Someday/Maybe' listesine taşı. Görev listesi 30 maddeyi aşmasın — uzun liste motivasyon öldürür.",
+      "content": "## Backlog Temizliği: Aylık Sistem Bakımı\n\nGörev listesi, inbox ve proje backlog'unu düzenli aralıklarla temizleme protokolü.\n\n**Aylık temizlik oturumu (45-60 dk):**\n\n**1. Yakalama (10 dk)**\nHer yerden (not, email, mesaj, akıl) tüm görevleri bir yere boşalt.\n\n**2. Eleme (20 dk) — Her görev için sorular:**\n- Bu hâlâ önemli mi? Hayır → Sil\n- Bu bir sonraki adım içeriyor mu? Hayır → Netleştir veya Sil\n- Bu bir proje mi, görev mi? Proje → Alt görevlere böl\n- Birikim 90 günden eski mi? Gerçekten yapacak mısın?\n\n**3. Önceliklendirme (15 dk)**\n- Kritik (bu ay bitmeli)\n- Önemli (bu çeyrekte)\n- Someday/Maybe (enerji ve zaman olursa)\n\n**4. Temiz sistem (10 dk)**\n- Açık döngüleri kapat veya sil\n- Her aktif projenin bir sonraki adımı net olsun\n\n**Prompt:** \"Backlog listem: [liste]. Önce önem-aciliyet analiziyle sınıflandır, sonra silme/taşıma/netleştirme kararlarını öner.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "strateji"
       ],
       "badge1": "Strateji",
-      "content": "**90 Gün Planı:** Her çeyrek başında: 1 ana tema belirle (örn. 'Müşteri büyümesi'). 3-5 somut proje listele. Haftalara dağıt. Aylık kontrol noktaları koy. Çeyrek sonunda değerlendir: ne öğrendim, ne değişti, sonraki çeyreğe ne taşıyorum?",
+      "content": "## Mevsimlik 90 Gün Planlaması\n\nYıllık hedefleri 3 aylık sprintlere bölerek yönetilebilir ve izlenebilir kılan planlama sistemi.\n\n**90 Gün Plan Şablonu:**\n```\nDönem: [Q1 / Q2 / Q3 / Q4] | [Tarih aralığı]\n\nBu çeyreğin teması: [tek kelime/cümle: Büyüme / İstikrar / Ürün / Toparlanma]\n\n3 Ana Hedef:\n1. [Hedef] — Başarı kriteri: [ölçülebilir]\n2. [Hedef] — ...\n3. [Hedef] — ...\n\nHaftalık taahhütler:\n- Haftalık MIT oturumu: ✓\n- Cuma kapanış: ✓\n- Aylık review: Ay 1 = [tarih], Ay 2 = ..., Ay 3 = ...\n\n90 Gün sonunda şunlara sahip olacağım:\n[Somut çıktılar listesi]\n```\n\n**Prompt:** \"[Yıllık büyük hedef] için 4 çeyreği planlayın; her çeyreğin teması ve 3 ana hedefi nedir?\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "biyoloji"
       ],
       "badge1": "İleri",
-      "content": "**Enerji Haritası:** 1 hafta boyunca her saat enerji seviyeni 1-5 puanla. Yüksek enerji zamanı (çoğu kişi sabah 9-11): derin, yaratıcı iş. Orta enerji (öğleden sonra): toplantı, e-posta. Düşük enerji: rutin görevler. Programa göre MIT'leri yerleştir.",
+      "content": "## Enerji Haritası: Biyolojik Ritme Göre Planlama\n\nBireysel enerji zirvelerini keşfederek yüksek-düşük enerji dönemlerine göre görev atayan sistem.\n\n**Enerji izleme (1 hafta boyunca):**\n```\nSaat | Enerji (1-5) | Zihinsel Netlik (1-5) | Ruh Hali\n09:00 | 4 | 5 | Keskin\n11:00 | 5 | 5 | Zirve\n13:00 | 2 | 2 | Düşüş (yemek sonrası)\n15:00 | 3 | 4 | Canlanma\n17:00 | 4 | 3 | Rutinler iyi\n```\n\n**Görev-enerji eşleştirmesi:**\n| Enerji | Görev tipi |\n|--------|------------|\n| Yüksek (zirve) | Derin çalışma, yaratıcılık, zor kararlar |\n| Orta | Toplantılar, email, planlama |\n| Düşük | Rutin, admin, arşivleme |\n\n**Prompt:** \"1 haftalık enerji günlüğüm: [çizelge]. Biyolojik ritme göre ideal günlük blok programı oluştur; hangi görevler hangi saate gitmeli?\"",
       "source": {
         "generated": true
       }

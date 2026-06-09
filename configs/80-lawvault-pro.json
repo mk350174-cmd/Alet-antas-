@@ -93,7 +93,7 @@
         "kontrol"
       ],
       "badge1": "Orta",
-      "content": "## Sözleşme Kontrol\n1. Tarafların ehliyet ve temsil yetkisini doğrula.\n2. Konuyu ve edimleri netleştir.\n3. Bedel ve ödeme koşullarını incele.\n4. İhlal, ceza ve fesih şartlarını sırala.\n5. Uygulanacak hukuk ve yargı yerini belirle.",
+      "content": "## Sözleşme İnceleme: Adım Adım Kontrol Listesi\n\nHer sözleşmeyi imzalamadan önce bu maddeleri kontrol edin.\n\n**Temel kontroller:**\n- [ ] Tarafların tam unvanı, adresi, vergi/TC kimlik numarası doğru mu?\n- [ ] Sözleşme konusu net tanımlı mı? Muğlak ifade var mı?\n- [ ] Ödeme şartları: miktar, vade, ödeme yöntemi, gecikme faizi\n- [ ] İfa süresi: başlangıç, bitiş, gecikme cezası var mı?\n- [ ] Fesih koşulları: hangi durumlarda, kaç gün önceden bildirim?\n- [ ] Gizlilik maddesinin kapsamı ve süresi\n- [ ] Uygulanacak hukuk: Türk hukuku mu, yabancı hukuk mu?\n- [ ] Yetkili mahkeme/tahkim yeri: sizi zorlayacak bir il mi?\n- [ ] Cezai şart tutarı orantılı mı?\n- [ ] Telif hakkı/fikri mülkiyet devri var mı? Kapsamı?\n\n**Prompt:** \"Bu sözleşmenin [bölüm X] maddesini analiz et; [avantajlı mı, değil mi, nasıl değiştirilebilir] perspektifinden yorumla.\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "madde"
       ],
       "badge1": "Orta",
-      "content": "## NDA Şablonu\n1. Gizli bilginin tanımını dar ve açık yaz.\n2. İstisnaları listele: kamuya açık, bağımsız geliştirme.\n3. Kullanım kısıtlamasını belirt.\n4. Süreyi ve fesih sonrası yükümlülüğü ekle.\n5. Yaptırımı: ihlalde tazminat ve/veya ihtiyati tedbir.",
+      "content": "## NDA Gizlilik Sözleşmesi Şablonu ve Analizi\n\n**Standart NDA yapısı:**\n\n**1. Gizli Bilgi Tanımı** (kritik — geniş bırakın)\n> «Gizli Bilgi; teknik, ticari, mali, stratejik veya işletmeye ilişkin, yazılı, sözlü, dijital formatta paylaşılan her türlü bilgiyi kapsar.»\n\n**2. Kullanım Kısıtlaması**\n> «Alıcı taraf, Gizli Bilgi'yi yalnızca [amaç] için kullanabilir; üçüncü kişilerle paylaşamaz.»\n\n**3. Süre**\n- Standart: 2-5 yıl\n- Ticari sır için: süresiz (mümkün ama mahkemede zor korunur)\n\n**4. İstisnalar (boşluk kapatın)**\n- Zaten kamuya açık bilgi\n- Bağımsız geliştirilen\n- Mahkeme kararıyla zorunlu açıklama\n\n**Prompt:** \"Bu NDA taslağına şu maddeyi ekle: çalışan ayrılsa bile 2 yıl rakip firmaya geçemez. Türk hukuku çerçevesinde geçerlilik koşulları neler?\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "geçerlilik"
       ],
       "badge1": "İleri",
-      "content": "## Sorumsuzluk Analizi\n1. Maddenin hangi tür sorumluluğu kapsamadığını belirle.\n2. TBK m.115 gereği kast ve ağır ihmal için geçersiz olduğunu kontrol et.\n3. Tüketici sözleşmelerinde haksız şart değerlendirmesi yap.\n4. Müzakere edilmemiş standart şartlara dikkat et.",
+      "content": "## Sorumsuzluk (Liability Disclaimer) Kaydı Analizi\n\nSözleşmelerdeki sorumluluk sınırlama maddelerini değerlendirme çerçevesi.\n\n**Typik sorumsuzluk maddeleri:**\n```\nSatıcı, dolaylı, özel, arızi veya sonuçsal zararlardan\nsorumlu tutulamaz. Toplam sorumluluğu sözleşme bedelini geçemez.\n```\n\n**Değerlendirme soruları:**\n1. **Kapsam:** Hangi zararlar hariç tutuluyor? Bedensel zarar, ölüm hariç tutulabilir mi? (Türk Borçlar Kanunu — hayır, geçersiz)\n2. **Tavan:** Sözleşme bedeliyle sınırlı mı, yoksa ödenen ücret kadar mı? Fark büyük.\n3. **Kasıt ve ağır kusur:** TBK 115 — bunlar için sorumsuzluk şartı geçersiz\n4. **Karşılıklılık:** Tek taraflı mı, iki taraflı mı?\n\n**Prompt:** \"Bu sözleşmedeki sorumsuzluk kaydını Türk Borçlar Kanunu 115. maddesi çerçevesinde değerlendir; hangi kısımlar geçersiz sayılır?\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "mahkeme"
       ],
       "badge1": "Başlangıç",
-      "content": "## Dilekçe Yapısı\n1. Başlık: mahkeme adı, esas numarası, taraf adları.\n2. Açıklamalar: kısa, numaralı paragraflar.\n3. Hukuki dayanak: kanun maddesini açık yaz.\n4. Sonuç ve talep bölümü: net ve somut.\n5. Tarih ve imza.",
+      "content": "## Türk Mahkemelerine Hukuki Dilekçe Formatı\n\n**Dilekçe yapısı:**\n\n```\n[MAHKEME ADI] SAYIN HAKİMLİĞİNE\n\nDAVACI    : [Ad Soyad], TC: ..., Adres: ...\nDAVALI    : [Ad Soyad/Şirket], Adres: ...\nKONU      : [Örn. Alacak Talebi / İtiraz / Cevap]\nACELE     : [Evet/Hayır]\nDELİLLER  : Aşağıda sunulmuştur\n\nACIKLAMALAR:\n1. Taraflar arası ilişki ve sözleşme (madde madde)\n2. Uyuşmazlığın doğuşu ve olay örgüsü\n3. Hukuki dayanaklar (kanun maddeleri, içtihat)\n\nHUKUKİ DAYANAK:\nTBK m. [X], HMK m. [Y], ...\n\nSONUÇ ve İSTEM:\n[Talep listesi]\n\nSaygılarımla,\n[İmza, tarih]\n```\n\n**Prompt:** \"[Taraflar arası uyuşmazlık özeti] için kira alacak davası dilekçesi yaz; TBK ilgili maddelerini ekle, 5 yıllık zamanaşımını belirt.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "analiz"
       ],
       "badge1": "Orta",
-      "content": "## IRAC Yöntemi\n1. Issue: hukuki soruyu tek cümleyle yaz.\n2. Rule: uygulanacak kanun ve içtihatı belirle.\n3. Application: kuralı olaya uygula.\n4. Conclusion: sonucu net ve özlü yaz.",
+      "content": "## Hukuki Argüman Kurma: IRAC Yöntemi\n\nHukuki sorunu çözmenin en yaygın yapılandırma tekniği: Issue-Rule-Application-Conclusion\n\n**IRAC şablonu:**\n\n**I — Issue (Sorun):** Hukuki soru net tanımlanır\n> \"Mesele: Kiracının kira bedelini 3 ay ödememesi, kiraya verene sözleşmeyi feshetme hakkı doğurur mu?\"\n\n**R — Rule (Kural):** İlgili hukuk normu\n> \"TBK m. 315: Kiracı, kira bedelini ödeme borcunu ihlal ederse, kiraya veren 30 günlük mehil vererek sözleşmeyi feshedebilir.\"\n\n**A — Application (Uygulama):** Kuralı olaya uygula\n> \"Somut olayda, kiracı Mart-Mayıs 2024 döneminde hiç ödeme yapmamıştır. Kiraya veren 10 Nisan'da yazılı ihtarname göndermiştir...\"\n\n**C — Conclusion (Sonuç):**\n> \"Bu koşullar altında, 30 günlük süre dolduğunda fesih hakkı kullanılabilir.\"\n\n**Prompt:** \"[Hukuki uyuşmazlık özeti] için IRAC yöntemiyle argüman kur; ilgili Türk hukuku maddelerini ve emsal kararları ekle.\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "süreç"
       ],
       "badge1": "Orta",
-      "content": "## Arabuluculuk Hazırlık\n1. Uyuşmazlık konusunu ve taleplerini belgele.\n2. Uzlaşmaya açık alt/üst limitleri belirle.\n3. Güçlü ve zayıf tarafları listele.\n4. Anlaşma metninde zorunlu unsurları sırala.",
+      "content": "## Zorunlu Arabuluculuk: Süreç ve Strateji Rehberi\n\n**Zorunlu arabuluculuk alanları (Türkiye):**\n- İş hukuku davaları (işçi-işveren)\n- Ticari uyuşmazlıklar (belirli değer üzeri)\n- Tüketici davaları\n\n**Süreç:**\n1. Dava açmadan önce arabulucuya başvuru (zorunlu)\n2. Arabulucu atanması (AAAD listesinden)\n3. Toplantı daveti — 5 iş günü içinde yanıt\n4. Görüşmeler (süre sınırı yok, ama genelde 3 hafta)\n5. Anlaşma belgesi düzenleme veya son tutanak (anlaşmama)\n6. Son tutanak ile dava açılabilir\n\n**Strateji:**\n- Arabuluculukta söylediğiniz, mahkemede aleyhine kullanılamaz\n- İlk teklifin çok düşük/yüksek olmasını önleyin\n- Alternatif çözümler hazırlayın (para yerine hizmet takası)\n\n**Prompt:** \"İş davası arabuluculuk görüşmesi için müvekkil hazırlık notu hazırla: güçlü yönler, zayıf yönler, uzlaşma teklifi aralığı.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "şart"
       ],
       "badge1": "İleri",
-      "content": "## İhtiyati Tedbir\n1. Hak veya talebin yaklaşık ispatı (fumus boni iuris).\n2. Beklemekte tehlike (periculum in mora).\n3. Orantılılık: tedbirin ağırlığını talebe göre dengele.\n4. Karşı taraf dinlenmeden verilebilecek durum mu?",
+      "content": "## İhtiyati Tedbir: Koşullar ve Başvuru Stratejisi\n\nDava sonucu olumsuz etkilenmeden önce taraf eylemini durduran geçici hukuki koruma.\n\n**HMK m. 389-399 koşulları:**\n1. **Hak varlığı:** Talep edilen hakkın özet bir incelemede mevcut görünmesi (full ispat gerekmez)\n2. **Aciliyet:** Tedbir alınmazsa zarar telafi edilemez veya ağırlaşır\n3. **Orantılılık:** Tedbir, korumak istenen hakla orantılı olmalı\n\n**Başvuru türleri:**\n- Dava ile birlikte\n- Dava öncesi (acil durum — karşı taraf dinlenmeden)\n\n**Teminat:** Mahkeme genellikle teminat ister (talep edenin aleyhine dönerse karşı taraf korunsun)\n\n**Prompt:** \"[Uyuşmazlık türü] için ihtiyati tedbir talebi dilekçesi yaz; aciliyet gerekçesini ve orantılılığı kanıtlayan argümanları ekle, teminat miktarı öner.\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "irade"
       ],
       "badge1": "Başlangıç",
-      "content": "## TBK Temel\n1. İcap ve kabul uyumu ile sözleşme kurulur.\n2. İrade sakatlıkları: yanılma, aldatma, korkutma.\n3. İptal hakkı: TBK m.23-39.\n4. Kesin hükümsüzlük: emredici kurala aykırılık.",
+      "content": "## Türk Borçlar Kanunu: Temel Kavramlar Rehberi\n\n**Sözleşme doğuşu (TBK m. 1-11):**\n- **İcap:** Bağlayıcı teklif (süreli/süresiz)\n- **Kabul:** Koşulsuz uygun irade açıklaması\n- **Öneri + Kabul = Sözleşme** (forma uymak gerekiyorsa imza şartı)\n\n**Hükümsüzlük halleri:**\n- Kesin hükümsüzlük (butlan): kamu düzenine aykırı, ehliyetsiz\n- İptal edilebilirlik: hata, hile, korkutma\n- Askıya alınma: temsil yetkisi şüpheli\n\n**Borç sona ermesi:**\n- İfa, ibra, mahsup, yenilenme, takas, birleşme, zamanaşımı\n\n**Zamanaşımı (temel):**\n- Genel: 10 yıl (TBK m. 146)\n- Haksız fiil: 2 yıl (öğrenmeden) / 10 yıl (genel)\n- Kira: 5 yıl\n\n**Prompt:** \"[Hukuki durum özeti] için TBK kapsamında hangi kavram uygulanır? Zamanaşımı başlangıç tarihi ve hesaplama yöntemi nedir?\"",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "tazminat"
       ],
       "badge1": "Orta",
-      "content": "## İş Fesih\n1. Haklı neden (m.25): bildirim süresi ve tazminat yok.\n2. Geçerli neden (m.18): ihbar+kıdem tazminatı gerekir.\n3. Kıdem: 1 yıl = 30 günlük brüt ücret.\n4. İhbar: 6+ yıl için 8 hafta bildirim süresi.",
+      "content": "## İş Hukuku: Fesih Türleri ve Tazminat Hesabı\n\n**Fesih türleri ve sonuçları:**\n\n| Fesih Türü | Kıdem | İhbar | İşsizlik |\n|-----------|-------|-------|----------|\n| İşçi haklı fesih (TİŞK m. 24) | ✓ | ✗ | ✓ |\n| İşçi istifa (haksız) | ✗ | ✓ (veya tazminat) | ✗ |\n| İşveren geçerli sebeple (m. 18) | ✓ | ✓ | ✓ |\n| İşveren haklı (m. 25/II) | ✗ | ✗ | ✗ |\n| Deneme süresi feshi | ✗ | ✗ | ✗ |\n\n**Kıdem tazminatı hesabı:**\n- Her tam yıl için 30 günlük brüt ücret\n- Tavan: yıllık 10.848,59 TL (2024 Q1)\n- Hesap: `Kıdem Tazminatı = Yıl × Brüt Ücret × 30/30`\n\n**İhbar tazminatı:**\n- 0-6 ay: 2 hafta | 6 ay-1.5 yıl: 4 hafta | 1.5-3 yıl: 6 hafta | 3+ yıl: 8 hafta\n\n**Prompt:** \"[İşçi durumu: süre, ücret, fesih şekli] için kıdem + ihbar tazminatı hesapla ve ödeme kaynağını belirt.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "ttk"
       ],
       "badge1": "Orta",
-      "content": "## AŞ Kuruluşu\n1. Esas sözleşme hazırla (zorunlu unsurlar: TTK m.339).\n2. Asgari sermaye: 50.000 TL, %25 tescil öncesi.\n3. MERSİS üzerinden ön başvuru.\n4. Tescil, ilan ve vergi kaydı adımlarını tamamla.",
+      "content": "## Anonim Şirket Kuruluşu: Türkiye'de Adım Adım\n\n**Ön hazırlık:**\n- Asgari sermaye: 50.000 TL (nakden %25'i başlangıçta bloke)\n- En az 1 kurucu (gerçek veya tüzel kişi)\n- Esas sözleşme hazırlığı (TTK uyumlu zorunlu maddeler)\n\n**Adımlar:**\n1. Esas sözleşme hazırla + noter onayı\n2. Banka hesabı aç → %25 bloke\n3. Mersis üzerinden online kayıt (mersis.gumrukticaret.gov.tr)\n4. Ticaret sicili tescili\n5. Vergi dairesi mükellefiyet açılışı\n6. SGK tescili\n7. İmza sirküleri + yetki belgeleri\n\n**Süre:** Ortalama 3-5 iş günü (hızlandırılmış)\n**Maliyet:** ~5.000-10.000 TL (noter + harç + muhasebe)\n\n**Prompt:** \"Teknoloji startup'ı için ideal şirket yapısını öner: A.Ş. mi L.Ş. mi? Yatırımcı alacaksam hangi yapı uygundur ve neden?\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "noter"
       ],
       "badge1": "Orta",
-      "content": "## Pay Devri\n1. Devir sözleşmesi noter onaylı olmalı (TTK m.595).\n2. Diğer ortakların onayı gerekir (esas sözleşme öngörüyorsa).\n3. Ticaret sicilinde tescil ve ilan yaptır.\n4. Vergi dairesine bildirim yükümlülüğünü yerine getir.",
+      "content": "## Limited Şirket Pay Devri: Prosedür ve Vergi\n\n**Pay devri adımları:**\n1. Devir sözleşmesi hazırla (noter tasdikli)\n2. Diğer ortakların onayı al (esas sözleşmede hüküm yoksa TTK m. 595 → genel kurul kararı)\n3. Önalım hakkı bildirimi (diğer ortaklara 3 ay)\n4. Ticaret sicilinde tescil\n5. Vergi dairesi bildirimi\n\n**Vergi boyutu:**\n- Satıcı: değer artış kazancı (2 yıldan uzun tutulduysa istisna)\n- Stopaj: kurumlar için %15, gerçek kişi → yıllık beyan\n- Damga vergisi: sözleşme bedeli üzerinden %0.948\n\n**Dikkat:** Esas sözleşmede farklı onay oranları olabilir — kontrol edin.\n\n**Prompt:** \"3 ortaklı limited şirkette bir ortağın payını devretmek istiyor. Önalım hakkı süreci, vergi boyutu ve azınlık haklarına etkisini açıkla.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "kişisel veri"
       ],
       "badge1": "Orta",
-      "content": "## Açık Rıza\n1. Özgürlük: baskı veya koşula bağlanmamalı.\n2. Belirlilik: hangi veri, hangi amaç açık yazılmalı.\n3. Bilgilendirilmişlik: aydınlatma metni önceden verilmeli.\n4. Aktif eylem: önceden işaretli kutu geçersiz.",
+      "content": "## KVKK Açık Rıza: Geçerlilik Koşulları\n\n**7 Nisan 2016 tarihli KVKK m. 3/a — açık rıza koşulları:**\n\n1. **Belirli konuya ilişkin olmalı:** \"Her türlü veri\" ifadesi geçersiz\n2. **Bilgilendirmeye dayalı:** Hangi veri, hangi amaç, kime aktarılacak — önceden açıklanmalı\n3. **Özgür iradeyle verilmiş:** Hizmet şarta bağlanamaz (ayrı onay kutusu zorunlu)\n\n**Geçerli rıza formu bileşenleri:**\n- İşlenen veri kategorisi (ad, telefon, IP...)\n- Amaç (pazarlama / hizmet sunumu / analitik)\n- Saklama süresi\n- Aktarım varsa: hangi kurum, hangi ülke\n- İptal etme yolu (tercihen tek tık)\n\n**Hukuka aykırı rıza örnekleri:**\n- \"Sözleşmeyi onaylayarak kişisel veri işlemeye rıza gösteriyorsunuz\" ❌\n- \"Üyelik için izin vermeniz gereklidir\" ❌\n\n**Prompt:** \"E-ticaret sitesi için KVKK uyumlu açık rıza metni ve çerez politikası taslağı hazırla; pazarlama ve analitik veriler için ayrı onay kutularıyla.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "kvkk"
       ],
       "badge1": "İleri",
-      "content": "## İhlal Bildirimi\n1. İhlali tespit et ve kapsam/etkiyi değerlendir.\n2. 72 saat içinde Kurul'a bildirim yap.\n3. Bildirim içeriği: ihlal türü, etkilenen kişi sayısı, alınan önlemler.\n4. Kişilere haber verme gerekliyse bildiri hazırla.",
+      "content": "## Veri İhlali Bildirimi: KVKK + GDPR Karşılaştırmalı\n\n**Türkiye (KVKK m. 12/5):**\n- İhlali öğrendikten sonra **en kısa sürede** KVK Kurulu'na bildir\n- Kılavuza göre hedef: **72 saat** (GDPR ile uyumlu pratik)\n- Kişiler etkileniyorsa: ilgili kişilere de bildir\n\n**Bildirim içeriği:**\n- İhlal tarihi ve niteliği\n- Etkilenen kişi sayısı ve kategorileri\n- Olası sonuçlar\n- Alınan/alınacak önlemler\n- İletişim kişisi\n\n**İç prosedür şablonu:**\n1. İhlali tespit → IR ekibini bildir\n2. İhlal kapsamını değerlendir (72 saat içinde)\n3. KVK Kurulu bildirimi (kvk.gov.tr sistemi)\n4. Etkilenen kişileri bildir (yüksek risk varsa)\n5. Dokümantasyon: ihlal günlüğüne kaydet\n\n**Prompt:** \"Yazılım sisteminizde SQL injection saldırısıyla 5000 müşteri verisi sızdı. KVKK kapsamında 72 saatlik bildirim metnini hazırla.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "değerlendirme"
       ],
       "badge1": "İleri",
-      "content": "## Risk Matrisi\n1. Maddeleri konulara göre grupla.\n2. Her konuya olasılık × etki puanı ver.\n3. Yüksek risk maddeleri için müzakere önceliklendirmesi yap.\n4. Kabul edilemez risklere red gerekçesi yaz.",
+      "content": "## Sözleşme Riski Değerlendirme Matrisi\n\nHer sözleşme maddesinin riski ve önemi için puanlama sistemi.\n\n**Değerlendirme boyutları:**\n\n| Madde | Olasılık (1-5) | Etki (1-5) | Risk Skoru | Öncelik |\n|-------|---------------|------------|------------|---------|\n| Cezai şart | 3 | 4 | 12 | Yüksek |\n| Gizlilik süresi | 2 | 3 | 6 | Orta |\n| Uyuşmazlık yeri | 4 | 3 | 12 | Yüksek |\n| Fikri mülkiyet devri | 1 | 5 | 5 | Orta |\n\n**Risk seviyeleri:** 1-5 Düşük | 6-12 Orta | 13-25 Yüksek → müzakere önceliği\n\n**Prompt şablonu:**\n```\nBu sözleşmenin şu maddelerini risk matrisine göre puanla:\n[Madde listesi]\nSkor yüksek olanlar için önerilen değişiklik metnini yaz.\n```",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "format"
       ],
       "badge1": "Orta",
-      "content": "## Mütalaa Formatı\n1. Giriş: sorulan soru ve verilen belgeler.\n2. Olgusal özet: tarafsız, kısa.\n3. Hukuki analiz: IRAC yöntemiyle.\n4. Sonuç: kesin ve özlü.\n5. Uyarı: verilen bilgiler çerçevesinde görüş.",
+      "content": "## Hukuki Mütalaa Yazım Formatı\n\nBir hukuki soruya profesyonel görüş bildirme belgesi yapısı.\n\n**Standart format:**\n\n```\nHUKUKİ MÜTALAA\n\nTarih: [XX.XX.XXXX]\nKonu: [kısa başlık]\nTalep Eden: [isim/kurum]\n\nI. SORU\n[Cevaplanacak hukuki soru tek cümleyle]\n\nII. İLGİLİ MEVZUAT\n- TBK m. [X], TTK m. [Y], [ilgili yönetmelik]\n- Yargıtay [HGK / Daire] [Tarih/Numara] kararı\n\nIII. DEĞERLENDİRME\n[Madde madde analiz: her norm olaya uygulanır]\n\nIV. SONUÇ\n[Net görüş: hukuki açıdan [evet/hayır/koşullu]]\n\nÇEKİNCE: Bu mütalaa bilgi amaçlıdır; hukuki danışmanlık niteliği taşımaz.\n\n[İmza, baro sicil no]\n```\n\n**Prompt:** \"[Hukuki soru] için mütalaa yaz; Yargıtay içtihadına da yer ver. Sonuç bölümü belirsiz değil, net görüş içersin.\"",
       "source": {
         "generated": true
       }
