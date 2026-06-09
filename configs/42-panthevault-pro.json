@@ -331,7 +331,7 @@
         "yeniden başlangıç"
       ],
       "badge1": "Orta",
-      "content": "## Tufan Mitleri\n1. Anlatının tetikleyicisini belirle (günah, kaza, test).\n2. Kurtarılan figürü ve aracı incele.\n3. Tufan sonrası yeniden kuruluşu karşılaştır.\n4. Gilgamesh, Nuh, Manu örneklerini yan yana koy.",
+      "content": "## Tufan Mitleri Karşılaştırmalı Analizi\n\nTüm kültürlerde yeniden başlangıcı simgeleyen tufan mitleri, birbiriyle şaşırtıcı yapısal benzerlikler taşır.\n\n**Adımlar:**\n1. **Tetikleyiciyi belirle** — günah (Sümer), kaza (Yunan), ilahi test (İbrani), aşırılık (Hint). Her kültürde farklı ahlaki mesaj.\n2. **Kurtarılan figürü analiz et** — Utnapiştim (Sümer), Nuh (İbrani), Deukalion (Yunan), Manu (Hint). Seçilme kriteri nedir?\n3. **Aracı incele** — sandık/gemi, dağ, kamıştan sal. Hayatta kalma teknolojisi kültürün çevre koşullarını yansıtır.\n4. **Sonrası karşılaştır** — yeni antlaşma, yeniden nüfus, ceza/ödül döngüsü. Hangisi insanı rehabilite eder, hangisi siler?\n5. **Güvercin/karga testi motifini** çapraz kültürde izle — bilgi getiren hayvan arketipi.\n\n**Prompt:** \"[Kültür] tufan mitinde tetikleyici ahlaki suç ile kurtarıcının seçilme kriterleri arasındaki ilişkiyi ve yeniden başlangıç teolojisini karşılaştır.\"",
       "source": {
         "generated": true
       }

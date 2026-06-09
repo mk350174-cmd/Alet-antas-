@@ -314,7 +314,7 @@
         "kader"
       ],
       "badge1": "Orta",
-      "content": "## Direniş Bedeli\n1. Karakterin kahramanca kaçınma çabasını göster.\n2. Her çabada beklenmedik bedeli ortaya çıkar.\n3. Direnişin felaketleştirdiği kişileri ekle.\n4. Kabullenme anını derin bir hüzünle işle.",
+      "content": "## Kader Direncinin Bedeli: Dramatik Yay\n\nKahramanın kehaneti önlemeye çalışırken paradoksal olarak onu gerçekleştirmesi — en güçlü trajik ironi yapısı.\n\n**Adımlar:**\n1. **Kaçınma eylemini** kur — kahraman kehaneti duyar, mantıklı bir önlem alır (bebeği uzaklaştırmak, şehirden kaçmak, kişiyi öldürmek).\n2. **Beklenmedik bedeli** ortaya çıkar — her önlem tam da kaçınılmak istenen sonucu tetikler (Oidipus örüntüsü).\n3. **Bilgisizliği** dramatize et — seyirci doğruyu bilirken karakter körlük içinde hareket eder. Bu gerilimi besler.\n4. **Kümülatif tuzağı** göster — birden fazla \"mantıklı\" karar birikir; her biri ağı sıkıştırır.\n5. **Keşif anını** hazırla — kahraman gerçeği öğrendiğinde eylemlerinin anlamsızlığını kavrar. Trajik aydınlanma.\n6. **Soruyu sor:** kahraman özgür iradesini mi kullandı yoksa kader her seçeneği önceden mi belirledi?\n\n**Prompt şablonu:** \"[Kahraman] [önlem] alarak kehanetten kaçınmaya çalıştı ama bu eylem [sonuç] ile nasıl örtüştü? Trajik ironiyi ve özgür irade paradoksunu analiz et.\"",
       "source": {
         "generated": true
       }
