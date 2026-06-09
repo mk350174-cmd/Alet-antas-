@@ -93,7 +93,7 @@
         "kaçış"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kral Kaçış Satrancı Kuralları\n1. Her taş, normal satrançtaki gibi hareket eder.\n2. Rakip şah, mat yerine kaçacak şekilde hareket edebiliyorsa, oyun devam eder.\n3. Şahın kaçabileceği bir kare varsa, şah o kareye gitmelidir.\n4. Kaçış mümkün değilse oyun mat ile biter.",
+      "content": "## Kral Kaçış Satrancı (King of the Hill)\n\nHedef: Kendi Kralını merkezdeki belirli kareye ulaştırmak. Klasik mat kuralı ikincil galip koşuldur.\n\n**Kural değişiklikleri:**\n- Kazanma koşulu: Kral d4/d5/e4/e5 karelerinden birine ulaşır\n- Mat da kazandırır, ama stratejik öncelik Kral yürüyüşüdür\n- Rok yapmak zayıflar — Kral merkeze gitmelidir\n\n**Prompt şablonu:**\n```\nKral Kaçış Satrancı için bir açılış stratejisi öner:\n- Merkezi kontrol amacıyla erken taş gelişimi\n- Kral yürüyüş rotasını güvende tutacak piyonların konumu\n- Rakibin merkeze erişimini engellerken kendi Kralını ilerletme\n```\n\n**Taktik not:** Bu varyant, orta oyunda Kral güvenliğini tamamen tersine çevirir — Kral saldıran taraftır.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -112,7 +112,7 @@
         "bomba"
       ],
       "badge1": "Orta",
-      "content": "## Bomba Satrancı Kuralları\n1. Filler ve Atlara 'bomba' özelliği eklenir.\n2. Bomba taşı ile rakip taş alındığında, etkileşim alanındaki tüm taşlar (kendi taşlarınız dahil) tahtadan kalkar.\n3. Şaha uygulanamaz. Şahı etkilemez.",
+      "content": "## Bomba Satrancı (Atomic Chess)\n\nBir taş aldığınızda, alınan kare ve etrafındaki 8 kare patlayarak tüm taşlar yok olur. Kral da bu şekilde yok edilebilir.\n\n**Temel kurallar:**\n- Alma: Her iki tarafın taşları etki alanında yok olur\n- Kazanma: Rakibin Kralını bir patlama ile yok et\n- Özel: Piyon × Piyon = her iki piyon da yok, ama etraftakiler kalmaz\n- Kral koruma: Kral patlama alanının dışında kalmalı\n\n**Prompt şablonu:**\n```\nAtomic Satrancı için orta oyun taktiği geliştir:\n- Kral güvenlik alanı hesaplama (sekizgen etki yarıçapı)\n- Hangi takaslar avantajlı, hangileri kendi Kralını tehlikeye atar?\n- Çift tehdit: hem materyal kazan hem Kral çevresini boşalt\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -131,7 +131,7 @@
         "ters"
       ],
       "badge1": "Başlangıç",
-      "content": "## Ters Satranç Kuralları\n1. Amaç, tüm taşlarınızı rakibe yedirmektir.\n2. Şahı mat eden değil, tüm taşlarını ilk kaybeden kazanır.\n3. Şahın alınması durumunda oyun biter.",
+      "content": "## Ters Satranç (Antichess / Suicide Chess)\n\nHedef: Tüm taşlarını kaybetmek. Alma zorunludur (olası her alma yapılmalıdır). En hızlı kaybet, kazanır.\n\n**Temel farklılıklar:**\n- Şah zorunluluğu yok — Kral sıradan bir taş gibi davranır\n- Alma mümkünse, yapılması zorunludur\n- Kral alınabilir ve mat yoktur\n- Galip: son taşını oynayan veya pozisyonu kilitlenmeden önce bitiren\n\n**Strateji:**\n```\nTers Satranç açılış analizi yap:\n- Kendi taşlarını rakibe açık bırakma taktiği\n- Zorla alma zinciri: rakibi art arda alma yapmaya zorla\n- Optimal kayıp sırası: hangi taşları önce feda et?\n- Endgame: Son taş durumunda nasıl kaybedilir?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -150,7 +150,7 @@
         "anarşi"
       ],
       "badge1": "İleri",
-      "content": "## Anarşi Satrancı Kuralları\n1. Her hamle, oyuncunun seçtiği bir taşın geçerli olduğu normal hamledir.\n2. Ancak, hamle sonrası taşın yeri değişebilir (normal hamle yapılmışsa).\n3. Oyuncu, hamle sonrası taşın yerini manuel olarak değiştirebilir.",
+      "content": "## Anarşi Satrancı (Crazyhouse / Drop Chess)\n\nAldığınız rakip taşları kendi renginize çevirerek tahtaya yeniden yerleştirebilirsiniz. Materyal hiçbir zaman kaybolmaz.\n\n**Temel kurallar:**\n- Alınan taş: rengi değişir ve rezerve gider\n- Rezervdeki taşı istediğiniz boş kareye yerleştir (hamle olarak sayılır)\n- Piyon 1. ve 8. sıraya konamaz\n- Şah altındaki Kral kaçmak için rezerv taş kullanabilir\n\n**Prompt şablonu:**\n```\nCrazyhouse için orta oyun pozisyonu analiz et:\nFEN: [pozisyon]\nRezerv: Beyaz: R, N; Siyah: B, P\n- Hangi rezerv taşı nereye yerleştirilmeli?\n- Drop ile ani mat tehdidi var mı?\n- Rezerv yönetimi: hangisi saklanmalı, hangisi hemen kullanılmalı?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -169,7 +169,7 @@
         "varyant"
       ],
       "badge1": "Orta",
-      "content": "## Açılış Varyant Ağacı\n1. Belirli bir açılışın tüm bilinen varyantlarını görselleştirin.\n2. Her düğüm, bir hamle dizisini temsil eder.\n3. Yapraklar, popüler devam yollarını gösterir.",
+      "content": "## Açılış Varyantı Ağacı Üretici\n\nBelirli bir açılışın tüm ana varyantlarını ağaç yapısında görselleştiren prompt sistemi.\n\n**Prompt şablonu:**\n```\n[Açılış adı] için varyant ağacı üret:\n- Ana hat (main line) ve en az 3 önemli yan varyant\n- Her varyantın amacını 1 cümleyle açıkla\n- Siyah ve Beyaz için kritik hamleleri işaretle (*)\n- Transpozisyon noktalarını belirt\n\nFormat:\n1.e4 e5\n├─ 2.Nf3 → Açık Oyun\n│   ├─ 2...Nc6 → İspanyol, İtalyan...\n│   └─ 2...Nf6 → Rus Savunması (Petrov)\n└─ 2.Nc3 → Viyana Oyunu\n```\n\n**Kullanım:** Yeni bir açılış çalışırken bu şablonla beyin haritası oluştur, zayıf noktaları işaretle.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -188,7 +188,7 @@
         "pozisyon"
       ],
       "badge1": "Orta",
-      "content": "## Oyun Sonu Ağacı\n1. Belirli bir oyun sonu pozisyonu için olası tüm hamleleri ve sonuçları (kazanç, beraberlik) haritalayın.\n2. Değerlendirme fonksiyonu ile pozisyon değerlerini düğümlere atayın.\n3. Kayıp veya kazanç yollarını analiz edin.",
+      "content": "## Oyun Sonu (Endgame) Pozisyon Analiz Ağacı\n\nKritik endgame pozisyonlarını dal-budak olasılık ağacıyla analiz eden prompt sistemi.\n\n**Prompt şablonu:**\n```\nAşağıdaki endgame pozisyonunu ağaç analizi yap:\nFEN: [pozisyon]\nSıra: Beyaz\n\n1. Kritik hamleleri listele (en az 3 aday)\n2. Her aday için:\n   a) Siyahın en güçlü cevabı\n   b) Sonuç: Kazanç / Beraberlik / Kayıp\n   c) Temel endgame prensibi (Aktif Kral, Geçer Piyon vb.)\n3. Teknik dönüm noktasını belirt: hangi hamle kaybedişe yol açar?\n```\n\n**Örnek endgame temaları:** Lucena pozisyonu (kale-piyon), Philidor savunması, Karşı-renkli filler beraberlik.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -207,7 +207,7 @@
         "kombinasyon"
       ],
       "badge1": "İleri",
-      "content": "## Kombinasyon Ağacı\n1. Farklı kural setlerinin uygulandığı oyunları analiz edin.\n2. Belirli bir hamle dizisinin farklı varyantlardaki sonuçlarını karşılaştırın.\n3. Yeni stratejik fikirler keşfedin.",
+      "content": "## Varyant Kombinasyon Ağacı\n\nİki farklı satranç varyantının kurallarını birleştirerek hibrit bir oyun modu tasarlamak için kombinasyon matrisi.\n\n**Prompt şablonu:**\n```\n[Varyant A] + [Varyant B] kombinasyonu için:\n1. Kural çakışmalarını tespit et:\n   - Hangi kurallar uyumlu? (her ikisinde de geçerli)\n   - Hangileri çelişiyor? (nasıl çözülür?)\n2. Yeni ortaya çıkan taktikler:\n   - Varyant A'nın mekanizması + B'nin mekaniği = yeni kombinasyon\n3. Denge analizi: kazanma koşulları adil mi?\n4. Test senaryosu: 5 hamlelik örnek oyun\n```\n\n**Örnek:** Atomic + Crazyhouse → patlama sonrası taşlar rezerve gitsin mi?",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -226,7 +226,7 @@
         "taş"
       ],
       "badge1": "Orta",
-      "content": "## Taş Değeri Dengesi\n1. Farklı varyantlardaki taşların göreceli değerlerini belirleyin.\n2. Rastgele başlangıç taş dizilimleri için başlangıç dengesini hesaplayın.\n3. Oyunun ilk aşamalarındaki dengeyi ölçün.",
+      "content": "## Taş Değeri Dengesi Fonksiyonu\n\nKlasik taş değerlerini (P=1, N=3, B=3, R=5, Q=9) yeniden hesaplar; pozisyonel faktörleri dahil eder.\n\n**Prompt şablonu:**\n```python\n# Python ile dinamik taş değeri hesabı\ndef piece_value(piece, position, game_phase):\n    base = {\"P\": 100, \"N\": 320, \"B\": 330, \"R\": 500, \"Q\": 900}\n    # Oyun fazı: opening=0, middlegame=0.5, endgame=1\n    if piece == \"B\":\n        bishop_pair_bonus = 50 if has_bishop_pair() else 0\n        return base[\"B\"] + bishop_pair_bonus\n    if piece == \"N\":\n        # At açık pozisyonda zayıflar, kapalıda güçlenir\n        return base[\"N\"] - int(open_files * 20)\n    if piece == \"R\":\n        # Endgame'de kale değeri artar\n        return base[\"R\"] + int(game_phase * 100)\n    return base.get(piece, 0)\n```\n\n**Prompt:** \"Bu satranç pozisyonunda materyal dengesi hesapla ve taş değeri ayarlamalarını pozisyonel faktörlerle (piyon yapısı, kale açık hat) dahil et.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -245,7 +245,7 @@
         "şah"
       ],
       "badge1": "Orta",
-      "content": "## Güvenlik Odaklı Eval\n1. Şahın güvenliğini en önemli faktör olarak kabul edin.\n2. Şaha yakınlık, rakip taşların tehditleri gibi metrikleri kullanın.\n3. Açık pozisyonlarda şah güvenliği puanını düşürün.",
+      "content": "## Güvenlik Odaklı Pozisyon Değerlendirmesi\n\nKral güvenliğine ağırlık veren heuristic değerlendirme fonksiyonu.\n\n**Bileşenler:**\n- **Kral Kalkanı Puanı:** Kral önündeki piyon sayısı × 15\n- **Açık Hat Cezası:** Kral sütunundaki açık hat = -50 puan\n- **Saldırgan Taş Yakınlığı:** Rakip kral çevresindeki taş sayısı × -20\n- **Rok Güvenliği:** Rok hakkı mevcut = +30, kullanılmış = +20\n\n**Prompt şablonu:**\n```\nAşağıdaki pozisyonda Kral güvenlik analizi yap:\nFEN: [pozisyon]\n\n1. Beyaz Kral güvenlik puanı (0-100)\n2. Siyah Kral güvenlik puanı (0-100)\n3. En büyük güvenlik açığı nedir?\n4. Güvenliği artıracak en acil hamle\n5. Saldırı planı: rakibin Kral bölgesine nasıl girilir?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -264,7 +264,7 @@
         "avantaj"
       ],
       "badge1": "Başlangıç",
-      "content": "## Materyal Avantajı Eval\n1. Standart taş değerlerini temel alın (Piyon=1, At=3, Fil=3, Kale=5, Vezir=9).\n2. Alınan taşları ve verilen taşları hesaba katın.\n3. Pozisyonel faktörleri minimumda tutun.",
+      "content": "## Materyal Avantajı Değerlendirici\n\nPozisyondaki materyal dengesini hesaplayan ve avantajı sömürme planı öneren sistem.\n\n**Prompt şablonu:**\n```\nPozisyon analizi — Materyal:\nFEN: [pozisyon]\n\n1. Materyal sayımı:\n   Beyaz: [taş listesi], toplam = X puan\n   Siyah: [taş listesi], toplam = Y puan\n   Fark: ±Z puan (kim avantajlı?)\n\n2. Kalite değerlendirmesi:\n   - İyi at mı yoksa kötü fil mi var?\n   - İkili kale avantajı var mı?\n   - Geçer piyon sayısı?\n\n3. Avantajı dönüştürme planı:\n   a) Takas yap → sade endgame'e geç\n   b) Aktif taşlarla baskı sürdür\n   c) Kritik kare kontrolü\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -283,7 +283,7 @@
         "rastgele"
       ],
       "badge1": "Başlangıç",
-      "content": "## Rastgele Başlangıç Üretici\n1. Belirli bir sayıda taşı, belirlenen karelere rastgele yerleştirin.\n2. Şahların başlangıçta güvenli olmasını sağlayın.\n3. Oyun dengesini optimize etmek için başlangıçları filtreleyin.",
+      "content": "## Chess960 (Fischer Random) Başlangıç Üretici\n\nFischer Random kurallarına uygun rastgele başlangıç pozisyonu üretir: filler karşı renklerde, Kral kaleler arasında.\n\n**Python implementasyonu:**\n```python\nimport random\ndef generate_chess960():\n    rank = [None] * 8\n    # Filler karşı renklerde\n    rank[random.choice([0,2,4,6])] = 'B'\n    rank[random.choice([1,3,5,7])] = 'B'\n    empty = [i for i,v in enumerate(rank) if v is None]\n    # Vezir\n    rank[random.choice(empty)] = 'Q'\n    empty = [i for i,v in enumerate(rank) if v is None]\n    # Atlar\n    for _ in range(2):\n        idx = random.choice(empty)\n        rank[idx] = 'N'\n        empty.remove(idx)\n    # Kale-Kral-Kale (Kral ortada)\n    rank[empty[0]], rank[empty[1]], rank[empty[2]] = 'R', 'K', 'R'\n    return rank\nprint(generate_chess960())\n```\n\n**Prompt:** \"Bu Chess960 başlangıç pozisyonunda ilk 5 optimal hamleyi ve rok stratejisini açıkla: [FEN]\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -302,7 +302,7 @@
         "modifikasyon"
       ],
       "badge1": "Orta",
-      "content": "## Kural Modifikasyon Aracı\n1. Mevcut taş hareket kurallarını seçin.\n2. Yeni hareketler, alma kuralları veya özel yetenekler ekleyin.\n3. Oyunun hızını ve karmaşıklığını ayarlayın.",
+      "content": "## Satranç Kural Değiştirici Şablon Sistemi\n\nMevcut satranç kuralını alır, değiştirilmiş versiyonunu üretir ve oyun dengesine etkisini analiz eder.\n\n**Prompt şablonu:**\n```\nKural modifikasyonu analizi:\nOrijinal kural: [mevcut kural, örn. \"Piyon yalnızca ileri hareket eder\"]\nDeğişiklik: [önerilen değişiklik, örn. \"Piyon aynı zamanda bir kare yanlara gidebilir\"]\n\n1. Yeni kuralın etkisi:\n   a) Taktiksel etkiler (fork, pin, discovered check)\n   b) Strategik etkiler (merkez kontrolü, piyon yapısı)\n   c) Oyun süresi değişimi (daha hızlı/yavaş)\n\n2. Denge analizi:\n   - Kazanma oranı Beyaz/Siyah lehine değişir mi?\n   - Hangi açılışlar güçlenir/zayıflar?\n\n3. Örnek senaryo: 10 hamlelik örnek oyun\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -321,7 +321,7 @@
         "tahta"
       ],
       "badge1": "Orta",
-      "content": "## Boyut Değiştirici\n1. Standart 8x8 dışında tahta boyutları tanımlayın (örn. 10x10).\n2. Yeni tahta boyutlarına uygun taş dizilimleri ve kurallar geliştirin.\n3. Ekstra karelerin oyun üzerindeki etkisini analiz edin.",
+      "content": "## Satranç Tahtası Boyut ve Şekil Modifikasyonu\n\n8×8 standart tahta yerine farklı boyut ve şekillerde satranç tasarımı.\n\n**Prompt şablonu:**\n```\nYeni satranç tahtası tasarımı:\nBoyut/Şekil: [10×10 / altıgen / silindirik / 3D]\n\n1. Taş hareketi uyarlaması:\n   - Kale: yeni geometride satır/sütun nasıl tanımlanır?\n   - Fil: renk prensibi nasıl korunur?\n   - At: L-hareketi yeni boyuta nasıl ölçeklenir?\n\n2. Yeni stratejik dinamikler:\n   - Merkez tanımı değişir mi?\n   - Kral güvenliği nasıl sağlanır?\n\n3. Başlangıç dizilimi:\n   - [Boyut] için optimal taş yerleşimi öner\n   - Piyon yapısının yeni rolü\n\n4. Örnek açılış varyantı: ilk 5 hamle\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -340,7 +340,7 @@
         "tasarım"
       ],
       "badge1": "İleri",
-      "content": "## Yeni Taş Tasarımcısı\n1. Yeni bir taşın hareketini ve alma şeklini tanımlayın.\n2. Taşın başlangıç pozisyonunu ve değerini belirleyin.\n3. Oyun dengesi üzerindeki potansiyel etkisini analiz edin.",
+      "content": "## Yeni Satranç Taşı Tasarımcısı\n\nMevcut taş setine yeni bir taş ekler: hareket kuralı, değeri ve taktiksel rolü tanımlanır.\n\n**Prompt şablonu:**\n```\nYeni satranç taşı tasarımı:\nTaş adı: [isim]\n\n1. Hareket kuralı:\n   - Kaç kare ve hangi yönde?\n   - Atlama yapabilir mi (At gibi)?\n   - Alma ile hareket ayrı mı (Piyon gibi)?\n\n2. Materyal değeri:\n   - Hangi mevcut taşla karşılaştırılabilir?\n   - Neden daha değerli/değersiz?\n\n3. Başlangıç konumu: tahtanın neresinde?\n\n4. Taktiksel özellik:\n   - Hangi yeni kombinasyon mümkün olur?\n   - Mevcut taşlarla sinerji?\n\n5. Denge testi: bu taş oyunun dengesini bozar mı?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -359,7 +359,7 @@
         "klasik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Klasik Set 3D Modelleri\n1. Her taş için yüksek kaliteli 3D modeller oluşturun.\n2. Farklı materyal ve doku seçenekleri sunun.\n3. Oyun motoru entegrasyonu için optimize edin.",
+      "content": "## Klasik Satranç Seti 3D Modelleme Rehberi\n\nStaunton standartlarına uygun satranç taşı 3D modelleme adımları.\n\n**Boyutlar (Staunton standart):**\n- Kral yüksekliği: 9.5 cm, taban çapı: 4 cm\n- Vezir: 8.5 cm, taban: 3.8 cm\n- Kale: 5.5 cm, taban: 3.5 cm\n- Piyon: 5 cm, taban: 2.5 cm\n\n**Blender workflow:**\n```\n1. Referans profil çiz (Bezier curve)\n2. Spin modifier: 360° döndür → devşirme cismi\n3. Subdivision Surface: smooth görünüm\n4. Solidify modifier: dolu taş için\n5. Material: Principled BSDF, roughness 0.3, IOR 1.5\n6. Export: GLB/OBJ + UV map\n```\n\n**Prompt:** \"Staunton Kral taşı için Blender Bezier profil noktalarını koordinat listesi olarak ver; tabanı, gövdeyi ve tacı ayrı ayrı tanımla.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -378,7 +378,7 @@
         "fütüristik"
       ],
       "badge1": "Orta",
-      "content": "## Fütüristik Set 3D Modelleri\n1. Geometrik ve neon tasarımlı taşlar oluşturun.\n2. Hareket ve alınma animasyonları için efektler ekleyin.\n3. Benzersiz bir görsel deneyim sağlayın.",
+      "content": "## Fütüristik Satranç Seti 3D Tasarım Konsepti\n\nSci-Fi estetikte satranç taşı set tasarımı: holografik, mekanik veya kristal temalar.\n\n**Tasarım yönergeleri:**\n\n**Prompt şablonu:**\n```\n[Fütüristik/Kristal/Mekanik] tema için satranç seti konsepti:\n\n1. Taş hiyerarşisi görsel dili:\n   - Kral: en karmaşık, [tema özelliği]\n   - Vezir: [nasıl farklılaşır?]\n   - Kale→Piyon: sadeleşen karmaşıklık\n\n2. Materyal ve yüzey:\n   - [Hologram: şeffaf + iç ışık emission]\n   - [Mekanik: dişli, panel, metal plaka]\n   - [Kristal: faceted, subsurface scattering]\n\n3. Blender teknikler:\n   - Shader Nodes: Emission + Volume\n   - Bevel modifier: keskin kenarlar\n   - Hard surface modeling: panel lines\n\n4. Animation: taşların aktivasyon efekti\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -397,7 +397,7 @@
         "fantezi"
       ],
       "badge1": "Orta",
-      "content": "## Fantezi Set 3D Modelleri\n1. Ejderhalar, büyücüler gibi temalı taşlar tasarlayın.\n2. Her taşın kendine özgü bir hikayesi olsun.\n3. Oyunun atmosferini zenginleştirin.",
+      "content": "## Fantezi/Ortaçağ Satranç Seti 3D Tasarım\n\nFantasy ve ortaçağ temasında satranç taşı modelleme konsepti.\n\n**Karakter eşleştirmesi:**\n| Taş | Fantezi Karşılığı | Görsel Özellik |\n|-----|-------------------|----------------|\n| Kral | Ejderha sürücü kral | Taç + zırh + ejderha |\n| Vezir | Büyücü | Asalı, cübbeli |\n| Kale | Kale kulesi | Taş duvar, mazgal |\n| Fil | Ağır süvari | At sırtında şövalye |\n| At | Pegasus | Kanatlı at |\n| Piyon | Okçu | Yay, miğfer |\n\n**Prompt şablonu:**\n```\n[Ortaçağ/Ejderha/Elf] teması için satranç seti 3D modelleme brief'i:\n- Her taş için siluet açıklaması\n- Renk paleti (Beyaz: [renkler], Siyah: [renkler])\n- Materyal detayı (deri, metal, taş dokusu)\n- Low-poly oyun için polygon hedefi: Kral ≤5000 tri\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -416,7 +416,7 @@
         "parametre"
       ],
       "badge1": "Orta",
-      "content": "## Motor Parametre Ayarı\n1. Eval fonksiyonu ağırlıklarını ayarlayın.\n2. Arama derinliği ve zaman kontrolü parametrelerini optimize edin.\n3. Belirli varyantlara göre ayarlar yapın.",
+      "content": "## Satranç Motoru Parametre Optimizasyonu\n\nStockfish veya custom engine parametrelerini belirli bir oyun stili için ayarlar.\n\n**Stockfish UCI parametreleri:**\n```\nsetoption name Threads value 4\nsetoption name Hash value 256\nsetoption name MultiPV value 3\nsetoption name Skill Level value 15\nsetoption name UCI_LimitStrength value true\nsetoption name UCI_Elo value 2000\n```\n\n**Prompt şablonu:**\n```\nStockfish parametrelerini [oyun stili] için optimize et:\nHedef stil: [Agresif saldırı / Kapalı pozisyon uzmanı / Taktik kombinasyoncu]\n\n1. Contempt değeri: rakibe saygı göstermemek için?\n2. Skill Level: ne kadar güçlü karşı oyuncu?\n3. Arama derinliği: zaman limitini nasıl ayarla?\n4. MultiPV: alternatifleri görmek için kaç hat?\n5. Opening book: hangi book bu stile uygun?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -435,7 +435,7 @@
         "öğrenme"
       ],
       "badge1": "İleri",
-      "content": "## Varyant Öğrenme Algoritması\n1. Oyun verilerini kullanarak kuralları ve stratejileri çıkarın.\n2. Kural setlerindeki değişikliklere adapte olabilen bir model geliştirin.\n3. Kendi kendine öğrenmeyi teşvik edin.",
+      "content": "## Satranç Varyantı Kişiselleştirilmiş Öğrenme\n\nKullanıcının zayıf olduğu varyantları tespit eden ve hedefli pratik üreten öğrenme sistemi.\n\n**Prompt şablonu:**\n```\nSatranç varyant öğrenme planı:\nHedef açılış: [İspanyol Oyunu / Sicilyan Savunma / Kral Gambiti]\nMevcut seviye: [ELO veya tanım]\n\n1. Kritik pozisyonlar (must-know):\n   - Bu açılışın 3 kritik dönüm noktası\n   - Her noktada sık yapılan hata\n   - Doğru cevap + açıklama\n\n2. Taktik pratik seti:\n   - Bu açılışa özgü 5 taktik bulmaca\n   - Motif: fork, pin, discovered attack\n\n3. Günlük pratik planı:\n   - Hafta 1: Ana hat ezber\n   - Hafta 2: Yan varyantlar\n   - Hafta 3: Canlı uygulama\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -454,7 +454,7 @@
         "veri"
       ],
       "badge1": "İleri",
-      "content": "## 3D Veri Üretimi\n1. Satranç pozisyonları için otomatik 3D renderlar oluşturun.\n2. Farklı açılar ve ışıklandırmalarla veri setleri zenginleştirin.\n3. Görsel tanıma modellerini eğitin.",
+      "content": "## AI ile Satranç 3D Eğitim Verisi Üretimi\n\nMakine öğrenmesi modelleri için sentetik satranç pozisyonu ve hamle verisi üretim sistemi.\n\n**Prompt şablonu:**\n```\nSatranç AI eğitim verisi üret:\nMiktar: [1000 / 10000] pozisyon\nFormat: [PGN / FEN + değerlendirme / JSON]\n\n1. Dağılım gereksinimleri:\n   - Oyun fazı: %30 açılış, %50 orta oyun, %20 bitiş\n   - Sonuç: %40 Beyaz kazandı, %40 Siyah, %20 beraberlik\n   - Materyal denge: ±2 piyon arasında ağırlıklı\n\n2. Augmentation:\n   - Simetri: yansıma ile veri 2 katına çıkar\n   - Renk çevirme: Beyaz↔Siyah perspektifi\n\n3. Label formatı:\n   FEN, stockfish_eval, best_move, game_phase\n\n4. Filtreleme: illegal pozisyon ve blunder tuzakları\n```",
       "source": {
         "generated": true,
         "provider": "gemini",

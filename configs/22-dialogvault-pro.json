@@ -93,7 +93,7 @@
         "iskelet"
       ],
       "badge1": "Başlangıç",
-      "content": "## Diyalog Ağacı İskeleti\n1. Kök düğümü (selamlama) tanımla.\n2. Her düğüme `id`, `text`, `choices[]` alanları ekle.\n3. Choices içinde `next` ile hedef düğüm id'sini bağla.\n4. Yaprak düğümlere `end:true` koyarak konuşmayı sonlandır.",
+      "content": "## NPC Diyalog Ağacı: Temel İskelet Tasarımı\n\noyun NPC'leri için dal-budak diyalog yapısını JSON şemasıyla tanımlar ve her düğümde yanıt seçenekleri yönetir.\n\n**Temel yapı:**\n```json\n{\n  \"nodes\": {\n    \"root\": {\n      \"npcLine\": \"Merhaba yolcu, bir şeye ihtiyacın var mı?\",\n      \"options\": [\n        {\"id\": \"opt_trade\", \"text\": \"Ticaret yapmak istiyorum\", \"goto\": \"trade_menu\"},\n        {\"id\": \"opt_quest\", \"text\": \"Görev var mı?\", \"goto\": \"quest_check\"},\n        {\"id\": \"opt_bye\", \"text\": \"Hayır, teşekkürler\", \"goto\": \"farewell\"}\n      ]\n    },\n    \"trade_menu\": { ... },\n    \"farewell\": {\"npcLine\": \"İyi yolculuklar!\", \"options\": []}\n  },\n  \"startNode\": \"root\"\n}\n```\n\n**Prompt:** \"[NPC tipi: köy bekçisi/tüccar/büyücü] için 4 seçenekli, 3 derinlikli diyalog ağacı yaz; bir gizli bilgi açıklama kolu ve bir ret kolu olsun.\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "navigasyon"
       ],
       "badge1": "Orta",
-      "content": "## Döngüsel Diyalog\n1. Bir `hub` düğümü belirle (tüm konular buraya döner).\n2. Alt konuları hub'a `back` seçeneğiyle bağla.\n3. Ziyaret edilen düğümleri `visited[]` ile işaretle.\n4. Tükenmiş seçenekleri gri/pasif göster.",
+      "content": "## Döngüsel Diyalog Sistemi: Konuşmaya Geri Dön\n\nBitmiş diyalog ağacından ana menüye veya önceki düğüme dönüşü yöneten sistem.\n\n**Döngü türleri:**\n1. **Yumuşak döngü:** \"Başka bir şey sorar mısın?\" → root'a dön\n2. **Sert döngü:** Seçenek yoksa otomatik root\n3. **Koşullu döngü:** Görev tamamlandıysa yeni dal aç\n\n**JSON örneği:**\n```json\n{\n  \"quest_accepted\": {\n    \"npcLine\": \"Harika! Kuzeyden at otu getir.\",\n    \"options\": [\n      {\"text\": \"Başka bir şey?\", \"goto\": \"root\"},\n      {\"text\": \"Görüşürüz\", \"goto\": \"farewell\"}\n    ],\n    \"setFlag\": \"quest_herbGathering_active\"\n  }\n}\n```\n\n**Prompt:** \"Görev takibi yapan, tamamlandıkça yeni diyalog dalları açan döngüsel NPC konuşma sistemi tasarla; 3 farklı görev durumu için (aktif, tamamlandı, ödül alındı) ayrı replikler.\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "flag"
       ],
       "badge1": "İleri",
-      "content": "## Koşullu Kilitler\n1. Düğüme `requires` alanı ekle (örn: `hasKey`, `level>=5`).\n2. Koşul sağlanmazsa seçeneği gizle veya kilitli göster.\n3. Oyuncu durumunu merkezi `gameState` objesinden oku.\n4. Kilit açıldığında küçük bir ipucu metni sun.",
+      "content": "## Koşullu Diyalog Kilitleme Sistemi\n\nOyuncu flag'lerine, envantere veya itibar puanına göre diyalog seçeneklerini kilitleyen/açan sistem.\n\n**Kilit türleri:**\n```json\n{\n  \"secret_info\": {\n    \"npcLine\": \"...\",\n    \"options\": [\n      {\n        \"text\": \"Loncaya üye misiniz?\",\n        \"requires\": {\"flag\": \"guild_member\", \"value\": true},\n        \"goto\": \"guild_secret\"\n      },\n      {\n        \"text\": \"Altın mı lazım?\",\n        \"requires\": {\"gold\": {\"gte\": 100}},\n        \"goto\": \"bribe_path\"\n      },\n      {\n        \"text\": \"İtibarınız...\",\n        \"requires\": {\"reputation\": {\"gte\": 75}},\n        \"goto\": \"trusted_path\"\n      }\n    ]\n  }\n}\n```\n\n**Prompt:** \"Karakter itibarı, görev durumu ve envantere göre 5 farklı kilit koşulu olan karmaşık NPC diyalog sistemi tasarla; tüccar, muhbir ve kötü adam için farklı eşikler.\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "bağlam"
       ],
       "badge1": "Başlangıç",
-      "content": "## Zamana Duyarlı Replik\n1. `timeOfDay` değişkenini (sabah/öğle/akşam/gece) oku.\n2. Her dilim için ayrı selamlama dizisi tanımla.\n3. Rastgele varyasyonla tekrarı azalt.\n4. Özel günlerde (bayram) override repliği ekle.",
+      "content": "## Dinamik Zaman/Olay Tabanlı Selamlamalar\n\nOyun içi saate, hava durumuna veya olaylara göre değişen dinamik NPC selamlama sistemi.\n\n**Koşul tablosu:**\n```json\n{\n  \"greetings\": {\n    \"morning\": {\"hours\": [6,12], \"lines\": [\"Günaydın!\", \"Sabah erken başlamışsın.\"]},\n    \"afternoon\": {\"hours\": [12,18], \"lines\": [\"İyi günler.\", \"Öğleden sonra çalışıyor musun?\"]},\n    \"night\": {\"hours\": [20,24], \"lines\": [\"Bu saatte dışarı çıkma!\", \"Karanlıkta ne arıyorsun?\"]},\n    \"rain\": {\"weather\": \"rainy\", \"lines\": [\"Yağmurda ıslanma!\"]},\n    \"postWar\": {\"flag\": \"war_ended\", \"lines\": [\"Şükür savaş bitti.\"]}\n  }\n}\n```\n\n**Öncelik sırası:** event flag > hava durumu > saat dilimi\n\n**Prompt:** \"Dört mevsim, beş olay flag'i ve üç farklı NPC karakteri için dinamik selamlama matrisi üret; her kombinasyon için 2 alternatif replik.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "güven"
       ],
       "badge1": "Orta",
-      "content": "## İlişkiye Bağlı Ton\n1. `affinity` puanını 0-100 aralığında tut.\n2. Düşük/orta/yüksek için üç ton seti yaz (soğuk, nötr, sıcak).\n3. Eşik geçişlerinde kısa bir tepki cümlesi tetikle.\n4. Hakaret/iyilik eylemleriyle puanı güncelle.",
+      "content": "## NPC İlişki Seviyesi → Ton Değişimi Sistemi\n\nOyuncunun NPC ile ilişki puanına (0-100) göre diyalog tonunu ve içeriğini değiştiren sistem.\n\n**İlişki seviyeleri:**\n| Puan | Seviye | Ton | Özellik |\n|------|--------|-----|--------|\n| 0-20 | Yabancı | Resmi, mesafeli | Minimum bilgi |\n| 21-40 | Tanıdık | Nötr, kibarca | Temel ticaret |\n| 41-60 | Arkadaş | Samimi | Kişisel sırlar |\n| 61-80 | Güvenilir | Sıcak | Özel görevler |\n| 81-100 | Sadık | Akraba gibi | Her şeyi paylaşır |\n\n**Prompt şablonu:**\n```\n[NPC adı] ile [ilişki seviyesi] için konuşma yaz:\nBağlam: [oyuncu ne soruyor?]\nTon: [seviyeye uygun sıfatlar]\nÖzel bilgi: [o seviyede açılacak içerik]\nİlişki artışı: bu konuşma +X puan kazandırır mı?\n```",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "çevre"
       ],
       "badge1": "İleri",
-      "content": "## Çevresel Yorum\n1. `nearbyEvents[]` listesini her tick'te kontrol et.\n2. Yangın, savaş, hava durumu için tepki şablonları hazırla.\n3. En yüksek öncelikli olayı seç ve bark (anlık replik) bas.\n4. Tekrarı önlemek için 30 sn cooldown uygula.",
+      "content": "## Çevresel Durum NPC Yorumu Sistemi\n\nOyun dünyasındaki görünür olayları NPC'lerin kendi perspektifinden yorumlamasını sağlar.\n\n**Olay → yorum şablonu:**\n```json\n{\n  \"environmental_comments\": [\n    {\n      \"trigger\": {\"flag\": \"dragon_spotted\"},\n      \"lines\": [\n        \"Dün gece kuzeyden ateş gördüm...\",\n        \"Ejderha mu? Kalenin kapıları kapanır bu gece.\"\n      ]\n    },\n    {\n      \"trigger\": {\"player_stat\": \"wanted\", \"value\": true},\n      \"lines\": [\n        \"Şerif seni arıyor, biliyor musun?\",\n        \"Burada rahat olmayacaksın...\"\n      ]\n    }\n  ]\n}\n```\n\n**Prompt:** \"Bir kasabada 10 farklı çevresel olaya (fırtına, savaş, hastalık, kervan gelişi...) özgün NPC reaksiyon replikleri yaz; her NPC tipi için farklı bakış açısı.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "standart"
       ],
       "badge1": "Başlangıç",
-      "content": "## Diyalog JSON Şeması\n```json\n{\"id\":\"npc_01\",\"nodes\":[{\"id\":1,\"speaker\":\"Demirci\",\"text\":\"...\",\"choices\":[{\"text\":\"Evet\",\"next\":2}]}]}\n```\n1. `speaker`, `text`, `choices` zorunlu.\n2. `next` null ise konuşma biter.\n3. `flags` ile yan etki tetikle.",
+      "content": "## Oyun Diyalog JSON Şeması: Production Standardı\n\nBüyük oyun projelerinde tutarlı diyalog verisi yönetimi için şema tanımı.\n\n**Şema:**\n```json\n{\n  \"$schema\": \"http://json-schema.org/draft-07/schema\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"dialogueId\": {\"type\": \"string\", \"pattern\": \"^[a-z_]+$\"},\n    \"npcId\": {\"type\": \"string\"},\n    \"nodes\": {\n      \"type\": \"object\",\n      \"additionalProperties\": {\n        \"type\": \"object\",\n        \"required\": [\"npcLine\", \"options\"],\n        \"properties\": {\n          \"npcLine\": {\"type\": \"string\", \"maxLength\": 500},\n          \"voiceLine\": {\"type\": \"string\"},\n          \"portrait\": {\"type\": \"string\"},\n          \"options\": {\"type\": \"array\"},\n          \"setFlag\": {\"type\": \"string\"},\n          \"requires\": {\"type\": \"object\"}\n        }\n      }\n    }\n  }\n}\n```\n\n**Prompt:** \"Bu şemayı temel alarak lokalizasyon destekli, seslendirme metadata'sı olan ve dialogue editor tool'una import edilebilir diyalog sistemi tasarla.\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "i18n"
       ],
       "badge1": "Orta",
-      "content": "## Lokalize JSON\n1. `text` yerine `textKey` kullan (örn: `npc01.greet`).\n2. Gerçek metni ayrı `tr.json`/`en.json` dosyasında tut.\n3. Çalışma anında aktif dile göre anahtarı çöz.\n4. Eksik anahtarları fallback dil ile doldur.",
+      "content": "## Çok Dilli Diyalog Lokalizasyon Sistemi\n\nDiyalog metinlerini lokalizasyon anahtarlarına bölerek çoklu dil desteği sağlar.\n\n**Yapı:**\n```json\n// dialogues.json — anahtar dosyası\n{\n  \"dlg_merchant_greeting\": \"MERCHANT_GREET_01\",\n  \"dlg_merchant_trade\": \"MERCHANT_TRADE_01\"\n}\n\n// tr.json\n{\"MERCHANT_GREET_01\": \"Merhaba yolcu!\", \"MERCHANT_TRADE_01\": \"Ne almak istersin?\"}\n\n// en.json\n{\"MERCHANT_GREET_01\": \"Hello traveler!\", \"MERCHANT_TRADE_01\": \"What would you like?\"}\n```\n\n**Python lokalizasyon araç:**\n```python\ndef get_line(key, lang=\"tr\"):\n    data = json.load(open(f\"{lang}.json\"))\n    return data.get(key, f\"[MISSING:{key}]\")\n```\n\n**Prompt:** \"100 NPC için lokalizasyon anahtarı sistemi kur; eksik çeviri tespiti, karakter limiti kontrolü ve context not eklenebilen spreadsheet format tasarla.\"",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "lipsync"
       ],
       "badge1": "İleri",
-      "content": "## Ses Metadata\n1. Düğüme `audioClip` ve `duration` alanları ekle.\n2. `lipsyncData` için viseme zaman damgaları tut.\n3. Altyazı zamanlamasını `duration` ile eşle.\n4. Ses yoksa metni varsayılan hızda göster.",
+      "content": "## Diyalog Seslendirme Metadata Sistemi\n\nNPC repliklerini seslendirme stüdyosu üretimine hazır metadata ile etiketler.\n\n**Metadata şeması:**\n```json\n{\n  \"line_id\": \"MERCHANT_GREET_01\",\n  \"text\": \"Merhaba yolcu, bugün ne lazım?\",\n  \"character\": \"merchant_male_old\",\n  \"emotion\": \"neutral\",\n  \"intensity\": 0.6,\n  \"pace\": \"normal\",\n  \"notes\": \"Yorgun ama yardımsever. Hafif Ege aksanı.\",\n  \"context\": \"İlk karşılaşma, gündüz saatleri\",\n  \"trigger\": \"player_approach\",\n  \"duration_estimate\": 3.2\n}\n```\n\n**Stüdyo paketi üretim promtu:**\n```\n[Karakter]: [tanım]\n[Replik]: [metin]\nDuygu: [duygu]\nYoğunluk: 1-10\nTalimat: [aktör için özel not]\nBağlam: [sahnedeki durum]\n```\n\n**Prompt:** \"50 farklı NPC için seslendirme brief paketi hazırla; her karakter için 3 örnek replik ve karakter ses direktifi.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "ses"
       ],
       "badge1": "Orta",
-      "content": "## Arketip Sesi\n1. Karaktere bir arketip ata (bilge/asker/tüccar).\n2. Her arketip için 10 imza kelime/deyim belirle.\n3. Cümle uzunluğu ve resmiyet seviyesini ayarla.\n4. Repliklere arketip filtresi uygulayarak tutarlılık sağla.",
+      "content": "## NPC Arketip → Konuşma Stili Şablonu\n\nFarklı NPC arketipleri için tutarlı konuşma tonu, kelime seçimi ve söylem kalıpları.\n\n**Arketip stilleri:**\n\n**Bilge Yaşlı:** Yavaş tempo, metafor yoğun, soru ile cevap verir\n→ \"Gençliğimde de böyle sorular sorardım... Belki cevap sorunun içinde gizlidir.\"\n\n**Tüccar:** Hızlı, pratik, para odaklı, iltifat taktiksel\n→ \"Özel fiyat sana, başka kimseye vermem bunu! Ne dersin, anlaştık mı?\"\n\n**Asker:** Kısa, emir tonu, şüpheci, protokol odaklı\n→ \"Dur. Kim izin verdi? Belge göster. Devam et.\"\n\n**Çılgın Bilgin:** Konudan konuya atlar, içsel mantığı var\n→ \"...ve işte o yüzden gökyüzü mavi değil! Aa, ne sormuştun?\"\n\n**Prompt:** \"[Karakter arketipi] için 20 farklı bağlamda (selamlama, tehdit, yardım, red, sürpriz...) konuşma replikleri üret; her arketipin söylemsel parmak izi tutarlı olsun.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "bölge"
       ],
       "badge1": "İleri",
-      "content": "## Lehçe Yansıtma\n1. Karakterin geldiği bölgeyi belirle.\n2. Birkaç fonetik kural tanımla (örn: 'geliyorum'→'geliyom').\n3. Aşırıya kaçmadan 2-3 imza değişiklik uygula.\n4. Okunabilirliği test et, gerekirse yumuşat.",
+      "content": "## NPC Lehçe ve Aksan Yazım Sistemi\n\nFarklı bölge veya ırktan NPC'lerin konuşma biçimini yazıyla simüle etmek için yazım yönlendirmeleri.\n\n**Teknikler:**\n\n**Kuzey lehçesi:** ğ yerine y, ı yerine i → \"iyi yolculuklar\" → \"iyi yolculuklar, kardaşım!\"\n\n**Yabancı (Elven):** Şiirsel dil, çoğul yerine tekil, soyadını vurgula\n→ \"Ben Aelindra. Orman beni göndermez — ben seçerim.\"\n\n**Orta sınıf:** Düzgün ama klişe deyimler → \"Adamın biri demiş ki...\"\n\n**Yeraltı ırkı:** Sert ünsüzler, kısa cümleler, resmiyetsiz\n→ \"İstediğin ne? Konuş. Zaman kaya gibi geçer.\"\n\n**Prompt:** \"[Irk/bölge/sosyal sınıf] için özgün konuşma kalıpları ve tekrarlayan söylem tikleri oluştur; 10 örnek replik ile tutarlılığı test et.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "sonuç"
       ],
       "badge1": "İleri",
-      "content": "## Seçim Ağırlığı\n1. Her seçime `weight` ve `consequence` etiketi ver.\n2. Seçimleri `decisionLog[]` içinde biriktir.\n3. Belirli eşiklerde hikaye dalını değiştir.\n4. Finalde log'a göre uygun sonu seç.",
+      "content": "## Weighted Diyalog: Seçim Sonuç Olasılık Sistemi\n\nOyuncu seçimlerinin rastgele değil ağırlıklı olasılıkla sonuç ürettiği sistem.\n\n**Yapı:**\n```json\n{\n  \"persuade_attempt\": {\n    \"player_line\": \"Seni ikna edebilirim...\",\n    \"outcomes\": [\n      {\"result\": \"success\", \"weight\": 0.4, \"requires\": {\"charisma\": {\"gte\": 7}}},\n      {\"result\": \"partial\", \"weight\": 0.4},\n      {\"result\": \"fail\", \"weight\": 0.2}\n    ],\n    \"on_success\": \"secret_revealed\",\n    \"on_partial\": \"hint_given\",\n    \"on_fail\": \"npc_angry\"\n  }\n}\n```\n\n**Karizmatik karakter bonusu:** `charisma >= 7` → success weight 0.4→0.7\n\n**Prompt:** \"Müzakere, yıldırma ve rüşvet için ağırlıklı sonuç sistemi tasarla; karakter istatistiklerine bağlı dinamik olasılıklar.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "gerilim"
       ],
       "badge1": "Orta",
-      "content": "## Zaman Baskısı\n1. Seçim ekranına `timer` (örn: 5 sn) ekle.\n2. Süre dolarsa varsayılan/sessizlik dalına geç.\n3. Geri sayımı görsel bir çubukla göster.\n4. Sonucu `timedOut:true` ile işaretleyip sahneyi etkile.",
+      "content": "## Zamanlayıcılı Diyalog Seçim Sistemi\n\nOyuncunun sınırlı sürede (3-10 saniye) yanıt vermesi gereken yüksek gerilim diyalog yapısı.\n\n**Uygulama:**\n```json\n{\n  \"urgent_choice\": {\n    \"npcLine\": \"Hızlı karar ver! Kapı kapanıyor!\",\n    \"timer\": 5,\n    \"options\": [\n      {\"text\": \"Sol kapıdan kaç!\", \"goto\": \"escape_left\"},\n      {\"text\": \"Savaş!\", \"goto\": \"fight_scene\"}\n    ],\n    \"timeout_goto\": \"caught\",\n    \"timeout_consequence\": \"Tereddüt ettin — yakalandın!\"\n  }\n}\n```\n\n**Tasarım prensipleri:**\n- Tüm seçenekler eşit okunabilir uzunlukta olmalı\n- Timeout cezası açık ve adil\n- Müzik/efekt ile gerilim artırılabilir\n- Erişilebilirlik: zamanlayıcı kapatılabilir seçenek\n\n**Prompt:** \"5 farklı gerilim sahnesi için zamanlayıcılı diyalog tasarla; savaş, kaçış, müzakere, kurban seçimi ve gizem çözme bağlamları.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "duygu"
       ],
       "badge1": "İleri",
-      "content": "## Ruh Hali FSM\n1. Durumları tanımla: sakin, tedirgin, öfkeli, neşeli.\n2. Geçiş tetikleyicilerini belirle (tehdit→tedirgin).\n3. Her duruma özel replik havuzu bağla.\n4. Zamanla nötr duruma geri dönüş (decay) ekle.",
+      "content": "## NPC Ruh Hali Durum Makinesi\n\nNPC'nin ruh halini (mood) durumsal olarak takip eden ve diyalog tonunu buna göre ayarlayan sistem.\n\n**Durum makinesi:**\n```\nDurumlar: neutral → happy → suspicious → angry → hostile\nGeçişler:\n  neutral + (oyuncu yardım etti) → happy\n  happy + (oyuncu çaldı) → angry\n  angry + (özür + hediye) → neutral\n  suspicious + (belge gösterdi) → neutral\n  hostile + (oyuncu kaçtı) → neutral (zaman ile)\n```\n\n**JSON:**\n```json\n{\n  \"mood\": \"suspicious\",\n  \"mood_history\": [\"neutral\", \"suspicious\"],\n  \"transitions\": {\n    \"player_proved_identity\": \"neutral\",\n    \"player_fled\": \"hostile\"\n  }\n}\n```\n\n**Prompt:** \"5 durumlu NPC ruh hali makinesi için durum geçiş diyagramı ve her durum için 5'er örnek replik; geçişi tetikleyen oyuncu eylemleriyle birlikte.\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "sitem"
       ],
       "badge1": "İleri",
-      "content": "## Hafıza ve Sitem\n1. Önemli oyuncu eylemlerini `memories[]` içinde sakla.\n2. Her hafızaya duygu etiketi ve tarih ekle.\n3. İlgili bağlamda hafızayı çağırıp replik üret.\n4. Eski hafızaların etkisini zamanla azalt.",
+      "content": "## NPC Hafızası: Geçmiş Eylemlere Göre Sitem/Takdir\n\nNPC'nin oyuncunun geçmiş eylemlerini hatırlayarak diyalogda referans verdiği bellek sistemi.\n\n**Bellek yapısı:**\n```json\n{\n  \"npc_id\": \"merchant_02\",\n  \"memory\": [\n    {\"event\": \"player_stole\", \"timestamp\": 15234, \"severity\": \"high\"},\n    {\"event\": \"player_helped_child\", \"timestamp\": 18000, \"severity\": \"low\"}\n  ],\n  \"reputation\": 35\n}\n```\n\n**Bellek tabanlı replikler:**\n- Düşük itibar: \"Ah, sen o hırsızsın! Uzak dur benden.\"\n- Yüksek itibar: \"O çocuğu kurtardın değil mi? Sana özel fiyat.\"\n- Çelişkili bellek: \"Hem iyilik yaptın hem hırsızlık... Ne düşüneceğimi bilemedim.\"\n\n**Prompt:** \"10 farklı bellek olayı (yardım, ihanet, görev tamamlama, ticaret) için NPC sitem/takdir replik seti ve bellek ağırlıklı itibar hesaplama formülü.\"",
       "source": {
         "generated": true
       }

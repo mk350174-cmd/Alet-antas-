@@ -93,7 +93,7 @@
         "aciklama"
       ],
       "badge1": "Başlangıç",
-      "content": "## Görsel Detay Analizi Komutu\n\nGörselin ana konusunu, arka planını, renk paletini ve önemli nesneleri tanımlayan 100 kelimelik bir açıklama üret.\n\n**Prompt:** \"Bu görseldeki ana unsurları, atmosferi ve olası hikayeyi anlatan detaylı bir betimleme yap.\"",
+      "content": "## Görüntü Detaylı Tanımlama Şablonu\n\nBir görseldeki tüm unsurları sistematik olarak açıklayan kapsamlı prompt sistemi.\n\n**Prompt şablonu:**\n```\nBu görseli ayrıntılı tanımla:\n\n1. Genel bağlam: Sahne nerede, ne zaman, neler oluyor?\n2. Ön plan (foreground): Hangi nesneler yakın planda ve ne durumda?\n3. Arka plan (background): Ortam, ufuk çizgisi, derinlik\n4. Renkler ve aydınlatma: Dominant renkler, ışık kaynağı, gölgeler\n5. Metinler: Görseldeki tüm yazılı içerikler\n6. Duygusal ton: Bu görsel ne hissettiriyor?\n7. Teknik kalite: Keskinlik, kompozisyon, perspektif\n```\n\n**Kullanım alanları:** Erişilebilirlik alt text üretimi, ürün katalog tanımları, medya arşivleme, içerik moderasyon.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -112,7 +112,7 @@
         "gorsel"
       ],
       "badge1": "Orta",
-      "content": "## Görsel Duygu Çıkarımı\n\nGörseldeki renklerin, kompozisyonun ve nesnelerin yarattığı baskın duyguyu (örneğin, neşe, hüzün, gerilim) belirle.\n\n**Prompt:** \"Bu görsel hangi temel duyguları uyandırıyor? Renkler, ışık ve kompozisyon bu duyguyu nasıl destekliyor?\"",
+      "content": "## Görsel Duygu ve Ton Analizi\n\nGörselin duygusal içeriğini ve izleyicide uyandırdığı psikolojik etkiyi analiz eder.\n\n**Prompt şablonu:**\n```\nBu görselin duygusal analizini yap:\n\n1. Birincil duygu: (mutluluk / üzüntü / heyecan / korku / sakinlik / öfke)\n   Kanıt: Yüz ifadesi / renk paleti / kompozisyon\n\n2. İkincil duygular: arka planda ne var?\n\n3. Psikolojik etki:\n   - Renk psikolojisi: Mavi → sakinlik, Kırmızı → enerji\n   - Kompozisyon: Merkez nesne güç mü hissettiriyor?\n   - Işık: Sıcak mı soğuk mu? Neyi çağrıştırıyor?\n\n4. Hedef kitle duygu tepkisi (reklam için):\n   - Güven / Arzu / Aciliyet / Merak yaratıyor mu?\n\n5. Duygu puanı (1-10): [duygu adı] = X/10\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -131,7 +131,7 @@
         "sanat"
       ],
       "badge1": "Orta",
-      "content": "## Görsel Tarz Tanımlama\n\nGörselin sahip olduğu sanat akımı, fotoğrafçılık tekniği veya estetik stili tanımla.\n\n**Prompt:** \"Bu görsel hangi sanat veya fotoğrafçılık tarzına ait? (örn. Empresyonizm, Minimalizm, Siyah Beyaz vb.)\"",
+      "content": "## Görsel Sanat Tarzı ve Teknik Tespiti\n\nGörselin sanatsal stilini, tekniğini ve referans noktalı kategorisini tespit eden analiz şablonu.\n\n**Prompt şablonu:**\n```\nBu görselin sanat tarzını analiz et:\n\n1. Temel kategori:\n   □ Fotoğraf (analog/dijital/film)\n   □ Dijital illüstrasyon\n   □ 3D render (gerçekçi/stilize/low-poly)\n   □ Geleneksel resim (yağlıboya/suluboya/karakalem)\n   □ Pixel art / Vektör\n\n2. Stil referansları:\n   - En yakın artist/hareket: [isim]\n   - Dönem: [yıl aralığı veya akım]\n   - Teknik ipuçları: fırça darbeleri, piksel yoğunluğu\n\n3. Renk paleti tipi:\n   monokrom / komplementer / analog / triadik\n\n4. Benzeri üretmek için prompt:\n   \"[tarz] stilinde, [teknik] kullanarak [konu] görseli\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -150,7 +150,7 @@
         "teknik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Görsel Kalite Kontrolü\n\nGörselin keskinliğini, pozlamasını, renk doğruluğunu ve kompozisyonunu değerlendir.\n\n**Prompt:** \"Bu görselin teknik kalitesini (keskinlik, pozlama, renk) değerlendirip iyileştirme önerileri sun.\"",
+      "content": "## Görsel Kalite Değerlendirme Rubriği\n\nGörselin teknik ve estetik kalitesini puanlayan sistematik değerlendirme şablonu.\n\n**Prompt şablonu:**\n```\nBu görseli aşağıdaki kriterlere göre 1-10 puanla:\n\nTEKNİK KALİTE:\n- Çözünürlük ve netlik: /10\n- Gürültü/parazit düzeyi: /10\n- Renk doğruluğu: /10\n- Dinamik aralık (highlights/shadows): /10\n\nESTETİK KALİTE:\n- Kompozisyon (altılar kuralı, lider çizgiler): /10\n- Işık tasarımı: /10\n- Konu-arka plan dengesi: /10\n- Özgünlük: /10\n\nGENEL PUAN: /10\nEn büyük güçlü yön: ...\nEn kritik iyileştirme alanı: ...\nÖnerilen post-processing adımı: ...\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -169,7 +169,7 @@
         "aciklama"
       ],
       "badge1": "Başlangıç",
-      "content": "## Teknik Şema İşlev Tanımı\n\nSağlanan teknik şemanın (örn. devre, akış) ana bileşenlerini ve genel işlevini özetle.\n\n**Prompt:** \"Bu teknik şemanın temel amacı nedir ve ana bileşenleri hangi işlevleri yerine getirir?\"",
+      "content": "## Teknik Şema Basit Dil Açıklaması\n\nKarmaşık teknik şema, akış diyagramı veya devre görselini teknik olmayan okuyucu için açıklar.\n\n**Prompt şablonu:**\n```\nBu teknik şemayı teknik bilgisi olmayan birine açıkla:\n\n1. Bu şema ne için? (tek cümle)\n2. Ana bileşenler: Her kutu/simge ne anlama geliyor?\n   - [Sembol] = [sade açıklama]\n3. Bilgi/sinyal akışı: Oklar ne yönde ve neden?\n4. Başlangıç noktası → sonuç: Adım adım ne olur?\n5. Gerçek hayat analojisi: Bu süreç neye benziyor?\n\nHedef: Lise mezunu bir kişi okuyunca anlasın.\n```\n\n**Kullanım:** Teknik raporlarda yönetici özeti, eğitim materyali, ürün dokümantasyonu.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -188,7 +188,7 @@
         "adımlar"
       ],
       "badge1": "Orta",
-      "content": "## Akış Şeması Adım Çıkarımı\n\nVerilen akış şemasındaki her bir adımı sırasıyla ve kısa açıklamalarıyla listele.\n\n**Prompt:** \"Bu akış şemasındaki tüm adımları mantıksal bir sıra içinde belirt.\"",
+      "content": "## Akış Şeması → Adım Adım Metin Dönüşümü\n\nGörseldeki akış şemasını (flowchart) sıralı adım listesine ve pseudocode'a dönüştürür.\n\n**Prompt şablonu:**\n```\nBu akış şemasını adım adım yaz:\n\n1. Başlangıç koşulu: Süreç ne tetikler?\n2. Her karar noktası için:\n   EĞER [koşul] → [adım A]\n   DEĞİLSE → [adım B]\n3. Döngüler: Hangi noktada geri dönülüyor?\n4. Bitiş koşulları: Kaç farklı sonuç var?\n\nFormat olarak çıktı ver:\n- Numaralı adım listesi\n- Pseudocode (Python benzeri)\n- Flowchart'ı yeniden oluşturacak Mermaid diyagramı kodu\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -207,7 +207,7 @@
         "bileşen"
       ],
       "badge1": "Orta",
-      "content": "## Devre Şeması Bileşen Listesi\n\nBu devre şemasında kullanılan temel elektronik bileşenleri (direnç, kapasitör, transistör vb.) ve sembollerini listele.\n\n**Prompt:** \"Resimdeki devre şemasında yer alan tüm elektronik bileşenleri ve sembollerini tanımla.\"",
+      "content": "## Elektronik Devre Şeması Bileşen Analizi\n\nElektronik devre şemasını okuyarak bileşenleri listeler, değerlerini çıkarır ve devrenin işlevini açıklar.\n\n**Prompt şablonu:**\n```\nBu elektronik devre şemasını analiz et:\n\n1. Bileşen listesi:\n   - Direnç (R): [değer] Ω, [adet]\n   - Kondansatör (C): [değer] µF/pF\n   - Transistör: [tip: NPN/PNP/MOSFET], [model]\n   - IC: [chip adı, işlevi]\n   - Diğer: ...\n\n2. Güç kaynağı: Voltaj ve akım gereksinimleri\n\n3. Devre işlevi: Bu devre ne yapıyor?\n\n4. Sinyal yolu: Giriş → işleme → çıkış akışı\n\n5. Kritik noktalar: Hangi bileşen devreni belirliyor?\n\n6. Olası sorunlar: Tipik arıza noktaları\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -226,7 +226,7 @@
         "analiz"
       ],
       "badge1": "İleri",
-      "content": "## Teknik Şema Sorun Tespiti\n\nŞemadaki potansiyel tasarım hatalarını, mantıksal tutarsızlıkları veya verimsizlikleri belirle.\n\n**Prompt:** \"Bu teknik şemada gözden kaçabilecek olası hataları veya iyileştirme alanlarını listele.\"",
+      "content": "## Teknik Şemada Hata Tespiti\n\nAkış şeması veya mimari diyagramdaki mantık hatalarını, eksik bağlantıları ve ölü dalları tespit eder.\n\n**Prompt şablonu:**\n```\nBu teknik şemada hataları bul:\n\n1. Mantık tutarlılığı:\n   - Karar noktaları doğru sonuçlara gidiyor mu?\n   - Her yolun bir sonu var mı (sonsuz döngü riski)?\n\n2. Eksik durumlar:\n   - Hangi uç durum (edge case) ele alınmamış?\n   - Hata yolları (error path) var mı?\n\n3. Bağlantı hataları:\n   - Kopuk oklar veya yanlış yönlü bağlantılar?\n   - Orphan node (hiçbir şeye bağlı olmayan bileşen)?\n\n4. Düzeltilmiş versiyon:\n   - Tespit edilen her hata için düzeltme öner\n   - Mermaid kodu ile doğru versiyonu ver\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -245,7 +245,7 @@
         "nesne"
       ],
       "badge1": "Başlangıç",
-      "content": "## Basit Nesne Görseli Oluşturma\n\nBelirtilen nesnenin (örn. kırmızı elma) temel bir temsilini oluştur.\n\n**Prompt:** \"Arka planı sade, tek bir kırmızı elma görseli üret.\"",
+      "content": "## Görsel Nesne Tanıma ve Üretim Promtu\n\nGörseldeki belirli bir nesneyi tanımlayarak benzerini üretmek için detaylı prompt yazar.\n\n**Prompt şablonu:**\n```\nBu görseldeki [nesne] için üretim promptu yaz:\n\n1. Nesne özellikleri:\n   - Şekil ve boyut: [açıklama]\n   - Renk: [hex kodu veya renk adı]\n   - Malzeme/doku: [metal/plastik/ahşap/kumaş]\n   - Işık tepkisi: mat/parlak/saydam\n\n2. Görsel stil:\n   - Gerçekçi fotoğraf / illüstrasyon / 3D render\n   - Arka plan tercihi\n   - Işık açısı ve yoğunluğu\n\n3. Üretim promptu:\n   \"[Nesne], [malzeme], [renk], [ışık], [stil], [arka plan],\n    yüksek kalite, 4K, [kamera açısı]\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -264,7 +264,7 @@
         "ortam"
       ],
       "badge1": "Orta",
-      "content": "## Ortamda Nesne Görselleştirme\n\nBelirtilen nesneyi, tanımlanmış bir ortamda (örn. ahşap masa üzerinde) gerçekçi bir şekilde yerleştir.\n\n**Prompt:** \"Bir fincan kahveyi ahşap bir masa üzerinde, doğal ışık altında gösteren bir görsel oluştur.\"",
+      "content": "## Görsel Nesne Kompozisyon ve Yerleştirme\n\nBelirli bir nesneyi farklı ortamlara yerleştirmek için arka plan ve ışık uyumluluk analizi yapar.\n\n**Prompt şablonu:**\n```\n[Nesne] için ortam yerleştirme analizi:\nNesne: [tanım]\nHedef ortam: [iç mekan/dış mekan/stüdyo]\n\n1. Perspektif uyumu:\n   - Kamera açısı: [0°/15°/45°/kuş bakışı]\n   - Nesne boyutu orantısı ortama uygun mu?\n\n2. Işık uyumu:\n   - Ortamın ışık kaynağı: [saat/yön]\n   - Nesne üzerindeki highlight ve shadow yönü\n   - Renk sıcaklığı eşleştirme: [Kelvin değeri]\n\n3. Gölge ve yansıma:\n   - Zemine düşen gölge şekli\n   - Yansıtıcı yüzeylerle etkileşim\n\n4. Üretim promptu:\n   \"[Nesne] [ortam]da, [ışık], [gölge], gerçekçi compositing\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -283,7 +283,7 @@
         "stil"
       ],
       "badge1": "Orta",
-      "content": "## Görsel Stil Dönüşümü\n\nVerilen bir görselin içeriğini koruyarak, farklı bir sanat tarzında (örn. Van Gogh, anime) yeniden oluştur.\n\n**Prompt:** \"Bu sahneyi Van Gogh'un 'Yıldızlı Gece' tablosu tarzında yeniden çiz.\"",
+      "content": "## Stil Transferi Prompt Üretimi\n\nMevcut bir görseli farklı sanat stillerine dönüştürmek için hedefli prompt üretir.\n\n**Prompt şablonu:**\n```\n[Görsel içerik] için stil transfer promtları:\n\nKorunacak içerik: [ana konu, kompozisyon]\n\n1. Empresyonist:\n   \"[konu], Monet tarzı, pastel renkler, kısa fırça darbeleri, doğal ışık\"\n\n2. Anime/Manga:\n   \"[konu], Studio Ghibli tarzı, bold outline, vivid colors, cel shading\"\n\n3. Fotogerçekçi:\n   \"[konu], DSLR fotoğraf, 85mm lens, bokeh, doğal aydınlatma, RAW\"\n\n4. Low-poly 3D:\n   \"[konu], low-poly 3D render, geometric, flat shading, isometric view\"\n\n5. Karakalem:\n   \"[konu], pencil sketch, hatching, crosshatching, white background\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -302,7 +302,7 @@
         "soyut"
       ],
       "badge1": "İleri",
-      "content": "## Soyut Kavram Görselleştirme\n\n'Umut' veya 'kaos' gibi soyut bir kavramı temsil eden estetik ve yaratıcı bir görsel oluştur.\n\n**Prompt:** \"'Teknolojinin doğayla entegrasyonu' temasını işleyen, akışkan ve renkli bir soyut görsel tasarla.\"",
+      "content": "## Soyut Görsel Tasarım Promptu\n\nAbstract/non-figurative görsel üretim için kompozisyon, renk teorisi ve form ilkeleri temelli prompt sistemi.\n\n**Prompt şablonu:**\n```\nSoyut görsel tasarım brief'i:\n\n1. Tema/duygu: [huzur / kaos / güç / melankoli]\n\n2. Renk şeması:\n   Birincil: [hex]\n   İkincil: [hex]\n   Aksent: [hex]\n   Arka plan: [açık/koyu/gradient]\n\n3. Geometrik dil:\n   □ Organik formlar (eğriler, dalgalar)\n   □ Keskin geometri (üçgen, dikdörtgen)\n   □ Nokta/çizgi deseni (Kandinsky tarzı)\n   □ Fluid/sıvı simülasyon\n\n4. Kompozisyon:\n   □ Merkez odak\n   □ Asimetrik denge\n   □ Döngüsel/spiral\n   □ Kaotik yoğunluk\n\n5. Üretim promptu:\n   \"Abstract art, [tema], [renkler], [formlar], [kompozisyon], high detail\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -321,7 +321,7 @@
         "gorsel"
       ],
       "badge1": "Başlangıç",
-      "content": "## Nesne Tanıma ve Listeleme\n\nGörseldeki ana nesneleri (kişiler, hayvanlar, eşyalar) tespit et ve basit bir liste halinde sun.\n\n**Prompt:** \"Bu resimde hangi nesneler bulunuyor?\"",
+      "content": "## Görsel Nesne Envanter Çıkarımı\n\nGörseldeki tüm tespit edilebilir nesneleri kategorize ederek yapılandırılmış envanter listesi oluşturur.\n\n**Prompt şablonu:**\n```\nBu görseldeki tüm nesneleri listele ve kategorize et:\n\n| # | Nesne | Kategori | Adet | Konum | Güven |\n|---|-------|----------|------|-------|-------|\n| 1 | [isim] | [insan/araç/bitki...] | [sayı] | [sol üst...] | [yüksek/orta/düşük] |\n\nSonra:\n1. En baskın 3 nesne kategorisi\n2. Tespit edilemeyen belirsiz nesneler\n3. JSON formatında çıktı:\n{\n  \"objects\": [\n    {\"name\": \"...\", \"count\": 1, \"bbox\": [x,y,w,h], \"confidence\": 0.95}\n  ]\n}\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -340,7 +340,7 @@
         "konum"
       ],
       "badge1": "Orta",
-      "content": "## Nesne Konum Analizi\n\nTespit edilen her nesnenin görsel içindeki yaklaşık konumunu (örn. sol üst, merkez) belirt.\n\n**Prompt:** \"Resimdeki nesneleri ve konumlarını (örn. 'köpek ortada, sağ üstte kedi') listele.\"",
+      "content": "## Görsel Nesne Konumlandırma ve Uzamsal Analiz\n\nGörseldeki nesnelerin birbirine göre konumlarını ve uzamsal ilişkilerini çıkarır.\n\n**Prompt şablonu:**\n```\nBu görselde nesnelerin uzamsal ilişkilerini analiz et:\n\n1. Koordinat sistemi (görsel 100×100 grid olarak):\n   [Nesne A] → konum: (x, y), boyut: w×h\n   [Nesne B] → konum: (x, y), boyut: w×h\n\n2. İlişkisel açıklamalar:\n   - [Nesne A] [Nesne B]'nin [üstünde/sağında/önünde]\n   - Aralarındaki yaklaşık mesafe: [yakın/orta/uzak]\n\n3. Derinlik sıralaması (önden arkaya):\n   1. [en yakın nesne]\n   2. ...\n\n4. Odak noktası analizi:\n   - Kompozisyon merkezi nerede?\n   - Göz hangi sırayla ne görüyor?\n\n5. JSON bounding box çıktısı:\n   {\"objects\": [{\"id\": \"A\", \"x\": 10, \"y\": 20, \"w\": 30, \"h\": 40}]}\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -359,7 +359,7 @@
         "detay"
       ],
       "badge1": "İleri",
-      "content": "## Detaylı Nesne Avı\n\nGörseldeki belirgin olmayan, küçük veya kısmen gizlenmiş nesneleri tespit etmeye odaklan.\n\n**Prompt:** \"Bu karmaşık görselde saklı kalmış veya küçük detayları (örn. böcek, yüzük) bul.\"",
+      "content": "## Görsel Küçük Nesne ve Detay Tespiti\n\nGörselin arka planında veya küçük bölgelerinde gizlenmiş detayları sistematik olarak arar.\n\n**Prompt şablonu:**\n```\nBu görseli dikkatli incele ve küçük detayları bul:\n\n1. Arka plan taraması:\n   - Sağ üst köşe: ne görünüyor?\n   - Sol alt köşe: ne var?\n   - Kenar bölgeleri: gözden kaçan detaylar?\n\n2. Odak dışı nesneler (blur/bokeh altında):\n   - Arka planda seçilen/seçilmeyen neler var?\n\n3. Metin ve semboller:\n   - Küçük yazılar, logolar, etiketler\n   - Arka planda sayfa/ekran içerikleri\n\n4. Anomaliler:\n   - Beklenmedik veya yanlış görünen detaylar\n   - Metadata gizleme işaretleri\n\n5. Lokasyon ipuçları:\n   - Tabela, tabak, araç plakası gibi tanımlayıcılar\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -378,7 +378,7 @@
         "metin"
       ],
       "badge1": "Başlangıç",
-      "content": "## Görselden Metin Özeti Üretimi\n\nGörseldeki ana temayı ve unsurları içeren 2-3 cümlelik bir özet yaz.\n\n**Prompt:** \"Bu görselin içeriğini özetleyen kısa bir metin oluştur.\"",
+      "content": "## Görsel İçerik Metin Özetleyici\n\nGörseli okuyarak kısa, orta ve uzun formatta içerik özeti üretir.\n\n**Prompt şablonu:**\n```\nBu görseli üç farklı uzunlukta özetle:\n\nTWEET (280 karakter):\n[Görseli tek cümleyle tanımla, en çarpıcı unsuru öne çıkar]\n\nPARAGRAF (150 kelime):\n[Kim/ne/nerede/ne zaman/neden — gazeteci 5W soruları]\n[Duygusal/estetik bağlam]\n[Bağlamsal önem]\n\nDETAYLI RAPOR (500 kelime):\n[Sahne tanımı]\n[Her önemli unsurun ayrıntılı açıklaması]\n[Teknik gözlemler]\n[Çıkarımlar ve potansiyel kullanım]\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -397,7 +397,7 @@
         "icerik"
       ],
       "badge1": "Orta",
-      "content": "## Görsel İçin Başlık Fikirleri\n\nGörselin içeriğine ve atmosferine uygun, yaratıcı ve ilgi çekici başlık önerileri sun.\n\n**Prompt:** \"Bu görsel için 5 farklı başlık önerisi yap.\"",
+      "content": "## Görsel İçin Başlık ve Alt Yazı Üretimi\n\nGörselin içeriğine, hedef kitleye ve platforma göre optimize edilmiş başlık alternatifler üretir.\n\n**Prompt şablonu:**\n```\nBu görsel için başlık önerileri:\nPlatform: [Instagram / LinkedIn / Blog / Haber]\nHedef kitle: [yaş/ilgi]\n\n1. Duygusal başlık: [merak/heyecan/nostalji uyandırsın]\n2. Bilgilendirici başlık: [ne olduğunu açıklar]\n3. Soru formatı: [izleyiciyi düşündürür]\n4. Aksiyon çağrısı: [harekete geçirir]\n5. Mizahi başlık: [hafif ton]\n\nHer başlık için:\n- SEO anahtar kelime dahil\n- Karakter sayısı: [platform limitine uygun]\n- A/B test için 2 varyant\n\nAlt yazı (caption): 3 farklı ton için\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -416,7 +416,7 @@
         "icerik"
       ],
       "badge1": "İleri",
-      "content": "## Görselden Hikaye Oluşturma\n\nGörseldeki karakterler, mekan ve olay örgüsüne dayalı kısa bir hikaye taslağı (giriş, gelişme, sonuç) oluştur.\n\n**Prompt:** \"Bu görseldeki unsurları kullanarak bir kısa hikaye taslağı hazırla.\"",
+      "content": "## Görsel Hikaye ve Senaryo Üreticisi\n\nBir görseli esin kaynağı olarak kullanarak kısa hikaye, senaryo veya prompt zinciri üretir.\n\n**Prompt şablonu:**\n```\nBu görseli esin alarak hikaye taslağı üret:\n\n1. Anın öncesi (What happened before?):\n   - Bu sahneye nasıl gelindi?\n   - Karakterlerin geçmişi nedir?\n\n2. Bu an (The moment):\n   - Görselde ne oluyor tam olarak?\n   - Fark edilmeyen detay nedir?\n\n3. Anın sonrası (What happens next?):\n   - 3 farklı senaryo:\n     A) Mutlu son\n     B) Dramatik dönüş\n     C) Açık bırakılmış\n\n4. Karakter profili (görsel ipuçlarından):\n   - İsim, yaş, motivasyon\n   - Kıyafet/çevre/ifadeden çıkarımlar\n\n5. 5 cümlelik flash fiction\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -435,7 +435,7 @@
         "etiket"
       ],
       "badge1": "Başlangıç",
-      "content": "## Görsel Metadata Etiketleme\n\nGörselin içeriğini en iyi tanımlayan 5-10 anahtar kelime (etiket) üret.\n\n**Prompt:** \"Bu görsel için uygun metadata etiketleri (anahtar kelimeler) öner.\"",
+      "content": "## Görsel Metadata ve SEO Etiket Üreticisi\n\nGörsele IPTC/EXIF uyumlu metadata, SEO etiketleri ve erişilebilirlik metni üretir.\n\n**Prompt şablonu:**\n```\nBu görsel için metadata paketi üret:\n\nIPTC/EXIF:\n- Title: [kısa açıklayıcı başlık]\n- Description: [2-3 cümle]\n- Keywords: [virgülle ayrılmış, 10-15 anahtar kelime]\n- Creator: [photographer/artist]\n- Copyright: [lisans türü]\n- Location: [varsa coğrafi konum]\n\nSEO (web için):\n- alt text: [150 karakter, erişilebilirlik odaklı]\n- title attribute: [kısa açıklama]\n- figcaption önerisi: [görünür açıklama metni]\n\nSosyal medya:\n- og:title, og:description\n- Twitter card özet\n\nJSON-LD structured data şeması\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -454,7 +454,7 @@
         "alt text"
       ],
       "badge1": "Orta",
-      "content": "## Alternatif Metin (Alt Text) Oluşturma\n\nGörsel içeriğini anlaşılır bir şekilde anlatan, erişilebilirlik standartlarına uygun bir alt metin yaz.\n\n**Prompt:** \"Bu görsel için web erişilebilirliği amacıyla kullanılacak bir alt metin yaz.\"",
+      "content": "## Görsel Erişilebilirlik Alt Metin Üreticisi\n\nWeb erişilebilirlik standartlarına (WCAG 2.1) uygun, ekran okuyucu dostu alt metin ve uzun tanımlar üretir.\n\n**Prompt şablonu:**\n```\nBu görsel için erişilebilirlik metni üret:\n\n1. Kısa alt text (≤125 karakter, WCAG AA):\n   [İşlevsel veya bilgilendirici mi? Dekoratif ise boş bırak]\n   Örn: \"Mavi gökyüzü önünde el sıkışan iki iş insanı\"\n\n2. Uzun tanım (long description, karmaşık görseller için):\n   [Grafik, tablo, diyagram için]\n   - Başlık ve eksenler\n   - Veriler/trendler\n   - Önemli istisnalar\n\n3. Kontekst testi:\n   □ Görsel kaldırıldığında metin içeriği eksik mi?\n   □ Alt text gereksiz bilgi tekrar ediyor mu?\n   □ Eylem çağrısı (link/buton) için yeterince açıklayıcı?\n\n4. Yerelleştirme:\n   - TR ve EN versiyonları\n   - Kültürel anlam farkı var mı?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",

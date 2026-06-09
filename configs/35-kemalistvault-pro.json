@@ -93,7 +93,7 @@
         "analiz"
       ],
       "badge1": "Başlangıç",
-      "content": "## Altı Ok Analizi\n1. Her ilkeyi (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık) tanımla.\n2. 1937 anayasa değişikliğindeki yerini belirle.\n3. Dönemin koşullarıyla ilişkilendir.\n4. Günümüz yorumlarını karşılaştırmalı değerlendir.",
+      "content": "## Altı Ok İlkesi: Analitik Çerçeve\n\nAtatürk'ün Cumhuriyet Halk Partisi'nin 1937 anayasasına giren altı temel ilkesinin analitik incelemesi.\n\n**İlkeler ve çekirdek anlamı:**\n| İlke | Tanım | Hedeflediği dönüşüm |\n|------|-------|---------------------|\n| Cumhuriyetçilik | Halk egemenliği, seçilmiş yönetim | Saltanattan cumhuriyete |\n| Milliyetçilik | Vatandaşlık temelli ulusal kimlik | Osmanlı ümmetçiliğinden ulus-devlete |\n| Halkçılık | Sınıf ayrıcalığını reddeden eşitlik | Hanedanlık soyundan haklar eşitliğine |\n| Devletçilik | Kalkınmada devlet öncülüğü | Serbest piyasa yetersizliğine müdahale |\n| Laiklik | Din-devlet ayrımı | Şeriattan laik hukuka |\n| Devrimcilik | Sürekli yenilenme prensibi | Statükoyu meşrulaştırmamak |\n\n**Prompt:** \"Altı Ok'un birbiriyle çeliştiği görülen boyutlarını analiz et: Devletçilik ile Halkçılık çatışıyor mu, Milliyetçilik ile Laiklik nasıl uzlaştırılıyor?\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "hukuk"
       ],
       "badge1": "Orta",
-      "content": "## Laikleşme Süreci\n1. 1924 Hilafetin kaldırılması adımını incele.\n2. Tevhid-i Tedrisat ve Şer'iyye Vekaleti'nin lağvını ele al.\n3. 1926 Medeni Kanun'a geçişi analiz et.\n4. 1928 ve 1937 anayasal değişiklikleri sıralı değerlendir.",
+      "content": "## Türk Laikleşme Süreci: Aşamalı Dönüşüm\n\n1923-1938 arasında gerçekleştirilen laikleşme reformlarının kronolojisi ve mantıksal sıralaması.\n\n**Aşamalar:**\n1. **1923 — Saltanat kaldırma:** Siyasi gücün dinden ayrışması başlar\n2. **1924 — Hilafetin kaldırılması:** Dini otorite tamamen lağvedilir\n3. **1924 — Şer'iye mahkemeleri kapatma:** Hukuk dünyevileşir\n4. **1925 — Tekke ve zaviyelerin kapatılması:** Tarikatların siyasi etkisi kırılır\n5. **1926 — İsviçre Medeni Kanunu kabulü:** Sivil hayat laik esasa dayanır\n6. **1928 — Anayasadan \"devletin dini İslam'dır\" maddesinin çıkarılması**\n7. **1937 — Laikliğin anayasal ilke olarak kabulü**\n\n**Prompt:** \"Bu laikleşme sürecinin her aşamasını karşı direniş bağlamıyla analiz et: hangi gruplar hangi adıma neden karşı çıktı ve nasıl aşıldı?\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "toplum"
       ],
       "badge1": "Orta",
-      "content": "## Halkçılık Boyutu\n1. İmtiyazsız, sınıfsız toplum söylemini incele.\n2. Halkevleri ve halk eğitimi projelerini ele al.\n3. Kadın haklarındaki reformlarla bağ kur.\n4. Dönemin ekonomik politikalarıyla ilişkilendir.",
+      "content": "## Halkçılık İlkesinin Sosyal Politika Yansımaları\n\nAtatürk'ün Halkçılık anlayışının somut sosyal politikalara dönüşüm biçimini inceler.\n\n**Temel boyutlar:**\n- **Eğitim erişimi:** Mekteplerin yaygınlaştırılması, kız çocuklarının eğitimi\n- **Hukuki eşitlik:** Medeni Kanun'la aile hukukunda kadın-erkek eşitliği (1926)\n- **Siyasi katılım:** Kadınlara oy hakkı (1934, pek çok Batı ülkesinden önce)\n- **Sınıf politikası:** Bürokrasiyi değil, köylüyü \"hakiki efendi\" ilan etmek\n- **Soyadı Kanunu (1934):** Unvan/soy hiyerarşisini ortadan kaldırma\n\n**Çelişki noktaları:** Halkçılık ilkesi sınıf mücadelesini reddederken, Devletçilik ekonomik müdahaleyi meşrulaştırır — ikisi nasıl bütünleşir?\n\n**Prompt:** \"Halkçılık ilkesinin köylü politikasındaki pratik karşılıklarını ve bunların Cumhuriyet'in ilk döneminde ne kadar hayata geçebildiğini eleştirel olarak değerlendir.\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "cephe"
       ],
       "badge1": "Başlangıç",
-      "content": "## Milli Mücadele Kronolojisi\n1. 19 Mayıs 1919 Samsun çıkışını başlangıç al.\n2. Erzurum ve Sivas Kongrelerini sırala.\n3. Düzenli orduya geçiş ve cepheleri (Doğu, Güney, Batı) işle.\n4. Mudanya ve Lozan ile süreci tamamla.",
+      "content": "## Milli Mücadele Süreci: Kronolojik Analiz\n\n1919-1922 yılları arası Kurtuluş Savaşı'nın kritik dönüm noktalarının sistematik kronolojisi.\n\n**Kritik eşikler:**\n| Tarih | Olay | Stratejik önemi |\n|-------|------|-----------------|\n| 19 Mayıs 1919 | Samsun'a çıkış | Direniş örgütlenmesinin sembolik başlangıcı |\n| Haziran 1919 | Amasya Genelgesi | \"Milletin istiklali yine milletin azim ve kararıyla kurtarılacak\" |\n| Temmuz 1919 | Erzurum Kongresi | Doğu Anadolu'nun örgütsel zemini |\n| Eylül 1919 | Sivas Kongresi | Ulusal birliğin sağlanması |\n| Nisan 1920 | TBMM'nin açılışı | Meşruiyetin İstanbul'dan Ankara'ya kayması |\n| Ağustos 1922 | Büyük Taarruz | Askeri zafer |\n| Ekim 1922 | Mudanya Mütarekesi | Ateşkes |\n| Temmuz 1923 | Lozan Antlaşması | Uluslararası tanınma |\n\n**Prompt:** \"Milli Mücadele sürecinde TBMM'nin İstanbul Hükümeti ile çatışmasını meşruiyet teorisi açısından analiz et.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "1928"
       ],
       "badge1": "Orta",
-      "content": "## Harf İnkılabı\n1. Arap alfabesinden Latin'e geçiş gerekçelerini sırala.\n2. Millet Mektepleri girişimini incele.\n3. Okuryazarlık oranı değişimini verilerle takip et.\n4. Kültürel süreklilik tartışmalarını dengeli ele al.",
+      "content": "## Harf İnkılabı: 1928 Alfabesi ve Sonuçları\n\nArap alfabesinden Latin alfabesine geçişin motivasyonları, uygulaması ve uzun vadeli etkileri.\n\n**Motivasyonlar:**\n- Arap alfabesinin Türkçe sesleri karşılayamaması (ünlü yazılmaması)\n- Okuma yazma oranını artırma hedefi (okur-yazarlık 1923'te %10 altında)\n- Batı uygarlığıyla entegrasyon\n- Osmanlı arşivleriyle devamlılığı kesmek (tartışmalı)\n\n**Uygulama:** 1 Kasım 1928'de yasa çıktı, 1 Ocak 1929'dan itibaren zorunlu oldu. Millet mektepleri açıldı; Atatürk bizzat \"baş öğretmen\" olarak gezdi.\n\n**Etkiler:**\n- (+) Okuma yazma oranı hızla arttı (1950'de %33'e çıktı)\n- (+) Türkçenin fonetik yazılması kolaylaştı\n- (-) Osmanlıca arşivlere erişim koptu\n- (-) Nesiller arası bilgi aktarımı sekteye uğradı\n\n**Prompt:** \"Harf İnkılabı'nın nesiller arası kültürel süreklilik üzerindeki etkisini tartış: kazanımlar ve kayıplar dengesi.\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "mecelle"
       ],
       "badge1": "İleri",
-      "content": "## Hukuk Devrimi\n1. Mecelle'nin kapsamını ve sınırlarını belirle.\n2. 1926 İsviçre Medeni Kanunu uyarlamasını incele.\n3. Aile, miras ve kadın hakları değişimlerini karşılaştır.\n4. Uygulamadaki geçiş zorluklarını değerlendir.",
+      "content": "## Osmanlı Hukukundan Laik Hukuka: Karşılaştırmalı Analiz\n\nOsmanlı şeriat hukuku ile 1926'da benimsenen laik medeni kanun arasındaki temel farklar.\n\n**Karşılaştırma:**\n| Alan | Osmanlı/Şeriat | Cumhuriyet Medeni Kanunu |\n|------|---------------|-------------------------|\n| Evlilik | Çok eşlilik (erkek için) | Tek eşlilik zorunlu |\n| Boşanma | Erkek tek taraflı (talak) | Mahkeme kararı zorunlu |\n| Miras | Kız 1/2, erkek 1 pay | Eşit paylaşım |\n| Tanıklık | Kadın yarı değerinde | Eşit |\n| Yaş | Kız 9, erkek 12 nikah | Medeni yaş sınırı |\n\n**Model:** İsviçre Medeni Kanunu 1907, seçilme gerekçesi: en modern, en kapsamlı, uyarlamaya açık.\n\n**Prompt:** \"İsviçre Medeni Kanunu'nun Türkiye'de uygulanması sürecinde yapılan uyarlamaları ve bu uyarlamaların kültürel tercih mi, pratik zorunluluk mu olduğunu analiz et.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "retorik"
       ],
       "badge1": "İleri",
-      "content": "## Nutuk Analizi\n1. Metnin hitap ettiği kitleyi ve amacını belirle.\n2. Kronolojik anlatı ile argüman kurma tekniğini incele.\n3. Seçilen olaylar ve vurguları eleştirel oku.\n4. Tarihyazımı açısından kaynak değerini tartış.",
+      "content": "## Nutuk'un Retorik ve Söylemsel Analizi\n\nAtatürk'ün 1927'de 6 günde okuduğu Nutuk'un söylemsel stratejilerini inceler.\n\n**Retorik yapı:**\n- **Meşruiyet inşası:** Kişisel anıyı ulusal tarih olarak çerçeveleme\n- **Muhalefet temsili:** İttihat-Terakki ve Ali Fuat Paşa gibi rakiplerin konumlandırılması\n- **Belgesel otorite:** Belgeleri okuyarak söylemin kanıt zırhına bürünmesi\n- **Tehlike servisi:** Her kritik kararın zorunlulukla meşrulaştırılması\n\n**Söylemsel seçimler:**\n- Çok seslilik yok — tek bakış açısı hâkim\n- Kronolojik anlatı = ilerlemeci tarih anlayışı\n- \"Milletin\" sesi ile kişisel iradenin örtüşmesi\n\n**Prompt:** \"Nutuk'ta Kâzım Karabekir ve Ali Fuat Cebesoy'un nasıl konumlandırıldığını ve bu konumlandırmanın onların kendi anlatılarıyla karşılaştırdığında ne tür çelişkiler doğurduğunu analiz et.\"",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "kavram"
       ],
       "badge1": "Orta",
-      "content": "## Tematik Tarama\n1. Bağımsızlık, çağdaşlaşma, egemenlik temalarını ayır.\n2. Her tema için anahtar alıntılar topla.\n3. Temaların dönemlere göre ağırlık değişimini izle.\n4. Bağlamı koruyarak yorumla.",
+      "content": "## Atatürk'ün Söylev ve Demeçlerinde Ana Temalar\n\n\"Söylev ve Demeçler\" derlemesindeki konuşmaların tematik haritası.\n\n**Tema kümeleri:**\n1. **Ulusal birlik ve egemenlik:** \"Egemenlik kayıtsız şartsız milletindir\"\n2. **Çağdaşlaşma:** \"Muasır medeniyetler seviyesine çıkma\" hedefi\n3. **Bilim ve akıl:** \"Hayatta en hakiki mürşit ilimdir\"\n4. **Gençliğe hitap:** Cumhuriyeti koruma görevi ve bağımsızlık ruhu\n5. **Barış:** \"Yurtta sulh, cihanda sulh\"\n\n**Söylem analizi prompt şablonu:**\n```\n[Tarih ve bağlam] tarihindeki Atatürk konuşmasını analiz et:\n1. Ana mesaj: Ne söylüyor?\n2. Hedef kitle: Kime konuşuyor?\n3. Siyasi bağlam: O dönemde neden bu konu?\n4. Retorik araçlar: Metafor, kontrast, soru\n5. Tarihsel etki: Bu konuşma ne değiştirdi?\n```",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "egemenlik"
       ],
       "badge1": "Başlangıç",
-      "content": "## TBMM Kuruluşu\n1. 23 Nisan 1920 açılışının koşullarını belirle.\n2. 'Egemenlik kayıtsız şartsız milletindir' ilkesini incele.\n3. Meclis hükümeti sistemini açıkla.\n4. Saltanatla ilişkisini ve 1922 kaldırılışını ele al.",
+      "content": "## Türkiye Büyük Millet Meclisi'nin Kuruluş Mantığı\n\n23 Nisan 1920'de Ankara'da açılan meclisin meşruiyet temeli ve kuruluş koşullarının analizi.\n\n**Kuruluş koşulları:**\n- İstanbul'un İngilizler tarafından işgali (16 Mart 1920)\n- Damat Ferit Hükümeti'nin Milli Mücadele karşıtı tutumu\n- Meclis-i Mebusan'ın fiilen işlevsizleşmesi\n\n**Meşruiyet argümanları:**\n1. **Olağanüstü hal egemenliği:** \"Hükümet yapmak zorunluluk haline gelmiştir\"\n2. **Şeriatçı meşruiyet:** İstanbul İşgali = zorunluluk (mefsedet)\n3. **Seçim meşruiyeti:** Yeni seçimle oluşan temsil\n4. **Padişah kurtarma kılıfı:** \"Esir padişahın iradesini kurtarmak\"\n\n**Anayasal yenilik:** 1921 Teşkilât-ı Esasiye Kanunu — yasama + yürütme tek elde, kuvvetler birliği.\n\n**Prompt:** \"TBMM'nin İstanbul Hükümeti'ne karşı meşruiyet iddiasını ve bu ikili yapının nasıl çözüldüğünü siyaset bilimi perspektifinden analiz et.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "üniversite"
       ],
       "badge1": "Orta",
-      "content": "## Eğitim Dönüşümü\n1. 1924 Tevhid-i Tedrisat Kanunu'nu incele.\n2. Köy Enstitüleri öncesi öğretmen yetiştirmeyi ele al.\n3. 1933 Üniversite Reformu'nu ve göçmen akademisyenleri işle.\n4. Müfredat değişimlerini karşılaştır.",
+      "content": "## Osmanlı'dan Cumhuriyet'e Eğitim Dönüşümü\n\n1923-1938 arasındaki eğitim reformlarının sistematik analizi.\n\n**Kritik reformlar:**\n| Yıl | Reform | Önemi |\n|-----|--------|-------|\n| 1924 | Tevhid-i Tedrisat Kanunu | Tüm okullar tek çatı altında, medreseler kapatıldı |\n| 1924 | Öğretmen okulları yaygınlaştırma | Laik öğretmen kadrosu inşası |\n| 1928 | Harf inkılabı + Millet Mektepleri | Kitlesel okur-yazarlık kampanyası |\n| 1933 | Üniversite reformu | Darülfünun kapatıldı, İstanbul Üniversitesi açıldı |\n| 1936 | Köy öğretmeni yetiştirme | Kırsal kesimde eğitim erişimi |\n\n**Yöntem dönüşümü:** Dini ezber → bilimsel düşünce; Arapça/Farsça → Türkçe; anlaşılmaz → anlaşılır.\n\n**Prompt:** \"Tevhid-i Tedrisat Kanunu'nun amaçları ile uygulamadaki sınırlılıklarını ve Türk eğitim sistemi üzerindeki uzun vadeli mirasını tartış.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "sümerbank"
       ],
       "badge1": "İleri",
-      "content": "## Ekonomik Kurumlar\n1. 1923 İzmir İktisat Kongresi kararlarını incele.\n2. Devletçiliğe geçiş nedenlerini (1930 krizi) belirle.\n3. Sümerbank, Etibank, İş Bankası rollerini ayır.\n4. Beş Yıllık Sanayi Planlarını değerlendir.",
+      "content": "## Cumhuriyet'in Ekonomik Kurumsal Altyapısı\n\n1923-1938 arasında kurulan ekonomik kurumlar ve Devletçilik ilkesinin somut yansımaları.\n\n**Kurulan kurumlar:**\n- **1923** — İş Bankası (T.C. İş Bankası): Milli banka\n- **1925** — Ziraat Bankası yeniden yapılandırması\n- **1926** — Sanayi ve Maden Bankası\n- **1930** — Merkez Bankası: Para politikası bağımsızlığı\n- **1933-34** — Birinci Beş Yıllık Sanayi Planı: tekstil, demir-çelik, şeker, çimento\n- **1934** — Sümerbank, Etibank: sanayi holdingleri\n\n**Devletçilik pragmatiği:** 1929 krizi + yabancı sermaye yokluğu → devlet zorunlu girişimci oldu.\n\n**Prompt:** \"1930'ların Türk Devletçiliği'ni Sovyet planlaması ve Latin Amerika ithal-ikameci sanayileşmesiyle karşılaştır: hangi unsurlar özgün, hangileri benzer?\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "örgüt"
       ],
       "badge1": "Orta",
-      "content": "## Müdafaa-i Hukuk\n1. Bölgesel cemiyetlerin kuruluş amaçlarını belirle.\n2. Sivas Kongresi'nde birleşmelerini incele.\n3. Basın ve propaganda araçlarını ele al.\n4. Anadolu ve Rumeli geneline yayılımı haritalandır.",
+      "content": "## Müdafaa-i Hukuk Cemiyetleri: Sivil Direniş Ağı\n\nMilli Mücadele'nin örgütsel altyapısını oluşturan cemiyetlerin yapısı ve işlevi.\n\n**Temel cemiyetler:**\n- Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti (merkez)\n- Trabzon Muhafaza-i Hukuk Cemiyeti\n- Vilayat-ı Şarkiye Müdafaa-i Hukuk Cemiyeti\n- İzmir Redd-i İlhak Cemiyeti\n\n**İşlevler:**\n1. **Kamuoyu oluşturma:** Beyanname, gazete, mitingler\n2. **Silah toplama:** Düzensiz kuvvetlere teçhizat\n3. **Yerel yönetim boşluğunu doldurmak**\n4. **Dış kamuoyuna mesaj:** Paris Barış Konferansı'na dilekçe\n\n**TBMM ile ilişki:** Kongre kararları TBMM'nin siyasi tabanını oluşturdu.\n\n**Prompt:** \"Müdafaa-i Hukuk Cemiyetleri'nin cumhuriyet sonrasında nasıl CHP'ye dönüştüğünü ve bu dönüşümün 'sivil toplum → tek parti' geçişinde ne anlama geldiğini analiz et.\"",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "milliyetçilik"
       ],
       "badge1": "İleri",
-      "content": "## Türk Ocakları\n1. Kuruluş dönemi (1912) fikri iklimini belirle.\n2. Kültürel milliyetçilik söylemini incele.\n3. Cumhuriyet'le ilişkisini ve Halkevlerine dönüşümü ele al.\n4. Yayınları üzerinden etkisini değerlendir.",
+      "content": "## Türk Ocakları: Milli Kimlik İnşasının Kültür Kurumu\n\n1912'de kurulan, 1931'de kapatılan Türk Ocakları'nın kültürel milliyetçilik projesindeki rolü.\n\n**Amaç ve işlevler:**\n- Türk kimliği ve kültürünün yaygınlaştırılması\n- Halk eğitimi: konferans, kütüphane, tiyatro, spor\n- Aydın-halk köprüsü: üniversiteli gençlerle köylüyü buluşturma\n- Dil çalışmaları: Türkçe neşriyat, sözlük\n\n**1931 kapatma:** CHP tek parti döneminde kültürel örgütler partiyle bütünleştirildi; Ocaklar'ın ayrı varlığı gereksiz görüldü.\n\n**Halkevlerine dönüşüm:** Ocaklar'ın işlevleri 1932'de açılan Halkevleri'ne devredildi (devlet denetiminde, parti örgütü olarak).\n\n**Prompt:** \"Türk Ocakları'nın 'sivil' kültür kuruluşu ile CHP'nin 'devlet güdümlü' Halkevleri arasındaki farkı ve bu farkın Türk sivil toplum tarihindeki anlamını tartış.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "model"
       ],
       "badge1": "İleri",
-      "content": "## Modernleşme Kıyası\n1. Türkiye, Japonya ve İran örneklerini seç.\n2. Tepeden inme reform stratejilerini karşılaştır.\n3. Gelenek-modernite gerilimini her örnekte incele.\n4. Sonuçları kurumsal süreklilik açısından değerlendir.",
+      "content": "## Türk Modernleşmesi: Karşılaştırmalı Modernleşme Teorisi\n\nTürk modernleşmesini farklı teorik çerçevelerle analiz eder.\n\n**Teorik çerçeveler:**\n\n1. **Yukarıdan aşağıya modernleşme (top-down):** Seçkinci reformcular tabanı dönüştürür\n   - Türkiye: askeri-bürokratik seçkinler öncülüğünde\n   - Japonya (Meiji): benzer model\n   - Güçlü yön: hız; Zayıflık: taban direnci\n\n2. **Batılılaşma mı, özgün sentez mi?**\n   - Kurumlar kopyalandı (İsviçre medeni hukuku, Alman ceza hukuku)\n   - Ama milliyetçilik özgün Türk tarih tezi ile harmanlandı\n\n3. **Düzensizleştirici modernleşme:** Huntington — hızlı değişim kurumsal kapasitenin önüne geçer\n\n**Prompt:** \"Samuel Huntington'ın modernleşme teorisi çerçevesinde Türkiye'nin 1923-1950 deneyimini değerlendir: siyasi istikrarsızlık mı, yoksa kontrollü geçiş mi?\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "inşa"
       ],
       "badge1": "İleri",
-      "content": "## Ulus-Devlet İnşası\n1. Sivil ve etnik milliyetçilik ayrımını tanımla.\n2. Ortak dil, eğitim ve tarih anlatısının rolünü incele.\n3. Türk örneğini bu çerçeveye yerleştir.\n4. Kapsayıcılık tartışmalarını dengeli sun.",
+      "content": "## Türk Ulus-Devlet İnşası: Teorik Analiz\n\nTürkiye'nin ulus-devlet inşa sürecini karşılaştırmalı siyaset bilimi perspektifinden inceler.\n\n**İnşa stratejileri:**\n1. **Ortak düşman tanımı:** Kurtuluş Savaşı'nda Yunan, İngiliz işgali ulusal birliği pekiştirdi\n2. **Sembolik çerçeveleme:** Bayrak, marş, 23 Nisan, Atatürk imgesi\n3. **Tarih yazımı:** Türk Tarih Tezi — uygarlığın Orta Asya'dan yayıldığı iddiası\n4. **Dil politikası:** Güneş-Dil Teorisi, özleştirme, Türkçenin eğitim dili olması\n5. **Nüfus mühendisliği:** 1923 mübadelesi, iç göç politikaları\n\n**Akademik çerçeve:** Ernest Gellner'ın ulus-devlet teorisi (milliyetçilik sanayi toplumunun ürünü) ve Benedict Anderson'ın \"hayali cemaat\" kavramı.\n\n**Prompt:** \"Türk ulus inşası sürecinde dil politikasının kimlik oluşumundaki rolünü Ernest Gellner'ın teorisi çerçevesinde analiz et.\"",
       "source": {
         "generated": true
       }
