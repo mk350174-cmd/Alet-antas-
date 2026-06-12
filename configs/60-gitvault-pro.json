@@ -93,7 +93,7 @@
         "düzenleme"
       ],
       "badge1": "Orta",
-      "content": "## İnteraktif Rebase\n```bash\n# Son 5 commit'i düzenle\ngit rebase -i HEAD~5\n\n# Komutlar:\n# pick   → olduğu gibi bırak\n# reword → mesajı değiştir\n# squash → öncekiyle birleştir\n# fixup  → squash ama mesajı at\n# drop   → commit'i sil\n# edit   → durakla, değiştir\n\n# Örnek: 3 commit'i 1'e sıkıştır\n# pick abc123 ilk commit\n# squash def456 ikinci\n# squash ghi789 üçüncü\n\n# Devam\ngit rebase --continue\ngit rebase --abort  # İptal\n```",
+      "content": "## İnteraktif Rebase Şablonu\n\nCommit geçmişini temizlemek, birleştirmek veya yeniden düzenlemek için `git rebase -i` şablonları.\n\n**Temel Komut:**\n```bash\ngit rebase -i HEAD~5   # son 5 commit'i düzenle\ngit rebase -i main     # main'den itibaren tüm commit'ler\n```\n\n**Editörde Kullanılan Komutlar:**\n```\npick   abc1234 İlk commit     → olduğu gibi bırak\nreword abc1234 Mesajı düzelt  → commit mesajını değiştir\nedit   abc1234 Kodu düzelt    → commit'i aç, değiştir, --amend ile kapat\nsquash abc1234 Birleştir      → önceki commit ile birleştir\nfixup  abc1234 Squash (mesaj silinir)\ndrop   abc1234 Commit'i sil\n```\n\n**Sık Kullanım Senaryoları:**\n```bash\n# Son 3 commit'i tek commit'e birleştir\ngit rebase -i HEAD~3\n# → İlk satırı 'pick', diğerlerini 'squash' yap\n\n# WIP commit'lerini temizle (mesajları birleştir)\ngit rebase -i origin/main --autosquash\n\n# Commit sırasını değiştir: editörde satırları sürükle/taşı\n```\n\n**Dikkat:** Public branch'lerde (main, shared) rebase KULLANMA — başkalarının tarihini bozar. Yalnızca kendi feature branch'inde kullan.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "kayıt"
       ],
       "badge1": "Başlangıç",
-      "content": "## Git Stash\n```bash\n# Stash ile kaydet\ngit stash push -m 'WIP: kullanıcı formu'\ngit stash push --include-untracked\n\n# Listele\ngit stash list\n# stash@{0}: WIP: kullanıcı formu\n\n# Belirli stash'i uygula\ngit stash apply stash@{0}\ngit stash pop stash@{1}  # Uygula + sil\n\n# Belirli dosyaları stash\ngit stash push -p  # İnteraktif\ngit stash push -- src/feature.js\n\n# Stash'ten dal aç\ngit stash branch feature/wip stash@{0}\n```",
+      "content": "## Git Stash Gelişmiş Kullanım\n\nYarım kalan değişiklikleri geçici saklama, isimlendirme ve seçici uygulama.\n\n**Temel Stash İşlemleri:**\n```bash\ngit stash                    # hızlı kaydet (untracked hariç)\ngit stash -u                 # untracked dosyaları da dahil et\ngit stash push -m 'login sayfası WIP'  # isimli stash\ngit stash list               # tüm stash'leri listele\n# stash@{0}: On feature/auth: login sayfası WIP\n# stash@{1}: WIP on main: ...\n```\n\n**Uygulama ve Silme:**\n```bash\ngit stash pop                # stash@{0} uygula ve listeden sil\ngit stash apply stash@{2}    # stash@{2} uygula ama listede tut\ngit stash drop stash@{1}     # stash@{1} sil\ngit stash clear              # tüm stash'leri temizle\n```\n\n**Seçici Stash (Patch Mode):**\n```bash\ngit stash -p  # hangi hunk'ları stash'leyeceğini tek tek sor\n# y → stash'le, n → bırak, s → daha küçük böl\n```\n\n**Stash'ten Branch Aç:**\n```bash\ngit stash branch feature/stashed-work stash@{0}\n# Stash'i yeni branch olarak aç + otomatik uygula\n```\n\n**İpucu:** Uzun süreli bekleyen stash'leri geçici commit'e çevirmek daha güvenli — `git stash` kaybolabilir.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "çözüm"
       ],
       "badge1": "Başlangıç",
-      "content": "## Conflict Çözümü\n```\n<<<<<<< HEAD\n// Bizim değişikliğimiz\nconst timeout = 5000;\n=======\n// Gelen değişiklik\nconst timeout = 10000;\n>>>>>>> feature/retry\n```\n\nStratejiler:\n```bash\n# Tamamen bize ait\ngit checkout --ours dosya.js\n# Tamamen karşı tarafa ait\ngit checkout --theirs dosya.js\n\n# Belirli dosyada merge yolu\ngit checkout -m dosya.js\n\n# Araçla\ngit mergetool  # vimdiff, vscode vs.\n```",
+      "content": "## Merge Conflict Çözümü\n\nBirleştirme çakışmalarını anlama, çözme ve önleme stratejileri.\n\n**Conflict İşareti Anatomisi:**\n```\n<<<<<<< HEAD          ← mevcut branch (senin değişikliklerin)\nconsole.log('A');\n=======               ← ayraç\nconsole.log('B');     ← gelen değişiklik (merge edilen)\n>>>>>>> feature/xyz\n```\n\n**CLI ile Çözüm:**\n```bash\ngit status              # conflict'li dosyaları listele\n# Dosyayı düzenle: işaretleri sil, doğru kodu bırak\ngit add <dosya>         # çözüldü olarak işaretle\ngit merge --continue    # ya da: git commit\n```\n\n**3-Way Merge Tool:**\n```bash\ngit mergetool           # yapılandırılmış aracı aç\ngit config merge.tool vimdiff   # araç ayarla\n# VS Code kullananlar:\ngit config merge.tool vscode\ngit config mergetool.vscode.cmd 'code --wait $MERGED'\n```\n\n**Conflict'i Tamamen Birinden Al:**\n```bash\ngit checkout --ours   <dosya>   # sadece kendi değişikliğini al\ngit checkout --theirs <dosya>   # sadece gelen değişikliği al\n```\n\n**Önleme:** Feature branch'leri kısa tut (<3 gün), sık sık `git rebase origin/main` yap.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "commit"
       ],
       "badge1": "Orta",
-      "content": "## Cherry-pick\n```bash\n# Tek commit\ngit cherry-pick abc123\n\n# Aralık (a dahil değil, b dahil)\ngit cherry-pick a123^..b456\n\n# Commit etmeden staging\ngit cherry-pick -n abc123\ngit diff --cached  # Kontrol et\ngit commit -m 'Cherry-picked fix'\n\n# Conflict varsa\ngit cherry-pick --continue\ngit cherry-pick --abort\n\n# Başka repodaki commit\ngit remote add other https://github.com/org/other.git\ngit fetch other\ngit cherry-pick other/main\n```",
+      "content": "## Cherry-pick Kullanımı\n\nBelirli commit'leri başka bir branch'e taşıma ve yaygın senaryolar.\n\n**Temel Kullanım:**\n```bash\ngit cherry-pick <commit-hash>          # tek commit\ngit cherry-pick abc123 def456          # birden fazla commit\ngit cherry-pick abc123..def456         # aralık (abc123 hariç)\ngit cherry-pick abc123^..def456        # aralık (abc123 dahil)\n```\n\n**Sadece Değişikliği Uygula (Commit Etme):**\n```bash\ngit cherry-pick --no-commit <hash>     # stage'e al, commit etme\ngit cherry-pick -n <hash>              # kısa form\n```\n\n**Conflict Durumunda:**\n```bash\n# Conflict oluştuysa:\ngit status         # conflict'li dosyaları gör\n# Düzenle...\ngit add <dosya>\ngit cherry-pick --continue\n# Vazgeç:\ngit cherry-pick --abort\n```\n\n**Gerçek Senaryo:**\n```bash\n# Hotfix branch'ten production fix'i main'e taşı\ngit checkout main\ngit cherry-pick hotfix/payment-bug  # branch'in son commit'i\n```\n\n**İzleme:** Cherry-pick orijinal commit hash'ini değiştirir. `git log --oneline --graph` ile geçmişi doğrula. Squash sonrası conflict riski artabilir.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "checklist"
       ],
       "badge1": "Başlangıç",
-      "content": "## PR Review Checklist\n**Kod kalitesi:**\n- [ ] İş mantığı doğru mu?\n- [ ] Edge case'ler ele alınmış mı?\n- [ ] Test kapsamı yeterli mi?\n- [ ] Performans etkisi var mı?\n\n**Güvenlik:**\n- [ ] SQL injection, XSS riski var mı?\n- [ ] Gizli bilgi commit'te mi?\n- [ ] Yetkilendirme kontrolü var mı?\n\n**Okunabilirlik:**\n- [ ] İsimler anlamlı mı?\n- [ ] Karmaşık mantık açıklanmış mı?\n- [ ] PR açıklaması yeterli mi?",
+      "content": "## PR Review Checklist\n\nKod incelemesi sırasında sistematik olarak kontrol edilecek maddeler.\n\n**Güvenlik Kontrolleri:**\n```markdown\n- [ ] SQL injection riski (ham string query var mı?)\n- [ ] XSS: kullanıcı girdisi DOM'a raw ekleniyor mu?\n- [ ] Secrets/API key kod içinde mi?\n- [ ] Auth/yetki kontrolü eksik endpoint var mı?\n- [ ] Input validasyonu eksik mi?\n```\n\n**Kod Kalitesi:**\n```markdown\n- [ ] Fonksiyonlar tek sorumluluk ilkesine uyuyor mu?\n- [ ] Error handling yeterli mi (edge case'ler)?\n- [ ] Tekrar eden kod (DRY ihlali) var mı?\n- [ ] Test kapsamı var mı (yeni özellik/bug fix)?\n- [ ] Breaking change geriye dönük uyumlu mu?\n```\n\n**Git Hygiene:**\n```markdown\n- [ ] Commit mesajları anlamlı mı (conventional commits)?\n- [ ] Gereksiz dosya değişikliği yok (package-lock, .env)?\n- [ ] Branch adı feature/fix/chore prefix'i taşıyor mu?\n- [ ] WIP/TODO yorum kalmış mı?\n```\n\n**GitHub CLI ile Otomatik Checklist:**\n```bash\n# PR şablonu (.github/pull_request_template.md) ekle:\nmkdir -p .github && cat > .github/pull_request_template.md <<'EOF'\n## Değişiklik Türü\n- [ ] Bug fix  - [ ] Feature  - [ ] Refactor\n\n## Test Edildi mi?\n- [ ] Unit test  - [ ] Manuel test\nEOF\n```",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "mesaj"
       ],
       "badge1": "Başlangıç",
-      "content": "## Conventional Commits\n```\n<type>(<scope>): <subject>\n\n[body]\n\n[footer]\n```\nType'lar:\n- `feat`: Yeni özellik\n- `fix`: Bug düzeltme\n- `docs`: Dokümantasyon\n- `refactor`: Yeniden yapılandırma\n- `test`: Test ekleme\n- `chore`: Bakım\n- `perf`: Performans\n\nÖrnekler:\n```\nfeat(auth): JWT refresh token eklendi\nfix(api): null pointer hatası düzeltildi\nfeat!: API v2'ye geçiş (breaking change)\n```",
+      "content": "## Commit Mesajı Standartları (Conventional Commits)\n\nOkunabilir, otomatik changelog üretilebilir commit mesajı formatı.\n\n**Format:**\n```\n<type>(<scope>): <kısa açıklama>\n\n[opsiyonel gövde]\n\n[opsiyonel footer: BREAKING CHANGE / closes #123]\n```\n\n**Type Listesi:**\n```\nfeat     → yeni özellik (SemVer MINOR)\nfix      → bug düzeltmesi (SemVer PATCH)\ndocs     → yalnızca dokümantasyon\nstyle    → format (logic değişikliği yok)\nrefactor → ne feature ne fix; yeniden yapılandırma\ntest     → test ekleme/düzeltme\nchore    → build, bağımlılık, tooling\nci       → CI/CD pipeline\nperf     → performans iyileştirmesi\n```\n\n**Örnekler:**\n```bash\ngit commit -m \"feat(auth): Google OAuth2 girişi ekle\"\ngit commit -m \"fix(cart): boş sepet toplam hatası düzelt closes #42\"\ngit commit -m \"chore(deps): axios 1.6.0'a güncelle\"\n```\n\n**Breaking Change:**\n```bash\ngit commit -m \"feat(api)!: v2 endpoint formatı (BREAKING CHANGE: /v1 artık desteklenmiyor)\"\n```\n\n**Araç Entegrasyonu:**\n```bash\nnpm install -D commitlint @commitlint/config-conventional\n# Lint: commitlint --edit (husky pre-commit hook ile)\nnpx standard-version  # otomatik changelog + versiyon\n```",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "arama"
       ],
       "badge1": "İleri",
-      "content": "## git bisect\n```bash\ngit bisect start\ngit bisect bad          # Şu anki commit bozuk\ngit bisect good v1.0.0  # Bu tag iyiydi\n\n# Git otomatik olarak commit checkout yapar\n# Her adımda test et:\nif ./test.sh; then\n    git bisect good\nelse\n    git bisect bad\nfi\n\n# Otomasyon\ngit bisect run ./test.sh\n\n# Sonuç\n# 'abc123 is the first bad commit'\n\n# Bitir\ngit bisect reset\n```",
+      "content": "## git bisect ile Bug Bulma\n\nBinary search yöntemiyle hangi commit'in bug'ı eklediğini tespit etme.\n\n**Manuel Bisect:**\n```bash\ngit bisect start\ngit bisect bad                    # şu anki commit hatalı\ngit bisect good v2.1.0            # bu tag/commit temizdi\n# Git ortayı checkout eder; test et:\ngit bisect good   # bu commit temiz\ngit bisect bad    # bu commit hatalı\n# Tekrarla — ~10 commit'i 3-4 adımda bulur\ngit bisect reset  # bitince temizle\n```\n\n**Otomatik Bisect (Script ile):**\n```bash\n#!/bin/bash\n# test-script.sh: 0=temiz, 1=hatalı\nnpm test -- --testNamePattern='login'\nexit $?\n\n# Bisect'e ver:\ngit bisect start\ngit bisect bad HEAD\ngit bisect good v2.0.0\ngit bisect run ./test-script.sh\n# Tamamen otomatik — hatalı commit'i bulur ve rapor eder\n```\n\n**Çıktı Yorumlama:**\n```\nabc1234 is the first bad commit\nauthor: Developer <dev@example.com>\nDate:   Mon Jan 15 ...\n    feat: add new payment provider\n```\n\n**İpucu:** `git blame <dosya>` ile satır bazlı commit geçmişini de kontrol et. Bisect commit sayısının log2'si kadar adımda sonuçlanır.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "filtre"
       ],
       "badge1": "Başlangıç",
-      "content": "## git log Şablonları\n```bash\n# Özet görünüm\ngit log --oneline --graph --decorate --all\n\n# Yazar filtresi\ngit log --author='Ahmet' --since='2 weeks ago'\n\n# Mesaj araması\ngit log --grep='fix' --all\n\n# Dosya geçmişi\ngit log --follow -p -- src/auth.py\n\n# Belirli tarih aralığı\ngit log --after='2026-01-01' --before='2026-06-01'\n\n# Özel format\ngit log --format='%h %an %s' --no-merges -20\n\n# Diff ile\ngit log -p --stat HEAD~5..HEAD\n```",
+      "content": "## git log Filtreleme\n\nKarmaşık commit geçmişinde arama yapma ve anlamlı çıktı üretme.\n\n**Temel Filtreler:**\n```bash\ngit log --oneline                         # kısa özet\ngit log --oneline --graph --all           # tüm branch'leri grafiksel\ngit log --author=\"Ali\"                    # yazara göre\ngit log --since=\"2024-01-01\" --until=\"2024-06-01\"\ngit log --grep=\"login\"                    # mesajda arama\ngit log -p --follow -- src/auth.js        # dosya geçmişi (rename dahil)\n```\n\n**Belirli Değişiklikleri Bul:**\n```bash\n# Kod satırı ne zaman eklendi/silindi:\ngit log -S \"function getUserById\"        # string arama (pickaxe)\ngit log -G \"getUserBy.*\"                 # regex arama\n\n# Merge commit'leri hariç tut:\ngit log --no-merges --oneline\n\n# Belirli dosyalar arasındaki commit'ler:\ngit log --oneline HEAD..origin/main      # push edilmemiş\n```\n\n**Güzel Çıktı Format:**\n```bash\ngit log --format='%C(yellow)%h%Creset %C(bold)%s%Creset %C(green)(%cr)%Creset by %C(cyan)%an%Creset'\n# Alias olarak kaydet:\ngit config --global alias.lg \"log --format='%C(yellow)%h %s %C(green)(%cr)' --all --graph\"\ngit lg  # kısa kullan\n```",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "CI"
       ],
       "badge1": "Orta",
-      "content": "## Trunk-Based Development\n1. Herkes doğrudan `main`'e veya max. 1-2 günlük kısa branch'e iter.\n2. Feature flag ile tamamlanmamış kod main'de gizlenir.\n3. Her push CI tetikler → tüm testler geçmeli.\n4. Release: tag + feature flag açma.\n\nFaydası: Uzun yaşayan branch merge cehennemi yok.\nGereksiz: Code review gecikme riski artar → pair programming önerilir.",
+      "content": "## Trunk-Based Development (TBD)\n\nLong-lived branch yerine doğrudan main'e kısa-ömürlü branch ile geliştirme yaklaşımı.\n\n**Temel Prensipler:**\n```\n1. Branch ömrü maksimum 1-2 gün\n2. Günde en az 1 kez main'e merge\n3. Feature flag ile tamamlanmamış kod gizle\n4. CI her commit'te çalışır ve <10 dakikada tamamlanır\n5. Revert kolaydır — küçük commit'ler sayesinde\n```\n\n**Feature Flag ile Gizleme:**\n```python\n# config/features.py\nFEATURE_FLAGS = {\n    'new_checkout': False,  # henüz hazır değil\n    'dark_mode': True,\n}\n\n# kullanım:\nif feature_flags.is_enabled('new_checkout', user):\n    return new_checkout_flow()\nreturn legacy_checkout_flow()\n```\n\n**TBD Branch Akışı:**\n```bash\ngit checkout -b feat/login-ui    # kısa görev\n# ... değişiklik yap ...\ngit push origin feat/login-ui\n# PR aç → approve → squash merge → branch sil\ngit branch -d feat/login-ui\n```\n\n**GitFlow'a Kıyasla:** TBD CI/CD ile uyumlu; merge conflict daha az; feature branch'ler çok uzun yaşarsa conflict kaçınılmaz. Küçük takımlar (≤10) için önerilir.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "kayıp"
       ],
       "badge1": "Orta",
-      "content": "## git reflog ile Kurtarma\n```bash\n# Tüm HEAD hareketleri\ngit reflog\n# HEAD@{0}: reset: moving to HEAD~3\n# HEAD@{1}: commit: önemli değişiklik\n\n# Kayıp commit'i geri al\ngit checkout HEAD@{1}\n# veya\ngit cherry-pick HEAD@{1}\n\n# Silinen branch geri al\ngit reflog --all | grep 'feature/deleted'\n# feature/deleted: HEAD@{5} commit abc123\ngit checkout -b feature/deleted abc123\n\n# Zamana göre arama\ngit reflog 'HEAD@{2 days ago}'\n```",
+      "content": "## git reflog ile Kurtarma\n\nYanlışlıkla silinen commit'leri, branch'leri veya rebase öncesini kurtarma.\n\n**Reflog Nedir?**\nHer HEAD hareketi reflog'a yazılır. `git log` geçmişi gösterir, reflog ise HEAD'in nereye işaret ettiğini takip eder — branch silinse bile.\n\n**Kullanım:**\n```bash\ngit reflog                  # HEAD hareketlerini listele\n# HEAD@{0}: commit: son commit\n# HEAD@{1}: checkout: branch değiştirme\n# HEAD@{3}: reset: git reset --hard öncesi\n\ngit reflog show feature/xyz  # belirli branch reflog'u\n```\n\n**Yanlışlıkla Silinen Branch Kurtarma:**\n```bash\ngit branch -D feature/xyz    # sil\ngit reflog | grep 'feature/xyz'  # son hash'i bul\n# HEAD@{4}: commit: feat: xyz özelliği eklendi — abc1234\ngit checkout -b feature/xyz abc1234  # kurtardık\n```\n\n**reset --hard Sonrası Kurtarma:**\n```bash\ngit reset --hard HEAD~3       # 3 commit geri aldık, pişman olduk\ngit reflog                    # reset öncesi hash'i bul\ngit reset --hard HEAD@{2}     # kurtardık!\n```\n\n**Dikkat:** Reflog varsayılan 90 gün tutulur. `git gc` sonrası eski kayıtlar silinebilir.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "CLI"
       ],
       "badge1": "Başlangıç",
-      "content": "## GitHub CLI\n```bash\n# PR oluştur\ngh pr create --title 'feat: yeni özellik' --body 'Açıklama' --base main\n\n# PR listele ve incele\ngh pr list\ngh pr view 123\ngh pr checkout 123\n\n# PR birleştir\ngh pr merge 123 --squash\n\n# Issue\ngh issue create --title 'Bug: ...' --label 'bug,critical'\ngh issue list --assignee @me\ngh issue close 456\n\n# Workflow tetikle\ngh workflow run deploy.yml -f env=production\n\n# Repo klonla\ngh repo clone org/repo\n```",
+      "content": "## GitHub CLI (gh) Şablonları\n\n`gh` CLI ile PR oluşturma, review, issue yönetimi için hazır komut şablonları.\n\n**Kurulum ve Auth:**\n```bash\nbrew install gh   # macOS\ngh auth login     # tarayıcı ile giriş\n```\n\n**PR İşlemleri:**\n```bash\ngh pr create --title \"feat: login sayfası\" --body \"Fixes #42\" --draft\ngh pr list                        # tüm açık PR'lar\ngh pr view 123                    # PR detayı\ngh pr checkout 123                # PR branch'ini aç\ngh pr review 123 --approve\ngh pr review 123 --request-changes --body \"Cache eklenmeli\"\ngh pr merge 123 --squash --delete-branch\n```\n\n**Issue İşlemleri:**\n```bash\ngh issue create --title \"Bug: boş sepet hatası\" --label bug,priority:high\ngh issue list --label bug --state open\ngh issue close 42 --comment \"Düzeltildi, commit: abc1234\"\n```\n\n**Release:**\n```bash\ngh release create v2.1.0 --notes-file CHANGELOG.md --title \"v2.1.0\"\ngh release upload v2.1.0 ./dist/app.zip\n```\n\n**Workflow Tetikleme:**\n```bash\ngh workflow run deploy.yml --ref main --field env=production\ngh run list --workflow=deploy.yml\n```",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "geçmiş"
       ],
       "badge1": "Başlangıç",
-      "content": "## Rebase vs Merge\n| | Rebase | Merge |\n|--|--------|-------|\n| Geçmiş | Doğrusal, temiz | Gerçek, dal yapısı |\n| Conflict | Her commit için | Bir kez |\n| Public branch | Tehlikeli | Güvenli |\n| Feature → main | Rebase sonra fast-forward | Merge commit |\n\nAltın kural: Public/shared branch'leri rebase etme → başkalarının geçmişini bozar.\nİş akışı: `git pull --rebase` ile yerel commit'leri saat üstüne taşı.",
+      "content": "## Rebase vs Merge Kılavuzu\n\nHangi durumda `git rebase`, hangisinde `git merge` kullanılacağını öğren.\n\n**Merge:**\n```bash\ngit checkout main\ngit merge feature/xyz\n# Sonuç: merge commit oluşur, iki geçmiş birleşir\n```\n\n**Rebase:**\n```bash\ngit checkout feature/xyz\ngit rebase main\n# Sonuç: feature commit'leri main'in ucuna taşınır\n# Temiz, doğrusal geçmiş — merge commit yok\n```\n\n**Karşılaştırma:**\n```\nRebase kullan:\n✓ Feature branch'ini main ile güncel tutmak için\n✓ PR göndermeden önce geçmişi temizlemek\n✓ Doğrusal geçmiş önemli olduğunda\n✗ Public/shared branch'lerde YASAK\n\nMerge kullan:\n✓ Main'e feature entegre ederken (merge commit = geçmiş)\n✓ Shared branch'lerde (rebase geçmişi değiştirmez)\n✓ \"Ne zaman merge edildi\" önemli olduğunda\n```\n\n**Önerilen Workflow:**\n```bash\n# Feature branch'te güncel kal:\ngit rebase origin/main  # yerel rebase\n\n# PR merge stratejisi:\n# Küçük PR → squash merge (1 temiz commit)\n# Büyük PR → merge commit (geçmiş korunsun)\n# Hotfix  → cherry-pick main'e\n```",
       "source": {
         "generated": true
       }
