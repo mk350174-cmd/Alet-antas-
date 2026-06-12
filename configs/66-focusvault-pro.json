@@ -93,7 +93,7 @@
         "temizlik"
       ],
       "badge1": "Temel",
-      "content": "**Dikkat Artığı:** Bir görevden diğerine geçerken önceki görev zihinde iz bırakır. Temizleme: görev bitince açık döngüleri kapat (not al, e-posta gönder), 2 dk derin nefes al, yeni göreve şunu söyle: 'Şimdi sadece buna odaklanıyorum.'",
+      "content": "## Dikkat Artıkları (Attention Residue) Temizleme\n\nBir görevden diğerine geçişte zihinsel artık düşüncelerin temizlenmesi — Sophie Leroy'un araştırmasına dayalı.\n\n**Dikkat artığı nedir?**\nBir görevden ayrıldığında zihnin %30-40'ı önceki görevde kalmaya devam eder. Bu, yeni göreve tam geçiş yapmanı engeller ve hem hız hem kaliteyi düşürür.\n\n**5 dakikalık geçiş ritueli:**\n```\n1. Kapatma protokolü (2 dk)\n   - Mevcut görevin son durumunu not al\n   - Yarım kalan en kritik noktayı yaz\n   - Bir sonraki adımı belirle (yarın/sonra)\n   Örnek: 'Rapor %70 bitti. Sonraki: Metodoloji bölümünü bitir.'\n\n2. Fiziksel sıfırlama (1 dk)\n   - Masayı topla, ekranı değiştir\n   - 5 derin nefes\n   - Ufak bir hareket (su al, kalk)\n\n3. Yeni görev hazırlığı (2 dk)\n   - Bir sonraki görevin ilk adımını yaz\n   - Gerekli materyalleri hazırla\n   - 'Şimdi buradayım ve X yapıyorum' niyeti koy\n```\n\n**Blok çalışma yöntemi:**\nSabah: 9-11 Derin iş (tek görev, sıfır geçiş)\nÖğlen: 11-12 Toplantı / e-posta (yüzeysel iş)\nÖğleden sonra: 13-15 İkinci derin iş bloğu\n\n**Prompt:** \"Bu çalışma günümün görev listesini dikkat artıklarını minimize edecek şekilde yeniden sırala; benzer bağlam gerektiren görevleri gruplandır ve geçiş ritüellerini planla.\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "odak"
       ],
       "badge1": "Basit",
-      "content": "**Tek Ekran:** Aktif proje dışındaki tüm sekmeleri kapat. Tarayıcıda OneTab veya Tab Wrangler kullan. Masa üstünde sanal masaüstleri oluştur: 1'i çalışma, 2'si iletişim, 3'ü araştırma. Geçiş yapma — odağını koru.",
+      "content": "## Tek Ekran Kuralı: Bölünmüş Dikkat Tuzağından Çıkış\n\nÇok ekran/çok sekme alışkanlığının dikkat kalitesine etkisi ve tek odak noktası pratiği.\n\n**Çoklu ekran araştırması:**\nStanford araştırması: Aynı anda birden fazla medya kullananlar dikkat değiştirmede, irrelevan bilgiyi filtrelemede ve çalışma belleğinde daha düşük performans gösteriyor — alışkanlık haline geldikten sonra bile.\n\n**Tek sekme uygulaması:**\n```\nKural: Çalışma bloğu boyunca tek tarayıcı sekmesi açık.\n\nUygulama:\n1. Before: Gerekli kaynakları not et, sekmeleri kapat\n2. During: Yalnızca mevcut görev için açılan sekme\n3. After: Blok biterken tüm sekmeleri kapat ve not al\n\nAraçlar:\n- OneTab (Chrome): Tüm sekmeleri listeye çevir\n- Strict Workflow: Belirli süreler için siteleri engelle\n- Forest app: Çalışma süresi telefon kilidi\n```\n\n**Fiziksel masa düzeni:**\n```\nUlaşılabilir: Yalnızca mevcut görev materyali\nKaldırılmış: Telefon (görünmez alanda)\nKapalı: İlgisiz uygulamalar\nBildirimler: Tümü kapalı (Do Not Disturb)\n```\n\n**Geçiş maliyeti bilinci:**\nHer dikkat geçişi ~23 dakika tam odaklanma kaybına neden olur (Gloria Mark, UC Irvine). Günde 20 geçiş = yaklaşık 8 saat verimlilik kaybı.\n\n**Prompt:** \"Geliştirici için tek odak çalışma ortamı kur: hangi uygulamalar kapalı olmalı, IDE konfigürasyonu nasıl olmalı, terminal/browser bölünmesi nasıl minimize edilir?\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "newport"
       ],
       "badge1": "Güçlü",
-      "content": "**Deep Work Bloğu:** 90-120 dakika, tek görev, sıfır bildirim. Başlamadan önce: hedefi yaz (ne üreteceksin?), tüm bildirimleri kapat, telefonu başka odaya koy. Bitiş kriteri: somut çıktı (taslak, kod, analiz). Haftada 4+ saat deep work = kariyer değiştirir.",
+      "content": "## Deep Work Oturumu Kurma\n\nCal Newport'un Deep Work metodolojisine dayalı, dikkat dağınıklığından arınmış yoğun çalışma bloğu kurma rehberi.\n\n**Oturum Kurulum Protokolü (5 dakika):**\n```\n1. Hedef Tanımla: \"Bu oturumda X'i tamamlayacağım\" yaz\n2. Araçları Hazırla: Gerekli sekme, dosya, materyal açık\n3. Engelleri Kapat: Slack kapalı, telefon sessize, DND aç\n4. Çalışma Süresi Belirle: 90 veya 120 dakika\n5. Mola Zamanı Planla: Oturum bitince 15-20 dakika gerçek mola\n```\n\n**90 Dakika Oturum Yapısı:**\n```\n00:00 — Ön yükleme (3 dk): Hedefi gözden geçir, nerede kalmıştın?\n00:03 — Girdi (20 dk): Okunacak/izlenecek materyal\n00:23 — İşleme (50 dk): Üretim, yazma, kodlama\n01:13 — Entegrasyon (12 dk): Sonuçları özetle, yarını hazırla\n01:25 — Kapanış (5 dk): \"Oturumu kapat\" ritüeli (günlük, commit)\n```\n\n**Üretkenlik Metrikleri Takibi:**\n```\nHer oturum sonrası not alın:\n- Oturum süresi: ___ dakika\n- Gerçek odak zamanı: ___ dakika\n- Konu/görev: ___\n- Tamamlanan çıktı: ___\n- Dikkat dağınıklığı sayısı: ___\n\nHaftalık: toplam deep work saati hedef ≥ 15 saat\n```\n\n**Engel Kaldırma:** Zor bir konuya başlayamıyorsanız → 2 dakika kuralı: sadece dosyayı açın, ilk cümleyi yazın.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "strateji"
       ],
       "badge1": "İleri",
-      "content": "**İki Strateji:** Monastic: belirli saatler tamamen erişilemez, geri kalanı normal. Bimodal: bazı günler deep work (örn. Salı-Perşembe), diğerleri açık. Çalışma tipine göre seç: yaratıcı/araştırma → bimodal. Yönetici/koordinasyon → monastic sabah blokları.",
+      "content": "## Monastic vs Bimodal Deep Work Modeli\n\nCal Newport'un 'Derin İş' kitabındaki dört çalışma felsefesini karşılaştırma ve doğru modeli seçme.\n\n**Dört deep work felsefesi:**\n```\n1. MONASTİK: Maksimum yalnızlık\n   Kim için: Knuth, Cormac McCarthy tarzı\n   Nasıl: Günlük iletişimi minimumda tut, yüzeysel işleri neredeyse sıfırla\n   Avantaj: En derin odak\n   Dezavantaj: Çoğu kariyerde imkânsız\n\n2. BİMODAL: Uzun dönem bölünmesi\n   Kim için: Akademisyen, araştırmacı, yazar\n   Nasıl: Ayda 1 hafta 'keşiş kipi' + kalan zaman normal\n   veya: Haftanın 3 günü derin iş, 2 günü iletişim\n   Avantaj: Gerçekçi, aralıklı derin odak\n\n3. RİTMİK: Her gün belirli saat\n   Kim için: Ofis çalışanı, ebeveyn, çok sorumlulu kişiler\n   Nasıl: Her sabah 6-9 veya akşam 20-23 derin iş\n   Avantaj: Alışkanlık oluşturması kolay\n\n4. GAZETECİ: Anlık fırsat kullanımı\n   Kim için: Deneyimli uygulayıcılar\n   Nasıl: Her boş 30 dakikada derin işe geç\n   Uyarı: Yeni başlayanlar için çok zor\n```\n\n**Seçim rehberi:**\n```\nGünlük toplantı sayısı 0-1 → Bimodal dene\nGünlük toplantı sayısı 2-4 → Ritmik başla\nAnlık sorumluluğun yüksek → Gazeteci (deneyim sonra)\n```\n\n**Prompt:** \"Yazılım geliştirici + takım lideri rolümde derin iş yapmak istiyorum ama günde 4-5 toplantım var; hangi model benim için uygun, haftalık takvimi nasıl düzenlemeliyim?\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "telefon"
       ],
       "badge1": "Acil",
-      "content": "**Bildirim Detox:** Telefon: Ayarlar → Bildirimler → her uygulamayı incele. Haber/sosyal: tamamen kapat. E-posta/mesaj: sadece badge (ses/banner yok). Saat bildirimleri: yalnızca takvim. Bilgisayarda: Do Not Disturb + Focus Mode. İlk hafta garip, ikinci hafta özgürsün.",
+      "content": "## Bildirim Detox: Dijital Çevre Yeniden Tasarımı\n\nAkıllı telefon ve bilgisayar bildirimlerini sistematik olarak azaltarak dikkat koruması.\n\n**Bildirim kategorileri:**\n```\nKRİTİK (her zaman açık):\n✓ Telefon (çağrı)\n✓ Alarm\n✓ Üretim acil sistemi / PagerDuty\n\nÖNEMLİ (saatlik kontrol, push bildirimi yok):\n→ E-posta (manuel kontrol: 09:00, 13:00, 17:00)\n→ Slack/Teams (sessiz mod, belirlenen saatler dışında)\n→ SMS\n\nGEREKSİZ (tamamen kapat):\n✗ Sosyal medya bildirimleri\n✗ Haber uygulamaları\n✗ Oyun bildirimleri\n✗ Pazarlama e-postaları (unsubscribe)\n```\n\n**Uygulama adımları (1 haftalık plan):**\n```\nGün 1-2: Audit — hangi bildirimler geliyor, kaçı gereksiz?\nGün 3: Sosyal medya bildirimleri tamamen kapat\nGün 4: E-postayı push'tan çıkar, 3 kez günde kontrol\nGün 5: Slack/Teams: Do Not Disturb saatler kur\nGün 6-7: Değerlendir — ne kaçırdın? Hiçbir şey mi?\n```\n\n**iOS/Android ayarlar:**\n```\nYol:\nAyarlar → Bildirimler → Her uygulama:\n- Kilit ekranı: KAPALI (acil dışında)\n- Banner: KAPALI (dikkat kırıcı en büyük tetikleyici)\n- Ses: KAPALI\n- Rozet sayısı: Açık (manuel kontrol için)\n```\n\n**Prompt:** \"Bu hafta bildirim detox uygulayacağım; kaçırmamam gereken kritik bildirimleri koru, gereksizleri kaldır. Meslek grubu: [yazılımcı/pazarlamacı/öğretmen] için özelleştir.\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "kısıtlama"
       ],
       "badge1": "Pratik",
-      "content": "**Zaman Kasası:** Günde 2 kez, 15 dakika: öğle + akşam. Dışında erişimi engelle: iOS'ta Screen Time, Android'de Digital Wellbeing, tarayıcıda Freedom/Cold Turkey. Sosyal medyayı 'ödül' olarak kullan, 'varsayılan' olarak değil. Haftalık toplam süreyi takip et.",
+      "content": "## Sosyal Medya Zaman Kasası: Bilinçli Kullanım Sistemi\n\nSosyal medyanın dikkat üzerindeki etkisini kontrol altına alma ve kasıtlı kullanım rutini kurma.\n\n**Zaman kısıtlama araçları:**\n```\niOS:\nAyarlar → Ekran Süresi → Uygulama Sınırları:\n- Instagram: 20 dk/gün\n- Twitter/X: 15 dk/gün\n- YouTube: 30 dk/gün\n(Şifre koy, yoksa iptal edersin)\n\nAndroid:\nAyarlar → Dijital Denge → Uygulama zamanlayıcıları\n\nMasaüstü:\n- Freedom (ücretli, çok platform)\n- BlockSite (Chrome eklentisi)\n- Cold Turkey (en katı, ücretsiz temel)\n```\n\n**Kasıtlı kullanım protokolü:**\n```\n1. Belirlenen zaman diliminde kullan (örn. 12:30-12:50)\n2. Hedefli gir: 'Arkadaş güncellemeyi görüyorum, 15 dk'\n3. Timer kur\n4. Çıkarken 3 soru: Bir şey öğrendim mi? Biri ile bağlandım mı? Değer kattı mı?\n5. 'Hayır' ise: uygulamayı sil 1 hafta\n```\n\n**Boşluk zamanı alternatifleri:**\n```\nSosyal medya yerine ne?\n- Yürüyüş (10 dk → 7.000 adım/gün)\n- Kitap (20 dk/gün = 15 kitap/yıl)\n- Müzik aleti\n- Not defteri + kalem\n- Podcast (faydalı içerik)\n```\n\n**Prompt:** \"Günde 3 saat sosyal medya kullanımımı 40 dakikaya indirmek istiyorum; hangi uygulamalar silinmeli, hangisi kısıtlanmalı, boşalan zamanı ne ile dolduracağıma dair haftalık plan yaz.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "fiziksel"
       ],
       "badge1": "Temel",
-      "content": "**Ortam Tasarımı:** Masada yalnızca aktif proje malzemeleri. Telefon: gözden uzak (çekmece/çanta). Gürültü: noise-cancelling kulaklık veya beyaz gürültü. Işık: pencereden doğal ışık veya 5000K LED. Masa saati: telefon yerine. Temiz masa = temiz zihin.",
+      "content": "## Odak Ortamı Tasarımı\n\nFiziksel ve dijital çalışma ortamını sistematik olarak düzenleyerek dikkat dağınıklığını kaynağında kesin.\n\n**Fiziksel Ortam Kontrol Listesi:**\n```\nMasa:\n  ✓ Yalnızca aktif proje malzemeleri görünümde\n  ✓ Telefon: çekmecede veya çantada (görünmez)\n  ✓ Su şişesi ve gereken atıştırmalık hazır\n  ✓ Dağınık not kağıtları: tek dosyaya / çöpe\n\nAydınlatma:\n  ✓ Doğal ışık tercih et (10.000 lux ideal)\n  ✓ Mavi ışık doğrudan gözde değil\n  ✓ Sıcak renk tonu (3000K) gece çalışması için\n\nSıcaklık:\n  ✓ 20-22°C ideal odak sıcaklığı\n  ✓ Çok soğuk/sıcak: 15-20% verimlilik kaybı\n```\n\n**Dijital Ortam Kurulumu:**\n```\nTarayıcı:\n  - Sadece aktif sekmeleri açık tut (max 5)\n  - uBlock Origin: sosyal medya feed'lerini kapat\n  - Sınır: Cold Turkey / Freedom ile site engelle\n\nBildirimler:\n  - Tüm bildirimler kapalı (Win: Odak Yardımı, Mac: DND)\n  - E-posta: günde 2-3 kez kontrol (anlık değil)\n  - Slack: 'Do Not Disturb' → oturum süresince\n```\n\n**Mobil Uzaklaştırma:** Telefon başka odada = +40% odak oranı artışı (UTSD araştırması). Erişilemez olması yetmez, görünmez olması gerekir.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "konsantrasyon"
       ],
       "badge1": "Pratik",
-      "content": "**Ses Profilleri:** Derin çalışma: enstrümantal (lo-fi, klasik), 60-70 BPM. Yaratıcı iş: ambient, doğa sesleri. Rutin görev: tempo'lu müzik. Brain.fm veya Endel: AI müzik. Söz içeren müzik dil işleme gerektiren işleri bozar. Sesi 60-70 dB tut.",
+      "content": "## Müzik ve Ses Profilleri ile Odak Artırma\n\nFarklı görev türleri için kanıtlanmış ses ortamı profilleri. Müzik seçimi bilişsel yük ve görev tipine göre değişir.\n\n**Görev Tipine Göre Ses Profili:**\n```\nDerin analitik çalışma (kod, matematik, yazı):\n  → Enstrümantal: lo-fi hip-hop, minimal tekno, 60-70 BPM\n  → Beyaz/kahve gürültüsü: mynoise.net\n  → SESsizlik: ciddi analiz için en iyi\n  → KAÇIN: Sözlü müzik (dil merkezi aktivasyonu)\n\nYaratıcı iş (tasarım, beyin fırtınası):\n  → Ambient: Brian Eno tarzı, 70-80 BPM\n  → Orta kafeterya gürültüsü: ~70 dB\n  → Positifbilimsel araştırma: hafif pozitif müzik yaratıcılık artırır\n\nMekanik tekrarlayan görevler (veri girişi, e-posta):\n  → Pop/elektronik, ritimli\n  → Hız arttırır ama kalite kritik değil\n```\n\n**Araçlar:**\n```\nnoisli.com          → Yağmur, kafe, orman sesi karıştır\ndefocus.fm          → Odak için AI-küratörlü müzik\nbrain.fm            → Nöral odak müziği (bilimsel)\nYouTube lofi radio  → ücretsiz, 24/7\n```\n\n**Kurallar:** Yeni veya favori müzik dikkat dağıtır. 'Boring enough to ignore, engaging enough to block other sounds' = ideal.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "boşaltma"
       ],
       "badge1": "Rutin",
-      "content": "**Zihin Boşaltma (Brain Dump):** Her sabah 5 dk: aklındaki her şeyi — endişe, görev, fikir, hatırlama — kağıda yaz. Sıralamaya gerek yok. Amaç RAM'i temizlemek. Yazılanları sonra kategorize et veya at. Boş zihinle odaklanmak %40 daha kolay.",
+      "content": "## Sabah Zihin Boşaltma (Morning Brain Dump)\n\nGünün başında zihinsel yükü kağıda dökerek odaklanmış bir güne hazırlık tekniği.\n\n**Julia Cameron'ın Morning Pages yöntemi:**\nSabah kalkar kalkmaz, beynini temizlemek için 3 sayfa el yazısıyla — sansürsüz, düzensiz, amaçsız — yaz. Kural: durmadan yaz.\n\n**Zihin boşaltma şablonu (20 dakika):**\n```\n1. SAÇ AKIŞI (5 dk)\n   Aklındasaki her şeyi yaz:\n   - Endişeler, yapılacaklar, geçen gün tamamlanmayanlar\n   - Rastgele düşünceler, duygular, fikirler\n   Kural: Değerlendirme yok, yazmak\n\n2. BUGÜNÜN NİYETİ (5 dk)\n   - Bugün tamamlarsam başarılı sayacağım 1 şey nedir?\n   - Enerji en yüksek saatlerim ne zaman? O zaman ne yapacağım?\n   - Bugün neyi YAPMAYACAĞIM?\n\n3. MINDFULness CHECK (5 dk)\n   - Vücudum nasıl? (enerji, gerilim)\n   - Duygum nasıl? (sabah hissi)\n   - Odaklanmamı engelleyecek nedir?\n\n4. GÜNÜ ÇERÇEVELE (5 dk)\n   - Sabah bloğu: ...\n   - Öğleden sonra bloğu: ...\n   - Akşam için bıraktığım: ...\n```\n\n**Araç önerileri:**\n- Kağıt + kalem (telefon yok)\n- Obsidian Daily Note\n- Notion sabah günlük şablonu\n\n**Prompt:** \"Bu sabah zihin boşaltma şablonunu kişiselleştir: girişimci için yazılım geliştirici için ayrı versiyonlar çıkar; her ikisinde de anxiety yönetimi ve günlük önceliklendirme olsun.\"",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "meditasyon"
       ],
       "badge1": "Hızlı",
-      "content": "**Nefes Teknikleri:** Box Breathing: 4 nefes al – 4 tut – 4 ver – 4 tut. 4 döngü = zihin sıfırlanır. 4-7-8: 4 al, 7 tut, 8 ver. Deep work öncesi 2 dk uygula. Oksijen ve karbondioksit dengesi prefrontal korteksi aktive eder. Stres anında da çalışır.",
+      "content": "## Nefes Egzersizleri ile Odak Aktivasyonu\n\nNörofizyolojik mekanizmalara dayalı nefes teknikleri ile dikkat ve odak kalitesini artırma.\n\n**Box Breathing (Kare Nefes) — Navy SEALs yöntemi:**\n```\n4 saniye nefes al → 4 saniye tut → 4 saniye ver → 4 saniye tut\n\nUygulama:\n1. Dik otur, gözleri kapat\n2. 4 saniye sayarken burundan nefes al\n3. 4 saniye nefesi tut\n4. 4 saniye ağızdan ver\n5. 4 saniye bekle (akciğer boş)\n6. 4-6 döngü (~2 dk)\n\nEtki: Sempatik (stres) sistemini sakinleştirir, prefrontal korteksi aktive eder\n```\n\n**4-7-8 Nefesi — Uyku ve sakinleştirme:**\n```\n4 saniye al → 7 saniye tut → 8 saniye ver\n→ Parasempatik sistem aktivasyonu\n→ Toplantı öncesi stres için ideal\n```\n\n**Wim Hof / Hiperventilasyon (dikkat: güvenli ortamda yap):**\n```\n30 derin nefes (hızlı, dolduran) → 1 kez ver ve tut\n→ Uyarılma artar, odak keskinleşir\n→ Sabah derin iş öncesi için\n⚠️ Araba kullanırken, suda, yalnız yapma\n```\n\n**Günlük entegrasyon:**\n```\nSabah deep work öncesi: Box breathing (2 dk)\nToplantı öncesi: 4-7-8 (1 dk)\nÖfke/stres anında: 4-7-8 (3 tekrar)\nGece uyku öncesi: Box breathing (5 dk)\n```\n\n**Prompt:** \"Stresli bir toplantı öncesinde 3 dakikalık odaklanma protokolü oluştur; nefes tekniği + zihin hazırlığı + bedensel rahatlama adımlarını içersin.\"",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "ritüel"
       ],
       "badge1": "İleri",
-      "content": "**Akış Ritüeli:** Aynı sıra her gün: kulaklığı tak → belirli müziği aç → su bardağını hazırla → görevi yaz → zamanlayıcıyı başlat. Beyin bu sırayı 'odak modu' ile ilişkilendirir. 2 haftada koşullama oluşur. Ritüel = odak açma anahtarı.",
+      "content": "## Akış (Flow) Haline Girme Ritüeli Tasarımı\n\nMihaly Csikszentmihalyi'nin akış kuramına dayalı, çalışma öncesi sistematik hazırlık protokolü.\n\n**Akış koşulları (Csikszentmihalyi):**\n```\n1. Net hedef: Tam olarak ne yapacağını bilmek\n2. Anlık geri bildirim: Doğru/yanlış yaptığını görebilmek\n3. Zorluk-beceri dengesi: %4 zorluğun üstünde (çok kolay → sıkılma, çok zor → kaygı)\n4. Dikkat bölünmesiz ortam: Kesinti yok\n5. Zaman algısı kaybı: 'Saat 4 mü oldu?' hissi\n```\n\n**Akış öncesi 10 dakikalık ritüel:**\n```\nDakika 1-2: Çevre hazırlığı\n   - Telefon sessize, görünmez yere koy\n   - Kapıyı kapat, 'Meşgul' tabelası\n   - Gerekli tüm tarayıcı sekmeleri hazır\n   - Su/kahve yanında\n\nDakika 3-5: Zihin hazırlığı\n   - Box breathing × 3 döngü\n   - Bugünün bu görev için ne olacağını gözle\n   - Tek cümle niyet yaz: 'Şimdi X yapıyorum çünkü Y'\n\nDakika 6-8: Isınma görevi\n   - Asıl görevle bağlantılı küçük bir adım başla\n   - İlk cümleyi yaz, ilk satırı kodla, ilk boyamayı yap\n   - Beyin zor göreve geçişi sevmez — koy git\n\nDakika 9-10: Komit\n   - 'Önümüzdeki 90 dakika yalnızca buna'\n   - Zamanlayıcı kur\n   - Başla\n```\n\n**Prompt:** \"Yazılım geliştirici için akış ritueli yaz; code review sona ermiş, 90 dakikalık derin kodlama bloğuna geçiş için spesifik adımlar, kullanılacak araçlar ve zihinsel geçiş stratejisi.\"",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "engel"
       ],
       "badge1": "Analiz",
-      "content": "**Flow Kırıcılar:** Görev çok zor: küçült. Görev çok kolay: zorlaştır. Açlık/susuzluk: önceden hazırlan. Belirsiz hedef: neyi üreteceksin? yaz. Fiziksel rahatsızlık: ergonomi ayarla. Merak (şu an sor): 'park etme' defterine yaz, sonra bak. Akış = zorluk/beceri dengesi.",
+      "content": "## Akış (Flow State) Kırıcı Tuzaklar ve Çözümleri\n\nMihaly Csikszentmihalyi'nin Flow teorisine göre akış için görev zorluğu ile beceri seviyesi eşleşmeli. Kırılma noktaları ve çözümleri:\n\n**Akış Kırıcı Kaynak → Çözümü:**\n```\n1. Görev çok ZOR:\n   Belirti: Donup kalma, başka şeyler yapmak isteme\n   Çözüm: Görevi parçala → \"Sadece X'i yaz\", \"Sadece şu fonksiyonu implemente et\"\n\n2. Görev çok KOLAY:\n   Belirti: Sıkılma, hayale dalma\n   Çözüm: Self-handicapping ekle → süre kısıtı (Pomodoro 20 dk), yeni kısıt getir\n\n3. Fiziksel ihtiyaç:\n   Açlık, susuzluk, tuvalet ihtiyacı\n   Çözüm: Oturum öncesi 1 bardak su, hafif atıştırmalık, tuvalet\n\n4. Belirsiz hedef:\n   Belirti: \"Nereye gidiyordum?\" hissi\n   Çözüm: Oturum başında 1 cümlelik hedef yaz: \"X çıktısı üretmek istiyorum\"\n\n5. Dış kesinti:\n   Kolega, bildirim, kapı zili\n   Çözüm: Fiziksel işaret (kulaklık = DND), DND modu, kapalı kapı\n```\n\n**Akışa Geri Dönme Protokolü:**\n```\n→ Kesintiden sonra: 5 dakika bekleme (düşüncelerin toplanması)\n→ Notlar gözden geçir: Neredeydin?\n→ Küçük adım başlat: Öncekini oku, önceki kodu incele\n```",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "saat"
       ],
       "badge1": "Ölçüm",
-      "content": "**Deep Work Bütçesi:** Toplam iş saati – toplantılar – e-posta – rutin = deep work kapasiten. Çoğu profesyonel için günde 2-4 saat maksimum. Bunu artırmak için: toplantıları birleştir, e-posta bloklarına topla, rutin görevleri devret/otomatikleştir.",
+      "content": "## Haftalık Deep Work Bütçesi Planlaması\n\nDerin çalışma saatlerini belirleyen, izleyen ve optimize eden haftalık planlama sistemi.\n\n**Deep work kapasite araştırması:**\nCal Newport'a göre yeni başlayanlar: 1-2 saat/gün, uzmanlar: 4-5 saat/gün. 4 saatten fazlası nadiren sürdürülebilir.\n\n**Haftalık bütçe çerçevesi:**\n```\nHedef deep work: [X saat/hafta]\nMevcut durum: [Y saat/hafta]\nBoşluk: [Z saat]\n\nMevcut hafta:\nPazartesi: 09:00-11:00 DW  → 2 saat\nSalı:      08:30-10:30 DW  → 2 saat\nÇarşamba: Toplantı ağırlıklı → 0 saat\nPerşembe: 09:00-11:30 DW   → 2.5 saat\nCuma:     08:30-10:00 DW   → 1.5 saat\nToplam:   8 saat\n```\n\n**Takip ve değerlendirme:**\n```\nGünlük log:\n- DW seans başlangıç/bitiş saati\n- Ne çalışıldı\n- Kesinti var mı? (kim/ne)\n- Kalite skoru (1-5): gerçek akış mı, sadece oturdum mu?\n\nHaftalık review:\n- Toplam DW saati\n- Planlanan vs gerçekleşen\n- En üretken gün/saat\n- Önümüzdeki hafta değiştirilecek 1 şey\n```\n\n**Excel/Notion şablonu:**\n```\n| Gün | Plan | Gerçek | Görev | Kalite | Kesinti |\n|-----|------|--------|-------|--------|---------|\n| Pzt |  2h  |  1.5h  |  X   |   3    |  slack  |\n```\n\n**Prompt:** \"Geçen haftaki takvimime bak; gerçek deep work saatimi hesapla, toplantı ve e-posta zamanını çıkart, önümüzdeki hafta için daha iyi bir yapı öner.\"",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "takip"
       ],
       "badge1": "Ölçüm",
-      "content": "**Dikkat Logu:** 1 hafta boyunca: her dikkat bölünmesinde tally işareti koy (iç kaynaklı mı, dış mı?). Gün sonu say. 20+ bölünme: ciddi sorun. Kaynak analizi: en çok nereden geliyor? O kaynağı önce kapat. Farkındalık tek başına %30 azaltır.",
+      "content": "## Dikkat Bölünmesi Logu ve Analizi\n\nÇalışma sırasındaki dikkat kırılmalarını kayıt altına alarak tetikleyicileri tespit etme ve ortadan kaldırma.\n\n**Log şablonu:**\n```\nDikkat Bölünmesi Kaydı — [Tarih]\n\nSeans: [başlangıç saat] - [bitiş saat]\nGörev: [çalışılan şey]\n\nBölünme 1:\n  Saat: [HH:MM]\n  Ne kesti: [bildirim/düşünce/kişi/sesler]\n  Ne kadar: [2 dk / 10 dk / vazgeçtim]\n  Geri dönüş zorluğu (1-5): []\n\nBölünme 2:\n  ...\n\nSeans özeti:\n  Toplam bölünme: [N]\n  En sık tetikleyici: [kategori]\n  Üretkenlik skoru (1-10): []\n```\n\n**Tetikleyici kategorileri:**\n```\n📱 Dijital: bildirim, mesaj, sosyal medya çekimi\n🗣️ İnsan: meslektaş, telefon, zil\n💭 İç: alakasız düşünce, kaygı, to-do listesi belleği\n🔊 Çevre: gürültü, sıcaklık, rahatsızlık\n⚡ Biyolojik: açlık, yorgunluk, kafein düşüşü\n```\n\n**Haftalık analiz:**\n```python\n# Tetikleyici dağılımı\ntriggers = {'dijital': 12, 'insan': 4, 'iç': 8, 'çevre': 3, 'biyolojik': 5}\n# Sonuç: Dijital %37 → Bildirim detox öncelik\n# İç %25 → Capture sistemi kur (anında not)\n```\n\n**Çözüm eşleştirmesi:**\nDijital bölünme → Bildirim kapat, siteleri engelle\nİç düşünce → 'Yakala ve devam et' defteri (sticky note)\nİnsan → Kapalı kapı, DND saatleri açıkla\n\n**Prompt:** \"Bu haftaki dikkat bölünmesi logumu analiz et; en sık tetikleyiciyi bul ve o kaynağı ortadan kaldırmak için somut çevre değişiklikleri öner.\"",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "kafe"
       ],
       "badge1": "Pratik",
-      "content": "**Mekân Ayrımı:** Çalışma: masa/kütüphane/kafe. Mola: kanepe/balkon/mutfak. Asla yatak odasında çalışma. Farklı mekânlar farklı zihin modları tetikler. Evde ayrım yoksa: farklı sandalye veya yön kullan. Kafede çalışmak dikkat artırır — hafif arka plan gürültüsü (~70 dB) yaratıcılığı artırır.",
+      "content": "## Çalışma ve Mola Mekân Ayrımı\n\nFiziksel mekânı davranışsal sinyale dönüştürün. Beyin mekânla ilişkilendirme yapar — doğru mekân otomatik odak moduna geçirir.\n\n**Mekân-Aktivite Eşleştirme:**\n```\nÇalışma mekânları:\n  ✓ Çalışma masası/ofis → Derin çalışma\n  ✓ Kütüphane → Okuma/araştırma\n  ✓ Kafe (yabancılar var) → Orta zorluk işler\n\nMola mekânları:\n  ✓ Kanepe/salon → Dinlenme, hafif okuma\n  ✓ Balkon/bahçe → Fiziksel mola\n  ✓ Mutfak → Yemek, sosyalleşme\n\nYasak çakışmalar:\n  ✗ Yatakta çalışmak → Uyku kalitesi bozulur\n  ✗ Masada sosyal medya → Masa = iş kondisyonu kaybolur\n  ✗ Kanepede e-posta → Mola kalitesi bozulur\n```\n\n**Uzaktan Çalışanlar için Ritüel:**\n```\nİşe BAŞLAMA ritüeli (5 dk):\n  → Kahve yap, masaya otur, günlük plan listesini aç\n  → Bu ritüel beyni iş moduna giriyor sinyali verir\n\nİşi BİTİRME ritüeli (5 dk):\n  → Yarının 3 önceliğini yaz, sekmeleri kapat, laptop kapat\n  → Fiziksel kapanış: kapağı kapat veya başka odaya koy\n```\n\n**Ev Ofisi Sınır Koyma:** Çalışma saatlerini ve mekânını aile/ev arkadaşlarına açıkça kommunike edin. Kapalı kapı = DND sinyali. 'Çalışıyorum ama evdeyim' farkı oluşturun.",
       "source": {
         "generated": true
       }

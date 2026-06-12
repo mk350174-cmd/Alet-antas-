@@ -93,7 +93,7 @@
         "temel"
       ],
       "badge1": "Klasik",
-      "content": "**50/30/20 Kuralı:** Net gelirin %50'si zorunlu gider (kira, fatura, yiyecek). %30'u isteğe bağlı (eğlence, restoran, hobi). %20'si tasarruf + borç ödemesi. İlk ay gerçek harcamalarını ölç, sonra uyarla. Tasarruf payı önce kenara al — kalanı harca.",
+      "content": "## 50/30/20 Bütçe Kuralı: Kişisel Finans Temeli\n\nAylık net geliri üç kategoriye bölerek finansal denge kuran basit ve etkili bütçe çerçevesi.\n\n**Kuralın yapısı:**\n```\nAylık Net Gelir: 20.000 TL\n\n%50 → İHTİYAÇLAR (10.000 TL)\n  Kira: 6.000 TL\n  Faturalar: 1.500 TL\n  Market: 2.000 TL\n  Ulaşım: 500 TL\n\n%30 → İSTEKLER (6.000 TL)\n  Yemek dışarı: 2.000 TL\n  Eğlence/sinema: 1.000 TL\n  Giyim: 1.500 TL\n  Hobiler: 1.500 TL\n\n%20 → TASARRUF/BORÇ (4.000 TL)\n  Acil fon: 1.500 TL\n  Yatırım: 1.500 TL\n  Borç ödeme: 1.000 TL\n```\n\n**Yüksek kira şehirlerde adaptasyon:**\nİstanbul gibi şehirlerde kira %50'yi aşabilir. Bu durumda:\n- İhtiyaçlar: %60\n- İstekler: %20 (kısıntı)\n- Tasarruf: %20 (koruyun!)\n\n**Excel şablonu:**\n```\nSütunlar: Kategori | Bütçe | Gerçek | Fark | %\nAltında: Toplam ve renk kodlaması (kırmızı=aşım, yeşil=tasarruf)\n```\n\n**Araçlar:** YNAB (en detaylı), Monzo, Toshl Finance, Excel/Sheets kendi şablonu.\n\n**Prompt:** \"Aylık [gelir] TL net gelirim için 50/30/20 kuralını uygula; mevcut [kira/market/ulaşım] giderlerimle uyumlu mu, hangi kategoride tasarruf yapabilirim?\"",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "yöntem"
       ],
       "badge1": "Güçlü",
-      "content": "**Sıfır Tabanlı Bütçe:** Her ay gelirini al, tüm kategorilere dağıt (tasarruf da dahil). Son kalem sıfır olana kadar dağıt. YNAB yöntemi. Avantaj: her lira bir amaca hizmet eder, 'kaybolmuş para' yok. Ay içi değişiklikte diğer kategoriden kes.",
+      "content": "## Sıfır Tabanlı Bütçeleme: Her Kuruşa Görev\n\nAylık gelirin tamamını gelir - gider = sıfır olacak şekilde planlayan bütçe yöntemi.\n\n**Prensibi:**\nHer ay sıfırdan başla. Gelirinizin her kuruşunu bir göreve ata: gider, tasarruf veya yatırım. Ay sonunda gelir - (gider + tasarruf + yatırım) = 0 olmalı.\n\n**Adım adım uygulama:**\n```\n1. Bu ayın gelirini yaz:\n   Maaş: 18.000 TL\n   Serbest iş: 3.000 TL\n   Toplam: 21.000 TL\n\n2. Zorunlu giderleri listele ve at:\n   Kira: 7.000 | Fatura: 1.200 | Market: 2.200 | Ulaşım: 800\n   Alt toplam: 11.200 TL → Kalan: 9.800 TL\n\n3. Finansal hedefler:\n   Acil fon: 2.000 | Yatırım: 3.000 | Tatil birikimi: 1.000\n   Alt toplam: 6.000 TL → Kalan: 3.800 TL\n\n4. İstek giderleri:\n   Yemek dışarı: 2.000 | Giyim: 1.000 | Eğlence: 800\n   Alt toplam: 3.800 TL → Kalan: 0 TL ✓\n```\n\n**YNAB (You Need A Budget) ile dijital uygulama:**\n```\n1. Hesap bağla veya manuel gir\n2. Her işlemi kategoriye ata\n3. Bütçe aşıldığında diğer kategoriden transfer et\n4. Aylık raporu incele\n```\n\n**Prompt:** \"Bu ay sıfır tabanlı bütçe planı çıkar; gelirimi, sabit giderlerimi ve değişken giderlerimi gir, her TL'ye görev ver, tasarruf hedefimi de dahil et.\"",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "sınıflama"
       ],
       "badge1": "Temel",
-      "content": "**3 Harcama Tipi:** Sabit (kira, abonelik, sigorta): aynı her ay. Değişken zorunlu (market, yakıt): değişir ama gerekli. İsteğe bağlı (restoran, alışveriş): kesilebilir. Tasarruf hedefine ulaşmak için önce isteğe bağlı kategoriye bak. Sabit giderler de yılda bir gözden geçirilmeli.",
+      "content": "## Harcama Kategorilendirme: Finansal Görünürlük\n\nTüm giderleri sistematik kategorilere ayırarak harcama örüntülerini görme ve optimize etme.\n\n**Ana kategori şeması:**\n```\n🏠 KONUT\n  Kira/ipotek, elektrik, su, doğalgaz, internet, sigorta\n\n🛒 MARKET & GIDA\n  Süpermarket, kasap/manav, içecek, ev malzemeleri\n\n🚗 ULAŞIM\n  Yakıt, toplu taşıma, taksi, araç bakım, otopark\n\n🍽️ YEME-İÇME DIŞARI\n  Restoran, kafe, paket servis, iş yemekleri\n\n👕 GİYİM\n  Kıyafet, ayakkabı, aksesuar, kuru temizleme\n\n🏥 SAĞLIK\n  Eczane, doktor, diş, gözlük, spor salonu\n\n📚 EĞİTİM & GELİŞİM\n  Kurslar, kitaplar, abonelikler, yazılım\n\n🎮 EĞLENCE\n  Sinema, konser, oyun, seyahat, hobiler\n\n💳 FİNANSAL\n  Kredi kartı faizi, kredi taksiti, vergi, sigorta\n\n💰 TASARRUF & YATIRIM\n  Acil fon, TL/döviz mevduat, hisse, fon\n```\n\n**Otomatik kategorilendirme (Python):**\n```python\ncategory_keywords = {\n    'market': ['bim', 'a101', 'migros', 'carrefour', 'market'],\n    'yeme_dışarı': ['mcdonalds', 'burger', 'pizza', 'restoran', 'cafe'],\n    'ulaşım': ['bp', 'shell', 'opet', 'metro', 'iett', 'uber']\n}\n\ndef categorize(merchant_name):\n    name_lower = merchant_name.lower()\n    for cat, keywords in category_keywords.items():\n        if any(k in name_lower for k in keywords):\n            return cat\n    return 'diğer'\n```\n\n**Prompt:** \"Geçen 3 ayın banka ekstresini kategorilere ayır; en yüksek harcama kategorim hangisi, tahminlerime göre ne kadar sapma var, hangi kategoride tasarruf potansiyeli fazla?\"",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "bekle"
       ],
       "badge1": "Pratik",
-      "content": "**24 Saat Kuralı:** Anlık alışveriş isteği geldiğinde: ürünü sepete ekle ama satın alma. 24 saat sonra geri dön. %70 vakasında istek geçer. 100 TL üstü alışverişler için 48 saat. Online alışveriş uygulamalarını telefondan sil — sürtünme artar, harcama azalır.",
+      "content": "## 24 Saat Kuralı: Dürtüsel Harcama Önleme\n\nPlansız alışveriş kararlarını erteleyerek bilinçsiz tüketime karşı koruyan finansal disiplin tekniği.\n\n**Kuralın uygulaması:**\n```\n1. İstek doğar: 'Bu yeni telefon/ayakkabı/şey lazım!'\n\n2. Ekrana veya sepete ekle AMA satın alma\n\n3. 24 saat bekle (büyük alışverişlerde 72 saat)\n\n4. Süre sonunda 5 soru sor:\n   □ Bu olmadan yaşamımı ne kadar etkilenecek?\n   □ Bu bir ihtiyaç mı, istek mi?\n   □ Bütçemde yeri var mı?\n   □ Daha ucuz alternatif var mı?\n   □ 3 ay sonra hâlâ kullanıyor olacak mıyım?\n\n5. 3/5 evet → Al | 2/5 veya az → Listeden çıkar\n```\n\n**Tetikleyici ortamları:**\n```\nRiskli durumlar:\n- Online alışveriş siteleri (kampanya bildirimleri kapatın)\n- AVM gezileri (aç karnına gitmeyin, liste olmadan gitmeyin)\n- Sosyal karşılaştırma (arkadaş alımı gördükten sonra)\n- Stres ve üzüntü sonrası ('retail therapy')\n- Geç gece telefon gezintisi\n```\n\n**Bekleme listesi tutma:**\n```\nUygulama: Notion 'İstek Listesi' sayfası\nSütunlar: Ürün | Fiyat | Tarih eklendi | Karar tarihi | Karar\n\n30 gün sonra listeye bak:\nÇoğu zaman istek geçmiş olur!\n```\n\n**Prompt:** \"Bu ay dürtüsel harcama tuzaklarına düştüğüm 5 alımı analiz et; ne zaman, hangi bağlamda ve nasıl önlenebilirdi? Kişiselleştirilmiş fren mekanizmaları öner.\"",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "tasarruf"
       ],
       "badge1": "Hayırlı",
-      "content": "**Otomatik Tasarruf:** Maaş hesabından ayrı tasarruf hesabı aç. Maaş gününde otomatik transfer kur: %10-20. 'Önce kendin öde' prensibi. Kalan parayı harca — açık hissiyatı yok. Tasarruf gözden uzak olunca dokunmak zorlaşır. 3 ayda bir hedefi %5 artır.",
+      "content": "## Otomatik Tasarruf Sistemi: Kendinizi Önce Ödeyin\n\nPay yourself first prensibiyle ödeme günü otomatik transfer kurarak tasarrufu garantileme.\n\n**'Önce Kendinizi Ödeyin' prensibi:**\nGelir geldiğinde önce tasarrufu ayır, kalanla geçin. Ters değil: harcayıp kalanı biriktirme — bu hiç birikime gitmez.\n\n**Türk bankalarında otomatik transfer:**\n```\nİş Bankası:\n  Havale/EFT → Otomatik transfer\n  Her ayın 5'i → Belirli hesaba [miktar]\n\nGaranti:\n  İşlemlerim → Otomatik ödeme\n  Kaynak: Vadesiz hesap\n  Hedef: Birikim hesabı veya yatırım fonu\n  Tarih: Maaş günü +1\n  Tutar: 2.000 TL (veya gelirin %20'si)\n\nZiraat:\n  E-Ziraat → Otomatik transfer + vadeli hesap açma\n```\n\n**Tasarruf hesapları hiyerarşisi:**\n```\n1. Acil fon hesabı (önce dolu): 3-6 aylık gider\n   → Yüksek faizli vadesiz veya kısa vadeli mevduat\n\n2. Kısa vadeli hedefler (6 ay - 2 yıl):\n   → Vadeli mevduat, para piyasası fonu\n\n3. Uzun vadeli yatırım (2+ yıl):\n   → BES, hisse fonu, altın birikimli mevduat\n```\n\n**Mikro tasarruf başlangıcı:**\n```\nGün 1: 5 TL → Gün 2: 10 TL → ...\nİlk ay: Toplam ~775 TL\n(Küçük başla, alışkanlık kur, artır)\n```\n\n**Prompt:** \"Aylık [maaş] TL gelirimle otomatik tasarruf sistemi kur; acil fon hedefim [X] TL, tatil birikimim [Y] TL, emeklilik katkım [Z] TL — hangi banka ürünleri kullanmalıyım?\"",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "iptal"
       ],
       "badge1": "Hızlı",
-      "content": "**Abonelik Auditi:** Banka ekstresine bak, tüm yinelenen ödemeleri listele. Her biri için: Son 30 günde kaç kez kullandım? 0 kez → iptal. 1-2 kez → değerlendir. 3+ kez → kalsın. Ortalama kişinin farkında olmadan ödediği abonelik: 3-5 adet. Yıllık tasarruf: 1000-5000 TL.",
+      "content": "## Abonelik Auditi: Gizli Sızıntıları Bul\n\nAylık düzenli ödenen tüm abonelikleri listeleyip değerlendirerek gereksiz gideri kesme.\n\n**Kapsamlı abonelik taraması:**\n```\nDİJİTAL EĞLENCE:\n□ Netflix / Amazon Prime / Disney+\n□ Spotify / Apple Music / YouTube Premium\n□ Podcast uygulamaları\n□ Oyun: Steam, Xbox Game Pass, PS Plus\n\nVERİMLİLİK:\n□ Microsoft 365 / Google One / Dropbox\n□ Adobe Creative Cloud / Figma / Notion\n□ Yazılım araçları: GitHub, Cursor, Copilot\n\nFİZİKSEL:\n□ Spor salonu üyeliği\n□ Dergi aboneliği\n□ Kitap kulüpleri\n□ Yiyecek kutuları (HelloFresh vs.)\n\nFİNANSAL:\n□ Sigorta (kullanmadığın coverage var mı?)\n□ Banka ücretleri (ücretsiz hesap geçilebilir mi?)\n□ Kredi kartı yıllık ücreti\n```\n\n**Değerlendirme matrisi:**\n```\nHer abonelik için:\nKullanım sıklığı (Haftalık/Aylık/Nadiren/Hiç)\nAylık maliyet\nBu olmadan ne yaparım?\nAlternatif var mı?\nKararım: Kal / İptal / Düşür / Paylaş\n```\n\n**Audit sonrası aksiyon:**\n```bash\n# İptal kontrol listesi:\n□ Aboneliği iptal et (çözüm sayfasını bul)\n□ Onay e-postasını kaydet\n□ Banka ekstresinde takip et (sonraki ay hâlâ çekiyor mu?)\n□ Yıllık planı aylık fatura dönemine not at\n```\n\n**Prompt:** \"Kredi kartı ekstremde gördüğüm bu abonelik listesini değerlendir; hangisini iptal etmeliyim, hangisi paylaşılabilir, yıllık tasarruf potansiyelini hesapla.\"",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "snowball"
       ],
       "badge1": "Motivasyon",
-      "content": "**Borç Kartopu:** Tüm borçları bakiyeye göre küçükten büyüğe sırala. Minimum ödeme yap hepsine. Fazla parayı en küçüğe yönelt. Biter → o parayı sonrakine ekle (kartopu büyür). Faiz açısından optimal değil ama psikolojik zafer motivasyonu yüksek tutar.",
+      "content": "## Borç Kartopu Yöntemi: Psikolojik Motivasyonla Borç Eritme\n\nDave Ramsey'in en küçük borçtan başlayarak momentum kazanmayı hedefleyen borç ödeme stratejisi.\n\n**Yöntemin mantığı:**\nEn küçük borcu önce bitir → Motivasyon kazanırsın → O borcun taksitini bir sonraki borca ekle → Kartopu büyür.\n\n**Uygulama adımları:**\n```\nBORÇ LİSTESİ (en küçükten en büyüğe):\n1. Kredi kartı A: 3.000 TL, aylık min: 200 TL\n2. Tüketici kredisi: 8.000 TL, aylık min: 500 TL\n3. Araç kredisi: 25.000 TL, aylık min: 1.200 TL\n4. Konut kredisi: 800.000 TL, aylık min: 5.000 TL\n\nEK ÖDEME KAPASİTESİN: 500 TL/ay\n\nADIM 1: Tüm minimum ödemeleri yap.\nADIM 2: 500 TL ektra → Borç 1'e (Kredi kartı A)\nSonuç: 3.000 / (200+500) = ~4.3 ay'da biter\n\nADIM 3: (200+500) = 700 TL → Borç 2'ye ekle\nArtık Borç 2'ye: 500 + 700 = 1.200 TL/ay\nSonuç: 8.000 / 1.200 = ~6.7 ay'da biter\n```\n\n**Çığ yöntemiyle karşılaştırma:**\n| | Kartopu | Çığ |\n|--|---------|-----|\n| Başlangıç | En küçük borç | En yüksek faiz |\n| Motivasyon | Yüksek (hızlı zafer) | Matematiksel optimal |\n| Toplam faiz | Fazla | Az |\n| Tamamlama | Yavaşça | Hızlıca |\n\n**Prompt:** \"Bu borçlarımı kartopu yöntemiyle listele; ek aylık [tutar] TL ile her borç ne zaman biter, toplam faiz ne kadar öderim, çığ yöntemiyle farkı nedir?\"",
       "source": {
         "generated": true
       }
@@ -213,7 +213,7 @@
         "faiz"
       ],
       "badge1": "Matematik",
-      "content": "**Borç Çığ (Avalanche):** Tüm borçları faiz oranına göre yüksekten düşüğe sırala. Fazla parayı en yüksek faizliye yönelt. Toplam faiz ödemesini minimize eder. Kartopu'na kıyasla daha az motivasyon hissi ama daha fazla para kurtarır. Kararlı kişiler için ideal.",
+      "content": "## Borç Çığ Yöntemi: Matematiksel Optimal Strateji\n\nEn yüksek faizli borçtan başlayarak toplam ödenen faizi minimize eden borç ödeme stratejisi.\n\n**Yöntemin mantığı:**\nFaizin en yüksek olduğu borç en hızlı büyür. O borcu önce ödemek matematiksel olarak en az para kaybettirir.\n\n**Örnek uygulama:**\n```\nBORÇ LİSTESİ (faize göre azalan sıra):\n1. Kredi kartı: 5.000 TL, %56 faiz, min ödeme: 250 TL\n2. Tüketici kredisi: 20.000 TL, %48 faiz, min ödeme: 800 TL\n3. Araç kredisi: 60.000 TL, %30 faiz, min ödeme: 1.800 TL\n\nEK ÖDEME KAPASİTESİ: 1.000 TL/ay\n\n1. AŞAMA: Kredi kartını hızla bitir\n   Ödeme: 250 + 1.000 = 1.250 TL/ay\n   Süre: ~4.3 ay\n   Ödenen faiz: ~1.200 TL\n\n2. AŞAMA: Tüketici kredisi\n   Ödeme: 800 + 1.250 = 2.050 TL/ay\n   Süre: ~10.5 ay\n   Ödenen faiz: ~4.500 TL\n\n3. AŞAMA: Araç kredisi\n   Ödeme: 1.800 + 2.050 = 3.850 TL/ay\n   Süre: ~17 ay\n\nTOPLAM FAİZ TASARRUFU: Kartopu'na göre ~3.200 TL\n```\n\n**Python hesaplayıcı:**\n```python\ndef avalanche_payoff(debts, extra_monthly):\n    # debts: [(balance, rate, min_payment)]\n    debts = sorted(debts, key=lambda x: -x[1])  # Faize göre sırala\n    total_interest = 0\n    months = 0\n    while any(d[0] > 0 for d in debts):\n        months += 1\n        extra = extra_monthly\n        for i, (bal, rate, min_pay) in enumerate(debts):\n            if bal <= 0: continue\n            interest = bal * (rate/12)\n            total_interest += interest\n            payment = min(bal + interest, min_pay + (extra if i == 0 else 0))\n            extra = max(0, extra - (payment - min_pay))\n            debts[i] = (bal + interest - payment, rate, min_pay)\n    return months, total_interest\n```\n\n**Prompt:** \"Bu borçlarımı çığ yöntemiyle hesapla; her borcun faiz oranını gir, aylık [tutar] TL ek ödeme ile en optimal ödeme sırasını ve toplam faiz yükünü göster.\"",
       "source": {
         "generated": true
       }
@@ -230,7 +230,7 @@
         "altın"
       ],
       "badge1": "Türkiye",
-      "content": "**Enflasyon Koruması:** Birikimin %30-50'si döviz (dolar/euro). %20-30'u altın (gram altın/külçe). %20-30'u borsa (BİST 100 endeks fonu). Kalan nakit: yüksek faizli mevduat. Hiçbir zaman tüm parayı tek araçta tutma. Aylık düzenli alım (DCA) zamanlamayı ortadan kaldırır.",
+      "content": "## Enflasyona Karşı Temel Yatırım Araçları\n\nTürkiye ekonomi koşullarında enflasyonun üstünde getiri sağlayan başlangıç seviye yatırım rehberi.\n\n**Yatırım araçları karşılaştırması:**\n```\n2024 Türkiye koşulları (yaklaşık):\nEnflasyon: %65-80\n\nGetiri beklentisi (enflasyonu yensin):\n□ Altın (TL bazında): TÜFE bağımlı ama dövize karşı koruyu\n□ Döviz (USD/EUR): Döviz enflasyonuna göre + kur getirisi\n□ BIST hisse fonu: Uzun vadede enflasyonu geçebilir\n□ Eurobond: Dolar bazlı sabit getiri\n□ BES Devlet Katkısı: %25 devlet katkısı!\n```\n\n**Başlangıç portföyü (1.000 TL/ay):**\n```\n%40 → BES (devlet katkısı + vergi avantajı)\n%30 → Altın birikimli mevduat (enflasyon hedge)\n%20 → Hisse senedi fonu (uzun vadeli büyüme)\n%10 → Döviz mevduat (TL aşınmasına karşı)\n```\n\n**BES hesaplama:**\n```\nAylık katkı: 500 TL\nDevlet katkısı: 500 × 0.25 = 125 TL (beddava!)\nEffektif yatırım: 625 TL\n10 yıl → Sadece devlet katkısından: 15.000 TL\n(Getiri hesabı hariç)\n```\n\n**Prompt:** \"Aylık [tutar] TL biriktiriyorum ve enflasyona karşı korumak istiyorum; Türkiye koşullarında 5 yıllık portföy dağılımı öner, vergi avantajlı seçenekleri dahil et.\"",
       "source": {
         "generated": true
       }
@@ -247,7 +247,7 @@
         "acemi"
       ],
       "badge1": "Başlangıç",
-      "content": "**Endeks Fonu ile Başla:** Tek hisse alma — şirket riskisin. Borsa İstanbul endeks fonu (BIST 100) veya küresel endeks ETF al. Düşük yönetim ücreti (<0.5%) olanı seç. Uzun vade (5+ yıl) tut. Piyasa düşünce sat değil, al. 'Piyasayı zamanlayamazsın ama zamanda kalabilirsin.'",
+      "content": "## Borsa Temelleri: Sıfırdan Hisse Senedi Yatırımı\n\nTürkiye (BIST) ve uluslararası borsalara başlangıç için temel kavramlar ve pratik ilk adımlar.\n\n**Temel kavramlar:**\n```\nHisse senedi: Bir şirkete ortak olma belgesi\nEndeks: Borsa genelini temsil eden sepet (BIST100, S&P500)\nKâr payı (temettü): Şirketin dağıttığı kâr\nF/K oranı: Fiyat / Hisse başı kâr → ne kadar pahalı?\nPiyasa değeri: Hisse fiyatı × toplam hisse sayısı\n\nTürkiye'de işlem:\nAracı kurum aç: İş Yatırım, Garanti Yatırım, Midas\nDijital işlem: Matriks, ForexView, Midas app\nVergi: Stopaj %10 (BIST) + KKDF bazı durumlarda\n```\n\n**İlk yatırım stratejisi (pasif, önerilen başlangıç):**\n```\nEndeks fonu stratejisi:\n1. BIST100 ETF (XETF veya BISTTES) al\n2. Her ay düzenli al (dolar maliyet ortalaması)\n3. 5-10 yıl tut\n4. Yeniden dengele (yılda 1 kez)\n\nNeden ETF?\n→ Tek işlemde 100 şirkete yayılım\n→ Düşük yönetim ücreti\n→ Hisse araştırması gerekmez\n```\n\n**Yaygın başlangıç hataları:**\n- Tüm parayı tek hisseye yatırma\n- Kısa vadeli düşüşlerde panikle satma\n- Sosyal medya tavsiyesiyle işlem yapma\n- Yeterli acil fon olmadan yatırım başlatma\n\n**Prompt:** \"Borsaya ilk kez girecek birisiyim, aylık [tutar] TL yatırım yapabilirim; BIST ve global endeks fonu arasında nasıl dağıtmalıyım, ilk alımı nasıl yapmalıyım?\"",
       "source": {
         "generated": true
       }
@@ -264,7 +264,7 @@
         "likit"
       ],
       "badge1": "Öncelik",
-      "content": "**Acil Fon:** Hedef: aylık zorunlu giderinin 3-6 katı. Nerede: ayrı, vadesiz mevduat veya para piyasası fonu. Neden ayrı: ani harcamadan korumak için. Kullanım: sadece gerçek acil (iş kaybı, sağlık, arıza). Tüketilince önce yeniden doldur. Acil fon yoksa yatırıma geçme.",
+      "content": "## Acil Fon: Finansal Güvenlik Ağı\n\nBeklenmedik giderlere karşı 3-6 aylık harcamayı likit olarak biriktirme stratejisi.\n\n**Acil fon hesabı:**\n```\nADIM 1: Aylık temel gideri hesapla\nKira: 6.000 TL\nFaturalar: 1.500 TL\nMarket: 2.000 TL\nUlaşım: 800 TL\nAsgari kredi ödemeleri: 1.200 TL\nToplam ZORUNLU gider: 11.500 TL/ay\n\nADIM 2: Hedef belirle\n3 aylık: 34.500 TL (minimum)\n6 aylık: 69.000 TL (ideal)\n\nADIM 3: İş güvencesini değerlendir\nDevlet memuru, çok sektörlü deneyim → 3 ay yeterli\nSerbest çalışan, niche sektör → 6+ ay önerilir\n```\n\n**Birikim planı:**\n```\nHedef: 34.500 TL (3 ay)\nBaşlangıç: 0 TL\nAylık katkı: 2.000 TL\nSüre: 17.25 ay → 18 ay\n\nHızlanmak için:\n+ Bonus/ek gelirden %50 acil fona\n+ Gereksiz abonelik iptalinden biriken\n+ Senelik zam farkı\n```\n\n**Acil fon nerede olmalı?**\n```\n✓ Yüksek faizli vadesiz hesap (hemen erişilebilir!)\n✓ 1 aylık vadeli mevduat (kısa erişim süresi)\n✓ Para piyasası fonu (1-2 gün erişim)\n\n✗ Hisse senedi (ani düşüş riski)\n✗ Uzun vadeli tahvil (satmak zaman alır)\n✗ Fiziksel altın (likit değil)\n```\n\n**Prompt:** \"Aylık giderlerim [tutar] TL, acil fonumu 6 aylık seviyeye [toplam] TL çıkarmak istiyorum; en hızlı yolu, doğru yatırım aracını ve aylık ek birikim miktarını öner.\"",
       "source": {
         "generated": true
       }
@@ -281,7 +281,7 @@
         "görselleştirme"
       ],
       "badge1": "Motivasyon",
-      "content": "**Tasarruf Grafı:** Spreadsheet veya not defterinde ay bazlı birikim grafiği tut. X ekseni: aylar. Y ekseni: toplam birikim. Görsel ilerleme motivasyonu artırır. Hedef çizgisi koy (örn. 100.000 TL). Her ay grafiği güncelle — ufak adımlar büyük resimde anlam kazanır.",
+      "content": "## Kümülatif Tasarruf Grafiği: Görsel Motivasyon Aracı\n\nBirikim yolculuğunu görselleştirerek motivasyonu yüksek tutma ve ilerlemeyi takip etme.\n\n**Python ile tasarruf grafiği:**\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Parametreler\nmonthly_saving = 2000  # TL/ay\nannual_return = 0.35   # %35 yıllık getiri (enflasyona karşı)\nmonths = 60            # 5 yıl\n\n# Hesapla\nbalances = []\nbalance = 0\nfor m in range(months):\n    balance = balance * (1 + annual_return/12) + monthly_saving\n    balances.append(balance)\n\n# Grafik\nfig, ax = plt.subplots(figsize=(12, 6))\nax.plot(range(months), balances, 'b-', linewidth=2, label='Gerçek birikim')\nax.fill_between(range(months), \n                [monthly_saving * m for m in range(months)],\n                balances, alpha=0.3, label='Faiz/getiri katkısı')\nax.set_xlabel('Ay')\nax.set_ylabel('Toplam Birikim (TL)')\nax.set_title(f'5 Yıllık Birikim Projeksiyonu\\n(Aylık {monthly_saving:,} TL, %{annual_return*100} getiri)')\nax.legend()\nplt.tight_layout()\nplt.savefig('savings_projection.png', dpi=150)\nprint(f'5 yıl sonra: {balances[-1]:,.0f} TL')\nprint(f'Yatırılan: {monthly_saving*months:,} TL')\nprint(f'Faiz kazancı: {balances[-1]-monthly_saving*months:,.0f} TL')\n```\n\n**Hedef tabanlı grafik:**\n```python\n# Farklı senaryoları karşılaştır\nscenarios = {500: 'Minimum', 1500: 'Orta', 3000: 'Agresif'}\nfor amount, label in scenarios.items():\n    b = [amount * m * (1.02**m) for m in range(1, 61)]  # Basitleştirilmiş\n    ax.plot(b, label=f'{label} ({amount:,} TL/ay)')\n```\n\n**Prompt:** \"Aylık [tutar] TL biriktiriyorum ve 5 yıl sonra [hedef] TL'ye ulaşmak istiyorum; mevcut tempoda ulaşabilir miyim, eksik ise aylık ne kadar artırmalıyım?\"",
       "source": {
         "generated": true
       }
@@ -298,7 +298,7 @@
         "sinking fund"
       ],
       "badge1": "İleri",
-      "content": "**Sinking Fund:** Yıllık giderleri (sigorta, vergi, tatil, hediye) listele. Yıllık toplamı 12'ye böl. Her ay bu miktar ayrı hesaba aktar. Fatura gelince hazır para var. Örnek: Yıllık 12.000 TL gider → aylık 1.000 TL. Sürpriz gider olmaz, kredi kartına gerek kalmaz.",
+      "content": "## Yıllık Büyük Giderler Fonu: Sürpriz Masrafları Planlama\n\nYıllık veya periyodik büyük harcamaları önceden planlayarak aylık bütçe şoklarını önleme.\n\n**Yaygın yıllık giderler:**\n```\nTETİKLEYİCİ LİSTESİ:\n□ Araç muayene + sigorta: ~15.000 TL/yıl\n□ Kira yenileme (depozito/taşıma): değişken\n□ Yaz tatili: ~30.000 TL/yıl\n□ Yılbaşı hediyeleri: ~5.000 TL\n□ Giyim sezonu değişimi: ~8.000 TL\n□ Okul/kurs kayıtları: ~10.000 TL\n□ Elektronik yenileme: ~20.000 TL (3 yılda bir)\n□ Dişçi yıllık kontrol: ~5.000 TL\n```\n\n**Sinking fund (batış fonu) sistemi:**\n```\nHer büyük gider için ayrı birikim:\n\nTatil Fonu:\nHedef: 30.000 TL (Temmuz'a 8 ay kaldı)\nAylık katkı: 30.000 / 8 = 3.750 TL\n\nAraç Masrafları Fonu:\nYıllık tahmini: 15.000 TL\nAylık katkı: 15.000 / 12 = 1.250 TL\n\nElektronik Yenileme:\n3 yılda bir 20.000 TL → 36 aya böl\nAylık katkı: 20.000 / 36 = 556 TL\n\nTOPLAM SINKING FUND: ~5.556 TL/ay\n```\n\n**Araç önerisi:**\nHer sinking fund için ayrı alt hesap veya Notion tablosu. Aylık otomatik transfer kur.\n\n**Prompt:** \"Bu yıl beklenen büyük giderlerimi listele; her biri için sinking fund hesabı oluştur, aylık ne kadar biriktirmem gerektiğini ve hangi banka hesaplarını kullanmam gerektiğini öner.\"",
       "source": {
         "generated": true
       }
@@ -315,7 +315,7 @@
         "inceleme"
       ],
       "badge1": "Rutin",
-      "content": "**Haftalık Para Tarası:** Pazar akşamı 10 dakika: banka ve kredi kartı hareketlerini aç. Beklenmedik gider var mı? Kategorilere uy mu? Gelecek hafta dikkat edilecek 1 şey belirle. Bu alışkanlık yıl sonunda 2-5% harcama azaltır ve farkındalık yaratır. Uygulama: Tosla, Wallet veya Excel.",
+      "content": "## Haftalık Para Tarası: 7 Günlük Finansal Kontrol\n\nHer hafta 15 dakika ile bütçe kontrolü, harcama takibi ve mali sağlık değerlendirmesi.\n\n**Haftalık para tarası şablonu:**\n```\n📅 TARİH: [Pazar/Pazartesi — haftanın sonu veya başı]\n⏱️ SÜRE: 15 dakika\n\n1. HAFTALIK HARCAMA ÖZETI (5 dk)\n   □ Toplam harcama: [TL]\n   □ Bütçeden sapma: +/- [TL]\n   □ En yüksek 3 harcama kategorisi\n   □ Beklenmayan gider var mıydı?\n\n2. HESAP BAKIYELERI (3 dk)\n   □ Vadesiz: [TL] (geçen haftaya göre: +/-)\n   □ Birikim hesabı: [TL]\n   □ Yatırım portföyü: [TL]\n   □ Kredi kartı borcu: [TL]\n\n3. ÖNÜMÜZDEKI HAFTA PLANI (5 dk)\n   □ Büyük harcama var mı? (aidat, fatura, taksit?)\n   □ Bütçe kısıtlaması gerekiyor mu?\n   □ Ay sonuna kaç gün, bütçe durumu?\n\n4. BİR KARAR (2 dk)\n   □ Bu hafta bir şeyi değiştiririm: [aksiyon]\n```\n\n**Mobil araçlar:**\n```\nBanka uygulaması: Haftalık harcama özeti\nMoneyfy / ToshlFinance: Kategori özeti\nMassa (Türkçe): Harcama takibi\nNotion şablonu: Detaylı kişisel tablo\n```\n\n**Aylık trendler:**\n4 haftalık veriyi bir araya getirince:\n- Hangi hafta en çok harcadın?\n- Hangi kategori bütçeyi defalarca aştı?\n- Tasarruf hedefine ne kadar yakınsın?\n\n**Prompt:** \"Bu haftanın harcama verilerimi analiz et; bütçe sapmalarını göster, önümüzdeki haftaki büyük ödemeleri hatırlat ve ay sonuna kadar ne kadar birikim yapabileceğimi hesapla.\"",
       "source": {
         "generated": true
       }

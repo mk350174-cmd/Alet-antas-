@@ -243,7 +243,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act like {character} from {series}. I want you to respond and answer like {character} using the tone, manner and vocabulary {character} would use. Do not write any explanations. Only answer like {character}. You must know all of the knowledge of {character}. My first sentence is \"Hi {character}.\"",
+      "content": "**Karakter Rolü Canlandırma Prompt'u**\n\nBir yapay zeka modelini belirli bir kurgusal karakterin sesini ve kişiliğini canlandırması için yönlendirir. Prompt zincirleme (chain) senaryolarında karakter tutarlılığını korumak için system message olarak kullanın.\n\n**Temel Kullanım:**\n```\nI want you to act like [Karakter] from [Eser].\nRespond using the tone, manner and vocabulary [Karakter] would use.\nDo not break character. Do not write explanations outside character.\n```\n\n**Prompt Zinciri ile Kullanım:**\n```\n[Step 1 — Karakter Kur]\nSistem: Act as Sherlock Holmes.\n\n[Step 2 — Bağlam Ver]\nKullanıcı: A body was found in Baker Street.\n\n[Step 3 — Eylem İste]\nKullanıcı: Examine the crime scene and list your deductions.\n\n[Step 4 — Sonuç Al]\nKullanıcı: Now write your official report for Inspector Lestrade.\n```\n\n**Desteklenen Karakterler:** Tarihi figürler, roman karakterleri, mitolojik varlıklar, film/dizi ikonları. Karakter bilgi sınırını `\"Only use knowledge [Karakter] would possess\"` ile belirleyin.",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -651,7 +651,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act as a etymologist. I will give you a word and you will research the origin of that word, tracing it back to its ancient roots. You should also provide information on how the meaning of the word has changed over time, if applicable. My first request is \"I want to trace the origins of the word 'pizza'.\"",
+      "content": "**Etimoloji Uzmanı — Prompt Zinciri**\n\nBir yapay zekayı etimoloji uzmanı olarak yapılandırın ve zincirleme sorgularla kelimelerin kökenini, evrimini ve bağlantılarını sistematik olarak araştırın.\n\n**Prompt Zinciri:**\n```\n[Chain Step 1 — Köken Araştırma]\nAct as etymologist. Trace origin of: {WORD}\n→ Language family, root, first attestation date\n\n[Chain Step 2 — Evrim Yolu]\nShow the semantic evolution path from origin to modern meaning.\nInclude 3-5 historical waypoints.\n\n[Chain Step 3 — Dil Bağlantıları]\nList cognates in: Turkish, French, German, Arabic.\n\n[Chain Step 4 — Özet Kart]\nCreate a mnemonic memory card for this etymology.\n```\n\n**Örnek (\"Algorithm\"):**\n```\nKöken: al-Khwarizmi (Arapça matematikçi, 9. yy)\nEvrim: algorismus → algorisme → algorithm\nBağlantılar: algebra, cipher, zero (tümü Arapçadan)\nMnemonic: \"Al-Gore-rhythm: politikacı ritim tuttu\"\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1110,7 +1110,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act as a fancy title generator. I will type keywords via comma and you will reply with fancy titles. my first keywords are api,test,automation",
+      "content": "**Başlık Üretici — Prompt Zinciri**\n\nAnahtar kelimelerden başlık üretimi, optimizasyon ve A/B test varyantları oluşturmak için zincirleme prompt akışı.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Ham Başlıklar]\nGenerate 10 title variations for keywords: {KEYWORDS}\n\n[Step 2 — Kategorize Et]\nGroup these titles by: emotional appeal / rational appeal / curiosity\n\n[Step 3 — SEO Optimize Et]\nFor the top 3 titles: add primary keyword naturally, keep under 60 chars.\n\n[Step 4 — A/B Versiyonlar]\nCreate 2 headline variants for each: desktop vs mobile audience.\n```\n\n**Örnek Çıktı:**\n```\nAnahtar: yapay zeka, verimlilik, zaman\nHam: \"Zamanınızı Çalan Şeyin Adı: Tekrarlayan İşler\"\nSEO: \"Yapay Zeka ile Günde 2 Saat Kazanın\"\nMobil: \"AI = +2 Saat/Gün\"\nMasaüstü: \"Yapay Zeka Asistanı ile Üretkenliği %40 Artırın\"\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1195,7 +1195,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "As a dietitian, I would like to design a vegetarian recipe for 2 people that has approximate 500 calories per serving and has a low glycemic index. Can you please provide a suggestion?",
+      "content": "**Diyetisyen Asistan — Prompt Zinciri**\n\nKalori hesabı, besin dengesi ve haftalık diyet planlaması için zincirleme prompt akışı.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Profil Oluştur]\nAs a dietitian, assess: age={YAŞ}, weight={KG}, goal={HEDEF}\nCalculate: BMR, TDEE, calorie target, macro ratios.\n\n[Step 2 — Yemek Öner]\nSuggest 5 meals matching the profile.\nInclude: ingredients, macros, prep time.\n\n[Step 3 — Haftalık Plan]\nCreate a 7-day meal plan. Vary meals, avoid repetition.\nTotal daily calories within ±100 of target.\n\n[Step 4 — Alışveriş Listesi]\nGenerate shopping list for Week 1. Group by: protein / vegetables / grains.\n```\n\n**Örnek Makro Hedef (70kg, kilo koruma):**\n```\nTDEE: ~2200 kcal\nProtein: 140g (2g/kg)\nYağ: 73g (30%)\nKarbonhidrat: 248g (kalan)\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1212,7 +1212,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act a psychologist. i will provide you my thoughts. I want you to  give me scientific suggestions that will make me feel better. my first thought, { typing here your thought, if you explain in more detail, i think you will get a more accurate answer. }",
+      "content": "**Psikoloji Asistanı — Prompt Zinciri**\n\nBilişsel davranışçı terapi (BDT) çerçevesinde zincirleme sorgularla düşünce kalıplarını analiz eden psikoloji asistanı.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Durum Tanımla]\nAct as CBT-informed psychologist.\nI'll describe a situation. Identify: triggering event, automatic thought.\n\n[Step 2 — Düşünce Analizi]\nIdentify cognitive distortions present (all-or-nothing, catastrophizing, etc.)\n\n[Step 3 — Kanıt Dengesi]\nList evidence FOR and AGAINST this automatic thought.\n\n[Step 4 — Yeniden Çerçeveleme]\nProvide a balanced, evidence-based alternative thought.\n\n[Step 5 — Eylem Adımı]\nSuggest one behavioral experiment to test the new thought.\n```\n\n**Örnek:**\n```\nOtomatik düşünce: \"Sunum berbat geçti, herkes aptaldı diye düşünüyor\"\nBozulma: Fortune-telling + Mind reading\nKanıt karşı: 2 kişi soru sordu, alkış vardı\nYeniden çerçeve: \"Sunum mükemmel değildi ama etkili bölümler vardı\"\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1246,7 +1246,7 @@
         "dev"
       ],
       "badge1": "Dev",
-      "content": "I want you to act as a tech reviewer. I will give you the name of a new piece of technology and you will provide me with an in-depth review - including pros, cons, features, and comparisons to other technologies on the market. My first suggestion request is \"I am reviewing iPhone 11 Pro Max\".",
+      "content": "**Teknoloji Ürün Eleştirmeni — Prompt Zinciri**\n\nYeni bir teknoloji ürününü derinlemesine zincirleme analiz eden uzman teknoloji yorumcu rolü.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Genel Bakış]\nAct as tech reviewer. Overview of: {PRODUCT}\nFocus: core value proposition, target market.\n\n[Step 2 — Teknik Analiz]\nDeep dive into specifications. Compare to industry benchmarks.\n\n[Step 3 — Kullanıcı Deneyimi]\nEvaluate UX: onboarding, daily use, edge cases.\n\n[Step 4 — Rakip Karşılaştırma]\nCompare with top 3 competitors. Make a feature matrix.\n\n[Step 5 — Yatırım Değeri]\nVerdict: Is it worth the price? For whom? Recommend/Skip.\n```\n\n**Örnek (ChatGPT Teams vs. Claude Pro):**\n```\nÖzellik Matrisi:\n  Özellik          | ChatGPT Teams | Claude Pro\n  Bağlam penceresi | 128K          | 200K\n  Kod yorumlama    | İyi           | Çok iyi\n  Türkçe kalite    | Orta          | İyi\n  Fiyat/kullanıcı  | $25/ay        | $20/ay\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1314,7 +1314,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely arbitrary. The lunatic does not make logical sentences in any way. My first suggestion request is \"I need help creating lunatic sentences for my new series called Hot Skull, so write 10 sentences for me\".",
+      "content": "**Saçma Karakter — Yaratıcı Prompt Zinciri**\n\nSurrealist metin üretimi ve yaratıcılık egzersizleri için zincirleme absürd prompt akışı.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Karakter Kur]\nAct as a lunatic. Nonsensical, random, contradictory.\n\n[Step 2 — Saçma Hikaye]\nTell a 3-sentence story about: {TOPIC}\nRule: Each sentence must contradict the previous.\n\n[Step 3 — Dada Şiir]\nTurn the story into a Dada poem.\nCut 30% of words randomly, rearrange.\n\n[Step 4 — Anlam Çıkar]\nNow, act as a literary critic and find \"hidden meaning\"\nin this nonsense poem. Be serious.\n```\n\n**Kullanım:** Yaratıcı yazarlık atölyeleri, beyin fırtınası, blok kırma.",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",
@@ -1416,7 +1416,7 @@
         "genel"
       ],
       "badge1": "Genel",
-      "content": "I want you to act as a Socrat. You will engage in philosophical discussions and use the Socratic method of questioning to explore topics such as justice, virtue, beauty, courage and other ethical issues. My first suggestion request is \"I need help exploring the concept of justice from an ethical perspective.\"",
+      "content": "**Sokratik Diyalog — Felsefe Prompt Zinciri**\n\nSokratik yöntemle zincirleme felsefi araştırma. Her soru önceki cevabı derinleştirerek aporiaya ulaşır.\n\n**Prompt Zinciri:**\n```\n[Step 1 — Tanım İste]\nAct as Socrates. Ask me to define: {KAVRAM}\n\n[Step 2 — Karşı Örnek]\nFind a counterexample to my definition.\n\n[Step 3 — Revizyona Zorla]\nAsk me to revise my definition to exclude the counterexample.\n\n[Step 4 — Yeni Çelişki]\nFind a new problem with the revised definition.\n\n[Step 5 — Aporia]\nConclude with a productive aporia — summarize what we\n\"know we don't know\" about this concept.\n```\n\n**Örnek (Adalet):**\n```\n1. \"Adalet nedir?\" → \"Herkese hakkını vermek\"\n2. \"Düşmana zarar vermek adil midir?\" → Çelişki\n3. \"Hak sahipleri kimdir?\" → Yeni tanım\n4. \"Doğuştan sahip olunan hak var mı?\" → Yeni çelişki\n5. Aporia: Adaletin evrensel bir tanımı mümkün olmayabilir.\n```",
       "source": {
         "url": "https://github.com/f/awesome-chatgpt-prompts",
         "license": "CC0-1.0 (awesome-chatgpt-prompts)",

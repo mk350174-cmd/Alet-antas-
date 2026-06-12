@@ -93,7 +93,7 @@
         "excel"
       ],
       "badge1": "Temel",
-      "content": "**VBA Makro:** Excel → Alt+F11 → Insert → Module. ```vba\nSub TemizleVeFormatlat()\n  With ActiveSheet\n    .Columns.AutoFit\n    .Range(\"A1\").CurrentRegion.Interior.Color = RGB(200,230,255)\n  End With\nEnd Sub\n``` Makroyu kaydet: Görünüm → Makro Kaydet → işlemi yap → durdur. Sonra kodu incele. En iyi öğrenim yöntemi: önce kaydet, sonra düzenle.",
+      "content": "**VBA Makro ile Excel Otomasyonu**\n\nExcel'de tekrarlayan görevleri VBA makrosu ile otomatikleştirin. Alt+F11 ile VBA Editörü açın, Insert → Module ile yeni modül ekleyin.\n\n**Temel Makro Şablonu:**\n```vba\nSub TemizleVeFormatlat()\n    Dim ws As Worksheet\n    Set ws = ActiveSheet\n    \n    ' Boş satırları sil\n    Dim i As Long\n    For i = ws.UsedRange.Rows.Count To 1 Step -1\n        If ws.Cells(i, 1).Value = \"\" Then\n            ws.Rows(i).Delete\n        End If\n    Next i\n    \n    ' Başlık satırı formatla\n    With ws.Rows(1)\n        .Font.Bold = True\n        .Interior.Color = RGB(70, 130, 180)  ' Çelik mavisi\n        .Font.Color = RGB(255, 255, 255)\n    End With\n    \n    ' Sütunları otomatik genişlet\n    ws.UsedRange.EntireColumn.AutoFit\n    \n    MsgBox \"Temizleme tamamlandı! Satır sayısı: \" & ws.UsedRange.Rows.Count\nEnd Sub\n```\n\n**Önemli Kısayollar:**\n```\nAlt+F8          → Makro Çalıştır\nAlt+F11         → VBA Editörü\nCtrl+Shift+S    → Makro kaydet\n```\n\n**Hata Yönetimi:**\n```vba\nOn Error GoTo HataYonetici\n' ... kod ...\nExit Sub\nHataYonetici:\n    MsgBox \"Hata: \" & Err.Description\n```",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "otomatik"
       ],
       "badge1": "Modern",
-      "content": "**Power Query:** Veri → Veri Al → kaynağı seç. Transform adımlar kaydedilir. 'Yenile' ile aynı adımları tekrar uygula. Kullanım: aylık raporları birleştir, formatı standartlaştır, pivot öncesi hazırla. Kod gerektirmez. M dili: ileri özelleştirme. Excel 2016+ ücretsiz, en güçlü ETL aracı ofislerde.",
+      "content": "**Excel Power Query ile Veri Dönüşümü Otomasyonu**\n\nPower Query, veri temizleme adımlarınızı kaydeder. 'Yenile' tuşuyla aynı işlemi tekrarlayın — VBA gerektirmez.\n\n**Power Query Açma:**\n```\nVeri → Veri Al → Dosyadan / Web'den / Veritabanından\nVeya: Veri → Veri Al → Excel Çalışma Kitabından\n```\n\n**Yaygın M Kodu Dönüşümleri:**\n```m\n// Power Query M Dili\nlet\n    Kaynak = Csv.Document(File.Contents(\"C:\\veri.csv\"),\n             [Delimiter=\",\", Encoding=1254]),  // TR encoding\n    Üstbilgi = Table.PromoteHeaders(Kaynak),\n    \n    // Sütun türleri belirle\n    TürDönüşüm = Table.TransformColumnTypes(Üstbilgi,\n        {{\"Tarih\", type date}, {\"Tutar\", type number}, {\"Müşteri\", type text}}),\n    \n    // Boş satırları filtrele\n    Filtrele = Table.SelectRows(TürDönüşüm,\n        each [Müşteri] <> null and [Tutar] > 0),\n    \n    // Yeni hesaplanmış sütun\n    KDVEkle = Table.AddColumn(Filtrele, \"KDV\",\n        each [Tutar] * 0.20, type number)\nin\n    KDVEkle\n```\n\n**Otomatik Yenileme:**\n```\nVeri → Bağlantılar → Tümünü Yenile (Ctrl+Alt+F5)\nVeya: Sağ tık → Yenile (tek sorgu)\n```\n\n**İpucu:** Birden fazla kaynağı birleştirin: Append (alt alta ekle) veya Merge (JOIN gibi) ile.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "zamanlama"
       ],
       "badge1": "Windows",
-      "content": "**Task Scheduler:** Başlat → Görev Zamanlayıcı → Temel Görev Oluştur. Tetikleyici: günlük/haftalık/açılışta. Eylem: Program başlat → python.exe. Argümanlar: C:\\scripts\\rapor.py. Başlangıç dizini: C:\\scripts. Test: hemen çalıştır. Log ekle script'e: `logging.basicConfig(filename='log.txt')`. Alternatif: schtasks komutu (CLI).",
+      "content": "**Windows Görev Zamanlayıcı + Python Script Otomasyonu**\n\nPython scriptini Task Scheduler ile günlük/haftalık otomatik çalıştırın. Conda veya venv ile izole ortam kullanın.\n\n**Script Hazırlığı:**\n```python\n# my_automation.py\nimport sys, os, logging\nfrom datetime import datetime\n\n# Log dosyası (relative path yerine absolute kullan)\nlog_path = os.path.join(os.path.dirname(__file__), 'automation.log')\nlogging.basicConfig(\n    filename=log_path,\n    level=logging.INFO,\n    format='%(asctime)s %(levelname)s: %(message)s'\n)\n\ntry:\n    logging.info(\"Script başladı\")\n    # ... asıl iş ...\n    logging.info(\"Script tamamlandı\")\nexcept Exception as e:\n    logging.error(f\"Hata: {e}\", exc_info=True)\n    sys.exit(1)\n```\n\n**Task Scheduler Adımları:**\n```\n1. Görev Zamanlayıcı aç (taskschd.msc)\n2. Temel Görev Oluştur → İsim: PythonOtomasyon\n3. Tetikleyici: Günlük, saat 08:00\n4. Eylem: Program başlat\n   Program: C:\\Python311\\python.exe\n   Argümanlar: C:\\Scripts\\my_automation.py\n   Başlangıç yeri: C:\\Scripts\\\n5. Koşullar: Güç bağlıysa çalıştır (laptop için kaldır)\n```\n\n**Alternatif (schtasks CLI):**\n```cmd\nschtasks /create /tn \"PythonOtomasyon\" /tr \"python C:\\Scripts\\script.py\" /sc daily /st 08:00\n```",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "entegrasyon"
       ],
       "badge1": "No-Code",
-      "content": "**Zapier Temel:** Zap = Trigger + Action(lar). Örnek: Gmail'de yeni e-posta → Google Sheets'e satır ekle. Örnek 2: Typeform yanıt → Slack bildirim + Notion satır. Ücretsiz plan: 5 Zap, 100 görev/ay. Ücretli: sınırsız. Alternatifler: Make (Integromat), n8n (open source, self-hosted). No-code otomasyon başlangıç için mükemmel.",
+      "content": "**Zapier ile No-Code Süreç Otomasyonu**\n\nZap = Tetikleyici (Trigger) + Eylem(ler) (Actions). Kod yazmadan 6000+ uygulama arasında veri akışı kurun.\n\n**Yaygın Zap Şablonları:**\n```\nGmail → Sheets:\n  Tetikleyici: Gmail'de etiketli e-posta\n  Eylem: Google Sheets'e yeni satır ekle\n  Kullanım: Müşteri sorularını Excel'de takip et\n\nAirtable → Slack:\n  Tetikleyici: Airtable'da kayıt güncellendi\n  Eylem: Slack kanalına mesaj gönder\n  Kullanım: Proje takımına otomatik bildirim\n\nTypeform → Google Drive:\n  Tetikleyici: Yeni form yanıtı\n  Eylem 1: Drive'a PDF oluştur\n  Eylem 2: E-posta ile gönder\n```\n\n**Multi-Step Zap Mantığı:**\n```\nTetikleyici: Stripe'da yeni ödeme\n  → Filtre: Tutar > 1000 TL\n    → Eylem 1: Sheets'e kaydet\n    → Eylem 2: Slack'e bildir (#sales kanalı)\n    → Eylem 3: Gmail'den teşekkür e-postası gönder\n```\n\n**Zapier'in Webhook'u:**\n```\nCatch Hook URL'si alın → Her uygulamadan POST isteği\nFormat: {\"name\": \"Ahmet\", \"email\": \"a@b.com\"}\nBu veriyi istediğiniz uygulamaya yönlendirin\n```\n\n**Fiyatlandırma:** Ücretsiz: 100 görev/ay, 5 Zap. Starter $19.99/ay: 750 görev, sınırsız Zap.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "akış"
       ],
       "badge1": "İleri",
-      "content": "**Make Avantajları:** Zapier'e kıyasla: daha ucuz, daha görsel, veri dönüşümü güçlü. Senaryo = akış şeması gibi. Modüller: HTTP istek, JSON parse, döngü, filtre, hata yönetimi. Kullanım: API'den veri çek → işle → birden fazla hedefe gönder. Fiyat: ücretsiz 1000 işlem/ay. Türkiye'de Make + Google Sheets + Telegram bot kombinasyonu çok popüler.",
+      "content": "**Make (eski Integromat) ile Görsel İleri Otomasyon**\n\nZapier'e kıyasla daha güçlü, daha ucuz ve daha görsel no-code otomasyon platformu. Senaryo = akış diyagramı.\n\n**Make vs Zapier Karşılaştırması:**\n```\n            Make          Zapier\nFiyat:      $9/ay         $19.99/ay\nGörev:      1000/ay       750/ay\nGörsellik:  Diyagram UI   Liste UI\nVeri dönüş: Güçlü         Sınırlı\nLoop:       Var           Yok (Zapier)\nHata yönet: İyi           Basit\n```\n\n**Senaryo Yapısı:**\n```\nHTTP Trigger → JSON Parse → Router (if/else)\n  ├─ Koşul A: Google Sheets → Gmail\n  └─ Koşul B: Slack → Airtable → Telegram\n```\n\n**Iterator + Aggregator Örneği:**\n```\nGoogleSheets.getRows → Iterator (her satır için)\n  → HTTP.request (API çağrısı, her satır için)\n  → Array.aggregator (tüm sonuçları birleştir)\n  → GoogleSheets.addRows (toplu ekle)\n```\n\n**Webhook Almak:**\n```\n1. Make → Yeni senaryo → Webhook modülü ekle\n2. URL kopyala: https://hook.eu1.make.com/xxxx\n3. Kaynak uygulamada bu URL'ye POST gönder\n4. Make'te veriyi işle: JSON Parse → diğer modüller\n```\n\n**Ücretsiz Başlangıç:** 1000 operasyon/ay, sınırsız senaryo, tüm entegrasyonlara erişim.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "zamanlama"
       ],
       "badge1": "Linux",
-      "content": "**Cron Syntax:** `crontab -e` ile düzenle. Format: `dakika saat gün ay haftanın-günü komut`. Örnekler: `0 9 * * 1-5` = Hafta içi sabah 9. `*/30 * * * *` = Her 30 dakika. `0 0 1 * *` = Her ayın 1'i gece yarısı. `@reboot /path/script.sh` = Her açılışta. `crontab -l` mevcut görevleri listele. Log: `>> /var/log/myjob.log 2>&1` ekle.",
+      "content": "**Cron Syntax Tam Referans Rehberi**\n\nLinux/Mac zamanlamaları için cron expression yazımı ve test etme.\n\n**Syntax Açıklaması:**\n```\n┌───────── dakika (0-59)\n│ ┌─────── saat (0-23)\n│ │ ┌───── gün (1-31)\n│ │ │ ┌─── ay (1-12)\n│ │ │ │ ┌─ haftanın günü (0-7, 0 ve 7=Pazar)\n│ │ │ │ │\n* * * * *  komut\n```\n\n**Sık Kullanılan Örnekler:**\n```bash\n# Her gün sabah 9:00\n0 9 * * * /usr/bin/python3 /scripts/daily_report.py\n\n# Her Pazartesi saat 08:30\n30 8 * * 1 /scripts/weekly_backup.sh\n\n# Her 15 dakikada bir\n*/15 * * * * /scripts/check_api.py\n\n# Ayın 1. günü gece yarısı\n0 0 1 * * /scripts/monthly_cleanup.sh\n\n# Hafta içi (Pzt-Cum) saat 17:00\n0 17 * * 1-5 /scripts/end_of_day.py\n\n# Her 6 saatte bir\n0 */6 * * * /scripts/sync_data.py\n```\n\n**crontab Düzenleme:**\n```bash\ncrontab -e       # Düzenle\ncrontab -l       # Listele\ncrontab -r       # Tümünü sil\n```\n\n**Test Aracı:** crontab.guru sitesinde cron ifadelerini interaktif olarak test edin. Log için: `>> /var/log/cron.log 2>&1` ekleyin.",
       "source": {
         "generated": true
       }

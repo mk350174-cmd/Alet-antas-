@@ -88,7 +88,7 @@
         "tarih"
       ],
       "badge1": "Başlangıç",
-      "content": "## Yazar ve Tarih Tespiti\n1.  Belgenin içinden yazar adı, unvanı ve yazılış tarihi bilgilerini çıkarın.\n2.  Belgenin türünü (mektup, günlük, resmi belge vb.) tespit edin.\n3.  Yazarın belgedeki olaya doğrudan katılım derecesini değerlendirin.",
+      "content": "**Kaynak Kimlik Tespiti: Tarihi Belge ve Anlatı Analizi**\n\nTarihi bir iddia veya anlatı karşısında ilk adım kaynağın kim olduğunu tespit etmektir.\n\n**Kaynak sınıflandırma çerçevesi:**\n\n| Kaynak Türü | Örnekler | Güvenilirlik Notu |\n|-------------|----------|-------------------|\n| Birincil (Primary) | Mektup, günlük, tanıklık, resmi kayıt | En doğrudan; kendi önyargıları var |\n| İkincil (Secondary) | Tarih kitapları, akademik makaleler | Birincil kaynakları yorumlar |\n| Üçüncül (Tertiary) | Ansiklopedi, ders kitabı | Özetler; hata riski yüksek |\n\n**Kimlik soruları şablonu:**\n```\n1. Kim yazdı? — Birey mi, kurum mu, anonim mi?\n2. Ne zaman yazıldı? — Olay sırasında mı, sonrasında mı?\n3. Neden yazıldı? — Bilgilendirme, ikna, propaganda?\n4. İlk izleyici kitlesi kimdi? — Kamuya açık mı, özel mi?\n5. Orijinal format ne? — El yazması, basılı, dijital?\n```\n\n**Kırmızı bayraklar:**\n- Yazar kimliği belirsiz veya mahlas\n- Tarih verilmemiş\n- Kaynak bağlantıları yok\n- Dil veya üslup dönemle uyumsuz",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -107,7 +107,7 @@
         "değerlendirme"
       ],
       "badge1": "Orta",
-      "content": "## Anlatı Tutarlılığı Kontrolü\n1.  Belgedeki ana iddiaları ve destekleyici kanıtları listeleyin.\n2.  Olayların kronolojik ve nedensel akışında çelişki olup olmadığını inceleyin.\n3.  Anlatının mevcut tarihsel bilgilerle uyumunu karşılaştırın.",
+      "content": "**İçerik Olasılığı Değerlendirmesi**\n\nBir tarihi iddia ne kadar olası? Sistematik değerlendirme yöntemi:\n\n**CRAAP testi (Tarih uyarlaması):**\n```\nC — Currency (Güncellik): Bilgi ne zaman üretildi? Revize edildi mi?\nR — Relevance (İlgililik): İddia soruyla gerçekten ilgili mi?\nA — Authority (Otorite): Yazar alanda uzman mı? Hangi kurumdan?\nA — Accuracy (Doğruluk): İddialar kanıtlanabilir mi? Atıflar doğru mu?\nP — Purpose (Amaç): Neden yazıldı? Taraflı bir ajanda var mı?\n```\n\n**Olasılık değerlendirme soruları:**\n1. Bu olay dönemin koşullarında teknik olarak mümkün müydü?\n2. Benzer dönem kayıtlarıyla tutarlı mı?\n3. İddiayı destekleyen bağımsız kaynaklar var mı?\n4. Alternatif açıklamalar neler? Daha basit bir açıklama yok mu? (Occam's razor)\n\n**Güven düzeyi tayfı:**\n```\nKesin → Yüksek olasılıklı → Mümkün → Spekülatif → Olasız\n```\n\nAkademik çalışmalarda her iddiayı bu tayfta konumlandırın.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -126,7 +126,7 @@
         "eleştirel"
       ],
       "badge1": "Orta",
-      "content": "## Yazarın Amacı ve Önyargıları\n1.  Yazarın sosyal, politik ve kültürel arka planını araştırın.\n2.  Belgenin hedef kitlesini ve yazarın onlara ne mesaj vermek istediğini belirleyin.\n3.  Belgedeki güçlü duygusal dil veya retorik unsurları tespit edin.",
+      "content": "**Tarihi Kaynaklarda Önyargı ve Amaç Analizi**\n\nHer tarihi kaynak bir perspektiften yazılmıştır. Önyargıyı analiz etmek anlamayı derinleştirir.\n\n**Önyargı türleri:**\n\n1. **Ulusal/etnik önyargı:** Savaş tarihleri, milli kahraman anlatıları\n2. **Siyasi önyargı:** Hâkim iktidarı meşrulaştırma\n3. **Dinî önyargı:** Mucizeleri gerçek, 'sapkınları' kötü gösterme\n4. **Sınıf önyargısı:** Seçkinlerin bakış açısı (köylüler, köleler eksik)\n5. **Anachronism:** Geçmişi modern değerlerle yargılama\n6. **Survivor bias:** Hayatta kalan kaynaklar; kaybedilenlerin sesi yok\n\n**Analiz şablonu:**\n```\nKaynak: [Belge/Kitap adı]\nYazarın pozisyonu: [Kazanan mı? Mağdur mu? Gözlemci mi?]\nBelirgin önyargı türü: [Yukarıdan seç]\nBu önyargının içeriğe etkisi: [Hangi bilgi vurgulandı? Ne atlandı?]\nDenge için gerekli kaynaklar: [Karşıt perspektif]\n```\n\n**Pratik ipucu:** Aynı olayın iki farklı tarafından yazılmış kaynağı yan yana okuyun — örtüşme ve ayrışma noktaları analitik altın madenidir.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -145,7 +145,7 @@
         "teyit"
       ],
       "badge1": "İleri",
-      "content": "## Kaynak Orijinallik Teyidi\n1.  Belgenin fiziksel özelliklerini (kağıt, mürekkep, yazı tipi) inceleyin.\n2.  Metinde dilbilgisi, imla veya üslup açısından tutarsızlık arayın.\n3.  Kaynakta belirtilen diğer kişilerin veya olayların varlığını doğrulamak için ikincil kaynaklara başvurun.",
+      "content": "**Tarihi Belgenin Orijinallik ve Doğruluk Kontrolü**\n\nSahte belgeler tarih boyunca siyasi araç olarak kullanılmıştır. Sistematik doğrulama şarttır.\n\n**Orijinallik kontrol yöntemleri:**\n\n1. **Materyal analizi:**\n   - Kâğıt / parşömen dönemle uyumlu mu? (C-14 testi, su izi)\n   - Mürekkep bileşimi dönemin teknolojisiyle tutarlı mı?\n   - Cilt ve koruyucu teknikler dönemi yansıtıyor mu?\n\n2. **Dil analizi:**\n   - Kelime dağarcığı ve dilbilgisi dönemin diline uygun mu?\n   - Dönemde henüz var olmayan terimler kullanılmış mı?\n\n3. **Provenance (Köken zinciri):**\n   - Belgenin tarih boyunca nerede bulunduğu belgeleniyor mu?\n   - Arşiv kayıtlarında geçmiş var mı?\n\n4. **Bağlamsal tutarlılık:**\n   - Belgedeki olaylar diğer kaynaklarda doğrulanıyor mu?\n   - Tarih, yer, kişi isimleri bağlamla örtüşüyor mu?\n\n**Ünlü sahte belgeler:** Konstantinopolis Bağışı (Donation of Constantine), Hitler Günlükleri — her ikisi de materyal analiziyle çözüldü.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -164,7 +164,7 @@
         "tutarlılık"
       ],
       "badge1": "Başlangıç",
-      "content": "## Olayların Zaman Akışı Kontrolü\n1.  Belirtilen tarihler arasında çelişki olup olmadığını kontrol edin.\n2.  Olayların mantıksal bir sıra içinde gelişip gelişmediğini değerlendirin.\n3.  Farklı kaynaklardan gelen tarihleri karşılaştırarak uyumsuzlukları belirleyin.",
+      "content": "**Kronolojik Tutarlılık Analizi**\n\nOlayların sırasını ve tarihlerini doğrulamak anlatının güvenilirliğini test eder.\n\n**Kronoloji oluşturma şablonu:**\n```\nTarih | Olay | Kaynak | Notlar\n-------|------|--------|-------\nMS 476 | Batı Roma'nın çöküşü | Procopius + modern akademi | Tartışmalı; süreç mi, tarih mi?\nMS 630 | İslam'ın Arabistan'a yayılması | Çoklu kaynaklar | |\n```\n\n**Tutarlılık kontrol soruları:**\n1. Neden-sonuç mantıklı bir kronoloji oluşturuyor mu?\n2. Bir olayın sonucu, iddia edilen tarihte henüz gerçekleşmiş olabilir miydi?\n3. Farklı takvimlerin dönüşümü doğru yapıldı mı? (Jülyen ↔ Gregoryen ↔ Hicri)\n\n**Takvim dönüşüm uyarıları:**\n- Jülyen-Gregoryen farkı: 1582 Gregoryen reformundan önce 10 gün, günümüzde 13 gün\n- Hicrî yıl ~354 gün (ay takvimi); Miladi'ye birebir eşleşmez\n- Bizans yılı Eylül'de başlar — belgelerde 'Aralık 6800' tuhaf görünebilir\n\n**Araç:** ChronoZoom, Tiki-Toki gibi görsel zaman çizelgesi araçları tutarsızlıkları hızla ortaya çıkarır.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -183,7 +183,7 @@
         "harita"
       ],
       "badge1": "Orta",
-      "content": "## Mekanların Tarihi Kontrolü\n1.  Belgede geçen coğrafi adların o döneme ait haritalarla uyumunu denetleyin.\n2.  Belirtilen yerlerin fiziksel özelliklerinin (nehir, dağ vb.) tarihsel kayıtlarla eşleştiğini doğrulayın.\n3.  Mekanların stratejik veya kültürel önemini dönemin koşullarına göre değerlendirin.",
+      "content": "**Tarihi Anlatılarda Coğrafi Doğrulama**\n\nTarihi coğrafya sorgulamak anlatının tutarlılığını ve fiziksel mümkünlüğünü test eder.\n\n**Coğrafi doğrulama adımları:**\n\n1. **Yer adı tespiti:**\n   - Antik yer adlarını modern karşılıklarıyla eşleştirin\n   - Örnek: 'Konstantinopolis' → İstanbul; 'Aquae Sulis' → Bath, İngiltere\n   - Araç: Pleiades (pleiades.stoa.org) — antik dünya coğrafyası\n\n2. **Mesafe ve güzergah analizi:**\n   - Ordu yürüyüşü: Antik ordular günde ortalama 20-30 km\n   - Deniz yolculuğu: Akdeniz yelkenlisi günde 100-130 km\n   - İddia edilen süre ile mesafe uyumlu mu?\n\n3. **Fiziksel coğrafya:**\n   - Dağ geçitleri hangi mevsimde açık?\n   - Nehir geçişleri mevsimle değişir mi?\n   - Orman, bataklık, çöl engelleyici miydi?\n\n4. **Çevre tarihi:**\n   - Dönemde iklim nasıldı? (Küçük Buzul Çağı, Orta Çağ Isınması)\n   - Orman örtüsü değişimi nüfus ve tarımı etkiler\n\n**Örnek araçlar:** Google Earth Historical Imagery, QGIS ile tarihi harita katmanları.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -202,7 +202,7 @@
         "rol"
       ],
       "badge1": "Orta",
-      "content": "## Şahsiyetlerin Kimlik Tespiti\n1.  Belgedeki ana figürlerin isimlerini ve unvanlarını listeleyin.\n2.  Bu figürlerin yaşam sürelerini ve kariyerlerini güvenilir ansiklopedik kaynaklarla karşılaştırın.\n3.  Rollerinin ve eylemlerinin mevcut tarihsel konsensüsle uyumlu olup olmadığını inceleyin.",
+      "content": "**Tarihi Anahtar Figür Doğrulaması**\n\nTarihi kişiliklerin varlığını, eylemlerini ve yorumunu doğrulamak için çok katmanlı yöntem:\n\n**Kişi doğrulama soruları:**\n```\n1. Bu kişinin varlığını kaç bağımsız kaynak doğruluyor?\n2. Kaynaklar birbirinden bağımsız mı yoksa zincirleme atıf mı?\n3. Biyografik tutarlılık: Doğum-ölüm yerleri ve tarihleri örtüşüyor mu?\n4. Dönemin diğer figürleriyle ilişkisi makul mü?\n```\n\n**Bağımsız doğrulama seviyeleri:**\n- **Yüksek güven:** 3+ çağdaş bağımsız kaynak\n- **Orta güven:** Sonraki yüzyıl kaynakları, arkeolojik kanıt\n- **Düşük güven:** Tek kaynak, geç döneme ait\n- **Mitolojik/efsanevi:** Tarihî kanıt yok\n\n**Örnekler:**\n- **Homer:** Kendi hayatı tartışmalı; eserleri kesin\n- **Kral Arthur:** Tarihi varlık kanıtlanmamış, efsane olarak sağlam\n- **İsa:** Birden fazla Roma kaynağında geçer, yüksek güven\n\n**Araçlar:** Oxford DNB (İngiliz tarihçiler), Prosopographia Imperii Romani (Roma dönemler), TDV İslam Ansiklopedisi (Osmanlı-İslam)",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -221,7 +221,7 @@
         "dönem"
       ],
       "badge1": "İleri",
-      "content": "## Anachronism Avcısı\n1.  Metindeki teknoloji, giyim, dil veya sosyal normlara dair ifadeleri tarayın.\n2.  Bu unsurların belirtilen döneme ait olup olmadığını kontrol edin.\n3.  Tespit edilen anachronism'lerin metnin güvenilirliğini nasıl etkilediğini analiz edin.",
+      "content": "**Anachronism (Zaman Dışılık) Tespiti**\n\nAnakronizm, bir dönemde var olmayan bir nesnenin, kavramın veya pratiğin o döneme yerleştirilmesidir.\n\n**Anachronism türleri:**\n\n1. **Nesne anakronizmi:** Orta Çağ resimlerinde saat, Roma gladyatör filmlerinde stirap\n2. **Kavram anakronizmi:** 13. yüzyılda 'kapitalizm', Antik Yunan'da 'demokrasi' (modern anlamda)\n3. **Dil anakronizmi:** Dönemin dilinde var olmayan sözcükler\n4. **Değer anakronizmi:** Geçmiş figürleri modern etik çerçevesiyle yargılamak\n\n**Tespit kontrol listesi:**\n```\n□ Söz edilen nesne dönemde icat edilmiş miydi?\n□ Kullanılan kavramlar dönemde bu anlamıyla var mıydı?\n□ Tarif edilen sosyal kurumlar mevcut muydu?\n□ Atlıfta bulunulan teknoloji dönemle uyumlu mu?\n```\n\n**Film ve roman örnekleri:**\n- Gladyatör (2000): Kolize'deki sis makineleri, stirap\n- Braveheart (1995): Kilt kullanımı — o dönemde yoktu\n- Spartacus dizisi: Birçok modern diyalog kalıbı\n\nAraştırmacı ve kurgu yazarları için vazgeçilmez kontrol.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -240,7 +240,7 @@
         "mitoloji"
       ],
       "badge1": "Başlangıç",
-      "content": "## Archetip Belirleme Rehberi\n1.  Hikayedeki ana karakterleri (kahraman, akıl hocası, gölge) ve rollerini listele.\n2.  Tekrarlayan sembolleri (su, ağaç, mağara) ve bunların kültürel anlamlarını araştır.\n3.  Bu archetiplerin hikayenin genel mesajına nasıl katkıda bulunduğunu yorumla.",
+      "content": "**Mitolojik Archetip Analizi**\n\nJung ve Campbell'ın çerçeveleri, evrensel karakter ve olay kalıplarını tanımlar:\n\n**Campbell'ın Kahraman Yolculuğu (Monomyth) aşamaları:**\n```\n1. Olağan Dünya\n2. Maceraya Çağrı\n3. Çağrıyı Reddetme\n4. Akıl Hocasıyla Buluşma\n5. Eşiği Geçme\n6. Sınavlar, Müttefikler, Düşmanlar\n7. En Derin Mağara\n8. Büyük Sınav\n9. Ödül\n10. Geri Dönüş Yolu\n11. Yeniden Diriliş\n12. Elixir ile Dönüş\n```\n\n**Jung'un temel arketipleri:**\n- **Kahraman:** Prometheus, Herakles, modern Superman\n- **Gölge:** İçsel karanlık — Hades, Şeytan figürü\n- **Bilge:** Merlin, Gandalf, Usta figürü\n- **Trickster:** Loki, Hermes, Nasreddin Hoca\n- **Büyük Ana:** Toprak ana, Gaia, Kibele\n\n**Karşılaştırmalı analiz:** Aynı arketipi farklı kültürlerde bulun:\n```\nKahraman → Herakles (Yunan) / Enkidu (Sümer) / Cü Cang (Çin) / Manas (Kırgız)\n```\nBu örtüşme kolektif bilinçdışının işaretidir (Jung) veya paylaşılan insan deneyiminin (modern antropoloji).",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -259,7 +259,7 @@
         "tema"
       ],
       "badge1": "Orta",
-      "content": "## Hikaye Yapısı Değerlendirmesi\n1.  Hikayenin başlangıç, gelişme ve sonuç aşamalarını belirleyin.\n2.  Ana temaları (aşk, kader, intikam) ve bunların nasıl işlendiğini açıklayın.\n3.  Kullanılan anlatım tekniklerini (metafor, alegori, kehanet) ve etkilerini saptayın.",
+      "content": "**Tarihi ve Mitolojik Anlatı Yapısı Çözümlemesi**\n\nBir anlatının nasıl kurulduğunu analiz etmek, amacını ve etkisini anlamayı sağlar.\n\n**Anlatı analizi çerçevesi:**\n\n1. **Olay örgüsü:** Olaylar kronolojik mi, geriye dönük mü anlatılıyor?\n2. **Anlatıcı:** Kim anlatıyor? Birinci, ikinci, üçüncü şahıs?\n3. **Perspektif:** Hangi tarafın görüşü? Neyin dışarıda bırakıldığını sorun\n4. **Çatışma türü:**\n   - İnsan-insan (savaş, iktidar)\n   - İnsan-doğa (kıtlık, sel)\n   - İnsan-tanrı/kader (trajedi)\n   - İçsel çatışma (hamlet türü)\n5. **Çözüm:** Açık mı, kapalı mı? Kim galip, kim kurban?\n\n**Anlatı bileşeni çıkarma şablonu:**\n```\nBaşlangıç durumu: [Stasis]\nBozucu olay: [İlk çatışma]\nGelişme: [Ana eylemler ve kararlar]\nZirve: [Dönüm noktası]\nSonuç: [Yeni durum]\n```\n\n**Neden önemli:** Yönetici sınıflar anlatıyı şekillendirir. 'Kim yazdığını' ve 'ne zaman yazıldığını' bilmek anlatıyı doğru konumlandırır.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -278,7 +278,7 @@
         "inanç"
       ],
       "badge1": "Orta",
-      "content": "## Kültürel Etki Analizi\n1.  Hikayenin üretildiği toplumun sosyal yapısını ve inanç sistemini araştırın.\n2.  Mitin o kültürdeki işlevini (açıklayıcı, eğitici, moral verici) belirleyin.\n3.  Hikayenin kültürel kimliğin oluşumuna nasıl katkı sağladığını yorumlayın.",
+      "content": "**Kültürel Bağlam Değerlendirmesi**\n\nTarihi olayları kendi döneminin değerleri ve koşullarıyla anlamak tarih araştırmasının temelidir.\n\n**Kültürel bağlam boyutları:**\n\n1. **Ekonomik yapı:** Tarım mı, ticaret mi, feodal mi?\n2. **Siyasi örgütlenme:** Klan, site-devlet, imparatorluk, teokrasi?\n3. **Dinî-ideolojik çerçeve:** Tanrı-kral inancı, monoteizm, animizm?\n4. **Sosyal sınıf yapısı:** Kast, kölelik, serflik, burjuvazi?\n5. **Teknoloji seviyesi:** Demir Çağı, matbaa öncesi, endüstri öncesi?\n\n**Bağlamsal yorum soruları:**\n```\n- Bu karar döneminin insanı için mantıklı mıydı?\n- Mevcut alternatifler nelerdi? Hangi bilgiye erişimdi?\n- Dönemin 'normal' değerleri neydi?\n- Olayın diğer toplumlarla temas noktaları var mı?\n```\n\n**Hata kaçınma:** Presentism (günümüz değerleriyle geçmişi yargılamak)\n- Kötü: 'Orta Çağ insanları aptaldı, yakmak yerine ilaç verebilirlerdi'\n- İyi: 'Dönemin humoral tıp teorisi göz önünde bulundurulduğunda bu tedavi tutarlıydı'\n\nToplumsal empati tarihin en zor ve en değerli becerisdir.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -297,7 +297,7 @@
         "kültür"
       ],
       "badge1": "İleri",
-      "content": "## Mitolojik Paralellikler\n1.  İki veya daha fazla mitolojik anlatıyı seçin ve ana motiflerini listeleyin.\n2.  Karakterlerin, olay örgülerinin ve sembollerin ortak yönlerini karşılaştırın.\n3.  Farklılıkların kültürel veya coğrafi nedenlerini açıklayın.",
+      "content": "**Karşılaştırmalı Mitoloji Analizi**\n\nFarklı kültürlerin mitlerini karşılaştırmak evrensel insan deneyimini ortaya koyar.\n\n**Karşılaştırmalı yöntem adımları:**\n\n1. **Motif tespiti:** Temel olay/karakter kalıplarını çıkar\n   - Tufan miti: Nuh, Utnapiştim, Manu, Deucalion\n   - Ateşin çalınması: Prometheus, Maui (Polinez)\n   - Ölü diyarına iniş: Inanna, Orpheus, İzanami\n\n2. **Yapısal analiz:** Vladimir Propp'un 31 işlevi veya Lévi-Strauss'un ikili karşıtlıkları\n   - Karşıtlık çiftleri: Ham/pişmiş, doğa/kültür, ölümlü/ölümsüz\n\n3. **Yayılma teorileri:**\n   - **Difüzyon:** Mitler ticaret yoluyla yayıldı (Afroavrasya bağlantısı)\n   - **Poligenez:** Benzer insan deneyimleri bağımsız benzer mitleri doğurdu\n\n4. **Kültürel uyarlamalar:** Temel mit neden bu kültürde bu şekle büründü?\n\n**Araçlar:** Frazer'ın 'Altın Dal', Campbell'ın 'Tanrının Binüzü Yüzü', Myth Atlas (görsel karşılaştırma)\n\n**Uygulama:** Türk mitolojisini komşu kültürlerle karşılaştırın: Bozkurt motifi (Türk) ↔ Kurtla büyütülen Roma kurucu miti.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -316,7 +316,7 @@
         "veri"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kaynaklararası Tutarlılık\n1.  Aynı olayı anlatan en az üç farklı birincil veya ikincil kaynak belirleyin.\n2.  Her bir kaynağın temel iddialarını ve detaylarını listeleyin.\n3.  Kaynaklar arasındaki çelişkileri, eksiklikleri veya ek bilgileri tespit edin.",
+      "content": "**Çoklu Kaynak Karşılaştırması Yöntemi**\n\nTek kaynakla tarih yazmak gibi tek gözle derinlik görmek gibidir. Çoklu kaynak karşılaştırması perspektif verir.\n\n**Karşılaştırma matrisi şablonu:**\n```\nOlay: [Anlatılan tarihi olay]\n\nKaynak A (Kazanan taraf): ...\nKaynak B (Kaybeden taraf): ...\nKaynak C (Yansız gözlemci): ...\nKaynak D (Sonraki dönem): ...\n\nÖrtüşen noktalarda: [Bunlar güvenilir çekirdek bilgidir]\nAyrışan noktalarda: [Bunlar önyargı veya eksik bilgi göstergesidir]\nHiçbirinde yok: [Sessiz kalan tarihtir — kim yazmadı?]\n```\n\n**Kaynak kalitesi hiyerarşisi:**\n1. Olay anında yazılmış birincil kaynak\n2. Olay sonrası birincil (tanıklık)\n3. Bağımsız ikincil kaynaklar\n4. Zincire dayalı ikincil kaynaklar\n\n**Uygulama örneği — Çanakkale Savaşı:**\n- Türk arşivi + Avusturalya resmi tarihi + Osmanlı günlükleri + Anzac mektupları\n- Örtüşme: Ağır kayıplar, uzun süre\n- Ayrışma: 'Zafer kimin?' — ulusal anlatı\n\nÇelişen kaynakları bulduğunuzda sevinin: Gerçek analiz oradan başlar.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -335,7 +335,7 @@
         "analiz"
       ],
       "badge1": "Orta",
-      "content": "## Dönem Bağlamı Oluşturma\n1.  İlgili dönemin ana politik güçlerini ve sosyal sınıflarını belirleyin.\n2.  Ekonomik durumu (ticaret, tarım, teknoloji) ve kültürel ortamı özetleyin.\n3.  Belgenin veya olayın bu genel bağlam içinde nasıl bir anlam ifade ettiğini açıklayın.",
+      "content": "**Tarihsel Bağlam Oluşturma**\n\nBir olayı yalnız değil, döneminin bütünlüğü içinde değerlendirmek analizi güçlendirir.\n\n**STEEP çerçevesi (Tarihsel bağlam için):**\n```\nS — Sosyal: Nüfus, sınıf yapısı, aile, cinsiyet rolleri\nT — Teknolojik: Mevcut araçlar, iletişim, ulaşım\nE — Ekonomik: Ticaret, para, mülkiyet yapısı\nE — Ekolojik/Çevresel: İklim, hastalık, doğal kaynaklar\nP — Politik: Yönetim biçimi, güç dengeleri, hukuk\n```\n\n**Bağlam oluşturma soruları:**\n1. Olaydan 50 yıl önce bölgede ne oldu?\n2. Eş zamanlı dünya olayları nelerdi?\n3. Demografik tablo nasıldı?\n4. Dönemin kriz faktörleri nelerdi? (salgın, kıtlık, savaş)\n\n**'Uzun süreç' bakışı (Braudel):**\nTarihin 3 katmanı:\n- Kısa süre: Olay bazlı siyasi tarih\n- Orta süre: Döngüsel ekonomi tarihi\n- Uzun süre: Coğrafya, iklim, kültürel yapı\n\nLongue durée yaklaşımı yüzeysel olay tarihinin ötesine geçer; kalıplar görünür olur.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -354,7 +354,7 @@
         "destek"
       ],
       "badge1": "Orta",
-      "content": "## Kanıt Yolu İzleme\n1.  Başlangıçtaki iddiayı veya hipotezi tanımlayın.\n2.  Bu iddiayı destekleyen veya çürüten her birincil veya ikincil kaynağı sıralayın.\n3.  Her kaynağın bir önceki veya sonrakini nasıl etkilediğini analiz ederek bir kanıt zinciri oluşturun.",
+      "content": "**Kanıt Zinciri Takibi**\n\nTarihi bir iddia için kanıtın hangi kaynaktan geldiğini geriye doğru izlemek, iddia gücünü ölçmenize yarar.\n\n**Kanıt zinciri haritalama:**\n```\nİddia: 'X imparatoru 30.000 kişiyi katletti'\n  ↑\nKaynak 4 (günümüz ansiklopedisi)\n  ↑ atıf\nKaynak 3 (19. yy tarih kitabı)\n  ↑ atıf\nKaynak 2 (16. yy kroniği)\n  ↑ 'denildiğine göre'\nKaynak 1 (12. yy anlatısı — olaydan 300 yıl sonra)\n```\n\n**Zincir kırılma noktaları:**\n- 'Denildiğine göre' / 'rivayet edilir ki' — aktarım zayıflaması\n- Atıf zinciri kırık (kaynak bulunamıyor)\n- Zincir tek kaynağa dayanıyor (tek tanık senaryosu)\n- İlk kaynak açık propaganda amacı taşıyor\n\n**Güçlü zincir kriterleri:**\n1. Her halka belgelenmiş\n2. Bağımsız zincirlerin örtüşmesi\n3. Orijinal kaynaklar erişilebilir ve incelenmiş\n\nArşiv araştırmasında 'bu iddiayı kim ilk söyledi?' sorusu kural değil, zorunluluk.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -373,7 +373,7 @@
         "veri"
       ],
       "badge1": "İleri",
-      "content": "## Bilgi Eksikliği Analizi\n1.  Konuyla ilgili bilinen tüm kaynakları ve onların kapsamlarını listele.\n2.  Hangi soruların cevapsız kaldığını veya hangi dönemlerin yetersiz belgelendiğini saptayın.\n3.  Çelişen kaynaklar arasındaki farklılıkların nedenlerini araştırarak olası bilgi boşluklarını işaretle.",
+      "content": "**Tarihi Kayıtlardaki Boşluk ve Eksik Bilgi Tespiti**\n\nTarih yalnızca yazılanlar değil; kayıp olan, susturulan veya hiç kaydedilmeyenlerdir de.\n\n**Sessizlik türleri:**\n\n1. **Kazara kayıp:** Yangın, sel, savaş — Kütüphane-i İskenderiye, Konstantinopolis yangınları\n2. **Kasıtlı imha:** Muhalefet yazınının yakılması, anıtların tahrip edilmesi\n3. **Dışlanma:** Kadınların, alt sınıfların, azınlıkların kaydedilmemesi\n4. **Teknolojik kısıt:** Yazı öncesi toplumlar, sözlü kültür\n\n**Eksik bilgi tespit soruları:**\n```\n- Kim bu olayı kaydetmedi? Neden?\n- Hangi grup bu kaynakta sessiz?\n- Bu kayıp, kalıpsal mı yoksa rastlantısal mı?\n- Boşluğu dolduran dolaylı kanıtlar var mı?\n```\n\n**Tamamlayıcı yöntemler:**\n- Arkeoloji: Yazılı kaydı olmayan bulgu\n- Antropoloji: Sözlü tarih ve ritüel analizi\n- DNA ve paleopatOloji: Nüfus, göç, hastalık\n- İklim verileri: Buz çekirdeği, halka analizi\n\n**'Boşluğu' okumak:** Osmanlı arşivinde köylü isyanları az kayıtlı — bu yokluğun kendisi bilgidir.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -392,7 +392,7 @@
         "arkeoloji"
       ],
       "badge1": "Başlangıç",
-      "content": "## Seramik Kronoloji Rehberi\n1.  Seramiğin tipini (kap, çanak vb.), üretim tekniğini ve yüzey işlemelerini inceleyin.\n2.  Dekorasyon motiflerini ve form özelliklerini bilinen seramik kronolojileriyle karşılaştırın.\n3.  Bulunan diğer eserler ve stratigrafik verilerle tutarlılığını değerlendirerek tahmini bir tarih aralığı belirleyin.",
+      "content": "**Seramik Tarihlendirme (Seriation ve Tipografi)**\n\nArkeolojide çömlek parçaları en güvenilir tarihleme araçlarından biridir.\n\n**Neden seramik?**\n- Yanmaz, çürümez, her yerde bulunur\n- Stil, teknik ve malzeme değişimleri dönemle tutarlı\n- Üretim merkezine göre bölgesel farklılıklar\n\n**Tarihleme yöntemleri:**\n\n1. **Stratigrafi ile:** Üst katman = daha yeni (basit kural)\n2. **Seriation:** Benzer tipte seramiklerin yoğunluğu zaman içinde eğri çizer\n3. **Tipoloji karşılaştırması:** Bilinen tarihli örneklerle stil eşleştirme\n4. **Termolüminesans (TL):** Kristallerin son ısıtıldığı tarihi ölçer; ±50 yıl hassasiyet\n\n**Seramik analiz boyutları:**\n```\nHamur: Kil bileşimi, temper malzemesi\nYüzey: Perdah, astarlama, boyama\nŞekil: Ağız, gövde, taban profili\nDekor: Motif, teknik, renk\nPişirme: Fırın tipi, oksidasyon derecesi\n```\n\n**Örnek:** Anadolu Tunç Çağı seramiği bölgeye (Troya, Hitit, Frigler) ve döneme göre ayırt edilebilir; yalnızca bir parça ile buluntu yerinin kültürel aidiyeti belirlenebilir.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -411,7 +411,7 @@
         "çeviri"
       ],
       "badge1": "Orta",
-      "content": "## Yazıt Çözümleme Adımları\n1.  Yazıtın dilini ve kullanılan alfabeyi (Latin, Grek, çivi yazısı) belirleyin.\n2.  Harflerin veya sembollerin stilini inceleyerek dönemsel özelliklerini saptayın.\n3.  Metni kelime kelime çevirerek anahtar isimleri, olayları ve unvanları çıkarın.",
+      "content": "**Epigrafik Metin Çözümlemesi**\n\nEpigrafi, yazıtları (taş, metal, kil tablet, papirüs) inceleyen disiplindir.\n\n**Çözümleme aşamaları:**\n\n1. **Fiziksel inceleme:**\n   - Malzeme: Taş türü, metal, kil, papirüs\n   - Yazı tekniği: Kazınmış, dökülmüş, boyalı\n   - Boyut ve konum: Kamusal mı, özel mi?\n\n2. **Paleografik analiz:**\n   - Harf biçimleri tarihleme sağlar (örn. Yunan alfabesinin evrimi)\n   - Bölgesel varyantlar kültürel aidiyeti gösterir\n\n3. **Dil tanımlama:**\n   - Alfabe ve dil eşleşiyor mu?\n   - Bilinmeyen yazı: İkidilli yazıt var mı? (Rozet Taşı: Mısır/Yunan/Demotik)\n\n4. **İçerik kategorisi:**\n   - Resmi: Kral buyruğu, anlaşma, kanun\n   - Dinî: Adak, dua, lanet\n   - Mezar: Epitaf, lakap, statü\n   - Ticari: Borç belgesi, mühür, etiket\n\n**Önemli yazıt korpusları:**\n- Türkiye: Hitit hiyeroglifleri, Urartu yazıtları, Yunan-Roma kitabeleri\n- EPIGRAPHIK veritabanı: PHI Greek Inscriptions (stephanus.tlg.uci.edu/phi)",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -430,7 +430,7 @@
         "kazı"
       ],
       "badge1": "Orta",
-      "content": "## Katman Analizi ve Kronoloji\n1.  Kazıdaki her stratigrafik katmanı ayrı ayrı belgeleyin (toprak rengi, doku, içerik).\n2.  Her katmandan çıkan eserleri (seramik, alet, kalıntı) ve bunların tarihlerini kaydedin.\n3.  Katmanların üst üste binme prensibini kullanarak en alttan en üste doğru kronolojik bir sıra oluşturun.",
+      "content": "**Stratigrafik Yorumlama**\n\nStratigrafi, yerleşim katmanlarını okuyarak arkeolojik kronoloji oluşturma bilimidir.\n\n**Harris Matrisi:** Katmanların görsel kronoloğini çizmek için standart yöntem:\n```\n[En üst katman] → En yeni\n     |\n[Katman 3] → Geç Bizans\n     |\n[Katman 2] → Erken Roma\n     |\n[Katman 1] → Hellenistik\n     |\n[Ana kaya] → Başlangıç\n```\n\n**Yorumlama ilkeleri:**\n1. **Üst üstelik (superposition):** Üst = yeni, alt = eski\n2. **Yataylık (original horizontality):** Katmanlar başlangıçta yatay yatıyordu\n3. **Süreklilik:** Aynı katman yan yana tutarlı\n\n**Komplikasyonlar:**\n- **Pit (çukur):** Sonradan kazılmış çukur eski katmanı keser — alt katman malzemesi üstte çıkabilir\n- **Depo:** Geç dönem hafriyat doldurması\n- **Post mold:** Çürümüş ahşap direğin negatif izi\n\n**İnce ayar tarihleme:** Stratigrafik katmanı seramik + C-14 + yazıt kombinasyonuyla çift kontrol edin. Stratigrafik tarih rölatif (önceki/sonraki), mutlak tarih için ek yöntem şarttır.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -449,7 +449,7 @@
         "yapı"
       ],
       "badge1": "İleri",
-      "content": "## Yapı Kalıntıları Analizi\n1.  Yapının planını, kullanılan malzemeleri ve inşa tekniklerini detaylıca inceleyin.\n2.  Mimarinin stilistik özelliklerini (sütun tipleri, süslemeler) dönemsel mimari akımlarla karşılaştırın.\n3.  Yapının bulunduğu yerleşimdeki diğer yapılarla ilişkisini ve olası işlevini (tapınak, ev, sur) belirleyin.",
+      "content": "**Mimari Kalıntı Değerlendirmesi**\n\nYapı kalıntıları dönemin teknolojisi, ekonomisi ve toplum yapısı hakkında birincil kanıt sunar.\n\n**Değerlendirme boyutları:**\n\n1. **İnşaat teknolojisi:**\n   - Malzeme: Kerpiç, taş, ahşap, tuğla\n   - Bağlayıcı: Harç olmadan kuru taş, kireç harcı, Portland sonrası\n   - Taşıyıcı sistem: Duvar, sütun, kemer, tonoz\n   - Araçlar: Testere izi, keski izi, dönem tespiti sağlar\n\n2. **Mekân organizasyonu:**\n   - Oda sayısı ve işlev dağılımı (depo, konut, tapınak)\n   - Kapı ve pencere yönleliği (savunma, iklim)\n   - Tesisat: Kanalizasyon, su kanalı, ocak\n\n3. **Sosyal okuma:**\n   - Yapı büyüklüğü ≈ sahip servet/güç\n   - Kamusal-özel alan ayrımı\n   - İşçi barınak alanları (Giza piramit köyü gibi)\n\n4. **Onarım katmanları:** Farklı dönem malzemeleri görünür değişimi anlatır\n\n**Dijital araçlar:** SfM (Structure from Motion) fotoğrammetri ile 3D model oluşturma; QGIS ile mekânsal analiz; LiDAR ile örtü altındaki yapıları tespit etme.",
       "source": {
         "generated": true,
         "provider": "gemini",

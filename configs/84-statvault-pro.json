@@ -137,7 +137,7 @@
       ],
       "badge1": "C++",
       "badge2": "★ 3.216",
-      "content": "root-project/root\n\nThe official repository for ROOT: analyzing, storing and visualizing big data, scientifically\n\n⭐ Yıldız: 3216\n🍴 Fork: 1517\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/root-project/root",
+      "content": "**ROOT — CERN Veri Analizi Framework'ü**\n\nCERN tarafından geliştirilen C++ tabanlı büyük veri analizi framework'ü. Parçacık fiziği verisini işlemek için başladı, bugün tüm bilimsel büyük veri alanlarında kullanılıyor.\n\n**Kurulum:**\n```bash\n# macOS:\nbrew install root\n# Ubuntu:\nsudo apt install root-system\n# Conda:\nconda install -c conda-forge root\n\n# Python ile:\nimport ROOT\nc = ROOT.TCanvas(\"c\", \"Title\", 800, 600)\nh = ROOT.TH1F(\"h\", \"Normal Dağılım\", 100, -5, 5)\nh.FillRandom(\"gaus\", 10000)\nh.Draw()\nc.SaveAs(\"histogram.png\")\n```\n\n**Temel Yetenekler:**\n- `TTree` / `RDataFrame`: Milyarlarca satır veri üzerinde hızlı sorgu\n- `TH1/TH2/TH3`: 1D/2D/3D histogram analizi\n- Fit kütüphanesi: Gauss, Poisson, özel fonksiyon fit\n- TMVA: Makine öğrenmesi entegrasyonu\n\n**Python RDataFrame Örneği:**\n```python\ndf = ROOT.RDataFrame(\"events\", \"data.root\")\nresult = df.Filter(\"energy > 100\").Define(\"pt\", \"sqrt(px*px + py*py)\").Mean(\"pt\")\nprint(f\"Ortalama PT: {result.GetValue():.2f} GeV\")\n```",
       "meta": {
         "Yıldız": 3216,
         "Dil": "C++",
@@ -163,7 +163,7 @@
       ],
       "badge1": "—",
       "badge2": "★ 3.209",
-      "content": "tirthajyoti/Data-science-best-resources\n\nCarefully curated resource links for data science in one place\n\n⭐ Yıldız: 3209\n🍴 Fork: 1010\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/tirthajyoti/Data-science-best-resources",
+      "content": "**Veri Bilimi Kaynak Koleksiyonu (★3209)**\n\nTirthajyoti Sarkar'ın titizlikle seçilmiş veri bilimi kaynak listesi. Python, istatistik, ML, derin öğrenme ve kariyer gelişimi için kategorize edilmiş 500+ bağlantı.\n\n**Kaynak Kategorileri:**\n```\nTemel Matematik:\n  - 3Blue1Brown (Linear Algebra, Calculus) — görsel öğrenme\n  - Khan Academy Statistics — ücretsiz, Türkçe altyapı\n  - Deep Learning Book (Goodfellow) — ücretsiz PDF\n\nPython Kütüphaneleri:\n  - NumPy, Pandas, Matplotlib — resmi dokümantasyon\n  - Scikit-learn User Guide — örnekli rehber\n  - fast.ai — pratik derin öğrenme\n\nÜcretsiz Kurslar:\n  - fast.ai Practical Deep Learning → PyTorch\n  - CS229 Stanford ML → matematiksel temel\n  - Full Stack Deep Learning → üretim sistemi\n```\n\n**Başlangıç Yol Haritası:**\n```\nAy 1-2: Python temelleri + NumPy + Pandas\nAy 3-4: İstatistik + scikit-learn ML\nAy 5-6: SQL + Veri görselleştirme\nAy 7-9: Derin öğrenme + proje portfolio\nAy 10-12: Özelleşme (NLP / Computer Vision / MLOps)\n```\n\n**Günlük Pratik:** Kaggle Learn modülleri (ücretsiz, sertifikalı), HackerRank Python challenge, Google Colab'da günde 30 dakika uygulama.",
       "meta": {
         "Yıldız": 3209,
         "Dil": "—",
@@ -189,7 +189,7 @@
       ],
       "badge1": "—",
       "badge2": "★ 1.274",
-      "content": "PavelGrigoryevDS/awesome-data-analysis\n\n🚀 500+ curated resources for Data Analysis & Data Science: Python, SQL, Statistics, ML, AI, Visualization, Cheatsheets, Roadmaps, Interview Prep. For beginners and experts. \n\n⭐ Yıldız: 1274\n🍴 Fork: 179\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/PavelGrigoryevDS/awesome-data-analysis",
+      "content": "**Awesome Data Analysis Koleksiyonu (★3000+)**\n\nPavelGrigoryevDS'nin 500+ kaynaklı veri analizi ve veri bilimi rehber listesi. Python, SQL, istatistik, görselleştirme araçları.\n\n**Kategoriler ve Öne Çıkan Araçlar:**\n```\nVeri Temizleme:\n  - Pandas Profiling (ypandas-profiling) → otomatik EDA raporu\n  - Great Expectations → veri kalite testleri\n  - Cleanlab → gürültülü etiket tespiti\n\nGörselleştirme:\n  - Plotly Express → interaktif grafik, 1 satır kod\n  - Seaborn → istatistiksel görselleştirme\n  - Altair → deklaratif, Vega-Lite tabanlı\n\nSQL Analizi:\n  - dbt (data build tool) → ELT pipeline\n  - DuckDB → in-process analitik SQL, Pandas entegrasyonu\n  - Mode Analytics → paylaşımlı SQL notebook\n```\n\n**Hızlı EDA Akışı:**\n```python\nimport pandas as pd\nfrom ydata_profiling import ProfileReport\n\ndf = pd.read_csv('veri.csv')\nprofile = ProfileReport(df, title=\"Veri Profili\", explorative=True)\nprofile.to_file(\"rapor.html\")  # Tarayıcıda açılan interaktif rapor\n```",
       "meta": {
         "Yıldız": 1274,
         "Dil": "—",
@@ -215,7 +215,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 1.167",
-      "content": "odota/web\n\nOpenDota: React web UI for Dota 2 statistics using the OpenDota platform\n\n⭐ Yıldız: 1167\n🍴 Fork: 406\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/odota/web",
+      "content": "**OpenDota Web UI — Dota 2 İstatistik React Uygulaması**\n\nOpenDota platformu için açık kaynaklı React + TypeScript web uygulaması. Oyuncu profili, hero istatistikleri, maç analizi ve pro meta verileri.\n\n**Kurulum:**\n\n\n**OpenDota API Kullanımı:**\nhttps://api.opendota.com/api/players//recentMatcheshttps://api.opendota.com/api/players//heroes\n\n**Özellikler:**\n- Hero meta istatistikleri: Win rate, pick/ban rate, güçlü/zayıf yanları\n- Maç replay analizi: Harita koordinatları, item timeline\n- Pro maç veritabanı: Turnuva sonuçları, draft analizi\n- D3.js görselleştirmeler: Farm eficiensi ısı haritası, XPM/GPM grafiği",
       "meta": {
         "Yıldız": 1167,
         "Dil": "TypeScript",
@@ -241,7 +241,7 @@
       ],
       "badge1": "Jupyter Notebook",
       "badge2": "★ 968",
-      "content": "bansalkanav/Ultimate-Data-Science-Toolkit---From-Python-Basics-to-GenerativeAI\n\n\n\n⭐ Yıldız: 968\n🍴 Fork: 330\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/bansalkanav/Ultimate-Data-Science-Toolkit---From-Python-Basics-to-GenerativeAI",
+      "content": "**Ultimate Data Science Toolkit — Python'dan Generative AI'a**\n\nBansalKanav'ın kapsamlı Jupyter Notebook koleksiyonu. Python temelinden üretici yapay zekaya kadar tüm veri bilimi yol haritasını kapsıyor.\n\n**Modüller:**\n```\nBölüm 1 — Python Temelleri:\n  - NumPy vektörleştirme, broadcasting\n  - Pandas: groupby, pivot, merge, reshape\n  - Matplotlib + Seaborn görselleştirme\n\nBölüm 2 — Makine Öğrenmesi:\n  - Scikit-learn pipeline, cross-validation\n  - Feature engineering, selection\n  - Hyperparameter tuning (Optuna)\n\nBölüm 3 — Derin Öğrenme:\n  - PyTorch fundamentals: autograd, DataLoader\n  - CNN, RNN, Transformer mimarileri\n  - Transfer learning (ResNet, BERT fine-tuning)\n\nBölüm 4 — Generative AI:\n  - LangChain ile RAG pipeline\n  - OpenAI/Anthropic API entegrasyonu\n  - Vector database (Chroma, Pinecone)\n```\n\n**Başlangıç:**\n```bash\ngit clone https://github.com/bansalkanav/Ultimate-Data-Science-Toolkit...\ncd Ultimate-Data-Science-Toolkit\npip install -r requirements.txt\njupyter lab  # Tüm notebook'lar sıralı olarak çalışın\n```",
       "meta": {
         "Yıldız": 968,
         "Dil": "Jupyter Notebook",
@@ -267,7 +267,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 899",
-      "content": "williamtroup/Heat.js\n\n🌞 A highly customizable JavaScript library for generating interactive heatmaps. It transforms data into smooth, visually intuitive heat layers, making patterns and intensity easy to spot at a glance.\n\n⭐ Yıldız: 899\n🍴 Fork: 18\n📅 Güncelleme: 2026-05-30\n🔗 https://github.com/williamtroup/Heat.js",
+      "content": "**Heat.js — JavaScript Isı Haritası Kütüphanesi**\n\nGitHub contribution graph tarzı ısı haritası bileşeni. Dependency yok, saf TypeScript/JavaScript ile yazılmış, yüksek özelleştirilebilirlik.\n\n**Kurulum:**\n```html\n<link rel=\"stylesheet\" href=\"heat.min.css\">\n<script src=\"heat.min.js\"></script>\n```\n\n**Temel Kullanım:**\n```javascript\n// Veri formatı: { dates: [{date: 'YYYY-MM-DD', total: 5}, ...] }\nconst instance = heat.render(document.getElementById('chart'), {\n  views: {\n    chart: {\n      enabled: true,\n      type: 0  // 0=yıl, 1=ay, 2=hafta\n    }\n  },\n  data: {\n    url: '/api/activity',   // JSON endpoint\n    type: 'json'\n  },\n  colorRanges: [\n    { minimum: 1, cssClassName: 'heat-1' },   // açık yeşil\n    { minimum: 5, cssClassName: 'heat-2' },\n    { minimum: 10, cssClassName: 'heat-3' }   // koyu yeşil\n  ]\n});\n\n// Programmatik veri güncelleme:\ninstance.addDates([{date: '2024-03-15', total: 8}]);\n```\n\n**Python Backend Entegrasyonu:**\n```python\n# Flask/FastAPI endpoint\n@app.get(\"/api/activity\")\ndef get_activity():\n    # Veritabanından günlük aktivite çek\n    return {\"dates\": [{\"date\": \"2024-03-15\", \"total\": 12}]}\n```\n\n**Kullanım Alanları:** Kullanıcı aktivite grafiği, commit history, e-posta gönderim trafiği, uygulama kullanım haritası.",
       "meta": {
         "Yıldız": 899,
         "Dil": "TypeScript",
@@ -318,7 +318,7 @@
       ],
       "badge1": "Jupyter Notebook",
       "badge2": "★ 814",
-      "content": "tuangauss/DataScienceProjects\n\nThe code repository for projects and tutorials in R and Python that covers a variety of topics in data visualization, statistics sports analytics and general application of probability theory.\n\n⭐ Yıldız: 814\n🍴 Fork: 197\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/tuangauss/DataScienceProjects",
+      "content": "**Veri Bilimi Proje Koleksiyonu (Pratik Notebook'lar)**\n\nTuangauss'un gerçek veri setleriyle çalışılan veri bilimi proje notebook'ları. Her proje problem tanımından sonuç raporuna kadar tam akışı gösterir.\n\n**Projeler:**\n```\n1. NBA İstatistik Analizi:\n   - Oyuncu performans clustering\n   - Win Share hesaplama, PER analizi\n   - Veri kaynağı: basketball-reference.com scraping\n\n2. Film Öneri Sistemi:\n   - Collaborative filtering (user-based, item-based)\n   - Matrix factorization (SVD)\n   - Veri seti: MovieLens 100K\n\n3. Hisse Senedi Tahmini:\n   - LSTM zaman serisi modeli\n   - Teknik indikatörler (RSI, MACD) feature engineering\n   - Backtesting framework\n```\n\n**Proje Geliştirme Şablonu:**\n```python\n# 1. Problem Tanımı\n# 2. Veri Toplama (scraping / API / Kaggle)\n# 3. EDA (Exploratory Data Analysis)\n# 4. Feature Engineering\n# 5. Model Seçimi + Training\n# 6. Değerlendirme + Yorumlama\n# 7. Deployment (Streamlit / FastAPI)\n\n# Cursor: her adımı ayrı notebook cell'de dökümante edin\n```",
       "meta": {
         "Yıldız": 814,
         "Dil": "Jupyter Notebook",
@@ -344,7 +344,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 737",
-      "content": "fredrikburmester/streamystats\n\nStreamystats is a statistics service for Jellyfin, providing analytics and data visualization.\n\n⭐ Yıldız: 737\n🍴 Fork: 29\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/fredrikburmester/streamystats",
+      "content": "**Streamystats — Jellyfin İzleme İstatistikleri Dashboard'u**\n\nJellyfin medya sunucunuzdaki izleme verilerini görselleştiren self-hosted analitik dashboard. Kütüphane istatistikleri, kullanıcı aktivitesi ve içerik trend analizi.\n\n**Kurulum (Docker):**\n```yaml\n# docker-compose.yml\nservices:\n  streamystats:\n    image: fredrikburmester/streamystats:latest\n    ports:\n      - \"3000:3000\"\n    environment:\n      - NEXTAUTH_SECRET=güçlü_gizli_anahtar\n      - NEXT_PUBLIC_DEFAULT_URL=http://localhost:3000\n    volumes:\n      - streamystats_data:/app/data\n  \n  streamystats-api:\n    image: fredrikburmester/streamystats-api:latest\n    environment:\n      - JELLYFIN_URL=http://jellyfin:8096\n      - JELLYFIN_API_KEY=jellyfin_api_anahtarı\n```\n\n**İstatistik Kategorileri:**\n- Toplam izleme süresi (kullanıcı/içerik bazında)\n- En çok izlenen dizi, film, müzisyen\n- İzleme saatleri dağılımı (günlük, haftalık)\n- Cihaz kullanım oranları\n- Kütüphane büyüme trendi\n\n**Jellyfin API ile Manuel Veri Çekme:**\n```bash\ncurl \"http://jellyfin:8096/Sessions?api_key=TOKEN\"\n```",
       "meta": {
         "Yıldız": 737,
         "Dil": "TypeScript",
@@ -370,7 +370,7 @@
       ],
       "badge1": "R",
       "badge2": "★ 645",
-      "content": "strengejacke/sjPlot\n\nsjPlot - Data Visualization for Statistics in Social Science\n\n⭐ Yıldız: 645\n🍴 Fork: 93\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/strengejacke/sjPlot",
+      "content": "**sjPlot — R İstatistiksel Veri Görselleştirme**\n\nRegresyon modeli çıktılarını, frekans tablolarını ve veri dağılımlarını otomatik olarak görselleştiren kapsamlı R paketi.\n\n**Kurulum:**\n```r\ninstall.packages(\"sjPlot\")\nlibrary(sjPlot)\nlibrary(lme4)  # Regresyon modelleri\n```\n\n**Regresyon Sonuçları Tablosu:**\n```r\nmodel <- lm(mpg ~ hp + wt + cyl, data = mtcars)\ntab_model(model,\n  show.se = TRUE,     # Standart hata\n  show.ci = 0.95,     # Güven aralığı\n  show.p = TRUE,      # p-değerleri\n  pred.labels = c(\"Beygir Gücü\", \"Ağırlık\", \"Silindir\"),\n  dv.labels = \"Yakıt Tüketimi\"\n)\n```\n\n**Etkileşim Grafikleri:**\n```r\n# İki değişken arasındaki etkileşimi görselleştir\nplot_model(model, type = \"int\",\n  terms = c(\"hp\", \"cyl [4,6,8]\")\n)\n```\n\n**Çok Değişkenli Görselleştirme:**\n```r\n# Tüm değişkenlerin dağılımı ve korelasyonu\nplot_grpfrq(mtcars$cyl, mtcars$am,\n  type = \"bar\",\n  title = \"Silindir Sayısına Göre Şanzıman\"\n)\n```\n\n**Kullanım Alanları:** Akademik makale tabloları, klinik araştırma raporları, sosyal bilim istatistik analizi.",
       "meta": {
         "Yıldız": 645,
         "Dil": "R",
@@ -396,7 +396,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 533",
-      "content": "polyaxon/traceml\n\nEngine for ML/Data tracking, visualization, explainability, drift detection, and dashboards for Polyaxon.\n\n⭐ Yıldız: 533\n🍴 Fork: 47\n📅 Güncelleme: 2026-05-12\n🔗 https://github.com/polyaxon/traceml",
+      "content": "**traceml — ML Deney Takibi ve Görselleştirme**\n\nPolyaxon'un hafif ML experiment tracking, görselleştirme ve model izleme motoru. MLflow alternatifi, minimal konfigürasyon.\n\n**Kurulum:**\n```bash\npip install traceml\n```\n\n**Deney Kaydetme:**\n```python\nimport traceml\nfrom traceml import tracking\n\n# Run başlat\nrun = tracking.init(project=\"müşteri-kaybı\", name=\"random-forest-v2\")\n\n# Parametreler kaydet\nrun.log_inputs(n_estimators=100, max_depth=10, learning_rate=0.01)\n\n# Her epoch metriği\nfor epoch in range(50):\n    loss = train_epoch(model, loader)\n    acc = evaluate(model, val_loader)\n    run.log_metrics(step=epoch, train_loss=loss, val_accuracy=acc)\n\n# Artifact kaydet\nrun.log_model_ref(path=\"model.pkl\", framework=\"sklearn\")\nrun.log_artifact_ref(path=\"confusion_matrix.png\", kind=\"image\")\nrun.end()\n```\n\n**Görselleştirme:**\n```python\n# Çalışmaları karşılaştır\nfrom traceml.artifacts import V1RunArtifact\nruns = tracking.get_runs(project=\"müşteri-kaybı\")\nfor run in runs:\n    print(run.name, run.metrics.get(\"val_accuracy\"))\n```\n\n**Entegrasyon:** PyTorch, TensorFlow, Scikit-learn, XGBoost, Keras ile çalışır. Polyaxon Platform'a yükseltme opsiyonu mevcut.",
       "meta": {
         "Yıldız": 533,
         "Dil": "Python",
@@ -422,7 +422,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 516",
-      "content": "visprex/visprex\n\nVisualise your CSV files in seconds without sending your data anywhere\n\n⭐ Yıldız: 516\n🍴 Fork: 12\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/visprex/visprex",
+      "content": "**visprex — CSV Dosyalarını Saniyeler İçinde Görselleştir**\n\nCSV yükleyip tarayıcıda anında interaktif grafikler oluşturan TypeScript tabanlı araç. Backend gerektirmez, tüm işlem istemcide.\n\n**Kullanım:**\n```bash\n# npx ile doğrudan çalıştır\nnpx visprex data.csv\n# → http://localhost:3000 adresinde açılır\n\n# veya web arayüzünde:\n# visprex.com → CSV yükle → grafik seç\n```\n\n**Desteklenen Grafik Türleri:**\n- Scatter plot: iki sayısal değişken arasındaki ilişki\n- Histogram: dağılım analizi, bin otomatik belirleme\n- Bar chart: kategorik frekans\n- Heatmap: korelasyon matrisi\n- Box plot: çeyreklikler ve aykırı değer analizi\n\n**Veri Ön İşleme:**\n```python\nimport pandas as pd\n# visprex'e hazırlık: her kolon için uygun format\ndf = pd.read_csv('ham_veri.csv')\ndf['date'] = pd.to_datetime(df['date'])  # Tarih formatı\ndf['price'] = df['price'].str.replace('$','').astype(float)\ndf.dropna(subset=['target']).to_csv('temiz_veri.csv', index=False)\n```\n\n**CLI Özellikleri:** `--port 8080` özel port, `--cols col1,col2` kolon seçimi, `--no-browser` sadece sunucu. Büyük CSV dosyaları (>100MB) için DuckDB veya Polars ile önce filtreleyin.",
       "meta": {
         "Yıldız": 516,
         "Dil": "TypeScript",
@@ -448,7 +448,7 @@
       ],
       "badge1": "Jupyter Notebook",
       "badge2": "★ 423",
-      "content": "ozlerhakan/datacamp\n\n🍧 DataCamp data-science and machine learning courses\n\n⭐ Yıldız: 423\n🍴 Fork: 189\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/ozlerhakan/datacamp",
+      "content": "**DataCamp Kurs Notebook Arşivi**\n\nOzlerhakan'ın DataCamp veri bilimi ve ML kurslarını tamamladığı Jupyter Notebook koleksiyonu. Python, R, SQL ve veri mühendisliği içerikleri.\n\n**İçerilen Kurslar:**\n```\nPython için Veri Bilimi:\n  - Intro to Python, Pandas, NumPy\n  - Machine Learning with scikit-learn\n  - Deep Learning with Keras\n  - NLP Fundamentals\n\nSQL ve Veri Mühendisliği:\n  - Introduction to SQL\n  - Database Design\n  - Airflow, Spark, Kafka\n\nR için İstatistik:\n  - Statistical Thinking in Python\n  - Exploratory Data Analysis\n  - Time Series Analysis\n```\n\n**Kendi Pratik Arşivinizi Oluşturma:**\n```bash\n# Kurs tamamlandıkça düzenli commit\ngit add notebooks/ml-with-sklearn/chapter3.ipynb\ngit commit -m \"Completed: Random Forest hyperparameter tuning\"\n\n# İlerleme takibi\nfind . -name \"*.ipynb\" | wc -l  # Toplam notebook sayısı\n```\n\n**Öğrenme İpucu:** Her notebook'u kendiniz tekrar yazın — okumak yetmez. Her kurs sonrası gerçek veri setiyle mini proje yapın.",
       "meta": {
         "Yıldız": 423,
         "Dil": "Jupyter Notebook",
@@ -471,7 +471,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 392",
-      "content": "coffeefuelbump/csv-data-summarizer-claude-skill\n\nA Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas.\n\n⭐ Yıldız: 392\n🍴 Fork: 55\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+      "content": "**CSV Veri Özetleyici — Claude Skill**\n\nCSV dosyalarını otomatik olarak analiz edip özet rapor üreten Claude AI skill. Anthropic Claude API entegrasyonlu Python aracı.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill\ncd csv-data-summarizer-claude-skill\npip install -r requirements.txt\nexport ANTHROPIC_API_KEY=your_key\n```\n\n**Temel Kullanım:**\n```python\nfrom claude_skill import CSVSummarizer\n\nsummarizer = CSVSummarizer()\nresult = summarizer.analyze(\"sales_data.csv\")\nprint(result.summary)   # Doğal dil özeti\nprint(result.insights)  # Tespit edilen kalıplar\nprint(result.warnings)  # Veri kalite uyarıları\n```\n\n**Kendi Skill'inizi Oluşturma:**\n```python\nimport anthropic\nimport pandas as pd\n\nclient = anthropic.Anthropic()\n\ndef summarize_csv(filepath: str) -> str:\n    df = pd.read_csv(filepath)\n    stats = df.describe().to_string()\n    nulls = df.isnull().sum().to_string()\n    \n    message = client.messages.create(\n        model=\"claude-haiku-4-5-20251001\",\n        max_tokens=1024,\n        messages=[{\"role\": \"user\", \"content\":\n            f\"Bu veri setini analiz et:\\n\\nİstatistikler:\\n{stats}\\n\\nEksik veriler:\\n{nulls}\\n\\nTürkçe özet rapor yaz.\"\n        }]\n    )\n    return message.content[0].text\n```",
       "meta": {
         "Yıldız": 392,
         "Dil": "Python",
@@ -497,7 +497,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 345",
-      "content": "GAA-UAM/scikit-fda\n\nFunctional Data Analysis Python package\n\n⭐ Yıldız: 345\n🍴 Fork: 65\n📅 Güncelleme: 2026-05-21\n🔗 https://github.com/GAA-UAM/scikit-fda",
+      "content": "**scikit-fda — Fonksiyonel Veri Analizi Python Paketi**\n\nFonksiyonel veri (time series olarak fonksiyon) analizi için sklearn uyumlu Python kütüphanesi. FDA istatistik, ML ve görselleştirme araçları.\n\n**Kurulum:**\n```bash\npip install scikit-fda\n```\n\n**Fonksiyonel Veri Oluşturma:**\n```python\nimport skfda\nimport numpy as np\n\n# Sıcaklık zaman serisi (gün başına 1 ölçüm, 365 gün)\ntime_points = np.linspace(0, 365, 365)\ntemperatures = np.random.randn(50, 365) * 5 + np.sin(time_points * 2*np.pi/365) * 15\n\nfd = skfda.FDataGrid(data_matrix=temperatures, grid_points=time_points)\n\n# Görselleştir\nfd.plot()\n```\n\n**Fonksiyonel PCA:**\n```python\nfrom skfda.preprocessing.dim_reduction import FPCA\n\nfpca = FPCA(n_components=3)\nfpca.fit(fd)\ncomponents = fpca.transform(fd)\nprint(f\"Açıklanan varyans: {fpca.explained_variance_ratio_}\")\n```\n\n**Kullanım Alanları:** Biyomedikal EEG/EKG analizi, iklim veri analizi, ekonomik zaman serileri, hareket verisi analizi.",
       "meta": {
         "Yıldız": 345,
         "Dil": "Python",
@@ -523,7 +523,7 @@
       ],
       "badge1": "Jupyter Notebook",
       "badge2": "★ 279",
-      "content": "pycroscopy/pycroscopy\n\nScientific analysis of nanoscale materials imaging data\n\n⭐ Yıldız: 279\n🍴 Fork: 75\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/pycroscopy/pycroscopy",
+      "content": "**pycroscopy — Nanoskala Bilimsel Veri Analizi**\n\nMikroskopi ve spektroskopi verilerini analiz eden Python kütüphanesi. AFM, STM, TEM gibi nanoskala ölçüm araçlarından gelen veriyi işler.\n\n**Kurulum:**\n```bash\npip install pycroscopy sidpy pyNSID\n```\n\n**USID (Universal Spectroscopy and Imaging Data) Formatı:**\n```python\nimport h5py\nimport pycroscopy as px\n\n# HDF5 dosyasından veri yükle\nwith h5py.File('afm_scan.h5', 'r') as f:\n    # Veri yapısını incele\n    px.hdf_utils.print_tree(f)\n    \n    # Ana veri seti oku\n    main_dataset = px.USIDataset(f['Measurement_000/Channel_000/Raw_Data'])\n    print(f\"Boyutlar: {main_dataset.shape}\")\n    print(f\"Birimler: {main_dataset.data_descriptor}\")\n\n# 2D Topografya görüntüsü çiz\nimport matplotlib.pyplot as plt\nplt.imshow(main_dataset[:,:,0], cmap='afmhot')\nplt.colorbar(label='Yükseklik (nm)')\n```\n\n**Analiz Pipeline:**\n```python\n# 1. Veri yükle → 2. Gürültü gider → 3. Feature çıkar → 4. ML/İstatistik\n# Typical workflow: AFM → flatten background → PCA → K-means segmentation\n```",
       "meta": {
         "Yıldız": 279,
         "Dil": "Jupyter Notebook",
@@ -575,7 +575,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 251",
-      "content": "antvis/data-set\n\nstate driven all in one data process for data visualization.\n\n⭐ Yıldız: 251\n🍴 Fork: 49\n📅 Güncelleme: 2025-12-28\n🔗 https://github.com/antvis/data-set",
+      "content": "**AntVis data-set — JavaScript Veri İşleme Kütüphanesi**\n\nAnt Design ekibinin state-driven veri dönüşümü ve istatistik kütüphanesi. G2 (veri görselleştirme framework'ü) ile birlikte kullanılır.\n\n**Kurulum:**\n```bash\nnpm install @antv/dataset\n```\n\n**Temel Dönüşümler:**\n```javascript\nimport DataSet from '@antv/dataset';\n\nconst ds = new DataSet();\nconst dv = ds.createView().source([\n  { month: 'Jan', sales: 120, region: 'Kuzey' },\n  { month: 'Jan', sales: 85,  region: 'Güney' },\n  { month: 'Feb', sales: 140, region: 'Kuzey' },\n]);\n\n// Özet istatistik\ndv.transform({\n  type: 'aggregate',\n  fields: ['sales'],\n  operations: ['mean', 'sum', 'max'],\n  groupBy: ['region'],\n  as: ['avgSales', 'totalSales', 'maxSales']\n});\n\nconsole.log(dv.rows);\n// [{ region: 'Kuzey', avgSales: 130, totalSales: 260, maxSales: 140 }]\n```\n\n**G2 ile Görselleştirme:**\n```javascript\nconst chart = new G2.Chart({ container: 'chart', width: 600, height: 400 });\nchart.source(dv);\nchart.interval().position('region*totalSales').color('region');\nchart.render();\n```",
       "meta": {
         "Yıldız": 251,
         "Dil": "TypeScript",
@@ -601,7 +601,7 @@
       ],
       "badge1": "Jupyter Notebook",
       "badge2": "★ 230",
-      "content": "Yu-Group/covid19-severity-prediction\n\nExtensive and accessible COVID-19 data + forecasting for counties and hospitals. 📈\n\n⭐ Yıldız: 230\n🍴 Fork: 92\n📅 Güncelleme: 2026-03-17\n🔗 https://github.com/Yu-Group/covid19-severity-prediction",
+      "content": "**COVID-19 Şiddet Tahmin Modeli**\n\nYu-Group'un (UC Berkeley) kapsamlı COVID-19 hastane doluluk ve şiddet tahmini araştırma projesi. County seviyesinde veri, ensemble ML modelleri.\n\n**Proje Bileşenleri:**\n```\n1. Veri Toplama:\n   - County Health Rankings veri seti\n   - USAFacts COVID vakası ve ölüm verisi\n   - CDC yaş/komorbidit demografisi\n\n2. Feature Engineering:\n   - Sosyoekonomik göstergeler (density, poverty)\n   - Sağlık sistemi kapasitesi (ICU beds/capita)\n   - Nüfus yaş dağılımı\n\n3. Modeller:\n   - Ridge/LASSO regresyon\n   - Random Forest\n   - Gradient Boosting (XGBoost, LightGBM)\n   - Ensemble weighted averaging\n```\n\n**Temel Kullanım:**\n```python\ngit clone https://github.com/Yu-Group/covid19-severity-prediction\npip install -r requirements.txt\n\n# Güncel veri indir ve model eğit:\npython update_data.py\npython train_model.py --target hospitalization_rate\n\n# Tahmin:\npython predict.py --fips 06037  # Los Angeles County\n```\n\n**Öğrenilen Dersler:** Zaman serisi sızıntısı (data leakage), coğrafi heterogenetik modelleme, belirsizlik kantifikasyonu.",
       "meta": {
         "Yıldız": 230,
         "Dil": "Jupyter Notebook",
@@ -627,7 +627,7 @@
       ],
       "badge1": "TeX",
       "badge2": "★ 228",
-      "content": "pablo14/data-science-live-book\n\nAn open source book to learn data science, data analysis and machine learning, suitable for all ages!\n\n⭐ Yıldız: 228\n🍴 Fork: 116\n📅 Güncelleme: 2026-02-01\n🔗 https://github.com/pablo14/data-science-live-book",
+      "content": "**Veri Bilimi Canlı Kitap (Açık Kaynak)**\n\nPablo Casas'ın sürekli güncellenen açık kaynak veri bilimi kitabı. R ve Python ile makine öğrenmesi ve istatistiksel öğrenme.\n\n**Bölüm Yapısı:**\n```\nBölüm 1 — Kavramsal Altyapı:\n  - Veri türleri (nominal, ordinal, aralıklı, oranlı)\n  - Keşifsel veri analizi prensipleri\n  - Örnekleme ve önyargı türleri\n\nBölüm 2 — Model Hazırlığı:\n  - Eksik veri: silme, imputation, MICE\n  - Encoding: one-hot, target encoding, embedding\n  - Özellik seçimi: filter, wrapper, embedded\n\nBölüm 3 — Makine Öğrenmesi:\n  - Karar ağaçları (teorik derinlik)\n  - Random Forest, Gradient Boosting açıklaması\n  - Model yorumlanabilirlik: SHAP, LIME\n\nBölüm 4 — Üretim:\n  - Model kalitesi izleme (data drift, concept drift)\n  - A/B test tasarımı ve analizi\n```\n\n**Kitabı Yerel Olarak Çalıştırma:**\n```r\ninstall.packages(c(\"bookdown\", \"funModeling\"))\nbookdown::render_book(\"index.Rmd\")\n```",
       "meta": {
         "Yıldız": 228,
         "Dil": "TeX",
@@ -653,7 +653,7 @@
       ],
       "badge1": "Go",
       "badge2": "★ 173",
-      "content": "mongoeye/mongoeye\n\nSchema and data analyzer for MongoDB written in Go.\n\n⭐ Yıldız: 173\n🍴 Fork: 8\n📅 Güncelleme: 2025-07-17\n🔗 https://github.com/mongoeye/mongoeye",
+      "content": "**mongoeye — MongoDB Şema ve Veri Analizi**\n\nMongoDB koleksiyonlarının şema yapısını, veri dağılımını ve istatistiklerini analiz eden Go tabanlı CLI araç.\n\n**Kurulum:**\n```bash\n# Go ile:\ngo install github.com/mongoeye/mongoeye@latest\n\n# Docker:\ndocker run --rm mongoeye/mongoeye --uri mongodb://localhost/mydb\n```\n\n**Analiz Komutları:**\n```bash\n# Koleksiyon şeması analizi:\nmongoeye analyze \\\n  --uri \"mongodb://user:pass@localhost:27017/mydb\" \\\n  --collection users \\\n  --sample 1000  # 1000 döküman örnekle\n\n# JSON rapor:\nmongoeye analyze --collection orders --format json > schema.json\n\n# HTML rapor:\nmongoeye analyze --collection products --format html > report.html\n```\n\n**Rapor İçeriği:**\n```\n- Alan türleri ve geçiş yüzdeleri (field presence %)\n- Değer dağılımı (min, max, ortalama, medyan)\n- Veri bütünlüğü: null oranı, boş string\n- Nested doküman derinliği\n- Array element istatistikleri\n```\n\n**Kullanım Senaryoları:** Legacy koleksiyon keşfi, şema migration öncesi analiz, veri kalite auditi, API dokümantasyon üretimi.",
       "meta": {
         "Yıldız": 173,
         "Dil": "Go",
@@ -705,7 +705,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 155",
-      "content": "arpanghosh8453/fit-dashboard\n\nStandalone offline local desktop application to process, store, and visualize Garmin FIT file data in a comprehensive dashboard.\n\n⭐ Yıldız: 155\n🍴 Fork: 12\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/arpanghosh8453/fit-dashboard",
+      "content": "**Fit Dashboard — Yerel Fitness İstatistik Dashboard'u**\n\nGarmin, Fitbit, Apple Health ve Wahoo verilerini çevrimdışı olarak görselleştiren self-hosted fitness analitik platformu. Bulut gerektirmez.\n\n**Kurulum (Docker):**\n```bash\ndocker run -d \\\n  --name fit-dashboard \\\n  -p 3000:3000 \\\n  -v ~/.fitdashboard:/data \\\n  ghcr.io/arpanghosh8453/fit-dashboard:latest\n# http://localhost:3000\n```\n\n**Desteklenen Veri Kaynakları:**\n```\nGarmin Connect: .fit dosyaları veya API\nApple Health: Health Exports XML\nFitbit: Data Export ZIP\nStrava: API bağlantısı\nWahoo: Antrenman .fit dosyaları\n```\n\n**Görselleştirmeler:**\n- Kalp atış hızı trendi (aylık, yıllık)\n- VO2max tahmin grafiği\n- Aktivite türü dağılımı (pie chart)\n- Haftalık mesafe ve yükselme ısı haritası\n- Uyku kalitesi trendi\n\n**Garmin FIT Dosyası İşleme:**\n```python\nfrom fitparse import FitFile\nfit = FitFile('activity.fit')\nfor record in fit.get_messages('record'):\n    hr = record.get_value('heart_rate')\n    speed = record.get_value('speed')  # m/s\n    print(f\"HR: {hr} bpm, Speed: {speed*3.6:.1f} km/h\")\n```",
       "meta": {
         "Yıldız": 155,
         "Dil": "TypeScript",
@@ -727,7 +727,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 145",
-      "content": "vtstats/web\n\nVTubers Statistics and Data Visualization\n\n⭐ Yıldız: 145\n🍴 Fork: 26\n📅 Güncelleme: 2026-05-03\n🔗 https://github.com/vtstats/web",
+      "content": "**OpenDota — Dota 2 İstatistik Web Arayüzü**\n\nOpenDota platformu için React tabanlı Dota 2 maç istatistikleri web uygulaması. oyuncu performans analizi, meta takibi ve maç detayları.\n\n**Özellikler:**\n- Oyuncu profili: Win rate, hero pool, match history\n- Hero istatistikleri: Pick/ban rate, win rate, benchmark\n- Maç analizi: İtem build, timing, harita pozisyonu\n- Pro meta: Pro maçları, draft analizi, patch trend\n\n**Kurulum (Local Geliştirme):**\n```bash\ngit clone https://github.com/odota/web\ncd web\nnpm install\necho \"REACT_APP_API_HOST=https://api.opendota.com\" > .env\nnpm start\n```\n\n**OpenDota API Kullanımı:**\n```javascript\n// Oyuncu son maçları\nconst response = await fetch(\n  'https://api.opendota.com/api/players/12345678/recentMatches'\n);\nconst matches = await response.json();\nconst winRate = matches.filter(m => m.radiant_win === (m.player_slot < 128)).length / matches.length;\nconsole.log(`Son 20 maçta kazanma oranı: ${(winRate * 100).toFixed(1)}%`);\n```\n\n**Veri Analizi Kullanımı:** Oyuncu gelişimini zaman içinde takip etmek, rakip draft paternlerini analiz etmek, hero sinerjilerini istatistiksel olarak keşfetmek için kullanılır.",
       "meta": {
         "Yıldız": 145,
         "Dil": "TypeScript",
@@ -753,7 +753,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 142",
-      "content": "sksalahuddin2828/Data_Visualization\n\nMathematical, Statistics, Medical, Scientific Data Visualization\n\n⭐ Yıldız: 142\n🍴 Fork: 115\n📅 Güncelleme: 2026-04-25\n🔗 https://github.com/sksalahuddin2828/Data_Visualization",
+      "content": "**Python ile Matematiksel ve İstatistiksel Görselleştirme**\n\nSksalahuddin'in matematik, istatistik ve tıp verisi görselleştirme notebook koleksiyonu. Matplotlib, Seaborn ve Plotly ile 100+ görselleştirme örneği.\n\n**Koleksiyondaki Örnekler:**\n```python\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\n# 1. Normal Dağılım Görselleştirme\nx = np.linspace(-4, 4, 200)\nfor mu, sigma, color in [(0,1,'blue'), (0,2,'red'), (1,1,'green')]:\n    y = stats.norm.pdf(x, mu, sigma)\n    plt.plot(x, y, color=color, label=f'μ={mu}, σ={sigma}')\nplt.legend(); plt.title('Normal Dağılım Ailesi')\n\n# 2. Korelasyon Isı Haritası\nimport seaborn as sns\ncorr = df.select_dtypes('number').corr()\nsns.heatmap(corr, annot=True, fmt='.2f', cmap='coolwarm', center=0)\n\n# 3. Box Plot ile Grup Karşılaştırma\nfig, ax = plt.subplots()\ndf.boxplot(column='değer', by='grup', ax=ax)\nplt.suptitle('')  # Seaborn'un eklediği başlığı kaldır\n```\n\n**Tıbbi Veri Örneği:**\n```python\n# Kaplan-Meier Hayatta Kalma Eğrisi\nfrom lifelines import KaplanMeierFitter\nkmf = KaplanMeierFitter()\nkmf.fit(durations=df['survival_days'], event_observed=df['event'])\nkmf.plot_survival_function()\n```",
       "meta": {
         "Yıldız": 142,
         "Dil": "Python",
@@ -779,7 +779,7 @@
       ],
       "badge1": "Vue",
       "badge2": "★ 133",
-      "content": "bitquery/widgets\n\nWidgets for blockchain data visualizations\n\n⭐ Yıldız: 133\n🍴 Fork: 50\n📅 Güncelleme: 2026-03-21\n🔗 https://github.com/bitquery/widgets",
+      "content": "**Bitquery Blockchain Veri Widget'ları**\n\nBitquery'nin blockchain veri görselleştirme için Vue.js tabanlı embed edilebilir widget bileşenleri. DeFi istatistikleri, token analizi ve on-chain metrikleri.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/bitquery/widgets\ncd widgets\nnpm install\nnpm run dev  # http://localhost:8080\n```\n\n**Token Fiyat Grafiği Widget:**\n```vue\n<template>\n  <BitqueryChart\n    :token=\"tokenAddress\"\n    :network=\"'ethereum'\"\n    :interval=\"'1h'\"\n    :days=\"30\"\n  />\n</template>\n\n<script>\nimport { BitqueryChart } from '@bitquery/widgets';\nexport default {\n  components: { BitqueryChart },\n  data() {\n    return { tokenAddress: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48' } // USDC\n  }\n}\n</script>\n```\n\n**Bitquery GraphQL API:**\n```graphql\n{\n  ethereum {\n    dexTrades(options: {limit: 10, desc: \"block.timestamp.time\"}) {\n      block { timestamp { time }}\n      buyAmount\n      sellAmount\n      buyCurrency { symbol }\n      sellCurrency { symbol }\n    }\n  }\n}\n```\n\n**Kullanım Alanları:** DeFi dashboard, NFT istatistik sayfası, token analitik, DEX hacim takibi.",
       "meta": {
         "Yıldız": 133,
         "Dil": "Vue",
@@ -831,7 +831,7 @@
       ],
       "badge1": "R",
       "badge2": "★ 128",
-      "content": "david-barnett/microViz\n\nR package for microbiome data visualization and statistics. Uses phyloseq, vegan and the tidyverse. Docker image available.\n\n⭐ Yıldız: 128\n🍴 Fork: 13\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/david-barnett/microViz",
+      "content": "**microViz — R ile Mikrobiyom Veri Görselleştirme**\n\nInsan ve çevre mikrobiyom araştırmaları için filogenetik ağaç, kompozisyon grafikleri ve ordination görselleştirmeleri üreten R paketi.\n\n**Kurulum:**\n```r\ninstall.packages(\"BiocManager\")\nBiocManager::install(\"phyloseq\")  # Bağımlılık\ninstall.packages(\"microViz\")\nlibrary(microViz)\n```\n\n**Temel Görselleştirme:**\n```r\nlibrary(microViz)\ndata(\"dietswap\", package = \"microbiome\")  # Örnek veri\n\n# Kompozisyon bar grafiği — En yaygın 10 tür\ndietswap |>\n  tax_fix() |>\n  comp_barplot(\n    tax_level = \"Genus\",\n    n_taxa = 10,\n    other_name = \"Other\",\n    label = \"sample_id\"\n  )\n\n# PCoA Ordination (Bray-Curtis mesafesi)\nordination_plot <- dietswap |>\n  tax_transform(rank = \"Genus\", trans = \"clr\") |>\n  ord_calc(method = \"PCA\") |>\n  ord_plot(\n    color = \"nationality\",\n    shape = \"sex\",\n    size = 3\n  )\n```\n\n**Filogenetik Ağaç:**\n```r\ndietswap |> tax_fix() |> phyloseq::phy_tree() |> plot_tree(color=\"Genus\")\n```",
       "meta": {
         "Yıldız": 128,
         "Dil": "R",
@@ -857,7 +857,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 126",
-      "content": "wyattowalsh/data-science-notes\n\nOpen-source project hosted at https://makeuseofdata.com to crowdsource a robust collection of notes related to data science (math, visualization, modeling, etc)\n\n⭐ Yıldız: 126\n🍴 Fork: 67\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/wyattowalsh/data-science-notes",
+      "content": "**Veri Bilimi Notları — Açık Kaynak Öğrenme Portalı**\n\nWyattowalsh'ın interaktif Jupyter Book formatındaki kapsamlı veri bilimi referans notları. ML teorisi, Python uygulamaları ve gerçek proje case study'leri.\n\n**Notlar Yapısı:**\n```\nTemel İstatistik:\n  - Olasılık teorisi, hipotez testleri\n  - Bayesian istatistik temelleri\n  - İstatistiksel güç ve örneklem büyüklüğü\n\nMakine Öğrenmesi Algoritmaları:\n  - Linear/Logistic Regression (matematiksel türetim)\n  - SVM, kernel trick açıklaması\n  - Tree methods: ID3, C4.5, CART, Random Forest, XGBoost\n  - Kümeleme: K-Means, DBSCAN, Hiyerarşik\n\nDerin Öğrenme:\n  - Backpropagation matematiği\n  - CNN, RNN, LSTM, Attention, Transformer\n\nPraktik ML:\n  - Feature engineering, selection\n  - Model evaluation, calibration\n  - MLOps: experiment tracking, deployment\n```\n\n**Yerel Çalıştırma:**\n```bash\ngit clone https://github.com/wyattowalsh/data-science-notes\npip install jupyter-book\njupyter-book build data-science-notes/\nopen _build/html/index.html\n```",
       "meta": {
         "Yıldız": 126,
         "Dil": "JavaScript",
@@ -883,7 +883,7 @@
       ],
       "badge1": "R",
       "badge2": "★ 118",
-      "content": "keberwein/blscrapeR\n\nA tool to gather, analyze and visualize data from the Bureau of Labor Statistics (BLS) API. Functions include segmentation, geographic analysis and visualization.\n\n⭐ Yıldız: 118\n🍴 Fork: 12\n📅 Güncelleme: 2026-05-18\n🔗 https://github.com/keberwein/blscrapeR",
+      "content": "**blscrapeR — ABD Ekonomik Veri Analizi (R)**\n\nABD İşgücü İstatistikleri Bürosu (BLS) API'sinden veri çekip analiz eden ve görselleştiren R paketi. İşsizlik, enflasyon, istihdam verileri.\n\n**Kurulum:**\n```r\ninstall.packages(\"blscrapeR\")\nlibrary(blscrapeR)\n```\n\n**Temel Veri Çekme:**\n```r\n# İşsizlik oranı - ABD geneli (UNRATE serisi)\nbls_key <- set_bls_key(\"API_ANAHTARINIZ\")  # bls.gov'dan ücretsiz alın\n\ndf <- bls_api(\n  seriesid = c(\"LNS14000000\"),  # Ulusal işsizlik\n  startyear = 2020,\n  endyear = 2024\n)\n\nprint(head(df))\n# year period periodName value\n# 2024   M01   January   3.7\n```\n\n**Enflasyon Analizi (CPI):**\n```r\n# CPI All Urban Consumers\ncpi_df <- bls_api(c(\"CUUR0000SA0\"), 2015, 2024)\n\nlibrary(ggplot2)\nggplot(cpi_df, aes(x = as.Date(date), y = value)) +\n  geom_line(color = \"steelblue\", linewidth = 1) +\n  labs(title = \"Tüketici Fiyat Endeksi (CPI)\",\n       x = NULL, y = \"CPI (1982-84=100)\") +\n  theme_minimal()\n```\n\n**Hazır Fonkssiyon:** `inflation_adjust()` → geçmiş değerleri bugünkü dolara çevirir.",
       "meta": {
         "Yıldız": 118,
         "Dil": "R",
@@ -935,7 +935,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 106",
-      "content": "snooppr/shotstars\n\nAn advanced tool for checking GitHub repositories, with star statistics, including fake star analysis and data visualization.\n\n⭐ Yıldız: 106\n🍴 Fork: 5\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/snooppr/shotstars",
+      "content": "**shotstars — GitHub Repo Yıldız Takip Aracı**\n\nSnooppr'ın GitHub repository istatistiklerini, yıldız gelişimini ve fork ağını analiz eden gelişmiş Python CLI aracı.\n\n**Kurulum:**\n```bash\npip install shotstars\n# veya:\ngit clone https://github.com/snooppr/shotstars\ncd shotstars && pip install -r requirements.txt\n```\n\n**Temel Komutlar:**\n```bash\n# Repo istatistikleri:\nshotstars --repo anthropics/anthropic-sdk-python\n\n# Zaman içinde yıldız büyümesi:\nshotstars --repo microsoft/vscode --history\n\n# Yıldız veren kullanıcı analizi:\nshotstars --repo facebook/react --stargazers --country TR\n# → Türkiye'den kaç geliştirici yıldızlamış\n\n# Fork ağı:\nshotstars --repo torvalds/linux --forks --depth 2\n```\n\n**Python API:**\n```python\nfrom shotstars import GitHubAnalyzer\n\nanalyzer = GitHubAnalyzer(token=\"ghp_xxxx\")\nstats = analyzer.get_repo_stats(\"anthropics/claude-code\")\nprint(f\"Yıldız: {stats['stars']}, Fork: {stats['forks']}\")\nprint(f\"Son 30 gün büyüme: +{stats['growth_30d']} yıldız\")\n\n# Trend grafiği:\nanalyzer.plot_star_history(\"anthropics/claude-code\", output=\"stars.png\")\n```\n\n**Kullanım Alanları:** Açık kaynak proje popülerlik takibi, rakip repo analizi, kendi projenizin büyüme trendini izleme.",
       "meta": {
         "Yıldız": 106,
         "Dil": "Python",

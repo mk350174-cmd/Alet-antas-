@@ -113,7 +113,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 5.584",
-      "content": "devias-io/material-kit-react\n\nReact Dashboard made with Material UI’s components. Our pro template contains features like TypeScript version, authentication system with Firebase and Auth0 plus many other \n\n⭐ Yıldız: 5584\n🍴 Fork: 2572\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/devias-io/material-kit-react",
+      "content": "**Material Kit React — Firebase Admin Dashboard Şablonu**\n\nDevias'ın React + Material UI tabanlı admin dashboard başlangıç kiti. Firebase Authentication ve Firestore entegrasyonu için hazır altyapı sunar.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/devias-io/material-kit-react\ncd material-kit-react\nnpm install\n# Firebase config ekle:\ncp src/config.example.js src/config.js\nnpm run dev  # http://localhost:3000\n```\n\n**Firebase Auth Entegrasyonu:**\n```javascript\n// src/contexts/firebase-auth-context.js\nimport { initializeApp } from 'firebase/app';\nimport { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';\n\nconst app = initializeApp(firebaseConfig);\nconst auth = getAuth(app);\n\nexport const signIn = (email, password) =>\n  signInWithEmailAndPassword(auth, email, password);\n\nexport const useAuth = () => {\n  const [user, setUser] = useState(null);\n  useEffect(() => onAuthStateChanged(auth, setUser), []);\n  return user;\n};\n```\n\n**Özellikler:** Responsive sidebar, data table, form validation, dark/light mode, Next.js ile SSR desteği. Pro sürümde Stripe entegrasyonu ve multi-tenant yapısı mevcut.",
       "meta": {
         "Yıldız": 5584,
         "Dil": "TypeScript",
@@ -165,7 +165,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 1.512",
-      "content": "kefranabg/bento-starter\n\n:bento: Full-Stack solution to quickly build PWA applications with Vue.js and Firebase\n\n⭐ Yıldız: 1512\n🍴 Fork: 128\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/kefranabg/bento-starter",
+      "content": "**Bento Starter — Firebase + Vue.js PWA Şablonu**\n\nFirebase, Vue.js ve Workbox ile hızlı PWA (Progressive Web App) geliştirmek için full-stack başlangıç kiti.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/kefranabg/bento-starter\ncd bento-starter\nnpm install\n# .env dosyası oluştur:\necho \"VUE_APP_FIREBASE_API_KEY=your_key\" > .env.local\nnpm run serve\n```\n\n**Firebase Servisleri Entegrasyonu:**\n```javascript\n// src/firebase/init.js\nimport { initializeApp } from 'firebase/app';\nimport { getFirestore } from 'firebase/firestore';\nimport { getAuth } from 'firebase/auth';\nimport { getStorage } from 'firebase/storage';\n\nconst app = initializeApp({\n  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,\n  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,\n  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID\n});\n\nexport const db = getFirestore(app);\nexport const auth = getAuth(app);\nexport const storage = getStorage(app);\n```\n\n**PWA Özellikleri:** Offline çalışma (Workbox service worker), push notification, install prompt, app shell architecture. `npm run build` → Firebase Hosting'e deploy için `firebase deploy --only hosting`.",
       "meta": {
         "Yıldız": 1512,
         "Dil": "JavaScript",
@@ -191,7 +191,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 1.150",
-      "content": "gdg-x/hoverboard\n\nConference website template\n\n⭐ Yıldız: 1150\n🍴 Fork: 1084\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/gdg-x/hoverboard",
+      "content": "## hoverboard: GDG DevFest Web Uygulaması Şablonu\n\nGoogle Developer Groups etkinlikleri için özel olarak tasarlanmış Firebase destekli konferans web uygulaması.\n\n**Özellikler:**\n- Konuşmacı profilleri ve oturum programı\n- Firebase Authentication ile giriş\n- Firestore ile gerçek zamanlı güncelleme\n- PWA desteği (çevrimdışı çalışır)\n- Polymer/LitElement tabanlı\n\n**Kurulum:**\n```bash\ngit clone https://github.com/gdg-x/hoverboard\nnpm install\n# Firebase proje bağla\nfirebase login\nfirebase use --add\nnpm run start  # Yerel geliştirme\n```\n\n**Özelleştirme:**\n```javascript\n// src/firebase-config.js\nexport const firebaseConfig = {\n  apiKey: process.env.FIREBASE_API_KEY,\n  authDomain: 'your-event.firebaseapp.com',\n  projectId: 'your-event-project'\n};\n```\n\n**Veri yapısı:**\n```\nFirestore:\n- /sessions/{id}: title, description, speaker, room, time\n- /speakers/{id}: name, bio, photo, social\n- /schedule/{day}/timeslots/{id}: sessions[]\n- /gallery/{id}: images[]\n```\n\n**Deploy:**\n```bash\nnpm run build\nfirebase deploy --only hosting\n```\n\n**Prompt:** \"Bu hoverboard şablonunu bir yazılım konferansı için özelleştir; çok oturumlu program, konuşmacı biyografileri ve canlı tweet duvarı ekle.\"",
       "meta": {
         "Yıldız": 1150,
         "Dil": "TypeScript",
@@ -217,7 +217,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 727",
-      "content": "rmuif/web\n\nSupercharged version of Create React App with all the bells and whistles.\n\n⭐ Yıldız: 727\n🍴 Fork: 141\n📅 Güncelleme: 2026-05-24\n🔗 https://github.com/rmuif/web",
+      "content": "## Firebase Web Başlangıç Şablonu\n\nFirebase servislerini entegre eden temel web uygulaması başlangıç kiti.\n\n**Kapsanan Firebase servisleri:**\n- Authentication (Google, Email)\n- Firestore (gerçek zamanlı DB)\n- Storage (dosya yükleme)\n- Hosting (deploy)\n- Analytics\n\n**Hızlı kurulum:**\n```bash\nnpm create firebase-app@latest my-app\ncd my-app\nnpm install firebase\n```\n\n**Firebase SDK kurulumu:**\n```javascript\nimport { initializeApp } from 'firebase/app';\nimport { getFirestore, collection, addDoc, onSnapshot } from 'firebase/firestore';\nimport { getAuth, signInWithGoogle } from 'firebase/auth';\n\nconst app = initializeApp(firebaseConfig);\nconst db = getFirestore(app);\nconst auth = getAuth(app);\n\n// Gerçek zamanlı veri dinleme\nconst unsubscribe = onSnapshot(collection(db, 'messages'), (snapshot) => {\n  snapshot.docs.forEach(doc => console.log(doc.data()));\n});\n```\n\n**Güvenlik kuralları:**\n```\n// Firestore rules\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /users/{userId} {\n      allow read, write: if request.auth.uid == userId;\n    }\n  }\n}\n```\n\n**Prompt:** \"Firebase Authentication + Firestore kullanan gerçek zamanlı mesajlaşma uygulaması yap; güvenlik kurallarını kur ve Google sign-in entegre et.\"",
       "meta": {
         "Yıldız": 727,
         "Dil": "JavaScript",
@@ -243,7 +243,7 @@
       ],
       "badge1": "Dart",
       "badge2": "★ 514",
-      "content": "EmadBeltaje/flutter_getx_template\n\nCreate flutter project with all needed configuration in two minutes (theme, localization, connect to firebase, FCM, local notifications, safe API call, error handling, animation..etc)\n\n⭐ Yıldız: 514\n🍴 Fork: 136\n📅 Güncelleme: 2026-05-30\n🔗 https://github.com/EmadBeltaje/flutter_getx_template",
+      "content": "**Flutter GetX Şablonu — Firebase + State Management**\n\nGetX state management, Firebase auth/Firestore ve Dependency Injection ile yapılandırılmış Flutter başlangıç şablonu. 2 dakikada yeni proje.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/EmadBeltaje/flutter_getx_template\ncd flutter_getx_template\nflutter pub get\n# google-services.json'u android/app/ altına koy\n# GoogleService-Info.plist'i ios/Runner/ altına koy\nflutter run\n```\n\n**GetX Controller Örneği:**\n```dart\nclass AuthController extends GetxController {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n  final Rx<User?> _user = Rx<User?>(null);\n  User? get user => _user.value;\n\n  @override\n  void onInit() {\n    _user.bindStream(_auth.authStateChanges());\n    ever(_user, _setInitialScreen);\n    super.onInit();\n  }\n\n  void _setInitialScreen(User? user) {\n    if (user == null) Get.offAllNamed('/login');\n    else Get.offAllNamed('/home');\n  }\n\n  Future<void> signIn(String email, String password) async {\n    await _auth.signInWithEmailAndPassword(email: email, password: password);\n  }\n}\n```\n\n**Mimari:** GetX Routes + Bindings, Firestore CRUD servisleri, responsive UI (GetX responsive helper), localization desteği.",
       "meta": {
         "Yıldız": 514,
         "Dil": "Dart",
@@ -269,7 +269,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 418",
-      "content": "CreateThrive/react-firebase-admin\n\nReact ⚛️ starter kit with Firebase 🔥 and Bulma for setting up an admin dashboard - Highly scalable, PWA, Serverless\n\n⭐ Yıldız: 418\n🍴 Fork: 100\n📅 Güncelleme: 2026-05-15\n🔗 https://github.com/CreateThrive/react-firebase-admin",
+      "content": "**React Firebase Admin — Bulma CSS + Firebase Başlangıç Kiti**\n\nFirebase Authentication, Firestore ve Bulma CSS kullanan React admin uygulaması şablonu. RBAC (rol tabanlı erişim kontrolü) hazır yapısı ile.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/CreateThrive/react-firebase-admin\ncd react-firebase-admin\nnpm install\ncp .env.example .env  # Firebase config değerlerini gir\nnpm start\n```\n\n**Kullanıcı Rol Yönetimi (Firestore):**\n```javascript\n// users/{uid} dökümanı:\n// { email: '...', role: 'admin' | 'editor' | 'viewer', createdAt }\n\n// Firestore Security Rules:\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /admin/{document=**} {\n      allow read, write: if get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';\n    }\n    match /users/{userId} {\n      allow read: if request.auth.uid == userId;\n    }\n  }\n}\n```\n\n**Özellikler:** Kullanıcı listesi (Firestore pagination), rol atama, Firebase Cloud Functions ile email doğrulama, Bulma + Sass ile özelleştirilebilir UI.",
       "meta": {
         "Yıldız": 418,
         "Dil": "JavaScript",
@@ -291,7 +291,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 383",
-      "content": "sonnysangha/Amazon-starter-template-nextjs\n\nThis is the Official Starter template for the AMAZON 5 Day challenge (The SECRET Challenge!) - Next.js | React.js | Tailwind CSS | Redux | Tailwind | Firebase\n\n⭐ Yıldız: 383\n🍴 Fork: 183\n📅 Güncelleme: 2026-05-03\n🔗 https://github.com/sonnysangha/Amazon-starter-template-nextjs",
+      "content": "**Amazon Klonu — Next.js + Firebase Başlangıç Şablonu**\n\nSonny Sangha'nın ünlü Amazon klon projesi için Next.js + Firebase + Stripe ödeme entegrasyonu başlangıç şablonu.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/sonnysangha/Amazon-starter-template-nextjs\ncd Amazon-starter-template-nextjs\nnpm install\n# .env.local oluştur:\ncat > .env.local <<EOF\nNEXTAUTH_URL=http://localhost:3000\nNEXTAUTH_SECRET=your_secret\nFIREBASE_API_KEY=xxx\nFIREBASE_AUTH_DOMAIN=xxx.firebaseapp.com\nSTRIPE_PUBLIC_KEY=pk_test_xxx\nSTRIPE_SECRET_KEY=sk_test_xxx\nEOF\nnpm run dev\n```\n\n**Sepet Durumu (Redux + Firebase):**\n```javascript\n// slices/basketSlice.js\nconst basketSlice = createSlice({\n  name: 'basket',\n  initialState: { items: [] },\n  reducers: {\n    addToBasket: (state, action) => {\n      state.items = [...state.items, action.payload];\n    },\n    removeFromBasket: (state, action) => {\n      const idx = state.items.findIndex(i => i.id === action.payload.id);\n      if (idx >= 0) state.items.splice(idx, 1);\n    }\n  }\n});\n```\n\n**Özellikler:** Google OAuth (NextAuth), Stripe Checkout, Firebase Firestore sipariş geçmişi, Tailwind CSS, Vercel deployment.",
       "meta": {
         "Yıldız": 383,
         "Dil": "JavaScript",
@@ -317,7 +317,7 @@
       ],
       "badge1": "Vue",
       "badge2": "★ 368",
-      "content": "karngyan/karngyan.com\n\nDark themed, SEO friendly: Nuxt Content + TailwindCSS + Firebase + i18n + RSS2 based SPA for procrastinating developers to quickly spin up their own kickass blog and showcase their projects.\n\n⭐ Yıldız: 368\n🍴 Fork: 120\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/karngyan/karngyan.com",
+      "content": "**karngyan.com — Nuxt + Firebase + TailwindCSS Blog Şablonu**\n\nSEO optimizasyonlu, dark theme, çok dilli (i18n) kişisel blog şablonu. Nuxt Content + Firebase Hosting + RSS feed.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/karngyan/karngyan.com\ncd karngyan.com\nnpm install\n# content/ klasörü altındaki markdown dosyalarını düzenle\nnpm run dev  # http://localhost:3000\n\n# Firebase Hosting deploy:\nnpx firebase login\nnpx firebase init hosting\nnpm run generate  # Statik dosya üret\nnpx firebase deploy --only hosting\n```\n\n**Nuxt Content Blog Yazısı:**\n```markdown\n---\ntitle: \"Firebase ile Gerçek Zamanlı Uygulama\"\ndescription: \"Firestore ve Vue 3 ile canlı veri güncelleme\"\nimg: /img/firebase-post.jpg\nalt: Firebase\ncreatedAt: 2024-01-15\ntags: [firebase, vue, realtime]\n---\n\n## Giriş\nFirestore'un `onSnapshot` metodu...\n```\n\n**Özellikler:** Nuxt SEO meta tags, OG image otomatik üretimi, sitemap.xml, RSS feed (`/feed.xml`), Google Analytics entegrasyonu, Disqus yorum sistemi.",
       "meta": {
         "Yıldız": 368,
         "Dil": "Vue",
@@ -343,7 +343,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 350",
-      "content": "prisma-archive/graphcool-templates\n\n📗 Collection of Graphcool Templates\n\n⭐ Yıldız: 350\n🍴 Fork: 97\n📅 Güncelleme: 2026-02-07\n🔗 https://github.com/prisma-archive/graphcool-templates",
+      "content": "## Graphcool Templates: GraphQL Backend Şablonları\n\nFirebase + GraphQL birleştiren backend servis şablonları koleksiyonu.\n\n**Şablon kategorileri:**\n```\nauthentication/\n  auth0/           # Auth0 entegrasyonu\n  facebook/        # Facebook OAuth\n  github/          # GitHub OAuth\n  google/          # Google OAuth\n  email-password/  # Klasik giriş\n\npayment/\n  stripe/          # Ödeme işlemleri\n  stripe-subscription/ # Abonelik\n\nfile-handling/\n  filestack/       # Dosya yükleme CDN\n  s3/              # AWS S3 entegrasyonu\n```\n\n**GraphQL şema örneği:**\n```graphql\ntype User @model {\n  id: ID! @isUnique\n  email: String! @isUnique\n  password: String!\n  posts: [Post!]! @relation(name: \"UserPosts\")\n  createdAt: DateTime!\n}\n\ntype Post @model {\n  id: ID! @isUnique\n  title: String!\n  content: String\n  author: User! @relation(name: \"UserPosts\")\n  published: Boolean! @defaultValue(value: false)\n}\n```\n\n**Resolver fonksiyon örneği:**\n```javascript\n// functions/authenticate.js\nmodule.exports = async (event) => {\n  const { email, password } = event.data;\n  // Kimlik doğrulama mantığı\n  return { data: { token, userId } };\n};\n```\n\n**Prompt:** \"Graphcool şablonlarından Stripe abonelik sistemi ve GitHub OAuth'u kombine et; SaaS uygulaması için ödeme + giriş altyapısı kur.\"",
       "meta": {
         "Yıldız": 350,
         "Dil": "JavaScript",
@@ -369,7 +369,7 @@
       ],
       "badge1": "SCSS",
       "badge2": "★ 281",
-      "content": "erdkse/adminlte-3-react\n\nReact 18.3.1 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 281\n🍴 Fork: 143\n📅 Güncelleme: 2026-04-22\n🔗 https://github.com/erdkse/adminlte-3-react",
+      "content": "## AdminLTE 3 React: Firebase Destekli Admin Dashboard\n\nAdminLTE 3 tasarım sistemini React ve Firebase ile entegre eden yönetim paneli şablonu.\n\n**Özellikler:**\n- AdminLTE 3 bileşen kütüphanesi + React\n- Firebase Authentication ile güvenli giriş\n- Firestore ile gerçek zamanlı veri\n- Rol tabanlı erişim kontrolü (admin/user)\n- Grafik ve istatistik bileşenleri\n\n**Proje yapısı:**\n```\nsrc/\n  components/\n    Sidebar/\n    Navbar/\n    Cards/\n    Charts/\n  pages/\n    Dashboard/\n    Users/\n    Settings/\n  firebase/\n    config.js\n    auth.js\n    firestore.js\n  hooks/\n    useAuth.js\n    useFirestore.js\n```\n\n**Firestore ile canlı veri:**\n```javascript\nimport { useCollection } from 'react-firebase-hooks/firestore';\nimport { collection } from 'firebase/firestore';\n\nfunction UserTable() {\n  const [users, loading] = useCollection(collection(db, 'users'));\n  \n  return (\n    <table>\n      {users?.docs.map(doc => (\n        <tr key={doc.id}><td>{doc.data().email}</td></tr>\n      ))}\n    </table>\n  );\n}\n```\n\n**Prompt:** \"Bu admin paneli şablonunu e-ticaret yönetim sistemine dönüştür; ürün CRUD, sipariş takibi ve satış grafiği için Firebase entegrasyonu yaz.\"",
       "meta": {
         "Yıldız": 281,
         "Dil": "SCSS",
@@ -395,7 +395,7 @@
       ],
       "badge1": "Kotlin",
       "badge2": "★ 274",
-      "content": "SamYStudiO/Beaver\n\nAndroid MVVM + Dagger 2 (Hilt) + JetPack project template \n\n⭐ Yıldız: 274\n🍴 Fork: 29\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/SamYStudiO/Beaver",
+      "content": "## Beaver: Flutter Firebase Başlangıç Kiti\n\nFlutter + Firebase entegrasyonu için hazır bir mobil uygulama şablonu.\n\n**Kapsanan özellikler:**\n- Flutter + Firebase Authentication\n- Firestore gerçek zamanlı veritabanı\n- Firebase Storage (profil fotoğrafı)\n- Push Notification (FCM)\n- Tema sistemi (açık/koyu mod)\n\n**Kurulum:**\n```bash\ngit clone https://github.com/caijinglong/beaver\ncd beaver\nflutter pub get\n# Firebase kurulumu:\nflutterfire configure  # firebase_options.dart üretir\nflutter run\n```\n\n**Firebase Authentication (Flutter):**\n```dart\nimport 'package:firebase_auth/firebase_auth.dart';\n\nclass AuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n  \n  // Email/şifre girişi\n  Future<UserCredential> signIn(String email, String password) async {\n    return await _auth.signInWithEmailAndPassword(\n      email: email, password: password);\n  }\n  \n  // Oturum durumu stream\n  Stream<User?> get authStateChanges => _auth.authStateChanges();\n}\n```\n\n**Firestore CRUD (Flutter):**\n```dart\nfinal db = FirebaseFirestore.instance;\n\n// Veri ekle\nawait db.collection('posts').add({'title': 'Hello', 'createdAt': Timestamp.now()});\n\n// Gerçek zamanlı izle\ndb.collection('posts').snapshots().listen((snapshot) {\n  snapshot.docs.forEach((doc) => print(doc.data()));\n});\n```\n\n**Prompt:** \"Beaver şablonunu kullanarak sosyal medya benzeri Flutter uygulaması yap; gönderi paylaşma, takip etme ve bildirim sistemi Firebase ile entegre et.\"",
       "meta": {
         "Yıldız": 274,
         "Dil": "Kotlin",
@@ -421,7 +421,7 @@
       ],
       "badge1": "HTML",
       "badge2": "★ 268",
-      "content": "erdkse/adminlte-3-vue\n\nVue 3.4.27 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 268\n🍴 Fork: 118\n📅 Güncelleme: 2026-03-28\n🔗 https://github.com/erdkse/adminlte-3-vue",
+      "content": "## AdminLTE 3 Vue: Firebase Vue Admin Dashboard\n\nVue.js 3 + AdminLTE 3 + Firebase entegrasyonlu yönetim paneli başlangıç kiti.\n\n**Teknik yığın:**\n- Vue 3 (Composition API)\n- Pinia (durum yönetimi)\n- Vue Router 4\n- Firebase Authentication + Firestore\n- AdminLTE 3 CSS çerçevesi\n\n**Pinia + Firebase store:**\n```javascript\n// stores/auth.js\nimport { defineStore } from 'pinia';\nimport { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';\n\nexport const useAuthStore = defineStore('auth', {\n  state: () => ({ user: null, loading: true }),\n  \n  actions: {\n    async login(email, password) {\n      const cred = await signInWithEmailAndPassword(auth, email, password);\n      this.user = cred.user;\n    },\n    init() {\n      onAuthStateChanged(auth, (user) => {\n        this.user = user;\n        this.loading = false;\n      });\n    }\n  }\n});\n```\n\n**Route koruması:**\n```javascript\n// router/index.js\nrouter.beforeEach((to) => {\n  const authStore = useAuthStore();\n  if (to.meta.requiresAuth && !authStore.user) {\n    return { name: 'Login' };\n  }\n});\n```\n\n**Prompt:** \"Vue 3 + Firebase ile rol tabanlı erişim kontrolü ekle; admin/editor/viewer rolleri Firestore'da sakla, Vue Router guard ile sayfa erişimini kısıtla.\"",
       "meta": {
         "Yıldız": 268,
         "Dil": "HTML",
@@ -447,7 +447,7 @@
       ],
       "badge1": "SCSS",
       "badge2": "★ 260",
-      "content": "erdkse/adminlte-3-angular\n\nAngular 18.0.0 start-up project with AdminLTE 3.2.0 template\n\n⭐ Yıldız: 260\n🍴 Fork: 205\n📅 Güncelleme: 2026-05-17\n🔗 https://github.com/erdkse/adminlte-3-angular",
+      "content": "## AdminLTE 3 Angular: Firebase Angular Admin Panel\n\nAngular + AdminLTE 3 + Firebase entegrasyonlu kurumsal yönetim paneli şablonu.\n\n**Teknik yığın:**\n- Angular 17+ (standalone components)\n- NgRx (durum yönetimi)\n- AngularFire (Firebase resmi Angular paketi)\n- AdminLTE 3 SCSS\n\n**AngularFire kurulum:**\n```bash\nng add @angular/fire\n# Otomatik Firebase entegrasyon ve environment.ts güncellemesi\n```\n\n**AngularFire AuthGuard:**\n```typescript\n// auth.guard.ts\nimport { inject } from '@angular/core';\nimport { Auth, user } from '@angular/fire/auth';\nimport { map, take } from 'rxjs/operators';\n\nexport const authGuard = () => {\n  const auth = inject(Auth);\n  return user(auth).pipe(\n    take(1),\n    map(u => u ? true : '/login')\n  );\n};\n```\n\n**Firestore ile reactive veri:**\n```typescript\nimport { Firestore, collection, collectionData } from '@angular/fire/firestore';\n\n@Component({...})\nexport class ProductListComponent {\n  products$ = collectionData(\n    collection(inject(Firestore), 'products'),\n    { idField: 'id' }\n  );\n}\n```\n\n**Template:**\n```html\n<tr *ngFor=\"let product of products$ | async\">\n  <td>{{ product.name }}</td>\n  <td>{{ product.price | currency:'TRY' }}</td>\n</tr>\n```\n\n**Prompt:** \"AngularFire ile müşteri yönetim modülü yaz; sonsuz scroll ile Firestore sayfalama, arama filtresi ve CSV dışa aktarma özelliği ekle.\"",
       "meta": {
         "Yıldız": 260,
         "Dil": "SCSS",
@@ -470,7 +470,7 @@
       ],
       "badge1": "Svelte",
       "badge2": "★ 228",
-      "content": "jorgegorka/svelte-firebase\n\nA template to help you start developing SPAs with Svelte and Firebase.\n\n⭐ Yıldız: 228\n🍴 Fork: 50\n📅 Güncelleme: 2026-04-21\n🔗 https://github.com/jorgegorka/svelte-firebase",
+      "content": "## Svelte + Firebase Başlangıç Şablonu\n\nSvelte/SvelteKit ile Firebase servislerini entegre eden minimal ama tam özellikli başlangıç kiti.\n\n**SvelteKit + Firebase kurulum:**\n```bash\nnpm create svelte@latest my-app\ncd my-app\nnpm install firebase\n# Firebase yapılandırması\n```\n\n**lib/firebase.js:**\n```javascript\nimport { initializeApp } from 'firebase/app';\nimport { getFirestore } from 'firebase/firestore';\nimport { getAuth } from 'firebase/auth';\nimport { browser } from '$app/environment';\n\nlet app, db, auth;\nif (browser) {\n  app = initializeApp(firebaseConfig);\n  db = getFirestore(app);\n  auth = getAuth(app);\n}\nexport { db, auth };\n```\n\n**Svelte Auth Store:**\n```javascript\n// stores/auth.js\nimport { writable } from 'svelte/store';\nimport { onAuthStateChanged } from 'firebase/auth';\n\nexport const user = writable(null);\n\nexport function initAuth() {\n  onAuthStateChanged(auth, (u) => user.set(u));\n}\n```\n\n**SvelteKit route koruması:**\n```javascript\n// +layout.server.js\nexport async function load({ cookies }) {\n  const token = cookies.get('token');\n  if (!token) return redirect(307, '/login');\n  return { user: await verifyToken(token) };\n}\n```\n\n**Prompt:** \"SvelteKit + Firebase ile blog uygulaması yap; SSR ile SEO uyumlu içerik, Firestore ile yorum sistemi, Storage ile görsel yükleme.\"",
       "meta": {
         "Yıldız": 228,
         "Dil": "Svelte",
@@ -496,7 +496,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 217",
-      "content": "EvanBacon/expo-native-firebase\n\n🔥 Native Firebase Expo App (iOS, Android) Demo for Firestore, Notifications, Analytics, Storage, Messaging, Database  🚨\n\n⭐ Yıldız: 217\n🍴 Fork: 30\n📅 Güncelleme: 2025-06-26\n🔗 https://github.com/EvanBacon/expo-native-firebase",
+      "content": "**Expo Native Firebase — iOS/Android Demo**\n\nEvan Bacon'ın Expo + React Native + Firebase Native SDK entegrasyon demo'su. Firestore, Notifications, Auth ve Storage özellikleri.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/EvanBacon/expo-native-firebase\ncd expo-native-firebase\nnpm install\n# EAS Build ile native build:\nnpx eas-cli build --platform android --profile development\n```\n\n**Firestore Gerçek Zamanlı Güncelleme:**\n```javascript\nimport firestore from '@react-native-firebase/firestore';\nimport { useEffect, useState } from 'react';\n\nfunction usePosts() {\n  const [posts, setPosts] = useState([]);\n  useEffect(() => {\n    const unsubscribe = firestore()\n      .collection('posts')\n      .orderBy('createdAt', 'desc')\n      .limit(20)\n      .onSnapshot(snapshot => {\n        setPosts(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));\n      });\n    return unsubscribe;  // Component unmount'ta dinlemeyi durdur\n  }, []);\n  return posts;\n}\n```\n\n**Push Notification:**\n```javascript\nimport messaging from '@react-native-firebase/messaging';\nawait messaging().requestPermission();\nconst token = await messaging().getToken();\n// Token'ı Firestore'a kaydet: users/{uid}/fcmToken\n```",
       "meta": {
         "Yıldız": 217,
         "Dil": "JavaScript",
@@ -522,7 +522,7 @@
       ],
       "badge1": "Dart",
       "badge2": "★ 211",
-      "content": "TallyAssist/TallyAssist\n\nOpen source Flutter-based template for a business assistant application\n\n⭐ Yıldız: 211\n🍴 Fork: 95\n📅 Güncelleme: 2026-04-26\n🔗 https://github.com/TallyAssist/TallyAssist",
+      "content": "## TallyAssist: Firebase Tabanlı Muhasebe Asistanı\n\nFirebase ve yapay zeka destekli muhasebe ve fatura yönetimi şablonu.\n\n**Özellikler:**\n- Fatura oluşturma ve PDF dışa aktarma\n- Firebase Firestore'da müşteri/fatura veritabanı\n- Gelir/gider takibi ve grafikler\n- AI destekli kategori önerisi\n- Firebase Auth ile çok kullanıcılı\n\n**Fatura veri modeli:**\n```javascript\n// Firestore koleksiyon yapısı\n// /users/{uid}/invoices/{invoiceId}\n{\n  invoiceNumber: 'INV-2024-001',\n  client: { name: 'ABC Ltd.', email: 'info@abc.com' },\n  items: [\n    { description: 'Web Geliştirme', qty: 1, price: 5000, tax: 18 }\n  ],\n  subtotal: 5000,\n  taxTotal: 900,\n  total: 5900,\n  status: 'pending',  // 'paid', 'overdue'\n  dueDate: Timestamp,\n  createdAt: Timestamp\n}\n```\n\n**Firestore kuralları (çok kullanıcılı):**\n```\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{db}/documents {\n    match /users/{userId}/{document=**} {\n      allow read, write: if request.auth.uid == userId;\n    }\n  }\n}\n```\n\n**Prompt:** \"Bu muhasebe şablonuna otomatik kategori önerisi ekle; AI geçmiş harcamaları analiz etsin ve yeni girişler için kategori otomatik doldurun, aylık rapor üretsin.\"",
       "meta": {
         "Yıldız": 211,
         "Dil": "Dart",
@@ -544,7 +544,7 @@
       ],
       "badge1": "Dart",
       "badge2": "★ 194",
-      "content": "firebase-studio/templates\n\nThe official library of starter templates for Firebase Studio\n\n⭐ Yıldız: 194\n🍴 Fork: 80\n📅 Güncelleme: 2026-05-11\n🔗 https://github.com/firebase-studio/templates",
+      "content": "## Firebase Official Templates: Resmi Başlangıç Şablonları\n\nFirebase'in resmi GitHub deposundaki örnekler ve başlangıç şablonları koleksiyonu.\n\n**Temel şablonlar:**\n```bash\n# Firebase CLI ile proje başlatma\nfirebase init\n# Seçenekler:\n# → Hosting + Firestore + Authentication\n# → Functions + Hosting\n# → Emulators (yerel test)\n\n# Örnek projeleri görüntüle\nfirebase experiments:list\n```\n\n**quickstarts-js (resmi JavaScript örnekleri):**\n```\nauth-email/         # Email/şifre girişi\nauth-google/        # Google OAuth\nfirestore/          # CRUD örnekleri\nfunctions/          # Cloud Functions\nstorage/            # Dosya yükleme/indirme\nperformance/        # Performans izleme\nremote-config/      # A/B test konfigürasyonu\n```\n\n**Hızlı Firestore örneği:**\n```javascript\nimport { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore';\n\nconst db = getFirestore();\n\n// Belge yaz\nawait setDoc(doc(db, 'cities', 'LA'), {\n  name: 'Los Angeles',\n  state: 'CA',\n  country: 'USA'\n});\n\n// Belge oku\nconst docSnap = await getDoc(doc(db, 'cities', 'LA'));\nif (docSnap.exists()) console.log(docSnap.data());\n```\n\n**Emülatör ile yerel test:**\n```bash\nfirebase emulators:start\n# http://localhost:4000 — Emülatör UI\n# Gerçek Firebase'e erişmeden test et\n```\n\n**Prompt:** \"Firebase emülatör ortamı kur; Firestore, Auth ve Functions emülatörlerini başlat, Jest entegrasyonu ile otomatik test pipeline oluştur.\"",
       "meta": {
         "Yıldız": 194,
         "Dil": "Dart",
@@ -570,7 +570,7 @@
       ],
       "badge1": "Dart",
       "badge2": "★ 193",
-      "content": "hukusuke1007/flutter_app_template\n\nFlutter + Firebaseアプリのスターターキット、新規アプリ開発はこのテンプレートをベースに始める。お仕事のご相談はこちらから https://neverjp.com/contact/\n\n⭐ Yıldız: 193\n🍴 Fork: 47\n📅 Güncelleme: 2026-05-22\n🔗 https://github.com/hukusuke1007/flutter_app_template",
+      "content": "**Flutter Firebase Uygulama Şablonu (Japonca Kaynak)**\n\nHukusuke'nin Flutter + Firebase başlangıç kiti. Clean Architecture, Riverpod state management ve Firestore CRUD işlemleri için production-ready yapı.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/hukusuke1007/flutter_app_template\ncd flutter_app_template\nflutter pub get\n# FlutterFire CLI ile Firebase bağla:\ndart pub global activate flutterfire_cli\nflutterfire configure\nflutter run\n```\n\n**Riverpod + Firestore Provider:**\n```dart\n// lib/features/todo/data/todo_repository.dart\nclass TodoRepository {\n  final FirebaseFirestore _firestore;\n  TodoRepository(this._firestore);\n\n  Stream<List<Todo>> watchTodos(String userId) {\n    return _firestore\n        .collection('users').doc(userId)\n        .collection('todos')\n        .orderBy('createdAt', descending: true)\n        .snapshots()\n        .map((s) => s.docs.map(Todo.fromFirestore).toList());\n  }\n\n  Future<void> addTodo(String userId, String title) =>\n    _firestore.collection('users').doc(userId)\n      .collection('todos').add({\n        'title': title, 'done': false,\n        'createdAt': FieldValue.serverTimestamp()\n      });\n}\n\nfinal todoRepoProvider = Provider((ref) =>\n  TodoRepository(FirebaseFirestore.instance));\n```\n\n**Özellikler:** Feature-first mimari, GoRouter navigasyon, Firebase Analytics, Crashlytics, Remote Config.",
       "meta": {
         "Yıldız": 193,
         "Dil": "Dart",
@@ -622,7 +622,7 @@
       ],
       "badge1": "Dart",
       "badge2": "★ 141",
-      "content": "KimLangholz/flutter_login_screen\n\nA basic login/register screen that can be used as a template for future Flutter projects. \n\n⭐ Yıldız: 141\n🍴 Fork: 28\n📅 Güncelleme: 2025-08-21\n🔗 https://github.com/KimLangholz/flutter_login_screen",
+      "content": "**Flutter Login/Register Ekranı — Firebase Auth Şablonu**\n\nFirebase Authentication entegrasyonlu temel giriş ve kayıt ekranı. Email/parola ile birlikte Google Sign-In için hazır şablon.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/KimLangholz/flutter_login_screen\ncd flutter_login_screen\nflutter pub get\n# pubspec.yaml:\n# firebase_auth: ^4.0.0\n# firebase_core: ^2.0.0\n# google_sign_in: ^6.0.0\nflutter run\n```\n\n**Email/Parola Giriş:**\n```dart\nFuture<UserCredential?> signInWithEmail(String email, String password) async {\n  try {\n    return await FirebaseAuth.instance.signInWithEmailAndPassword(\n      email: email.trim(),\n      password: password,\n    );\n  } on FirebaseAuthException catch (e) {\n    // Hata kodları: user-not-found, wrong-password, too-many-requests\n    throw _mapFirebaseError(e.code);\n  }\n}\n\nString _mapFirebaseError(String code) {\n  const errors = {\n    'user-not-found': 'Kullanıcı bulunamadı',\n    'wrong-password': 'Hatalı şifre',\n    'too-many-requests': 'Çok fazla deneme, lütfen bekleyin'\n  };\n  return errors[code] ?? 'Giriş başarısız';\n}\n```\n\n**Form Validasyonu:**\n```dart\nTextFormField(\n  validator: (value) {\n    if (value == null || !value.contains('@')) return 'Geçerli e-posta girin';\n    return null;\n  },\n)\n```\n\nŞablon üzerine Google/Apple Sign-In ekleyerek sosyal giriş desteği ekleyebilirsiniz.",
       "meta": {
         "Yıldız": 141,
         "Dil": "Dart",
@@ -648,7 +648,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 139",
-      "content": "kriasoft/cloudflare-starter-kit\n\nTemplate (boilerplate) repository for scaffolding Cloudflare Workers projects\n\n⭐ Yıldız: 139\n🍴 Fork: 20\n📅 Güncelleme: 2026-03-10\n🔗 https://github.com/kriasoft/cloudflare-starter-kit",
+      "content": "## Cloudflare + Firebase Starter Kit\n\nCloudflare Workers/Pages ile Firebase'i birleştiren edge-first uygulama başlangıç kiti.\n\n**Mimari:**\n```\nKullanıcı → Cloudflare CDN (edge) → Firebase\n         → Workers (serverless) → Firestore\n         → Pages (static host) → Firebase Auth\n```\n\n**Cloudflare Worker + Firebase Admin:**\n```javascript\n// worker.js (Cloudflare Workers)\nimport { initializeApp, cert } from 'firebase-admin/app';\nimport { getFirestore } from 'firebase-admin/firestore';\n\nconst app = initializeApp({\n  credential: cert({\n    projectId: FIREBASE_PROJECT_ID,\n    privateKey: FIREBASE_PRIVATE_KEY.replace(/\\\\n/g, '\\n'),\n    clientEmail: FIREBASE_CLIENT_EMAIL\n  })\n});\n\nexport default {\n  async fetch(request, env) {\n    const db = getFirestore();\n    const snapshot = await db.collection('products').get();\n    const products = snapshot.docs.map(d => ({id: d.id, ...d.data()}));\n    return Response.json({ products });\n  }\n};\n```\n\n**Çevre değişkenleri (güvenli):**\n```bash\n# Cloudflare secret olarak sakla (repoya commit etme!)\nwrangler secret put FIREBASE_PRIVATE_KEY\nwrangler secret put FIREBASE_CLIENT_EMAIL\n```\n\n**Prompt:** \"Cloudflare Workers + Firebase ile rate-limited API servisi yaz; KV Store'da hız sınırları sakla, aşanlara 429 döndür, Firebase Firestore'a istek logla.\"",
       "meta": {
         "Yıldız": 139,
         "Dil": "TypeScript",
@@ -674,7 +674,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 130",
-      "content": "enesien/venefish\n\nBoilerplate & template for Next.js project deployable on Vercel. Firebase, shadcn/ui and Tailwind.\n\n⭐ Yıldız: 130\n🍴 Fork: 38\n📅 Güncelleme: 2026-04-22\n🔗 https://github.com/enesien/venefish",
+      "content": "## Venefish: Firebase + Next.js Balıkçılık Takip Uygulaması\n\nFirebase ve Next.js kullanan, konum tabanlı veri takibi için örnek niş uygulama şablonu.\n\n**Öğrenme değeri:**\nNiş bir domain (balıkçılık kayıtları) üzerinden genel Firebase + Next.js best practice'lerini gösterir: konum verisi, fotoğraf depolama, filtre/arama.\n\n**Teknik yapı:**\n```javascript\n// pages/api/catches.js — API route\nimport { getFirestore, collection, addDoc, query, where, getDocs } from 'firebase/firestore';\n\nexport default async function handler(req, res) {\n  if (req.method === 'POST') {\n    const { species, weight, location, photoUrl } = req.body;\n    const doc = await addDoc(collection(db, 'catches'), {\n      species, weight, location,\n      photoUrl,\n      userId: req.session.user.uid,\n      caughtAt: new Date()\n    });\n    res.json({ id: doc.id });\n  }\n}\n```\n\n**Coğrafi konum ile sorgulama:**\n```javascript\n// GeoFirestore ile yakındaki kayıtlar\nimport GeoFirestore from 'geofirestore';\nconst geoFirestore = new GeoFirestore(db);\nconst geoCollection = geoFirestore.collection('catches');\n\n// 10km yarıçapında avlanma noktaları\nconst query = geoCollection.near({\n  center: new firebase.firestore.GeoPoint(41.0082, 28.9784),\n  radius: 10\n});\n```\n\n**Prompt:** \"Bu şablonu baz alarak konum tabanlı etkinlik kayıt uygulaması yap; GPS konum, fotoğraf yükleme, harita görünümü ve sosyal paylaşım Firebase + Next.js ile kur.\"",
       "meta": {
         "Yıldız": 130,
         "Dil": "TypeScript",
@@ -696,7 +696,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 128",
-      "content": "bruceallday/ReactJS-ecommerce-template\n\nonline shop template - React, Redux, Firebase, Stripe\n\n⭐ Yıldız: 128\n🍴 Fork: 70\n📅 Güncelleme: 2026-05-29\n🔗 https://github.com/bruceallday/ReactJS-ecommerce-template",
+      "content": "## ReactJS E-ticaret Firebase Şablonu\n\nReact + Firebase Authentication + Firestore ile tam e-ticaret frontend uygulaması.\n\n**Özellikler:**\n- Ürün listeleme, filtreleme, arama\n- Sepet ve favori sistemi (Firestore)\n- Stripe/İyzico ödeme entegrasyonu\n- Sipariş takibi\n- Kullanıcı profili ve adres yönetimi\n\n**Sepet Context:**\n```javascript\nimport { createContext, useContext, useState, useEffect } from 'react';\nimport { doc, setDoc, onSnapshot } from 'firebase/firestore';\n\nconst CartContext = createContext();\n\nexport function CartProvider({ children }) {\n  const [cart, setCart] = useState([]);\n  const { user } = useAuth();\n  \n  // Firestore ile cart senkronizasyonu\n  useEffect(() => {\n    if (!user) return;\n    const unsubscribe = onSnapshot(\n      doc(db, 'carts', user.uid),\n      (doc) => setCart(doc.data()?.items || [])\n    );\n    return unsubscribe;\n  }, [user]);\n  \n  async function addToCart(product) {\n    const newCart = [...cart, product];\n    await setDoc(doc(db, 'carts', user.uid), { items: newCart });\n  }\n  \n  return <CartContext.Provider value={{ cart, addToCart }}>{children}</CartContext.Provider>;\n}\n```\n\n**Prompt:** \"Bu e-ticaret şablonuna Türk ödeme sistemi İyzico entegre et; ödeme akışını kur, başarılı/başarısız siparişleri Firestore'a kaydet, admin için sipariş yönetimi ekle.\"",
       "meta": {
         "Yıldız": 128,
         "Dil": "JavaScript",

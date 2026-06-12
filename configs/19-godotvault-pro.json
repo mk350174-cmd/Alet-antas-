@@ -121,7 +121,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 5.652",
-      "content": "dialogic-godot/dialogic\n\n💬 Create Dialogs, Visual Novels, RPGs, and manage Characters with Godot to create your Game!\n\n⭐ Yıldız: 5652\n🍴 Fork: 329\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/dialogic-godot/dialogic",
+      "content": "## Dialogic: Godot İçin Diyalog Sistemi Eklentisi\n\nDialogic, Godot'ta görsel novel ve RPG diyalog sistemleri oluşturmak için kullanılan gelişmiş eklentidir.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/dialogic-godot/dialogic\n# Eklentiyi addons/ dizinine kopyala\n# Proje > Eklentiler > Dialogic aktif et\n```\n\n**Temel kullanım (GDScript):**\n```gdscript\n# Diyalog başlat\nDialogic.start('dialogue_file')\n# Veya node olarak\nvar dialog = Dialogic.new_timeline('main_story')\nadd_child(dialog)\n\n# Sinyaller\nDialogic.timeline_ended.connect(_on_dialogue_ended)\nDialogic.signal_event.connect(_on_signal_received)\n```\n\n**Özellikler:** Görsel timeline editörü, şartlı dallar, değişken sistemi, çoklu dil desteği, karakter portreleri\n\n**Prompt:** \"Dialogic ile 3 karakterli, şarta bağlı sonuç değiştiren ve oyuncunun seçimini kaydeden RPG diyalog sistemi kur.\"",
       "meta": {
         "Yıldız": 5652,
         "Dil": "GDScript",
@@ -147,7 +147,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 3.612",
-      "content": "nathanhoad/godot_dialogue_manager\n\nA powerful nonlinear dialogue system for Godot\n\n⭐ Yıldız: 3612\n🍴 Fork: 256\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/nathanhoad/godot_dialogue_manager",
+      "content": "## Godot Dialogue Manager: Ink Tabanlı Diyalog\n\nInk scripting dili ile entegre çalışan güçlü Godot 4 diyalog yönetim eklentisi.\n\n**Kurulum:**\n```gdscript\n# Plugin Asset Library'den yükle\n# Dialogue Manager > Yeni diyalog dosyası oluştur (.dialogue)\n```\n\n**Dialogue dosya syntax:**\n```\n~ start\nNPC: Seni bekliyordum.\n- [Evet, geldim.]\n    Kahraman: İşte buradayım.\n    => quest_briefing\n- [Hayır, gelmedim.]\n    Kahraman: Ben kimim?\n    => identity_crisis\n\n~ quest_briefing\nNPC: Ejderhayı öldürmeni istiyorum.\n=> END\n```\n\n**GDScript entegrasyonu:**\n```gdscript\nvar dialogue = DialogueManager.get_next_dialogue_line(resource, 'start')\nawait DialogueManager.dialogue_ended\n```\n\n**Prompt:** \"Dialogue Manager ile ana hikayeye bağlanan 5 yan görev diyalog sistemi kur; görev durumu flag'leri ile dallanma.\"",
       "meta": {
         "Yıldız": 3612,
         "Dil": "GDScript",
@@ -173,7 +173,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 3.114",
-      "content": "bitbrain/beehave\n\n🐝 behavior tree AI for Godot Engine\n\n⭐ Yıldız: 3114\n🍴 Fork: 163\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/bitbrain/beehave",
+      "content": "## Beehave: Godot Behavior Tree Eklentisi\n\nBeehave, Godot için görsel ve kod tabanlı AI davranış ağacı eklentisidir. NPC AI'ını modüler, anlaşılır şekilde yapılandırır.\n\n**Kurulum:**\n```\nAsset Library > Beehave > İndir ve aktifleştir\n```\n\n**Temel yapı:**\n```gdscript\n# Behavior Tree Node'ları:\n# Selector: Birisi başarılı olana kadar dener\n# Sequence: Hepsi başarılı olmak zorunda\n# Leaf: Gerçek aksiyon/koşul\n\nclass_name AttackAction extends BTAction:\n    func tick(actor, blackboard):\n        actor.attack()\n        return SUCCESS\n\nclass_name IsPlayerNearCondition extends BTCondition:\n    func tick(actor, blackboard):\n        var player = actor.get_node('Player')\n        if actor.global_position.distance_to(player.global_position) < 200:\n            return SUCCESS\n        return FAILURE\n```\n\n**Prompt:** \"Beehave ile düşman AI davranış ağacı kur: devriye, oyuncuyu fark etme, kovalama, saldırı ve geri çekilme state'leri.\"",
       "meta": {
         "Yıldız": 3114,
         "Dil": "GDScript",
@@ -199,7 +199,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 2.800",
-      "content": "gdquest-demos/godot-open-rpg\n\nLearn to create turn-based combat with this Open Source RPG demo ⚔\n\n⭐ Yıldız: 2800\n🍴 Fork: 339\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/gdquest-demos/godot-open-rpg",
+      "content": "## Godot Open RPG: Açık Kaynak RPG Şablon Projesi\n\nTopdown RPG oyun mekanikleri için tam çalışan referans implementasyon — Godot 4 ile.\n\n**Özellikler:**\n- Izometric/topdown hareket sistemi\n- Turn-based savaş sistemi\n- Envanter ve ekipman yönetimi\n- Diyalog ve görev sistemi\n- Kaydetme/yükleme sistemi\n\n**Başlangıç:**\n```bash\ngit clone https://github.com/GDQuest/godot-open-rpg\ngodot4 project.godot\n```\n\n**Öğrenme yolu:**\n1. `battle_system/` → savaş mekanikleri\n2. `quest/` → görev takip sistemi\n3. `inventory/` → item yönetimi\n4. `save_system/` → JSON serialization\n\n**Prompt:** \"Godot Open RPG'nin savaş sistemine yeni bir silah tipi (yay) ekle: menzil hesabı, ok animasyonu ve çoklu hedef mechanic.\"",
       "meta": {
         "Yıldız": 2800,
         "Dil": "GDScript",
@@ -225,7 +225,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 2.680",
-      "content": "GDQuest/learn-gdscript\n\nLearn Godot's GDScript programming language from zero, right in your browser, for free.\n\n⭐ Yıldız: 2680\n🍴 Fork: 225\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/GDQuest/learn-gdscript",
+      "content": "## Learn GDScript: Etkileşimli GDScript Öğrenme Platformu\n\nGDScript sözdizimini tarayıcıda etkileşimli olarak öğreten araç — Godot kurulumu gerektirmez.\n\n**İçerik kategorileri:**\n1. Değişkenler ve temel tipler (int, float, String, bool)\n2. Kontrol akışı (if/elif/else, for, while, match)\n3. Fonksiyonlar ve scope\n4. Node'lara erişim (`$NodeName`, `get_node()`)\n5. Sinyaller ve bağlantılar\n6. Diziler ve Dictionary\n7. Nesne yönelimli: class, extends, super\n\n**GDScript temel kalıplar:**\n```gdscript\n# Onready değişken (node erişimi)\n@onready var player = $Player\n\n# Sinyal tanımlama ve emit\nsignal item_collected(item_name)\nemit_signal(item_collected, 'sword')\n\n# Tween ile animasyon\nvar tween = create_tween()\ntween.tween_property($Sprite2D, 'scale', Vector2(2,2), 0.3)\n```\n\n**Prompt:** \"GDScript'te polymorphism kullanarak farklı düşman tipleri için temel sınıf ve alt sınıflar oluştur; ortak attack() ve move() metodları.\"",
       "meta": {
         "Yıldız": 2680,
         "Dil": "GDScript",
@@ -251,7 +251,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 2.516",
-      "content": "MewPurPur/GodSVG\n\nA vector graphics application for structured SVG editing, available on all major desktop platforms and on web. Currently in late alpha.\n\n⭐ Yıldız: 2516\n🍴 Fork: 116\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/MewPurPur/GodSVG",
+      "content": "## GodSVG: Godot İçin SVG Editörü\n\nGodot motoru üzerine inşa edilmiş, tamamen Godot ile yazılmış SVG düzenleme aracı.\n\n**Kullanım alanları:**\n- Oyun için ikon ve UI asset üretimi\n- Vektör grafik düzenleme (Godot içinden)\n- SVG animasyonu için path düzenleme\n\n**Başlangıç:**\n```bash\ngit clone https://github.com/MewPurPur/GodSVG\ngodot4 project.godot\n```\n\n**SVG'yi Godot projesinde kullanma:**\n```gdscript\n# SVG dosyasını yükle ve kullan\nvar svg_texture = load('res://assets/icon.svg') as Texture2D\n$Sprite2D.texture = svg_texture\n\n# SVG boyutunu çalışma zamanında değiştir\n# Import settings > Scale: 2.0 (Retina için)\n```\n\n**Prompt:** \"Godot projesinde SVG ikonları tile atlas olarak organize et; farklı çözünürlükler için import ayarları ve @export ile tema değiştirilebilir ikon sistemi.\"",
       "meta": {
         "Yıldız": 2516,
         "Dil": "GDScript",
@@ -277,7 +277,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 2.188",
-      "content": "Zylann/godot_heightmap_plugin\n\nHeightMap terrain for Godot implemented in GDScript\n\n⭐ Yıldız: 2188\n🍴 Fork: 181\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/Zylann/godot_heightmap_plugin",
+      "content": "## Godot HeightMap Plugin: 3D Arazi Editörü\n\nGodot'ta heightmap tabanlı 3D arazi oluşturmak için görsel editör eklentisi.\n\n**Kurulum:**\n```\nAsset Library > HeightMap Terrain > İndir\naddons/zylann.hterrain/plugin.gd\nProje > Eklentiler > aktifleştir\n```\n\n**Arazi oluşturma:**\n1. `HTerrain` node ekle\n2. Data klasörü oluştur (heightmap, textures saklanır)\n3. Brushlar ile yükseklik boyama\n4. Texture painting: zemin, kaya, çimen katmanları\n5. Detay nesneler: ot, taş otomatik dağıt\n\n**GDScript API:**\n```gdscript\nvar terrain = $HTerrain\n# Yükseklik değeri al\nvar height = terrain.get_height_at(100, 200)\n# Normal vektörü al\nvar normal = terrain.get_normal_at(100, 200)\n```\n\n**Prompt:** \"HeightMap Plugin ile prosedürel arazi üret: noise tabanlı heightmap, otomatik biome texture painting ve çimen dağılımı.\"",
       "meta": {
         "Yıldız": 2188,
         "Dil": "GDScript",
@@ -303,7 +303,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.949",
-      "content": "gdquest-demos/godot-3-demos\n\nDozens of free and open source demos for the Godot game engine, version 3. Head to the link below for newer demos for Godot 4+\n\n⭐ Yıldız: 1949\n🍴 Fork: 963\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/gdquest-demos/godot-3-demos",
+      "content": "## GDQuest Godot 3 Demo Koleksiyonu\n\n2000'e yakın yıldıza sahip, GDQuest'in Godot 3 için hazırladığı resmi açık kaynak demo koleksiyonu. Godot 4'e geçerken referans olarak da kullanılabilir.\n\n**İçerik kategorileri:**\n- 2D: platformer, top-down, metroidvania\n- 3D: birinci şahıs, üçüncü şahıs, arazi\n- Fizik: yumuşak cisimler, kısıtlamalar\n- Shader: glow, outline, dissolve\n- UI: inventory, skill tree, minimap\n\n**Godot 3 → 4 migrasyon notları:**\n```gdscript\n# Godot 3\nkinematic_body.move_and_slide(velocity, Vector3.UP)\n# Godot 4\ncharacter_body_3d.velocity = velocity\ncharacter_body_3d.move_and_slide()\n\n# Godot 3: yield\nyield(get_tree().create_timer(1.0), 'timeout')\n# Godot 4: await\nawait get_tree().create_timer(1.0).timeout\n```\n\n**Prompt:** \"Bu Godot 3 demo projesini Godot 4'e port et; migrasyon rehberini izleyerek KinematicBody, yield ve sinyal syntax değişikliklerini uygula.\"",
       "meta": {
         "Yıldız": 1949,
         "Dil": "GDScript",
@@ -329,7 +329,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.852",
-      "content": "gdquest-demos/godot-4-procedural-generation\n\nProcedural generation algorithms and demos for the Godot game engine\n\n⭐ Yıldız: 1852\n🍴 Fork: 99\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/gdquest-demos/godot-4-procedural-generation",
+      "content": "## Prosedürel İçerik Üretimi: Godot 4\n\nNoise fonksiyonları, L-sistemleri ve grammar tabanlı algoritmalarla Godot 4'te prosedürel içerik üretimi.\n\n**FastNoiseLite ile arazi:**\n```gdscript\nvar noise = FastNoiseLite.new()\nnoise.noise_type = FastNoiseLite.TYPE_SIMPLEX\nnoise.frequency = 0.01\nnoise.fractal_octaves = 5\n\nfunc generate_tile(x, y) -> String:\n    var height = noise.get_noise_2d(x, y)\n    if height > 0.5: return 'mountain'\n    elif height > 0.1: return 'grass'\n    elif height > -0.1: return 'beach'\n    else: return 'water'\n```\n\n**Dungeon generation (BSP):**\n```gdscript\nfunc split_room(rect: Rect2, depth: int) -> Array:\n    if depth == 0 or rect.size.x < 10 or rect.size.y < 10:\n        return [rect]\n    var split_h = randf() > 0.5\n    # Yatay veya dikey böl\n    ...\n```\n\n**Prompt:** \"Godot 4'te Wave Function Collapse algoritması ile tileset tabanlı prosedürel level generator yaz.\"",
       "meta": {
         "Yıldız": 1852,
         "Dil": "GDScript",
@@ -355,7 +355,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.707",
-      "content": "Phazorknight/Cogito\n\nImmersive Sim Template Project for GODOT 4\n\n⭐ Yıldız: 1707\n🍴 Fork: 197\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/Phazorknight/Cogito",
+      "content": "## COGITO: Godot 4 Immersive Sim Framework\n\nDeus Ex ve Thief tarzı immersive sim oyunları için Godot 4 framework'ü.\n\n**İçerdiği sistemler:**\n- Fizik tabanlı etkileşim (grab, carry, throw)\n- İnventory ve item management\n- Crafting sistemi\n- Stamina, sağlık, hunger mekanikleri\n- Ses propagation ve dikkat sistemi\n- Kapı, kilit, anahtar sistemi\n\n**Başlangıç:**\n```bash\ngit clone https://github.com/Phazorknight/Cogito\ngodot4 project.godot\n# Örnek sahneyi çalıştır: scenes/cogito_scene_template.tscn\n```\n\n**Özelleştirme:**\n```gdscript\n# Kendi item'ını ekle\nclass_name MedKit extends ConsumableItem:\n    @export var heal_amount: float = 25.0\n    \n    func use(player):\n        player.health += heal_amount\n        queue_free()\n```\n\n**Prompt:** \"COGITO framework üzerine stealth mechanic ekle: shadow detection, noise radius ve düşman alert sistemi.\"",
       "meta": {
         "Yıldız": 1707,
         "Dil": "GDScript",
@@ -381,7 +381,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.588",
-      "content": "nezvers/Godot-GameTemplate\n\nTemplate for top-down shooter, with solutions for tough problems.\n\n⭐ Yıldız: 1588\n🍴 Fork: 103\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/nezvers/Godot-GameTemplate",
+      "content": "## Godot 4 Game Template: Proje Başlangıç Şablonu\n\nAyarlar, kayıt, ses, dil, UI geçişleri içeren hazır proje şablonu.\n\n**Şablonun içerdiği sistemler:**\n- Ana menü ve pause screen\n- Settings (ses, tam ekran, çözünürlük, dil)\n- Save/Load sistemi (JSON tabanlı)\n- Scene transition (fade, slide)\n- Uluslararasılaştırma (i18n) desteği\n\n**Kullanım:**\n```bash\ngit clone https://github.com/crystal-bit/godot-game-template\n# Kendi oyun sahneni GameState.gd'ye kaydet\n# AUTOLOAD: GameState, AudioManager, TransitionManager\n```\n\n**Kayıt sistemi entegrasyonu:**\n```gdscript\n# Kaydet\nGameState.save_game()\n# Yükle\nGameState.load_game()\n# Kayıt verisine eriş\nvar level = GameState.save_data.current_level\n```\n\n**Prompt:** \"Godot Game Template'e achievement sistemi ekle: JSON'da achievement tanımları, kilitleme koşulları ve bildirim popup'ı.\"",
       "meta": {
         "Yıldız": 1588,
         "Dil": "GDScript",
@@ -407,7 +407,7 @@
       ],
       "badge1": "Python",
       "badge2": "★ 1.549",
-      "content": "Scony/godot-gdscript-toolkit\n\nIndependent set of GDScript tools - parser, linter, formatter, and more\n\n⭐ Yıldız: 1549\n🍴 Fork: 105\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/Scony/godot-gdscript-toolkit",
+      "content": "## GDScript Toolkit: Lint ve Format Araçları\n\nGDScript için gdtoolkit — kod formatter (gdformat) ve linter (gdlint) içerir.\n\n**Kurulum:**\n```bash\npip install gdtoolkit\n# veya\npipx install gdtoolkit\n```\n\n**Kullanım:**\n```bash\n# Format tüm GDScript dosyaları\ngdformat .\n# Tek dosya\ngdformat player.gd\n# Sadece kontrol et (değiştirme)\ngdformat --check player.gd\n\n# Lint\ngdlint player.gd\n# Özelleştir .gdlintrc dosyasıyla\n```\n\n**.gdlintrc örneği:**\n```ini\n[gdlint]\ndisable = class-definitions-order\nmax-line-length = 120\n```\n\n**CI/CD entegrasyonu:**\n```yaml\n# .github/workflows/lint.yml\n- run: pip install gdtoolkit && gdlint **/*.gd\n```\n\n**Prompt:** \"GDScript Toolkit ile Godot projesine pre-commit hook ekle; commit öncesi otomatik gdformat ve gdlint çalıştır.\"",
       "meta": {
         "Yıldız": 1549,
         "Dil": "Python",
@@ -433,7 +433,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.509",
-      "content": "GDQuest/godot-steering-ai-framework\n\nA complete framework for Godot to create beautiful and complex AI motion. Works both in 2D and in 3D.\n\n⭐ Yıldız: 1509\n🍴 Fork: 91\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/GDQuest/godot-steering-ai-framework",
+      "content": "## Godot Steering AI Framework: Ajan Navigasyonu\n\nReynolds steering behaviors ile akıcı AI hareketi sağlayan Godot framework'ü.\n\n**Kurulum:**\n```\ngit clone https://github.com/GDQuest/godot-steering-ai-framework\naddons/ klasörüne kopyala\n```\n\n**Temel steering davranışları:**\n```gdscript\n# Seek (hedefe git)\nvar seek = GSTSeek.new()\nseek.target = player_proxy\n\n# Flee (hedeften kaç)\nvar flee = GSTFlee.new()\nflee.target = threat_proxy\n\n# Wander (rastgele dolaş)\nvar wander = GSTWander.new()\nwander.wander_rate = 0.5\n\n# Combine\nvar blender = GSTBlend.new()\nblender.add(seek, 1.0)\nblender.add(flee_walls, 1.5)\n```\n\n**Prompt:** \"Steering AI ile 50 boid flocking simülasyonu yaz: separation, alignment ve cohesion davranışları; parametre UI ile gerçek zamanlı ayarlama.\"",
       "meta": {
         "Yıldız": 1509,
         "Dil": "GDScript",
@@ -459,7 +459,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.411",
-      "content": "Ark2000/PankuConsole\n\nFeature-packed real-time debugging toolkit for Godot Engine.\n\n⭐ Yıldız: 1411\n🍴 Fork: 51\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/Ark2000/PankuConsole",
+      "content": "## PankuConsole: Godot 4 Geliştirici Konsolu\n\nOyun içi hata ayıklama konsolu — komut çalıştırma, loglama ve değişken izleme.\n\n**Kurulum:**\n```\nAsset Library > PankuConsole veya GitHub'dan ekle\nAddons'dan etkinleştir\nPankuConsole autoload olarak eklenir\n```\n\n**Özel komut ekleme:**\n```gdscript\nfunc _ready():\n    Console.add_command('give_gold', self, '_give_gold')\n    Console.add_command('teleport', self, '_teleport', ['x', 'y'])\n\nfunc _give_gold(args):\n    var amount = int(args[0])\n    player.gold += amount\n    Console.log_output(str(amount) + ' altın verildi.')\n\nfunc _teleport(args):\n    player.position = Vector2(float(args[0]), float(args[1]))\n```\n\n**Kullanım:** Oyun içinde tilde (~) tuşuna basarak konsolu aç.\n\n**Prompt:** \"PankuConsole'a oyun state debug komutları ekle: tüm aktif NPC'leri listele, belirli bir sahnete ışınlan, oyun hızını değiştir.\"",
       "meta": {
         "Yıldız": 1411,
         "Dil": "GDScript",
@@ -485,7 +485,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.296",
-      "content": "mirror-engine/the-mirror\n\nV1, Mirror Classic. V2, Mirror Engine: Join Discord for access.\n\n⭐ Yıldız: 1296\n🍴 Fork: 129\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/mirror-engine/the-mirror",
+      "content": "## The Mirror: Godot Tabanlı Metaverse Oyun Motoru\n\nThe Mirror, Godot 4 üzerine inşa edilmiş ve gerçek zamanlı çok oyunculu deneyim oluşturmak için tasarlanmış açık kaynak bir oyun geliştirme platformudur.\n\n**Temel özellikler:**\n- Gerçek zamanlı çok kullanıcılı ortam düzenleme\n- Roblox benzeri oyun deneyimi oluşturma\n- GDScript tabanlı gameplay scripting\n- Karakter ve varlık kütüphanesi\n\n**Kurulum:**\n```bash\ngit clone https://github.com/mirror-engine/the-mirror\ngodot4 --editor project.godot\n```\n\n**Kullanım senaryoları:**\n- Eğitim simülasyonları\n- Sanal etkinlikler ve toplantılar\n- Çok oyunculu oyun prototipi\n- Metaverse deneyim geliştirme\n\n**Prompt:** \"The Mirror'da birden fazla kullanıcının aynı anda düzenleyebildiği etkileşimli bir eğitim odası oluştur; nesne kilit sistemi ve senkronize değişkenler ile çakışma önle.\"",
       "meta": {
         "Yıldız": 1296,
         "Dil": "GDScript",
@@ -511,7 +511,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.272",
-      "content": "dreadpon/godot_spatial_gardener\n\nA Godot plugin for painting plants and props on arbitrary 3D surfaces implemented in GDScript\n\n⭐ Yıldız: 1272\n🍴 Fork: 62\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/dreadpon/godot_spatial_gardener",
+      "content": "## Godot Spatial Gardener: 3D Bitki ve Nesne Dağıtımı\n\nAraziye doğal bitki, ot, taş ve dekorasyon dağıtımı için görsel fırça aracı.\n\n**Başlangıç:**\n```\nGitHub'dan eklentiyi indir\naddons/spatial_gardener/ ekle ve aktifleştir\n```\n\n**Workflow:**\n1. `Gardener` node ekle sahneye\n2. Terrain node'unu referans göster\n3. Yeni planting type ekle (çimen, ağaç, taş)\n4. Her tip için mesh, maksimum örnek sayısı, çakışma ayarla\n5. `Add instances` fırçasıyla boyar gibi çiz\n6. `Scale variance`, `rotation` ile doğallık ekle\n\n**Performans:** MultiMeshInstance3D kullanır → binlerce nesne GPU instancing ile çizilir.\n\n**Prompt:** \"Spatial Gardener ile ormanlık arazi oluştur: 3 farklı ağaç tipi, ot örtüsü ve kaya grupları; LOD ile uzaktan basitleştirme.\"",
       "meta": {
         "Yıldız": 1272,
         "Dil": "GDScript",
@@ -537,7 +537,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.211",
-      "content": "gdquest-demos/godot-make-pro-2d-games\n\nA-RPG demo made with Godot, MIT-licensed, from our Godot course\n\n⭐ Yıldız: 1211\n🍴 Fork: 126\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/gdquest-demos/godot-make-pro-2d-games",
+      "content": "## Godot 2D Oyun Geliştirme: Profesyonel Teknikler\n\nGDQuest'in Godot 4 ile 2D oyun geliştirme eğitim serisi kaynak kodu.\n\n**İçerdiği projeler:**\n- Platformer hareket sistemi (coyote time, jump buffering)\n- Topdown oyun mekanikleri\n- 2D combat sistemi\n- UI/UX tasarım kalıpları\n- Shader efektleri (outline, flash)\n\n**Platformer coyote time:**\n```gdscript\nvar coyote_timer: float = 0.0\nconst COYOTE_TIME = 0.15\n\nfunc _physics_process(delta):\n    if is_on_floor():\n        coyote_timer = COYOTE_TIME\n    else:\n        coyote_timer -= delta\n    \n    if Input.is_action_just_pressed('jump'):\n        if coyote_timer > 0 or is_on_floor():\n            velocity.y = JUMP_VELOCITY\n            coyote_timer = 0\n```\n\n**Prompt:** \"Godot 4 platformer için jump buffering (coyote time + input buffer) ve wall jump mekanikleri ekle; her parametreyi @export ile inspector'dan ayarlanabilir yap.\"",
       "meta": {
         "Yıldız": 1211,
         "Dil": "GDScript",
@@ -563,7 +563,7 @@
       ],
       "badge1": "C#",
       "badge2": "★ 1.100",
-      "content": "gdquest-demos/godot-3d-mannequin\n\nAn Open Source 3d character and character controller for the Godot game engine\n\n⭐ Yıldız: 1100\n🍴 Fork: 85\n📅 Güncelleme: 2026-05-30\n🔗 https://github.com/gdquest-demos/godot-3d-mannequin",
+      "content": "## Godot 3D Mannequin: Karakter Animasyon Sistemi\n\nGodot 4 için rigged 3D karakter ve animasyon yönetim sistemi referans projesi.\n\n**Özellikler:**\n- Blendspace ile hareket interpolasyonu\n- IK (Inverse Kinematics) desteği\n- Silah ve eşya tutma socket'leri\n- Animasyon layer'leri (alt vücut hareket + üst vücut atış)\n\n**AnimationTree kurulumu:**\n```gdscript\n@onready var anim_tree = $AnimationTree\n@onready var anim_state = anim_tree.get('parameters/playback')\n\nfunc update_animation(velocity: Vector2, is_jumping: bool):\n    anim_tree.set('parameters/move_blend/blend_position', velocity)\n    if is_jumping:\n        anim_state.travel('jump')\n    else:\n        anim_state.travel('ground')\n```\n\n**Prompt:** \"Godot 3D Mannequin'e ADS (Aim Down Sight) mekaniği ekle: kamera zoom, üst vücut aim IK ve ateş animasyon layer'ı.\"",
       "meta": {
         "Yıldız": 1100,
         "Dil": "C#",
@@ -589,7 +589,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.090",
-      "content": "godot-gdunit-labs/gdUnit4\n\nEmbedded unit testing framework for Godot 4 supporting GDScript and C#. Features test-driven development, embedded test inspector, extensive assertions, mocking, scene testing.\n\n⭐ Yıldız: 1090\n🍴 Fork: 65\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/godot-gdunit-labs/gdUnit4",
+      "content": "## gdUnit4: Godot 4 Test Framework\n\nGodot 4 için kapsamlı unit ve entegrasyon test framework'ü.\n\n**Kurulum:**\n```bash\n# plugin.cfg'yi addons/gdUnit4/ altına ekle\n# Proje > Eklentiler > gdUnit4 aktif et\n```\n\n**Test yazma:**\n```gdscript\nclass_name InventoryTest extends GdUnitTestSuite\n\nvar inventory: Inventory\n\nfunc before_test():\n    inventory = Inventory.new()\n    inventory.max_slots = 10\n\nfunc test_add_item():\n    var sword = Item.new()\n    sword.id = 'sword'\n    var result = inventory.add_item(sword)\n    assert_bool(result).is_true()\n    assert_int(inventory.item_count()).is_equal(1)\n\nfunc test_full_inventory():\n    for i in 10:\n        inventory.add_item(Item.new())\n    var extra = inventory.add_item(Item.new())\n    assert_bool(extra).is_false()\n```\n\n**Çalıştırma:**\n```bash\ngodot4 --headless -s addons/gdUnit4/bin/GdUnitCmdTool.gd -- -a res://test/\n```\n\n**Prompt:** \"gdUnit4 ile karmaşık bir oyun sistemini (crafting, quest) test et; mock nesneler ve async test kullanarak entegrasyon testleri yaz.\"",
       "meta": {
         "Yıldız": 1090,
         "Dil": "GDScript",
@@ -615,7 +615,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.071",
-      "content": "nathanhoad/godot_input_helper\n\nA simple input helper for the Godot Engine\n\n⭐ Yıldız: 1071\n🍴 Fork: 42\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/nathanhoad/godot_input_helper",
+      "content": "## Godot Input Helper: Giriş Yönetimi Kolaylaştırıcı\n\nGirdi cihazı tespiti, action remapping ve controller/klavye uyumluluğu için yardımcı kütüphane.\n\n**Özellikler:**\n- Otomatik girdi cihazı tespiti (klavye, gamepad)\n- Çalışma zamanında action remapping\n- Hint metni güncelleme (\"E tuşuna bas\" ↔ \"A butonuna bas\")\n\n**Kullanım:**\n```gdscript\n# Cihaz tipini al\nvar device_type = InputHelper.device_type  # 'keyboard', 'xbox', 'ps', 'switch'\n\n# Action için buton ikonu\nvar icon = InputHelper.get_action_icon('jump')\n$JumpHint.texture = icon\n\n# Remapping\nInputHelper.start_remapping('jump')\nawait InputHelper.remapping_completed\n```\n\n**Prompt:** \"Godot Input Helper ile ayarlar ekranı yap: her aksiyon için remap butonu, mevcut atamayı göster, çakışma uyarısı ve varsayılanlara sıfırla.\"",
       "meta": {
         "Yıldız": 1071,
         "Dil": "GDScript",
@@ -641,7 +641,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.066",
-      "content": "gdquest-demos/godot-2d-space-game\n\nA 2D space exploration and mining game made with Godot and our AI framework\n\n⭐ Yıldız: 1066\n🍴 Fork: 134\n📅 Güncelleme: 2026-05-28\n🔗 https://github.com/gdquest-demos/godot-2d-space-game",
+      "content": "## Godot 2D Uzay Oyunu: Starter Projesi\n\nTop-down uzay nişancı oyunu mekaniği referans projesi — Godot 4.\n\n**İçerdiği sistemler:**\n- Spacecraft hareket (acceleration + drag)\n- Silah sistemi: farklı mermi tipleri\n- Düşman AI: patrol, chase, attack\n- Asteroid spawner ve fizik\n\n**Uzay hareketi:**\n```gdscript\nextends CharacterBody2D\n\nconst THRUST = 500.0\nconst ROTATION_SPEED = 3.0\nconst DRAG = 0.98\n\nfunc _physics_process(delta):\n    if Input.is_action_pressed('thrust'):\n        var direction = Vector2.UP.rotated(rotation)\n        velocity += direction * THRUST * delta\n    velocity *= DRAG  # Uzayda sürtünme azalt\n    rotation += Input.get_axis('rotate_left', 'rotate_right') * ROTATION_SPEED * delta\n    move_and_slide()\n```\n\n**Prompt:** \"Bu uzay oyununa shield mechanic ekle: hasar absorbe eden kalkan, shield charge bar, kalkan yenilenme delay ve kalkan çarpışma efekti.\"",
       "meta": {
         "Yıldız": 1066,
         "Dil": "GDScript",
@@ -667,7 +667,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.051",
-      "content": "zfoo-project/godot-start\n\ngodot start is godot engine utils and sample\n\n⭐ Yıldız: 1051\n🍴 Fork: 195\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/zfoo-project/godot-start",
+      "content": "## godot-start: Godot Yardımcı Araçlar ve Örnekler\n\nGodot oyun geliştirmeyi hızlandıran yardımcı util scripter ve örnek koleksiyonu.\n\n**İçerik:**\n- Singleton yardımcıları (EventBus, SceneManager)\n- Matematik yardımcıları (Vector işlemleri, interpolasyon)\n- Save/Load altyapısı\n- Localization yardımcıları\n- Debug araçları\n\n**SceneManager örneği:**\n```gdscript\n# scenes/scene_manager.gd (AutoLoad)\nextends Node\n\nfunc change_scene(scene_path: String, transition: String = 'fade'):\n    if transition == 'fade':\n        await _fade_out()\n    get_tree().change_scene_to_file(scene_path)\n    if transition == 'fade':\n        await _fade_in()\n\nfunc _fade_out():\n    var tween = create_tween()\n    tween.tween_property($FadeRect, 'color:a', 1.0, 0.3)\n    await tween.finished\n```\n\n**Prompt:** \"Bu util koleksiyonunu kullanarak Godot projesine global EventBus, SceneManager ve SaveManager entegre et; her sistem için bir kullanım örneği yaz.\"",
       "meta": {
         "Yıldız": 1051,
         "Dil": "GDScript",
@@ -689,7 +689,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 1.046",
-      "content": "cherriesandmochi/gdmaim\n\nGDMaim is a GDScript obfuscation plugin for the Godot Engine.\n\n⭐ Yıldız: 1046\n🍴 Fork: 62\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/cherriesandmochi/gdmaim",
+      "content": "## gdmaim: Godot Aim Assist Sistemi\n\nGodot 4 için gamepad oyuncularına yönelik aim assist kütüphanesi.\n\n**Kullanım:**\n```gdscript\n# AimAssist node ekle\n@onready var aim_assist = $AimAssist\n\nfunc _ready():\n    aim_assist.target_group = 'enemies'\n    aim_assist.snap_radius = 100.0\n    aim_assist.snap_strength = 0.7  # 0=yok, 1=tam snap\n    aim_assist.slowdown_radius = 200.0\n\nfunc _process(delta):\n    var raw_aim = Input.get_vector('aim_left','aim_right','aim_up','aim_down')\n    var assisted_aim = aim_assist.assist(raw_aim, player.position)\n    aim_direction = assisted_aim\n```\n\n**Tasarım prensipleri:**\n- Snap radius: düşman etrafında büyüttür\n- Slowdown: geçerken yavaşlatır\n- Magnetism: hedefe doğru çeker\n\n**Prompt:** \"Çok düşmanlı sahnede aim assist önceliklendirme algoritması tasarla: en yakın hedef mi, en düşük sağlığı olan mı, ekran merkezine en yakın mı?\"",
       "meta": {
         "Yıldız": 1046,
         "Dil": "GDScript",
@@ -715,7 +715,7 @@
       ],
       "badge1": "C++",
       "badge2": "★ 1.012",
-      "content": "DmitriySalnikov/godot_debug_draw_3d\n\nDraw 3D debug graphics and 2D overlays with this add-on.\n\n⭐ Yıldız: 1012\n🍴 Fork: 40\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/DmitriySalnikov/godot_debug_draw_3d",
+      "content": "## Debug Draw 3D: Godot Görsel Debug Aracı\n\nGodot 4'te geometri, vektör ve text debug çizimi için runtime araç.\n\n**Kurulum:**\n```bash\n# GitHub'dan indirip addons/ altına ekle\nplugin.gd aktifleştir\n```\n\n**Kullanım:**\n```gdscript\nfunc _process(_delta):\n    # Çizgi çiz\n    DebugDraw3D.draw_line(start_pos, end_pos, Color.RED)\n    \n    # Küre göster (hitbox debug)\n    DebugDraw3D.draw_sphere(enemy.position, 1.5, Color.YELLOW)\n    \n    # Metin göster\n    DebugDraw3D.draw_text(enemy.position, str(enemy.health))\n    \n    # Arrow (velocity görsel)\n    DebugDraw3D.draw_arrow(position, position + velocity, Color.GREEN)\n```\n\n**Kullanım senaryoları:** Pathfinding yol görselleştirme, hitbox debug, AI vision cone çizimi, fizik debug.\n\n**Prompt:** \"Debug Draw 3D ile düşman AI debug HUD yap: vision cone, aggro radius, pathfinding yolu ve her düşmanın state'ini gerçek zamanlı göster.\"",
       "meta": {
         "Yıldız": 1012,
         "Dil": "C++",
@@ -767,7 +767,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 997",
-      "content": "godot-extended-libraries/godot-next\n\nGodot Node Extensions - Basic Node Extensions for Godot Engine\n\n⭐ Yıldız: 997\n🍴 Fork: 61\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/godot-extended-libraries/godot-next",
+      "content": "## godot-next: Yeniden Kullanılabilir Godot Bileşenleri\n\nGodot topluluğunun oluşturduğu hazır, test edilmiş bileşen koleksiyonu.\n\n**İçerik kategorileri:**\n- **Fizik:** Custom rigidbody controller, KinematicBody yardımcıları\n- **Veri:** TypedArray, LinkedList, Graph veri yapıları\n- **Grafik:** Şekil çizimi, gizmo araçları\n- **Math:** Vector yardımcıları, easing fonksiyonları\n\n**Kullanım örneği (State Machine):**\n```gdscript\nextends StateMachine\n\nfunc _ready():\n    add_state('idle', IdleState.new())\n    add_state('walk', WalkState.new())\n    add_state('attack', AttackState.new())\n    set_state('idle')\n\n# State geçişi\n_on_player_near.connect(func(): set_state('attack'))\n```\n\n**Prompt:** \"godot-next State Machine ile karmaşık boss AI state sistemi kur: idle, aggro, attack, phase_transition, retreat state'leri.\"",
       "meta": {
         "Yıldız": 997,
         "Dil": "GDScript",
@@ -793,7 +793,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 969",
-      "content": "MarcoFazioRandom/Virtual-Joystick-Godot\n\nA simple virtual joystick for touchscreens, for both 2D and 3D games, with useful options.\n\n⭐ Yıldız: 969\n🍴 Fork: 98\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/MarcoFazioRandom/Virtual-Joystick-Godot",
+      "content": "## Virtual Joystick: Mobil Dokunmatik Kontrol\n\nGodot 4 mobil oyunları için dokunmatik ekran joystick bileşeni.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/MarcoFazioRandom/Virtual-Joystick-Godot\n```\n\n**Sahneye ekleme:**\n```gdscript\n# VirtualJoystick node ekle\n# Mode: Fixed (sabit konum) / Dynamic (dokunulan yerde çıkar)\n\n@onready var joystick = $CanvasLayer/VirtualJoystick\n\nfunc _process(_delta):\n    var direction = joystick.output  # Vector2 (-1 ile 1 arası)\n    if direction.length() > 0.1:\n        velocity = direction * SPEED\n        $Sprite2D.flip_h = direction.x < 0\n```\n\n**Çoklu joystick (hareket + ateş):**\n```gdscript\n@onready var move_stick = $UI/MoveJoystick\n@onready var aim_stick = $UI/AimJoystick\n```\n\n**Prompt:** \"Dual joystick twin-stick shooter kontrol şeması kur; sol joystick hareket, sağ joystick nişan; otomatik ateş seçeneği ile.\"",
       "meta": {
         "Yıldız": 969,
         "Dil": "GDScript",
@@ -819,7 +819,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 969",
-      "content": "Whimfoome/godot-FirstPersonStarter\n\nFPS (First Person Shooter) controller template for Godot 4 to give starter content for a new or already existing project!\n\n⭐ Yıldız: 969\n🍴 Fork: 58\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/Whimfoome/godot-FirstPersonStarter",
+      "content": "## Godot First Person Starter: FPS Başlangıç Kiti\n\nGodot 4 için tam çalışan birinci şahıs perspektif hareket ve kamera sistemi.\n\n**İçerikler:**\n- Mouse look (yatay + dikey, limit)\n- WASD hareket + zıplama\n- Koşma ve çömelme\n- Baş titreme (headbob)\n- Silah sway\n\n**FPS karakter controller:**\n```gdscript\nextends CharacterBody3D\n\nconst SPEED = 5.0\nconst SPRINT_SPEED = 8.0\nconst JUMP_VELOCITY = 5.0\nconst MOUSE_SENSITIVITY = 0.003\n\nfunc _input(event):\n    if event is InputEventMouseMotion:\n        rotate_y(-event.relative.x * MOUSE_SENSITIVITY)\n        $Head.rotate_x(-event.relative.y * MOUSE_SENSITIVITY)\n        $Head.rotation.x = clamp($Head.rotation.x, -PI/2, PI/2)\n\nfunc _physics_process(delta):\n    var dir = Input.get_vector('left','right','forward','backward')\n    var wish_dir = (transform.basis * Vector3(dir.x, 0, dir.y)).normalized()\n    velocity.x = wish_dir.x * SPEED\n    velocity.z = wish_dir.z * SPEED\n    if not is_on_floor(): velocity.y -= 9.8 * delta\n    if is_on_floor() and Input.is_action_just_pressed('jump'):\n        velocity.y = JUMP_VELOCITY\n    move_and_slide()\n```\n\n**Prompt:** \"FPS starter'a lean/peek mekaniği ekle: Q/E ile duvara yaslanma, kameranın kayması, collision kontrolü.\"",
       "meta": {
         "Yıldız": 969,
         "Dil": "GDScript",
@@ -845,7 +845,7 @@
       ],
       "badge1": "—",
       "badge2": "★ 953",
-      "content": "nonunknown/godot-powerful\n\nList of plugins to turn godot into a most powerful engine that already is.\n\n⭐ Yıldız: 953\n🍴 Fork: 21\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/nonunknown/godot-powerful",
+      "content": "## godot-powerful: Faydalı Godot Extension Koleksiyonu\n\nGodot 4'te sık ihtiyaç duyulan işlevleri genişleten yardımcı node ve script koleksiyonu.\n\n**İçerik:**\n- `AutoLoad` yardımcıları\n- Genişletilmiş `Timer` (callable ile)\n- `Tween` kısayolları\n- Node arama ve yönetim yardımcıları\n- Type-safe event bus\n\n**Event bus örneği:**\n```gdscript\n# Sinyal tanımla\nEventBus.register_event('player_died')\n\n# Yay\nEventBus.emit('player_died', {score: 1500})\n\n# Dinle\nEventBus.subscribe('player_died', self._on_player_died)\nfunc _on_player_died(data):\n    ui.show_death_screen(data.score)\n```\n\n**Prompt:** \"godot-powerful Event Bus kullanarak gevşek bağlı oyun sistemi tasarla: skor, can, görev olayları diğer sistemleri doğrudan referans almadan birbirine bağlanır.\"",
       "meta": {
         "Yıldız": 953,
         "Dil": "—",
@@ -871,7 +871,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 925",
-      "content": "peter-kish/gloot\n\nA universal inventory system for the Godot game engine.\n\n⭐ Yıldız: 925\n🍴 Fork: 43\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/peter-kish/gloot",
+      "content": "## Gloot: Godot Envanter Sistemi\n\nGodot 4 için esnek, özelleştirilebilir envanter yönetim sistemi.\n\n**Envanter türleri:**\n- `Inventory`: Sınırsız kapasite\n- `InventoryStacked`: Stackable items\n- `InventoryGrid`: 2D grid envanter (Resident Evil tarzı)\n\n**Kullanım:**\n```gdscript\n@onready var inventory = $Inventory\n\nfunc pickup_item(item_protoset: InventoryItem):\n    if inventory.add_item(item_protoset):\n        print('Item alındı: ', item_protoset.get_property('name'))\n    else:\n        print('Envanter dolu!')\n\nfunc drop_item(item):\n    if inventory.remove_item(item):\n        var pickup = pickup_scene.instantiate()\n        pickup.item = item\n        get_parent().add_child(pickup)\n```\n\n**Prompt:** \"Gloot ile Diablo tarzı item loot sistemi kur: item rarity (common/rare/legendary), item stats generate etme ve envanter UI bağlantısı.\"",
       "meta": {
         "Yıldız": 925,
         "Dil": "GDScript",
@@ -897,7 +897,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 916",
-      "content": "ramaureirac/godot-tactical-rpg\n\nA tactical role-playing game demo for the Godot Engine\n\n⭐ Yıldız: 916\n🍴 Fork: 107\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/ramaureirac/godot-tactical-rpg",
+      "content": "## Godot Tactical RPG: Sıra Tabanlı Strateji Şablonu\n\nFire Emblem tarzı tactical RPG için sıra yönetimi, grid hareket ve savaş sistemi şablonu.\n\n**Temel sistemler:**\n- Hex veya kare grid\n- Turn sırası (initiative bazlı)\n- Hareket range hesabı (BFS/Dijkstra)\n- Saldırı range ve line-of-sight\n- HP/hasar sistemi\n\n**Grid hareket hesabı:**\n```gdscript\nfunc get_reachable_tiles(unit: Unit) -> Array:\n    var reachable = []\n    var frontier = [unit.grid_position]\n    var visited = {unit.grid_position: 0}\n    \n    while not frontier.is_empty():\n        var current = frontier.pop_front()\n        for neighbor in get_neighbors(current):\n            var cost = visited[current] + get_move_cost(neighbor)\n            if cost <= unit.movement and not visited.has(neighbor):\n                visited[neighbor] = cost\n                frontier.append(neighbor)\n                reachable.append(neighbor)\n    return reachable\n```\n\n**Prompt:** \"Tactical RPG'ye class sistemi ekle: savaşçı, büyücü, okçu — her class farklı hareket mesafesi, saldırı menzili ve yeteneklere sahip.\"",
       "meta": {
         "Yıldız": 916,
         "Dil": "GDScript",
@@ -923,7 +923,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 914",
-      "content": "V-Sekai/unidot_importer\n\nImport .unitypackage and other assets designed for Unity Engine as a GDScript addon for vanilla Godot 4.x\n\n⭐ Yıldız: 914\n🍴 Fork: 41\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/V-Sekai/unidot_importer",
+      "content": "## Unidot: Unity Projelerini Godot'a Taşıma\n\nUnity .unitypackage ve scene dosyalarını Godot'a dönüştüren importer eklentisi.\n\n**Desteklenen Unity varlıkları:**\n- Prefab → Godot Sahne (.tscn)\n- Material → Godot Material\n- Mesh → MeshInstance3D\n- Animator → AnimationPlayer/Tree\n- Scripts: CSharp → Manuel çeviri gerekli\n\n**Kurulum ve kullanım:**\n```bash\ngit clone https://github.com/V-Sekai/unidot_importer\n# addons/ altına kopyala\n# Proje > Eklentiler > Unidot aktif et\n# .unitypackage dosyasını res:// altına sürükle-bırak\n```\n\n**Beklentiler:** %100 otomatik çeviri mümkün değil. Shader, C# script ve custom component'lar manuel port gerektirir.\n\n**Prompt:** \"Unity'den Godot 4'e geçişte en sık karşılaşılan teknik sorunları listele ve her biri için Godot eşdeğeri pattern öner.\"",
       "meta": {
         "Yıldız": 914,
         "Dil": "GDScript",
@@ -949,7 +949,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 895",
-      "content": "vnen/godot-tiled-importer\n\nPlugin for Godot Engine to import Tiled Map Editor tilemaps and tilesets\n\n⭐ Yıldız: 895\n🍴 Fork: 91\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/vnen/godot-tiled-importer",
+      "content": "## Godot Tiled Importer: Tilemap Editör Entegrasyonu\n\nTiled Map Editor'da oluşturulan haritaları Godot'a aktaran eklenti.\n\n**Workflow:**\n1. Tiled'da harita oluştur (.tmx)\n2. Tileset tanımla (.tsx)\n3. Katmanlar: ground, obstacles, entities\n4. Godot'a aktarma:\n```bash\n# eklentiyi aktif et\n# .tmx dosyasını res:// altına kopyala\n# Godot otomatik import eder → .tscn oluşturur\n```\n\n**Object layer → Godot node:**\n```gdscript\n# Tiled'daki 'spawn_point' objesini Godot node'una çevir\n# Importer > Object Types > CustomClass bağla\n```\n\n**Katman yapısı:**\n- `background` → StaticBody2D değil\n- `collision` → StaticBody2D + CollisionPolygon\n- `entities` → spawn noktaları\n\n**Prompt:** \"Tiled ile büyük dünya haritası oluştur: biome bazlı tileset'ler, düşman spawn bölgeleri ve event trigger objeleri; Godot'a seamless aktarım.\"",
       "meta": {
         "Yıldız": 895,
         "Dil": "GDScript",
@@ -975,7 +975,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 880",
-      "content": "alfredbaudisch/Godello\n\nTrello inspired kanban board made with the Godot Engine and GDScript, with a real-time collaborative backend (Elixir and Phoenix Channels) and a local backend for offline usage (Godot Custom Resources)\n\n⭐ Yıldız: 880\n🍴 Fork: 59\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/alfredbaudisch/Godello",
+      "content": "## Godello: Trello Benzeri Kanban — Godot ile\n\nGodot ve GDScript ile yapılmış gerçek zamanlı Kanban panosu. Elixir/Phoenix backend ile çevrimiçi işbirliği destekler.\n\n**Mimari:**\n- Frontend: Godot + GDScript UI bileşenleri\n- Backend (çevrimiçi): Elixir + Phoenix Channels (WebSocket)\n- Backend (çevrimdışı): Godot Custom Resources (yerel kayıt)\n\n**Öğrenme değeri:**\n- Godot ile gerçek bir üretkenlik uygulaması nasıl yapılır?\n- GDScript ile WebSocket iletişimi\n- Godot UI'da drag-drop, liste yönetimi\n- Custom Resource ile yerel veri kalıcılığı\n\n```gdscript\n# Phoenix WebSocket bağlantısı\nvar socket = WebSocketClient.new()\nsocket.connect_to_url('wss://server/socket/websocket')\n\n# Kart oluşturma\nfunc create_card(list_id: int, title: String):\n    channel.push('new_card', {list_id: list_id, title: title})\n```\n\n**Prompt:** \"Godello'nun mimari yapısından ilham alarak Godot ile basit bir görev yönetim uygulaması yap; yerel ve çevrimiçi kayıt arasında geçiş yapabilsin.\"",
       "meta": {
         "Yıldız": 880,
         "Dil": "GDScript",
@@ -1001,7 +1001,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 877",
-      "content": "unknown-horizons/godot-port\n\nUnknown Horizons Godot Engine Port\n\n⭐ Yıldız: 877\n🍴 Fork: 111\n📅 Güncelleme: 2026-06-03\n🔗 https://github.com/unknown-horizons/godot-port",
+      "content": "## godot-port: Ağ ve Multiplayer Yardımcıları\n\nGodot 4 multiplayer projeler için bağlantı yönetimi ve ağ yardımcı kütüphanesi.\n\n**ENet ile peer-to-peer:**\n```gdscript\n# Sunucu\nvar peer = ENetMultiplayerPeer.new()\npeer.create_server(4242, max_clients=10)\nmultiplayer.multiplayer_peer = peer\nmultiplayer.peer_connected.connect(_on_peer_connected)\n\n# İstemci\nvar peer = ENetMultiplayerPeer.new()\npeer.create_client('localhost', 4242)\nmultiplayer.multiplayer_peer = peer\n```\n\n**RPC kullanımı:**\n```gdscript\n@rpc('any_peer', 'call_local')\nfunc sync_position(pos: Vector2):\n    position = pos\n\nfunc _process(delta):\n    if is_multiplayer_authority():\n        sync_position.rpc(position)\n```\n\n**Prompt:** \"Godot 4'te basit oda tabanlı multiplayer bulmaca oyunu kur: lobi, hazır olma sistemi, tüm oyuncular hazır olunca sahne geçişi.\"",
       "meta": {
         "Yıldız": 877,
         "Dil": "GDScript",
@@ -1026,7 +1026,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 756",
-      "content": "anthonyec/godot_little_camera_preview\n\n🎥 Picture-in-picture style preview for both 2D and 3D cameras\n\n⭐ Yıldız: 756\n🍴 Fork: 14\n📅 Güncelleme: 2026-05-13\n🔗 https://github.com/anthonyec/godot_little_camera_preview",
+      "content": "## Little Camera Preview: Godot Kamera Editör Aracı\n\nGodot editörünün sağ alt köşesinde kamera önizlemesi gösteren küçük ama çok işe yarayan eklenti.\n\n**Kurulum:**\n```\nAsset Library > LittleCameraPreview > İndir ve aktifleştir\n```\n\n**Özellikler:**\n- Editörde sahneyi düzenlerken kamera görüşünü gösterir\n- Yanlış pozisyona koyulan kamerayı anında fark ettirir\n- Birden fazla kamerayı toggle et\n- Aspect ratio görsel kontrol\n\n**Kullanım senaryoları:**\n- Cutscene kamera yerleşimi\n- Split-screen kamera kurulumu\n- UI elemanlarının kamera view'da doğru görünümü\n- Camera2D boundary ve limit kontrolü\n\n**Prompt:** \"Godot 2D oyununda dinamik kamera sistemi kur: oyuncuyu takip etme, odak noktası geçişi (tween), shake efekti ve bakış yönüne göre önyükleme (camera lookahead).\"",
       "meta": {
         "Yıldız": 756,
         "Dil": "GDScript",
@@ -1052,7 +1052,7 @@
       ],
       "badge1": "C#",
       "badge2": "★ 756",
-      "content": "paulloz/godot-ink\n\nInk integration for Godot Engine.\n\n⭐ Yıldız: 756\n🍴 Fork: 45\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/paulloz/godot-ink",
+      "content": "## godot-ink: Ink Scripting Dili Entegrasyonu\n\nInkle Studios'un Ink hikaye scriptini Godot 4'e entegre eden eklenti.\n\n**Ink nedir?** İnteraktif hikaye yazımı için tasarlanmış, zengin dallanma desteğine sahip scripting dili.\n\n**Kurulum:**\n```bash\npip install inky  # veya Inky uygulamasını indir\ngit clone https://github.com/paulloz/godot-ink\naddons/ altına ekle\n```\n\n**GDScript entegrasyonu:**\n```gdscript\n@onready var story = $InkStory\n\nfunc _ready():\n    story.ink_file = preload('res://story/main.ink.json')\n    continue_story()\n\nfunc continue_story():\n    while story.can_continue:\n        var line = story.continue_story()\n        $DialogueLabel.text = line\n    \n    for choice in story.current_choices:\n        var btn = Button.new()\n        btn.text = choice.text\n        btn.pressed.connect(story.choose_choice_index.bind(choice.index))\n        $ChoiceContainer.add_child(btn)\n```\n\n**Prompt:** \"Ink ile 3 farklı sonucu olan kısa interaktif hikaye yaz; Godot'ta bu hikayeyi oynatacak visual novel UI oluştur.\"",
       "meta": {
         "Yıldız": 756,
         "Dil": "C#",
@@ -1078,7 +1078,7 @@
       ],
       "badge1": "GDScript",
       "badge2": "★ 752",
-      "content": "heroiclabs/nakama-godot\n\nNakama Godot Client SDK\n\n⭐ Yıldız: 752\n🍴 Fork: 91\n📅 Güncelleme: 2026-05-27\n🔗 https://github.com/heroiclabs/nakama-godot",
+      "content": "## Nakama Godot: Gerçek Zamanlı Multiplayer Backend\n\nHeroic Labs'ın açık kaynak oyun sunucusu Nakama'nın Godot 4 istemci SDK'sı.\n\n**Özellikler:**\n- Kimlik doğrulama (email, device, sosyal)\n- Leaderboard ve sıralama tabloları\n- Multiplayer match\n- Depolama (kayıt sistemi)\n- Gerçek zamanlı socket (presence, chat)\n\n**Kurulum:**\n```bash\ngit clone https://github.com/heroiclabs/nakama-godot\naddons/ altına kopyala\n```\n\n**Kimlik doğrulama:**\n```gdscript\nvar client = Nakama.create_client('defaultkey', '127.0.0.1', 7350, 'http')\nvar session = await client.authenticate_device_async('device-id-1234')\nprint('Giriş yapıldı: ', session.username)\n```\n\n**Leaderboard:**\n```gdscript\nawait client.write_leaderboard_record_async(session, 'highscores', 1500)\nvar records = await client.list_leaderboard_records_async(session, 'highscores')\n```\n\n**Prompt:** \"Nakama ile çevrimiçi skor tablosu ve haftalık lig sistemi kur; Godot 4 UI entegrasyonu ile sıralamaları göster.\"",
       "meta": {
         "Yıldız": 752,
         "Dil": "GDScript",
@@ -1104,7 +1104,7 @@
       ],
       "badge1": "C++",
       "badge2": "★ 719",
-      "content": "expressobits/inventory-system\n\nModular inventory system for godot 4 with nodes, compatible with multiplayer, separate logic from the UI, Using items as separate resources.\n\n⭐ Yıldız: 719\n🍴 Fork: 60\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/expressobits/inventory-system",
+      "content": "## Godot Inventory System: Grid Tabanlı Envanter\n\nGodot 4 için tam özellikli, drag-drop destekli 2D grid envanter sistemi.\n\n**Özellikler:**\n- Farklı boyutlarda item (1×1, 2×1, 2×2)\n- Drag and drop ile item yerleştirme\n- Stack sistemi (aynı item birleşir)\n- Tooltip sistemi\n- Hızlı erişim çubuğu (hotbar)\n\n**Entegrasyon:**\n```gdscript\n@onready var inventory = $InventoryUI\n\nfunc pickup_item(item_resource: ItemResource):\n    if inventory.add_item(item_resource):\n        SoundManager.play('pickup')\n    else:\n        show_message('Envanter dolu!')\n\n# Sinyaller\ninventory.item_used.connect(_on_item_used)\ninventory.item_dropped.connect(_on_item_dropped)\n\nfunc _on_item_used(item: ItemResource):\n    match item.type:\n        ItemResource.Type.HEAL: player.heal(item.value)\n        ItemResource.Type.WEAPON: player.equip(item)\n```\n\n**Prompt:** \"Bu envanter sistemine item crafting ekle: 2 veya 3 item kombinasyonu yeni item üretir, tarif listesi JSON'da tanımlanır.\"",
       "meta": {
         "Yıldız": 719,
         "Dil": "C++",

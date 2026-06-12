@@ -93,7 +93,7 @@
         "şablon"
       ],
       "badge1": "Başlangıç",
-      "content": "## Etkinlik Brief\n```markdown\n## Etkinlik Adı:\n## Tarih & Saat:\n## Mekan / Platform:\n## Hedef Kitle: (kaç kişi, hangi profil)\n## Hedefler: (3 somut hedef)\n## Bütçe:\n## Paydaşlar: (sponsor, konuşmacı, yayıncı)\n## Başarı Kriterleri:\n## Kritik Tarihler:\n```",
+      "content": "**Etkinlik Brief Şablonu: Organizasyon Temelini Oluştur**\n\nEtkinlik brief'i, tüm paydaşların aynı sayfada olmasını sağlayan temel belgedir. Proje başlamadan önce onaylanmalıdır.\n\n**Brief Şablonu:**\n```markdown\n## ETKİNLİK BRIEF - [Etkinlik Adı]\n\n**Temel Bilgiler**\n- Etkinlik Adı: ___\n- Tarih/Saat: ___\n- Mekan: ___\n- Beklenen Katılımcı: ___\n- Bütçe: ___\n- Sorumlu Kişi: ___\n\n**Hedefler (SMART)**\n1. Ana Hedef: [Ölçülebilir sonuç]\n2. İkincil Hedef: [Ölçülebilir sonuç]\n\n**Hedef Kitle**\n- Birincil: [Profil, yaş, sektör]\n- İkincil: [Profil]\n\n**Temel Mesajlar**\n1. [Ana mesaj]\n2. [Destekleyici mesaj]\n\n**Başarı Kriterleri**\n- Katılım oranı: >%80\n- Net Promoter Score: >8\n- Medya yayını: minimum 5\n- Lead oluşturma: minimum 50\n\n**Onay Gereksinimler**\n□ Bütçe onayı: [İsim/Tarih]\n□ Mekan sözleşmesi: [İsim/Tarih]\n□ Yasal izinler: [İsim/Tarih]\n```\n\n**Dağıtım:** Brief'i Google Docs'ta yayınla, tüm tedarikçi ve takım üyelerine 4 hafta önceden gönder. Değişiklik günlüğü tut — sözlü değişiklik kabul etme.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "brief"
       ],
       "badge1": "Orta",
-      "content": "## Konuşmacı Süreci\n1. Davet e-postası: tarih, süre, konu, koşullar.\n2. Kabul sonrası: sözleşme, telif ücreti, seyahat.\n3. 4 hafta önce: sunum başlığı ve özeti.\n4. 2 hafta önce: slayt kontrolü, teknik gereksinim.\n5. Gün öncesi: sahne brifing ve ses-görüntü testi.\n6. Sonrası: teşekkür ve geri bildirim.",
+      "content": "**Konuşmacı Yönetimi: Davet'ten Sahneye Kadar Süreç**\n\nKonuşmacı deneyimi, etkinliğin kalitesini doğrudan yansıtır. Sistematik yönetim gecikme ve sürprizleri önler.\n\n**Zaman Çizelgesi:**\n```\nT-12 hafta: Konuşmacı listesi + yedek liste hazırla\nT-10 hafta: İlk davet gönder (kişiselleştirilmiş)\nT-8 hafta:  Onay alamadıklara 2. hatırlatma\nT-6 hafta:  Bio + fotoğraf + sunu başlığı iste\nT-4 hafta:  Lojistik bilgilerini gönder (otel, transfer)\nT-2 hafta:  Teknik gereksinimler: AV, slide format, süre\nT-1 hafta:  Sunu dosyasını teslim al, kontrol et\nT-0:        Sahne öncesi brifing (AV testi, Q&A format)\n```\n\n**Konuşmacı Bilgi Formu (Google Form):**\n```\n1. Ad Soyad ve Unvan\n2. Şirket ve Biyografi (max 200 kelime)\n3. LinkedIn URL\n4. Yüksek çözünürlüklü fotoğraf (300 DPI)\n5. Konuşma başlığı ve özeti (max 100 kelime)\n6. Teknik ihtiyaçlar (mikrofon tipi, ilave ekran)\n7. Seyahat ve konaklama gereksinimleri\n8. Ücret veya masraf beklentisi\n```\n\n**Sunu Standartları:**\n- Format: 16:9, minimum 24pt font\n- Dosya: PPT + PDF yedek (AV arızasına karşı)\n- Teslim tarihi: Etkinlikten 5 iş günü önce\n\nBir konuşmacı iptal ederse: Hazır yedek listeden 24 saat içinde alternatif bul.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "kontrol"
       ],
       "badge1": "Orta",
-      "content": "## Yayın Öncesi Kontrol\n- [ ] Internet: kablolu bağlantı, min. 10 Mbps yükleme.\n- [ ] Ses: kulaklık mikrofon + yedek mikrofon hazır.\n- [ ] Kamera: ışık yeterli, arka plan düzgün.\n- [ ] OBS/StreamYard: test stream yapıldı.\n- [ ] Yedek akış planı: kesintide ne yapılır.\n- [ ] Moderatör: chat ve soru yönetimi.\n- [ ] Kayıt: yerel + bulut kayıt açık.",
+      "content": "**Canlı Yayın Teknik Kontrol Listesi: Kesintisiz Yayın İçin Hazırlık**\n\nTeknik arıza izleyici kaybının en büyük nedenidir. Bu liste etkinlik öncesi ve sırası için checkpoint sağlar.\n\n**Donanım Kontrol (T-48 saat):**\n```\n□ Birincil kamera + yedek kamera\n□ Ses: lapel mikrofon + el mikrofonu + yedek\n□ Encoder: OBS/vMix + backup encoder\n□ İnternet: Birincil fiber + 4G/5G yedek (en az 10 Mbps upload)\n□ Güç: UPS (minimum 30 dakika) + yedek kablo seti\n□ Işık: Anahtar ışık + arka dolgu\n□ Ekran/monitör: 1 yayın kontrol + 1 önizleme\n```\n\n**Yazılım Kontrol (T-24 saat):**\n```\n□ OBS sürüm güncellendi\n□ Yayın platformu: RTMP URL + stream key test edildi\n□ Grafik overlay'ler: alt bar, logo, sosyal medya handle\n□ Kaydı başlatıldı (yedek kayıt: Zoom bulut / harici disk)\n□ CDN testi: 3 farklı lokasyondan izleme kalitesi kontrol\n```\n\n**Canlı Yayın Başlarken:**\n```\nT-60 dk: Ses/görüntü test yayını (davet edilmiş test izleyici)\nT-30 dk: Grafik ve alt bar son kontrol\nT-15 dk: Sahne ses testi, konuşmacılarla AV brifing\nT-5 dk:  Yayın hazır, kayıt başlat\nT-0:     Yayın CANLI\n```\n\n**Acil Durum Planı:** Bağlantı kopması durumunda 90 saniye içinde yedek stream URL paylaş. Sosyal medyada \"Teknik sorun yaşıyoruz, X dakika içinde geri döneceğiz\" mesajını hızlı paylaş.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "planlama"
       ],
       "badge1": "Başlangıç",
-      "content": "## Etkinlik Bütçe Kalemleri\n| Kalem | Tahmini | Gerçek |\n|-------|---------|--------|\n| Mekan kirası | | |\n| Catering | | |\n| AV/teknik | | |\n| Konuşmacı ücreti | | |\n| Pazarlama | | |\n| Baskı & tasarım | | |\n| Personel/host | | |\n| Beklenmedik (%10) | | |\n| **TOPLAM** | | |\n\nKural: Bütçenin %10'unu beklenmedik için ayır.",
+      "content": "**Etkinlik Bütçe Yönetimi: Planlama ve Gerçek Harcama Takibi**\n\nEtkinlik bütçelerinin %30'u plansız harcamalarla aşılır. Detaylı şablon bu riski azaltır.\n\n**Bütçe Kategorileri:**\n```python\nevent_budget = {\n  'mekan': {\n    'kiralama': 0,\n    'dekorasyon': 0,\n    'temizlik': 0,\n    'guvenlik': 0\n  },\n  'teknik': {\n    'av_ekipman': 0,\n    'internet': 0,\n    'canli_yayin': 0,\n    'kayit': 0\n  },\n  'yiyecek_icecek': {\n    'kahvalti': 0,\n    'oglen_yemegi': 0,\n    'kahve_molasi': 0,\n    'aksamyemegi': 0\n  },\n  'pazarlama': {\n    'tasarim': 0,\n    'baski': 0,\n    'dijital_reklam': 0,\n    'pr': 0\n  },\n  'konusmaci': {\n    'honoraryum': 0,\n    'seyahat': 0,\n    'konaklama': 0\n  },\n  'acil_yedek': 0  # Toplamin min %10-15\n}\n```\n\n**Bütçe Takip Formülü:**\n```\nBütçe Kullanım Oranı = Gerçek Harcama / Planlanan Bütçe × 100\nAçıklama Eşiği: >110% → acil revizyon\nYedek Kullanım Kuralı: Yalnızca force majeure için\n```\n\n**Gelir Tahmini:**\n```\nErken kuş bilet: [Adet × Fiyat]\nNormal bilet: [Adet × Fiyat]\nSponsorluk: [Platin/Altın/Gümüş paket]\nStand kiralama: [Adet × Fiyat]\nToplam Gelir → Net Kar/Zarar\n```\n\nBütçeyi Google Sheets'te tüm takımla paylaş; haftalık gerçek vs. planlanan karşılaştırma yap.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "satış"
       ],
       "badge1": "Orta",
-      "content": "## Erken Kuş Stratejisi\n1. Aşama 1 (İlk 100 bilet): %30 indirim → erken benimseyenler.\n2. Aşama 2 (101-300): %15 indirim → standart erken.\n3. Aşama 3 (Tam fiyat): normal fiyat.\n4. Son gün aciliyeti: 'Sadece X bilet kaldı.'\n5. Grup indirimi: 5+ kişi → %10 ek indirim.\n\nPlatform: Eventbrite, Biletix, kendi sitende Stripe.",
+      "content": "**Erken Kuş Bilet Stratejisi: Satış Momentumu Yaratma**\n\nErken kuş satışlar %20-40 indirimle nakit akışını erkene alır ve sosyal kanıt oluşturur.\n\n**Kademeli Fiyatlandırma Modeli:**\n```\nAşama 1 - Süper Erken Kuş (satışın ilk %10'u):\n→ Normal fiyatın %50'si | \"Yalnızca 50 bilet!\"\n→ Amaç: İlk satışları hızlı oluştur, PR ateşle\n\nAşama 2 - Erken Kuş (ilk %25):\n→ Normal fiyatın %75'i\n→ Süre: etkinlikten 8-6 hafta önce\n\nAşama 3 - Standart:\n→ Normal fiyat\n→ Süre: 6-2 hafta önce\n\nAşama 4 - Son Dakika:\n→ Normal + %10-20 (aciliyet premium)\n→ Süre: Son 2 hafta\n```\n\n**Satış Sayfası Kopyası (erken kuş için):**\n```\nBaşlık: \"[İndirim]% Tasarruf Et — Yalnızca [X] Bilet Kaldı\"\nSayaç: Gerçek zamanlı geri sayım (Deadline Funnel, Ticketmaster)\nSosyal kanıt: \"[X] kişi kayıt oldu\"\nGaranti: \"7 gün iade garantisi\"\nUrgency: Kalan kontenjan göster (gerçek veri)\n```\n\n**Email Sırası:**\n```\nGün 0: Erken kuş açıldı → liste\nGün 3: Kalan kontenjan güncellemesi\nGün 6: \"Son 24 saat\" e-postası\nGün 7: Erken kuş kapandı + standart fiyat başladı\n```\n\nWaitlist özelliği ekle — sold-out hissi ikincil dalgayı hızlandırır.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "dönüşüm"
       ],
       "badge1": "Orta",
-      "content": "## E-posta Serisi\n1. **Duyuru:** 8 hafta önce — tarih, yer, konuşmacılar.\n2. **Early bird kapanıyor:** 6 hafta — son X gün.\n3. **Program açıklandı:** 4 hafta — detaylı program.\n4. **Hatırlatma:** 1 hafta — lojistik bilgiler.\n5. **Son gün:** 24 saat öncesi — son çağrı.\n6. **Teşekkür + kayıt:** etkinlik sonrası 24 saat.",
+      "content": "**Etkinlik E-posta Serisi: Kayıttan Etkinliğe Katılım Zinciri**\n\nDoğru e-posta serisi no-show oranını %40'tan %15'e indirebilir.\n\n**Tam E-posta Akışı:**\n```\nKayıt Anı:\n→ Email 1: Onay + Takvim daveti (ICS dosyası)\n→ Email 2: \"Etkinlikten Önce Bilmeniz Gerekenler\" (lojistik)\n\nEtkinliğe 2 Hafta:\n→ Email 3: Speaker spotlight + agenda önizlemesi\n→ Email 4: Hazırlık ipuçları (ne giyilmeli, ne getirilmeli)\n\nEtkinliğe 3 Gün:\n→ Email 5: Pratik bilgiler (otopark, ulaşım, giriş)\n→ Email 6: Ön networking (katılımcı listesi linki / Whova app)\n\nEtkinlik Günü:\n→ Email 7: \"Bugün görüşüyoruz!\" — son hatırlatma\n\nEtkinlik Sonrası:\n→ Email 8: Teşekkür + içerik arşivi (slayt, kayıt)\n→ Email 9: Geri bildirim anketi (48 saat içinde)\n→ Email 10: Sonraki etkinlik duyurusu (2 hafta sonra)\n```\n\n**Konu Satırı Önerileri:**\n```\nEmail 5: \"📍 Yarın nerede olacağınızı bilmenizi istiyoruz\"\nEmail 7: \"Bugün [SAAT]'te kapılar açılıyor — hazır mısınız?\"\nEmail 8: \"Sesinizi duymak istiyoruz (+ slaytlar içeride)\"\n```\n\n**Otomasyon:** Mailchimp, ActiveCampaign veya Brevo ile tetikleyici tabanlı kur. Kayıt tarihine göre tüm e-postalar otomatik gönderilsin.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "ölçüm"
       ],
       "badge1": "İleri",
-      "content": "## Etkinlik ROI\nROI = (Kazanılan - Harcanan) / Harcanan × 100\n\nKazanılan:\n- Bilet geliri\n- Sponsor katkısı\n- Üretilen fırsat değeri (pipeline)\n\nKalitatif değer:\n- Basın görünürlüğü\n- Topluluk büyümesi\n- Net Promoter Score\n\nHedef: en az 3:1 ROI (3₺ değer / 1₺ harcama).",
+      "content": "**Etkinlik ROI Hesabı: Yatırım Getirisini Kanıtlama**\n\nEtkinlik ROI'si hesaplamak, gelecek bütçe onayları ve sürdürülebilir program için kritiktir.\n\n**Temel ROI Formülü:**\n```python\ndef event_roi(revenue, costs, attributed_pipeline=0, attributed_customers=0, \n              avg_deal_value=0):\n    # Dogrudan gelir ROI\n    direct_roi = (revenue - costs) / costs * 100\n    \n    # Pipeline degeri dahil\n    pipeline_value = attributed_pipeline * 0.20  # %20 kapanma orani\n    total_return = revenue + pipeline_value + (attributed_customers * avg_deal_value)\n    full_roi = (total_return - costs) / costs * 100\n    \n    # Cost per attendee\n    return {\n        'direct_roi_pct': round(direct_roi, 1),\n        'full_roi_pct': round(full_roi, 1),\n        'total_return': total_return\n    }\n\nresult = event_roi(\n    revenue=50000,         # Bilet + sponsor geliri\n    costs=35000,           # Toplam maliyet\n    attributed_pipeline=200000,  # Toplantidan gelen firsat\n    attributed_customers=5,\n    avg_deal_value=8000\n)\nprint(result)\n# direct_roi: 42.9%, full_roi: 191.4%\n```\n\n**Ölçülebilir Metrikler:**\n```\nNiceliksel:\n- Katılımcı sayısı vs. hedef\n- Lead başına maliyet (CPL)\n- Bilet satış geliri\n- Sponsor paket doluluk oranı\n- Medya yayını (EAV değeri)\n\nNiteliksel (anket ile ölçülür):\n- NPS (Net Promoter Score)\n- Marka bilinirliği değişimi\n- Müşteri memnuniyeti\n- Konuşmacı/içerik kalitesi (1-5)\n```\n\nROI raporunu etkinlikten 2 hafta sonra hazırla, sponsorlara gönder — yenileme kararı için temel veri.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "geri bildirim"
       ],
       "badge1": "Başlangıç",
-      "content": "## Etkinlik Sonrası Anket\n1. NPS: '0-10 arası bu etkinliği tavsiye eder misiniz?'\n2. İçerik kalitesi: 1-5 puan.\n3. Organizasyon kalitesi: 1-5 puan.\n4. En beğendiğiniz oturum?\n5. Geliştirmemizi istediğiniz?\n6. Hangi konularda etkinlik görmek istersiniz?\n\nSüre: max 3 dakika. Yanıt oranı için teşvik sun (kuponlar, kayıtlar).",
+      "content": "**Katılımcı Geri Bildirim Anketi: Sonraki Etkinliği İyileştirme**\n\nEtkinlik sonrası anket yanıt oranı kritiktir. 48 saat kuralı: sonra gönderilirse yanıt oranı %50 düşer.\n\n**Anket Yapısı (Typeform/Google Forms):**\n```\nBölüm 1: Genel Değerlendirme (2 soru)\n1. Bu etkinliği kaç kişiye tavsiye edersiniz? (0-10 NPS)\n2. Genel memnuniyet: ⭐⭐⭐⭐⭐\n\nBölüm 2: İçerik Değerlendirmesi (3 soru)\n3. Konuşmaların kalitesi: 1-5\n4. Gündemin etkinliğinize katkısı: 1-5\n5. En değerli konuşma/oturum: [açık uçlu]\n\nBölüm 3: Lojistik (2 soru)\n6. Mekan/organizasyon memnuniyeti: 1-5\n7. İyileştirilmesini istediğiniz alan: [açık uçlu]\n\nBölüm 4: Gelecek (2 soru)\n8. Tekrar katılır mısınız? Evet/Hayır/Belki\n9. Sonraki etkinlikte görmek istediğiniz konu: [açık uçlu]\n```\n\n**Yanıt Oranını Artırma:**\n- E-posta konu: \"2 dakika — [İsim], fikriniz önemli\"\n- Teşvik: Yanıtlayana erken kuş indirimi veya içerik arşivi\n- Kısa tut: Maksimum 10 soru, 3 dakikada tamamlansın\n- Hatırlatma: 48 saat sonra açmayanlarla 1 kez daha dene\n\n**NPS Hesabı:**\n```python\ndef nps(promoters, passives, detractors):\n    total = promoters + passives + detractors\n    return round((promoters - detractors) / total * 100)\n# 50+ iyi, 70+ mükemmel\n```",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "bağlantı"
       ],
       "badge1": "Orta",
-      "content": "## Networking Tasarımı\n1. Oturma düzeni: yuvarlak masalar → grup sohbeti.\n2. Ice-breaker: katılımcı rozetlerine bir 'süper güç' etiketi.\n3. Speed networking: 5 dakika, çan, yer değiştir.\n4. Dijital: etkinlik uygulaması → profil eşleştirme.\n5. Ortak alan: kahve noktası etrafında doğal akış.\n6. Facilitated intro: ev sahibi çiftler oluşturur.",
+      "content": "**Networking Alanı Tasarımı: Anlamlı Bağlantılar İçin Fiziksel Düzen**\n\nNetworking alanı tasarımı, katılımcıların doğal konuşma kurmasını kolaylaştırır veya engeller.\n\n**Alan Düzeni Prensipleri:**\n```\nAlanı Bölme:\n├── Ayakta Konuşma Bölgesi (kokteyl masaları, yüksek tabure)\n│   → Kısa, hızlı tanışmalar için ideal\n├── Oturma Köşeleri (3-4 kişilik gruplar)\n│   → Derin sohbet için — kolaylaştırıcı soru kartları koy\n├── Demo/Sergi Alanı (sponsorlar/projeler)\n│   → Konuşma başlatıcı: \"Bu ne işe yarıyor?\"\n└── Rahat Alan (yumuşak koltuklar, düşük ışık)\n    → Yorulanlar için, uzun sohbetler\n```\n\n**Konuşma Başlatıcı Araçlar:**\n- İsim yaka kartı: Ad + Şirket + 1 ilginç gerçek (\"Bugün öğrenmek istediğim: ___\")\n- Boyama zorunlu: Farklı renk yaka = farklı sektör → benzer/farklı alanlardan insanlar kolayca tanışır\n- Soru zarları: Masalarda konuşma başlatıcı sorular\n- Matchmaking app (Whova, Brella): Ortak ilgi alanı bildirir\n\n**Katalizör Uygulamaları:**\n```\nHızlı Tanışma (Speed Networking):\n- 2 sıra karşılıklı, her 3 dakikada zil çalar, sıra kayar\n- 20 kişi = 10 karşılaşma × 30 dakika\n\nChallenge Kartları:\n- \"Farklı sektörden 2 kişiyle iş birliği fırsatı bul\"\n- En çok bağlantı kuran → küçük ödül\n```\n\n**Alan Boyutu:** Kişi başı minimum 1.5 m² networking alanı; daha dar → bunaltıcı hissettiriyor.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "seçim"
       ],
       "badge1": "Başlangıç",
-      "content": "## Tedarikçi Rubriği\n| Kriter | Ağırlık | Puanlar |\n|--------|---------|----------|\n| Fiyat | %30 | 1-5 |\n| Referans | %25 | 1-5 |\n| Esneklik | %20 | 1-5 |\n| İletişim hızı | %15 | 1-5 |\n| Sürdürülebilirlik | %10 | 1-5 |\n\nAğırlıklı puan hesapla; en az 2 teklif karşılaştır.",
+      "content": "**Tedarikçi Değerlendirme Rubriği: Objektif Tedarikçi Seçimi**\n\nTedarikçi seçimi sübjektif kalmadan, rubrik ile standartlaştırılabilir.\n\n**Puanlama Rubriği (100 Puan):**\n```python\ntedarikci_kriterleri = {\n  'fiyat_rekabeti': {\n    'agirlik': 25,\n    'aciklama': 'Bütçe kıyaslaması, gizli maliyet yok mu?'\n  },\n  'referans_kalitesi': {\n    'agirlik': 20,\n    'aciklama': 'Son 12 ay benzer ölçekli etkinlik referansları'\n  },\n  'teknik_yeterlilik': {\n    'agirlik': 20,\n    'aciklama': 'Ekipman sertifikası, yedek cihaz politikası'\n  },\n  'iletisim_hizi': {\n    'agirlik': 15,\n    'aciklama': '< 4 saat yanıt süresi, proje yöneticisi atanması'\n  },\n  'sigorta_lisans': {\n    'agirlik': 10,\n    'aciklama': 'Mesleki sorumluluk sigortası, vergi kaydı'\n  },\n  'esneklik': {\n    'agirlik': 10,\n    'aciklama': 'Son dakika değişikliğe adaptasyon, iptal politikası'\n  }\n}\n\ndef score_vendor(scores):\n    total = sum(scores[k] * v['agirlik'] / 100\n                for k, v in tedarikci_kriterleri.items()\n                if k in scores)\n    return round(total, 1)\n```\n\n**Değerlendirme Süreci:**\n1. RFP (teklif talebi) gönder → 3+ tedarikçi\n2. Her tedarikçiyi rubrik ile puan ver\n3. Top 2 ile referans görüşmesi\n4. Sözleşme: ödeme takvimi, cayma cezası, force majeure\n\n80+ puan: ilerle | 60-79: müzakere | <60: geç",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "içerik"
       ],
       "badge1": "Orta",
-      "content": "## Sosyal Medya Takvimi\n**Öncesi:**\n- 8 hafta: Tarih duyurusu + countdown\n- 4 hafta: Konuşmacı spotlight serisi\n- 1 hafta: Katılımcı hikayesi/teaser\n\n**Sırasında:**\n- Canlı tweet/story\n- Alıntı kartları (quote graphics)\n- Sahne arkası stories\n\n**Sonrası:**\n- Öne çıkan anlar\n- Topluluk teşekkür postu\n- Kayıt ve fotoğraf paylaşımı",
+      "content": "**Etkinlik Sosyal Medya Kampanyası: Duyurudan Canlı Yayına**\n\nEtkinlik sosyal medyası 3 aşamada yönetilir: ısınma, canlı, hatırlama.\n\n**Kampanya Takvimi:**\n```\nT-6 Hafta (Duyuru):\n→ Teaser (\"Bir şey geliyor...\") + tarih\n→ Early bird link + sayaç\n→ Konuşmacı açıklamaları (haftada 1-2)\n\nT-4 Hafta (Momentum):\n→ Speaker spotlight video serisi\n→ \"Neden katılmalısın?\" carousel (LinkedIn)\n→ Sosyal kanıt: kayıtlanan şirket logoları\n\nT-2 Hafta (Urgency):\n→ \"Son X gün\" ve \"X bilet kaldı\" güncellemeleri\n→ Katılımcı hikayesi/testimonial\n→ Gündem paylaşımı\n\nEtkinlik Günü (Canlı):\n→ Sahne arkası story/reel\n→ Canlı alıntılar/önemli anlar\n→ Kullanıcı içeriğini yayınla (UGC) — hastag takibi\n\nT+1 Hafta (Hatırlatma):\n→ Özet blog/thread\n→ Fotoğraf albümü\n→ Konuşmacı videoları yayınla (haftalık seri)\n```\n\n**Hashtag Stratejisi:**\n```\nBirincil: #EtkinlikAdi2025 → tüm içeriklerde\nİkincil: #Sektör #KonuAlanı\nMentions: @konuşmacı @sponsor @mekan\n```\n\n**İçerik Mix (Her Platformda Farklı):**\n- LinkedIn: Profesyonel konuşmacı içerikleri, kazanımlar\n- Instagram: Görsel/video, backstage, sahne fotoğrafları\n- X (Twitter): Canlı alıntılar, anlık güncellemeler",
       "source": {
         "generated": true
       }

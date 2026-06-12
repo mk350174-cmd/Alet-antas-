@@ -93,7 +93,7 @@
         "Dualizm"
       ],
       "badge1": "Başlangıç",
-      "content": "## Manihéizm Kökenleri\n1. Mani'nin 216 yılında Babil'de doğumu ve öğretilerinin temellerini atması.\n2. Zerdüştlük, Hristiyanlık ve Budizm'den etkileşimleri belirleyin.\n3. Sasaniler döneminde yükselişi ve sonraki baskıları araştırın.\n4. Doğu'ya (Çin) ve Batı'ya (Roma İmparatorluğu) yayılım yollarını analiz edin.",
+      "content": "## Maniheizm'in Kökenleri ve Öğretileri\n\nMani'nin kurduğu dinî-felsefi sistem, Zerdüştlük, Budizm, Hristiyanlık ve Gnostisizmi sentezleyen evrensel bir din kurma girişimidir.\n\n**Mani'nin Hayatı:**\n```\nDoğum: MS 216, Babil (bugünkü Irak)\nBüyüme: Baptismal Yahudicilik mezhebi içinde\nİlk vahiy: 12 yaşında (al-Tawm/İkizi)\nİkinci vahiy: 24 yaşında → dini açıkça kurar\nMüjde: Pers İmparatoru Şapur I'in sarayında (MS 242)\nÖlüm: MS 274-277, Pers yönetimi altında zindanda\n```\n\n**Temel Düalist Öğreti:**\n```\nBaşlangıç:\n  İki kökenli prensip:\n  IŞIK (iyilik, ruh, akıl) ←→ KARANLIK (kötülük, madde, cehalet)\n  \nYaratılış Savaşı:\n  Karanlık, Işık alemine saldırdı\n  İlk İnsan (Ohrmazd Bay) savaştı ama yenik düştü\n  Işık parçacıkları maddede hapsedildi\n\nKurtuluş:\n  İnsanın içindeki Işık parçacıklarını kurtarmak\n  Oruç, bekarlık, vejetaryenlik ile madde zayıflatılır\n  İyi ruhlar yıldızlara, Işık alemine döner\n```\n\n**Üç Zümre:**\n```\nSeçilmişler (Electi): Katı perhiz, gezgin misyoner\nDinleyiciler (Auditores): Normal hayat + mezhebe destek\nGünahkârlar: Yeniden doğum döngüsünde kalır\n```\n\n**Yayılma:** Orta Asya (Uygur Kağanlığı'nın resmi dini oldu!), Çin, Kuzey Afrika (Aziz Augustine Maniheist'ti), Avrupa. 9-10. yüzyıla kadar yaşadı.",
       "source": {
         "generated": true,
         "provider": "gemini",

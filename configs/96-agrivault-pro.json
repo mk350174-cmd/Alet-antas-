@@ -93,7 +93,7 @@
         "vejetasyon"
       ],
       "badge1": "Orta",
-      "content": "## NDVI Analizi\nNDVI = (NIR - Red) / (NIR + Red)\n- NDVI > 0.6: Sağlıklı bitki\n- NDVI 0.2-0.6: Orta yoğunluk\n- NDVI < 0.2: Çıplak toprak/stres\n\nÜcretsiz araçlar:\n- Sentinel Hub (ESA) → 10m çözünürlük\n- Google Earth Engine → Python API\n\n```python\nimport ee\nndvi = image.normalizedDifference(['B8','B4'])\n```",
+      "content": "**NDVI (Normalized Difference Vegetation Index): Uydu ile Bitki Sağlığı Analizi**\n\nNDVI, kırmızı ve yakın kızılötesi (NIR) ışık yansımasını kullanarak bitkinin fotosentez aktivitesini ölçer.\n\n**Formül:**\n```\nNDVI = (NIR - Red) / (NIR + Red)\nDeğer aralığı: -1 ile +1\n```\n| NDVI Değeri | Bitki Durumu |\n|-------------|---------------|\n| 0.8 – 1.0 | Yoğun, sağlıklı bitki örtüsü |\n| 0.5 – 0.8 | Orta yoğunlukta bitki |\n| 0.2 – 0.5 | Seyrek, zayıf bitki |\n| 0 – 0.2 | Çıplak toprak |\n| < 0 | Su yüzeyi, bulut |\n\n**Python ile NDVI Hesabı (Sentinel-2):**\n```python\nimport numpy as np\nimport rasterio\n\nwith rasterio.open('sentinel2_red.tif') as r:\n    red = r.read(1).astype(float)\nwith rasterio.open('sentinel2_nir.tif') as r:\n    nir = r.read(1).astype(float)\n\nndvi = (nir - red) / (nir + red + 1e-8)\n# 0.4 altindaki pikseller risk bolgesi\nstress_mask = ndvi < 0.4\nprint(f'Stres altındaki alan: {stress_mask.sum()} piksel')\n```\n\n**Ücretsiz Veri Kaynakları:**\n- Sentinel Hub (ESA) — 10m çözünürlük, 5 günlük tekrar\n- Landsat 8/9 — 30m çözünürlük, ücretsiz\n- QGIS veya Google Earth Engine ile görselleştirme\n\nUçucu stres erken %5 NDVI düşüşüyle tespit edilir; tedavi 2 hafta kazandırabilir.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "hassas"
       ],
       "badge1": "İleri",
-      "content": "## VRA Süreci\n1. Toprak örnekleme: 2.5 dönüm ızgara → lab analizi.\n2. Verim haritası: GPS + yield monitor verisi.\n3. Yönetim bölgeleri: kümeleme analizi ile 3-5 bölge.\n4. Reçete haritası: her bölge için N-P-K miktarı.\n5. Uygulama: VRA özellikli ekici/dağıtıcı + ISOBUS.\n6. Doğrulama: sonraki sezon verim karşılaştırması.",
+      "content": "**Değişken Oran Gübre Uygulaması (VRA): Hassas Tarımda Gübre Optimizasyonu**\n\nVRA, tarlanın her noktasına toprak analizine göre farklı miktarda gübre uygulamayı sağlar. Ortalama %15-25 gübre tasarrufu + verim artışı.\n\n**VRA Uygulama Adımları:**\n1. Toprak örnekleme: Grid (30x30m) veya yönetim bölgelerine göre\n2. Laboratuvar analizi: N-P-K, pH, organik madde\n3. Uygulama haritası: QGIS / FarmWorks / AgLeader\n4. Makine programlama: ISO-XML veya Shape dosyası ile GPS gübre makinesine yükle\n\n**Gübre Hesabı (Azot Örneği):**\n```python\n# Basit azot tavsiyesi hesabi\ndef nitrogen_recommendation(soil_nitrate_ppm, target_yield_ton):\n    # 1 ton tahil icin yaklasik 20 kg N gerekir\n    crop_demand = target_yield_ton * 20\n    # Toprak azot katki (ppm -> kg/ha donusumu)\n    soil_supply = soil_nitrate_ppm * 0.3  \n    recommendation = max(0, crop_demand - soil_supply)\n    return recommendation  # kg/ha\n\n# Ornek: 8 ton hedef, 15 ppm toprak nitrat\nprint(nitrogen_recommendation(15, 8))  # ~155.5 kg/ha\n```\n\n**Makine Gereksinimleri:**\n- GPS alıcı (RTK ile ±2cm hassasiyet)\n- Değişken oran spreader/ekim makinesi\n- ISO-XML okuyabilen terminal\n\nTarla içi %30 verimlilik farkı normal; tek sabit doz hem az hem çok uygulama demektir.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "toprak"
       ],
       "badge1": "Başlangıç",
-      "content": "## Toprak pH Rehberi\n| pH | Durum | Aksiyon |\n|----|-------|---------|\n| <5.5 | Asit | Kireçleme: CaCO3 |\n| 5.5-7 | Optimal | Bitki besinleri en verimli |\n| 7-8 | Alkali | Kükürt veya asit gübre |\n| >8 | Aşırı alkali | Drene etme, alçı |\n\nEn yaygın sorun: asit topraklarda Al/Mn toksisitesi.\nKireç ihtiyacı: lab raporuna göre ton/da hesapla.",
+      "content": "**Toprak pH Yönetimi: Besin Alımını Optimize Etme**\n\nToprak pH'ı en önemli tarım faktörlerinden biridir — bitkilerin besinleri alıp alamadığını doğrudan etkiler.\n\n**pH ve Besin Alımı İlişkisi:**\n```\npH 5.5 → Al ve Mn toksisitesi, P kilitleniyor\npH 6.0-6.5 → Çoğu bitki için optimum\npH 7.0 → Fe ve Zn azalıyor\npH 7.5+ → Mikro besin neredeyse alınamaz\n```\n\n**pH Düzeltme Hesabı:**\n```python\ndef lime_requirement(current_ph, target_ph, buffer_ph, texture):\n    # Shoemaker-McLean-Pratt (SMP) methodu\n    buffer_deficit = 7.0 - buffer_ph\n    # Kil oranina gore katsayi\n    factor = {'sandy': 1.0, 'loamy': 1.5, 'clayey': 2.0}[texture]\n    # ton/ha kireç tavsiyesi\n    lime_tons = buffer_deficit * factor * 1.5\n    return round(lime_tons, 1)\n\nprint(lime_requirement(5.2, 6.5, 6.1, 'loamy'))  # ~2.1 ton/ha\n```\n\n**Kireç Türleri:**\n| Ürün | CCE (%) | Etki Süresi |\n|------|---------|-------------|\n| Kalsit | 95-100 | 2-3 yıl |\n| Dolomit | 95-108 | 3-5 yıl (Mg+ bonus) |\n| Yanmış kireç | 150-175 | Hızlı, dikkatli doz |\n\n**İzleme:** Yılda bir pH ölçümü; sulama suyunun pH'ı da kontrol et (>7.5 su asitlendirici gerektirebilir).",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "humus"
       ],
       "badge1": "Başlangıç",
-      "content": "## Organik Madde Artırma\n1. **Ahır gübresi:** 3-5 ton/da → tarlaya sonbahar dağıt, işle.\n2. **Kompost:** C:N oranı 25-30:1 → 3 ay beklet.\n3. **Yeşil gübre:** Fiğ, yonca, bakla → çiçek öncesi işle.\n4. **Sap geri dönüşümü:** Hasattan sap bırak, parçala.\n5. **No-till:** Toprak işlememeyi azalt → organik madde korur.",
+      "content": "**Toprak Organik Maddesi (SOM): Arttırma Stratejileri**\n\nOrganik madde %1 artışı toprağın su tutma kapasitesini yaklaşık 20.000 L/ha artırır. Uzun vadeli verimlilik temeli.\n\n**Organik Madde Kaynakları ve Katkıları:**\n```\nKompost (olgunlaşmış):\n- Uygulama: 5-15 ton/ha yılda bir\n- SOM artışı: Yılda +0.1-0.2%\n- Hazırlık: C:N oranı 25-30:1 hedef\n\nYesil Gübre:\n- Örnek: Fiğ + yulaf karışımı\n- Ekim: Hasattan 6-8 hafta önce\n- Faydası: 80-120 kg/ha azot + SOM\n\nBiyokömür (Biochar):\n- Uygulama: 2-5 ton/ha tek seferlik\n- SOM artışı kalıcı (100+ yıl)\n- Maliyeti yüksek ama uzun vadeli kazanç\n```\n\n**Kompost C:N Hesabı:**\n```python\ndef compost_cn_ratio(materials):\n    # materials: [(ad, miktar_kg, cn_ratio), ...]\n    total_c = sum(m * (cn/(cn+1)) for _, m, cn in materials)\n    total_n = sum(m * (1/(cn+1)) for _, m, cn in materials)\n    return total_c / total_n\n\nstack = [('saman', 100, 80), ('tavuk_gubresi', 30, 7), ('sebze_atigi', 50, 15)]\nprint(f'C:N oranı: {compost_cn_ratio(stack):.1f}')  # Hedef: 25-30\n```\n\n**Minimum Toprak İşleme:** No-till veya strip-till; her pulluk her yıl SOM'u %3-5 azaltır.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "tasarım"
       ],
       "badge1": "Orta",
-      "content": "## Damla Sulama Hesabı\n1. Bitkinin günlük su ihtiyacı: ET₀ × Kc (mm/gün).\n2. Damlama aralığı: 30-50cm bitki aralığına göre.\n3. Damlatıcı debisi: 1-4 L/saat tipik.\n4. Lateral boru: 16mm PE, max 100m.\n5. Bölge debisi = Bitki sayısı × damlatıcı adedi × debi.\n6. Pompa basıncı: 0.5-2 bar lateral + yükseklik.",
+      "content": "**Damla Sulama Sistemi Tasarımı: Verimli Su Kullanımı**\n\nDamla sulama, yüzey sulamasına kıyasla %40-60 su tasarrufu sağlar ve gübreleme ile entegre edilebilir (fertigation).\n\n**Sistem Bileşenleri:**\n```\nAna Hat → Dağıtım Borusu → Lateral Boru → Damlatıcı\n\nDamlatıcı seçimi:\n- Debisi: 1-4 L/saat (kültüre göre)\n- Aralığı: Ağırlıklı 30-60cm (kök dağılımına göre)\n- Tip: Basınç kompanzasyonlu = düz arazide verimli\n```\n\n**Debi ve Basınç Hesabı:**\n```python\ndef drip_system_flow(area_m2, emitter_spacing_m, emitter_rate_lh):\n    emitters_per_ha = 10000 / (emitter_spacing_m ** 2)\n    total_emitters = emitters_per_ha * (area_m2 / 10000)\n    flow_m3h = total_emitters * emitter_rate_lh / 1000\n    return total_emitters, flow_m3h\n\ncount, flow = drip_system_flow(5000, 0.5, 2.0)\nprint(f'{count:.0f} damlatıcı, {flow:.1f} m³/saat debi')\n```\n\n**Fertigation Entegrasyonu:**\n- Dozaj pompası: Venturi injektör (düşük maliyet) veya peristaltik pompa (hassas)\n- Gübre konsantrasyon tavsiyesi: EC 1.5-2.5 mS/cm (aşma → kök yanığı)\n- Uygulama zamanı: Sulamanın ortasında (40-40-20 kuralı: 40% su, 40% gübre, 20% yıkama)\n\nBakım: Sezon başı ve sonunda lateral boruları temizle, damlatıcıları klor çözeltisiyle yıka.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "verimlilik"
       ],
       "badge1": "Orta",
-      "content": "## ET Bazlı Sulama\nNet sulama = ET₀ × Kc × Alan - Yağış\n\nKc değerleri (buğday örneği):\n- Çıkış: 0.3\n- Kardeşlenme: 0.7\n- Başaklanma: 1.1\n- Olgunluk: 0.4\n\nAraç: FAO CLIMWAT, meteo verisi.\nSmartphone: ET uygulamaları (IrrigationApp, FarmHQ).\nHedef: %30 su tasarrufu vs. geleneksel.",
+      "content": "**Evapotranspirasyon (ET) Bazlı Sulama: Bilimsel Su Programlama**\n\nET, bitkinin yapraklarından ve topraktan buharlaşan toplam su miktarıdır. ET odaklı programlama %20-40 su tasarrufu sağlar.\n\n**Penman-Monteith ET₀ Hesabı (FAO-56):**\n```python\nimport math\n\ndef eto_simplified(Tmax, Tmin, RH_mean, u2, Rs, altitude=100):\n    T = (Tmax + Tmin) / 2\n    # Doygun buhar basinci (kPa)\n    es = 0.6108 * math.exp(17.27 * T / (T + 237.3))\n    ea = es * RH_mean / 100\n    # Delta (kPa/C)\n    delta = 4098 * es / ((T + 237.3) ** 2)\n    # Psychrometric sabit\n    gamma = 0.000665 * (101.3 * ((293 - 0.0065 * altitude) / 293) ** 5.26)\n    \n    ETo = (0.408 * delta * Rs + gamma * (900/(T+273)) * u2 * (es-ea)) / \\\n          (delta + gamma * (1 + 0.34 * u2))\n    return round(ETo, 2)\n\n# Ornek: Tmax=30, Tmin=20, RH=60%, u2=2m/s, Rs=20 MJ/m2/gun\nprint(eto_simplified(30, 20, 60, 2, 20))  # ~5.2 mm/gun\n```\n\n**Kültür Katsayısı (Kc) ile Gerçek ET:**\n```\nETc = ETo × Kc\nBugday Kc: ekim=0.3, vejetatif=0.7, basak=1.15, olgunlasma=0.4\nMısır Kc: erken=0.3, vejetatif=1.0, tepe=1.20, olgunlasma=0.6\n```\n\n**Uygulama:** Meteoroloji API'sinden (OpenWeatherMap, Agromonitoring) günlük veri çek → otomatik sulama tavsiyesi üret.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "ilaçlama"
       ],
       "badge1": "Orta",
-      "content": "## Tarım Drone Kullanımı\n1. Görev planlama: DJI Agras/Field Planner.\n2. Sürüş hızı: ilaçlama 5-7 m/s, haritalama 10-15 m/s.\n3. İrtifa: ilaçlama 2-3m, haritalama 50-120m.\n4. Örtüşme: fotoğraf %75-80 kenar örtüşmesi.\n5. Lisans: Türkiye'de SHY 6B/1 sertifikası gerekli.\n6. Çıktı: ortofoto, NDVI haritası, ilaçlama raporu.",
+      "content": "**Tarımsal Drone Uygulamaları: Hava Görüntüleme ve İlaçlama**\n\nTarım dronları zamanında kararlar için kritik veri sağlar; ilaçlama dronları ise %30 daha az kimyasal kullanımı mümkün kılar.\n\n**Uygulama Alanları:**\n```\n1. Multispektral Görüntüleme:\n   - NDVI, NDRE, CWSI haritaları\n   - 2-5 cm/piksel çözünürlük\n   - Periyot: 7-14 günde bir veya kritik dönemde\n\n2. Ilaçlama Dronu:\n   - DJI Agras T40: 40L tank, 43 dönüm/saat\n   - RTK GPS ile ±2cm hassasiyet\n   - Rüzgar eşiği: maks 5 m/s\n\n3. Tohum ve Gübre Uygulaması:\n   - Serpme başlığı ile düzensiz arazilerde verimli\n   - Hassas tohum ekim dronları (<1cm hassasiyet)\n```\n\n**Türkiye'de Yasal Gereklilikler:**\n- SHGM izni: Ticari tarım dronları lisans gerektirir\n- Zorunlu: 500m çapında yerleşim alanı yasağı\n- İHA-U4 veya İHA-U5 pilot sertifikası\n\n**Python ile Uçuş Planlama:**\n```python\ndef calculate_flight_lines(field_width_m, camera_fov_deg, altitude_m, overlap=0.8):\n    swath = 2 * altitude_m * math.tan(math.radians(camera_fov_deg/2))\n    effective_swath = swath * (1 - overlap)\n    n_lines = math.ceil(field_width_m / effective_swath)\n    return n_lines, swath\n```\n\nFotoğraf işleme için Pix4D veya OpenDroneMap (açık kaynak) kullan; QGIS ile haritalara entegre et.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "IoT"
       ],
       "badge1": "İleri",
-      "content": "## Sensör Ağı Kurulumu\n1. Sensör tipi: Capacitive (EC-5, 5TE) veya Tensiometer.\n2. Derinlik: 15cm ve 30cm → kök bölgesi.\n3. Bağlantı: LoRa gateway (1-2km menzil) → bulut.\n4. Alarm: FC% tarla kapasitesinin %50'si → sulama başlat.\n5. Otomasyon: MQTT → Node-RED → sulama vanası.\n6. Kalibrasyon: toprak tipine göre yıllık güncelle.",
+      "content": "**IoT Toprak Nem Sensör Ağı: Gerçek Zamanlı Sulama Kararı**\n\nToprak nem sensörleri sulama kararını sezgiden bilimsel veriye taşır; %25-35 su tasarrufu tipik.\n\n**Sensör Türleri:**\n| Tip | Prensip | Hassasiyet | Fiyat |\n|-----|---------|------------|-------|\n| Capacitive (resistive) | Dielektrik sabiti | ±3% VWC | 10-50$ |\n| TDR | Elektromanyetik | ±1% VWC | 200-500$ |\n| Tensiometer | Matric potential | iyi | 50-150$ |\n| FDR | Frekans alanı | ±2% VWC | 150-300$ |\n\n**Arduino/ESP32 ile Capacitive Sensör:**\n```cpp\n#include <WiFi.h>\n#include <PubSubClient.h>\n\nconst int SENSOR_PIN = 34;  // ADC pin\nconst int AIR_VALUE = 3200; // Kuru toprak ADC degeri\nconst int WATER_VALUE = 1200; // Dolu su ADC degeri\n\nvoid readAndPublish() {\n  int rawValue = analogRead(SENSOR_PIN);\n  // 0-100 skala\n  int moisture = map(rawValue, AIR_VALUE, WATER_VALUE, 0, 100);\n  moisture = constrain(moisture, 0, 100);\n  \n  String payload = \"{\\\"moisture\\\": \" + String(moisture) + \"}\";\n  mqttClient.publish(\"farm/soil/moisture\", payload.c_str());\n}\n```\n\n**Ağ Topolojisi:**\n- LoRaWAN tercih et (5-10 km menzil, batarya ömrü 2-5 yıl)\n- Alternatif: 4G modem + solar panel\n- Platform: The Things Network ücretsiz, Grafana ile görselleştirme",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "tahıl"
       ],
       "badge1": "Başlangıç",
-      "content": "## Tahıl Nem Yönetimi\nGüvenli depolama nem sınırları:\n- Buğday: <%14\n- Mısır: <%14\n- Arpa: <%13\n- Ayçiçeği: <%8\n\nOlçüm: el tipi nem ölçer (Dickey-john, PM-300).\nKuruma maliyeti: 1 nem noktası düşürme ≈ 70 kWh/ton.\nİpucu: Tarlada <%15 olunca hasat → depo maliyetini azalt.",
+      "content": "**Tahıl Nem Ölçümü ve Hasat Zamanlaması: Kalite ve Depolama**\n\nTahılda nem içeriği hasat zamanı, depolama süresi ve satış fiyatını doğrudan etkiler.\n\n**Kritik Nem Seviyeleri:**\n```\nBugday:\n- Hasat: %12-14 nem (>14% → depolama riski)\n- Uzun vadeli depo: <%12\n- Kritik eşik: >%16 → küf, mikotoksin riski\n\nMisir:\n- Hasat: %20-25 (kurutma gerekir)\n- Depo: <%14\n- Her %1 kurutma maliyeti: ~10-15 TL/ton\n\nAyçiçeği:\n- Hasat: %8-9\n- Depo: <%8\n```\n\n**Nem Ölçüm Yöntemleri:**\n```python\n# Gravimetrik nem hesabi (referans metod)\ndef gravimetric_moisture(wet_weight_g, dry_weight_g):\n    return (wet_weight_g - dry_weight_g) / wet_weight_g * 100\n\n# 105C etuvde 24 saat sonra:\nprint(gravimetric_moisture(100, 86.5))  # %13.5 nem\n```\n\n**Saha Ölçümü:** Dijital tahıl nem ölçer (400-3000 TL); kapasitif problu modeller 30 saniyede sonuç verir.\n\n**Kurutma Maliyeti Hesabı:**\n```python\ndef drying_cost(tons, current_pct, target_pct, cost_per_point=12):\n    points_to_remove = current_pct - target_pct\n    return tons * points_to_remove * cost_per_point\n\nprint(drying_cost(100, 22, 14))  # 100 ton mısır: 9600 TL\n```\n\nHasat 3-4 gün öncesinde probing ile kuruma hızını tahmin et; bekleme her zaman kurutmadan ucuzdur.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "lojistik"
       ],
       "badge1": "Orta",
-      "content": "## Soğuk Zincir\nTarla → Ön soğutma → Soğuk depo → Araç → Market\n\nKritik adımlar:\n1. Ön soğutma: hasattan 2 saat içinde ürünü soğut.\n2. Zincir kırılması: her 10°C artış raf ömrünü 2-3x kısaltır.\n3. Sıcaklık kaydı: datalogger ile tüm zincirde izle.\n4. Muz/domates: 12-15°C (soğuk hasarı riski).\n5. Elma: 0-2°C → 6 ay depolama.",
+      "content": "**Soğuk Zincir Yönetimi: Hasat Sonrası Kayıp Minimizasyonu**\n\nTürkiye'de hasat sonrası kayıplar ortalama %20-30; soğuk zincir bu kaybı %5'in altına çekebilir.\n\n**Ürün Bazlı Depolama Koşulları:**\n```\nDomates: 10-12°C, %85-95 nem, etilen hassas!\nElma: 0-2°C, %90-95 nem, 4-6 ay\nMarul: 0-2°C, %95-100 nem, 2-3 hafta\nPatates: 4-8°C (küflenmede 10-13°C), %85-90 nem\nSogan: 0-5°C, %65-70 nem (nem fazla → çürüme)\n```\n\n**IoT Soğuk Depo İzleme:**\n```python\nimport paho.mqtt.client as mqtt\nimport json\nfrom datetime import datetime\n\ndef on_message(client, userdata, msg):\n    data = json.loads(msg.payload)\n    temp = data['temperature']\n    humidity = data['humidity']\n    \n    # Alarm kontrol\n    if temp > data['max_temp'] + 1.5:\n        send_sms_alert(f'UYARI: Sıcaklık {temp}°C - Limit aşıldı!')\n    \n    # Veri kayit\n    log_to_database(datetime.now(), temp, humidity)\n\nclient = mqtt.Client()\nclient.on_message = on_message\nclient.connect('broker.hivemq.com', 1883)\nclient.subscribe('coldstorage/sensor/#')\n```\n\n**Pre-Cooling (Ön Soğutma):** Hasattan sonra 30 dakika içinde soğutma başlatmak raf ömrünü 2-3 kat uzatabilir. Meyve olgunlaşmasını yavaşlatmak için etilen inhibitörü (1-MCP) kullan.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "azot"
       ],
       "badge1": "Başlangıç",
-      "content": "## Örtü Bitkisi Seçimi\n| Bitki | Fayda |\n|-------|-------|\n| Fiğ | Biyolojik azot bağlama (80-100 kg N/ha) |\n| Çavdar | Erozyon koruması, yabancı ot baskısı |\n| Turp | Sıkışık toprağı deler, nematod azaltır |\n| Yonca | Uzun ömürlü azot, toprak organik maddesi |\n\nEkim zamanı: Ana hasattan sonra Ağustos-Eylül.",
+      "content": "**Örtü Bitkisi (Cover Crop) Yönetimi: Toprak Sağlığı Yatırımı**\n\nÖrtü bitkisi boş kalan tarlada toprağı korur, organik madde ekler ve sonraki sezon için zemin hazırlar.\n\n**Türler ve Faydaları:**\n```\nBaklagiller (Fiğ, Yonca, Fasulye):\n+ Biyolojik azot fiksasyonu: 50-200 kg N/ha\n+ Rizobiyum bakterileri ile ortak yaşam\n- Yüksek nem gerektiriyor\n\nTahıllar (Çavdar, Yulaf, Arpa):\n+ Yabancı ot bastırma (allelopatik etkisi)\n+ Kökler erozyonu önler, derin kök kanalları\n- Azot katkısı yok, karbon ekliyor\n\nTurpgiller (Turp, Hardal, Şalgam):\n+ Biyofümigasyon (nematod azaltma)\n+ Derin kök → toprak havalanması\n- Dondan zarar görebilir\n```\n\n**Karışım Reçetesi (Orta Anadolu):**\n```\nSonbahar Karışımı:\n- Kılçıksız brom 5 kg/ha + fiğ 40 kg/ha + turp 3 kg/ha\n- Ekim derinliği: tahıl 3-4cm, baklagil 3cm, turp 1-2cm\n```\n\n**Toprak Üstü Bırakma vs. Karıştırma:**\n- Kuru bölge: Yüzeyde mulch gibi bırak → nem koruma\n- Nemli bölge: 2-4 hafta önce toprağa karıştır → mineralizasyon\n\nMaliyet: 150-400 TL/ha tohum; elde edilen azot değeri 500-1500 TL/ha.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "yazılım"
       ],
       "badge1": "Başlangıç",
-      "content": "## Tarım Kayıt Sistemleri\n- **ÇKS (Çiftçi Kayıt Sistemi):** Devlet zorunluluğu — parsel, destekleme.\n- **Tarım ERP:** Logo, Mikro → çiftlik maliyet muhasebesi.\n- **Tarım Kredi Kooperatif:** Gider ve gelir kayıt defteri.\n- **Excel/Google Sheets:** Küçük çiftlik için yeterli.\n\nMinimum kayıt: Arazi, gübre, ilaç, yakıt, işçilik, verim.",
+      "content": "**Tarım Muhasebe Sistemleri: Maliyet ve Karlılık Analizi**\n\nTarımda gerçek maliyet hesabı çoğu işletmede yapılmıyor — bu nedenle hangi ürünün kazandırdığı bilinmiyor.\n\n**Ürün Başına Maliyet Analizi:**\n```python\ndef crop_profitability(crop_data):\n    revenue = crop_data['yield_ton'] * crop_data['price_per_ton']\n    \n    variable_costs = sum([\n        crop_data['seed_cost'],\n        crop_data['fertilizer_cost'],\n        crop_data['pesticide_cost'],\n        crop_data['irrigation_cost'],\n        crop_data['harvest_cost'],\n        crop_data['transport_cost']\n    ])\n    \n    fixed_costs = (\n        crop_data['land_rent'] +\n        crop_data['machinery_depreciation'] +\n        crop_data['labor_fixed']\n    ) * crop_data['area_ha']\n    \n    total_cost = variable_costs + fixed_costs\n    profit = revenue - total_cost\n    break_even_yield = total_cost / crop_data['price_per_ton']\n    \n    return {\n        'revenue': revenue,\n        'total_cost': total_cost,\n        'profit': profit,\n        'margin_pct': profit/revenue*100,\n        'break_even_ton': break_even_yield\n    }\n```\n\n**Türkiye'de Kullanılan Yazılımlar:**\n- Logo Netsis (büyük işletmeler)\n- ÇATAK (Tarım Bakanlığı destek takibi)\n- Excel şablon: minimum ama yaygın\n- Farmlogs, Granular (uluslararası bulut tabanlı)\n\n**Temel Metrikler:** Gross margin (GSÜD - değişken masraflar), kg başına maliyet, su başına verim (kg/m³), elektrik/mazot tüketimi.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "zararlı"
       ],
       "badge1": "Orta",
-      "content": "## IPM Piramidi\n1. Kültürel: Rotasyon, dayanıklı çeşit, ekim zamanı.\n2. Mekanik: Tuzaklar, bariyer, ışık tuzağı.\n3. Biyolojik: Predatör (Trichogramma, Chrysoperla).\n4. Kimyasal: Son çare, seçici ilaç, eşik bazlı.\n\nEşik: Ekonomik zarar eşiğini geçmeden ilaçlama yapma.\nFaydası: Direnç gecikir, çevre korunur, maliyet düşer.",
+      "content": "**Entegre Zararlı Yönetimi (IPM): İlaç Azaltma Stratejisi**\n\nIPM, kimyasal ilaçlamayı son çare olarak gören, önleme ve izleme odaklı zararlı yönetim sistemidir.\n\n**IPM Karar Hiyerarşisi:**\n```\n1. Önleme (Prevention):\n   - Dirençli çeşit seçimi\n   - Ekim nöbeti\n   - Sanitasyon (hasta bitki/artık temizleme)\n\n2. İzleme (Monitoring):\n   - Feromonlu tuzaklar (haftalık sayım)\n   - Yaprak örnekleme (20 nokta/dönüm)\n   - Hastalık uyarı modelleri (dd model)\n\n3. Eşik Değeri:\n   - Ekonomik zarar eşiği (EZE) aşılmadan önce ilaçlama\n   - Örnek: Buğday'da 5 adet yaprakbiti/sap → EZE\n\n4. Biyolojik Mücadele:\n   - Doğal düşman serbest bırakma (Trichogramma)\n   - Yararlı böcek habitatı (çiçekli kenar şeritler)\n\n5. Kimyasal (son çare):\n   - Seçici ilaçlar, yarar/zarar dengesi\n   - Rotasyon: direnç oluşmasın\n```\n\n**Biyolojik Mücadele Türkiye'de:**\n```\nHedef zararlı → Doğal düşman\nKırmızı örümcek → Phytoseiidae akarlar\nTüm bit → Aphidius wasps\nTuta absoluta (domates) → Macrolophus, Trichogramma\nWhitefly → Encarsia formosa\n```\n\nIPM belgeli üretim (GLOBALGAP, Organik) ek prim getirebilir; ihracatta rekabet avantajı.",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "tasarım"
       ],
       "badge1": "Orta",
-      "content": "## Yağmurlama Tasarımı\n1. Başlık türü: döner (Rainbird, Hunter) veya sabit.\n2. Menzil: yarıçap baskıya göre 6-18m.\n3. Başlık aralığı: menzil × 0.5-0.6 (kare veya üçgen düzen).\n4. Uygulama hızı: <toprak infiltrasyon hızı → sürükleme yok.\n5. Baskı: 2.5-4.5 bar lateral → basınç düzenleyici kullan.\n6. Verimliliği: yağmurlama %70-80, damla %90-95.",
+      "content": "**Yağmurlama Sulama Sistem Tasarımı: Hesap ve Optimizasyon**\n\nYağmurlama sistemleri düzgün su dağılımı için doğru tasarım gerektirir; kötü tasarım %40'a varan verimlilik kaybına neden olur.\n\n**Sprinkler Tasarım Parametreleri:**\n```python\ndef sprinkler_design(area_m2, ET_daily_mm, efficiency=0.75):\n    # Brut sulama gereksinimi\n    gross_water = ET_daily_mm / efficiency  # mm/gun\n    # m3/gun\n    total_volume = gross_water * area_m2 / 1000\n    \n    # Tipik meme secimleri\n    # Orta mesafe (18m aralik): 1500 L/h meme\n    # Bitis mesafe (12m aralik): 600 L/h meme\n    \n    sprinkler_spacing = 18  # meter\n    sprinkler_count = area_m2 / (sprinkler_spacing ** 2)\n    flow_per_sprinkler = 1500  # L/h\n    \n    total_flow_m3h = sprinkler_count * flow_per_sprinkler / 1000\n    operation_hours = total_volume / total_flow_m3h\n    \n    return {\n        'sprinkler_count': int(sprinkler_count),\n        'total_flow_m3h': round(total_flow_m3h, 1),\n        'daily_operation_h': round(operation_hours, 1)\n    }\n\nresult = sprinkler_design(10000, 6)\nprint(result)\n```\n\n**Dağılım Tekdüzeliği (DU) Ölçümü:**\n```\nCatch cans test: 4 noktaya kap koy, 30 dk çalıştır\nDU = (Minimum hacim / Ortalama hacim) × 100\nDU > 80% → iyi tasarım\nDU < 70% → revizyon gerekli\n```\n\n**Rüzgar Etkisi:** Rüzgar hızı >3 m/s iken sulama verimi %20-30 düşer; sabah erken (07-10) veya akşam (18-21) saatlerinde çalıştır.",
       "source": {
         "generated": true
       }

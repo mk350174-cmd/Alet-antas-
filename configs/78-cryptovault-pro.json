@@ -113,7 +113,7 @@
       ],
       "badge1": "—",
       "badge2": "★ 11.205",
-      "content": "smartcontractkit/full-blockchain-solidity-course-py\n\nUltimate Solidity, Blockchain, and Smart Contract - Beginner to Expert Full Course | Python Edition\n\n⭐ Yıldız: 11205\n🍴 Fork: 2942\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/smartcontractkit/full-blockchain-solidity-course-py",
+      "content": "**Solidity & Blockchain Tam Kurs (Python odaklı)**\n\nPatrick Collins'in 32 saatlik bu kapsamlı kursu, sıfırdan ileri seviyeye Solidity, Web3 ve DApp geliştirmeyi öğretir. Chainlink entegrasyonu, Hardhat/Brownie araçları ve gerçek proje senaryoları içerir.\n\n**Kurs İçeriği:**\n- **Bölüm 1–5:** Solidity temelleri, değişkenler, fonksiyonlar, visibility, mapping\n- **Bölüm 6–10:** ERC-20/ERC-721 token geliştirme, OpenZeppelin kütüphanesi\n- **Bölüm 11–16:** Chainlink VRF, Keepers, Price Feed entegrasyonu\n- **Bölüm 17–20:** DeFi protokolleri (AAVE, Uniswap fork), liquidity pool\n\n**Başlangıç:**\n```bash\ngit clone https://github.com/smartcontractkit/full-blockchain-solidity-course-py\ncd full-blockchain-solidity-course-py\npip install eth-brownie\nbrownie networks add Ethereum sepolia-fork host=https://rpc.sepolia.org chainid=11155111\n```\n\n**Temel Sözleşme Şablonu:**\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.19;\n\ncontract SimpleStorage {\n    uint256 private storedValue;\n    event ValueUpdated(uint256 newValue);\n\n    function store(uint256 value) public {\n        storedValue = value;\n        emit ValueUpdated(value);\n    }\n    function retrieve() public view returns (uint256) {\n        return storedValue;\n    }\n}\n```\n\nKurs tamamlandığında Hardhat deployment, Etherscan doğrulama ve testnet deploy konularında yetkin olursunuz.",
       "meta": {
         "Yıldız": 11205,
         "Dil": "—",
@@ -139,7 +139,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 2.801",
-      "content": "dethcrypto/TypeChain\n\n🔌 TypeScript bindings for Ethereum smart contracts\n\n⭐ Yıldız: 2801\n🍴 Fork: 380\n📅 Güncelleme: 2026-05-29\n🔗 https://github.com/dethcrypto/TypeChain",
+      "content": "## TypeChain: Solidity için TypeScript Tip Üreteci\n\nAkıllı kontrat ABI'lerinden otomatik TypeScript tip tanımları üreten araç — güvenli Web3 geliştirme için.\n\n**Kurulum ve kullanım:**\n```bash\nnpm install --save-dev typechain @typechain/ethers-v6\nnpm install --save-dev hardhat-typechain\n\n# hardhat.config.ts\nimport '@typechain/hardhat';\n```\n\n**Tip üretimi:**\n```bash\n# Derle + tip oluştur\nnpx hardhat compile\n# veya\nnpx typechain --target ethers-v6 './artifacts/**/*.json'\n# ./typechain-types/ klasörü oluşur\n```\n\n**Üretilen tipler ile güvenli çağrı:**\n```typescript\nimport { MyToken__factory } from './typechain-types';\nimport { ethers } from 'ethers';\n\nasync function main() {\n  const [deployer] = await ethers.getSigners();\n  \n  // Factory ile deploy — tam tip güvenliği\n  const Token = await new MyToken__factory(deployer).deploy(\n    'MyToken', 'MTK', 1_000_000n\n  );\n  await Token.waitForDeployment();\n  \n  // Fonksiyon çağrıları otomatik tip kontrolü\n  const balance: bigint = await Token.balanceOf(deployer.address);\n  await Token.transfer(recipientAddress, 100n);\n  // Yanlış parametre → derleme zamanı hata\n}\n```\n\n**Test entegrasyonu:**\n```typescript\n// test/Token.test.ts\nconst token = await new MyToken__factory(owner).deploy(...);\nawait expect(token.transfer(addr1, 100)).to.emit(token, 'Transfer');\nconst balance = await token.balanceOf(addr1.address);\nexpect(balance).to.equal(100n);\n```\n\n**Prompt:** \"Mevcut Solidity projesine TypeChain entegre et; tüm kontratlar için tip üretimi kur, Hardhat test dosyalarını TypeScript'e migrate et.\"",
       "meta": {
         "Yıldız": 2801,
         "Dil": "TypeScript",
@@ -165,7 +165,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 1.942",
-      "content": "SunWeb3Sec/DeFiVulnLabs\n\nTo learn common smart contract vulnerabilities using Foundry!\n\n⭐ Yıldız: 1942\n🍴 Fork: 345\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/SunWeb3Sec/DeFiVulnLabs",
+      "content": "## DeFiVulnLabs: DeFi Güvenlik Açıkları Laboratuvarı\n\nGerçek DeFi saldırılarını öğreten açık kaynak güvenlik araştırma laboratuvarı.\n\n**Kapsanan zafiyet kategorileri:**\n```\nRe-entrancy (Yeniden Giriş)\n├── klasik re-entrancy (DAO hack benzeri)\n├── cross-function re-entrancy\n└── read-only re-entrancy\n\nInteger Overflow/Underflow\nFlash Loan Saldırıları\nPrice Oracle Manipülasyonu\nAccess Control Açıkları\nFront-Running\nDelegateCall Zafiyeti\n```\n\n**Re-entrancy saldırı örneği:**\n```solidity\n// Savunmasız kontrat\ncontract Vulnerable {\n    mapping(address => uint) public balances;\n    \n    function withdraw() external {\n        uint amount = balances[msg.sender];\n        (bool success,) = msg.sender.call{value: amount}(\"\");  // ← Tehlikeli\n        require(success);\n        balances[msg.sender] = 0;  // ← Durum sonra güncelleniyor!\n    }\n}\n\n// Saldırgan kontrat\ncontract Attacker {\n    receive() external payable {\n        if (address(target).balance >= 1 ether)\n            target.withdraw();  // Tekrar giriyor!\n    }\n}\n```\n\n**CEI (Checks-Effects-Interactions) düzeltmesi:**\n```solidity\nfunction withdraw() external {\n    uint amount = balances[msg.sender];  // Check\n    balances[msg.sender] = 0;            // Effect (önce!)\n    (bool success,) = msg.sender.call{value: amount}(\"\");  // Interaction\n    require(success);\n}\n```\n\n**Prompt:** \"Bu DeFi protokolünde re-entrancy, integer overflow ve flash loan zafiyet testleri yaz; her zafiyeti PoC kodla göster ve düzeltme öner.\"",
       "meta": {
         "Yıldız": 1942,
         "Dil": "Solidity",
@@ -217,7 +217,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 1.087",
-      "content": "thirdweb-dev/contracts\n\nCollection of smart contracts deployable via thirdweb\n\n⭐ Yıldız: 1087\n🍴 Fork: 589\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/thirdweb-dev/contracts",
+      "content": "**thirdweb Sözleşme Koleksiyonu (ERC-721/ERC-20/Marketplace)**\n\nthirdweb'in denetlenmiş, production-ready akıllı sözleşme kütüphanesi (★1087). ERC-20, ERC-721, ERC-1155, marketplace, staking, vote sözleşmelerini tek komutla deploy edin.\n\n**Kurulum:**\n```bash\nnpm install @thirdweb-dev/contracts\n```\n\n**ERC-721 NFT Koleksiyonu:**\n```solidity\nimport \"@thirdweb-dev/contracts/base/ERC721Base.sol\";\ncontract MyNFT is ERC721Base {\n    constructor(address admin, string memory name, string memory symbol,\n                address royaltyRecipient, uint128 royaltyBps)\n        ERC721Base(admin, name, symbol, royaltyRecipient, royaltyBps) {}\n}\n```\n\n**CLI Deploy:**\n```bash\nnpx thirdweb deploy\n# Tarayıcıda cüzdan bağla, kontrat seç, ağı seç\n```\n\n**Desteklenen Ağlar:** Ethereum, Polygon, Arbitrum, Optimism, Base, BNB Chain.\n**Kontrat Türleri:** Token, NFT Drop, Edition Drop, Marketplace, Split, Vote, Stake, Pack, Multiwrap. Her kontrat OpenZeppelin tabanlı ve Solidity 0.8+ gerektirir.",
       "meta": {
         "Yıldız": 1087,
         "Dil": "Solidity",
@@ -243,7 +243,7 @@
       ],
       "badge1": "—",
       "badge2": "★ 795",
-      "content": "tamjid0x01/SmartContracts-audit-checklist\n\nA checklist of things to look for when auditing Solidity smart contracts. \n\n⭐ Yıldız: 795\n🍴 Fork: 129\n📅 Güncelleme: 2026-06-01\n🔗 https://github.com/tamjid0x01/SmartContracts-audit-checklist",
+      "content": "**Akıllı Sözleşme Denetim Kontrol Listesi**\n\nSolidity güvenlik denetimlerinde kullanılan sistematik kontrol listesi. Her denetimde bu kategorileri sırayla geçin.\n\n**Kritik Zafiyetler (Önce Kontrol Et):**\n1. **Reentrancy:** CEI pattern uygulandı mı? (`checks → effects → interactions`)\n2. **Integer Overflow/Underflow:** SafeMath veya Solidity 0.8+ kullanıldı mı?\n3. **Access Control:** `onlyOwner`, `onlyRole` modifier'lar doğru uygulandı mı?\n4. **tx.origin vs msg.sender:** Authentication için `tx.origin` kullanılıyor mu?\n\n**Orta Seviye Kontroller:**\n```solidity\n// Reentrancy örneği — YANLIŞ:\nfunction withdraw(uint amount) public {\n    (bool success,) = msg.sender.call{value: amount}(\"\");  // Önce transfer!\n    balances[msg.sender] -= amount;  // Sonra state güncelleme — HATALI\n}\n\n// DOĞRU (CEI Pattern):\nfunction withdraw(uint amount) public {\n    require(balances[msg.sender] >= amount);\n    balances[msg.sender] -= amount;  // Effect önce\n    (bool success,) = msg.sender.call{value: amount}(\"\");  // Interaction sonra\n    require(success);\n}\n```\n\n**Denetim Araçları:** Slither (`pip install slither-analyzer`), Mythril, Echidna fuzzer, Foundry fuzz testing.\n\nDenetim sonrası raporu: Critical/High/Medium/Low/Info kategorilerinde bulgularla.",
       "meta": {
         "Yıldız": 795,
         "Dil": "—",
@@ -269,7 +269,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 781",
-      "content": "adrianhajdin/project_crowdfunding\n\nWith a stunning design, connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereum through the blockchain network, and writing solidity code.\n\n⭐ Yıldız: 781\n🍴 Fork: 403\n📅 Güncelleme: 2026-05-27\n🔗 https://github.com/adrianhajdin/project_crowdfunding",
+      "content": "**Web3 Crowdfunding DApp — Thirdweb + React**\n\nMetaMask entegrasyonlu, blockchain üzerinde çalışan bağış kampanyası platformu. Solidity sözleşmesi Goerli/Sepolia üzerinde, frontend Next.js ile.\n\n**Kurulum:**\n```bash\ngit clone https://github.com/adrianhajdin/project_crowdfunding\ncd project_crowdfunding/web3\nnpm install\nnpx thirdweb deploy  # Sözleşmeyi deploy et\n\ncd ../client\nnpm install\ncp .env.example .env  # VITE_CONTRACT_ADDRESS= ekle\nnpm run dev\n```\n\n**Temel Sözleşme Fonksiyonları:**\n```solidity\nstruct Campaign {\n    address owner;\n    string title;\n    uint256 target;      // Wei cinsinden hedef\n    uint256 amountCollected;\n    string image;\n    address[] donators;\n    uint256[] donations;\n}\n\nfunction createCampaign(string memory _title, uint256 _target) \n    public returns (uint256) {\n    campaigns[numberOfCampaigns] = Campaign({\n        owner: msg.sender,\n        title: _title,\n        target: _target,\n        amountCollected: 0,\n        image: \"\",\n        donators: new address[](0),\n        donations: new uint256[](0)\n    });\n    return numberOfCampaigns++;\n}\n```\n\n**Özellikler:** Kampanya oluşturma, bağış yapma, hedef takibi, donator listesi. MetaMask ile tek tıkla işlem imzalama.",
       "meta": {
         "Yıldız": 781,
         "Dil": "JavaScript",
@@ -295,7 +295,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 626",
-      "content": "CodeforDAO/contracts\n\nSolidity smart contracts of CodeforDAO\n\n⭐ Yıldız: 626\n🍴 Fork: 94\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/CodeforDAO/contracts",
+      "content": "**thirdweb Hazır Sözleşme Koleksiyonu**\n\nthirdweb'in denetlenmiş, production-ready akıllı sözleşme kütüphanesi. ERC-20, ERC-721, ERC-1155, marketplace, staking ve governance sözleşmelerini tek komutla deploy edin.\n\n**Kurulum:**\n```bash\nnpm install @thirdweb-dev/contracts\n```\n\n**NFT Koleksiyonu Deploy (ERC-721):**\n```solidity\n// SPDX-License-Identifier: Apache-2.0\npragma solidity ^0.8.11;\n\nimport \"@thirdweb-dev/contracts/base/ERC721Base.sol\";\n\ncontract MyNFT is ERC721Base {\n    constructor(\n        address _defaultAdmin,\n        string memory _name,\n        string memory _symbol,\n        address _royaltyRecipient,\n        uint128 _royaltyBps\n    )\n        ERC721Base(\n            _defaultAdmin, _name, _symbol,\n            _royaltyRecipient, _royaltyBps\n        )\n    {}\n}\n```\n\n**CLI ile Hızlı Deploy:**\n```bash\nnpx thirdweb deploy\n# Tarayıcıda cüzdan bağla, kontrat seç, ağı seç, deploy et\n```\n\n**Desteklenen Kontrat Türleri:** Token, NFT Drop, Edition, Marketplace, Split, Multiwrap, Vote, Stake, Pack. Tüm kontratlar Ethereum, Polygon, Arbitrum, Optimism, Base ağlarını destekler. Her kontrat OpenZeppelin standartlarını temel alır ve Solidity 0.8+ gerektirir.",
       "meta": {
         "Yıldız": 626,
         "Dil": "Solidity",
@@ -321,7 +321,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 553",
-      "content": "Picodes/4naly3er\n\nStatic smart contract code 4naly3er\n\n⭐ Yıldız: 553\n🍴 Fork: 141\n📅 Güncelleme: 2026-05-31\n🔗 https://github.com/Picodes/4naly3er",
+      "content": "## 4naly3er: Solidity Statik Analiz Aracı\n\nAkıllı kontratlarda yaygın zafiyetleri otomatik tespit eden statik kod analiz aracı.\n\n**Kurulum ve kullanım:**\n```bash\ngit clone https://github.com/Picodes/4naly3er\ncd 4naly3er\nnpm install\n\n# Analiz et\nnode analyze.js --path /path/to/contracts\n# veya URL ile:\nnode analyze.js --url https://github.com/user/repo\n```\n\n**Tespit edilen kategori örnekleri:**\n```\n[H] HIGH   - Yeniden giriş, integer overflow\n[M] MEDIUM - Erişim kontrolü, oracle manipülasyonu\n[L] LOW    - Yetersiz validasyon, emit eksikliği\n[I] INFO   - Gas optimizasyonu, stil uyarıları\n[G] GAS    - Storage okuma/yazma optimizasyonu\n```\n\n**Örnek gas optimizasyonu tespiti:**\n```solidity\n// Kötü: Loop içinde storage okuma (yüksek gas)\nfor (uint i = 0; i < array.length; i++) {  // storage okuma her iterasyonda\n    ...\n}\n\n// İyi: Cache'le (4naly3er bunu önerir)\nuint len = array.length;  // Bir kez oku\nfor (uint i = 0; i < len; i++) {\n    ...\n}\n```\n\n**Audit workflow:**\n```bash\n# 1. 4naly3er ile otomatik tarama\nnode analyze.js --path ./contracts > report.md\n\n# 2. Slither ile derinlemesine analiz\nslither . --print human-summary\n\n# 3. Mythril ile sembolik yürütme\nmythril analyze contracts/MyContract.sol\n```\n\n**Prompt:** \"Bu DeFi protokolünü audit et; 4naly3er, Slither ve Mythril çıktılarını birleştir, kritik/yüksek/orta bulguları önceliklendirerek rapor hazırla.\"",
       "meta": {
         "Yıldız": 553,
         "Dil": "TypeScript",
@@ -347,7 +347,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 501",
-      "content": "rkalis/truffle-plugin-verify\n\n✅ Verify your smart contracts on Etherscan from the Truffle CLI\n\n⭐ Yıldız: 501\n🍴 Fork: 130\n📅 Güncelleme: 2026-06-02\n🔗 https://github.com/rkalis/truffle-plugin-verify",
+      "content": "**Truffle ile Etherscan Sözleşme Doğrulama**\n\nEtherscan ve diğer block explorer'larda akıllı sözleşme kaynak kodunu otomatik doğrulayan Truffle eklentisi. Doğrulanmış sözleşmeler kullanıcıların kodu görmesini ve doğrudan etkileşime girmesini sağlar.\n\n**Kurulum & Yapılandırma:**\n```bash\nnpm install truffle-plugin-verify\n```\n\n```javascript\n// truffle-config.js\nmodule.exports = {\n  api_keys: {\n    etherscan: process.env.ETHERSCAN_API_KEY,\n    polygonscan: process.env.POLYGONSCAN_API_KEY\n  },\n  plugins: ['truffle-plugin-verify']\n};\n```\n\n**Doğrulama Komutları:**\n```bash\n# Tek sözleşme doğrula\ntruffle run verify MyContract --network mainnet\n\n# Constructor argümanlı\ntruffle run verify Token --network polygon \\\n  --forceConstructorArgs string:0x...\n\n# Tüm son deploy edilen sözleşmeleri doğrula\ntruffle run verify --network sepolia\n```\n\n**Desteklenen Explorer'lar:** Etherscan, Polygonscan, BscScan, Snowtrace (Avalanche), Optimism Etherscan, Arbiscan, Ftmscan.\n\n**Hata Çözümü:** `Already Verified` hatası — `--forceConstructorArgs` kullan. `Bytecode mismatch` — optimizer ayarlarının truffle-config ile eşleştiğini kontrol et.",
       "meta": {
         "Yıldız": 501,
         "Dil": "TypeScript",
@@ -399,7 +399,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 430",
-      "content": "dethcrypto/eth-sdk\n\nType-safe, lightweight SDKs for Ethereum smart contracts\n\n⭐ Yıldız: 430\n🍴 Fork: 45\n📅 Güncelleme: 2026-04-19\n🔗 https://github.com/dethcrypto/eth-sdk",
+      "content": "## eth-sdk: Ethereum Kontrat SDK Üreteci\n\nEthereum akıllı kontratlarından otomatik TypeScript SDK üreten araç — dApp frontend'leri için.\n\n**Kurulum:**\n```bash\nnpm install --save-dev @dethcrypto/eth-sdk\nnpm install --save-dev @dethcrypto/eth-sdk-client\n```\n\n**Yapılandırma:**\n```javascript\n// eth-sdk/config.ts\nimport { defineConfig } from '@dethcrypto/eth-sdk';\n\nexport default defineConfig({\n  contracts: {\n    mainnet: {\n      dai: '0x6B175474E89094C44Da98b954EedeAC495271d0F',\n      uniswapV2Router: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',\n    },\n    goerli: {\n      myToken: '0xabc...',\n    }\n  }\n});\n```\n\n**SDK üretimi ve kullanımı:**\n```bash\nnpx eth-sdk  # ABI indir + TypeScript SDK üret\n```\n\n```typescript\nimport { getMainnetSdk } from '@dethcrypto/eth-sdk-client';\n\nasync function main() {\n  const provider = new ethers.providers.Web3Provider(window.ethereum);\n  const signer = provider.getSigner();\n  \n  const sdk = getMainnetSdk(signer);\n  \n  // Tam tip güvenliği ile çağır\n  const balance = await sdk.dai.balanceOf(userAddress);\n  const allowance = await sdk.dai.allowance(userAddress, routerAddress);\n}\n```\n\n**Prompt:** \"Bu dApp'te eth-sdk ile Uniswap V3 ve Aave entegrasyonu yap; swap ve lending işlemleri için TypeScript SDK kur, hata yönetimi ekle.\"",
       "meta": {
         "Yıldız": 430,
         "Dil": "JavaScript",
@@ -451,7 +451,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 280",
-      "content": "itublockchain/web3-bootcamp\n\nOpen-Sourced Turkish Smart Contract Developer Bootcamp by ITU Blockchain\n\n⭐ Yıldız: 280\n🍴 Fork: 72\n📅 Güncelleme: 2026-05-03\n🔗 https://github.com/itublockchain/web3-bootcamp",
+      "content": "**ITU Blockchain Web3 Geliştirici Bootcamp'i (Türkçe)**\n\nİstanbul Teknik Üniversitesi Blockchain topluluğunun açık kaynaklı Türkçe akıllı sözleşme geliştirme bootcamp'i. Solidity'den Hardhat'e, DeFi'den NFT'ye kadar kapsamlı Türkçe içerik.\n\n**Modüller:**\n1. **Blockchain Temelleri:** Konsensüs mekanizmaları, cüzdan, işlem yapısı\n2. **Solidity Başlangıç:** Değişkenler, fonksiyonlar, event'ler, modifier'lar\n3. **Hardhat Ortamı:** Test, deploy, task, plugin ekosistemi\n4. **ERC Standartları:** ERC-20 token, ERC-721 NFT implemente etme\n5. **DeFi Protokolleri:** AMM mekanizması, liquidity pool, yield farming\n\n**Hızlı Başlangıç:**\n```bash\ngit clone https://github.com/itublockchain/web3-bootcamp\ncd web3-bootcamp\nnpm install\nnpx hardhat compile\nnpx hardhat test\n\n# Sepolia testnet deploy\nHARDHAT_NETWORK=sepolia npx hardhat run scripts/deploy.js\n```\n\n**Temel Hardhat Test:**\n```javascript\nconst { expect } = require(\"chai\");\nit(\"Token transferi doğru çalışmalı\", async () => {\n  const [owner, addr1] = await ethers.getSigners();\n  await token.transfer(addr1.address, 50);\n  expect(await token.balanceOf(addr1.address)).to.equal(50);\n});\n```",
       "meta": {
         "Yıldız": 280,
         "Dil": "Solidity",
@@ -477,7 +477,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 175",
-      "content": "serial-coder/solidity-security-by-example\n\nLearn Solidity Smart Contract Security By Examples\n\n⭐ Yıldız: 175\n🍴 Fork: 43\n📅 Güncelleme: 2026-05-22\n🔗 https://github.com/serial-coder/solidity-security-by-example",
+      "content": "**Solidity Güvenlik Açıkları — Örnek Bazlı Öğrenme**\n\nGerçek exploit örüntülerini inceleyerek Solidity güvenliğini öğreten pratik kaynak. Her zafiyet için savunmasız kod, exploit kodu ve düzeltme gösterilir.\n\n**İncelenen Zafiyet Kategorileri:**\n1. **Reentrancy:** The DAO hack'inin arkasındaki zafiyet\n2. **Flash Loan Attack:** Tek işlemde büyük likidite manipülasyonu\n3. **Price Oracle Manipulation:** Zincir içi fiyat kaynaklarını manipüle etme\n4. **Front-Running:** Mempool'dan işlem sırasını tahmin etme\n5. **Access Control Bypass:** Yanlış visibility veya modifier eksikliği\n\n**Reentrancy Örneği:**\n```solidity\n// SAVUNMASIZ:\ncontract VulnerableBank {\n    mapping(address => uint) public balances;\n    \n    function withdraw() external {\n        uint amount = balances[msg.sender];\n        (bool success,) = msg.sender.call{value: amount}(\"\");\n        require(success);\n        balances[msg.sender] = 0;  // Çok geç! Re-enter edildi\n    }\n}\n\n// GÜVENLİ (ReentrancyGuard):\nimport \"@openzeppelin/contracts/security/ReentrancyGuard.sol\";\ncontract SafeBank is ReentrancyGuard {\n    function withdraw() external nonReentrant {\n        uint amount = balances[msg.sender];\n        balances[msg.sender] = 0;\n        (bool success,) = msg.sender.call{value: amount}(\"\");\n        require(success);\n    }\n}\n```\n\nHer örnek Foundry/Hardhat test senaryosuyla birlikte gelir; exploit'i kendiniz çalıştırıp düzeltmeyi uygulayabilirsiniz.",
       "meta": {
         "Yıldız": 175,
         "Dil": "Solidity",
@@ -503,7 +503,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 172",
-      "content": "samnang/solidity-examples\n\nCollection of smart contracts examples and projects in Solidity.\n\n⭐ Yıldız: 172\n🍴 Fork: 38\n📅 Güncelleme: 2026-05-13\n🔗 https://github.com/samnang/solidity-examples",
+      "content": "## Solidity Pratik Örnekler Koleksiyonu\n\nSolidity öğrencileri için artan karmaşıklıkta yazılmış pratik akıllı kontrat örnekleri.\n\n**Temel örnekler:**\n```solidity\n// 1. Basit depolama\ncontract SimpleStorage {\n    uint256 private _value;\n    event ValueChanged(uint256 newValue);\n    \n    function set(uint256 value) external {\n        _value = value;\n        emit ValueChanged(value);\n    }\n    function get() external view returns (uint256) {\n        return _value;\n    }\n}\n\n// 2. Açık artırma\ncontract Auction {\n    address public highestBidder;\n    uint256 public highestBid;\n    uint256 public endTime;\n    \n    function bid() external payable {\n        require(block.timestamp < endTime, 'Ended');\n        require(msg.value > highestBid, 'Too low');\n        if (highestBidder != address(0))\n            payable(highestBidder).transfer(highestBid);  // Geri öde\n        highestBidder = msg.sender;\n        highestBid = msg.value;\n    }\n}\n```\n\n**Orta seviye — Çoklu imza cüzdanı:**\n```solidity\ncontract MultiSig {\n    address[] public owners;\n    uint public required;  // Gerekli onay sayısı\n    \n    struct Transaction {\n        address to;\n        uint value;\n        bytes data;\n        uint confirmations;\n        bool executed;\n    }\n    \n    mapping(uint => mapping(address => bool)) public confirmed;\n    Transaction[] public transactions;\n}\n```\n\n**Prompt:** \"Bu örnekler koleksiyonunu ilerleyerek öğren; her örnekte güvenlik açıklarını bul, test yaz ve OpenZeppelin bileşenleriyle güvenli versiyonunu yaz.\"",
       "meta": {
         "Yıldız": 172,
         "Dil": "Solidity",
@@ -529,7 +529,7 @@
       ],
       "badge1": "JavaScript",
       "badge2": "★ 152",
-      "content": "rkalis/truffle-assertions\n\n🛠 Assertions and utilities for testing Ethereum smart contracts with Truffle unit tests\n\n⭐ Yıldız: 152\n🍴 Fork: 20\n📅 Güncelleme: 2025-12-26\n🔗 https://github.com/rkalis/truffle-assertions",
+      "content": "**Truffle Test Assertion Kütüphanesi**\n\nSolidity akıllı sözleşmelerini Truffle ile test ederken event doğrulama ve revert mesajı kontrolü için ek assertion yardımcıları.\n\n**Kurulum:**\n```bash\nnpm install truffle-assertions\n```\n\n**Temel Kullanım:**\n```javascript\nconst truffleAssert = require('truffle-assertions');\n\ncontract('Token', accounts => {\n  it('Transfer event fırlatmalı', async () => {\n    const result = await token.transfer(accounts[1], 100, {from: accounts[0]});\n    \n    // Event fırlatıldı mı?\n    truffleAssert.eventEmitted(result, 'Transfer', (ev) => {\n      return ev.to === accounts[1] && ev.value.toNumber() === 100;\n    });\n  });\n\n  it('Yetersiz bakiyede revert etmeli', async () => {\n    await truffleAssert.reverts(\n      token.transfer(accounts[1], 99999, {from: accounts[0]}),\n      'ERC20: transfer amount exceeds balance'  // Revert mesajı kontrolü\n    );\n  });\n\n  it('Revert veya fail etmemeli', async () => {\n    await truffleAssert.passes(\n      token.approve(accounts[1], 500)\n    );\n  });\n});\n```\n\n**Assertion Türleri:** `eventEmitted`, `eventNotEmitted`, `reverts`, `fails`, `passes`. Chai expect'e kıyasla event parametresi doğrulama çok daha temiz olur.",
       "meta": {
         "Yıldız": 152,
         "Dil": "JavaScript",
@@ -555,7 +555,7 @@
       ],
       "badge1": "Solidity",
       "badge2": "★ 149",
-      "content": "Faillapop/faillapop\n\nVulnerable-by-design solidity protocol to help Web3 security enthusiasts practice their skills in an environment closer to real live.\n\n⭐ Yıldız: 149\n🍴 Fork: 11\n📅 Güncelleme: 2026-05-05\n🔗 https://github.com/Faillapop/faillapop",
+      "content": "**Faillapop — Zafiyetli Solidity Protokolü (Pratik Lab)**\n\nWeb3 güvenlik meraklıları için tasarlanmış, kasıtlı olarak savunmasız bırakılmış bir e-ticaret akıllı sözleşme protokolü. Bug bounty pratiği yapmak için güvenli ortam.\n\n**Kurulum & Lab Başlatma:**\n```bash\ngit clone https://github.com/Faillapop/faillapop\ncd faillapop\nnpm install\nnpx hardhat node  # Yerel blockchain başlat\nnpx hardhat run scripts/deploy.js --network localhost\nnpx hardhat test  # Mevcut testleri gör\n```\n\n**Protokol Bileşenleri:**\n- `FP_Shop.sol` — Ürün listeleme ve satın alma\n- `FP_Vault.sol` — Fonları kilitleyen escrow vault\n- `FP_DAO.sol` — Yönetim ve oylama\n- `FP_Token.sol` — ERC-20 utility token\n\n**Bulunabilecek Zafiyet Türleri:**\n1. Reentrancy saldırısı (para çekme işleminde)\n2. Integer overflow (stok sayısı manipülasyonu)\n3. Access control eksikliği (admin fonksiyon bypass)\n4. Front-running (fiyat manipülasyonu)\n5. Flash loan ekonomik saldırı\n\n**Araştırma Yöntemi:**\n```bash\n# Slither ile otomatik analiz:\nslither . --print human-summary\nslither . --detect reentrancy-eth,integer-overflow\n```\n\nBulduğunuz zafiyetleri POC (Proof of Concept) exploit ile test edin, ardından düzeltme önerin.",
       "meta": {
         "Yıldız": 149,
         "Dil": "Solidity",
@@ -581,7 +581,7 @@
       ],
       "badge1": "Cairo",
       "badge2": "★ 142",
-      "content": "WTFAcademy/WTF-Cairo\n\n学习Starknet Cairo智能合约。 Learn to write smart contracts on Starknet. Based on Cairo 2.2.\n\n⭐ Yıldız: 142\n🍴 Fork: 48\n📅 Güncelleme: 2026-02-27\n🔗 https://github.com/WTFAcademy/WTF-Cairo",
+      "content": "**WTF Cairo — Starknet Akıllı Sözleşme Öğrenme Serisi**\n\nWTF Academy'nin Cairo 2.x ile Starknet akıllı sözleşmesi geliştirmeyi öğreten açık kaynak Çince/İngilizce tutorial serisi. ZK-Rollup tabanlı L2 geliştirme için referans kaynak.\n\n**Cairo vs Solidity Temel Farklar:**\n```cairo\n// Cairo 2.x Sözdizimi\nuse starknet::ContractAddress;\n\n#[starknet::contract]\nmod SimpleToken {\n    use starknet::get_caller_address;\n    \n    #[storage]\n    struct Storage {\n        balances: LegacyMap::<ContractAddress, u256>,\n        total_supply: u256,\n    }\n\n    #[external(v0)]\n    fn transfer(ref self: ContractState, to: ContractAddress, amount: u256) {\n        let caller = get_caller_address();\n        let caller_balance = self.balances.read(caller);\n        assert(caller_balance >= amount, 'Insufficient balance');\n        self.balances.write(caller, caller_balance - amount);\n        self.balances.write(to, self.balances.read(to) + amount);\n    }\n}\n```\n\n**Geliştirme Ortamı:**\n```bash\ncurl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh\nsnforge init my_project\nsnforge test\n\n# Starknet Devnet (lokal test):\npip install starknet-devnet\nstarknet-devnet --port 5050\n```\n\n**Kurs Modülleri:** Tipler, fonksiyonlar, trait, kontrat depolama, event, test. ZK-proof avantajları: düşük gas, gizlilik, Ethereum güvencesi.",
       "meta": {
         "Yıldız": 142,
         "Dil": "Cairo",
@@ -659,7 +659,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 118",
-      "content": "mattstam/solidity-template\n\nA Solidity starter template for developing smart contracts.\n\n⭐ Yıldız: 118\n🍴 Fork: 16\n📅 Güncelleme: 2026-05-12\n🔗 https://github.com/mattstam/solidity-template",
+      "content": "## Hardhat Solidity Proje Şablonu\n\nProduction-ready Solidity geliştirme ortamı: Hardhat + TypeChain + Slither + test altyapısı.\n\n**Proje başlatma:**\n```bash\nnpx hardhat init  # TypeScript şablon seç\n# Bağımlılıklar:\nnpm install --save-dev \\\n  @nomicfoundation/hardhat-toolbox \\\n  @openzeppelin/contracts \\\n  typechain @typechain/hardhat \\\n  hardhat-gas-reporter \\\n  solidity-coverage\n```\n\n**hardhat.config.ts:**\n```typescript\nimport { HardhatUserConfig } from 'hardhat/config';\nimport '@nomicfoundation/hardhat-toolbox';\nimport 'hardhat-gas-reporter';\n\nconst config: HardhatUserConfig = {\n  solidity: { version: '0.8.20', settings: { optimizer: { enabled: true, runs: 200 } } },\n  networks: {\n    hardhat: { chainId: 1337 },\n    sepolia: {\n      url: process.env.SEPOLIA_RPC_URL!,\n      accounts: [process.env.PRIVATE_KEY!]\n    }\n  },\n  gasReporter: { enabled: true, currency: 'USD' },\n  etherscan: { apiKey: process.env.ETHERSCAN_API_KEY }\n};\nexport default config;\n```\n\n**CI/CD pipeline:**\n```yaml\n# .github/workflows/test.yml\njobs:\n  test:\n    steps:\n      - run: npx hardhat compile\n      - run: npx hardhat test --parallel\n      - run: npx hardhat coverage\n      - run: slither . --print human-summary\n```\n\n**Prompt:** \"Bu şablonu DeFi lending protokolü için konfigüre et; fork mainnet test, Chainlink oracle mock ve gas optimizasyon raporu ekle.\"",
       "meta": {
         "Yıldız": 118,
         "Dil": "TypeScript",
@@ -685,7 +685,7 @@
       ],
       "badge1": "TypeScript",
       "badge2": "★ 115",
-      "content": "Markeljan/web3gpt\n\nDevelop and deploy smart contracts using natural language.\n\n⭐ Yıldız: 115\n🍴 Fork: 51\n📅 Güncelleme: 2026-05-23\n🔗 https://github.com/Markeljan/web3gpt",
+      "content": "## Web3GPT: AI Destekli Akıllı Kontrat Geliştirici\n\nDil modeli ile Solidity kod üretimi, güvenlik analizi ve kontrat açıklama aracı.\n\n**Web3GPT kullanım senaryoları:**\n```\n1. Kontrat üretimi\n   Prompt: 'ERC-20 token with vesting schedule for team allocation'\n   → Tam Solidity kodu üretir + test önerir\n\n2. Güvenlik analizi\n   Prompt: [Solidity kodu yapıştır] + 'Güvenlik açıklarını analiz et'\n   → Re-entrancy, overflow, access control sorunları listeler\n\n3. Kontrat açıklama\n   Prompt: [Karmaşık kontrat] + 'Bu ne yapıyor, nasıl çalışıyor?'\n   → Fonksiyon bazında dokümantasyon\n\n4. Gas optimizasyonu\n   Prompt: [Kontrat kodu] + 'Gas kullanımını optimize et'\n   → Spesifik değişiklik önerileri\n```\n\n**Claude ile Solidity geliştirme (örnek):**\n```\nPrompt: 'Yazılımcı için bir escrow kontratı yaz:\n- Alıcı ve satıcı adresleri belirlensin\n- Alıcı ödeme yapsın\n- Anlaşmazlıkta hakem müdahale etsin\n- 30 gün sonra otomatik çözüm\nOpenZeppelin kullan, güvenli yaz'\n```\n\n**Audit yardımcısı:**\n```\nPrompt için şablon:\n'Şu Solidity kodunu inceleyerek:\n1. Kritik güvenlik açıklarını listele\n2. Her açık için PoC exploit yaz\n3. Düzeltme öner\n4. SWC registry ile sınıflandır'\n```\n\n**Prompt:** \"Bu DEX kontratını AI ile analiz et; re-entrancy, price manipulation ve flash loan saldırısına karşı savunmasız noktaları bul, mitigation stratejileri öner.\"",
       "meta": {
         "Yıldız": 115,
         "Dil": "TypeScript",

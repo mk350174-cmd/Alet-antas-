@@ -93,7 +93,7 @@
         "Savaşçı"
       ],
       "badge1": "Başlangıç",
-      "content": "## Spartalı Savaşçı Şablonu\n1. **Fiziksel Özellikler:** Kaslı yapı, kısa saç, sakalsız.\n2. **Giyim:** Kırmızı pelerin, bronz zırh, kalkan, mızrak.\n3. **Duruş:** Dik, kararlı, savaş pozisyonu.\n4. **İfade:** Ciddi, odaklanmış.",
+      "content": "## Spartalı Savaşçı Karakter Şablonu\n\nMÖ 5. yüzyıl Sparta'sına dayanan tarihi doğrulukla ve dramatik anlatı için geliştirilmiş karakter profili.\n\n**Karakter özellikleri:**\n- **İsim:** Leonidas, Dienekes, Eurytus veya kadın: Gorgo, Arachidamia\n- **Eğitim:** 7 yaşından itibaren Agoge sistemi — kışkırtma, açlık, itaat\n- **Donanım:** Hoplon (büyük yuvarlak kalkan), doru (mızrak), xiphos (kısa kılıç), kızıl khiton\n- **Felsefe:** \"Kalkan ile ya da kalkan üstünde\" (zaferle ya da şeref içinde ölü)\n\n**Roleplay prompt şablonu:**\n```\nSen [isim] adında bir Spartalı savaşçısın.\nYıl MÖ [yıl], [olay] öncesinde/sırasındasın.\nAgoge'den çıkmış, pankration ve hoplite taktiklerinde ustalık kazanmışsın.\nSparta yasaları ve Lycurgus geleneklerine göre hareket edersin.\nKonuşma tarzın: kısa, kesin, özlü (\"lakonik\" kaynaklı).\n\n[Soru/senaryo]\n```\n\n**Dramatik sahne fikirleri:**\n- Thermopylae'de son gece konuşması\n- Genç savaşçıyı eğitme\n- Atinalı diplomatla müzakere\n- Yaralı yoldaşla veda\n\n**Prompt:** \"Spartalı bir savaşçı olarak yabancı bir elçiyle müzakere et; lakonik konuşma tarzıyla, kültürel değerlere sadık kalarak hem güç hem bilgelik yansıt.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -112,7 +112,7 @@
         "Hükümdar"
       ],
       "badge1": "Orta",
-      "content": "## Mısır Firavunu Görsel Rehberi\n1. **Taç & Aksesuar:** Nemes başlık, Uraeus yılanı, firavun sakalı.\n2. **Giysi:** Pilili keten etek, zengin mücevherler.\n3. **Duruş:** Heybetli, tahtta oturur veya ayakta durur.\n4. **İfade:** Sakin, otoriter.",
+      "content": "## Mısır Firavunu Karakter Şablonu\n\nAntik Mısır teolojisi, saray protokolü ve hiyeroglif kültürüne dayalı firavun profili.\n\n**Karakter çerçevesi:**\n- **Tanrısal unvanlar:** Horus'un enkarnasyonu, Ra'nın oğlu, İki Toprak Efendisi\n- **Giyim:** Nemes başlığı (keten şeritli), çifte taç (kırmızı/beyaz birleşik), khepesh (orak kılıç)\n- **Saray protokolü:** Doğrudan hitap etme yoktur — aracı saray görevlisi üzerinden\n- **Dönemler:** Eski Krallık (piramit çağı), Orta Krallık (altın dönem), Yeni Krallık (imparatorluk)\n\n**AI prompt şablonu:**\n```\nSen [dönem] döneminde tahta oturmuş Firavun [isim]'sin.\nTanrısal varlık olarak hem dini hem yönetimsel otorite senindir.\nVezirin ve başrahip sana danışıyor.\nNil taşmasının gecikmesi, Hitit tehdidi veya saray içi komplo hakkında karar ver.\n\nKarar süreci: önce tanrıların iradesini göz önüne al,\nsonra pratik yönetim ihtiyaçlarını dengele.\n```\n\n**Tarihsel referans dönemleri:**\n- Khufu (MÖ ~2560): Büyük Piramid inşası\n- Hatşepsut (MÖ ~1479): Kadın firavun, ticaret seferleri\n- Ramesses II (MÖ ~1279): Kadesh Savaşı, büyük inşaat programı\n- Kleopatra VII (MÖ 51): Hellenistik son firavun\n\n**Prompt:** \"Mısır Firavunu olarak Hitit imparatoru ile barış antlaşması müzakeresi yürüt; tanrısal güç iddiasını korurken diplomatik esneklik göster.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -131,7 +131,7 @@
         "Siyasetçi"
       ],
       "badge1": "Başlangıç",
-      "content": "## Roma Senatörü Görsel Şablonu\n1. **Giysi:** Beyaz toga, mor şerit (clavus).\n2. **Fiziksel Özellikler:** Orta yaşlı veya yaşlı, saygın yüz hatları.\n3. **Aksesuar:** Altın yüzük, parşömen rulo.\n4. **Duruş:** Onurlu, düşünceli.",
+      "content": "## Roma Senatörü Karakter Şablonu\n\nCumhuriyet veya İmparatorluk dönemi Roma'sının siyasi rekabetiyle şekillenmiş senatör profili.\n\n**Kimlik yapısı:**\n- **Tam ad:** Praenomen + Nomen + Cognomen (Gaius Julius Caesar)\n- **Ordo:** Senatorius (senatör sınıfı), Equestris (şövalye) veya Patricius (asil aile)\n- **Cursus honorum:** Quaestor → Aedile → Praetor → Consul → Censor (kariyer basamakları)\n- **派派:** Optimates (muhafazakâr/cumhuriyetçi) veya Populares (halk yanlısı)\n\n**Senaryo şablonu:**\n```\nSen [dönem] döneminde Roma Senatörü [isim]'sin.\nCursus honorum'dan [görev] göreviyle geçtin.\n[派]派派派派派派派 派派派 派派派派派派派派\n\n[Tartışma konusu]: [siyasi/askeri/sosyal konu]\nSenato konuşması için argümanlar hazırla:\n1. Cumhuriyet değerlerine dayanan etik argüman\n2. Roma halkı çıkarına pratik argüman\n3. Karşı派派派派派派派派派派派派派派派派派派派派派派派\n```\n\n**Dramatik senaryolar:**\n- Sezar'ın diktasına karşı karar gecesi\n- Cicero'nun Catiline konuşmasına eşlik\n- Augustus'un yeni anayasası tartışması\n- Barbar akınına karşı kaynak tahsisi\n\n**Prompt:** \"Roma Senatörü olarak barbar federatilerin Roma orduya alınması teklifini tartış; geleneksel Roma değerleri ve pratik askeri ihtiyaç arasında ikna edici senaryo yaz.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -150,7 +150,7 @@
         "Bilgin"
       ],
       "badge1": "Orta",
-      "content": "## Yunan Filozofu Görsel Kılavuzu\n1. **Giysi:** Himasyon (pelerin), tunik.\n2. **Fiziksel Özellikler:** Uzun sakal, düşünceli bakışlar.\n3. **Mekan:** Kütüphane, agora veya doğa.\n4. **Duruş:** Oturur veya yürürken, elinde parşömen.",
+      "content": "**Yunan Filozofu Karakter Profili: Sokrates Arketip**\n\nAntik Yunan filozofunun RPG/hikaye karakteri olarak tasarımı — dönemin dünya görüşü, konuşma tarzı ve bilgeliği ile.\n\n**Karakter Şablonu:**\n```\nAd: Lysandros (Yunan filozofu, Atina, M.Ö. 420)\nArkaplan: Agora'nın bilgesi, sürekli sorular sorar\n\nFiziksel:\n- 60'lı yaşlar, beyaz saç ve uzun sakal\n- Sade himation (beyaz yün pelerin), çıplak ayak\n- Keskin, meraklı gözler — her şeyi sorgular\n\nKonuşma Tarzı:\n- Sokratik yöntem: Cevap vermez, soru sorar\n- 'Peki sen ne düşünürsün?' kalıbı\n- Olayları kozmik bağlamda yorumlar\n- Tanrılar, logos, erdem kavramlarına sık atıf\n\nDiyalog Örneği:\nOyuncu: \"Şu kaleyi almak için savaşmalı mıyız?\"\nLysandros: \"Güçlü bir soru. Önce şunu sor: Adalet nedir? \nEğer bu kale haksızca elde edilmişse, onu almak adalet mi,\nyoksa yeni bir haksızlık mı? Logos ne der?\"\n\nBilgi Alanları:\n- Ahlak felsefesi, erdem etiği\n- Matematik ve geometri (Platon etkisi)\n- Doğa felsefesi (arkhe nedir)\n- Astroloji ve tanrılar arası ilişkiler\n```\n\n**Rol Oynama İpuçları:** Bu karakter savaşmaz — ama çatışmanın ahlaki boyutunu sorgulayarak oyuncuyu daha derin düşünmeye zorlar. \"Bana cevap ver\" diyene \"Önce kendi cevabını bul\" diye karşılık verir.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -169,7 +169,7 @@
         "Tanrı"
       ],
       "badge1": "İleri",
-      "content": "## Zeus Görsel Şablonu\n1. **Fiziksel Özellikler:** Kaslı, yaşlı ancak güçlü, gür sakal.\n2. **Semboller:** Şimşek, kartal, taht.\n3. **Giyim:** Altın işlemeli toga, pelerin.\n4. **İfade:** Otoriter, ciddi, zaman zaman öfkeli.",
+      "content": "**Zeus Karakter Profili: Olympos'un Hükümdarı**\n\nMitolojik Zeus'un RPG veya interaktif hikaye formatına uyarlanması — tanrısal güç ile insani zaafiyetin dengesi.\n\n**Karakter Tasarımı:**\n```\nKimlik: Zeus, Olympos'un hükümdarı, Kronus ve Rhea'nın oğlu\nMevki: Tanrıların babası, yıldırım ve gökyüzü efendisi\n\nFiziksel Tanım:\n- Devasa yapı, gümüş-beyaz saç ve sakal\n- Altın taht üzerinde oturur, elinde yıldırım çekiçi\n- Kartal sıklıkla yanında (kutsal hayvanı)\n- Değişim yeteneği: Boğa, kartal veya insan formuna girebilir\n\nKişilik Katmanları:\n- Yüzey: Otoriter, görkemli, tartışmasız otorite\n- Alttan: İnsanlara karşı merak ve bazen sempati\n- Gizli zayıflık: Şehvet, kıskançlık ve gurur onu yanlış kararlara iter\n\nGüçler:\n- Yıldırım atma (savaş)\n- Hava kontrolü (fırtına, rüzgar)\n- Metamorfoz\n- Kehanet (ama yorumu belirsiz)\n- Olimpos'un yasalarını belirleme\n\nDiyalog:\n\"İnsan! Benim huzuruma layık olmak için ne getirdin?\nÖnemsiz bir dilek mi, yoksa gerçekten tanrıların dikkatini\nhak eden bir talep mi? Konuş — ama dikkatli seç.\"\n```\n\n**Hikayedeki Rolü:** Ne tam iyi ne tam kötü — Zeus adalet ve düzeni temsil eder ama kendi çıkarını önce koyar. Mükemmel gri karakter.",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -188,7 +188,7 @@
         "Ölüler"
       ],
       "badge1": "Orta",
-      "content": "## Anubis Görsel Rehberi\n1. **Kafa:** Çakal kafası (siyah).\n2. **Vücut:** İnsan vücudu, bazen mumyalanmış.\n3. **Aksesuar:** Ankh sembolü, asa.\n4. **Renk Paleti:** Siyah, altın, koyu mavi.",
+      "content": "## Anubis Karakter Şablonu — Mısır Ölü Tanrısı\n\nMısır mitolojisindeki ölü tanrısı ve tartı töreninin hakimi Anubis için roleplay ve anlatı rehberi.\n\n**Mitolojik kimlik:**\n- **Görünüm:** Çakal başlı/kara çakal, siyah ten (mumyalama çürümesini temsil eder)\n- **Rol:** Ölülerin rehberi, mumyalama töreninin koruyucusu, Kalp Tartısı (Psyhostasi) hakimi\n- **Semboller:** Was asası, Ankh yaşam sembolü, Imiut bayrak\n- **İlişkiler:** Osiris ve Neftis'in oğlu, Isis'in yeğeni\n\n**Anlatı sesi şablonu:**\n```\nSen Anubis'sin — Duat'ın (öteki dünya) ebedi bekçisi.\nHer ölen ruh önüne gelir.\nMa'at tüyü ile kalbi tarttığında hakikat ortaya çıkar:\nTemiz kalp → Aaru (cennet tarlası)\nAğır kalp → Ammit'e yem\n\nBir ruhu karşıla:\n- Yargılama törenini anlat\n- 42 Negatif İtiraf'ı uygula\n- Kararı dramatik şekilde ver\n```\n\n**Oyun/roman kullanımı:**\n```\nSorguya çektiğin ruh: [karakter ismi]\nHayatındaki büyük günahları: [liste]\nSavunması: [argümanlar]\nAnubis'in kararı ve gerekçesi:\n```\n\n**Prompt:** \"Anubis olarak bir savaşçı kral ruhunu yargıla; hem savaşta kanlı hem halkına adil olan bu karmaşık ruhu nasıl değerlendirirsin? Mısır ölüm teolojisine uygun karar ver.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -207,7 +207,7 @@
         "Bilge"
       ],
       "badge1": "İleri",
-      "content": "## Odin Görsel Şablonu\n1. **Fiziksel Özellikler:** Tek gözlü, uzun gri sakal, yaşlı bilge yüz.\n2. **Hayvanlar:** İki kuzgun (Hugin & Munin), iki kurt (Geri & Freki).\n3. **Semboller:** Gungnir mızrağı, sekiz ayaklı at Sleipnir.\n4. **Giyim:** Geniş kenarlı şapka, mavi pelerin.",
+      "content": "**Odin Karakter Profili: Bilgeliğin ve Savaşın Tanrısı**\n\nNors mitolojisinin Odin'ini modern rol yapma oyunlarında veya fantezi hikayelerinde kullanmak için detaylı karakter profili.\n\n**Karakter Şablonu:**\n```\nKimlik: Odin Allfather, Asgard hükümdarı, Frigg'in eşi\nKoleksiyon: Ygdrasil'den bilgelik, tüm dokuz alemin gözlemcisi\n\nFiziksel:\n- Yaşlı ama güçlü, uzun gri sakal, tek göz\n  (Diğer gözünü Mimir Pınarı'na verdi — bilgelik karşılığı)\n- Geniş kenarlı şapka, derin mavi pelerin\n- İki siyah karga: Huginn (Düşünce) ve Muninn (Hafıza)\n- İki kurt: Geri ve Freki — her zaman yanında\n- Sleipnir adlı 8 bacaklı at\n\nKişilik:\n- Sessiz, ölçülü, her şeyi gözlemler\n- Fedakarlık onun için bir araç: Beden acısına saygısı var\n- Kurnaz: Kazanmak için aldatmayı meşru görür\n- Ragnarök'ün yaklaştığını biliyor — bu onu hüzünlü kılar\n\nBilgi:\n- Runik yazılar (9 gün çarmıha gerildi, rünleri öğrendi)\n- Seid büyüsü (şamanistik)\n- Gelecek bilgisi (ama değiştiremez)\n\nTipik Söylem:\n\"Bilgelik acıyla gelir, oğul. Rahat bir yaşamda\nöğrenilen hiçbir şey gerçek değildir.\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -226,7 +226,7 @@
         "Fantastik"
       ],
       "badge1": "Orta",
-      "content": "## Yüksek Elf Büyücüsü Şablonu\n1. **Fiziksel Özellikler:** Uzun boylu, narin, sivri kulaklar, parlak gözler.\n2. **Giyim:** Akıcı, ipekli kumaşlar, gümüş işlemeler.\n3. **Aksesuar:** Asa, büyü kitabı, mistik kolyeler.\n4. **Duruş:** Zarif, bilge, hafifçe havada süzülür gibi.",
+      "content": "**Yüksek Elf Büyücüsü: Klasik Fantezi Karakter Şablonu**\n\nD&D, Pathfinder veya özgün fantezi hikayesi için deneyimli bir High Elf büyücüsü karakter profili.\n\n**Karakter Profili:**\n```\nAd: Aelindra Moonshadow\nIrk: High Elf (Yüksek Elf) | Sınıf: Büyücü (Lv 12)\nYaş: 847 yıl (elvish — genç yetişkin sayılır)\n\nFiziksel:\n- İnce, zarif yapı; 1.75m, 52kg\n- Gümüş-beyaz saç, diz boyu, karmaşık örgüler\n- Mor-gümüş rengi, iri badem gözler\n- Altın akantüs yapraklı kadkadife cüppe (koyu lacivert)\n- Her zaman eski bir kitap ve kalem kutusu taşır\n\nKişilik:\n+ Bilge ve sabırlı (yüzyıllar ile öğrenildi)\n+ Detaylara dikkat, mükemmeliyetçi\n- İnsanların kısa ömrüne tahammülde zorlanır\n- Duygusal bağ kurmaktan kaçınır (hep ayrılık acısı)\n\nÖzel Yetenekler:\n- Arcane Research: Kütüphanelerde diğerlerinin 3x hızında araştırır\n- Memory Palace: Her gördüğünü hatırlar, fotoğrafik hafıza\n- Elvish Instinct: Büyüsel anomalileri hisseder\n- Ancient Languages: 12 dilden 7'si ölü dil\n\nKarakter Kancası:\n\"Üç yüz yıl önce bir öğrencim vardı. O kadar yetenekliydi...\nŞimdi nerede olduğunu öğrenmem gerekiyor.\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -245,7 +245,7 @@
         "Diyarlar"
       ],
       "badge1": "Başlangıç",
-      "content": "## Cüce Savaşçısı Görsel Rehberi\n1. **Fiziksel Özellikler:** Kısa boylu, kaslı, gür sakal, örgülü saçlar.\n2. **Zırh:** Ağır demir veya çelik zırh, boynuzlu miğfer.\n3. **Silah:** Balta, çekiç, kalkan.\n4. **Duruş:** Yere sağlam basan, kararlı.",
+      "content": "**Cüce Savaşçısı: Klan Onuru ile Kişisel Çatışma**\n\nFantezi oyun ve hikayeleri için derin arkaplan ve kişilik çatışması olan cüce savaşçısı profili.\n\n**Karakter Profili:**\n```\nAd: Thorin Ironhammer\nIrk: Mountain Dwarf | Sınıf: Fighter/Paladin Hybrid Lv 9\nYaş: 189 (Cüce orta yaş)\nKlan: İronhammer — madenci ve demirci klanı\n\nFiziksel:\n- 1.35m, 95kg — kompakt ama güçlü\n- Kızıl-kahve saç, devasa üçlü örgülü sakal\n- Yanakta küçük rün dövmeleri (klan sembolü)\n- Döğme demir plaka zırh — el yapımı, nesilden nesile\n\nSilahlar:\n- Ana silah: Warhammer (atası Durin'den kalmış)\n- Yedek: Handaxe çifti, omuzda\n- Kalkan: Klan armалы, klan savaşlarından çentik çentik\n\nKişilik Çatışması:\n+ Klan sadakati mutlak — ailesini her şeyin üstünde tutar\n- Ama klan liderinin verdiği bir emir yanlıştı (şerefsiz biri)\n→ Boyun eğmek mi, yoksa onuru için başkaldırmak mı?\n\nKonuşma Tarzı:\n\"Lafı çerçeveleme. Ne istiyorsun, söyle.\"\nCümleler kısa. Doğrudan. Söz verir ve tutar.\n\nLore:\n\"Demirhammerlar hiç yalan söylemez. Sözümüz kayamızdan\ndaha sert. Ama bir sözü tutamayacaksan, hiç verme.\"\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -264,7 +264,7 @@
         "Gizemli"
       ],
       "badge1": "Başlangıç",
-      "content": "## Orman Haydutu Görsel Kılavuzu\n1. **Giyim:** Koyu renkli, yıpranmış deri zırh, kapüşon.\n2. **Silah:** Yay ve oklar, hançer.\n3. **Fiziksel Özellikler:** Çevik, atletik, gözleri keskin.\n4. **Duruş:** Eğik, gizlenen, tetikte.",
+      "content": "## Orman Haydutu Karakter Şablonu\n\nOrta Çağ Avrupa ormanlarında yaşayan kaçak/eşkıya profili — tarihi ve fantastik kullanım için.\n\n**Karakter profili:**\n- **Arka plan:** Eski asker, köylü isyancı, soylu düşmüş, sürgün rahip\n- **Yaşam tarzı:** Yağmur suyu toplama, geyik avlama, kamp kurma; daima hareket halinde\n- **Motivasyon:** Adalet (Robin Hood tipi), hayatta kalma, intikam, devrim\n- **Düşmanlar:** Şerif/kral muhafızları, toprak ağaları, kira tahsildarları\n\n**AI roleplay şablonu:**\n```\nSen [isim], [lord/kral] tarafından [suç/haksızlık] nedeniyle sürgün edilmiş bir haydutsun.\n[Orman adı]'nda [kaç kişilik] bir grupla yaşıyorsun.\nGrubun hayatta kalması senin sorumluluğun.\n\nDurum: [Senaryoyu buraya yaz]\nKarar: [Grup üyesinin güvenliği vs. büyük amaç çatışması]\n```\n\n**Beceri seti:**\n- Pusu ve tuzak kurma\n- Şifalı bitki bilgisi (yaraları dağdaki bitkilerle tedavi)\n- Eski diller ve şifreli mesaj\n- Karanlıkta sessiz hareket, iz sürme\n\n**Örnek çatışma senaryosu:**\n```\nYabancı bir yolcu ormanına girdi.\nZengin tüccar mı, yoksa şerifin casusu mu?\nYardım mı edeceksin, soyacak mısın, kovacak mısın?\nGruptaki açlar ve bu riske değer mi?\n```\n\n**Prompt:** \"Orman haydutun olarak şerife casusluk yapan bir köylüyle yüzleşiyorsun; köylü çocukları için yaptığını söylüyor. Ahlaki ikilemle nasıl yüzleşirsin?\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -283,7 +283,7 @@
         "Epik"
       ],
       "badge1": "İleri",
-      "content": "## Ejderha Binicisi Şablonu\n1. **Giyim:** Özel yapım deri veya pul zırh, rüzgara dayanıklı pelerin.\n2. **Aksesuar:** Ejderha derisi eldivenler, kask, özel eyer.\n3. **Duruş:** Güçlü, kararlı, ejderhasıyla uyum içinde.\n4. **Mekan:** Yüksek dağlar, bulutlar arasında.",
+      "content": "**Ejderha Binicisi: Efsanevi Bağ ve Güç**\n\nEjderha ve binicisinin sembolik birlikteliğini modern fantezi hikayesine veya oyun mekaniğine uyarlayan karakter çifti profili.\n\n**İnsan Binici Profili:**\n```\nAd: Kira Stormcaller | Ejderhası: Vexar\nYaş: 24 | Ejderha Yaşı: 130 (genç ejderha)\n\nFiziksel (Kira):\n- Orta boy, atletik; derin gölde boğulanla bulunmuş\n- Neredeyse her zaman deri uçuş elbisesi\n- Sol kolda ejderha pulundan yapılmış bilek koruması\n- Gözler ejderhayı bağlandığında turkuaz rengi aldı\n\nEjderha (Vexar):\n- Gök-mavi renk, 18m kanat açıklığı\n- Demir gibi pul dokusu, gökyüzünde fırtına çıkarır\n- Zeka: Insan çocuk düzeyinde; öğrenir, öfkelenir, sevgilidir\n- Özel güç: Elektrik nefesi (yıldırım çizgisi)\n\nBağ Mekaniği:\n- Binici ejderhayı hissedebilir (acı, korku, sevinç)\n- İletişim: Görüntüler ve duygular, konuşma değil\n- Biri ölürse diğeri kısa sürede takip eder\n\nİç Çatışma:\n Kira savaştan nefret eder ama Vexar aşırı koruyucu\n → Savaşa girmemek = ejderhayı tatminsiz bırakmak\n → Paradoks: Barış mı, bağ mı?\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -302,7 +302,7 @@
         "Adaptasyon"
       ],
       "badge1": "Orta",
-      "content": "## Cengiz Han (Fantastik) Görseli\n1. **Giyim:** Ağır işlemeli deri ve metal zırh, kürklü pelerin.\n2. **Silah:** Kavisli kılıç, kompozit yay.\n3. **Binek:** Güçlü, zırhlı at veya fantastik bir binek.\n4. **İfade:** Acımasız, stratejik, kararlı.",
+      "content": "**Cengiz Han (Fantastik Yeniden Yorumlama): Bozkır Hükümdarı**\n\nGerçek tarihin efsanevi figürünü fantastik evren kurgusu için dönüştürme. Tarihi temel + fantazi unsurlar.\n\n**Karakter Profili:**\n```\nAd: Temüjin (\"Demir güçlü\" anlamında) / Büyük Han\nSetting: Büyük Bozkır, büyünün gerçek olduğu paralel tarih\n\nGerçek Tarih Temeli:\n- Borjigin klanından, zorlu çocukluk (babasını zehirlediler)\n- Tüm Moğol kabilelerini birleştirdi\n- Yönetim sistemi (Yasa kodu), din özgürlüğü\n- İletişim ağı (Yam sistemi)\n\nFantastik Eklentiler:\n- Gökyüzü Ruhu Tengri ile doğrudan iletişim kurabilir\n- Her öldürdüğü düşmanın bir parçası savaşçıya geçer (ruh toplama)\n- Kurultay'da şamanlar onun sesini duyar — karar verirken tüm bozkır titrer\n- 4 büyük kağan komutanı birer efsanevi yaratık binicidir\n\nKişilik:\n\"Öfkem fırtına gibidir: Hızlı gelir, her şeyi ezer,\nsonra gider. Arkasında yalnızca yeni toprak kalır.\"\n\nLiderlik Felsefesi:\n- Yeteneği ata sopasına değil, savaş liyakatine göre ödüllendir\n- Ele geçirilen şehre teslim ol → yaşa; direni → yok et\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -321,7 +321,7 @@
         "Kraliçe"
       ],
       "badge1": "İleri",
-      "content": "## Kleopatra (Gotik) Görseli\n1. **Giyim:** Koyu renkli, dantelli, kadife elbiseler, yüksek yakalar.\n2. **Aksesuar:** Karmaşık mücevherler (obsidyen, gümüş), yılan motifleri.\n3. **Makyaj:** Koyu göz makyajı, soluk ten.\n4. **İfade:** Gizemli, büyüleyici, hafif melankolik.",
+      "content": "**Kleopatra (Gotik Yeniden Yorumlama): Karanlık Firavun**\n\nTarihsel Kleopatra VII'yi gotik fantezi estetiğiyle yeniden yorumlayan karakter tasarımı.\n\n**Karakter Profili:**\n```\nAd: Kleopatra Nyx (Gotik Versiyonu)\nSetting: Karanlık Mısır, ölülerin sırını bilenler hükmeder\n\nTarihi Temel:\n- Gerçek Kleopatra: 69-30 B.C., Macedonia'lı Ptolemy hanedanı\n- 7 dil biliyordu (tarihte nadir)\n- Julius Caesar ve Mark Antony ile ittifak\n- Kendi kendini zehirledi (yılan mı, bilmiyoruz)\n\nGotik Dönüşüm:\n- Ölüler büyüsünü bilen (necromancy) ve kullanan\n- Gece ritüelleri: Anubis'in mesajlarını alır\n- Sarayın duvarları hiyeroglifle değil, lanetlerle yazılı\n- İsis'le değil karanlık Sekhmet ile pakt yapmış\n\nFiziksel:\n- Koyu kahverengi ten, siyah-altın göz makyajı (kohl, ama büyülü)\n- Siyah ağır kıyafet; yas ya da güç sembolü\n- Başında yılan tacı — gerçek yılan sarmış, diri\n\nMotivasyonu:\n\"Erkekler saltanatlarını kılıçla alır.\nBen saltanatımı bilgelikle, gerekirse karanlıkla saklarım.\"\n\nOyun Mekaniği: Bilgi broker ve büyücü sınıfı — savaşmaz, ama çevresindeki her şeyi yönetir.\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -340,7 +340,7 @@
         "Mucit"
       ],
       "badge1": "Orta",
-      "content": "## Leonardo da Vinci (Steampunk)\n1. **Giyim:** Kahverengi deri yelek, gözlük, dişli çark detaylı ceket.\n2. **Aksesuar:** Mekanik aletler, çizim defteri, teleskop.\n3. **Arka Plan:** Buhar motorlu atölye, uçan makineler.\n4. **İfade:** Meraklı, dahi, hafif dağınık.",
+      "content": "**Leonardo da Vinci (Steampunk): Zamanın Ötesinde Mucit**\n\nRönesans'ın dehasını alternatif tarih steampunk evreni için yeniden canlandırma.\n\n**Karakter Profili:**\n```\nAd: Leonardo di ser Piero da Vinci\nSetting: Nova Firenze, 1890'lar (steampunk Victorian)\n\nTarihi Temel Kalan:\n- Polimerik deha: Ressam + mühendis + bilim insanı\n- Gerçek çalışmaları: Uçan makine, tank, güneş enerjisi\n- Not defterleri (yaşadığı dönemde anlaşılmadı)\n- 67 yaşında öldü, yalnız ve çoğu projesi tamamlanmamış\n\nSteampunk Adaptasyon:\n- Asistan robotlar: L-1 ve L-2 (kendi yaptığı mekanik figürler)\n- Kanat kemerleri: Her zaman omuzda lipat uçuş mekanizması\n- Gözlükler: Hem görme düzeltici hem mikro-teleskop\n- Stüdyo: Yarısı ressam atölyesi, yarısı buhar makineleri\n\nMotivasyon:\n\"Tanrı, bize zaman verdi. Bizse zamanın sınırlarını\naşmak için beyin verdi. Ben yalnızca aletleri yapıyorum.\"\n\nGüç Seti:\n- Jeneratör artefaktları: Mekanik dişlilerle savaşa girme\n- Blueprint Memory: Gördüğü her mekanizmi tersine çevirir\n- \"Unfinished Genius\": Hiçbir şeyi bitirmez ama yarım bıraktığı her şey mucizevi\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -359,7 +359,7 @@
         "Bilim Kurgu"
       ],
       "badge1": "Orta",
-      "content": "## Teknolojik Uzaylı Şablonu\n1. **Fiziksel Özellikler:** Uzun, narin vücut, büyük gözler, pürüzsüz ten.\n2. **Giyim:** Biyolüminesan kıyafetler, entegre çipler.\n3. **Aksesuar:** Holografik cihazlar, enerji silahları.\n4. **Renk Paleti:** Gümüş, mavi, mor tonları.",
+      "content": "## Teknolojik Uzaylı Karakter Şablonu\n\nSF kurgusunda insan ötesi teknoloji ve farklı bilişsel mimariyle tanımlanan yabancı varlık.\n\n**Tür kurgusu çerçevesi:**\n- **Biyoloji:** Karbon bazlı mı yoksa silikon/plazma? Tekil beden mi, kovanlık akıl mı?\n- **İletişim:** Ses, elektromanyetik sinyal, kimyasal feromone, nörodik bağlantı\n- **Zaman algısı:** İnsan ömrü × kaç? 1000 yıllık bellek ne anlam taşır?\n- **Değer sistemi:** Kolektif fayda mu, bireysel evrim mi, bilgi birikimi mi?\n\n**AI roleplay şablonu:**\n```\nSen [Irk adı] ırkından [yaş] yıllık bir varlıksın.\nİnsan anlayışına çevirilebilir ama tam çevrilemeyen kavramlar var.\nSüper zekânla sınırlarını kabulleniyorsun:\nHesaplayamazsın ama [neden] bilmiyorsun.\n\nDurum: İnsanlarla ilk temasın.\n[Sorular ve yanıtlarında kavramsal boşlukları vurgula]\n```\n\n**Yabancılık efektleri:**\n```\n[İnsan soruyor]: \"Ailenizi özlüyor musunuz?\"\n[Uzaylı]: \"Kavramınız 'özlem' bir eksiklikten kaynaklanıyor.\nBizde bireysel ayrılık yok. Ama sizi anlamaya çalışırken...\nBir şey var. İsmi yok dilimizde. Sizinkine benziyor.\"\n```\n\n**Prompt:** \"Bu SF romanında teknolojik uzaylı karakter insan dostuna ölümü açıklıyor; kendi ölümsüzlüğünü ve insanın kısa ömrünü iki perspektifle ele al, empatiyi yabancılıkla dengele.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -378,7 +378,7 @@
         "Ekolojik"
       ],
       "badge1": "Başlangıç",
-      "content": "## Bitki Bazlı Uzaylı Şablonu\n1. **Fiziksel Özellikler:** Ağaç kabuğu benzeri ten, yaprak benzeri uzuvlar, çiçek açan kafa.\n2. **Giyim:** Organik liflerden dokunmuş, doğa ile bütünleşik.\n3. **Renk Paleti:** Yeşil, kahverengi, toprak tonları, çiçek renkleri.\n4. **İfade:** Sakin, huzurlu, bilge.",
+      "content": "**Bitki Bazlı Yaşam Formu: Özgün Fantezi Irk Tasarımı**\n\nGeleneksel irklerin dışında, fotosentez yapan ve büyümeyle evrilen özgün bir fantezi yaratık tasarımı.\n\n**Irk Profili: Sylvaneki (Bitki Halkı)**\n```\nBioloji:\n- Vücut: İnce ahşap ve yeşil doku hibrit (ağaç+et)\n- Büyüme: Yaşlandıkça büyür (100 yaş = 2.5m, ağır)\n- Beslenme: Fotosentez (ışık) + toprak mineralleri (temas)\n- Üreme: Tohum — ana Sylvaneki ölürken bir meyve bırakır\n- Yaşam süresi: 300-800 yıl (türe göre)\n\nYetenekler:\n- Doğa Entegrasyonu: Ormanda hareket = görünmez\n- Kökleme: Toprağa bağlanarak uzak mesafeden bitkileri kontrol\n- Çiçeklenme Aurası: Hastalığa şifa veren polenler\n- Mevsimsel Dönüşüm: İlkbahar=güçlü, kış=uyku hali\n\nZayıflıklar:\n- Ateş: +2 kat hasar, kaçınılmaz ölüm korkusu\n- Uzun ayrılık: Topraktan uzakta her gün -1 HP regen\n- Kış: Mevsimde tüm stat'lar %30 düşer\n\nKültür:\n\"Ölmek, toprağa dönmektir. Topraktan geldik,\ntoprak bizi bekler. Korkmayın, yalnızca hazırlanın.\"\n\nSınıf Uyumu: Druid, Ranger, Shaman çok iyi. Fighter zor (kış sezonu dezavantaj).\n```",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -397,7 +397,7 @@
         "Gelişmiş"
       ],
       "badge1": "İleri",
-      "content": "## Sibernetik Asker Şablonu\n1. **Vücut:** Kısmen insan, kısmen mekanik uzuvlar, entegre zırh.\n2. **Silah:** Enerji tüfeği, lazer kılıç.\n3. **Gözler:** Kırmızı veya mavi parlayan optikler.\n4. **Duruş:** Hazır, tehditkar, yüksek teknoloji ürünü.",
+      "content": "## Sibernetik Asker Karakter Şablonu\n\nSibernetik geliştirmelerle insan-makine sınırında yaşayan gelecek savaşçısı profili.\n\n**Karakter profili:**\n- **Geliştirmeler:** Subdermal zırh, nöral arayüz, ateşleme tahmin sistemi, termal görüş\n- **Dezavantajlar:** EMP zafiyeti, bakım maliyeti, kimlik kaybı riski\n- **Çatışma:** İnsan olan ne kaldı? Bedenim mi, anılarım mı, değerlerim mi?\n- **Askeri konum:** Elit birim mi, sarf malzemesi mi, siyasi araç mı?\n\n**Roleplay prompt:**\n```\nSen [isim], [yüzde] biyolojik olan bir sibernetik askersin.\n[Güçlendirme operasyonu] sonrası [yıl] geçti.\nOrdu seni [amaç] için kullanıyor.\nİç sesin ve işlemci analitikliğin sık çatışıyor.\n\n[Görev senaryosu]: Sivil kayıpları minimize et veya görevi tamamla?\nHesap: [istatistiksel optimal çözüm] vs [vicdani tercih]\n```\n\n**İç ses çatışması:**\n```\n// Sistem analizi:\nHedef tespit edildi. Tarafsızlaştırma olasılığı: %97.\nYan kayıp hesabı: 3 sivil.\nOptimal çözüm: Saldır.\n\n// Biyolojik beyin:\nO çocuk 8 yaşında. Ben ne yapıyorum?\n```\n\n**Prompt:** \"Sibernetik asker olarak önceki insani kişiliğini ve şimdiki makine verimliliğini birleştiren iç monolog yaz; savaş sonrası PTSD ile sibernetik performans arasındaki gerilim.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -416,7 +416,7 @@
         "Yaratık"
       ],
       "badge1": "Orta",
-      "content": "## Griffin Görsel Rehberi\n1. **Vücut:** Aslan vücudu, kartal başı ve kanatları.\n2. **Renkler:** Altın tüyler, bronz aslan kürkü.\n3. **Duruş:** Heybetli, avına odaklanmış, kanatları açık.\n4. **Mekan:** Yüksek dağ zirveleri, antik kalıntılar.",
+      "content": "## Griffin Karakter Şablonu — Mitolojik Yaratık\n\nAslan gövdeli, kartal başlı ve kanatlı efsanevi yaratık için anlatı ve oyun şablonu.\n\n**Mitolojik arka plan:**\n- **Köken:** Antik Yunan, Mısır ve Pers mitolojisinde ortak; krallığın ve güneşin sembolü\n- **Nitelikler:** Hem kara hem hava egemenliği; altın, hazine ve tanrısal nesnelerin bekçisi\n- **Güç:** Uçuş hızı (kartal), pençe gücü (aslan), keskin görüş\n- **Zeka:** Hayvan ya da yarı-bilinçli — hikâye ihtiyacına göre\n\n**Anlatı kullanım şablonları:**\n```\n1. Yuvası bozulan koruyucu:\n   Dağ zirvesinde yuva kuran Griffin'in yumurtaları çalındı.\n   İnsanlardan yardım mı isteyecek yoksa kurtarma için acımasız mı olacak?\n\n2. Sihirli anlaşma:\n   Griffin ile iş birliği yalnızca belirli koşullarla mümkün.\n   Koşulları kim dikte eder? Güçlü ama yalnız yaratık mı,\n   yoksa zayıf ama kalabalık insanlar mı?\n\n3. Düşmüş tanrı sembolü:\n   Griffin eskiden tanrıların habercisiydi.\n   Tanrıların gidişiyle ne oldu ona?\n```\n\n**RPG için istatistik ipuçları:**\n- Güçlü yönler: uçuş, fiziksel güç, gece görüşü\n- Zayıf yönler: büyük hedef, aile bağlılığı, altın düşkünlüğü\n\n**Prompt:** \"Bu fantezi dünyasında Griffin ile ittifak kurmak isteyen bir karakter yaz; yaratığın koşullarını, kültürel bağlamını ve güven inşa sürecini ayrıntılandır.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -435,7 +435,7 @@
         "Yeniden Doğuş"
       ],
       "badge1": "İleri",
-      "content": "## Feniks Görsel Şablonu\n1. **Görünüm:** Parlak kırmızı, turuncu ve altın tüyler, ateşten kanatlar.\n2. **Enerji:** Etrafında alevler, parlayan bir aura.\n3. **Duruş:** Uçarken, kanatları açık, zarif.\n4. **Mekan:** Küllerden yükselirken veya alevler içinde.",
+      "content": "## Feniks Karakter Şablonu — Ölümsüz Ateş Kuşu\n\nYeniden doğuş mitinin sembolü Feniks için anlatı, sembolizm ve oyun kullanım rehberi.\n\n**Mitolojik köken ve sembolizm:**\n- **Eski Mısır:** Bennu kuşu — Ra'nın ilk tezahürü, güneşin simgesi\n- **Yunan:** Feniks — Arabistan çölünde yalnız, 500 yılda bir yanıp yeniden doğar\n- **Çin:** Fenghuang — yin-yang dengesi, erdem sembolü\n- **Evrensel tema:** Ölüm ve diriliş, dönüşüm, dayanıklılık\n\n**Anlatı katmanları:**\n```\n1. Literal boyut:\n   Yanmak fiziksel acı mı içerir?\n   Her döngüde aynı Feniks mi, farklı bir bilinç mi?\n   Geçmiş döngülerin anıları var mı?\n\n2. Metaforik boyut:\n   Karakterin 'ölüp' yeniden doğması — kim olarak döner?\n   Döngüden ne öğrenir?\n   Her yeniden doğuşta ne kaybeder, ne kazanır?\n\n3. Felsefik boyut:\n   Ölümsüzlük lanet mi nimet mi?\n   Her doğuşta aynı değerleri korumak zorunlu mu?\n```\n\n**Oyun/hikâye senaryosu:**\n```\nFeniks, 1000 yıllık döngüsünü tamamlamadan öldürüldü.\nYeni bir yerde, yeni bir dönemde uyandı.\nBu kez hiçbir şey hatırlamıyor.\nBir insanla yol arkadaşlığı kimliğini mi geri getirir?\n```\n\n**Prompt:** \"Feniks karakteri olarak 300 yıl sonra yeniden doğduğunda sevdiği herkesin artık yaşamadığını fark ediyor; ölümsüzlüğün yalnızlığı ile yeni başlangıcın umudu arasındaki iç monolog.\"",
       "source": {
         "generated": true,
         "provider": "gemini",
@@ -454,7 +454,7 @@
         "Deniz"
       ],
       "badge1": "Başlangıç",
-      "content": "## Deniz Kızı Görsel Rehberi\n1. **Vücut:** Üst kısım insan, alt kısım balık kuyruğu.\n2. **Saç:** Uzun, dalgalı, deniz yosunlarıyla süslü.\n3. **Kuyruk Renkleri:** Mavi, yeşil, mor tonlarında pullu.\n4. **Aksesuar:** Deniz kabuklarından kolyeler, inciler.",
+      "content": "## Deniz Kızı / Siren Karakter Şablonu\n\nAntik Yunan ve modern fantezi mitolojisindeki su yaratıkları için anlatı şablonu.\n\n**Mitolojik ayrım:**\n- **Siren (Yunan):** Kuş-kadın karışımı, kayalıkta şarkı söyler, denizcileri batırır\n- **Deniz Kızı (modern folklor):** Balık kuyruklu, deniz içinde yaşar, kimi zaman insanlara yardımcı\n- **Selkie (Kelt):** Fok derisini çıkaran insan-fok yaratığı\n\n**Karakter çatışması:**\n```\nSiren/Deniz Kızı karakteri için temel dramaturjik çatışmalar:\n\n1. İki dünya arasında:\n   Denizin çağrısı vs. insan bağları\n   Seçim her zaman geri alınamaz\n\n2. Doğa ve kültür:\n   Deniz canlısı olarak \"vahşi\" doğası\n   İnsan toplumunun normaları ile çatışma\n\n3. Ses ve sessizlik:\n   Siren şarkısı büyülü ama insanlığını kaybettirir mi?\n   Sesini kaybetmek kimlik kaybı mı? (Küçük Deniz Kızı teması)\n```\n\n**Anlatı şablonu:**\n```\nSen [isim], [yıl] yıldır [deniz/göl/nehir]'de yaşayan bir [siren/deniz kızı]'sın.\nBir insan sana [olay] nedeniyle yaklaştı.\nSenin seslerin onun kaderini değiştirebilir:\n- Onu çekme → yıkım\n- Onu uyarma → insan gibi konuşma → güç kaybı\nNe seçeceksin?\n```\n\n**Prompt:** \"Deniz kızı karakterin yıllarca şarkıyla denizcileri kurtardıktan sonra bir çocuğu kurtarmak için sesini kaybediyor; bunu öğrendikten sonraki ilk gece iç monologu yaz.\"",
       "source": {
         "generated": true,
         "provider": "gemini",

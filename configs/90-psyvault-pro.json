@@ -93,7 +93,7 @@
         "öğrenme"
       ],
       "badge1": "Başlangıç",
-      "content": "## Bilişsel Yük Teorisi\n3 yük türü:\n1. **İçsel yük:** Konunun doğasındaki zorluk.\n2. **Dışsal yük:** Kötü tasarımdan kaynaklı zorluk → azalt.\n3. **Germane yük:** Şema oluşturmak için harcanan çaba → artır.\n\nUI'da uygulama: Bir ekranda max 4±2 unsur; kompleks adımları chunk'la.",
+      "content": "**Bilişsel Yük Teorisi (Cognitive Load Theory)**\n\nJohn Sweller'ın teorisi: Çalışma belleği sınırlıdır — öğrenme tasarımı bu sınıra göre yapılmalıdır.\n\n**3 yük türü:**\n1. **Öğrenme yükü (Intrinsic):** Konunun kendine özgü karmaşıklığı (Kalküs > 1+1)\n2. **Harici yük (Extraneous):** Kötü tasarımdan kaynaklanan gereksiz karmaşıklık\n3. **Germane yük:** Şema oluşturmak için harcanan yararlı çaba\n\n**Tasarım kuralları:**\n```\n✅ Azalt: Extraneous yük\n  - Gereksiz dekorasyon, aşırı animasyon kaldır\n  - İlgili bilgiyi yan yana koy (Split-attention etkisini önle)\n  - Kelime + görsel birlikte sun (Modality ilkesi)\n\n✅ Artır: Germane yük\n  - Problem çözme pratikleri\n  - Öz açıklama (Self-explanation)\n  - Analoji kullanımı\n\n✅ Ayarla: Intrinsic yük\n  - Sıra önemli: Basit → Karmaşık\n  - Parçalama (Chunking): Büyük konuyu 5-7 parçaya böl\n```\n\n**Pratik örnek:** E-öğrenme modülünde adım adım animasyon yerine statik diyagram + kısa açıklama metni bilişsel yükü azaltır.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "düşünce"
       ],
       "badge1": "Başlangıç",
-      "content": "## Onay Yanlılığı\nNasıl ortaya çıkar: karşı kanıtları görmezden gelme, destekleyici veri seçimi.\n\nÖnleme:\n1. Aktif olarak çürütücü kanıt ara (red teaming).\n2. Hipotez öncesi sonucu kaydet (preregistration).\n3. Analistleri sonuçtan bihaber tut (blind analysis).\n4. Çeşitlendirilmiş veri kaynakları kullan.",
+      "content": "**Onay Yanlılığı (Confirmation Bias)**\n\nMevcut inançları destekleyen kanıtları arama ve zıt kanıtı görmezden gelme eğilimi.\n\n**Nasıl işler:**\n```\nİnanç: 'Ürünüm çok iyi'\n→ Olumlu yorumları öne çıkarır\n→ Olumsuz yorumları 'istisnai' sayar\n→ Çürütücü verileri araştırmaz\n```\n\n**Tasarım ve karar süreçlerinde etkileri:**\n- A/B test yorumunda erken durma (istenen sonuç görününce)\n- Ürün roadmap'te kullanıcı şikayetlerini minimize etme\n- İşe alımda 'ilk izlenime' yönelik soru sorma\n\n**Karşı önlemler:**\n1. **Pre-mortem:** 'Bu proje başarısız olsaydı neden olurdu?' sorusuyla başla\n2. **Şeytanın avukatı:** Birinin karşı argüman sunması için görevlendir\n3. **Kör değerlendirme:** Kimlerin önerisi olduğunu bilmeden değerlendir\n4. **Falsification first:** 'Bu hipotezi nasıl çürütürüm?' diye sor\n\n**Araştırmacı notu:** Confirmation bias evrenseldir — kendiniz de dahil olmak üzere herkes etkisi altındadır.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "önyargı"
       ],
       "badge1": "Başlangıç",
-      "content": "## Çıpa Etkisi Uygulamaları\nPazarlama: Fiyat sayfasında en pahalıyı ilk göster → diğerleri ucuz görünür.\nMüzakere: Yüksek açılış teklifi çıpa oluşturur.\nÜrün: 'Normalde X, şimdi Y' — fiyat çıpası.\n\nSavunma: Kendi bağımsız değerlendirmeni yap; karşı tarafın çıpasını geç.",
+      "content": "**Çıpa Etkisi (Anchoring Bias)**\n\nİlk duyulan sayı veya bilginin, sonraki değerlendirmeleri orantısız biçimde etkilemesi.\n\n**Klasik deney:** Kahneman & Tversky (1974)\n```\nGrup A: 'BM'deki Afrika ülkesi yüzdesi > 65 mi?'\nGrup B: 'BM'deki Afrika ülkesi yüzdesi > 10 mu?'\nA ortalaması: %45  |  B ortalaması: %25\n(Gerçek: ~%28)\n```\n\n**Fiyatlandırmada çıpa etkisi:**\n```\n❌ Düz fiyat: '99₺'\n✅ Çıpalı fiyat: ~~299₺~~ → 99₺  (indirimi büyük gösterir)\n\nSaaS fiyatlandırma:\n  Temel: 99₺/ay\n  Pro: 199₺/ay    ← Hedef seçenek\n  Kurumsal: 499₺/ay  (çıpa — Pro'yu ucuz gösterir)\n```\n\n**Müzakerede çıpa:**\n- İlk teklif yapan taraf avantajlıdır (çıpayı belirler)\n- Aşırı ilk teklif karşı tarafın düşünce alanını daraltır\n- Karşı teklif sayısal yakın olmalı — doğrudan reddetmek bile çıpayı kabul eder\n\n**Kaçınma:** Kendi araştırmanızı çıpa görmeden yapın; toplantıda ilk sayıyı siz söyleyin.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "karar"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kayıp Korkusu\nKahneman & Tversky: 100₺ kazanmak ≈ 50₺ kaybetmemek (duygusal eşdeğer).\n\nUygulamalar:\n- Ücretsiz deneme → kaybetmemek için abone olma.\n- 'Kaçırıyorsun' mesajı > 'Kazanırsın' mesajı.\n- Sağlık: 'Bunu yaparsan kaybedersin' framesi daha etkili.\nEtik kullanım: manipülatif değil, gerçek faydayı öne çıkar.",
+      "content": "**Kayıp Korkusu (Loss Aversion)**\n\nKaybetmenin psikolojik acısı, kazanmanın sevincinin yaklaşık 2 katı ağırdır (Kahneman & Tversky).\n\n**Prospect Theory formülü:**\n```\nKayıp Ağırlığı ≈ 2.0-2.5 × Kazanım Ağırlığı\n100₺ kaybetmek = 200-250₺ kazanmak gibi hissettirir\n```\n\n**Ürün ve pazarlamada uygulamaları:**\n```\n1. Ücretsiz deneme → Vazgeçme acısı kullanın\n   'Denemeniz 3 gün sonra sona eriyor — verilerinizi kaybetmeyin'\n\n2. Tamamlanmamış profil uyarıları\n   'Profiliniz %40 eksik — fırsatları kaçırıyorsunuz'\n\n3. Sepet hatırlatmaları\n   'Sepetinizdeki ürünlerin stoğu azalıyor'\n\n4. Fiyat çerçeveleme\n   ❌ 'Aylık 50₺ tasarruf'\n   ✅ 'Bu özelliği kullanmazsanız aylık 50₺ kaybediyorsunuz'\n```\n\n**Etik kullanım:** Gerçek değer sunarken çerçeveleme normaldir. Sahte aciliyet veya abartılmış kayıp iddiası tüketiciyi yanıltır — uzun vadede güven erozyonu yaratır.\n\n**Karar tasarımı:** Default seçeneklerin güçlü olmasını açıklar — opt-out organ bağışı sistemlerinde bağış oranları %90+.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "özerklik"
       ],
       "badge1": "Orta",
-      "content": "## SDT 3 İhtiyacı\n1. **Özerklik:** Kendi seçimini yap → kontrol hissi.\n2. **Yeterlilik:** Zorluk seviyesi uygun → akış (flow) hissi.\n3. **İlişki:** Topluluk bağı → ait olma hissi.\n\nÜrün tasarımı:\n- Özerklik: kullanıcı ayarları, kişiselleştirme.\n- Yeterlilik: kademeli zorluk, ilerlemek görünür.\n- İlişki: topluluk özellikleri, paylaşım.",
+      "content": "**Self-Determination Theory (Öz-Belirleme Kuramı)**\n\nDeci & Ryan'ın motivasyon teorisi: İçsel motivasyon 3 temel psikolojik ihtiyaca dayanır.\n\n**3 temel ihtiyaç:**\n\n| İhtiyaç | Tanım | Tasarım İpucu |\n|---------|-------|---------------|\n| **Özerklik** | Seçim hissi | Kullanıcıya kontrol ver |\n| **Yeterlilik** | Başarma hissi | Kademeli zorluk |\n| **İlişki** | Bağlantı hissi | Topluluk özellikleri |\n\n**Motivasyon tayfı:**\n```\nDış motivasyon                    İç motivasyon\n    ←────────────────────────────────→\nZorlama → Dış ödül → Özdeşleşme → Doğal zevk\n(ceza)   (para/not)  (değer görme) (merak/akış)\n```\n\n**Oyunlaştırma hatası:** Salt rozet/puan sistemi dış motivasyon yaratır — içsel motivasyonu bastırabilir (overjustification etkisi).\n\n**Doğru tasarım:**\n```\n✅ Anlamlı seçimler (kursiyer kendi öğrenme yolunu seçsin)\n✅ Yetkinlik geri bildirimi (ne öğrendim skoru)\n✅ Sosyal bağlantı (akran öğrenmesi, mentor)\n✅ Faaliyet değerini açıkla (neden önemli?)\n```",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "davranış"
       ],
       "badge1": "Orta",
-      "content": "## Değişken Ödül\nSkinner: Değişken oran en güçlü koşullanma → slot makinesi prensibi.\n\nUygulamalar:\n- Sosyal medya: 'pull to refresh' → yeni şey var mı?\n- Loot box: ne çıkacağını bilmemek.\n- Email: yeni mesaj gelebilir → sık kontrol.\n\nEtik not: bağımlılık yaratma riski. Tasarımda bilinçli kullan.",
+      "content": "**Değişken Ödül Takvimi (Variable Ratio Reinforcement)**\n\nB.F. Skinner'ın en güçlü motivasyon mekanizması: Öngörülemeyen ödüller, sabit ödüllerden çok daha bağımlılık yaratır.\n\n**Takvim türleri:**\n| Takvim | Örnek | Bağlılık |\n|--------|-------|----------|\n| Sabit aralık | Her Pazartesi bonus | Düşük |\n| Değişken aralık | Bazen indirim gelir | Orta |\n| Sabit oran | Her 10 alımda ödül | Orta-Yüksek |\n| **Değişken oran** | Slot makinesi, loot box | **Çok Yüksek** |\n\n**Dijital ürünlerde kullanım:**\n```\n📱 Sosyal medya beğeni/yorum bildirimleri\n  → Ne zaman geleceği belirsiz → Sık kontrol etme\n\n🎮 Oyun looting sistemi\n  → Epic drop yüzdesi düşük ama belirsiz → Oynamaya devam\n\n📧 E-posta gelen kutusu\n  → Bazen önemli mail gelir → Kompulsif kontrol\n```\n\n**Etik sınır:** Değişken ödül + kayıp korkusu kombinasyonu kumar bağımlılığı mekanizmasının temelidir. Tasarımda manipülasyon mü, değer mi yarattığınızı sorgulayın.\n\n**Sağlıklı kullanım:** Uygulama yeni özellik keşfi, beklenmedik içerik önerileri.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "karar"
       ],
       "badge1": "Başlangıç",
-      "content": "## Hick Yasası\nFormül: T = b × log₂(n + 1)\n\nUygulama:\n1. Navigasyon: max 7 ana menü öğesi.\n2. Form: dropdown yerine radio (az seçenekte).\n3. Onboarding: her adımda tek karar.\n4. Mobil: alt nav max 5 sekme.\n5. Paralel seçenekleri kategorize et, seçenek sayısı düşür.",
+      "content": "**Hick Yasası: Seçim Sayısı ve Karar Süresi**\n\nSeçenek sayısı arttıkça karar verme süresi logaritmik olarak artar: RT = a + b × log₂(n)\n\n**Formül örneği:**\n```\n2 seçenek → 1 birim süre\n4 seçenek → 2 birim süre\n8 seçenek → 3 birim süre\n16 seçenek → 4 birim süre\n```\n\n**UI/UX uygulamaları:**\n\n1. **Navigasyon menüsü:**\n   - Üst seviyede max 7±2 seçenek\n   - Sık kullanılan → En üstte veya büyük\n\n2. **Ürün sayfası:**\n   - Amazon: 'İnsanlar genellikle X'i satın alır' → Seçimi daraltır\n   - Renge göre varyant: 3-4 seçenek ideal, 20+ seçenek = paralysis\n\n3. **Onboarding:**\n   - İlk adımda tek aksiyon: 'Hesap oluştur' (2 seçenek değil)\n   - Kademeli bilgi açıklama (progressive disclosure)\n\n**Paradox of Choice (Barry Schwartz):** Fazla seçenek alıcıyı mutsuz eder ve satın alma olasılığını düşürür. Jam çalışması: 24 seçenek vs. 6 seçenek — 6 seçenekte satış %600 arttı.",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "görsel"
       ],
       "badge1": "Başlangıç",
-      "content": "## Gestalt İlkeleri\n1. Yakınlık: Yakın elemanlar grup görünür.\n2. Benzerlik: Aynı renkli elemanlar grup görünür.\n3. Süreklilik: Göz çizgiyi takip eder.\n4. Kapalılık: Eksik şekli beyin tamamlar.\n5. Şekil-zemin: Ön plan vs. arka plan ayrımı.\n\nKullanım: form alanlarını label'larına yakın koy; ilgili aksiyonları gruplayın.",
+      "content": "**Gestalt İlkeleri: Tasarımda Algı Psikolojisi**\n\nBeyin görsel bilgiyi nasıl örgütler? Gestalt ilkeleri UI/UX ve grafik tasarımın temelidir.\n\n**7 temel ilke:**\n\n1. **Yakınlık (Proximity):** Yakın elemanlar ilişkili algılanır\n   - Form alanları ile etiketleri yan yana koyun\n\n2. **Benzerlik (Similarity):** Aynı görünen elemanlar gruplandırılır\n   - Butonlar aynı renkte, metinler aynı fontta\n\n3. **Kapatma (Closure):** Eksik şekilleri tamamlama\n   - Çember logolar: Boşluk olsa da tamamlanmış görünür\n\n4. **Süreklilik (Continuity):** Göz akışı devam eder\n   - Yatay liste: Gözler soldan sağa tarar\n\n5. **Şekil-Zemin (Figure-Ground):** Ön plan / arka plan ayrımı\n   - Modal pencere: Arka plan karartmak odaklanmayı sağlar\n\n6. **Simetri:** Simetrik şekiller daha stabil algılanır\n\n7. **Ortak Kader (Common Fate):** Birlikte hareket edenler gruplandırılır\n   - Kaydırma listesinde animasyon\n\n**Pratik test:** Tasarımınızı bulanıklaştırın (Gaussian blur) — gruplamalar hâlâ net mi?",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "hafıza"
       ],
       "badge1": "Orta",
-      "content": "## Faydalı Zorluklar\n1. Retrieval practice: okumak yerine hatırlamaya çalış.\n2. Interleaving: konuları karıştırarak çalış (blok değil).\n3. Spacing: sınavdan önce değil, süreç boyunca tekrar.\n4. Generation effect: cevabı kendin üret, sonra kontrol et.\n5. Desirable difficulty ≠ arbitrary difficulty: amaca uygun zorluk seç.",
+      "content": "**Desirable Difficulties: İstenen Güçlükler Daha İyi Öğretir**\n\nRobert Bjork'un teorisi: Öğrenmeyi anlık olarak zorlaştıran bazı koşullar uzun vadeli hatırlamayı artırır.\n\n**Beyin dost güçlükler:**\n\n1. **Aralıklı Tekrar (Spaced Practice):**\n   ```\n   ❌ 3 saat arka arkaya çalışmak\n   ✅ 1 saat × 3 gün (1-7-30 gün aralığı)\n   ```\n\n2. **Karıştırılmış Pratik (Interleaving):**\n   ```\n   ❌ AAABBBCCC (konu konu)\n   ✅ ABCABCABC (karışık) → Uzun vadede %40 daha iyi\n   ```\n\n3. **Geri Çağırma (Retrieval Practice):**\n   - Okumak yerine yazmak, test yapmak\n   - 'Testing effect': Sınav yapmak ezberden üstün\n\n4. **Üretim Etkisi (Generation Effect):**\n   - Cevabı bulmaya çalışmak, cevabı okumaktan üstün\n\n5. **Akıcılık Yanılsaması (Fluency Illusion):**\n   - 'Anlıyorum' hissi 'öğrendim' değildir\n   - Test ederek gerçek bilgiyi ölçün\n\n**Eğitim tasarımına uygulama:** Quiz'i ders sonuna değil, ders BAŞINA koyun — retrieval attempt, öğrenmeyi güçlendirir.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "tekrar"
       ],
       "badge1": "Başlangıç",
-      "content": "## Unutma Eğrisi\n- İlk 24 saat: %50-80 kayıp.\n- Optimal tekrar: 1 gün, 3 gün, 7 gün, 30 gün.\n- Her tekrar eğrinin düzleşmesini sağlar.\n\nUygulama: SRS (Anki) bu algoritmayı otomatize eder.\nYeni bilgi öğrendikten 24 saat içinde bir kez tekrar et → kalıcılık %80+ artar.",
+      "content": "**Ebbinghaus Unutma Eğrisi ve Aralıklı Tekrar**\n\nHermann Ebbinghaus'un 1885 araştırması: Öğrenilen bilginin ne kadar hızlı unutulduğunu gösterir.\n\n**Unutma eğrisi:**\n```\n% Hatırlama\n100% │ Hemen öğrenme\n 80% │\n 60% │────┐ 20 dakika sonra: %58\n 40% │    └────┐ 1 gün sonra: %33\n 20% │         └────────────── 1 ay sonra: %21\n  0% └─────────────────────────────────────\n         Zaman\n```\n\n**Aralıklı tekrar takvimi (SuperMemo algoritması temeli):**\n```\nTekrar 1: Öğrendikten 1 gün sonra → Yeniden %100\nTekrar 2: 3 gün sonra → Yeniden %100\nTekrar 3: 7 gün sonra\nTekrar 4: 21 gün sonra\nTekrar 5: 60 gün sonra\n→ Uzun süreli belleğe yerleşme\n```\n\n**Uygulama araçları:**\n- **Anki:** Aralıklı tekrar flash kartları (ücretsiz)\n- **Obsidian + Spaced Repetition plugin**\n- **Duolingo:** Dil öğreniminde uygular\n\n**Pratik formül:** Bir kavramı 30 gün içinde 5 kez tekrarlarsanız, 6 ay sonra %80+ hatırlanır.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "ikna"
       ],
       "badge1": "Başlangıç",
-      "content": "## Sosyal Kanıt Türleri\n1. Kullanıcı sayısı: '10.000+ şirket kullanıyor.'\n2. Yorum/rating: yıldızlar ve kullanıcı yorumları.\n3. Uzman onayı: 'Forbes tarafından önerildi.'\n4. Arkadaş kullanımı: 'X kişi bağlantın da kullanıyor.'\n5. Belirsizlik → sosyal kanıt gücü artar.\n\nEtik: gerçek kanıtları kullan, sahte yorum oluşturma.",
+      "content": "**Sosyal Kanıt (Social Proof) Psikolojisi**\n\nRobert Cialdini'nin 6 etki ilkesinden biri: Belirsizlik durumunda insanlar başkalarının davranışını referans alır.\n\n**Sosyal kanıt türleri:**\n\n| Tür | Örnek | Güç |\n|-----|-------|-----|\n| Uzman kanıtı | 'Doktor tavsiye ediyor' | Yüksek |\n| Ünlü kanıtı | Influencer kullanımı | Orta |\n| Kullanıcı yorumları | Amazon 4.8★ 5000 yorum | Yüksek |\n| Arkadaş kanıtı | 'Arkadaşın X kullanıyor' | Çok Yüksek |\n| Kalabalık kanıtı | '50.000 kişi üye oldu' | Orta |\n\n**Ürün tasarımında uygulama:**\n```\n🌟 Yorumlar → Satın alma sayfasında görünür ol\n👥 Kullanıcı sayısı → Onboarding ekranında göster\n🏆 Logo wall → 'IBM, Microsoft kullanıyor' B2B için güçlü\n📊 'Bu hafta 200 kişi inceledi' → Gerçek zamanlı aktivite\n💬 İsimli, fotoğraflı testimonial → Anonim'den 4x etkili\n```\n\n**Olumsuz sosyal kanıt:** 'Çoğu insan hediye geri dönüşümünü kullanmaz' → Kötü! Olumsuz normları asla öne çıkarma.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "karar"
       ],
       "badge1": "Orta",
-      "content": "## Çerçeveleme Örnekleri\nNegative frame: '%30'u hastaları hayatını kaybetti.'\nPositive frame: '%70'i kurtarıldı.' → daha cazip.\n\nSağlık: kazanım çerçevesi koruyucu davranışta, kayıp çerçevesi riskli davranışı önlemede etkili.\nPazarlama: '5 hata yapmamak' > '5 doğru yapmak' başlığı → dikkat çeker.",
+      "content": "**Çerçeveleme Etkisi (Framing Effect)**\n\nAynı bilginin farklı sunumu, kararları dramatik biçimde etkiler.\n\n**Klasik deney (Kahneman & Tversky):**\n```\nSenaryO: 600 kişilik hastalık\n\nSunum A (Kazanım çerçevesi):\n  Plan 1: 200 kişi kurtarılır [%76 tercih]\n  Plan 2: 1/3 olasılıkla 600 kurtarılır, 2/3 kimse kurtarılmaz\n\nSunum B (Kayıp çerçevesi):\n  Plan 1: 400 kişi ölür [%13 tercih — aynı plan!]\n  Plan 2: 1/3 kimse ölmez, 2/3 herkes ölür\n```\n\n**Pazarlama uygulamaları:**\n```\n'%5 yağlı peynir' vs '95% yağsız' → Aynı içerik, çok farklı tercih\n\n'Günlük 33₺' vs 'Yıllık 12.000₺' → Aynı tutar, farklı büyüklük algısı\n\n'Sigorta olmadan riski üstleniyorsunuz' vs 'Sigorta ile korunuyorsunuz'\n```\n\n**Sağlık iletişimi:**\n- Aşı: Koruyuculuk oranı vurgusu > yan etki vurgusu\n- Kanser tarama: 'Bu yöntemi kullananlar X kat daha az ölüyor'\n\n**Etik sınır:** Yanlış bilgi değil; aynı gerçeği en faydalı çerçevede sunmak meşrudur.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "UI"
       ],
       "badge1": "Başlangıç",
-      "content": "## Fitts Yasası\nT = a + b × log₂(D/W + 1)\n- D: mesafe, W: hedef genişliği\n\nUygulama:\n1. Sık kullanılan butonlar büyük ve yakın olsun.\n2. Ekran kenarı (köşe): sonsuz genişlik → en kolay hedef.\n3. Mobil: dokunma hedefi min. 44×44px (Apple HIG).\n4. Destructive buton (sil): küçük ve uzakta koy.",
+      "content": "**Fitts Yasası: Dokunma ve Tıklama Hızı Tasarımı**\n\nPaul Fitts (1954): Bir hedefe ulaşma süresi, hedefe olan uzaklıkla doğru, hedef büyüklüğüyle ters orantılıdır.\n\n**Formül:**\n```\nT = a + b × log₂(2D / W)\n\nT = süre, D = uzaklık, W = hedef genişliği\n```\n\n**Pratik çıkarımlar:**\n\n1. **Büyük hedefler daha hızlı:**\n   - CTA butonu minimum 44×44 piksel (Apple HIG)\n   - Mobil dokunma hedefi 48dp (Material Design)\n\n2. **Ekran kenarları ve köşeler 'sonsuz büyük' hedefler:**\n   - Mac'te menü çubuğu ekranın en üstünde — çok hızlı ulaşılır\n   - Köşe menüleri: Fare sınıra vurur, doğru koordinat gerekmez\n\n3. **Bağlamsal menüler:**\n   - Sağ tık menüleri → İmlece yakın açılmalı\n   - Long-press popup → Parmak altında çıksın\n\n4. **Tehlikeli butonları uzak koyun:**\n   - 'Sil' butonu → 'Onayla'dan fiziksel uzaklık + küçük boyut\n\n**Fitts testi:** Tasarımınızı kullanıcıya hız testi yaptırın — hangi hedeflere ulaşmak zaman alıyor?",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "dönüşüm"
       ],
       "badge1": "Başlangıç",
-      "content": "## Kıtlık Etkisi\nCialdini: Elde edilmesi zor olan şey daha değerli algılanır.\n\nUygulama:\n- 'Son 3 oda kaldı!'\n- '2 saat içinde bitecek'\n- 'Sınırlı üretim'\n\nEtik sınır: gerçek kıtlık vs. sahte kıtlık. Sahte kıtlık uzun vadede güven kırar.\nTest: A/B ile kıtlık mesajının gerçek etkisini ölç.",
+      "content": "**Kıtlık Etkisi (Scarcity) ve Aciliyet Psikolojisi**\n\nAz olan daha değerlidir — Cialdini'nin 6 ilkesinden biri.\n\n**Kıtlık türleri:**\n| Tür | Örnek | Etki |\n|-----|-------|------|\n| Miktar kıtlığı | 'Stokta 3 adet kaldı' | Yüksek |\n| Zaman kıtlığı | '2 saat sonra sona erer' | Çok Yüksek |\n| Sosyal kıtlık | '50 kişi şu an bakıyor' | Orta |\n| Erişim kıtlığı | 'Sadece üyelere özel' | Orta-Yüksek |\n\n**Tasarım uygulamaları:**\n```\n⏱️ Geri sayım sayacı → En güçlü tetikleyici\n   'Sepetinizdeki ürün 12:47 içinde rezerve'\n\n📦 Stok göstergesi → Kırmızı renk aciliyeti artırır\n   'Sadece 2 adet kaldı!' (yeşil 'Stokta var'dan etkili)\n\n🎯 Erken kuş fiyatlandırması\n   '100 erken kuş bileti: 87/100 satıldı'\n\n🔒 Bekleme listesi\n   'Şu an kapalı — listeye katılın'\n```\n\n**Gerçek kıtlık vs. Sahte kıtlık:**\n- Gerçek: Sınırlı stok, bitiş tarihi\n- Sahte: Sürekli 'Son 3 ürün' sayacı → Güven kaybı\n\n**Etik test:** Kıtlık gerçek mi? Değilse kullanmayın.",
       "source": {
         "generated": true
       }
@@ -331,7 +331,7 @@
         "psikoloji"
       ],
       "badge1": "Orta",
-      "content": "## İki Mutluluk Teorisi\n**Hazcılık (Hedonism):** Zevk > acı → anlık mutluluk.\n**Eudaimonia:** Potansiyeli gerçekleştirme, anlam, erdem.\n\nAraştırma: eudaimonia uzun dönemli refahla daha güçlü ilişkili.\nÜrün tasarımı: anlık tatmin + uzun vadeli büyüme fırsatı sun.\nKullanıcı bağlılığı: sadece engagement değil, 'hayatıma katkı' hissi.",
+      "content": "**Hazcılık vs. Eudaimonia: Mutluluk Felsefesi ve Psikoloji**\n\nİki ana mutluluk teorisi: Anlık zevk mi, yoksa anlamlı yaşam mı?\n\n**Hazcılık (Hedonism):**\n- Mutluluk = Zevk - Acı\n- Epikuros: 'Acıdan kaçın, zevki ara'\n- Modern: Dopamin odaklı anlık tatmin\n\n**Eudaimonia (Aristoteles):**\n- Mutluluk = Erdem + Potansiyeli gerçekleştirme\n- 'Flourishing' — gelişme, anlam, katkı\n- Modern: Viktor Frankl'ın anlam terapisi\n\n**Martin Seligman'ın PERMA modeli (pozitif psikoloji):**\n```\nP — Positive Emotions (Olumlu duygular)\nE — Engagement (Dalma/Akış hali)\nR — Relationships (İlişkiler)\nM — Meaning (Anlam)\nA — Achievement (Başarı)\n```\n\n**Psikolojik araştırmalar:**\n- Eudamonik mutluluk daha uzun sürelidir\n- Hazcı mutluluk çabuk alışkanlık yaratır (hedonic adaptation)\n- İkisi çelişmez — anlamlı işte zevk bulunabilir\n\n**Tasarımda uygulaması:** Ürünü salt bağımlılık değil, kullanıcının büyümesine katkı sağlayacak şekilde tasarlayın.",
       "source": {
         "generated": true
       }

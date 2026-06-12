@@ -93,7 +93,7 @@
         "BOFU"
       ],
       "badge1": "Temel",
-      "content": "**Reklam Hunisi:** TOFU (farkındalık): geniş kitle, marka mesajı, video/görsel. MOFU (değerlendirme): retargeting, kanıt, karşılaştırma. BOFU (dönüşüm): sıcak kitle, teklif, urgency. Her aşamada farklı mesaj. TOFU olmadan BOFU çalışmaz. Bütçeyi 20/30/50 oranında dağıt.",
+      "content": "**Dijital Reklam Hunisi Modeli**\n\nReklam stratejisini huninin aşamasına göre hizalayın:\n\n```\nTOFU (Top of Funnel) — Farkındalık\n  Hedef: Geniş kitle, marka tanıma\n  Format: Video, display, awareness kampanyası\n  Hedefleme: Geniş ilgi (interest)\n  Metrik: CPM, reach, video görüntüleme\n\nMOFU (Middle of Funnel) — Değerlendirme\n  Hedef: İlgilenen kitleyi besle\n  Format: Carousel, lead form, trafik reklamı\n  Hedefleme: Video izleyenler, sayfa ziyaretçileri\n  Metrik: CTR, lead sayısı, CPL\n\nBOFU (Bottom of Funnel) — Dönüşüm\n  Hedef: Satın alma kararı aldır\n  Format: Retargeting, dinamik ürün reklamı\n  Hedefleme: Sepet terki, ürün sayfası ziyareti\n  Metrik: ROAS, CPA, dönüşüm oranı\n```\n\n**Bütçe dağılımı (başlangıç):**\n- TOFU %20 | MOFU %30 | BOFU %50\n\nRetargeting her zaman en yüksek ROAS üretir — önce BOFU'yu doğru kur.",
       "source": {
         "generated": true
       }
@@ -110,7 +110,7 @@
         "SKAG"
       ],
       "badge1": "Yapı",
-      "content": "**Arama Kampanyası:** Kampanya: ürün/hizmet kategorisi. Reklam grubu: belirli arama niyeti. Anahtar kelime: hem geniş hem tam eşleşme. Negatif kelimeler: alakasız trafiği kes. Her reklam grubu için özel açılış sayfası. STAG (tek reklam grubu/tema) başlangıç için yeterli. Günlük bütçe: min 50₺.",
+      "content": "**Google Ads Arama Kampanyası Yapısı**\n\nKalite Skoru ve ROAS'ı maksimize eden hesap mimarisi:\n\n```\nHesap\n  └── Kampanya (Ürün/Hizmet kategorisi)\n       └── Reklam Grubu (Tek tema)\n            ├── Anahtar kelimeler (3-10)\n            └── Reklamlar (2-3 responsive ad)\n```\n\n**SKAG (Single Keyword Ad Group) yaklaşımı:**\n```\nRG: 'Deri Ceket Erkek'\n  AK: [deri ceket erkek], \"deri ceket erkek\"\n  Reklam başlığı 1: 'Erkek Deri Ceket'\n  Açıklama: 'Özel deri, 100+ model, ücretsiz kargo'\n\nRG: 'Deri Ceket Kadın'\n  AK: [deri ceket kadın], \"deri ceket kadın\"\n  Reklam başlığı 1: 'Kadın Deri Ceket'\n```\n\n**Kampanya ayarları:**\n```\n✅ Dönüşüm odaklı teklif: tCPA veya tROAS\n✅ Arama partnerleri: Başlangıçta kapat\n✅ Display genişletme: Kapalı tutun\n✅ Dil: Türkçe + İngilizce (Türkiye'de)\n✅ Konum: Hedef il/ülke + 'Bu konumda bulunanlar'\n```\n\n**Kalite Skoru bileşenleri:** Beklenen TO, reklam alaka, açılış sayfası deneyimi. 7+ hedefleyin.",
       "source": {
         "generated": true
       }
@@ -127,7 +127,7 @@
         "geniş"
       ],
       "badge1": "Teknik",
-      "content": "**Eşleşme Türleri:** Geniş eşleşme: en fazla erişim, en az kontrol. Sıralı eşleşme: 'kelime öbeği' — içeriyor. Tam eşleşme: [tam kelime] — sadece o. Başlangıç önerisi: sıralı + tam. Geniş eşleşmeyi sadece öğrenme aşamasında kullan. Arama terimi raporunu haftalık tara — yeni negatif kelimeler ekle.",
+      "content": "**Google Ads Anahtar Kelime Eşleşme Türleri**\n\n```\nGeniş Eşleşme: deri ceket\n  → 'erkek deri montlar', 'deri kaban ucuz'\n  → Yüksek erişim, düşük kontrol\n  ⚠️ Başlangıçta dikkatli kullanın\n\nKüme Eşleşmesi (Phrase): \"deri ceket\"\n  → 'ucuz deri ceket', 'deri ceket al'\n  → Kelime sırası korunur, önce/sonra eklenebilir\n\nExact Match: [deri ceket]\n  → Yalnızca 'deri ceket' veya yakın varyantlar\n  → En yüksek niyet, en düşük hacim\n```\n\n**Eşleşme türü stratejisi:**\n```python\n# Başlangıç stratejisi\nbaslangic = {\n    'exact': ['[marka adı satın al]', '[ürün + fiyat]'],\n    'phrase': ['\"ürün kategorisi\"', '\"rakip marka\"'],\n    'broad': []  # Data olmadan kullanma\n}\n\n# Büyüme sonrası (2-3 ay veri ile)\nbuyume = {\n    'exact': 'yüksek dönüşüm', \n    'phrase': 'keşif',\n    'broad_match_modifier': 'ölçeklendirme'\n}\n```\n\n**Negatif kelimeler:** 'ücretsiz', 'nasıl yapılır', 'nedir', 'ikinci el' → Bütçe israfını önler. Başlangıçta 30-50 negatif kelime ekleyin.",
       "source": {
         "generated": true
       }
@@ -144,7 +144,7 @@
         "kurulum"
       ],
       "badge1": "Temel",
-      "content": "**Meta Hiyerarşi:** Kampanya: hedef (satın alma, trafik, etkileşim). Reklam seti: kitle + bütçe + zamanlama. Reklam: görsel/video + metin + CTA. Her test için ayrı reklam seti oluştur. Kampanya bütçe optimizasyonu (CBO): Meta bütçeyi dağıtır. Öğrenme aşaması: 50 dönüşüm/hafta gerekli.",
+      "content": "**Meta (Facebook/Instagram) Reklam Kampanyası Kurulumu**\n\n**Kampanya yapısı:**\n```\nKampanya (Hedef seç)\n  └── Reklam Seti (Hedefleme + Bütçe)\n       └── Reklamlar (Görsel + Metin)\n```\n\n**Kampanya hedefi seçimi:**\n```\nFarkındalık → Erişim/Marka farkındalığı\nTrafik → Web sitesi ziyareti\nEtkileşim → Sayfa beğeni, yorum\nLead → Form doldurma\nSatış → Conversion (Pixel gerekir!)\n```\n\n**Reklam seti kurulumu:**\n```\n1. Hedefleme (CBO önerilir):\n   - İlgi hedefleme başlangıç için\n   - Lookalike: Müşteri listenizden %1-3\n   - Broad targeting: Meta'ya bırak (genellikle iyi çalışır)\n\n2. Bütçe:\n   - Test: Günlük 100-300₺ / reklam seti\n   - CBO (Campaign Budget Optimization) tercih edin\n\n3. Yerleşimler:\n   - Başlangıçta Advantage+ Placements açık bırakın\n```\n\n**Pixel kurulumu (zorunlu):**\n```html\n<!-- Head'e ekleyin -->\n<script>\n!function(f,b,e,v,n,t,s){...} // Meta Pixel kodu\n</script>\n```\n\nPixel olmadan dönüşüm kampanyası çalıştırmak kördür.",
       "source": {
         "generated": true
       }
@@ -161,7 +161,7 @@
         "benzer"
       ],
       "badge1": "Güçlü",
-      "content": "**Lookalike Audience:** Kaynak: müşteri listesi (min 1000 kişi) veya Pixel verisi (alışveriş). Benzerlik: %1-2 (en yakın), %5-10 (daha geniş). %1 LAL: en yüksek dönüşüm, küçük kitle. %5-10 LAL: daha fazla erişim, daha az benzer. Başlangıç: Pixel Events (Purchase) ile %1 LAL. Veri büyüdükçe 'value-based LAL' dene.",
+      "content": "**Lookalike Audience (Benzer Kitle) Oluşturma Rehberi**\n\nMevcut müşterinize benzeyen yeni kitleler bulun:\n\n**Kaynak kitle kalitesi önceliği:**\n```\n1. En iyi → Ödeme yapan müşteriler (LTV bazlı)\n2. İyi → Satın alma eventi (Pixel'den)\n3. Orta → Sepete ekleme (Pixel'den)\n4. Zayıf → Web sitesi ziyaretçileri\n```\n\n**Lookalike oluşturma adımları:**\n```\nMeta Ads → Kitleler → Benzer Kitle Oluştur\n  Kaynak: [Müşteri listesi CSV veya Pixel custom audience]\n  Konum: Türkiye\n  Boyut: %1-3 (dar, benzer) | %5-10 (geniş, hacimli)\n```\n\n**Kaynak veri CSV formatı:**\n```csv\nemail,phone,first_name,last_name,ltv\nali@example.com,+905001234567,Ali,Yılmaz,500\nveli@example.com,+905009876543,Veli,Kaya,1200\n```\n\n**Test stratejisi:**\n```\nKampanya A: LAL %1-3 (en benzer)\nKampanya B: LAL %3-10 (daha geniş)\nKampanya C: Interest hedefleme (kontrol)\n→ En düşük CPA'yı kazanan ölçeklendir\n```\n\n**Minimum kaynak boyutu:** 1000 kişi ideal, 100 kişi minimum. Daha fazla kaynak = daha iyi LAL kalitesi.",
       "source": {
         "generated": true
       }
@@ -178,7 +178,7 @@
         "hook"
       ],
       "badge1": "Dikkat",
-      "content": "**3 Saniye Prensibi:** İlk kare tek başına mesajı taşımalı. Metin: görsel üzerinde min, net, büyük. Renk: markan rengini kullan — tanınırlık. Hareket: statik görsel videoya kıyasla %30 daha az izleniyor. Mobil önce tasarla (9:16). UGC (kullanıcı içeriği) stüdyo görselinden genellikle iyi performans gösterir.",
+      "content": "**Reklam Görseli Tasarım Kuralları**\n\nDikkat çeken, tıklatılan görseller için kanıtlanmış ilkeler:\n\n**Meta Reklam görsel standartları:**\n| Format | Boyut | Önerilen |\n|--------|-------|----------|\n| Feed kare | 1080×1080 | Evet |\n| Feed dikey | 1080×1350 | Evet (daha fazla yer) |\n| Story/Reels | 1080×1920 | Mobil odaklı |\n| Yatay | 1200×628 | Facebook desktop |\n\n**Görselde %20 metin kuralı:** Meta artık katı uygulamıyor, ancak az metin daha yüksek erişim üretiyor.\n\n**Yüksek performanslı görsel formülleri:**\n```\n1. Ürün + Kişi: Ürünü kullanan mutlu insan\n2. Öncesi-Sonrası: Problem → Çözüm\n3. Sosyal kanıt görsel: '★★★★★ 2000 Yorum'\n4. Metin odaklı: Net fayda vaat\n5. Ugc (Kullanıcı içeriği): Ham/gerçek hissiyat\n```\n\n**Kaçınılacaklar:**\n- Aşırı stok fotoğraf görünümü\n- Çok fazla metin\n- Düşük kontrast\n- Logoya odaklı (fayda değil marka)\n\n**A/B test:** Her kampanyada en az 3 farklı görsel testi yapın.",
       "source": {
         "generated": true
       }
@@ -195,7 +195,7 @@
         "kopya"
       ],
       "badge1": "Klasik",
-      "content": "**AIDA Formülü:** Attention (Dikkat): 'Türkiye'deki en büyük [sektör] hatası.' Interest (İlgi): neden önemli, rakam. Desire (İstek): fayda + sosyal kanıt. Action (Eylem): net CTA ('Şimdi ücretsiz dene'). Kısa metin: 125 karakter, uzun: 500+. A/B test: her kampanyada 2-3 metin varyasyonu. Kazananı ölçeklendir.",
+      "content": "**AIDA Reklam Metin Yazarlığı Formülü**\n\n**AIDA yapısı:**\n```\nA — Attention (Dikkat): Scroll'u durdur\nI — Interest (İlgi): 'Bu benim için'\nD — Desire (İstek): Sonucu hayal ettir\nA — Action (Eylem): Net CTA\n```\n\n**Meta reklam metni örneği:**\n```\n[Attention]\nSosyal medyanız 3 saatinizi alıyor ama sonuç yok mu?\n\n[Interest]\nTürkiye'deki 500+ içerik üreticisi bu sistemi kullanarak\nhaftada yalnızca 2 saatte 30 günlük içerik planlıyor.\n\n[Desire]\nBirden fazla platform. Takipçi büyümesi. Bütçe yok.\nHepsi tek sistemde — AI destekli içerik takvimi.\n\n[Action]\n→ 7 günlük ücretsiz denemeyi başlat (kredi kartı gerekmez)\n```\n\n**Metin uzunluğu testi:**\n- Kısa (50-100 kelime): Yüksek niyet kitlesi\n- Orta (150-250 kelime): Genel kullanım\n- Uzun (500+ kelime): Hikaye / eğitim odaklı\n\n**Başlık çerçeveleri:**\n```\nAcı: 'Hâlâ [Problem yaşıyorsanız]...'\nMerak: 'Neden [X] işe yarar?'\nFayda: '[X] günde [Sonuç] elde et'\nSosyal kanıt: '10.000 kişi [X] ile [Sonuç] aldı'\n```",
       "source": {
         "generated": true
       }
@@ -212,7 +212,7 @@
         "CPM"
       ],
       "badge1": "Dikkat",
-      "content": "**Reklam Yorgunluğu:** İşaretler: Frequency >3, CTR düşüyor, CPM yükseliyor, dönüşüm maliyeti artıyor. Çözüm: yeni kreatif ekle (reklam seti değil). En az 3-5 kreatif döngüde tut. Her 2-3 haftada yeni varyasyon test et. Yorgun reklam = para yakma. Kreatif tazeleme = maliyeti sıfırlama.",
+      "content": "**Reklam Yorgunluğu (Ad Fatigue) Tespiti ve Yönetimi**\n\nAynı kitle aynı reklamı tekrar görünce performans düşer:\n\n**Yorgunluk belirtileri:**\n```\nGünden güne:\n- CTR düşüşü (başlangıca göre >%30)\n- CPM artışı (hedef kitle tükeniyor)\n- Frekans artışı (3+ görüntüleme/kişi)\n- CPA artışı (yükselen maliyet)\n```\n\n**Meta Ads yorgunluk takibi:**\n```\nAds Manager → Sütunlar ekle:\n- Frekans (3+ = uyarı, 5+ = kritik)\n- Yükleme oranı (declining = yorgunluk)\n- Benzersiz tıklama oranı\n```\n\n**Yorgunlukla mücadele:**\n```\n1. Creative rotasyon:\n   → Haftada 1-2 yeni görsel/video\n   → Aynı mesaj, farklı format\n\n2. Kitle rotasyonu:\n   → Farklı lookalike segmentler sırayla\n   → Reklam setini kopyala → Frekansı sıfırla\n\n3. Periyodik yenileme:\n   → 4-6 haftada kampanya yenileme\n   → Sezon/tema değişikliği\n\n4. Frekans sınırlama:\n   → Reklam seti ayarları: Max 2-3 gösterim/hafta/kişi\n```\n\n**Araç:** Facebook Ad Library — rakiplerin creative rotasyon hızını görün.",
       "source": {
         "generated": true
       }
@@ -229,7 +229,7 @@
         "CRO"
       ],
       "badge1": "Kritik",
-      "content": "**Açılış Sayfası Checklist:** Reklam mesajı = sayfa başlığı (message match). Tek CTA (birden fazla karıştırır). Hero görsel ürünü göstermeli. Sosyal kanıt fold üzerinde (yorum/logo). Hız: 3 saniyenin altı (PageSpeed test). Mobil uyumlu. Form alanı: sadece gerekli olanlar. Her fazladan adım dönüşümü %10-20 düşürür.",
+      "content": "**Açılış Sayfası (Landing Page) Dönüşüm Optimizasyonu**\n\n**Yüksek dönüşümlü LP yapısı:**\n```\n[Hero Section]\n  → Başlık: Net fayda vaat (5 saniyede anlaşılmalı)\n  → Alt başlık: Kime, nasıl\n  → CTA butonu: Büyük, kontrast, eylem fiili\n  → Görsel: Ürün veya sonuç\n\n[Güven Sinyalleri]\n  → Logo wall (müşteriler/medya)\n  → Sayılar (X kullanıcı, Y yıl)\n\n[Fayda Listesi]\n  → 3-5 madde, başlık + kısa açıklama\n\n[Sosyal Kanıt]\n  → Fotoğraflı yorumlar, video testimonial\n\n[SSS]\n  → 5-7 sık sorulan soru\n\n[Son CTA]\n  → Aynı buton tekrar\n  → Garanti bilgisi\n```\n\n**Dönüşüm hızı artırıcılar:**\n```\n✅ Sayfa hızı < 3 saniye (PageSpeed Insights ile ölç)\n✅ Mobil uyumlu (trafiğin %70+ mobil)\n✅ Tek CTA — birden fazla seçenek karar felci\n✅ Exit intent popup (+%5-10 dönüşüm)\n✅ Canlı sohbet widget'ı\n```\n\n**Isı haritası araçları:** Hotjar, Microsoft Clarity (ücretsiz) — kullanıcıların nereye baktığını görün.",
       "source": {
         "generated": true
       }
@@ -246,7 +246,7 @@
         "ROI"
       ],
       "badge1": "Finans",
-      "content": "**ROAS Hesabı:** ROAS = Reklam geliri / Reklam harcaması. Hedef: sektöre göre 3-5×. CPA = Harcama / Dönüşüm sayısı. Kârlı CPA = Ürün kârı × 0.3 (max). Eğer ürün 100₺ kâr veriyorsa max 30₺ CPA harca. Break-even ROAS = Gelir / (Gelir - Maliyet). Altında harcama durdur veya kreatifi değiştir.",
+      "content": "**ROAS ve CPA Hedefleri: Reklam Karlılık Hesabı**\n\n**Temel metrikler:**\n```\nROAS = Reklam Geliri / Reklam Harcaması\n  Örnek: 1000₺ harcama → 4000₺ gelir → ROAS 4\n\nCPA = Reklam Harcaması / Dönüşüm Sayısı\n  Örnek: 1000₺ harcama → 10 satış → CPA 100₺\n\nCPL = Harcama / Lead Sayısı\n  Örnek: 500₺ → 50 lead → CPL 10₺\n```\n\n**ROAS break-even hesabı:**\n```python\ndef break_even_roas(urun_fiyati, maliyet, genel_gider_orani=0.15):\n    toplam_maliyet = maliyet + urun_fiyati * genel_gider_orani\n    kar_marji = (urun_fiyati - toplam_maliyet) / urun_fiyati\n    be_roas = 1 / kar_marji\n    return round(be_roas, 2)\n\nprint(break_even_roas(500, 150))  # ~1.43 ROAS = başa baş\n# 2x ROAS = kâr\n```\n\n**Hedef belirleme kılavuzu:**\n```\nE-ticaret: ROAS 3-5 hedef (marj %20-30)\nD2C marka: ROAS 2-3 + LTV hesabı\nLead gen: CPA < LTV × 0.3\nSaaS: CAC < LTV / 3\n```\n\n**İlk yatırımda:** Kârsız çalışmak öğrenme bütçesidir — ilk 2-4 haftada veri toplayın, sonra optimize edin.",
       "source": {
         "generated": true
       }
@@ -263,7 +263,7 @@
         "analitik"
       ],
       "badge1": "Teknik",
-      "content": "**UTM Kurulumu:** UTM parametreleri: source (meta/google), medium (cpc/paid), campaign (isim), content (reklam_id). Google URL Builder ile oluştur. Google Analytics'te: Edinim → Trafik kaynakları → kampanyalara göre filtrele. Her reklam için ayrı UTM. Hangi içerik, platform, kampanya satış getiriyor? Net cevap.",
+      "content": "**UTM Parametreleri ile Reklam Kanal İzleme**\n\nHangi kanal, kampanya ve içerik dönüşüm üretiyor? UTM ile bilin:\n\n**UTM parametreleri:**\n```\nutm_source    → Nereden geldi? (google, facebook, email)\nutm_medium    → Kanal türü (cpc, organic, email)\nutm_campaign  → Kampanya adı (kış_sezonu_2024)\nutm_content   → Reklam versiyonu (gorselli_banner)\nutm_term      → Anahtar kelime (Google Ads otomatik)\n```\n\n**URL yapısı:**\n```\nhttps://site.com/urun\n  ?utm_source=facebook\n  &utm_medium=paid_social\n  &utm_campaign=kacirmayın_kampanya\n  &utm_content=kırmızı_buton_v2\n```\n\n**UTM oluşturucu:**\n```python\nfrom urllib.parse import urlencode\n\ndef utm_url(base_url, source, medium, campaign, content=None, term=None):\n    params = {\n        'utm_source': source,\n        'utm_medium': medium,\n        'utm_campaign': campaign\n    }\n    if content: params['utm_content'] = content\n    if term: params['utm_term'] = term\n    return f'{base_url}?{urlencode(params)}'\n\nprint(utm_url('https://site.com', 'facebook', 'cpc', 'yaz2024', 'video_v1'))\n```\n\n**Google Analytics 4:** UTM parametreleri otomatik yakalanır. Traffic Acquisition raporu → Kanal karşılaştırması yapın.",
       "source": {
         "generated": true
       }
@@ -280,7 +280,7 @@
         "casusluk"
       ],
       "badge1": "Araştırma",
-      "content": "**Rakip Analizi:** Meta Ad Library (ücretsiz): rakibin aktif reklamlarını gör. SpyFu / SEMrush: Google Ads rakip anahtar kelimeleri. SimilarWeb: rakip trafik kaynakları. Öğren: hangi formatlar kullanıyor, hangi mesajlar öne çıkıyor, ne kadar süredir yayında (uzun süre = işe yarıyor). İlham al, kopyalama — uyarla.",
+      "content": "**Rakip Reklam Analizi**\n\nRakiplerinizin ne tür reklamlar çalıştırdığını ücretsiz araçlarla takip edin:\n\n**Facebook Ad Library (Ücretsiz):**\n```\nhttps://facebook.com/ads/library\n→ Ülke: Türkiye\n→ Kategori: Tüm reklamlar\n→ Arama: Rakip marka adı\n→ Filtre: Aktif reklamlar\n```\n\n**Ne analiz edeceksiniz:**\n```\n✅ Hangi format kullanıyorlar? (video, carousel, tekli)\n✅ Kaç farklı creative test ediyorlar?\n✅ Hangi mesajı öne çıkarıyorlar?\n✅ CTA nedir? ('Şimdi Al' vs. 'Ücretsiz Dene')\n✅ Ne kadar süredir çalışıyor? (Eski = iyi performans)\n```\n\n**Google Ads için:**\n```\n1. Google'da rakip anahtar kelimelerini arayın\n2. Ads göründüğünde reklam metnini kaydedin\n3. 'Benzer' Google Ads'ı bulun: semrush.com/advertising/research\n```\n\n**Rakip analiz tablosu:**\n| Rakip | Format | Mesaj | Teklif | Aktiflik |\n|-------|--------|-------|--------|----------|\n| RakipA | Video | Fiyat | 'Ücretsiz Dene' | 3 hafta |\n| RakipB | Carousel | Özellik | 'Şimdi Al' | 1 ay |\n\n**Fırsatlar:** Rakiplerin kullanmadığı format ve mesajlar → Boşluk stratejisi.",
       "source": {
         "generated": true
       }
@@ -297,7 +297,7 @@
         "geri kazanma"
       ],
       "badge1": "Dönüşüm",
-      "content": "**Retargeting Kampanyası:** Pixel kur → özel kitleler oluştur: tüm ziyaretçiler (30 gün), ürün sayfası görüntüleyenler, sepete ekleyenler, satın almalar (hariç tut). Mesaj farklı: 'Geri döndün mü?' veya indirim kodu. Ürün dinamik reklamı (DPA): katalog bağla, otomatik ürün göster. Retargeting dönüşümü soğuk kitleye kıyasla 3-5× yüksek.",
+      "content": "**Retargeting (Yeniden Hedefleme) Kampanyası Kurma**\n\nSitenizi ziyaret edip satın almadan ayrılanları geri getirin:\n\n**Retargeting segmentleri (önem sırasıyla):**\n```\n1. Sepet terki (en yüksek niyet)\n   → Son 7 gün, ürüne özel dinamik reklam\n\n2. Ödeme başlatıp terk\n   → Son 3 gün, aciliyet + güven mesajı\n\n3. Ürün sayfası ziyaretçisi\n   → Son 14 gün, sosyal kanıt + indirim\n\n4. Genel site ziyaretçisi\n   → Son 30 gün, marka hatırlatma\n\n5. Video izleyenler (%50+)\n   → Son 30 gün, teklif\n```\n\n**Meta Pixel Custom Audience:**\n```\nMeta Ads Manager → Kitleler → Özel Kitle\n  Kaynak: Web Sitesi\n  Kural: URL içerir '/cart' son 7 gün\n  → Sepet terki kitlesi hazır\n```\n\n**Reklam mesajı:**\n```\nSepet terki → 'Sepetinizde bıraktığınız [Ürün] sizi bekliyor'\nÜrün sayfası → 'Baktığınız [Ürün] hâlâ stokta'\nGenel → 'Sizi tanıdık — özel indiriminiz burada'\n```\n\n**Frekans sınırı:** Retargeting'de 2-3 gösterim/gün/kişi üstüne çıkmayın — rahatsız edici olur.",
       "source": {
         "generated": true
       }
@@ -314,7 +314,7 @@
         "yapı"
       ],
       "badge1": "Video",
-      "content": "**Video Reklam Yapısı:** 0-3 sn: hook (problem veya dikkat çekici sahne). 3-10 sn: problem/çözüm göster. 10-25 sn: sosyal kanıt + özellikler. 25-30 sn: CTA. Alt yazı ekle (sessiz izleme). İlk kare her şey — güçlü başla. Dikey format (9:16) mobil için. UGC tarzı (selfie video) stüdyo görüntüsünden %30 daha ucuz ve etkili.",
+      "content": "**Video Reklam Yapısı: İlk 3 Saniye Kural**\n\nVideo reklamlarda kullanıcı 3 saniyede ayrılır veya kalır:\n\n**Video reklam akışı:**\n```\n0-3 sn: KANCA\n  → Şok/merak/acı noktası\n  → 'Bu hatayı yapmayı bırakın'\n  → Logo veya ürün gösterimi\n\n3-8 sn: PROBLEM\n  → Kimin için, hangi sorun\n  → Empati kur\n\n8-20 sn: ÇÖZÜM\n  → Ürün/hizmet tanıtımı\n  → Demo veya kullanım sahnesi\n\n20-30 sn: SOSYAL KANIT + CTA\n  → Kısa testimonial\n  → Net aksiyon çağrısı\n```\n\n**Format önerileri:**\n| Format | Süre | Platform | Hedef |\n|--------|------|----------|-------|\n| Kısa | 6-15 sn | Reels/TikTok | Farkındalık |\n| Orta | 30-60 sn | Feed | Değerlendirme |\n| Uzun | 2-3 dk | YouTube | Eğitim/dönüşüm |\n\n**Alt yazı zorunluluğu:** %85 ses kapalı izleniyor. SRT dosyası veya burn-in alt yazı ekleyin.\n\n**Araçlar:** Canva (kolay), CapCut (mobil), DaVinci Resolve (gelişmiş). Hook testi: 3 sn sonra drop-off oranına bakın.",
       "source": {
         "generated": true
       }
